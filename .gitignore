@@ -1,0 +1,28 @@
+# ==========================================
+# 无限时空图 - Git 隔离配置文件
+# ==========================================
+
+# --- [1] 数据层隔离 (保留结构，忽略重核) ---
+core/TotalData/**
+!core/TotalData/**/.gitkeep
+
+# --- [2] 参考项目隔离 (禁止同步别人的库) ---
+deck.gl-master/
+shiji-kb-main/
+
+# --- [3] 前端构建废品 ---
+core/app/node_modules/
+core/app/dist/
+*.log
+
+# --- [4] 系统与开发工具 ---
+.DS_Store
+.vscode/
+.idea/
+.env*
+!.env.example
+
+# --- [5] 文档规则 ---
+doc_dev/project_communication.md
+# (备忘录很大，可以考虑只跟踪核心规划文档)
+# doc_dev/development_master_plan.md
