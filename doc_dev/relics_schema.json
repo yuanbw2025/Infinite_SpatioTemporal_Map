@@ -1,0 +1,120 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "文博藏品实体元数据规范 (Relic Entity Metadata Schema)",
+  "description": "定义文博藏品的层级化元数据与双重视角命名体系，用于优化向量检索与知识图谱构建。",
+  "type": "object",
+  "required": ["id", "name_expert", "category_hierarchy"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "实体唯一识别码 (如: relic_1001)"
+    },
+    "name_expert": {
+      "type": "string",
+      "description": "专家定名/学术定名 (如: 青花凤穿牡丹纹罐)"
+    },
+    "name_public": {
+      "type": "string",
+      "description": "公众名称/常见俗名 (如: 明代青花大罐)"
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "别名、曾用名或俗称"
+    },
+    "relic_grade": {
+      "type": "string",
+      "enum": ["一级文物", "二级文物", "三级文物", "一般文物", "禁止出境展示文物", "尚未定级"],
+      "description": "文物保护等级"
+    },
+    "tags_public": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "公众视角标签 (如: ['花瓶', '景德镇', '官窑', '龙纹'])"
+    },
+    "category_hierarchy": {
+      "type": "object",
+      "description": "级联分类体系",
+      "properties": {
+        "primary": { "type": "string", "description": "一级大类 (如: 陶瓷)" },
+        "secondary": { "type": "string", "description": "二级亚类 (如: 瓷器)" },
+        "tertiary": { "type": "string", "description": "三级细分 (如: 青花瓷)" }
+      }
+    },
+    "material_tech": {
+      "type": "object",
+      "description": "材质与工艺描述",
+      "properties": {
+        "base_material": { "type": "string", "description": "基础材质 (如: 青铜, 高岭土)" },
+        "technique": { "type": "array", "items": { "type": "string" }, "description": "制作工艺 (如: 错金银, 斗彩, 剔红)" },
+        "glaze_finish": { "type": "string", "description": "釉面/表面装饰 (如: 枢府釉)" }
+      }
+    },
+    "visual_features": {
+      "type": "object",
+      "description": "形制与纹饰特征",
+      "properties": {
+        "shape_description": { "type": "string", "description": "器形详细描述" },
+        "motifs_decorations": { "type": "array", "items": { "type": "string" }, "description": "核心纹饰/图案 (如: 饕餮纹, 缠枝莲)" }
+      }
+    },
+    "epigraphy_marks": {
+      "type": "object",
+      "description": "铭文与款识",
+      "properties": {
+        "content_raw": { "type": "string", "description": "铭文/款识原文" },
+        "position": { "type": "string", "description": "位置 (如: 内底, 圈足外)" },
+        "type": { "type": "string", "description": "类别 (如: 年款, 族徽, 题跋)" }
+      }
+    },
+    "dynasty_info": {
+      "type": "object",
+      "properties": {
+        "dynasty": { "type": "string", "description": "朝代 (如: 明)" },
+        "reign": { "type": "string", "description": "年号 (如: 万历)" },
+        "absolute_year": { "type": "integer", "description": "绝对纪年" }
+      }
+    },
+    "physical_stats": {
+      "type": "object",
+      "properties": {
+        "dimensions": { "type": "string" },
+        "weight": { "type": "string" },
+        "condition": { "type": "string", "enum": ["完好", "微损", "残缺", "修复", "现状不明"] }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "description": "出土与流传信息",
+      "properties": {
+        "excavation_site": { "type": "string", "description": "遗址/墓葬名称" },
+        "pit_tomb_id": { "type": "string", "description": "坑/墓 编号" },
+        "discovery_date": { "type": "string", "description": "发现日期" },
+        "current_collection": { "type": "string", "description": "现馆藏机构" },
+        "history": { "type": "array", "items": { "type": "string" }, "description": "流传经历记述" }
+      }
+    },
+    "research_notes": {
+      "type": "object",
+      "properties": {
+        "authentication": { "type": "string", "description": "鉴定专家/委员会意见" },
+        "references": { "type": "array", "items": { "type": "string" }, "description": "著录/参考论文" }
+      }
+    },
+    "qa_seeds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": { "type": "string" },
+          "answer": { "type": "string" }
+        }
+      },
+      "description": "面向 RAG 优化的关键知识点对"
+    },
+    "semantic_embedding_text": {
+      "type": "string",
+      "description": "用于生成向量的增强文本段，由系统自动拼接各级标签、纹饰、铭文而成。"
+    }
+  }
+}

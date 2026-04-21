@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "source": "【萬曆】清河縣志 卷七 官師表",
+    "destination": {
+      "name": "清河縣",
+      "modern_name": "河北省邢台市清河县",
+      "lng_lat": [115.67, 37.07]
+    }
+  },
+  "officials": [
+    {
+      "id": "p_001",
+      "name": "文穎",
+      "courtesy_name": "叔良",
+      "origin": "南陽",
+      "origin_lnglat": [112.53, 33.00],
+      "dynasty": "東漢",
+      "year_start": 100,
+      "year_end": 180,
+      "position": "清河相關官員",
+      "color": [255, 80, 80]
+    },
+    {
+      "id": "p_002",
+      "name": "涼茂",
+      "origin": "昌邑",
+      "origin_lnglat": [116.35, 35.55],
+      "dynasty": "東漢",
+      "year_start": 150,
+      "year_end": 220,
+      "position": "清河相關官員",
+      "note": "見傳",
+      "color": [255, 80, 80]
+    },
+    {
+      "id": "p_003",
+      "name": "庫狄士文",
+      "origin": "代郡",
+      "origin_lnglat": [113.75, 40.37],
+      "dynasty": "隋",
+      "year_start": 581,
+      "year_end": 610,
+      "position": "清河官員",
+      "note": "見傳",
+      "color": [0, 200, 150]
+    },
+    {
+      "id": "p_004",
+      "name": "揚善會",
+      "origin": "弘農",
+      "origin_lnglat": [110.87, 34.52],
+      "dynasty": "隋",
+      "year_start": 586,
+      "year_end": 618,
+      "position": "清河郡丞",
+      "note": "見傳",
+      "color": [0, 200, 150]
+    },
+    {
+      "id": "p_005",
+      "name": "揚機",
+      "courtesy_name": "顯暴",
+      "origin": "天水",
+      "origin_lnglat": [105.72, 34.58],
+      "dynasty": "東魏",
+      "year_start": 534,
+      "year_end": 550,
+      "position": "清河郡丞",
+      "color": [180, 100, 255]
+    },
+    {
+      "id": "p_006",
+      "name": "杜慕",
+      "origin": "京兆杜陵",
+      "origin_lnglat": [109.00, 34.20],
+      "dynasty": "北魏",
+      "year_start": 450,
+      "year_end": 530,
+      "position": "清河官員",
+      "note": "見傳",
+      "color": [180, 100, 255]
+    },
+    {
+      "id": "p_007",
+      "name": "薛皐",
+      "origin": "河東汾陰",
+      "origin_lnglat": [110.44, 34.85],
+      "dynasty": "後晉",
+      "year_start": 936,
+      "year_end": 947,
+      "position": "貝州刺史",
+      "note": "仁壽年，以上書徵入朝",
+      "color": [255, 180, 0]
+    },
+    {
+      "id": "p_008",
+      "name": "王周",
+      "origin": "不詳",
+      "origin_lnglat": [113.65, 34.76],
+      "dynasty": "後晉",
+      "year_start": 936,
+      "year_end": 947,
+      "position": "永清軍節度使",
+      "color": [255, 180, 0]
+    },
+    {
+      "id": "p_009",
+      "name": "王承衍",
+      "origin": "洛陽",
+      "origin_lnglat": [112.45, 34.62],
+      "dynasty": "宋",
+      "year_start": 960,
+      "year_end": 1020,
+      "position": "貝州長史",
+      "color": [80, 180, 255]
+    },
+    {
+      "id": "p_010",
+      "name": "蕭欽",
+      "origin": "蘭陵",
+      "origin_lnglat": [117.57, 34.73],
+      "dynasty": "唐",
+      "year_start": 618,
+      "year_end": 700,
+      "position": "清河官員",
+      "note": "梁昭明太子五世孫",
+      "color": [255, 120, 50]
+    },
+    {
+      "id": "p_011",
+      "name": "柳弧",
+      "origin": "河東解縣",
+      "origin_lnglat": [111.00, 35.03],
+      "dynasty": "唐",
+      "year_start": 618,
+      "year_end": 750,
+      "position": "清河官員",
+      "color": [255, 120, 50]
+    },
+    {
+      "id": "p_012",
+      "name": "孫復禮",
+      "origin": "昌黎",
+      "origin_lnglat": [119.16, 39.71],
+      "dynasty": "唐",
+      "year_start": 618,
+      "year_end": 750,
+      "position": "清河官員",
+      "color": [255, 120, 50]
+    },
+    {
+      "id": "p_013",
+      "name": "鄭愛客",
+      "origin": "滎陽",
+      "origin_lnglat": [113.38, 34.79],
+      "dynasty": "唐",
+      "year_start": 618,
+      "year_end": 750,
+      "position": "清河官員",
+      "color": [255, 120, 50]
+    },
+    {
+      "id": "p_014",
+      "name": "李永昌",
+      "origin": "涼州",
+      "origin_lnglat": [102.64, 37.93],
+      "dynasty": "唐",
+      "year_start": 618,
+      "year_end": 750,
+      "position": "清河官員",
+      "color": [255, 120, 50]
+    },
+    {
+      "id": "p_015",
+      "name": "宋璟",
+      "origin": "廣平",
+      "origin_lnglat": [114.95, 36.48],
+      "dynasty": "唐",
+      "year_start": 663,
+      "year_end": 737,
+      "position": "清河官員",
+      "note": "忱武三侍",
+      "color": [255, 120, 50]
+    },
+    {
+      "id": "p_016",
+      "name": "宋慶禮",
+      "origin": "汾陰",
+      "origin_lnglat": [110.44, 34.85],
+      "dynasty": "唐",
+      "year_start": 700,
+      "year_end": 730,
+      "position": "清河官員",
+      "note": "開元時任清河",
+      "color": [255, 120, 50]
+    },
+    {
+      "id": "p_017",
+      "name": "周崇嗣",
+      "origin": "廬江舒",
+      "origin_lnglat": [117.31, 31.25],
+      "dynasty": "唐",
+      "year_start": 618,
+      "year_end": 750,
+      "position": "清河官員",
+      "note": "入相王",
+      "color": [255, 120, 50]
+    },
+    {
+      "id": "p_018",
+      "name": "向日紅",
+      "origin": "湖北大冶",
+      "origin_lnglat": [114.97, 30.10],
+      "dynasty": "明",
+      "year_start": 1576,
+      "year_end": 1582,
+      "position": "清河知縣",
+      "note": "本志纂修者，後升任雲南監察御史",
+      "color": [220, 50, 50]
+    },
+    {
+      "id": "p_019",
+      "name": "王世勛",
+      "origin": "遼東蓋州衛",
+      "origin_lnglat": [122.35, 40.40],
+      "dynasty": "明/清",
+      "year_start": 1644,
+      "year_end": 1660,
+      "position": "清河縣知縣",
+      "note": "增修本志",
+      "color": [220, 50, 50]
+    },
+    {
+      "id": "p_020",
+      "name": "崔凌霄",
+      "origin": "大名府長垣",
+      "origin_lnglat": [114.68, 35.18],
+      "dynasty": "清",
+      "year_start": 1644,
+      "year_end": 1660,
+      "position": "清河縣儒學教諭",
+      "color": [100, 100, 255]
+    }
+  ]
+}
