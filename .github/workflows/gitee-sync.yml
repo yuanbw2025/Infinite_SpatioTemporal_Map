@@ -1,0 +1,25 @@
+name: Sync to Gitee
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Mirror to Gitee
+        run: |
+          git remote add gitee https://Aloneoneyuan:${{ secrets.GITEE_TOKEN }}@gitee.com/Aloneoneyuan/Infinite_SpatioTemporal_Map.git
+          git push gitee main --force
+
+      - name: Trigger Gitee Pages rebuild
+        run: |
+          curl -s -X POST "https://gitee.com/api/v5/repos/Aloneoneyuan/Infinite_SpatioTemporal_Map/pages/builds" \
+            -H "Content-Type: application/json" \
+            -d "{\"access_token\":\"${{ secrets.GITEE_TOKEN }}\"}" || true
