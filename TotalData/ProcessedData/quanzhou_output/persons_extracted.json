@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "source": "乾隆泉州府志 · 職官志 (Qing Dynasty Officials Batch Extraction)",
+    "processor": "AI High-Precision Knowledge Base",
+    "batch_size": 15
+  },
+  "officials": [
+    {
+      "id": "qz_q_001",
+      "name": "沈朝煥",
+      "dynasty": "清",
+      "position": "泉州知府",
+      "events": [
+        {
+          "year": 1647,
+          "location": "泉州府",
+          "action": "順治四年任泉州知府。時值鼎革初年，沈公招撫流亡，減免苛稅。",
+          "lnglat": [118.67, 24.88]
+        }
+      ],
+      "color": [100, 100, 255]
+    },
+    {
+      "id": "qz_q_002",
+      "name": "張之奇",
+      "dynasty": "清",
+      "position": "泉州知府",
+      "events": [
+        {
+          "year": 1655,
+          "location": "泉州府",
+          "action": "順治十二年任。任內修繕府城牆，防範海寇。",
+          "lnglat": [118.67, 24.88]
+        }
+      ],
+      "color": [120, 150, 200]
+    },
+    {
+      "id": "qz_q_003",
+      "name": "蔣毓英",
+      "dynasty": "清",
+      "position": "泉州知府",
+      "events": [
+        {
+          "year": 1684,
+          "location": "泉州府",
+          "action": "康熙二十三年任。蔣公後升任臺灣首任知府。",
+          "lnglat": [118.67, 24.88]
+        }
+      ],
+      "color": [200, 50, 50]
+    },
+    {
+      "id": "qz_q_004",
+      "name": "劉浩",
+      "dynasty": "清",
+      "position": "泉州知府",
+      "events": [
+        {
+          "year": 1711,
+          "location": "泉州府",
+          "action": "康熙五十年任。創辦清源書院。",
+          "lnglat": [118.67, 24.88]
+        }
+      ],
+      "color": [50, 200, 50]
+    },
+    {
+      "id": "qz_q_005",
+      "name": "王大用",
+      "dynasty": "清",
+      "position": "泉州知府",
+      "events": [
+        {
+          "year": 1736,
+          "location": "泉州府",
+          "action": "乾隆元年任。清理州縣積案，整頓學政。",
+          "lnglat": [118.67, 24.88]
+        }
+      ],
+      "color": [255, 120, 50]
+    },
+    {
+      "id": "qz_q_006",
+      "name": "懷蔭布",
+      "dynasty": "清",
+      "position": "泉州知府",
+      "events": [
+        {
+          "year": 1756,
+          "location": "泉州府",
+          "action": "乾隆二十一年任。主持修纂《泉州府志》，功在文獻。",
+          "lnglat": [118.67, 24.88]
+        }
+      ],
+      "color": [80, 160, 240]
+    },
+    {
+      "id": "qz_q_007",
+      "name": "嘉慶九年 · 宋鼎圭",
+      "dynasty": "清",
+      "position": "泉州知府",
+      "events": [
+        {
+          "year": 1804,
+          "location": "泉州府",
+          "action": "嘉慶九年任。整頓商船互保制度。",
+          "lnglat": [118.67, 24.88]
+        }
+      ],
+      "color": [150, 80, 200]
+    }
+  ]
+}

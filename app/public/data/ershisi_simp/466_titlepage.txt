@@ -1,0 +1,6 @@
+【系統提示：該章節在原始數據中暫未發現白話譯文區塊】
+
+Cover
+        
+            @page {padding: 0pt; margin:0pt}
+            body { text-align: center; padding:0pt; margin: 0pt; }

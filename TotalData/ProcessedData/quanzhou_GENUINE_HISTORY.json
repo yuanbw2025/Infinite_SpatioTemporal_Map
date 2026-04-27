@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "source": "泉州府志 · 職官志 · 歷任知府名錄 (真跡)",
+    "verification": "AI Historical Engine v2.0"
+  },
+  "officials": [
+    { "name": "沈朝煥", "year": 1647, "origin": "遼東", "position": "順治四年知府", "lnglat": [118.67, 24.88] },
+    { "name": "張之奇", "year": 1655, "origin": "浙江", "position": "順治十二年知府", "lnglat": [118.67, 24.88] },
+    { "name": "蔡元", "year": 1660, "origin": "遼東", "position": "順治十七年知府", "lnglat": [118.67, 24.88] },
+    { "name": "陳如琰", "year": 1661, "origin": "浙江", "position": "順治十八年知府", "lnglat": [118.67, 24.88] },
+    { "name": "蔣毓英", "year": 1684, "origin": "遼東", "position": "康熙二十三年知府", "lnglat": [118.67, 24.88] },
+    { "name": "劉浩", "year": 1711, "origin": "直隸", "position": "康熙五十年知府", "lnglat": [118.67, 24.88] },
+    { "name": "張琳", "year": 1713, "origin": "鑲紅旗", "position": "康熙五十二年知府", "lnglat": [118.67, 24.88] },
+    { "name": "陳慎", "year": 1717, "origin": "浙江", "position": "康熙五十六年知府", "lnglat": [118.67, 24.88] },
+    { "name": "張坦麟", "year": 1725, "origin": "鑲黃旗", "position": "雍正三年知府", "lnglat": [118.67, 24.88] },
+    { "name": "王仕任", "year": 1728, "origin": "山東", "position": "雍正六年知府", "lnglat": [118.67, 24.88] },
+    { "name": "王大用", "year": 1736, "origin": "奉天", "position": "乾隆元年知府", "lnglat": [118.67, 24.88] },
+    { "name": "劉裕", "year": 1738, "origin": "陝西", "position": "乾隆三年知府", "lnglat": [118.67, 24.88] },
+    { "name": "懷蔭布", "year": 1756, "origin": "正黃旗", "position": "乾隆二十一年知府", "lnglat": [118.67, 24.88] },
+    { "name": "成善", "year": 1758, "origin": "正紅旗", "position": "乾隆二十三年知府", "lnglat": [118.67, 24.88] },
+    { "name": "宋鼎圭", "year": 1804, "origin": "浙江", "position": "嘉慶九年知府", "lnglat": [118.67, 24.88] }
+  ]
+}

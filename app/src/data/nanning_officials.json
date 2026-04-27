@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "source": "02_03嘉靖+南宁府志.pdf (Multi-point Timeseries)"
+  },
+  "data": [
+    {
+      "entity_id": "wang_01",
+      "name": "王守仁",
+      "entity_type": "person",
+      "color": [
+        255,
+        100,
+        100
+      ],
+      "events": [
+        {
+          "time_desc": "弘治十二年",
+          "year": 1499,
+          "location": "顺天府",
+          "action": "观政",
+          "lnglat": [
+            116.368799,
+            39.924787
+          ]
+        },
+        {
+          "time_desc": "正德元年",
+          "year": 1506,
+          "location": "修文县",
+          "action": "谪贬龙场驿",
+          "lnglat": [
+            106.59193,
+            26.843
+          ]
+        },
+        {
+          "time_desc": "正德十一年",
+          "year": 1516,
+          "location": "赣州府",
+          "action": "巡抚南赣",
+          "lnglat": [
+            114.93248,
+            25.847
+          ]
+        },
+        {
+          "time_desc": "嘉靖六年",
+          "year": 1527,
+          "location": "南宁府",
+          "action": "平叛驻节",
+          "lnglat": [
+            108.31222,
+            22.8058
+          ]
+        },
+        {
+          "time_desc": "嘉靖七年",
+          "year": 1528,
+          "location": "大余县",
+          "action": "病逝于青龙铺",
+          "lnglat": null
+        }
+      ]
+    },
+    {
+      "entity_id": "nanning_region",
+      "name": "南宁府",
+      "entity_type": "region",
+      "color": [
+        100,
+        200,
+        255
+      ],
+      "events": [
+        {
+          "time_desc": "贞观八年",
+          "year": 634,
+          "location": "邕州",
+          "action": "设邕州都督府",
+          "lnglat": [
+            108.312073,
+            22.806145
+          ]
+        },
+        {
+          "time_desc": "泰定元年",
+          "year": 1324,
+          "location": "南宁路",
+          "action": "改邕州路为南宁路",
+          "lnglat": [
+            108.31222,
+            22.8058
+          ]
+        },
+        {
+          "time_desc": "洪武元年",
+          "year": 1368,
+          "location": "南宁府",
+          "action": "改南宁路为南宁府",
+          "lnglat": [
+            108.31222,
+            22.8058
+          ]
+        }
+      ]
+    }
+  ]
+}
