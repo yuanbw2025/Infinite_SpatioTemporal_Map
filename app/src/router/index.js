@@ -1,15 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import MapView from '../views/MapView.vue'
+import UnifiedView from '../views/UnifiedView.vue'
 
 const routes = [
   {
     path: '/',
-    redirect: '/map'
+    name: 'Atlas',
+    component: UnifiedView
   },
   {
     path: '/map',
     name: 'Map',
-    component: MapView
+    component: () => import('../views/MapView.vue')
   },
   {
     path: '/library',

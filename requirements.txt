@@ -1,6 +1,23 @@
-# requirements.txt
-PyMuPDF==1.25.3
+# requirements.txt — Infinite SpatioTemporal Map
+
+# ---------- 文本提取 ----------
+PyMuPDF==1.25.3             # PDF 读取
+# ebooklib  # 暂未用上，epub 我们自己解 zip
+
+# ---------- LLM 通道 ----------
+openai>=1.40.0              # Poe API 使用 OpenAI 兼容协议
+tenacity>=8.2.0             # 重试（指数退避）
+python-dotenv>=1.0.0        # 加载 .env
+
+# ---------- 校验 ----------
 pydantic>=2.7.0
 jsonschema>=4.21.0
-litellm>=1.35.0
-python-dotenv>=1.0.0
+
+# ---------- GIS ----------
+pyshp>=2.3.1                # 读取 CHGIS shapefile 的 dbf
+
+# ---------- 体验 ----------
+tqdm>=4.66.0                # 进度条
+
+# ---------- 备用（保留旧依赖，不打断现有脚本） ----------
+# litellm>=1.35.0      # v2 管线已不再依赖 litellm，直接用 openai SDK 指向 Poe

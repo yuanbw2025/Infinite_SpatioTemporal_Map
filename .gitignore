@@ -22,7 +22,18 @@ core/app/dist/
 .env*
 !.env.example
 
+# --- [4.1] LLM 缓存 / Python 垃圾 ---
+.llm_cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
+
 # --- [5] 文档规则 ---
 doc_dev/project_communication.md
 # (备忘录很大，可以考虑只跟踪核心规划文档)
 # doc_dev/development_master_plan.md
+
+# --- [6] 下载的原始压缩包 (可由脚本重新下载，不入库) ---
+TotalData/GISData/*.zip

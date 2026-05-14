@@ -54,7 +54,7 @@ async function initGraph() {
 
     const topEntities = Array.from(entityStats.entries())
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 100) // 增加到 100 个节点
+      .slice(0, 50) // 控制节点数量，防止视觉混乱
     
     const topEntitySet = new Set(topEntities.map(e => e[0]))
     
@@ -69,7 +69,7 @@ async function initGraph() {
     const links = []
     connections.forEach((count, pair) => {
       const [source, target] = pair.split('|')
-      if (topEntitySet.has(source) && topEntitySet.has(target) && count > 1) {
+      if (topEntitySet.has(source) && topEntitySet.has(target) && count >= 3) {
         links.push({
           source,
           target,
@@ -107,7 +107,7 @@ async function initGraph() {
         categories: [{ name: '人物' }, { name: '地理' }],
         roam: true,
         label: { show: true, position: 'right', color: '#f0d080', fontSize: 10 },
-        force: { repulsion: 1200, edgeLength: 120, gravity: 0.1 },
+        force: { repulsion: 1200, edgeLength: 120, gravity: 0.15, friction: 0.6, layoutAnimation: true },
         lineStyle: { color: 'rgba(240, 208, 128, 0.2)', curveness: 0.1 },
         emphasis: { focus: 'adjacency', lineStyle: { width: 4 } }
       }]
@@ -116,7 +116,16 @@ async function initGraph() {
     chartInstance.value = echarts.init(chartRef.value)
     chartInstance.value.setOption(option)
 
-    // 3. 处理点击事件：学术溯源
+    // 3. 5秒后自动冻结布局，防止一直抖动
+    setTimeout(() => {
+      if (chartInstance.value) {
+        chartInstance.value.setOption({
+          series: [{ force: { friction: 0.95, layoutAnimation: false } }]
+        })
+      }
+    }, 5000)
+
+    // 4. 处理点击事件：学术溯源
     chartInstance.value.on('click', (params) => {
       if (params.dataType === 'node') {
         const name = params.name

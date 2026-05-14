@@ -1,150 +1,58 @@
 <script setup>
-import { ref, onMounted, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { ref, onMounted, computed } from 'vue'
 import BookReader from '../components/BookReader.vue'
 
-const route = useRoute()
+const bookData = ref(null)
+const loading = ref(true)
+const error = ref('')
+const activeEntityName = ref(null)
+const hoveredParagraphIdx = ref(-1)
+const selectedEntity = ref(null)
 
-const traditionalText = ref('')
-const simplifiedText = ref('')
-const photocopyUrl = ref('')
-const chapters = ref([])
-const selectedChapterIndex = ref(0)
-
-const hoveredSentenceIdx = ref(-1)
-
-async function loadData() {
-  const bookId = route.query.book
-  const targetFile = route.query.file
-  
-  if (bookId === 'ershisishe') {
-    try {
-      const response = await fetch('/data/ershisi_index.json')
-      const indexData = await response.json()
-      chapters.value = indexData.catalog
-      
-      if (chapters.value.length > 0) {
-        // 如果 URL 指定了文件名，则跳转到该章，否则默认加载第 0 章
-        let targetIdx = 0
-        if (targetFile) {
-          const found = chapters.value.findIndex(ch => ch.real_file === targetFile)
-          if (found !== -1) targetIdx = found
-        }
-        await loadChapter(targetIdx)
-      }
-    } catch (err) {
-      console.error('Failed to load ershisi index:', err)
-    }
-  } else {
-    traditionalText.value = "【系統提示：正向數據庫請求該典籍之全量原文...】"
-    simplifiedText.value = "【系統提示：正向數據庫請求該典籍之全量譯文...】"
-    photocopyUrl.value = ''
-    chapters.value = []
-  }
-}
-
-async function loadChapter(index) {
-  selectedChapterIndex.value = index
-  const chapter = chapters.value[index]
-  const fileName = chapter.real_file
-  
+async function loadXiangyuData() {
+  loading.value = true
+  error.value = ''
   try {
-    // 同时发起两个请求，分别获取原文和译文
-    const [tradRes, simpRes] = await Promise.all([
-      fetch(`/data/ershisi_trad/${fileName}`),
-      fetch(`/data/ershisi_simp/${fileName}`)
-    ])
-    
-    if (tradRes.ok) traditionalText.value = await tradRes.text()
-    if (simpRes.ok) simplifiedText.value = await simpRes.text()
-    else simplifiedText.value = "【系統提示：該章節暫無白話譯文數據】"
-    
+    const res = await fetch('/data/xiangyu_annotated.json')
+    if (!res.ok) throw new Error(`HTTP ${res.status}`)
+    bookData.value = await res.json()
   } catch (err) {
-    console.error('Failed to load chapter text split:', err)
+    console.error('加载项羽本纪数据失败:', err)
+    error.value = '数据加载失败: ' + err.message
+  } finally {
+    loading.value = false
   }
 }
 
-onMounted(loadData)
-watch(() => route.query.book, loadData)
+onMounted(loadXiangyuData)
 
-const showPhotocopy = ref(true)
+const paragraphs = computed(() => {
+  if (!bookData.value || !bookData.value.paragraphs) return []
+  return bookData.value.paragraphs
+})
 
-function onSentenceHover(idx) {
-  hoveredSentenceIdx.value = idx
+const progressText = computed(() => {
+  if (!bookData.value) return ''
+  const done = bookData.value.paragraph_count_done || 0
+  const total = bookData.value.paragraph_count_total || 0
+  return `${done}/${total} 段已标注`
+})
+
+const tamperStats = computed(() => {
+  if (!paragraphs.value.length) return { ok: 0, fail: 0 }
+  const ok = paragraphs.value.filter(p => p.tamper_ok === true).length
+  const fail = paragraphs.value.filter(p => p.tamper_ok === false).length
+  return { ok, fail }
+})
+
+function onEntityClick(entity) {
+  selectedEntity.value = entity
+  activeEntityName.value = entity.name
 }
 
-// Sync Scroll Logic
-const photocopyContainerRef = ref(null)
-const tradReaderRef = ref(null)
-const simpReaderRef = ref(null)
-let isSyncing = false
-
-function handleReaderScroll(percentage, source) {
-  if (isSyncing) return
-  isSyncing = true
-  
-  requestAnimationFrame(() => {
-    if (source === 'trad') {
-      if (simpReaderRef.value) simpReaderRef.value.scrollTop = (simpReaderRef.value.scrollHeight - simpReaderRef.value.clientHeight) * percentage
-      if (photocopyContainerRef.value) photocopyContainerRef.value.scrollTop = (photocopyContainerRef.value.scrollHeight - photocopyContainerRef.value.clientHeight) * percentage
-    } else if (source === 'simp') {
-      if (tradReaderRef.value) tradReaderRef.value.scrollTop = (tradReaderRef.value.scrollHeight - tradReaderRef.value.clientHeight) * percentage
-      if (photocopyContainerRef.value) photocopyContainerRef.value.scrollTop = (photocopyContainerRef.value.scrollHeight - photocopyContainerRef.value.clientHeight) * percentage
-    }
-    isSyncing = false
-  })
-}
-
-// Zoom & Drag Logic
-const scale = ref(1)
-const translateX = ref(0)
-const translateY = ref(0)
-const isDragging = ref(false)
-const lastMousePos = ref({ x: 0, y: 0 })
-
-function handleWheel(e) {
-  e.preventDefault()
-  if (e.ctrlKey) {
-    // Pinch to zoom (Mac Trackpad)
-    const delta = e.deltaY > 0 ? 0.95 : 1.05
-    const newScale = scale.value * delta
-    if (newScale > 0.2 && newScale < 10) {
-      scale.value = newScale
-    }
-  } else {
-    // Two-finger pan (Mac Trackpad)
-    translateX.value -= e.deltaX
-    translateY.value -= e.deltaY
-  }
-}
-
-function startDrag(e) {
-  isDragging.value = true
-  lastMousePos.value = { x: e.clientX, y: e.clientY }
-}
-
-function onDrag(e) {
-  if (!isDragging.value) return
-  const dx = e.clientX - lastMousePos.value.x
-  const dy = e.clientY - lastMousePos.value.y
-  translateX.value += dx
-  translateY.value += dy
-  lastMousePos.value = { x: e.clientX, y: e.clientY }
-}
-
-function stopDrag() {
-  isDragging.value = false
-}
-
-function resetZoom() {
-  scale.value = 1
-  translateX.value = 0
-  translateY.value = 0
-}
-
-function syncScroll(sourceEl, sourceName) {
-  const percentage = sourceEl.scrollTop / (sourceEl.scrollHeight - sourceEl.clientHeight || 1)
-  handleReaderScroll(percentage, sourceName)
+function clearSelection() {
+  selectedEntity.value = null
+  activeEntityName.value = null
 }
 </script>
 
@@ -153,82 +61,51 @@ function syncScroll(sourceEl, sourceName) {
     <div class="toolbar">
       <div class="title-section">
         <h2>📖 典籍精读</h2>
-        <span class="book-tag" v-if="route.query.book === 'ershisishe'">全量正史數據庫</span>
+        <span class="book-tag" v-if="bookData">{{ bookData.work }}</span>
+        <span class="chapter-tag" v-if="bookData">{{ bookData.chapter }}</span>
       </div>
-      <div class="controls">
-        <div class="chapter-selector" v-if="chapters.length > 0">
-          <span class="label">卷冊導航：</span>
-          <select v-model="selectedChapterIndex" @change="loadChapter(selectedChapterIndex)">
-            <option v-for="(ch, index) in chapters" :key="index" :value="index">
-              第 {{ index + 1 }} 卷 - {{ ch.chapter }} ({{ ch.source.split('/').pop() }})
-            </option>
-          </select>
-        </div>
-        <label class="toggle-label"><input type="checkbox" v-model="showPhotocopy" /> 顯示影印本</label>
+      <div class="stats-section" v-if="bookData">
+        <span class="stat-badge progress">{{ progressText }}</span>
+        <span class="stat-badge ok">✓ {{ tamperStats.ok }} 通过</span>
+        <span class="stat-badge fail" v-if="tamperStats.fail > 0">✗ {{ tamperStats.fail }} 异常</span>
       </div>
     </div>
-
-    <div class="columns-wrapper">
-      <!-- 影印本列 -->
-      <div class="column photocopy-col" v-if="showPhotocopy">
-        <div class="col-header">
-          影印本 (原貌)
-          <button class="reset-btn" @click="resetZoom">重置视图</button>
-        </div>
-        <div 
-          class="col-content photocopy-content" 
-          ref="photocopyContainerRef" 
-          @scroll="handlePhotocopyScroll"
-          @wheel="handleWheel"
-          @mousedown="startDrag"
-          @mousemove="onDrag"
-          @mouseup="stopDrag"
-          @mouseleave="stopDrag"
-        >
-          <img 
-            v-if="photocopyUrl" 
-            :src="photocopyUrl" 
-            class="photocopy-img" 
-            alt="影印本" 
-            :style="{ transform: `scale(${scale}) translate(${translateX / scale}px, ${translateY / scale}px)` }"
-          />
-          <div v-else class="photocopy-placeholder">
-            <p>此处展示古籍扫描件原图</p>
+    <div v-if="loading" class="loading-state">
+      <div class="spinner"></div>
+      <p>正在载入《史记·项羽本纪》标注数据…</p>
+    </div>
+    <div v-else-if="error" class="error-state">
+      <p>⚠️ {{ error }}</p>
+      <button @click="loadXiangyuData">重试</button>
+    </div>
+    <div v-else class="main-body">
+      <div class="reader-panel">
+        <BookReader
+          :title="bookData ? bookData.chapter : '正文'"
+          :paragraphs="paragraphs"
+          :active-entity-name="activeEntityName"
+          :hovered-paragraph-idx="hoveredParagraphIdx"
+          @entity-click="onEntityClick"
+          @sentence-hover="idx => hoveredParagraphIdx = idx"
+        />
+      </div>
+      <div class="entity-panel" :class="{ 'has-entity': selectedEntity }">
+        <div v-if="selectedEntity" class="entity-card">
+          <div class="entity-card-header">
+            <span class="entity-type-badge" :style="{ background: selectedEntity.style.color }">
+              {{ selectedEntity.style.label }}
+            </span>
+            <button class="close-btn" @click="clearSelection">✕</button>
+          </div>
+          <h3 class="entity-name">{{ selectedEntity.name }}</h3>
+          <p v-if="selectedEntity.sub" class="entity-sub">{{ selectedEntity.sub }}</p>
+          <p class="entity-content">原文：「{{ selectedEntity.content }}」</p>
+          <div class="entity-placeholder">
+            <p>📚 详细词条信息将在 Wiki 模块中展示</p>
           </div>
         </div>
-      </div>
-
-      <!-- 繁体原貌列 -->
-      <div class="column">
-        <div class="col-header">繁体原貌 (深度标注)</div>
-        <div 
-          class="col-content" 
-          ref="tradReaderRef" 
-          @scroll="e => handleReaderScroll(e.target.scrollTop / (e.target.scrollHeight - e.target.clientHeight || 1), 'trad')"
-        >
-          <BookReader 
-            :raw-text="traditionalText" 
-            :active-entity-name="route.query.entity"
-            :hovered-sentence-idx="hoveredSentenceIdx"
-            @sentence-hover="onSentenceHover"
-          />
-        </div>
-      </div>
-
-      <!-- 简体白话列 -->
-      <div class="column">
-        <div class="col-header">简体白话</div>
-        <div 
-          class="col-content" 
-          ref="simpReaderRef" 
-          @scroll="e => handleReaderScroll(e.target.scrollTop / (e.target.scrollHeight - e.target.clientHeight || 1), 'simp')"
-        >
-          <BookReader 
-            :raw-text="simplifiedText" 
-            :active-entity-name="route.query.entity"
-            :hovered-sentence-idx="hoveredSentenceIdx"
-            @sentence-hover="onSentenceHover"
-          />
+        <div v-else class="entity-empty">
+          <p>👈 点击正文中的彩色标注查看实体详情</p>
         </div>
       </div>
     </div>
@@ -236,171 +113,35 @@ function syncScroll(sourceEl, sourceName) {
 </template>
 
 <style scoped>
-.reader-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  background: #f5f0d6;
-}
-
-.toolbar {
-  height: 60px;
-  padding: 0 30px;
-  background: #e8e0c0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.title-section {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.toolbar h2 {
-  font-size: 20px;
-  color: #2c2825;
-  margin: 0;
-}
-
-.book-tag {
-  background: #8b4513;
-  color: #fff;
-  font-size: 12px;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-.controls {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
-
-.chapter-selector {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.chapter-selector .label {
-  font-weight: bold;
-  font-size: 14px;
-  color: #5d544b;
-}
-
-.chapter-selector select {
-  padding: 6px 12px;
-  border-radius: 6px;
-  border: 1px solid #c9bfa4;
-  background: #fdfaf0;
-  font-family: inherit;
-  font-size: 14px;
-  color: #2c2825;
-  cursor: pointer;
-  outline: none;
-  min-width: 280px;
-}
-
-.chapter-selector select:focus {
-  border-color: #8b4513;
-  box-shadow: 0 0 0 2px rgba(139, 69, 19, 0.1);
-}
-
-.toggle-label {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  color: #4a4238;
-  cursor: pointer;
-}
-
-.columns-wrapper {
-  flex: 1;
-  display: flex;
-  overflow: hidden;
-  background: #fdfaf0;
-}
-
-.column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid rgba(0, 0, 0, 0.05);
-  min-width: 0; /* 防止内容撑破布局 */
-}
-
-.column:last-child {
-  border-right: none;
-}
-
-.col-header {
-  height: 40px;
-  background: #f0ead2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: bold;
-  color: #5d544b;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.col-content {
-  flex: 1;
-  overflow-y: auto !important; /* 强制开启纵向滚动 */
-  padding: 20px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.photocopy-content {
-  background: #e3d9b1;
-  overflow: hidden; /* 防止内部滚动条干扰拖拽 */
-  text-align: center;
-  cursor: grab;
-}
-
-.photocopy-content:active {
-  cursor: grabbing;
-}
-
-.photocopy-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transform-origin: center center;
-  transition: transform 0.05s linear;
-}
-
-.reset-btn {
-  margin-left: 10px;
-  font-size: 10px;
-  padding: 2px 6px;
-  background: #c93756;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.photocopy-placeholder {
-  margin: 40px auto;
-  border: 2px dashed #c0b386;
-  padding: 40px;
-  color: #8c7f55;
-  border-radius: 8px;
-  width: 80%;
-}
-
-/* 覆盖 BookReader 内部的默认 header 样式，因为我们在外层有 col-header 了 */
-:deep(.reader-header) {
-  display: none;
-}
+.reader-container { width:100%; height:100%; display:flex; flex-direction:column; background:#f5f0d6; }
+.toolbar { height:56px; padding:0 24px; background:#e8e0c0; border-bottom:1px solid rgba(0,0,0,0.1); display:flex; align-items:center; justify-content:space-between; flex-shrink:0; }
+.title-section { display:flex; align-items:center; gap:12px; }
+.toolbar h2 { font-size:18px; color:#2c2825; margin:0; }
+.book-tag, .chapter-tag { font-size:12px; padding:2px 10px; border-radius:4px; font-weight:bold; }
+.book-tag { background:#8b4513; color:#fff; }
+.chapter-tag { background:rgba(139,69,19,0.15); color:#8b4513; }
+.stats-section { display:flex; gap:10px; }
+.stat-badge { font-size:12px; padding:3px 10px; border-radius:12px; font-weight:600; }
+.stat-badge.progress { background:rgba(0,100,140,0.1); color:#006488; }
+.stat-badge.ok { background:rgba(34,120,74,0.1); color:#22784a; }
+.stat-badge.fail { background:rgba(160,30,50,0.1); color:#a01e32; }
+.loading-state, .error-state { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px; color:#8c7f55; }
+.spinner { width:36px; height:36px; border:3px solid rgba(139,69,19,0.2); border-top-color:#8b4513; border-radius:50%; animation:spin 0.8s linear infinite; }
+@keyframes spin { to { transform:rotate(360deg); } }
+.error-state button { padding:8px 20px; background:#8b4513; color:#fff; border:none; border-radius:6px; cursor:pointer; font-size:14px; }
+.main-body { flex:1; display:flex; overflow:hidden; }
+.reader-panel { flex:1; min-width:0; display:flex; flex-direction:column; background:#fdfaf0; }
+.entity-panel { width:280px; background:#f8f4e8; border-left:1px solid rgba(0,0,0,0.06); padding:20px; overflow-y:auto; transition:width 0.2s; flex-shrink:0; }
+.entity-card { background:#fff; border-radius:8px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,0.06); }
+.entity-card-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+.entity-type-badge { color:#fff; font-size:11px; padding:2px 8px; border-radius:4px; font-weight:bold; }
+.close-btn { width:24px; height:24px; border:none; background:rgba(0,0,0,0.05); border-radius:50%; cursor:pointer; font-size:12px; color:#999; display:flex; align-items:center; justify-content:center; }
+.close-btn:hover { background:rgba(0,0,0,0.1); }
+.entity-name { font-size:20px; color:#2c2825; margin:0 0 6px 0; }
+.entity-sub { font-size:13px; color:#8c7f55; margin:0 0 12px 0; }
+.entity-content { font-size:14px; color:#5d544b; margin:0 0 16px 0; padding:8px 12px; background:rgba(139,69,19,0.04); border-radius:4px; line-height:1.8; }
+.entity-placeholder { padding:12px; background:rgba(0,100,140,0.04); border-radius:6px; text-align:center; }
+.entity-placeholder p { font-size:12px; color:#8c7f55; margin:0; }
+.entity-empty { height:100%; display:flex; align-items:center; justify-content:center; }
+.entity-empty p { font-size:13px; color:#bbb; text-align:center; }
 </style>
