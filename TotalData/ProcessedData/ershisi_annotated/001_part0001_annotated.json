@@ -1,0 +1,20 @@
+{
+  "chapter_id": "001_part0001",
+  "text": "Cover",
+  "annotated": "Cover",
+  "rounds": 3,
+  "tamper_ok": true,
+  "reflection": {
+    "status": "need_fix",
+    "tamper_check": "pass",
+    "issues": [
+      {
+        "type": "missing",
+        "where": "Cover",
+        "explain": "原文中未标注任何实体，可能遗漏了需要标注的内容。",
+        "suggested_patch": ""
+      }
+    ],
+    "summary": "标注完全缺失，需要重新标注原文中的实体。"
+  }
+}

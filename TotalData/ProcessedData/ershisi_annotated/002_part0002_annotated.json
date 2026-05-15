@@ -1,0 +1,13 @@
+{
+  "chapter_id": "002_part0002",
+  "text": "书名页",
+  "annotated": "书名页",
+  "rounds": 1,
+  "tamper_ok": true,
+  "reflection": {
+    "status": "ok",
+    "tamper_check": "pass",
+    "issues": [],
+    "summary": "原文与标注版完全一致，无需修正。"
+  }
+}
