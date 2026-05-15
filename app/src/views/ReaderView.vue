@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, computed, watch } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import BookReader from '../components/BookReader.vue'
 
 const bookData = ref(null)
@@ -12,6 +12,31 @@ const hoveredParagraphIdx = ref(-1)
 const selectedEntity = ref(null)
 const currentFile = ref('007_项羽本纪')
 const showChapterList = ref(false)
+
+// 实体全文检索
+const occurrenceIndex = ref(null)   // 懒加载，首次点击才 fetch
+const occurrenceLoading = ref(false)
+const entityOccurrences = ref([])   // 当前实体的出现列表
+const occurrencePage = ref(0)
+const PAGE_SIZE = 10
+
+async function ensureOccurrenceIndex() {
+  if (occurrenceIndex.value) return
+  occurrenceLoading.value = true
+  try {
+    const res = await fetch('/data/entity_occurrences.json')
+    occurrenceIndex.value = (await res.json()).entities
+  } catch (e) {
+    console.warn('实体索引加载失败:', e)
+  } finally {
+    occurrenceLoading.value = false
+  }
+}
+
+const occurrencePageItems = computed(() =>
+  entityOccurrences.value.slice(occurrencePage.value * PAGE_SIZE, (occurrencePage.value + 1) * PAGE_SIZE)
+)
+const occurrenceTotalPages = computed(() => Math.ceil(entityOccurrences.value.length / PAGE_SIZE))
 
 async function loadIndex() {
   try {
@@ -55,15 +80,28 @@ const chaptersByType = computed(() => {
   return groups
 })
 
-function onEntityClick(entity) {
+async function onEntityClick(entity) {
   selectedEntity.value = entity
   activeEntityName.value = entity.name
   emit('entity-select', entity)
+  // 加载全文引用
+  entityOccurrences.value = []
+  occurrencePage.value = 0
+  await ensureOccurrenceIndex()
+  if (occurrenceIndex.value) {
+    const entry = occurrenceIndex.value[entity.name]
+    entityOccurrences.value = entry ? entry.occurrences : []
+  }
 }
 
 function clearSelection() {
   selectedEntity.value = null
   activeEntityName.value = null
+  entityOccurrences.value = []
+}
+
+function jumpToChapter(occ) {
+  loadChapter(occ.chapter)
 }
 </script>
 
@@ -133,8 +171,35 @@ function clearSelection() {
           <h3 class="entity-name">{{ selectedEntity.name }}</h3>
           <p v-if="selectedEntity.sub" class="entity-sub">{{ selectedEntity.sub }}</p>
           <p class="entity-content">原文：「{{ selectedEntity.content }}」</p>
-          <div class="entity-placeholder">
-            <p>📚 详细词条信息将在 Wiki 模块中展示</p>
+
+          <!-- 全文出现记录 -->
+          <div class="occurrences-section">
+            <div class="occ-header">
+              <span v-if="occurrenceLoading" class="occ-loading">索引载入中…</span>
+              <span v-else-if="entityOccurrences.length" class="occ-count">
+                史记全文出现 <b>{{ entityOccurrences.length }}</b> 处
+              </span>
+              <span v-else class="occ-count">全文未收录</span>
+              <div v-if="occurrenceTotalPages > 1" class="occ-pager">
+                <button :disabled="occurrencePage === 0" @click="occurrencePage--">‹</button>
+                <span>{{ occurrencePage + 1 }}/{{ occurrenceTotalPages }}</span>
+                <button :disabled="occurrencePage >= occurrenceTotalPages - 1" @click="occurrencePage++">›</button>
+              </div>
+            </div>
+            <div v-if="!occurrenceLoading" class="occ-list">
+              <div
+                v-for="occ in occurrencePageItems" :key="occ.chapter + occ.pid"
+                class="occ-item"
+                :class="{ 'occ-current': occ.chapter === currentFile }"
+                @click="jumpToChapter(occ)"
+              >
+                <div class="occ-meta">
+                  <span class="occ-chapter">{{ occ.title }}</span>
+                  <span class="occ-pid">§{{ occ.pid }}</span>
+                </div>
+                <p class="occ-snippet">{{ occ.snippet }}</p>
+              </div>
+            </div>
           </div>
         </div>
         <div v-else class="entity-empty">
@@ -189,4 +254,20 @@ function clearSelection() {
 .entity-placeholder p { font-size:12px; color:#8c7f55; margin:0; }
 .entity-empty { height:100%; display:flex; align-items:center; justify-content:center; }
 .entity-empty p { font-size:13px; color:#bbb; text-align:center; }
+.occurrences-section { margin-top:16px; border-top:1px solid rgba(0,0,0,0.06); padding-top:12px; }
+.occ-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+.occ-count { font-size:12px; color:#8c7f55; }
+.occ-count b { color:#8b4513; }
+.occ-loading { font-size:12px; color:#aaa; }
+.occ-pager { display:flex; align-items:center; gap:4px; font-size:12px; color:#8c7f55; }
+.occ-pager button { border:none; background:rgba(139,69,19,0.08); border-radius:3px; width:20px; height:20px; cursor:pointer; font-size:14px; display:flex; align-items:center; justify-content:center; }
+.occ-pager button:disabled { opacity:0.3; cursor:default; }
+.occ-list { display:flex; flex-direction:column; gap:6px; }
+.occ-item { padding:8px 10px; border-radius:6px; background:rgba(139,69,19,0.03); border:1px solid rgba(139,69,19,0.1); cursor:pointer; transition:all 0.15s; }
+.occ-item:hover { background:rgba(139,69,19,0.08); border-color:rgba(139,69,19,0.25); }
+.occ-item.occ-current { background:rgba(139,69,19,0.1); border-color:rgba(139,69,19,0.3); }
+.occ-meta { display:flex; justify-content:space-between; align-items:center; margin-bottom:3px; }
+.occ-chapter { font-size:11px; font-weight:600; color:#8b4513; }
+.occ-pid { font-size:10px; color:#aaa; }
+.occ-snippet { font-size:12px; color:#5d544b; margin:0; line-height:1.6; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 </style>
