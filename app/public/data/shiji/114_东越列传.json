@@ -1,0 +1,71 @@
+{
+  "work": "史记",
+  "chapter": "东越列传",
+  "chapter_file": "114_东越列传",
+  "chapter_type": "列传",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 12,
+  "paragraph_count_done": 12,
+  "paragraphs": [
+    {
+      "pid": "1",
+      "text": "闽越王无诸及越东海王摇者，其先皆越王句践之後也，姓驺氏。秦已并天下，皆废为君长，以其地为闽中郡。及诸侯畔秦，无诸、摇率越归鄱阳令吴芮，所谓鄱君者也，从诸侯⟦◈灭⟧秦。当是之时，项籍主命，弗王，以故不附楚。汉⟦◈击⟧项籍，无诸、摇率越人佐汉。汉五年，复立无诸为闽越王，王闽中故地，都东冶。孝惠三年，举高帝时越功，曰闽君摇功多，其民便附，乃立摇为东海王，都东瓯，世俗号为东瓯王。",
+      "annotated": "<off>闽越王</off><p>无诸</p>及<tribe>越</tribe><off>东海王</off><p name=\"东海王摇\">摇</p>者，其先皆<off>越王</off><p>句践</p>之後也，姓<clan>驺氏</clan>。<state>秦</state>已并天下，皆<law>废</law>为<off>君长</off>，以其地为<loc>闽中郡</loc>。及<role>诸侯</role><law>畔</law><state>秦</state>，<p>无诸</p>、<p name=\"东海王摇\">摇</p>率<tribe>越</tribe>归<off>鄱阳令</off><p>吴芮</p>，所谓<off>鄱君</off>者也，从<role>诸侯</role>⟦◈灭⟧<state>秦</state>。当是之时，<p>项籍</p>主命，弗<law>王</law>，以故不<law>附</law><state>楚</state>。<state>汉</state>⟦◈击⟧<p>项籍</p>，<p>无诸</p>、<p name=\"东海王摇\">摇</p>率<tribe>越</tribe>人佐<state>汉</state>。<state>汉</state><time>五年</time>，复<law>立</law><p>无诸</p>为<off>闽越王</off>，<law>王</law><loc>闽中</loc>故地，都<loc>东冶</loc>。<time>孝惠三年</time>，举<p>高帝</p>时<tribe>越</tribe>功，曰<off>闽君</off><p name=\"东海王摇\">摇</p>功多，其<role>民</role>便附，乃<law>立</law><p name=\"东海王摇\">摇</p>为<off>东海王</off>，都<loc>东瓯</loc>，世俗号为<off>东瓯王</off>。"
+    },
+    {
+      "pid": "2",
+      "text": "後数世，至孝景三年，吴王濞反，欲从闽越，闽越未肯行，独东瓯从吴。及吴⟦◈破⟧，东瓯受汉购，杀吴王丹徒，以故皆得不诛，归国。",
+      "annotated": "後<time name=\"时长\">数世</time>，至<time>孝景三年</time>，<off>吴王</off><p name=\"刘濞\">濞</p><law>反</law>，欲从<state>闽越</state>，<state>闽越</state>未肯行，独<state>东瓯</state>从<state>吴</state>。及<state>吴</state>⟦◈破⟧，<state>东瓯</state>受<state>汉</state>购，<vact>杀</vact><off>吴王</off><loc>丹徒</loc>，以故皆得不<vact>诛</vact>，归国。"
+    },
+    {
+      "pid": "3",
+      "text": "吴王子子驹亡走闽越，怨东瓯杀其父，常劝闽越⟦◈击⟧东瓯。至建元三年，闽越发兵⟦◈围⟧东瓯。东瓯食尽，困，且降，乃使人告急天子。天子问太尉田蚡，蚡对曰：“越人相⟦◈攻⟧⟦◈击⟧，固其常，又数反覆，不足以烦中国往救也。自秦时弃弗属。” 於是中大夫庄助诘蚡曰：“特患力弗能救，德弗能覆；诚能，何故弃之？且秦举咸阳而弃之，何乃越也！今小国以穷困来告急天子，天子弗振，彼当安所告愬？又何以子万国乎？” 上曰：“太尉未足与计。吾初即位，不欲出虎符发兵郡国。” 乃遣庄助以节发兵会稽。会稽太守欲距不为发兵，助乃斩一司马，谕意指，遂发兵浮海救东瓯。未至，闽越引兵而去。东瓯请举国徙中国，乃悉举众来，处江淮之间。",
+      "annotated": "<off>吴王</off><role>子</role><p>子驹</p>亡走<state>闽越</state>，怨<state>东瓯</state><vact>杀</vact>其<role>父</role>，常劝<state>闽越</state>⟦◈击⟧<state>东瓯</state>。至<time>建元三年</time>，<state>闽越</state>发兵⟦◈围⟧<state>东瓯</state>。<state>东瓯</state>食尽，困，且降，乃使人告急<role>天子</role>。<role>天子</role>问<off>太尉</off><p>田蚡</p>，<p name=\"田蚡\">蚡</p>对曰：“<tribe>越</tribe>人相⟦◈攻⟧⟦◈击⟧，固其常，又数<law>反</law>覆，不足以烦<loc>中国</loc>往救也。自<state>秦</state>时<law>弃</law>弗属。” 於是<off>中大夫</off><p>庄助</p>诘<p name=\"田蚡\">蚡</p>曰：“特患力弗能救，德弗能覆；诚能，何故<law>弃</law>之？且<state>秦</state>举<loc>咸阳</loc>而<law>弃</law>之，何乃<tribe>越</tribe>也！今<role>小国</role>以穷困来告急<role>天子</role>，<role>天子</role>弗振，彼当安所告愬？又何以<role>子</role><qty>万国</qty>乎？” <role>上</role>曰：“<off>太尉</off>未足与计。吾初即位，不欲出<art>虎符</art>发兵郡国。” 乃遣<p>庄助</p>以<art>节</art>发兵<loc>会稽</loc>。<loc>会稽</loc><off>太守</off>欲距不为发兵，<p name=\"庄助\">助</p>乃<vact>斩</vact>一<off>司马</off>，谕意指，遂发兵浮海救<state>东瓯</state>。未至，<state>闽越</state>引兵而去。<state>东瓯</state>请举国<law>徙</law><loc>中国</loc>，乃悉举众来，处<loc>江淮</loc>之间。"
+    },
+    {
+      "pid": "4",
+      "text": "至建元六年，闽越⟦◈击⟧南越。南越守天子约，不敢擅发兵⟦◈击⟧而以闻。上遣大行王恢出豫章，大农韩安国出会稽，皆为将军。兵未逾岭，闽越王郢发兵距险。其弟馀善乃与相、宗族谋曰：”王以擅发兵⟦◈击⟧南越，不请，故天子兵来诛。今汉兵众彊，今即幸胜之，後来益多，终⟦◈灭⟧国而止。今杀王以谢天子。天子听，罢兵，固一国完；不听，乃力⟦◈战⟧；不胜，即亡入海。” 皆曰”善”。即鏦杀王，使使奉其头致大行。大行曰：”所为来者诛王。今王头至，谢罪，不⟦◈战⟧而耘，利莫大焉。” 乃以便宜案兵告大农军，而使使奉王头驰报天子。诏罢两将兵，曰：“郢等首恶，独无诸孙繇君丑不与谋焉。” 乃使郎中将立丑为越繇王，奉闽越先祭祀。",
+      "annotated": "至<time>建元六年</time>，<state>闽越</state>⟦◈击⟧<state>南越</state>。<state>南越</state>守<role>天子</role>约，不敢擅发兵⟦◈击⟧而以闻。<role>上</role>遣<off>大行</off><p>王恢</p>出<loc>豫章</loc>，<off>大农</off><p>韩安国</p>出<loc>会稽</loc>，皆为<off>将军</off>。兵未逾岭，<off>闽越王</off><p name=\"闽越王郢\">郢</p>发兵距险。其<role>弟</role><p>馀善</p>乃与<off>相</off>、<role>宗族</role>谋曰：”<role>王</role>以擅发兵⟦◈击⟧<state>南越</state>，不请，故<role>天子</role>兵来<vact>诛</vact>。今<state>汉</state>兵众彊，今即幸胜之，後来益多，终⟦◈灭⟧国而止。今<vact>杀</vact><role>王</role>以谢<role>天子</role>。<role>天子</role>听，罢兵，固一国完；不听，乃力⟦◈战⟧；不胜，即亡入海。” 皆曰”善”。即鏦<vact>杀</vact><role>王</role>，使使奉其头致<off>大行</off>。<off>大行</off>曰：”所为来者<vact>诛</vact><role>王</role>。<role>今王</role>头至，谢罪，不⟦◈战⟧而耘，利莫大焉。” 乃以便宜案兵告<off>大农</off>军，而使使奉<role>王</role>头驰报<role>天子</role>。诏<law>罢</law>两将兵，曰：“<p name=\"闽越王郢\">郢</p>等首恶，独<p>无诸</p><role>孙</role><off>繇君</off><p name=\"繇君丑\">丑</p>不与谋焉。” 乃使<off>郎中将</off><law>立</law><p name=\"繇君丑\">丑</p>为<off>越繇王</off>，奉<state>闽越</state>先<sys>祭祀</sys>。"
+    },
+    {
+      "pid": "5",
+      "text": "馀善已杀郢，威行於国，国民多属，窃自立为王。繇王不能矫其众持正。天子闻之，为馀善不足复兴师，曰：“馀善数与郢谋乱，而後首诛郢，师得不劳。” 因立馀善为东越王，与繇王并处。",
+      "annotated": "<p>馀善</p>已<vact>杀</vact><p name=\"闽越王郢\">郢</p>，威行於国，国<role>民</role>多属，窃自<law>立</law>为王。<off>繇王</off>不能矫其众持正。<role>天子</role>闻之，为<p>馀善</p>不足复兴师，曰：“<p>馀善</p>数与<p name=\"闽越王郢\">郢</p>谋乱，而後首<vact>诛</vact><p name=\"闽越王郢\">郢</p>，师得不劳。” 因<law>立</law><p>馀善</p>为<off>东越王</off>，与<off>繇王</off>并处。"
+    },
+    {
+      "pid": "6",
+      "text": "至元鼎五年，南越反，东越王馀善上书，请以卒八千人从楼船将军⟦◈击⟧吕嘉等。兵至揭扬，以海风波为解，不行，持两端，阴使南越。及汉⟦◈破⟧番禺，不至。是时楼船将军杨仆使使上书，原便引兵⟦◈击⟧东越。上曰士卒劳倦，不许，罢兵，令诸校屯豫章梅领待命。",
+      "annotated": "至<time>元鼎五年</time>，<state>南越</state><law>反</law>，<off>东越王</off><p>馀善</p>上书，请以卒<qty>八千人</qty>从<off>楼船将军</off>⟦◈击⟧<p>吕嘉</p>等。兵至<loc>揭扬</loc>，以海风波为解，不行，持两端，阴使<state>南越</state>。及<state>汉</state>⟦◈破⟧<loc>番禺</loc>，不至。是时<off>楼船将军</off><p>杨仆</p>使使上书，原便引兵⟦◈击⟧<state>东越</state>。<role>上</role>曰<role>士卒</role>劳倦，不许，<law>罢</law>兵，令诸<off>校</off>屯<loc>豫章</loc><loc>梅领</loc>待命。"
+    },
+    {
+      "pid": "7",
+      "text": "元鼎六年秋，馀善闻楼船请诛之，汉兵临境，且往，乃遂反，发兵距汉道。号将军驺力等为“吞汉将军”，入白沙、武林、梅岭，杀汉三校尉。是时汉使大农张成、故山州侯齿将屯，弗敢⟦◈击⟧，卻就便处，皆坐畏懦诛。",
+      "annotated": "<time>元鼎六年秋</time>，<p>馀善</p>闻<off>楼船</off>请<vact>诛</vact>之，<state>汉</state>兵临境，且往，乃遂<law>反</law>，发兵距<state>汉</state>道。号<off>将军</off><p>驺力</p>等为“<off>吞汉将军</off>”，入<loc>白沙</loc>、<loc>武林</loc>、<loc>梅岭</loc>，<vact>杀</vact><state>汉</state>三<off>校尉</off>。是时<state>汉</state>使<off>大农</off><p>张成</p>、故<off>山州侯</off><p name=\"山州侯齿\">齿</p>将屯，弗敢⟦◈击⟧，卻就便处，皆坐畏懦<vact>诛</vact>。"
+    },
+    {
+      "pid": "8",
+      "text": "馀善刻“武帝” 玺自立，诈其民，为妄言。天子遣横海将军韩说出句章，浮海从东方往；楼船将军杨仆出武林；中尉王温舒出梅岭；越侯为戈船、下濑将军，出若邪、白沙。元封元年冬，咸入东越。东越素发兵距险，使徇北将军守武林，⟦◈败⟧楼船军数校尉，杀长吏。楼船将军率钱唐辕终古斩徇北将军，为御兒侯。自兵未往。",
+      "annotated": "<p>馀善</p>刻“<p>武帝</p>” <art>玺</art><vpol>自立</vpol>，诈其<role>民</role>，为妄言。<role>天子</role>遣<off>横海将军</off><p>韩说</p>出<loc>句章</loc>，浮海从东方往；<off>楼船将军</off><p>杨仆</p>出<loc>武林</loc>；<off>中尉</off><p>王温舒</p>出<loc>梅岭</loc>；<off>越侯</off>为<off>戈船</off>、<off>下濑将军</off>，出<loc>若邪</loc>、<loc>白沙</loc>。<time>元封元年冬</time>，咸入<state>东越</state>。<state>东越</state>素发兵距险，使<off>徇北将军</off>守<loc>武林</loc>，⟦◈败⟧<off>楼船</off>军数<off>校尉</off>，<vact>杀</vact><off>长吏</off>。<off>楼船将军</off>率<loc>钱唐</loc><p>辕终古</p><vact>斩</vact><off>徇北将军</off>，为<off>御兒侯</off>。自兵未往。"
+    },
+    {
+      "pid": "9",
+      "text": "故越衍侯吴阳前在汉，汉使归谕馀善，馀善弗听。及横海将军先至，越衍侯吴阳以其邑七百人反，⟦◈攻⟧越军於汉阳。从建成侯敖，与其率，从繇王居股谋曰：“馀善首恶，劫守吾属。今汉兵至，众彊，计杀馀善，自归诸将，傥幸得脱。” 乃遂俱杀馀善，以其众降横海将军，故封繇王居股为东成侯，万户；封建成侯敖为开陵侯；封越衍侯吴阳为北石侯；封横海将军说为案道侯；封横海校尉福为缭嫈侯。福者，成阳共王子，故为海常侯，坐法失侯。旧从军无功，以宗室故侯。诸将皆无成功，莫封。东越将多军，汉兵至，弃其军降，封为无锡侯。",
+      "annotated": "故<off>越衍侯</off><p>吴阳</p>前在<state>汉</state>，<state>汉</state>使归谕<p>馀善</p>，<p>馀善</p>弗听。及<off>横海将军</off>先至，<off>越衍侯</off><p>吴阳</p>以其邑<qty>七百人</qty><law>反</law>，⟦◈攻⟧<tribe>越</tribe>军於<loc>汉阳</loc>。从<off>建成侯</off><p name=\"建成侯敖\">敖</p>，与其<off>率</off>，从<off>繇王</off><p>居股</p>谋曰：“<p>馀善</p>首恶，劫守吾属。今<state>汉</state>兵至，<role>众</role>彊，计<vact>杀</vact><p>馀善</p>，自归诸将，傥幸得脱。” 乃遂俱<vact>杀</vact><p>馀善</p>，以其<role>众</role><law>降</law><off>横海将军</off>，故<law>封</law><off>繇王</off><p>居股</p>为<off>东成侯</off>，<qty>万户</qty>；<law>封</law><off>建成侯</off><p name=\"建成侯敖\">敖</p>为<off>开陵侯</off>；<law>封</law><off>越衍侯</off><p>吴阳</p>为<off>北石侯</off>；<law>封</law><off>横海将军</off><p name=\"韩说\">说</p>为<off>案道侯</off>；<law>封</law><off>横海校尉</off><p name=\"横海校尉福\">福</p>为<off>缭嫈侯</off>。<p name=\"横海校尉福\">福</p>者，<loc>成阳</loc><p name=\"成阳共王\">共王</p><role>子</role>，故为<off>海常侯</off>，<law>坐法</law><law>失</law>侯。旧从军无功，以<role>宗室</role>故侯。诸将皆无成功，莫<law>封</law>。<state>东越</state><off>将</off><p>多军</p>，<state>汉</state>兵至，<law>弃</law>其军<law>降</law>，<law>封</law>为<off>无锡侯</off>。"
+    },
+    {
+      "pid": "10",
+      "text": "於是天子曰东越狭多阻，闽越悍，数反覆，诏军吏皆将其民徙处江淮间。东越地遂虚。 ::: 太史公曰",
+      "annotated": "於是<role>天子</role>曰<state>东越</state>狭多阻，<state>闽越</state>悍，数<law>反</law>覆，诏<off>军吏</off>皆将其<role>民</role><law>徙</law>处<loc>江淮</loc>间。<state>东越</state>地遂虚。 ::: 太史公曰"
+    },
+    {
+      "pid": "11",
+      "text": "太史公曰：越虽蛮夷，其先岂尝有大功德於民哉，何其久也！历数代常为君王，句践一称伯。 然馀善至大逆，⟦◈灭⟧国迁众，其先苗裔繇王居股等犹尚封为万户侯，由此知越世世为公侯矣。 盖禹之馀烈也。 ::: ::: 赞",
+      "annotated": "<p>太史公</p>曰：<tribe>越</tribe>虽<tribe>蛮夷</tribe>，其先岂尝有大功德於<role>民</role>哉，何其久也！历数代常为<role>君王</role>，<p>句践</p>一称伯。 然<p>馀善</p>至大逆，⟦◈灭⟧国<law>迁</law><role>众</role>，其先<role>苗裔</role><off>繇王</off><p>居股</p>等犹尚<law>封</law>为<qty>万户</qty>侯，由此知<tribe>越</tribe>世世为<off>公</off><off>侯</off>矣。 盖<p>禹</p>之馀烈也。 ::: ::: 赞"
+    },
+    {
+      "pid": "12",
+      "text": "句践之裔，是曰无诸。 既席汉宠，实因秦馀。 驺、骆为姓，闽中是居。 王摇之立，爰处东隅。 後嗣不道，自相诛锄。 :::",
+      "annotated": "<p>句践</p>之裔，是曰<p>无诸</p>。 既席<state>汉</state>宠，实因<state>秦</state>馀。 <clan>驺</clan>、<clan>骆</clan>为姓，<loc>闽中</loc>是居。 王<p name=\"东海王摇\">摇</p>之<law>立</law>，爰<law>处</law><loc>东隅</loc>。 後嗣不道，自相<vact>诛</vact>锄。 :::"
+    }
+  ]
+}

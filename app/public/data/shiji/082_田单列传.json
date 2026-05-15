@@ -1,0 +1,311 @@
+{
+  "work": "史记",
+  "chapter": "田单列传",
+  "chapter_file": "082_田单列传",
+  "chapter_type": "列传",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 60,
+  "paragraph_count_done": 60,
+  "paragraphs": [
+    {
+      "pid": "1.1",
+      "text": "田单者，齐诸田疏属也。",
+      "annotated": "<p>田单</p>者，<state>齐</state>诸<clan>田</clan>疏属也。"
+    },
+    {
+      "pid": "1.2",
+      "text": "湣王时，单为临菑市掾，不见知。",
+      "annotated": "<time name=\"时代\">湣王时</time>，<p name=\"田单\">单</p>为<loc>临菑</loc><off>市掾</off>，不见知。"
+    },
+    {
+      "pid": "2.1",
+      "text": "及燕使乐毅⟦◈伐⟧⟦◈破⟧齐，齐湣王出奔，已而保莒城。",
+      "annotated": "及<state>燕</state>使<p>乐毅</p>⟦◈伐⟧⟦◈破⟧<state>齐</state>，<p>齐湣王</p>出奔，已而保<loc>莒</loc>城。"
+    },
+    {
+      "pid": "2.2",
+      "text": "燕师长驱平齐，而田单走安平，令其宗人尽断其车轴末而傅铁笼。",
+      "annotated": "<state>燕</state>师长驱平<state>齐</state>，而<p>田单</p>走<loc>安平</loc>，令其<role>宗人</role>尽断其<art>车</art><art>轴</art>末而傅<art>铁笼</art>。"
+    },
+    {
+      "pid": "2.3",
+      "text": "已而燕军⟦◈攻⟧安平，城坏，齐人走，争涂，以轊折车⟦◈败⟧，为燕所⟦◈虏⟧，唯田单宗人以铁笼故得脱，东保即墨。",
+      "annotated": "已而<state>燕</state>军⟦◈攻⟧<loc>安平</loc>，城坏，<state>齐</state>人走，争涂，以<art>轊</art>折<art>车</art>⟦◈败⟧，为<state>燕</state>所⟦◈虏⟧，唯<p>田单</p><role>宗人</role>以<art>铁笼</art>故得脱，东保<loc>即墨</loc>。"
+    },
+    {
+      "pid": "2.4",
+      "text": "燕既尽⟦◈降⟧齐城，唯独莒、即墨不下。",
+      "annotated": "<state>燕</state>既尽⟦◈降⟧<state>齐</state>城，唯独<loc>莒</loc>、<loc>即墨</loc>不下。"
+    },
+    {
+      "pid": "2.5",
+      "text": "燕军闻齐王在莒，并兵⟦◈攻⟧之。",
+      "annotated": "<state>燕</state>军闻<p name=\"齐湣王\">齐王</p>在<loc>莒</loc>，并兵⟦◈攻⟧之。"
+    },
+    {
+      "pid": "2.6",
+      "text": "淖齿既杀湣王於莒，因坚守，距燕军，数年不下。",
+      "annotated": "<p>淖齿</p>既<vact>杀</vact><p name=\"齐湣王\">湣王</p>於<loc>莒</loc>，因坚守，距<state>燕</state>军，<time name=\"时长\">数年</time>不下。"
+    },
+    {
+      "pid": "2.7",
+      "text": "燕引兵东⟦◈围⟧即墨，即墨大夫出与⟦◈战⟧，⟦◈败⟧死。",
+      "annotated": "<state>燕</state>引兵东⟦◈围⟧<loc>即墨</loc>，<loc>即墨</loc><role>大夫</role>出与⟦◈战⟧，⟦◈败⟧死。"
+    },
+    {
+      "pid": "2.8",
+      "text": "城中相与推田单，曰： “安平之⟦◈战⟧，田单宗人以铁笼得全，习兵。”",
+      "annotated": "城中相与推<p>田单</p>，曰： “<loc>安平</loc>之⟦◈战⟧，<p>田单</p><role>宗人</role>以<art>铁笼</art>得全，习兵。”"
+    },
+    {
+      "pid": "2.9",
+      "text": "立以为将军，以即墨距燕。",
+      "annotated": "立以为<off>将军</off>，以<loc>即墨</loc>距<state>燕</state>。"
+    },
+    {
+      "pid": "3.1",
+      "text": "顷之，燕昭王卒，惠王立，与乐毅有隙。",
+      "annotated": "顷之，<p>燕昭王</p>卒，<p name=\"燕惠王\">惠王</p>立，与<p>乐毅</p>有隙。"
+    },
+    {
+      "pid": "3.2",
+      "text": "田单闻之，乃纵反间於燕，宣言曰： ::: 反间之言 “齐王已死，城之不拔者二耳。乐毅畏诛而不敢归，以⟦◈伐⟧齐为名，实欲连兵南面而王齐。齐人未附，故且缓⟦◈攻⟧即墨以待其事。齐人所惧，唯恐他将之来，即墨残矣。” :::",
+      "annotated": "<p>田单</p>闻之，乃纵<law>反间</law>於<state>燕</state>，宣言曰： ::: 反间之言 “<p name=\"齐湣王\">齐王</p>已死，城之不拔者二耳。<p>乐毅</p>畏<vact>诛</vact>而不敢归，以⟦◈伐⟧<state>齐</state>为名，实欲连兵南面而王<state>齐</state>。<state>齐</state>人未附，故且缓⟦◈攻⟧<loc>即墨</loc>以待其事。<state>齐</state>人所惧，唯恐他将之来，<loc>即墨</loc><law>残</law>矣。” :::"
+    },
+    {
+      "pid": "3.3",
+      "text": "燕王以为然，使骑劫代乐毅。",
+      "annotated": "<p name=\"燕惠王\">燕王</p>以为然，使<p>骑劫</p>代<p>乐毅</p>。"
+    },
+    {
+      "pid": "4.1",
+      "text": "乐毅因归赵，燕人士卒忿。",
+      "annotated": "<p>乐毅</p>因归<state>赵</state>，<state>燕</state>人<role>士卒</role>忿。"
+    },
+    {
+      "pid": "4.2",
+      "text": "而田单乃令城中人食必祭其先祖於庭，飞鸟悉翔舞城中下食。",
+      "annotated": "而<p>田单</p>乃令城中人食必<sys>祭</sys>其<role>先祖</role>於庭，飞<bio>鸟</bio>悉翔舞城中下食。"
+    },
+    {
+      "pid": "4.3",
+      "text": "燕人怪之。",
+      "annotated": "<state>燕</state>人怪之。"
+    },
+    {
+      "pid": "4.4",
+      "text": "田单因宣言曰： “神来下教我。”",
+      "annotated": "<p>田单</p>因宣言曰： “神来下教我。”"
+    },
+    {
+      "pid": "4.5",
+      "text": "乃令城中人曰： “当有神人为我师。”",
+      "annotated": "乃令城中人曰： “当有<idea>神人</idea>为我师。”"
+    },
+    {
+      "pid": "4.6",
+      "text": "有一卒曰： “臣可以为师乎？”",
+      "annotated": "有一卒曰： “<role>臣</role>可以为师乎？”"
+    },
+    {
+      "pid": "4.7",
+      "text": "因反走。",
+      "annotated": "因反走。"
+    },
+    {
+      "pid": "4.8",
+      "text": "田单乃起，引还，东乡坐，师事之。",
+      "annotated": "<p>田单</p>乃起，引还，东乡坐，师事之。"
+    },
+    {
+      "pid": "4.9",
+      "text": "卒曰： “臣欺君，诚无能也。”",
+      "annotated": "卒曰： “<role>臣</role>欺<role>君</role>，诚无能也。”"
+    },
+    {
+      "pid": "4.10",
+      "text": "田单曰： “子勿言也！”",
+      "annotated": "<p>田单</p>曰： “<role>子</role>勿言也！”"
+    },
+    {
+      "pid": "4.11",
+      "text": "因师之。每出约束，必称神师。",
+      "annotated": "因师之。每出约束，必称神师。"
+    },
+    {
+      "pid": "4.12",
+      "text": "乃宣言曰： “吾唯惧燕军之劓所得齐卒，置之前行，与我⟦◈战⟧，即墨⟦◈败⟧矣。”",
+      "annotated": "乃宣言曰： “吾唯惧<state>燕</state>军之<law>劓</law>所得<state>齐</state>卒，置之前行，与我⟦◈战⟧，<loc>即墨</loc>⟦◈败⟧矣。”"
+    },
+    {
+      "pid": "4.13",
+      "text": "燕人闻之，如其言。",
+      "annotated": "<state>燕</state>人闻之，如其言。"
+    },
+    {
+      "pid": "4.14",
+      "text": "城中人见齐诸⟦◈降⟧者尽劓，皆怒，坚守，唯恐见得。",
+      "annotated": "城中人见<state>齐</state>诸⟦◈降⟧者尽<law>劓</law>，皆怒，坚守，唯恐见得。"
+    },
+    {
+      "pid": "4.15",
+      "text": "单又纵反间曰： “吾惧燕人掘吾城外冢墓，僇先人，可为寒心。”",
+      "annotated": "<p name=\"田单\">单</p>又纵<law>反间</law>曰： “吾惧<state>燕</state>人<law>掘</law>吾城外冢墓，<vact>僇</vact><role>先人</role>，可为寒心。”"
+    },
+    {
+      "pid": "4.16",
+      "text": "燕军尽⟦◈掘⟧垄墓，⟦◈烧⟧死人。",
+      "annotated": "<state>燕</state>军尽⟦◈掘⟧垄墓，⟦◈烧⟧死人。"
+    },
+    {
+      "pid": "4.17",
+      "text": "即墨人从城上望见，皆涕泣，俱欲出⟦◈战⟧，怒自十倍。",
+      "annotated": "<loc>即墨</loc>人从城上望见，皆涕泣，俱欲出⟦◈战⟧，怒自十倍。"
+    },
+    {
+      "pid": "5.1",
+      "text": "田单知士卒之可用，乃身操版插，与士卒分功，妻妾编於行伍之间，尽散饮食飨士。",
+      "annotated": "<p>田单</p>知<role>士卒</role>之可用，乃身操<art>版插</art>，与<role>士卒</role>分功，<role>妻妾</role>编於行伍之间，尽散饮食飨<role>士</role>。"
+    },
+    {
+      "pid": "5.2",
+      "text": "令甲卒皆伏，使老弱女子乘城，遣使约⟦◈降⟧於燕，燕军皆呼万岁。",
+      "annotated": "令甲卒皆伏，使<role>老弱</role><role>女子</role>乘城，遣使约⟦◈降⟧於<state>燕</state>，<state>燕</state>军皆呼<time name=\"时长\">万岁</time>。"
+    },
+    {
+      "pid": "5.3",
+      "text": "田单又收民金，得千溢，令即墨富豪遗燕将，曰： “即墨即⟦◈降⟧，原无⟦◈虏⟧掠吾族家妻妾，令安堵。”",
+      "annotated": "<p>田单</p>又收<role>民</role>金，得<qty>千溢</qty>，令<loc>即墨</loc><role>富豪</role>遗<state>燕</state>将，曰： “<loc>即墨</loc>即⟦◈降⟧，原无⟦◈虏⟧<law>掠</law>吾<vact>族</vact>家<role>妻妾</role>，令安堵。”"
+    },
+    {
+      "pid": "5.4",
+      "text": "燕将大喜，许之。",
+      "annotated": "<state>燕</state>将大喜，许之。"
+    },
+    {
+      "pid": "5.5",
+      "text": "燕军由此益懈。",
+      "annotated": "<state>燕</state>军由此益懈。"
+    },
+    {
+      "pid": "6.1",
+      "text": "田单乃收城中得千馀牛，为绛缯衣，画以五彩龙文，束兵刃於其角，而灌脂束苇於尾，烧其端。",
+      "annotated": "<p>田单</p>乃收城中得<qty>千馀</qty><bio>牛</bio>，为<art>绛缯衣</art>，画以五彩<bio>龙</bio>文，束<art>兵刃</art>於其角，而灌<art>脂</art>束<bio>苇</bio>於尾，<law>烧</law>其端。"
+    },
+    {
+      "pid": "6.2",
+      "text": "凿城数十穴，夜纵牛，壮士五千人随其後。",
+      "annotated": "凿城<qty>数十</qty>穴，夜纵<bio>牛</bio>，<role>壮士</role><qty>五千人</qty>随其後。"
+    },
+    {
+      "pid": "6.3",
+      "text": "牛尾热，怒而奔燕军，燕军夜大惊。",
+      "annotated": "<bio>牛</bio>尾热，怒而奔<state>燕</state>军，<state>燕</state>军夜大惊。"
+    },
+    {
+      "pid": "6.4",
+      "text": "牛尾炬火光明炫燿，燕军视之皆龙文，所触尽死伤。",
+      "annotated": "<bio>牛</bio>尾<art>炬火</art>光明炫燿，<state>燕</state>军视之皆<bio>龙</bio>文，所触尽死伤。"
+    },
+    {
+      "pid": "6.5",
+      "text": "五千人因衔枚⟦◈击⟧之，而城中鼓譟从之，老弱皆⟦◈击⟧铜器为声，声动天地。",
+      "annotated": "<qty>五千人</qty>因衔<art>枚</art>⟦◈击⟧之，而城中鼓譟从之，<role>老弱</role>皆⟦◈击⟧<art>铜器</art>为声，声动<astro>天地</astro>。"
+    },
+    {
+      "pid": "6.6",
+      "text": "燕军大骇，⟦◈败⟧走。",
+      "annotated": "<state>燕</state>军大骇，⟦◈败⟧走。"
+    },
+    {
+      "pid": "6.7",
+      "text": "齐人遂夷杀其将骑劫。",
+      "annotated": "<state>齐</state>人遂<vact>夷</vact><vact>杀</vact>其将<p>骑劫</p>。"
+    },
+    {
+      "pid": "6.8",
+      "text": "燕军扰乱奔走，齐人⟦◈追⟧亡⟦◈逐⟧北，所过城邑皆畔燕而归田单，兵日益多，乘胜，燕日⟦◈败⟧亡，卒至河上，而齐七十馀城皆复为齐。",
+      "annotated": "<state>燕</state>军扰乱奔走，<state>齐</state>人⟦◈追⟧亡⟦◈逐⟧北，所过城邑皆畔<state>燕</state>而归<p>田单</p>，兵日益多，乘胜，<state>燕</state>日⟦◈败⟧亡，卒至<loc>河</loc>上，而<state>齐</state><qty>七十馀城</qty>皆复为<state>齐</state>。"
+    },
+    {
+      "pid": "6.9",
+      "text": "乃迎襄王於莒，入临菑而听政。",
+      "annotated": "乃迎<p name=\"齐襄王\">襄王</p>於<loc>莒</loc>，入<loc>临菑</loc>而听政。"
+    },
+    {
+      "pid": "7.1",
+      "text": "襄王封田单，号曰安平君。 ::: 太史公曰",
+      "annotated": "<p name=\"齐襄王\">襄王</p><vpol>封</vpol><p>田单</p>，号曰<off>安平君</off>。 ::: 太史公曰"
+    },
+    {
+      "pid": "8",
+      "text": "太史公曰：兵以正合，以奇胜。 善之者，出奇无穷。 奇正还相生，如环之无端。 夫始如处女，適人开户；後如脱兔，適不及距：其田单之谓邪！ :::",
+      "annotated": "<p>太史公</p>曰：兵以正合，以奇胜。 善之者，出奇无穷。 奇正还相生，如环之无端。 夫始如处<role>女</role>，適人开户；後如脱<bio>兔</bio>，適不及距：其<p>田单</p>之谓邪！ :::"
+    },
+    {
+      "pid": "9.1",
+      "text": "初，淖齿之杀湣王也，莒人求湣王子法章，得之太史嬓之家，为人灌园。",
+      "annotated": "初，<p>淖齿</p>之<vact>杀</vact><p name=\"齐湣王\">湣王</p>也，<loc>莒</loc>人求<p name=\"齐湣王\">湣王</p>子<p>法章</p>，得之<off>太史</off><p>嬓</p>之家，为人灌园。"
+    },
+    {
+      "pid": "9.2",
+      "text": "嬓女怜而善遇之。",
+      "annotated": "<p>嬓</p>女怜而善遇之。"
+    },
+    {
+      "pid": "9.3",
+      "text": "後法章私以情告女，女遂与通。",
+      "annotated": "後<p>法章</p>私以情告女，女遂与通。"
+    },
+    {
+      "pid": "9.4",
+      "text": "及莒人共立法章为齐王，以莒距燕，而太史氏女遂为后，所谓“君王后” 也。",
+      "annotated": "及<loc>莒</loc>人共<vpol>立</vpol><p>法章</p>为<off>齐王</off>，以<loc>莒</loc>距<state>燕</state>，而<p>太史氏</p>女遂为<role>后</role>，所谓“<p>君王后</p>” 也。"
+    },
+    {
+      "pid": "10.1",
+      "text": "燕之初入齐，闻画邑人王蠋贤，令军中曰“环画邑三十里无入”，以王蠋之故。",
+      "annotated": "<state>燕</state>之初入<state>齐</state>，闻<loc>画邑</loc>人<p>王蠋</p>贤，令军中曰“环<loc>画邑</loc><qty>三十里</qty>无入”，以<p>王蠋</p>之故。"
+    },
+    {
+      "pid": "10.2",
+      "text": "已而使人谓蠋曰： “齐人多高子之义，吾以子为将，封子万家。”",
+      "annotated": "已而使人谓<p name=\"王蠋\">蠋</p>曰： “<state>齐</state>人多高<role>子</role>之义，吾以<role>子</role>为将，封<role>子</role><qty>万家</qty>。”"
+    },
+    {
+      "pid": "10.3",
+      "text": "蠋固谢。",
+      "annotated": "<p name=\"王蠋\">蠋</p>固谢。"
+    },
+    {
+      "pid": "10.4",
+      "text": "燕人曰： “子不听，吾引三军而⟦◈屠⟧画邑。”",
+      "annotated": "<state>燕</state>人曰： “<role>子</role>不听，吾引三军而⟦◈屠⟧<loc>画邑</loc>。”"
+    },
+    {
+      "pid": "10.5",
+      "text": "王蠋曰： ::: 王蠋遗言 “忠臣不事二君，贞女不更二夫。齐王不听吾谏，故退而耕於野。国既⟦◈破⟧亡，吾不能存；今又劫之以兵为君将，是助桀为暴也。与其生而无义，固不如烹！” :::",
+      "annotated": "<p>王蠋</p>曰： ::: 王蠋遗言 “<role>忠臣</role>不事二<role>君</role>，贞<role>女</role>不更二夫。<p name=\"齐湣王\">齐王</p>不听吾谏，故退而耕於野。国既⟦◈破⟧亡，吾不能存；今又劫之以兵为<role>君</role>将，是助<p>桀</p>为暴也。与其生而无<idea>义</idea>，固不如<vact>烹</vact>！” :::"
+    },
+    {
+      "pid": "10.6",
+      "text": "遂经其颈於树枝，自奋绝脰而死。",
+      "annotated": "遂经其颈於<bio>树</bio>枝，自奋绝脰而死。"
+    },
+    {
+      "pid": "10.7",
+      "text": "齐亡大夫闻之，曰： “王蠋，布衣也，义不北面於燕，况在位食禄者乎！”",
+      "annotated": "<state>齐</state>亡<role>大夫</role>闻之，曰： “<p>王蠋</p>，<role>布衣</role>也，<idea>义</idea>不北面於<state>燕</state>，况在位食禄者乎！”"
+    },
+    {
+      "pid": "10.8",
+      "text": "乃相聚如莒，求诸子，立为襄王。 ::: 赞",
+      "annotated": "乃相聚如<loc>莒</loc>，求<role>诸子</role>，<vpol>立</vpol>为<p name=\"齐襄王\">襄王</p>。 ::: 赞"
+    },
+    {
+      "pid": "11",
+      "text": "军法以正，实尚奇兵。 断轴自免，反间先行。 群鸟或众，五牛扬旌。 卒⟦◈破⟧骑劫，皆复齐城。 襄王嗣位，乃封安平。 :::",
+      "annotated": "<sys>军法</sys>以正，实尚奇兵。 断<art>轴</art>自免，反间先行。 群<bio>鸟</bio>或众，五<bio>牛</bio>扬<art>旌</art>。 卒⟦◈破⟧<p>骑劫</p>，皆复<state>齐</state>城。 <p name=\"齐襄王\">襄王</p>嗣位，乃封<loc>安平</loc>。 :::"
+    }
+  ]
+}

@@ -1,0 +1,691 @@
+{
+  "work": "史记",
+  "chapter": "卫将军骠骑列传",
+  "chapter_file": "111_卫将军骠骑列传",
+  "chapter_type": "列传",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 136,
+  "paragraph_count_done": 136,
+  "paragraphs": [
+    {
+      "pid": "1",
+      "text": "大将军卫青者，平阳人也。其父郑季，为吏，给事平阳侯家，与侯妾卫媪通，生青。",
+      "annotated": "<off>大将军</off><p>卫青</p>者，<loc>平阳</loc>人也。其<role>父</role><p>郑季</p>，为<off>吏</off>，给事<off>平阳侯</off>家，与<off>侯</off>妾<p>卫媪</p>通，生<p name=\"卫青\">青</p>。"
+    },
+    {
+      "pid": "2",
+      "text": "青同母兄卫长子，而姊卫子夫自平阳公主家得幸天子，故冒姓为卫氏。字仲卿。长子更字长君。长君母号为卫媪。媪长女卫孺，次女少兒，次女卫子夫。後子夫男弟步、广皆冒卫氏。",
+      "annotated": "<p name=\"卫青\">青</p>同母兄<p>卫长子</p>，而<role>姊</role><p>卫子夫</p>自<p>平阳公主</p>家得幸<role>天子</role>，故冒姓为<clan>卫氏</clan>。字<p>仲卿</p>。<p>长子</p>更字<p>长君</p>。<p>长君</p>母号为<p>卫媪</p>。<p name=\"卫媪\">媪</p>长女<p>卫孺</p>，次女<p>少兒</p>，次女<p>卫子夫</p>。後<p>子夫</p><role>男弟</role><p name=\"卫步\">步</p>、<p name=\"卫广\">广</p>皆冒<clan>卫氏</clan>。"
+    },
+    {
+      "pid": "3",
+      "text": "青为侯家人，少时归其父，其父使牧羊。先母之子皆奴畜之，不以为兄弟数。",
+      "annotated": "<p name=\"卫青\">青</p>为<off>侯</off>家人，少时归其父，其父使牧<bio>羊</bio>。先母之子皆奴畜之，不以为兄弟数。"
+    },
+    {
+      "pid": "4",
+      "text": "青尝从入至甘泉居室，有一钳徒相青曰：“贵人也，官至封侯。” 青笑曰：“人奴之生，得毋笞骂即足矣，安得封侯事乎！”",
+      "annotated": "<p name=\"卫青\">青</p>尝从入至<loc>甘泉</loc>居室，有一钳徒相<p name=\"卫青\">青</p>曰：“<role>贵人</role>也，官至封侯。” <p name=\"卫青\">青</p>笑曰：“人奴之生，得毋<law>笞</law>骂即足矣，安得封侯事乎！”"
+    },
+    {
+      "pid": "5",
+      "text": "青壮，为侯家骑，从平阳主。建元二年春，青姊子夫得入宫幸上。",
+      "annotated": "<p name=\"卫青\">青</p>壮，为<off>侯</off>家<off>骑</off>，从<p name=\"平阳公主\">平阳主</p>。<time name=\"年号\">建元</time><time>二年春</time>，<p name=\"卫青\">青</p><role>姊</role><p>子夫</p>得入宫幸<off>上</off>。"
+    },
+    {
+      "pid": "6",
+      "text": "皇后，堂邑大长公主女也，无子，妒。大长公主闻卫子夫幸，有身，妒之，乃使人捕青。青时给事建章，未知名。",
+      "annotated": "<role>皇后</role>，<p>堂邑大长公主</p>女也，无子，妒。<role>大长公主</role>闻<p>卫子夫</p>幸，有身，妒之，乃使人捕<p name=\"卫青\">青</p>。<p name=\"卫青\">青</p>时给事<loc>建章</loc>，未知名。"
+    },
+    {
+      "pid": "7",
+      "text": "大长公主执囚青，欲杀之。其友骑郎公孙敖与壮士往篡取之，以故得不死。",
+      "annotated": "<role>大长公主</role>执囚<p name=\"卫青\">青</p>，欲<law>杀</law>之。其友<off>骑郎</off><p>公孙敖</p>与<role>壮士</role>往篡<law>取</law>之，以故得不死。"
+    },
+    {
+      "pid": "8",
+      "text": "上闻，乃召青为建章监，侍中，及同母昆弟贵，赏赐数日间累千金。孺为太仆公孙贺妻。少兒故与陈掌通，上召贵掌。公孙敖由此益贵。子夫为夫人。青为大中大夫。",
+      "annotated": "<off>上</off>闻，乃召<p name=\"卫青\">青</p>为<off>建章监</off>，<off>侍中</off>，及同母昆弟贵，赏赐<time name=\"时长\">数日</time>间累千<art>金</art>。<p name=\"卫孺\">孺</p>为<off>太仆</off><p>公孙贺</p>妻。<p>少兒</p>故与<p>陈掌</p>通，<off>上</off>召贵<p name=\"陈掌\">掌</p>。<p>公孙敖</p>由此益贵。<p>子夫</p>为<role>夫人</role>。<p name=\"卫青\">青</p>为<off>大中大夫</off>。"
+    },
+    {
+      "pid": "9",
+      "text": "元光五年，青为车骑将军，击匈奴，出上谷；太仆公孙贺为轻车将军，出云中；大中大夫公孙敖为骑将军，出代郡；卫尉李广为骁骑将军，出雁门：军各万骑。",
+      "annotated": "<time name=\"年号\">元光</time><time>五年</time>，<p name=\"卫青\">青</p>为<off>车骑将军</off>，<law>击</law><tribe>匈奴</tribe>，出<loc>上谷</loc>；<off>太仆</off><p>公孙贺</p>为<off>轻车将军</off>，出<loc>云中</loc>；<off>大中大夫</off><p>公孙敖</p>为<off>骑将军</off>，出<loc>代郡</loc>；<off>卫尉</off><p>李广</p>为<off>骁骑将军</off>，出<loc>雁门</loc>：军各万<off>骑</off>。"
+    },
+    {
+      "pid": "10",
+      "text": "青至茏城，斩首虏数百。骑将军敖亡七千骑；卫尉李广为虏所得，得脱归：皆当斩，赎为庶人。贺亦无功。",
+      "annotated": "<p name=\"卫青\">青</p>至<loc>茏城</loc>，<law>斩首</law>虏<qty>数百</qty>。<off>骑将军</off><p name=\"公孙敖\">敖</p>亡七千<off>骑</off>；<off>卫尉</off><p>李广</p>为虏所得，得脱归：皆<law>当斩</law>，<law>赎</law>为<role>庶人</role>。<p name=\"公孙贺\">贺</p>亦无功。"
+    },
+    {
+      "pid": "11",
+      "text": "元朔元年春，卫夫人有男，立为皇后。",
+      "annotated": "<time name=\"年号\">元朔</time><time>元年春</time>，<p>卫夫人</p>有男，<vpol>立</vpol>为<role>皇后</role>。"
+    },
+    {
+      "pid": "12",
+      "text": "其秋，青为车骑将军，出雁门，三万骑击匈奴，斩首虏数千人。",
+      "annotated": "其秋，<p name=\"卫青\">青</p>为<off>车骑将军</off>，出<loc>雁门</loc>，三万<off>骑</off><law>击</law><tribe>匈奴</tribe>，<law>斩首</law>虏<qty>数千人</qty>。"
+    },
+    {
+      "pid": "13",
+      "text": "明年，匈奴入杀辽西太守，虏略渔阳二千馀人，败韩将军军。汉令将军李息击之，出代；令车骑将军青出云中以西至高阙。",
+      "annotated": "<time>明年</time>，<tribe>匈奴</tribe>入<law>杀</law><off>辽西太守</off>，虏略<loc>渔阳</loc><qty>二千馀人</qty>，<law>败</law><off>韩将军</off>军。<state>汉</state>令<off>将军</off><p>李息</p><law>击</law>之，出<state>代</state>；令<off>车骑将军</off><p name=\"卫青\">青</p>出<loc>云中</loc>以西至<loc>高阙</loc>。"
+    },
+    {
+      "pid": "14",
+      "text": "遂略河南地，至于陇西，捕首虏数千，畜数十万，走白羊、楼烦王。遂以河南地为朔方郡。",
+      "annotated": "遂略<loc>河南</loc>地，至于<loc>陇西</loc>，捕首虏<qty>数千</qty>，畜<qty>数十万</qty>，走<p>白羊</p>、<off>楼烦王</off>。遂以<loc>河南</loc>地为<loc>朔方郡</loc>。"
+    },
+    {
+      "pid": "15",
+      "text": "以三千八百户封青为长平侯。青校尉苏建有功，以千一百户封建为平陵侯。使建筑朔方城。青校尉张次公有功，封为岸头侯。",
+      "annotated": "以<qty>三千八百户</qty><vpol>封</vpol><p name=\"卫青\">青</p>为<off>长平侯</off>。<p name=\"卫青\">青</p><off>校尉</off><p>苏建</p>有功，以<qty>千一百户</qty><vpol>封</vpol><p name=\"苏建\">建</p>为<off>平陵侯</off>。使<p name=\"苏建\">建</p>筑<loc>朔方城</loc>。<p name=\"卫青\">青</p><off>校尉</off><p>张次公</p>有功，封为<off>岸头侯</off>。"
+    },
+    {
+      "pid": "16",
+      "text": "天子曰：“匈奴逆天理，乱人伦，暴长虐老，以盗窃为务，行诈诸蛮夷，造谋藉兵，数为边害，故兴师遣将，以征厥罪。",
+      "annotated": "<role>天子</role>曰：“<tribe>匈奴</tribe>逆<idea>天理</idea>，乱人伦，暴长虐老，以盗窃为务，行诈诸<tribe>蛮夷</tribe>，造谋藉兵，数为边害，故兴师遣将，以征厥罪。"
+    },
+    {
+      "pid": "17",
+      "text": "诗不云乎，“薄伐玁狁，至于太原”，“出车彭彭，城彼朔方”。今车骑将军青度西河至高阙，获首虏二千三百级，车辎畜产毕收为卤，已封为列侯，遂西定河南地，按榆谿旧塞，绝梓领，梁北河，讨蒲泥，破符离，斩轻锐之卒，捕伏听者三千七十一级，执讯获丑，驱马牛羊百有馀万，全甲兵而还，益封青三千户。”",
+      "annotated": "<book>诗</book>不云乎，“薄<law>伐</law><tribe>玁狁</tribe>，至于<loc>太原</loc>”，“出<art>车</art>彭彭，城彼<loc>朔方</loc>”。今<off>车骑将军</off><p name=\"卫青\">青</p>度<loc>西河</loc>至<loc>高阙</loc>，获首虏二千三百级，<art>车</art>辎畜产毕收为卤，已封为<role>列侯</role>，遂西定<loc>河南</loc>地，按<loc>榆谿</loc>旧塞，绝<loc>梓领</loc>，梁<loc>北河</loc>，讨<loc>蒲泥</loc>，<law>破</law><loc>符离</loc>，<law>斩</law>轻锐之卒，捕伏听者三千七十一级，执讯获丑，驱<bio>马</bio><bio>牛</bio><bio>羊</bio><qty>百有馀万</qty>，全<art>甲兵</art>而还，益<vpol>封</vpol><p name=\"卫青\">青</p><qty>三千户</qty>。”"
+    },
+    {
+      "pid": "18",
+      "text": "其明年，匈奴入杀代郡太守友，入略雁门千馀人。其明年，匈奴大入代、定襄、上郡，杀略汉数千人。",
+      "annotated": "其<time>明年</time>，<tribe>匈奴</tribe>入<law>杀</law><off>代郡太守</off><p>友</p>，入略<loc>雁门</loc><qty>千馀人</qty>。其<time>明年</time>，<tribe>匈奴</tribe>大入<state>代</state>、<loc>定襄</loc>、<loc>上郡</loc>，<law>杀</law>略<state>汉</state><qty>数千人</qty>。"
+    },
+    {
+      "pid": "19",
+      "text": "其明年，元朔之五年春，汉令车骑将军青将三万骑，出高阙；卫尉苏建为游击将军，左内史李沮为彊弩将军，太仆公孙贺为骑将军，代相李蔡为轻车将军，皆领属车骑将军，俱出朔方；大行李息、岸头侯张次公为将军，出右北平：咸击匈奴。",
+      "annotated": "其<time>明年</time>，<time name=\"年号\">元朔</time>之<time>五年春</time>，<state>汉</state>令<off>车骑将军</off><p name=\"卫青\">青</p>将三万<off>骑</off>，出<loc>高阙</loc>；<off>卫尉</off><p>苏建</p>为<off>游击将军</off>，<off>左内史</off><p>李沮</p>为<off>彊弩将军</off>，<off>太仆</off><p>公孙贺</p>为<off>骑将军</off>，<off>代相</off><p>李蔡</p>为<off>轻车将军</off>，皆领属<off>车骑将军</off>，俱出<loc>朔方</loc>；<off>大行</off><p>李息</p>、<off>岸头侯</off><p>张次公</p>为<off>将军</off>，出<loc>右北平</loc>：咸<law>击</law><tribe>匈奴</tribe>。"
+    },
+    {
+      "pid": "20",
+      "text": "匈奴右贤王当卫青等兵，以为汉兵不能至此，饮醉。汉兵夜至，围右贤王，右贤王惊，夜逃，独与其爱妾一人壮骑数百驰，溃围北去。",
+      "annotated": "<tribe>匈奴</tribe><off>右贤王</off>当<p>卫青</p>等兵，以为<state>汉</state>兵不能至此，饮醉。<state>汉</state>兵夜至，<law>围</law><off>右贤王</off>，<off>右贤王</off>惊，夜逃，独与其爱妾<qty>一人</qty>壮<off>骑</off><qty>数百</qty>驰，溃<law>围</law>北去。"
+    },
+    {
+      "pid": "21",
+      "text": "汉轻骑校尉郭成等逐数百里，不及，得右贤裨王十馀人，众男女万五千馀人，畜数千百万，於是引兵而还。",
+      "annotated": "<state>汉</state><off>轻骑校尉</off><p>郭成</p>等逐<qty>数百里</qty>，不及，得<off>右贤</off><off>裨王</off><qty>十馀人</qty>，众男女万<qty>五千馀人</qty>，畜<qty>数千</qty>百万，於是引兵而还。"
+    },
+    {
+      "pid": "22",
+      "text": "至塞，天子使使者持大将军印，即军中拜车骑将军青为大将军，诸将皆以兵属大将军，大将军立号而归。",
+      "annotated": "至塞，<role>天子</role>使使者持<art>大将军印</art>，即军中<vpol>拜</vpol><off>车骑将军</off><p name=\"卫青\">青</p>为<off>大将军</off>，<role>诸将</role>皆以兵属<off>大将军</off>，<off>大将军</off>立号而归。"
+    },
+    {
+      "pid": "23",
+      "text": "天子曰：“大将军青躬率戎士，师大捷，获匈奴王十有馀人，益封青六千户。” 而封青子伉为宜春侯，青子不疑为阴安侯，青子登为发干侯。",
+      "annotated": "<role>天子</role>曰：“<off>大将军</off><p name=\"卫青\">青</p>躬率戎<role>士</role>，师大捷，获<tribe>匈奴</tribe>王十有馀人，益<vpol>封</vpol><p name=\"卫青\">青</p><qty>六千户</qty>。” 而<vpol>封</vpol><p name=\"卫青\">青</p><role>子</role><p name=\"卫伉\">伉</p>为<off>宜春侯</off>，<p name=\"卫青\">青</p><role>子</role><p name=\"卫不疑\">不疑</p>为<off>阴安侯</off>，<p name=\"卫青\">青</p><role>子</role><p name=\"卫登\">登</p>为<off>发干侯</off>。"
+    },
+    {
+      "pid": "24",
+      "text": "青固谢曰：“臣幸得待罪行间，赖陛下神灵，军大捷，皆诸校尉力战之功也。陛下幸已益封臣青。臣青子在唡褓中，未有勤劳，上幸列地封为三侯，非臣待罪行间所以劝士力战之意也。伉等三人何敢受封！”",
+      "annotated": "<p name=\"卫青\">青</p>固谢曰：“<role>臣</role>幸得待罪行间，赖<role>陛下</role><idea>神灵</idea>，军大捷，皆诸<off>校尉</off>力<law>战</law>之功也。<role>陛下</role>幸已益封<role>臣</role><p name=\"卫青\">青</p>。<role>臣</role><p name=\"卫青\">青</p>子在唡褓中，未有勤劳，<off>上</off>幸列地封为三<off>侯</off>，非<role>臣</role>待罪行间所以劝<role>士</role>力<law>战</law>之意也。<p name=\"卫伉\">伉</p>等<qty>三人</qty>何敢受封！”"
+    },
+    {
+      "pid": "25",
+      "text": "天子曰：“我非忘诸校尉功也，今固且图之。”",
+      "annotated": "<role>天子</role>曰：“我非忘诸<off>校尉</off>功也，今固且图之。”"
+    },
+    {
+      "pid": "26",
+      "text": "乃诏御史曰：“护军都尉公孙敖三从大将军击匈奴，常护军，傅校获王，以千五百户封敖为合骑侯。都尉韩说从大将军出窳浑，至匈奴右贤王庭，为麾下搏战获王，以千三百户封说为龙嵒侯。骑将军公孙贺从大将军获王，以千三百户封贺为南窌侯。轻车将军李蔡再从大将军获王，以千六百户封蔡为乐安侯。校尉李朔，校尉赵不虞，校尉公孙戎奴，各三从大将军获王，以千三百户封朔为涉轵侯，以千三百户封不虞为随成侯，以千三百户封戎奴为从平侯。将军李沮、李息及校尉豆如意有功，赐爵关内侯，食邑各三百户。”",
+      "annotated": "乃诏<off>御史</off>曰：“<off>护军都尉</off><p>公孙敖</p>三从<off>大将军</off><law>击</law><tribe>匈奴</tribe>，常<off>护军</off>，傅校获王，以<qty>千五百户</qty><vpol>封</vpol><p name=\"公孙敖\">敖</p>为<off>合骑侯</off>。<off>都尉</off><p>韩说</p>从<off>大将军</off>出<loc>窳浑</loc>，至<tribe>匈奴</tribe><off>右贤王</off>庭，为麾下搏<law>战</law>获王，以<qty>千三百户</qty><vpol>封</vpol><p name=\"韩说\">说</p>为<off>龙嵒侯</off>。<off>骑将军</off><p>公孙贺</p>从<off>大将军</off>获王，以<qty>千三百户</qty><vpol>封</vpol><p name=\"公孙贺\">贺</p>为<off>南窌侯</off>。<off>轻车将军</off><p>李蔡</p>再从<off>大将军</off>获王，以<qty>千六百户</qty><vpol>封</vpol><p name=\"李蔡\">蔡</p>为<off>乐安侯</off>。<off>校尉</off><p>李朔</p>，<off>校尉</off><p>赵不虞</p>，<off>校尉</off><p>公孙戎奴</p>，各三从<off>大将军</off>获王，以<qty>千三百户</qty><vpol>封</vpol><p name=\"李朔\">朔</p>为<off>涉轵侯</off>，以<qty>千三百户</qty><vpol>封</vpol><p name=\"赵不虞\">不虞</p>为<off>随成侯</off>，以<qty>千三百户</qty><vpol>封</vpol><p name=\"公孙戎奴\">戎奴</p>为<off>从平侯</off>。<off>将军</off><p>李沮</p>、<p>李息</p>及<off>校尉</off><p>豆如意</p>有功，<sys>赐爵</sys><off>关内侯</off>，食邑各<qty>三百户</qty>。”"
+    },
+    {
+      "pid": "27",
+      "text": "其秋，匈奴入代，杀都尉硃英。",
+      "annotated": "其秋，<tribe>匈奴</tribe>入<state>代</state>，<law>杀</law><off>都尉</off><p>硃英</p>。"
+    },
+    {
+      "pid": "28",
+      "text": "其明年春，大将军青出定襄，合骑侯敖为中将军，太仆贺为左将军，翕侯赵信为前将军，卫尉苏建为右将军，郎中令李广为後将军，右内史李沮为彊弩将军，咸属大将军，斩首数千级而还。",
+      "annotated": "其<time>明年</time>春，<off>大将军</off><p name=\"卫青\">青</p>出<loc>定襄</loc>，<off>合骑侯</off><p name=\"公孙敖\">敖</p>为<off>中将军</off>，<off>太仆</off><p name=\"公孙贺\">贺</p>为<off>左将军</off>，<off>翕侯</off><p>赵信</p>为<off>前将军</off>，<off>卫尉</off><p>苏建</p>为<off>右将军</off>，<off>郎中令</off><p>李广</p>为<off>後将军</off>，<off>右内史</off><p>李沮</p>为<off>彊弩将军</off>，咸属<off>大将军</off>，<law>斩首</law><qty>数千级</qty>而还。"
+    },
+    {
+      "pid": "29",
+      "text": "月馀，悉复出定襄击匈奴，斩首虏万馀人。",
+      "annotated": "<time name=\"时长\">月馀</time>，悉复出<loc>定襄</loc><law>击</law><tribe>匈奴</tribe>，<law>斩首</law>虏<qty>万馀人</qty>。"
+    },
+    {
+      "pid": "30",
+      "text": "右将军建、前将军信并军三千馀骑，独逢单于兵，与战一日馀，汉兵且尽。",
+      "annotated": "<off>右将军</off><p name=\"苏建\">建</p>、<off>前将军</off><p name=\"赵信\">信</p>并军<qty>三千馀</qty><off>骑</off>，独逢<role>单于</role>兵，与<law>战</law><time name=\"时长\">一日</time>馀，<state>汉</state>兵且尽。"
+    },
+    {
+      "pid": "31",
+      "text": "前将军故胡人，降为翕侯，见急，匈奴诱之，遂将其馀骑可八百，饹降单于。",
+      "annotated": "<off>前将军</off>故<tribe>胡</tribe>人，降为<off>翕侯</off>，见急，<tribe>匈奴</tribe>诱之，遂将其馀<off>骑</off>可八百，饹降<role>单于</role>。"
+    },
+    {
+      "pid": "32",
+      "text": "右将军苏建尽亡其军，独以身得亡去，自归大将军。",
+      "annotated": "<off>右将军</off><p>苏建</p>尽亡其军，独以身得亡去，自归<off>大将军</off>。"
+    },
+    {
+      "pid": "33",
+      "text": "大将军问其罪正闳、长史安、议郎周霸等：“建当云何？”",
+      "annotated": "<off>大将军</off>问其罪<off>正</off><p>闳</p>、<off>长史</off><p>安</p>、<off>议郎</off><p>周霸</p>等：“<p name=\"苏建\">建</p>当云何？”"
+    },
+    {
+      "pid": "34",
+      "text": "霸曰：“自大将军出，未尝斩裨将。今建弃军，可斩以明将军之威。”",
+      "annotated": "<p name=\"周霸\">霸</p>曰：“自<off>大将军</off>出，未尝<law>斩</law><off>裨将</off>。今<p name=\"苏建\">建</p>弃军，可<law>斩</law>以明<off>将军</off>之威。”"
+    },
+    {
+      "pid": "35",
+      "text": "闳、安曰：“不然。兵法” 小敌之坚，大敌之禽也”。今建以数千当单于数万，力战一日馀，士尽，不敢有二心，自归。自归而斩之，是示後无反意也。不当斩。”",
+      "annotated": "<p name=\"正闳\">闳</p>、<p name=\"长史安\">安</p>曰：“不然。<sys>兵法</sys>” 小敌之坚，大敌之禽也”。今<p name=\"苏建\">建</p>以<qty>数千</qty>当<role>单于</role><qty>数万</qty>，力<law>战</law><time name=\"时长\">一日</time>馀，<role>士</role>尽，不敢有二心，自归。自归而<law>斩</law>之，是示後无反意也。不<law>当斩</law>。”"
+    },
+    {
+      "pid": "36",
+      "text": "大将军曰：“青幸得以肺腑待罪行间，不患无威，而霸说我以明威，甚失臣意。且使臣职虽当斩将，以臣之尊宠而不敢自擅专诛於境外，而具归天子，天子自裁之，於是以见为人臣不敢专权，不亦可乎？”",
+      "annotated": "<off>大将军</off>曰：“<p name=\"卫青\">青</p>幸得以肺腑待罪行间，不患无威，而<p name=\"周霸\">霸</p>说我以明威，甚失<role>臣</role>意。且使<role>臣</role>职虽<law>当斩</law>将，以<role>臣</role>之尊宠而不敢自擅专<law>诛</law>於境外，而具归<role>天子</role>，<role>天子</role>自裁之，於是以见为<role>人臣</role>不敢专权，不亦可乎？”"
+    },
+    {
+      "pid": "37",
+      "text": "军吏皆曰“善”。遂囚建诣行在所。入塞罢兵。",
+      "annotated": "<off>军吏</off>皆曰“善”。遂囚<p name=\"苏建\">建</p>诣行在所。入塞罢兵。"
+    },
+    {
+      "pid": "38",
+      "text": "是岁也，大将军姊子霍去病年十八，幸，为天子侍中。善骑射，再从大将军，受诏与壮士，为剽姚校尉，与轻勇骑八百直弃大军数百里赴利，斩捕首虏过当。",
+      "annotated": "是岁也，<off>大将军</off><role>姊</role><role>子</role><p>霍去病</p>年十八，幸，为<role>天子</role><off>侍中</off>。善<off>骑</off>射，再从<off>大将军</off>，受诏与<role>壮士</role>，为<off>剽姚校尉</off>，与轻勇<off>骑</off>八百直弃大军<qty>数百里</qty>赴利，<law>斩</law>捕首虏过当。"
+    },
+    {
+      "pid": "39",
+      "text": "於是天子曰：“剽姚校尉去病斩首虏二千二十八级，及相国、当户，斩单于大父行籍若侯产，生捕季父罗姑比，再冠军，以千六百户封去病为冠军侯。上谷太守郝贤四从大将军，捕斩首虏二千馀人，以千一百户封贤为众利侯。”",
+      "annotated": "於是<role>天子</role>曰：“<off>剽姚校尉</off><p name=\"霍去病\">去病</p><law>斩首</law>虏二千二十八级，及<off>相国</off>、<off>当户</off>，<law>斩</law><role>单于</role>大父行<off>籍若侯</off>产，生捕<role>季父</role><p>罗姑比</p>，再<off>冠军</off>，以<qty>千六百户</qty><vpol>封</vpol><p name=\"霍去病\">去病</p>为<p name=\"霍去病\">冠军侯</p>。<off>上谷太守</off><p>郝贤</p>四从<off>大将军</off>，捕<law>斩首</law>虏<qty>二千馀人</qty>，以<qty>千一百户</qty><vpol>封</vpol><p name=\"郝贤\">贤</p>为<off>众利侯</off>。”"
+    },
+    {
+      "pid": "40",
+      "text": "是岁，失两将军军，亡翕侯，军功不多，故大将军不益封。右将军建至，天子不诛，赦其罪，赎为庶人。",
+      "annotated": "是岁，失两<off>将军</off>军，亡<off>翕侯</off>，军功不多，故<off>大将军</off>不益封。<off>右将军</off><p name=\"苏建\">建</p>至，<role>天子</role>不<law>诛</law>，<vpol>赦</vpol>其罪，<law>赎</law>为<role>庶人</role>。"
+    },
+    {
+      "pid": "41",
+      "text": "大将军既还，赐千金。是时王夫人方幸於上，甯乘说大将军曰：“将军所以功未甚多，身食万户，三子皆为侯者，徒以皇后故也。今王夫人幸而宗族未富贵，原将军奉所赐千金为王夫人亲寿。”",
+      "annotated": "<off>大将军</off>既还，赐千<art>金</art>。是时<p>王夫人</p>方幸於<off>上</off>，<p>甯乘</p>说<off>大将军</off>曰：“<off>将军</off>所以功未甚多，身食<qty>万户</qty>，三子皆为<off>侯</off>者，徒以<role>皇后</role>故也。今<p>王夫人</p>幸而宗族未富贵，原<off>将军</off>奉所赐千<art>金</art>为<p>王夫人</p>亲寿。”"
+    },
+    {
+      "pid": "42",
+      "text": "大将军乃以五百金为寿。天子闻之，问大将军，大将军以实言，上乃拜甯乘为东海都尉。",
+      "annotated": "<off>大将军</off>乃以五百<art>金</art>为寿。<role>天子</role>闻之，问<off>大将军</off>，<off>大将军</off>以实言，<off>上</off>乃<vpol>拜</vpol><p>甯乘</p>为<off>东海都尉</off>。"
+    },
+    {
+      "pid": "43",
+      "text": "张骞从大将军，以尝使大夏，留匈奴中久，导军，知善水草处，军得以无饥渴，因前使绝国功，封骞博望侯。",
+      "annotated": "<p>张骞</p>从<off>大将军</off>，以尝使<loc>大夏</loc>，留<tribe>匈奴</tribe>中久，导军，知善<art>水</art><art>草</art>处，军得以无饥渴，因前使绝国功，<vpol>封</vpol><p name=\"张骞\">骞</p><off>博望侯</off>。"
+    },
+    {
+      "pid": "44",
+      "text": "冠军侯去病既侯三岁，元狩二年春，以冠军侯去病为骠骑将军，将万骑出陇西，有功。",
+      "annotated": "<p name=\"霍去病\">冠军侯</p><p name=\"霍去病\">去病</p>既侯<time name=\"时长\">三岁</time>，<time name=\"年号\">元狩</time><time>二年春</time>，以<p name=\"霍去病\">冠军侯</p><p name=\"霍去病\">去病</p>为<off>骠骑将军</off>，将万<off>骑</off>出<loc>陇西</loc>，有功。"
+    },
+    {
+      "pid": "45",
+      "text": "天子曰：“骠骑将军率戎士逾乌盭，讨遫濮，涉狐奴，历五王国，辎重人众慑慴者弗取，冀获单于子。转战六日，过焉支山千有馀里，合短兵，杀折兰王，斩卢胡王，诛全甲，执浑邪王子及相国、都尉，首虏八千馀级，收休屠祭天金人，益封去病二千户。”",
+      "annotated": "<role>天子</role>曰：“<off>骠骑将军</off>率戎<role>士</role>逾<loc>乌盭</loc>，讨遫<loc>濮</loc>，涉<loc>狐奴</loc>，历五王国，辎重人众慑慴者弗<law>取</law>，冀获<role>单于</role>子。转<law>战</law><time name=\"时长\">六日</time>，过<loc>焉支山</loc>千有馀里，合短兵，<law>杀</law><off>折兰王</off>，<law>斩</law><off>卢胡王</off>，<law>诛</law>全甲，执<off>浑邪王</off>子及<off>相国</off>、<off>都尉</off>，首虏<qty>八千馀级</qty>，收<p>休屠</p><sys>祭天</sys><art>金人</art>，益<vpol>封</vpol><p name=\"霍去病\">去病</p><qty>二千户</qty>。”"
+    },
+    {
+      "pid": "46",
+      "text": "其夏，骠骑将军与合骑侯敖俱出北地，异道；博望侯张骞、郎中令李广俱出右北平，异道：皆击匈奴。",
+      "annotated": "其夏，<off>骠骑将军</off>与<off>合骑侯</off><p name=\"公孙敖\">敖</p>俱出<loc>北地</loc>，异道；<off>博望侯</off><p>张骞</p>、<off>郎中令</off><p>李广</p>俱出<loc>右北平</loc>，异道：皆<law>击</law><tribe>匈奴</tribe>。"
+    },
+    {
+      "pid": "47",
+      "text": "郎中令将四千骑先至，博望侯将万骑在後至。匈奴左贤王将数万骑围郎中令，郎中令与战二日，死者过半，所杀亦过当。博望侯至，匈奴兵引去。",
+      "annotated": "<off>郎中令</off>将四千<off>骑</off>先至，<off>博望侯</off>将万<off>骑</off>在後至。<tribe>匈奴</tribe><off>左贤王</off>将<qty>数万</qty><off>骑</off><law>围</law><off>郎中令</off>，<off>郎中令</off>与<law>战</law><time name=\"时长\">二日</time>，死者过半，所<law>杀</law>亦过当。<off>博望侯</off>至，<tribe>匈奴</tribe>兵引去。"
+    },
+    {
+      "pid": "48",
+      "text": "博望侯坐行留，当斩，赎为庶人。",
+      "annotated": "<off>博望侯</off>坐行留，<law>当斩</law>，<law>赎</law>为<role>庶人</role>。"
+    },
+    {
+      "pid": "49",
+      "text": "而骠骑将军出北地，已遂深入，与合骑侯失道，不相得，骠骑将军逾居延至祁连山，捕首虏甚多。",
+      "annotated": "而<off>骠骑将军</off>出<loc>北地</loc>，已遂深入，与<off>合骑侯</off>失道，不相得，<off>骠骑将军</off>逾<loc>居延</loc>至<loc>祁连山</loc>，捕首虏甚多。"
+    },
+    {
+      "pid": "50",
+      "text": "天子曰：“骠骑将军逾居延，遂过小月氏，攻祁连山，得酋涂王，以众降者二千五百人，斩首虏三万二百级，获五王，五王母，单于阏氏、王子五十九人，相国、将军、当户、都尉六十三人，师大率减什三，益封去病五千户。赐校尉从至小月氏爵左庶长。鹰击司马破奴再从骠骑将军斩濮王，捕稽沮王，千骑将得王、王母各一人，王子以下四十一人，捕虏三千三百三十人，前行捕虏千四百人，以千五百户封破奴为从骠侯。校尉句王高不识，从骠骑将军捕呼于屠王王子以下十一人，捕虏千七百六十八人，以千一百户封不识为宜冠侯。校尉仆多有功，封为煇渠侯。”",
+      "annotated": "<role>天子</role>曰：“<off>骠骑将军</off>逾<loc>居延</loc>，遂过<tribe>小月氏</tribe>，<law>攻</law><loc>祁连山</loc>，得<off>酋涂王</off>，以众降者二千五百人，<law>斩首</law>虏三万二百级，获五王，五王母，<role>单于</role><role>阏氏</role>、<role>王子</role>五十九人，<off>相国</off>、<off>将军</off>、<off>当户</off>、<off>都尉</off><qty>六十三人</qty>，师大率减什三，益<vpol>封</vpol><p name=\"霍去病\">去病</p><qty>五千户</qty>。赐<off>校尉</off>从至<tribe>小月氏</tribe>爵<off>左庶长</off>。<off>鹰击司马</off><p name=\"赵破奴\">破奴</p>再从<off>骠骑将军</off><law>斩</law><off>濮王</off>，捕<off>稽沮王</off>，<off>千骑将</off>得王、王母各<qty>一人</qty>，<role>王子</role>以下四十一人，捕虏<qty>三千三百三十人</qty>，前行捕虏<qty>千四百人</qty>，以<qty>千五百户</qty><vpol>封</vpol><p name=\"赵破奴\">破奴</p>为<off>从骠侯</off>。<off>校尉</off><p>句王</p>高<p name=\"高不识\">不识</p>，从<off>骠骑将军</off>捕<off>呼于屠王</off><role>王子</role>以下<qty>十一人</qty>，捕虏千七百六十八人，以<qty>千一百户</qty><vpol>封</vpol><p name=\"高不识\">不识</p>为<off>宜冠侯</off>。<off>校尉</off><p>仆多</p>有功，封为<off>煇渠侯</off>。”"
+    },
+    {
+      "pid": "51",
+      "text": "合骑侯敖坐行留不与骠骑会，当斩，赎为庶人。诸宿将所将士马兵亦不如骠骑，骠骑所将常选，然亦敢深入，常与壮骑先其大军，军亦有天幸，未尝困绝也。然而诸宿将常坐留落不遇。由此骠骑日以亲贵，比大将军。",
+      "annotated": "<off>合骑侯</off><p name=\"公孙敖\">敖</p>坐行留不与<off>骠骑</off>会，<law>当斩</law>，<law>赎</law>为<role>庶人</role>。诸<role>宿将</role>所将<role>士</role><bio>马</bio>兵亦不如<off>骠骑</off>，<off>骠骑</off>所将常选，然亦敢深入，常与壮<off>骑</off>先其大军，军亦有天幸，未尝困绝也。然而诸<role>宿将</role>常坐留落不遇。由此<off>骠骑</off>日以亲贵，比<off>大将军</off>。"
+    },
+    {
+      "pid": "52",
+      "text": "其秋，单于怒浑邪王居西方数为汉所破，亡数万人，以骠骑之兵也。单于怒，欲召诛浑邪王。",
+      "annotated": "其秋，<role>单于</role>怒<off>浑邪王</off>居西方数为<state>汉</state>所<law>破</law>，亡<qty>数万人</qty>，以<off>骠骑</off>之兵也。<role>单于</role>怒，欲召<law>诛</law><off>浑邪王</off>。"
+    },
+    {
+      "pid": "53",
+      "text": "浑邪王与休屠王等谋欲降汉，使人先要边。是时大行李息将城河上，得浑邪王使，即驰传以闻。",
+      "annotated": "<off>浑邪王</off>与<off>休屠王</off>等谋欲降<state>汉</state>，使人先要边。是时<off>大行</off><p>李息</p>将城<loc>河</loc>上，得<off>浑邪王</off>使，即驰传以闻。"
+    },
+    {
+      "pid": "54",
+      "text": "天子闻之，於是恐其以诈降而袭边，乃令骠骑将军将兵往迎之。",
+      "annotated": "<role>天子</role>闻之，於是恐其以诈降而<law>袭</law>边，乃令<off>骠骑将军</off>将兵往迎之。"
+    },
+    {
+      "pid": "55",
+      "text": "骠骑既渡河，与浑邪王众相望。浑邪王裨将见汉军而多欲不降者，颇遁去。",
+      "annotated": "<off>骠骑</off>既渡<loc>河</loc>，与<off>浑邪王</off>众相望。<off>浑邪王</off><off>裨将</off>见<state>汉</state>军而多欲不降者，颇遁去。"
+    },
+    {
+      "pid": "56",
+      "text": "骠骑乃驰入与浑邪王相见，斩其欲亡者八千人，遂独遣浑邪王乘传先诣行在所，尽将其众渡河，降者数万，号称十万。",
+      "annotated": "<off>骠骑</off>乃驰入与<off>浑邪王</off>相见，<law>斩</law>其欲亡者<qty>八千人</qty>，遂独遣<off>浑邪王</off>乘传先诣行在所，尽将其众渡<loc>河</loc>，降者<qty>数万</qty>，号称十万。"
+    },
+    {
+      "pid": "57",
+      "text": "既至长安，天子所以赏赐者数十巨万。封浑邪王万户，为漯阴侯。封其裨王呼毒尼为下摩侯，鹰庇为煇渠侯，禽犁为河綦侯，大当户铜离为常乐侯。",
+      "annotated": "既至<loc>长安</loc>，<role>天子</role>所以赏赐者<qty>数十</qty>巨万。封<off>浑邪王</off><qty>万户</qty>，为<off>漯阴侯</off>。封其<off>裨王</off><p>呼毒尼</p>为<off>下摩侯</off>，<p>鹰庇</p>为<off>煇渠侯</off>，<p>禽犁</p>为<off>河綦侯</off>，<off>大当户</off><p>铜离</p>为<off>常乐侯</off>。"
+    },
+    {
+      "pid": "58",
+      "text": "於是天子嘉骠骑之功曰：“骠骑将军去病率师攻匈奴西域王浑邪，王及厥众萌咸相饹，率以军粮接食，并将控弦万有馀人，诛獟駻，获首虏八千馀级，降异国之王三十二人，战士不离伤，十万之众咸怀集服，仍与之劳，爰及河塞，庶几无患，幸既永绥矣。以千七百户益封骠骑将军。”",
+      "annotated": "於是<role>天子</role>嘉<off>骠骑</off>之功曰：“<off>骠骑将军</off><p name=\"霍去病\">去病</p>率师<law>攻</law><tribe>匈奴</tribe><loc>西域</loc>王<p name=\"浑邪王\">浑邪</p>，王及厥众萌咸相饹，率以军粮接食，并将控弦万有馀人，<law>诛</law>獟駻，获首虏<qty>八千馀级</qty>，降异国之王<qty>三十二人</qty>，<law>战</law><role>士</role>不离伤，<qty>十万之众</qty>咸怀集服，仍与之劳，爰及<loc>河</loc>塞，庶几无患，幸既永绥矣。以<qty>千七百户</qty>益封<off>骠骑将军</off>。”"
+    },
+    {
+      "pid": "59",
+      "text": "减陇西、北地、上郡戍卒之半，以宽天下之繇。",
+      "annotated": "减<loc>陇西</loc>、<loc>北地</loc>、<loc>上郡</loc>戍卒之半，以宽<idea>天下</idea>之繇。"
+    },
+    {
+      "pid": "60",
+      "text": "居顷之，乃分徙降者边五郡故塞外，而皆在河南，因其故俗，为属国。",
+      "annotated": "居顷之，乃分徙降者边五郡故塞外，而皆在<loc>河南</loc>，因其故俗，为<off>属国</off>。"
+    },
+    {
+      "pid": "61",
+      "text": "其明年，匈奴入右北平、定襄，杀略汉千馀人。",
+      "annotated": "其<time>明年</time>，<tribe>匈奴</tribe>入<loc>右北平</loc>、<loc>定襄</loc>，<law>杀</law>略<state>汉</state><qty>千馀人</qty>。"
+    },
+    {
+      "pid": "62",
+      "text": "其明年，天子与诸将议曰：“翕侯赵信为单于画计，常以为汉兵不能度幕轻留，今大发士卒，其势必得所欲。” 是岁元狩四年也。",
+      "annotated": "其<time>明年</time>，<role>天子</role>与<role>诸将</role>议曰：“<off>翕侯</off><p>赵信</p>为<role>单于</role>画计，常以为<state>汉</state>兵不能度幕轻留，今大发<role>士</role>卒，其势必得所欲。” 是岁<time name=\"年号\">元狩</time><time>四年</time>也。"
+    },
+    {
+      "pid": "63",
+      "text": "元狩四年春，上令大将军青、骠骑将军去病将各五万骑，步兵转者踵军数十万，而敢力战深入之士皆属骠骑。",
+      "annotated": "<time name=\"年号\">元狩</time><time>四年春</time>，<off>上</off>令<off>大将军</off><p name=\"卫青\">青</p>、<off>骠骑将军</off><p name=\"霍去病\">去病</p>将各五万<off>骑</off>，步兵转者踵军<qty>数十万</qty>，而敢力<law>战</law>深入之<role>士</role>皆属<off>骠骑</off>。"
+    },
+    {
+      "pid": "64",
+      "text": "骠骑始为出定襄，当单于。捕虏言单于东，乃更令骠骑出代郡，令大将军出定襄。",
+      "annotated": "<off>骠骑</off>始为出<loc>定襄</loc>，当<role>单于</role>。捕虏言<role>单于</role>东，乃更令<off>骠骑</off>出<loc>代郡</loc>，令<off>大将军</off>出<loc>定襄</loc>。"
+    },
+    {
+      "pid": "65",
+      "text": "郎中令为前将军，太仆为左将军，主爵赵食其为右将军，平阳侯襄为後将军，皆属大将军。",
+      "annotated": "<off>郎中令</off>为<off>前将军</off>，<off>太仆</off>为<off>左将军</off>，<off>主爵</off><p>赵食其</p>为<off>右将军</off>，<off>平阳侯</off><p name=\"曹襄\">襄</p>为<off>後将军</off>，皆属<off>大将军</off>。"
+    },
+    {
+      "pid": "66",
+      "text": "兵即度幕，人马凡五万骑，与骠骑等咸击匈奴单于。",
+      "annotated": "兵即度幕，人<bio>马</bio>凡五万<off>骑</off>，与<off>骠骑</off>等咸<law>击</law><tribe>匈奴</tribe><role>单于</role>。"
+    },
+    {
+      "pid": "67",
+      "text": "赵信为单于谋曰：“汉兵既度幕，人马罢，匈奴可坐收虏耳。” 乃悉远北其辎重，皆以精兵待幕北。",
+      "annotated": "<p>赵信</p>为<role>单于</role>谋曰：“<state>汉</state>兵既度幕，人<bio>马</bio>罢，<tribe>匈奴</tribe>可坐收虏耳。” 乃悉远北其辎重，皆以精兵待<loc>幕北</loc>。"
+    },
+    {
+      "pid": "68",
+      "text": "而適值大将军军出塞千馀里，见单于兵陈而待，於是大将军令武刚车自环为营，而纵五千骑往当匈奴。匈奴亦纵可万骑。",
+      "annotated": "而適值<off>大将军</off>军出塞<qty>千馀里</qty>，见<role>单于</role>兵陈而待，於是<off>大将军</off>令<art>武刚车</art>自环为营，而纵五千<off>骑</off>往当<tribe>匈奴</tribe>。<tribe>匈奴</tribe>亦纵可万<off>骑</off>。"
+    },
+    {
+      "pid": "69",
+      "text": "会日且入，大风起，沙砾击面，两军不相见，汉益纵左右翼绕单于。",
+      "annotated": "会<astro>日</astro>且入，大风起，<art>沙</art>砾<law>击</law>面，两军不相见，<state>汉</state>益纵左右翼绕<role>单于</role>。"
+    },
+    {
+      "pid": "70",
+      "text": "单于视汉兵多，而士马尚彊，战而匈奴不利，薄莫，单于遂乘六，壮骑可数百，直冒汉围西北驰去。",
+      "annotated": "<role>单于</role>视<state>汉</state>兵多，而<role>士</role><bio>马</bio>尚彊，<law>战</law>而<tribe>匈奴</tribe>不利，薄莫，<role>单于</role>遂乘六，壮<off>骑</off>可<qty>数百</qty>，直冒<state>汉</state><law>围</law>西北驰去。"
+    },
+    {
+      "pid": "71",
+      "text": "时已昏，汉匈奴相纷挐，杀伤大当。汉军左校捕虏言单于未昏而去，汉军因发轻骑夜追之，大将军军因随其後。匈奴兵亦散走。",
+      "annotated": "时已昏，<state>汉</state><tribe>匈奴</tribe>相纷挐，<law>杀</law>伤大当。<state>汉</state>军<off>左校</off>捕虏言<role>单于</role>未昏而去，<state>汉</state>军因发轻<off>骑</off>夜追之，<off>大将军</off>军因随其後。<tribe>匈奴</tribe>兵亦散走。"
+    },
+    {
+      "pid": "72",
+      "text": "迟明，行二百馀里，不得单于，颇捕斩首虏万馀级，遂至窴颜山赵信城，得匈奴积粟食军。军留一日而还，悉烧其城馀粟以归。",
+      "annotated": "迟明，行<qty>二百馀里</qty>，不得<role>单于</role>，颇捕<law>斩首</law>虏<qty>万馀级</qty>，遂至<loc>窴颜山</loc><p>赵信</p>城，得<tribe>匈奴</tribe>积<art>粟</art>食军。军留<time name=\"时长\">一日</time>而还，悉烧其城馀<art>粟</art>以归。"
+    },
+    {
+      "pid": "73",
+      "text": "大将军之与单于会也，而前将军广、右将军食其军别从东道，或失道，後击单于。",
+      "annotated": "<off>大将军</off>之与<role>单于</role>会也，而<off>前将军</off><p name=\"李广\">广</p>、<off>右将军</off><p name=\"赵食其\">食其</p>军别从东道，或失道，後<law>击</law><role>单于</role>。"
+    },
+    {
+      "pid": "74",
+      "text": "大将军引还过幕南，乃得前将军、右将军。大将军欲使使归报，令长史簿责前将军广，广自杀。右将军至，下吏，赎为庶人。",
+      "annotated": "<off>大将军</off>引还过幕南，乃得<off>前将军</off>、<off>右将军</off>。<off>大将军</off>欲使使归报，令<off>长史</off>簿责<off>前将军</off><p name=\"李广\">广</p>，<p name=\"李广\">广</p>自<law>杀</law>。<off>右将军</off>至，下<off>吏</off>，<law>赎</law>为<role>庶人</role>。"
+    },
+    {
+      "pid": "75",
+      "text": "大将军军入塞，凡斩捕首虏万九千级。",
+      "annotated": "<off>大将军</off>军入塞，凡<law>斩</law>捕首虏<qty>万九千级</qty>。"
+    },
+    {
+      "pid": "76",
+      "text": "是时匈奴众失单于十馀日，右谷蠡王闻之，自立为单于。单于後得其众，右王乃去单于之号。",
+      "annotated": "是时<tribe>匈奴</tribe>众失<role>单于</role><time name=\"时长\">十馀日</time>，<off>右谷蠡王</off>闻之，<vpol>自立</vpol>为<role>单于</role>。<role>单于</role>後得其众，<off>右王</off>乃去<role>单于</role>之号。"
+    },
+    {
+      "pid": "77",
+      "text": "骠骑将军亦将五万骑，车重与大将军军等，而无裨将。悉以李敢等为大校，当裨将，出代、右北平千馀里，直左方兵，所斩捕功已多大将军。",
+      "annotated": "<off>骠骑将军</off>亦将五万<off>骑</off>，<art>车</art>重与<off>大将军</off>军等，而无<off>裨将</off>。悉以<p>李敢</p>等为<off>大校</off>，当<off>裨将</off>，出<state>代</state>、<loc>右北平</loc><qty>千馀里</qty>，直左方兵，所<law>斩</law>捕功已多<off>大将军</off>。"
+    },
+    {
+      "pid": "78",
+      "text": "军既还，天子曰：“骠骑将军去病率师，躬将所获荤粥之士，约轻赍，绝大幕，涉获章渠，以诛比车耆，转击左大将，斩获旗鼓，历涉离侯。济弓闾，获屯头王、韩王等三人，将军、相国、当户、都尉八十三人，封狼居胥山，禅於姑衍，登临翰海。执卤获丑七万有四百四十三级，师率减什三，取食於敌，逴行殊远而粮不绝，以五千八百户益封骠骑将军。”",
+      "annotated": "军既还，<role>天子</role>曰：“<off>骠骑将军</off><p name=\"霍去病\">去病</p>率师，躬将所获<tribe>荤粥</tribe>之<role>士</role>，约轻赍，绝大幕，涉<loc>获章渠</loc>，以<law>诛</law><p>比车耆</p>，转<law>击</law><off>左大将</off>，<law>斩</law>获<art>旗鼓</art>，历涉<off>离侯</off>。济<loc>弓闾</loc>，获<off>屯头王</off>、<off>韩王</off>等<qty>三人</qty>，<off>将军</off>、<off>相国</off>、<off>当户</off>、<off>都尉</off><qty>八十三人</qty>，封<loc>狼居胥山</loc>，禅於<loc>姑衍</loc>，登临<loc>翰海</loc>。执卤获丑七万有四百四十三级，师率减什三，<law>取</law>食於敌，逴行殊远而粮不绝，以<qty>五千八百户</qty>益封<off>骠骑将军</off>。”"
+    },
+    {
+      "pid": "79",
+      "text": "右北平太守路博德属骠骑将军，会与城，不失期，从至檮余山，斩首捕虏二千七百级，以千六百户封博德为符离侯。",
+      "annotated": "<off>右北平太守</off><p>路博德</p>属<off>骠骑将军</off>，会与城，不失期，从至<loc>檮余山</loc>，<law>斩首</law>捕虏二千七百级，以<qty>千六百户</qty><vpol>封</vpol><p name=\"路博德\">博德</p>为<off>符离侯</off>。"
+    },
+    {
+      "pid": "80",
+      "text": "北地都尉邢山从骠骑将军获王，以千二百户封山为义阳侯。",
+      "annotated": "<off>北地都尉</off><p>邢山</p>从<off>骠骑将军</off>获王，以<qty>千二百户</qty><vpol>封</vpol><p name=\"邢山\">山</p>为<off>义阳侯</off>。"
+    },
+    {
+      "pid": "81",
+      "text": "故归义因淳王复陆支、楼专王伊即靬皆从骠骑将军有功，以千三百户封复陆支为壮侯，以千八百户封伊即靬为众利侯。",
+      "annotated": "故<off>归义</off><off>因淳王</off><p>复陆支</p>、<off>楼专王</off><p>伊即靬</p>皆从<off>骠骑将军</off>有功，以<qty>千三百户</qty><vpol>封</vpol><p>复陆支</p>为<off>壮侯</off>，以<qty>千八百户</qty><vpol>封</vpol><p>伊即靬</p>为<off>众利侯</off>。"
+    },
+    {
+      "pid": "82",
+      "text": "从骠侯破奴、昌武侯安稽从骠骑有功，益封各三百户。校尉敢得旗鼓，为关内侯，食邑二百户。校尉自为爵大庶长。",
+      "annotated": "<off>从骠侯</off><p name=\"赵破奴\">破奴</p>、<off>昌武侯</off><p name=\"赵安稽\">安稽</p>从<off>骠骑</off>有功，益封各<qty>三百户</qty>。<off>校尉</off><p name=\"李敢\">敢</p>得<art>旗鼓</art>，为<off>关内侯</off>，<vpol>食邑</vpol><qty>二百户</qty>。<off>校尉</off><p name=\"李自\">自</p>为爵<off>大庶长</off>。"
+    },
+    {
+      "pid": "83",
+      "text": "军吏卒为官，赏赐甚多。而大将军不得益封，军吏卒皆无封侯者。",
+      "annotated": "<off>军吏</off>卒为<off>官</off>，赏赐甚多。而<off>大将军</off>不得益封，<off>军吏</off>卒皆无封<off>侯</off>者。"
+    },
+    {
+      "pid": "84",
+      "text": "两军之出塞，塞阅官及私马凡十四万匹，而复入塞者不满三万匹。",
+      "annotated": "两军之出塞，塞阅<off>官</off>及私<bio>马</bio>凡<qty>十四万匹</qty>，而复入塞者不满三万匹。"
+    },
+    {
+      "pid": "85",
+      "text": "乃益置大司马位，大将军、骠骑将军皆为大司马。定令，令骠骑将军秩禄与大将军等。",
+      "annotated": "乃益置<off>大司马</off>位，<off>大将军</off>、<off>骠骑将军</off>皆为<off>大司马</off>。定令，令<off>骠骑将军</off>秩禄与<off>大将军</off>等。"
+    },
+    {
+      "pid": "86",
+      "text": "自是之後，大将军青日退，而骠骑日益贵。举大将军故人门下多去事骠骑，辄得官爵，唯任安不肯。",
+      "annotated": "自是之後，<off>大将军</off><p name=\"卫青\">青</p>日退，而<off>骠骑</off>日益贵。举<off>大将军</off>故人门下多去事<off>骠骑</off>，辄得<off>官</off>爵，唯<p>任安</p>不肯。"
+    },
+    {
+      "pid": "87",
+      "text": "骠骑将军为人少言不泄，有气敢任。天子尝欲教之孙吴兵法，对曰：“顾方略何如耳，不至学古兵法。”",
+      "annotated": "<off>骠骑将军</off>为人少言不泄，有气敢任。<role>天子</role>尝欲教之<sys>孙吴兵法</sys>，对曰：“顾方略何如耳，不至学古<sys>兵法</sys>。”"
+    },
+    {
+      "pid": "88",
+      "text": "天子为治第，令骠骑视之，对曰：“匈奴未灭，无以家为也。” 由此上益重爱之。",
+      "annotated": "<role>天子</role>为治<art>第</art>，令<off>骠骑</off>视之，对曰：“<tribe>匈奴</tribe>未灭，无以家为也。” 由此<off>上</off>益重爱之。"
+    },
+    {
+      "pid": "89",
+      "text": "然少而侍中，贵，不省士。其从军，天子为遣太官赍数十乘，既还，重车馀弃粱肉，而士有饥者。其在塞外，卒乏粮，或不能自振，而骠骑尚穿域蹋鞠。事多此类。",
+      "annotated": "然少而<off>侍中</off>，贵，不省<role>士</role>。其从军，<role>天子</role>为遣<off>太官</off>赍<qty>数十乘</qty>，既还，重<art>车</art>馀弃<art>粱</art><art>肉</art>，而<role>士</role>有饥者。其在塞外，卒乏粮，或不能自振，而<off>骠骑</off>尚穿域蹋鞠。事多此类。"
+    },
+    {
+      "pid": "90",
+      "text": "大将军为人仁善退让，以和柔自媚於上，然天下未有称也。",
+      "annotated": "<off>大将军</off>为人仁善退让，以和柔自媚於<off>上</off>，然<idea>天下</idea>未有称也。"
+    },
+    {
+      "pid": "91",
+      "text": "骠骑将军自四年军後三年，元狩六年而卒。",
+      "annotated": "<off>骠骑将军</off>自<time name=\"时长\">四年</time>军後<time name=\"时长\">三年</time>，<time name=\"年号\">元狩</time><time>六年</time>而卒。"
+    },
+    {
+      "pid": "92",
+      "text": "天子悼之，发属国玄甲军，陈自长安至茂陵，为冢象祁连山。谥之，并武与广地曰景桓侯。",
+      "annotated": "<role>天子</role>悼之，发<off>属国</off><art>玄甲</art>军，陈自<loc>长安</loc>至<loc>茂陵</loc>，为冢象<loc>祁连山</loc>。谥之，并武与广地曰<p>景桓侯</p>。"
+    },
+    {
+      "pid": "93",
+      "text": "子嬗代侯。嬗少，字子侯，上爱之，幸其壮而将之。居六岁，元封元年，嬗卒，谥哀侯。无子，绝，国除。",
+      "annotated": "<role>子</role><p name=\"霍嬗\">嬗</p>代<off>侯</off>。<p name=\"霍嬗\">嬗</p>少，字<p name=\"霍嬗\">子侯</p>，<off>上</off>爱之，幸其壮而将之。居<time name=\"时长\">六岁</time>，<time name=\"年号\">元封</time><time>元年</time>，<p name=\"霍嬗\">嬗</p>卒，<vpol>谥</vpol><p name=\"霍嬗\">哀侯</p>。无子，绝，<vpol>国除</vpol>。"
+    },
+    {
+      "pid": "94",
+      "text": "自骠骑将军死後，大将军长子宜春侯伉坐法失侯。",
+      "annotated": "自<off>骠骑将军</off>死後，<off>大将军</off><role>长子</role><off>宜春侯</off><p name=\"卫伉\">伉</p><law>坐法</law>失<off>侯</off>。"
+    },
+    {
+      "pid": "95",
+      "text": "後五岁，伉弟二人，阴安侯不疑及发干侯登皆坐酎金失侯。失侯後二岁，冠军侯国除。",
+      "annotated": "後<time name=\"时长\">五岁</time>，<p name=\"卫伉\">伉</p><role>弟</role><qty>二人</qty>，<off>阴安侯</off><p name=\"卫不疑\">不疑</p>及<off>发干侯</off><p name=\"卫登\">登</p>皆坐<sys>酎金</sys>失<off>侯</off>。失<off>侯</off>後<time name=\"时长\">二岁</time>，<p name=\"霍去病\">冠军侯</p><vpol>国除</vpol>。"
+    },
+    {
+      "pid": "96",
+      "text": "其後四年，大将军青卒，谥为烈侯。子伉代为长平侯。",
+      "annotated": "其後<time name=\"时长\">四年</time>，<off>大将军</off><p name=\"卫青\">青</p>卒，<vpol>谥</vpol>为<p name=\"卫青\">烈侯</p>。<role>子</role><p name=\"卫伉\">伉</p>代为<off>长平侯</off>。"
+    },
+    {
+      "pid": "97",
+      "text": "自大将军围单于之後，十四年而卒。竟不复击匈奴者，以汉马少，而方南诛两越，东伐朝鲜，击羌、西南夷，以故久不伐胡。",
+      "annotated": "自<off>大将军</off><law>围</law><role>单于</role>之後，<time name=\"时长\">十四年</time>而卒。竟不复<law>击</law><tribe>匈奴</tribe>者，以<state>汉</state><bio>马</bio>少，而方南<law>诛</law><tribe>两越</tribe>，东<law>伐</law><state>朝鲜</state>，<law>击</law><tribe>羌</tribe>、<tribe>西南夷</tribe>，以故久不<law>伐</law><tribe>胡</tribe>。"
+    },
+    {
+      "pid": "98",
+      "text": "大将军以其得尚平阳长公主故，长平侯伉代侯。六岁，坐法失侯。",
+      "annotated": "<off>大将军</off>以其得尚<p>平阳长公主</p>故，<off>长平侯</off><p name=\"卫伉\">伉</p>代<off>侯</off>。<time name=\"时长\">六岁</time>，<law>坐法</law>失<off>侯</off>。"
+    },
+    {
+      "pid": "99",
+      "text": "左方两大将军及诸裨将名：",
+      "annotated": "左方两<off>大将军</off>及诸<off>裨将</off>名："
+    },
+    {
+      "pid": "100",
+      "text": "最大将军青，凡七出击匈奴，斩捕首虏五万馀级。一与单于战，收河南地，遂置朔方郡，再益封，凡万一千八百户。封三子为侯，侯千三百户。并之，万五千七百户。其校尉裨将以从大将军侯者九人。其裨将及校尉已为将者十四人。为裨将者曰李广，自有传。无传者曰：",
+      "annotated": "最<off>大将军</off><p name=\"卫青\">青</p>，凡七出<law>击</law><tribe>匈奴</tribe>，<law>斩</law>捕首虏<qty>五万馀级</qty>。一与<role>单于</role><law>战</law>，收<loc>河南</loc>地，遂置<loc>朔方郡</loc>，再益封，凡万一千八百户。封三<role>子</role>为<off>侯</off>，<off>侯</off><qty>千三百户</qty>。并之，万五千七百户。其<off>校尉</off><off>裨将</off>以从<off>大将军</off>侯者<qty>九人</qty>。其<off>裨将</off>及<off>校尉</off>已为将者<qty>十四人</qty>。为<off>裨将</off>者曰<p>李广</p>，自有传。无传者曰："
+    },
+    {
+      "pid": "101",
+      "text": "将军公孙贺。贺，义渠人，其先胡种。贺父浑邪，景帝时为平曲侯，坐法失侯。",
+      "annotated": "<off>将军</off><p>公孙贺</p>。<p name=\"公孙贺\">贺</p>，<loc>义渠</loc>人，其先<tribe>胡</tribe>种。<p name=\"公孙贺\">贺</p><role>父</role><p name=\"公孙浑邪\">浑邪</p>，<p>景帝</p>时为<off>平曲侯</off>，<law>坐法</law>失<off>侯</off>。"
+    },
+    {
+      "pid": "102",
+      "text": "贺，武帝为太子时舍人。武帝立八岁，以太仆为轻车将军，军马邑。後四岁，以轻车将军出云中。後五岁，以骑将军从大将军有功，封为南窌侯。",
+      "annotated": "<p name=\"公孙贺\">贺</p>，<p>武帝</p>为<role>太子</role>时<off>舍人</off>。<p>武帝</p>立<time name=\"时长\">八岁</time>，以<off>太仆</off>为<off>轻车将军</off>，军<loc>马邑</loc>。後<time name=\"时长\">四岁</time>，以<off>轻车将军</off>出<loc>云中</loc>。後<time name=\"时长\">五岁</time>，以<off>骑将军</off>从<off>大将军</off>有功，封为<off>南窌侯</off>。"
+    },
+    {
+      "pid": "103",
+      "text": "後一岁，以左将军再从大将军出定襄，无功。後四岁，以坐酎金失侯。後八岁，以浮沮将军出五原二千馀里，无功。",
+      "annotated": "後<time name=\"时长\">一岁</time>，以<off>左将军</off>再从<off>大将军</off>出<loc>定襄</loc>，无功。後<time name=\"时长\">四岁</time>，以坐<sys>酎金</sys>失<off>侯</off>。後<time name=\"时长\">八岁</time>，以<off>浮沮将军</off>出<loc>五原</loc><qty>二千馀里</qty>，无功。"
+    },
+    {
+      "pid": "104",
+      "text": "後八岁，以太仆为丞相，封葛绎侯。贺七为将军，出击匈奴无大功，而再侯，为丞相。坐子敬声与阳石公主奸，为巫蛊，族灭，无後。",
+      "annotated": "後<time name=\"时长\">八岁</time>，以<off>太仆</off>为<off>丞相</off>，封<off>葛绎侯</off>。<p name=\"公孙贺\">贺</p>七为<off>将军</off>，出<law>击</law><tribe>匈奴</tribe>无大功，而再<off>侯</off>，为<off>丞相</off>。坐<role>子</role><p name=\"公孙敬声\">敬声</p>与<p>阳石公主</p>奸，为<sys>巫蛊</sys>，<law>族灭</law>，无後。"
+    },
+    {
+      "pid": "105",
+      "text": "将军李息，郁郅人。事景帝。至武帝立八岁，为材官将军，军马邑；後六岁，为将军，出代；後三岁，为将军，从大将军出朔方：皆无功。凡三为将军，其後常为大行。",
+      "annotated": "<off>将军</off><p>李息</p>，<loc>郁郅</loc>人。事<p>景帝</p>。至<p>武帝</p>立<time name=\"时长\">八岁</time>，为<off>材官将军</off>，军<loc>马邑</loc>；後<time name=\"时长\">六岁</time>，为<off>将军</off>，出<state>代</state>；後<time name=\"时长\">三岁</time>，为<off>将军</off>，从<off>大将军</off>出<loc>朔方</loc>：皆无功。凡三为<off>将军</off>，其後常为<off>大行</off>。"
+    },
+    {
+      "pid": "106",
+      "text": "将军公孙敖，义渠人。以郎事武帝。武帝立十二岁，为骑将军，出代，亡卒七千人，当斩，赎为庶人。",
+      "annotated": "<off>将军</off><p>公孙敖</p>，<loc>义渠</loc>人。以<off>郎</off>事<p>武帝</p>。<p>武帝</p>立<time name=\"时长\">十二岁</time>，为<off>骑将军</off>，出<state>代</state>，亡卒<qty>七千人</qty>，<law>当斩</law>，<law>赎</law>为<role>庶人</role>。"
+    },
+    {
+      "pid": "107",
+      "text": "後五岁，以校尉从大将军有功，封为合骑侯。後一岁，以中将军从大将军，再出定襄，无功。",
+      "annotated": "後<time name=\"时长\">五岁</time>，以<off>校尉</off>从<off>大将军</off>有功，封为<off>合骑侯</off>。後<time name=\"时长\">一岁</time>，以<off>中将军</off>从<off>大将军</off>，再出<loc>定襄</loc>，无功。"
+    },
+    {
+      "pid": "108",
+      "text": "後二岁，以将军出北地，後骠骑期，当斩，赎为庶人。後二岁，以校尉从大将军，无功。",
+      "annotated": "後<time name=\"时长\">二岁</time>，以<off>将军</off>出<loc>北地</loc>，後<off>骠骑</off>期，<law>当斩</law>，<law>赎</law>为<role>庶人</role>。後<time name=\"时长\">二岁</time>，以<off>校尉</off>从<off>大将军</off>，无功。"
+    },
+    {
+      "pid": "109",
+      "text": "後十四岁，以因杅将军筑受降城。七岁，复以因杅将军再出击匈奴，至余吾，亡士卒多，下吏，当斩，诈死，亡居民间五六岁。",
+      "annotated": "後<time name=\"时长\">十四岁</time>，以<off>因杅将军</off>筑<art>受降城</art>。<time name=\"时长\">七岁</time>，复以<off>因杅将军</off>再出<law>击</law><tribe>匈奴</tribe>，至<loc>余吾</loc>，亡<role>士</role>卒多，下<off>吏</off>，<law>当斩</law>，诈死，亡居民间<time name=\"时长\">五六岁</time>。"
+    },
+    {
+      "pid": "110",
+      "text": "後发觉，复系。坐妻为巫蛊，族。凡四为将军，出击匈奴，一侯。",
+      "annotated": "後发觉，复系。坐妻为<sys>巫蛊</sys>，<law>族</law>。凡四为<off>将军</off>，出<law>击</law><tribe>匈奴</tribe>，一<off>侯</off>。"
+    },
+    {
+      "pid": "111",
+      "text": "将军李沮，云中人。事景帝。武帝立十七岁，以左内史为彊弩将军。後一岁，复为彊弩将军。",
+      "annotated": "<off>将军</off><p>李沮</p>，<loc>云中</loc>人。事<p>景帝</p>。<p>武帝</p>立<time name=\"时长\">十七岁</time>，以<off>左内史</off>为<off>彊弩将军</off>。後<time name=\"时长\">一岁</time>，复为<off>彊弩将军</off>。"
+    },
+    {
+      "pid": "112",
+      "text": "将军李蔡，成纪人也。事孝文帝、景帝、武帝。以轻车将军从大将军有功，封为乐安侯。已为丞相，坐法死。",
+      "annotated": "<off>将军</off><p>李蔡</p>，<loc>成纪</loc>人也。事<p>孝文帝</p>、<p>景帝</p>、<p>武帝</p>。以<off>轻车将军</off>从<off>大将军</off>有功，封为<off>乐安侯</off>。已为<off>丞相</off>，<law>坐法</law>死。"
+    },
+    {
+      "pid": "113",
+      "text": "将军张次公，河东人。以校尉从卫将军青有功，封为岸头侯。其後太后崩，为将军，军北军。",
+      "annotated": "<off>将军</off><p>张次公</p>，<loc>河东</loc>人。以<off>校尉</off>从<off>卫将军</off><p name=\"卫青\">青</p>有功，封为<off>岸头侯</off>。其後<role>太后</role>崩，为<off>将军</off>，军<sys>北军</sys>。"
+    },
+    {
+      "pid": "114",
+      "text": "後一岁，为将军，从大将军，再为将军，坐法失侯。次公父隆，轻车武射也。以善射，景帝幸近之也。",
+      "annotated": "後<time name=\"时长\">一岁</time>，为<off>将军</off>，从<off>大将军</off>，再为<off>将军</off>，<law>坐法</law>失<off>侯</off>。<p name=\"张次公\">次公</p><role>父</role><p name=\"张隆\">隆</p>，<off>轻车武射</off>也。以善射，<p>景帝</p>幸近之也。"
+    },
+    {
+      "pid": "115",
+      "text": "将军苏建，杜陵人。以校尉从卫将军青，有功，为平陵侯，以将军筑朔方。",
+      "annotated": "<off>将军</off><p>苏建</p>，<loc>杜陵</loc>人。以<off>校尉</off>从<off>卫将军</off><p name=\"卫青\">青</p>，有功，为<off>平陵侯</off>，以<off>将军</off>筑<loc>朔方</loc>。"
+    },
+    {
+      "pid": "116",
+      "text": "後四岁，为游击将军，从大将军出朔方。後一岁，以右将军再从大将军出定襄，亡翕侯，失军，当斩，赎为庶人。其後为代郡太守，卒，冢在大犹乡。",
+      "annotated": "後<time name=\"时长\">四岁</time>，为<off>游击将军</off>，从<off>大将军</off>出<loc>朔方</loc>。後<time name=\"时长\">一岁</time>，以<off>右将军</off>再从<off>大将军</off>出<loc>定襄</loc>，亡<off>翕侯</off>，失军，<law>当斩</law>，<law>赎</law>为<role>庶人</role>。其後为<off>代郡太守</off>，卒，冢在<loc>大犹乡</loc>。"
+    },
+    {
+      "pid": "117",
+      "text": "将军赵信，以匈奴相国降，为翕侯。武帝立十七岁，为前将军，与单于战，败，降匈奴。",
+      "annotated": "<off>将军</off><p>赵信</p>，以<tribe>匈奴</tribe><off>相国</off>降，为<off>翕侯</off>。<p>武帝</p>立<time name=\"时长\">十七岁</time>，为<off>前将军</off>，与<role>单于</role><law>战</law>，<law>败</law>，降<tribe>匈奴</tribe>。"
+    },
+    {
+      "pid": "118",
+      "text": "将军张骞，以使通大夏，还，为校尉。从大将军有功，封为博望侯。",
+      "annotated": "<off>将军</off><p>张骞</p>，以使通<loc>大夏</loc>，还，为<off>校尉</off>。从<off>大将军</off>有功，封为<off>博望侯</off>。"
+    },
+    {
+      "pid": "119",
+      "text": "後三岁，为将军，出右北平，失期，当斩，赎为庶人。其後使通乌孙，为大行而卒，冢在汉中。",
+      "annotated": "後<time name=\"时长\">三岁</time>，为<off>将军</off>，出<loc>右北平</loc>，失期，<law>当斩</law>，<law>赎</law>为<role>庶人</role>。其後使通<tribe>乌孙</tribe>，为<off>大行</off>而卒，冢在<loc>汉中</loc>。"
+    },
+    {
+      "pid": "120",
+      "text": "将军赵食其，祋祤人也。武帝立二十二岁，以主爵为右将军，从大将军出定襄，迷失道，当斩，赎为庶人。",
+      "annotated": "<off>将军</off><p>赵食其</p>，<loc>祋祤</loc>人也。<p>武帝</p>立<time name=\"时长\">二十二岁</time>，以<off>主爵</off>为<off>右将军</off>，从<off>大将军</off>出<loc>定襄</loc>，迷失道，<law>当斩</law>，<law>赎</law>为<role>庶人</role>。"
+    },
+    {
+      "pid": "121",
+      "text": "将军曹襄，以平阳侯为後将军，从大将军出定襄。襄，曹参孙也。",
+      "annotated": "<off>将军</off><p>曹襄</p>，以<off>平阳侯</off>为<off>後将军</off>，从<off>大将军</off>出<loc>定襄</loc>。<p name=\"曹襄\">襄</p>，<p>曹参</p><role>孙</role>也。"
+    },
+    {
+      "pid": "122",
+      "text": "将军韩说，弓高侯庶孙也。以校尉从大将军有功，为龙嵒侯，坐酎金失侯。",
+      "annotated": "<off>将军</off><p>韩说</p>，<off>弓高侯</off>庶孙也。以<off>校尉</off>从<off>大将军</off>有功，为<off>龙嵒侯</off>，坐<sys>酎金</sys>失<off>侯</off>。"
+    },
+    {
+      "pid": "123",
+      "text": "元鼎六年，以待诏为横海将军，击东越有功，为按道侯。以太初三年为游击将军，屯於五原外列城。",
+      "annotated": "<time name=\"年号\">元鼎</time><time>六年</time>，以<off>待诏</off>为<off>横海将军</off>，<law>击</law><tribe>东越</tribe>有功，为<off>按道侯</off>。以<time name=\"年号\">太初</time><time>三年</time>为<off>游击将军</off>，屯於<loc>五原</loc>外列城。"
+    },
+    {
+      "pid": "124",
+      "text": "为光禄勋，掘蛊太子宫，卫太子杀之。",
+      "annotated": "为<off>光禄勋</off>，掘<sys>蛊</sys><role>太子</role>宫，<p name=\"刘据\">卫太子</p><law>杀</law>之。"
+    },
+    {
+      "pid": "125",
+      "text": "将军郭昌，云中人也。以校尉从大将军。元封四年，以太中大夫为拔胡将军，屯朔方。还击昆明，毋功，夺印。",
+      "annotated": "<off>将军</off><p>郭昌</p>，<loc>云中</loc>人也。以<off>校尉</off>从<off>大将军</off>。<time name=\"年号\">元封</time><time>四年</time>，以<off>太中大夫</off>为<off>拔胡将军</off>，屯<loc>朔方</loc>。还<law>击</law><tribe>昆明</tribe>，毋功，夺印。"
+    },
+    {
+      "pid": "126",
+      "text": "将军荀彘，太原广武人。以御见，侍中，为校尉，数从大将军。以元封三年为左将军击朝鲜，毋功。以捕楼船将军坐法死。",
+      "annotated": "<off>将军</off><p>荀彘</p>，<loc>太原</loc><loc>广武</loc>人。以<off>御</off>见，<off>侍中</off>，为<off>校尉</off>，数从<off>大将军</off>。以<time name=\"年号\">元封</time><time>三年</time>为<off>左将军</off><law>击</law><state>朝鲜</state>，毋功。以捕<off>楼船将军</off><law>坐法</law>死。"
+    },
+    {
+      "pid": "127",
+      "text": "最骠骑将军去病，凡六出击匈奴，其四出以将军，斩捕首虏十一万馀级。及浑邪王以众降数万，遂开河西酒泉之地，西方益少胡寇。四益封，凡万五千一百户。其校吏有功为侯者凡六人，而後为将军二人。",
+      "annotated": "最<off>骠骑将军</off><p name=\"霍去病\">去病</p>，凡六出<law>击</law><tribe>匈奴</tribe>，其四出以<off>将军</off>，<law>斩</law>捕首虏<qty>十一万馀级</qty>。及<off>浑邪王</off>以众降<qty>数万</qty>，遂开<loc>河西</loc><loc>酒泉</loc>之地，西方益少<tribe>胡</tribe>寇。四益封，凡万五千一百户。其校吏有功为<off>侯</off>者凡<qty>六人</qty>，而後为<off>将军</off><qty>二人</qty>。"
+    },
+    {
+      "pid": "128",
+      "text": "将军路博德，平州人。以右北平太守从骠骑将军有功，为符离侯。",
+      "annotated": "<off>将军</off><p>路博德</p>，<loc>平州</loc>人。以<off>右北平太守</off>从<off>骠骑将军</off>有功，为<off>符离侯</off>。"
+    },
+    {
+      "pid": "129",
+      "text": "骠骑死後，博德以卫尉为伏波将军，伐破南越，益封。其後坐法失侯。为彊弩都尉，屯居延，卒。",
+      "annotated": "<off>骠骑</off>死後，<p name=\"路博德\">博德</p>以<off>卫尉</off>为<off>伏波将军</off>，<law>伐</law><law>破</law><tribe>南越</tribe>，益封。其後<law>坐法</law>失<off>侯</off>。为<off>彊弩都尉</off>，屯<loc>居延</loc>，卒。"
+    },
+    {
+      "pid": "130",
+      "text": "将军赵破奴，故九原人。尝亡入匈奴，已而归汉，为骠骑将军司马。出北地时有功，封为从骠侯。坐酎金失侯。",
+      "annotated": "<off>将军</off><p>赵破奴</p>，故<loc>九原</loc>人。尝亡入<tribe>匈奴</tribe>，已而归<state>汉</state>，为<off>骠骑将军</off><off>司马</off>。出<loc>北地</loc>时有功，封为<off>从骠侯</off>。坐<sys>酎金</sys>失<off>侯</off>。"
+    },
+    {
+      "pid": "131",
+      "text": "後一岁，为匈河将军，攻胡至匈河水，无功。後二岁，击虏楼兰王，复封为浞野侯。",
+      "annotated": "後<time name=\"时长\">一岁</time>，为<off>匈河将军</off>，<law>攻</law><tribe>胡</tribe>至<loc>匈河水</loc>，无功。後<time name=\"时长\">二岁</time>，<law>击</law>虏<off>楼兰王</off>，复封为<off>浞野侯</off>。"
+    },
+    {
+      "pid": "132",
+      "text": "後六岁，为浚稽将军，将二万骑击匈奴左贤王，左贤王与战，兵八万骑围破奴，破奴生为虏所得，遂没其军。",
+      "annotated": "後<time name=\"时长\">六岁</time>，为<off>浚稽将军</off>，将二万<off>骑</off><law>击</law><tribe>匈奴</tribe><off>左贤王</off>，<off>左贤王</off>与<law>战</law>，兵八万<off>骑</off><law>围</law><p name=\"赵破奴\">破奴</p>，<p name=\"赵破奴\">破奴</p>生为虏所得，遂没其军。"
+    },
+    {
+      "pid": "133",
+      "text": "居匈奴中十岁，复与其太子安国亡入汉。後坐巫蛊，族。",
+      "annotated": "居<tribe>匈奴</tribe>中<time name=\"时长\">十岁</time>，复与其<p>太子安国</p>亡入<state>汉</state>。後坐<sys>巫蛊</sys>，<law>族</law>。"
+    },
+    {
+      "pid": "134",
+      "text": "自卫氏兴，大将军青首封，其後枝属为五侯。凡二十四岁而五侯尽夺，卫氏无为侯者。 ::: 太史公曰",
+      "annotated": "自<clan>卫氏</clan>兴，<off>大将军</off><p name=\"卫青\">青</p>首封，其後枝属为五<off>侯</off>。凡<time name=\"时长\">二十四岁</time>而五<off>侯</off>尽夺，<clan>卫氏</clan>无为<off>侯</off>者。 ::: 太史公曰"
+    },
+    {
+      "pid": "135",
+      "text": "太史公曰：苏建语余曰：“吾尝责大将军至尊重，而天下之贤大夫毋称焉，原将军观古名将所招选择贤者，勉之哉。大将军谢曰：“自魏其、武安之厚宾客，天子常切齿。彼亲附士大夫，招贤绌不肖者，人主之柄也。人臣奉法遵职而已，何与招士！” ” 骠骑亦放此意，其为将如此。 ::: ::: 赞",
+      "annotated": "<p>太史公</p>曰：<p>苏建</p>语余曰：“吾尝责<off>大将军</off>至尊重，而<idea>天下</idea>之贤<role>大夫</role>毋称焉，原<off>将军</off>观古名将所招选择<role>贤者</role>，勉之哉。<off>大将军</off>谢曰：“自<p name=\"窦婴\">魏其</p>、<p name=\"田蚡\">武安</p>之厚<role>宾客</role>，<role>天子</role>常切齿。彼亲附<role>士</role><role>大夫</role>，招贤绌<role>不肖者</role>，<role>人主</role>之柄也。<role>人臣</role>奉<sys>法</sys>遵职而已，何与招<role>士</role>！” ” <off>骠骑</off>亦放此意，其为将如此。 ::: ::: 赞"
+    },
+    {
+      "pid": "136",
+      "text": "君子豹变，贵贱何常。 青本奴虏，忽升戎行。 姊配皇极，身尚平阳。 宠荣斯僭，取乱彝章。 嫖姚继踵，再静边方。 :::",
+      "annotated": "君子豹变，贵贱何常。 <p name=\"卫青\">青</p>本奴虏，忽升戎行。 姊配<sys>皇极</sys>，身尚<loc>平阳</loc>。 宠荣斯僭，<law>取</law>乱彝章。 <p name=\"霍去病\">嫖姚</p>继踵，再静边方。 :::"
+    }
+  ]
+}

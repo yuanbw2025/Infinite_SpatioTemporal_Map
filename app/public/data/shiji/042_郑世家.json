@@ -1,0 +1,241 @@
+{
+  "work": "史记",
+  "chapter": "郑世家",
+  "chapter_file": "042_郑世家",
+  "chapter_type": "世家",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 46,
+  "paragraph_count_done": 46,
+  "paragraphs": [
+    {
+      "pid": "1",
+      "text": "郑桓公友者，周厉王少子而宣王庶弟也。 宣王立二十二年，友初封于郑。 封三十三岁，百姓皆便爱之。 幽王以为司徒。 和集周民，周民皆说，河雒之间，人便思之。",
+      "annotated": "<p>郑桓公</p><p name=\"郑桓公\">友</p>者，<p>周厉王</p>少子而<p name=\"周宣王\">宣王</p>庶弟也。 <p name=\"周宣王\">宣王</p>立<time>二十二年</time>，<p name=\"郑桓公\">友</p>初封于<loc>郑</loc>。 封<time name=\"时长\">三十三岁</time>，<role>百姓</role>皆便爱之。 <p name=\"周幽王\">幽王</p>以为<off>司徒</off>。 和集<state>周</state>民，<state>周</state>民皆说，<loc>河雒</loc>之间，人便思之。"
+    },
+    {
+      "pid": "2",
+      "text": "为司徒一岁，幽王以襃后故，王室治多邪，诸侯或畔之。 於是桓公问太史伯曰：“王室多故，予安逃死乎？” 太史伯对曰：“独雒之东土，河济之南可居。” 公曰：“何以？” 对曰：“地近虢、郐，虢、郐之君贪而好利，百姓不附。今公为司徒，民皆爱公，公诚请居之，虢、郐之君见公方用事，轻分公地。公诚居之，虢、郐之民皆公之民也。”",
+      "annotated": "为<off>司徒</off><time name=\"时长\">一岁</time>，<p name=\"周幽王\">幽王</p>以<p>襃后</p>故，王室治多邪，<role>诸侯</role>或畔之。 於是<p name=\"郑桓公\">桓公</p>问<p>太史伯</p>曰：“王室多故，予安逃死乎？” <p>太史伯</p>对曰：“独<loc>雒</loc>之东土，<loc>河济</loc>之南可居。” 公曰：“何以？” 对曰：“地近<state>虢</state>、<state>郐</state>，<state>虢</state>、<state>郐</state>之君贪而好利，<role>百姓</role>不附。今公为<off>司徒</off>，<role>民</role>皆爱公，公诚请居之，<state>虢</state>、<state>郐</state>之君见公方用事，轻分公地。公诚居之，<state>虢</state>、<state>郐</state>之<role>民</role>皆公之<role>民</role>也。”"
+    },
+    {
+      "pid": "3",
+      "text": "公曰：“吾欲南之江上，何如？” 对曰：“昔祝融为高辛氏火正，其功大矣，而其於周未有兴者，楚其後也。周衰，楚必兴。兴，非郑之利也。” 公曰：“吾欲居西方，何如？” 对曰：“其民贪而好利，难久居。” 公曰：“周衰，何国兴者？” 对曰：“齐、秦、晋、楚乎？夫齐，姜姓，伯夷之後也，伯夷佐尧典礼。秦，嬴姓，伯翳之後也，伯翳佐舜怀柔百物。及楚之先，皆尝有功於天下。而周武王克纣後，成王封叔虞于唐，其地阻险，以此有德与周衰并，亦必兴矣。”",
+      "annotated": "公曰：“吾欲南之<loc>江</loc>上，何如？” 对曰：“昔<p>祝融</p>为<clan>高辛氏</clan><off>火正</off>，其功大矣，而其於<state>周</state>未有兴者，<state>楚</state>其後也。<state>周</state>衰，<state>楚</state>必兴。兴，非<state>郑</state>之利也。” 公曰：“吾欲居<loc>西方</loc>，何如？” 对曰：“其民贪而好利，难久居。” 公曰：“<state>周</state>衰，何国兴者？” 对曰：“<state>齐</state>、<state>秦</state>、<state>晋</state>、<state>楚</state>乎？夫<state>齐</state>，<clan>姜</clan>姓，<p>伯夷</p>之後也，<p>伯夷</p>佐<p>尧</p>典礼。<state>秦</state>，<clan>嬴</clan>姓，<p>伯翳</p>之後也，<p>伯翳</p>佐<p>舜</p>怀柔百物。及<state>楚</state>之先，皆尝有功於天下。而<p>周武王</p>克<p>纣</p>後，<p name=\"周成王\">成王</p><vpol>封</vpol><p>叔虞</p>于<state>唐</state>，其地阻险，以此有德与<state>周</state>衰并，亦必兴矣。”"
+    },
+    {
+      "pid": "4",
+      "text": "桓公曰：“善。”",
+      "annotated": "<p name=\"郑桓公\">桓公</p>曰：“善。”"
+    },
+    {
+      "pid": "5",
+      "text": "於是卒言王，东徙其民雒东，而虢、郐果献十邑，竟国之。 二岁，犬戎杀幽王於骊山下，并杀桓公。 郑人共立其子掘突，是为武公。",
+      "annotated": "於是卒言王，东徙其民<loc>雒</loc>东，而<state>虢</state>、<state>郐</state>果献十邑，竟国之。 <time name=\"时长\">二岁</time>，<tribe>犬戎</tribe><vact>杀</vact><p name=\"周幽王\">幽王</p>於<loc>骊山</loc>下，并<vact>杀</vact><p name=\"郑桓公\">桓公</p>。 <state>郑</state>人共立其子<p name=\"郑武公\">掘突</p>，是为<p name=\"郑武公\">武公</p>。"
+    },
+    {
+      "pid": "6",
+      "text": "武公十年，娶申侯女为夫人，曰武姜。 生太子寤生，生之难，及生，夫人弗爱。 後生少子叔段，段生易，夫人爱之。 二十七年，武公疾。 夫人请公，欲立段为太子，公弗听。 是岁，武公卒，寤生立，是为庄公。",
+      "annotated": "<p name=\"郑武公\">武公</p><time>十年</time>，娶<p>申侯</p>女为<role>夫人</role>，曰<p>武姜</p>。 生<role>太子</role><p name=\"郑庄公\">寤生</p>，生之难，及生，<role>夫人</role>弗爱。 後生<role>少子</role><p>叔段</p>，<p name=\"共叔段\">段</p>生易，<role>夫人</role>爱之。 <time>二十七年</time>，<p name=\"郑武公\">武公</p>疾。 <role>夫人</role>请公，欲<vpol>立</vpol><p name=\"共叔段\">段</p>为<role>太子</role>，公弗听。 是岁，<p name=\"郑武公\">武公</p>卒，<p name=\"郑庄公\">寤生</p>立，是为<p name=\"郑庄公\">庄公</p>。"
+    },
+    {
+      "pid": "7",
+      "text": "庄公元年，封弟段於京，号太叔。 祭仲曰：“京大於国，非所以封庶也。” 庄公曰：“武姜欲之，我弗敢夺也。” 段至京，缮治甲兵，与其母武姜谋袭郑。 二十二年，段果袭郑，武姜为内应。 庄公发兵伐段，段走。 伐京，京人畔段，段出走鄢。 鄢溃，段出奔共。",
+      "annotated": "<p name=\"郑庄公\">庄公</p><time>元年</time>，封弟<p name=\"共叔段\">段</p>於<loc>京</loc>，号<role>太叔</role>。 <p>祭仲</p>曰：“<loc>京</loc>大於国，非所以封庶也。” <p name=\"郑庄公\">庄公</p>曰：“<p>武姜</p>欲之，我弗敢夺也。” <p name=\"共叔段\">段</p>至<loc>京</loc>，缮治<art>甲兵</art>，与其母<p>武姜</p>谋<vact>袭</vact><state>郑</state>。 <time>二十二年</time>，<p name=\"共叔段\">段</p>果<vact>袭</vact><state>郑</state>，<p>武姜</p>为内应。 <p name=\"郑庄公\">庄公</p>发兵<vact>伐</vact><p name=\"共叔段\">段</p>，<p name=\"共叔段\">段</p>走。 <vact>伐</vact><loc>京</loc>，<loc>京</loc>人畔<p name=\"共叔段\">段</p>，<p name=\"共叔段\">段</p>出走<loc>鄢</loc>。 <loc>鄢</loc>溃，<p name=\"共叔段\">段</p>出奔<loc>共</loc>。"
+    },
+    {
+      "pid": "8",
+      "text": "於是庄公迁其母武姜於城颍，誓言曰：“不至黄泉，毋相见也。” 居岁馀，已悔思母。 颍谷之考叔有献於公，公赐食。 考叔曰：“臣有母，请君食赐臣母。” 庄公曰：“我甚思母，恶负盟，柰何？” 考叔曰：“穿地至黄泉，则相见矣。” 於是遂从之，见母。",
+      "annotated": "於是<p name=\"郑庄公\">庄公</p>迁其母<p>武姜</p>於<loc>城颍</loc>，誓言曰：“不至黄泉，毋相见也。” 居<time name=\"时长\">岁馀</time>，已悔思母。 <loc>颍谷</loc>之<p>考叔</p>有献於公，公<vpol>赐食</vpol>。 <p>考叔</p>曰：“臣有母，请君食赐臣母。” <p name=\"郑庄公\">庄公</p>曰：“我甚思母，恶负盟，柰何？” <p>考叔</p>曰：“穿地至黄泉，则相见矣。” 於是遂从之，见母。"
+    },
+    {
+      "pid": "9",
+      "text": "二十四年，宋缪公卒，公子冯奔郑。 郑侵周地，取禾。 二十五年，卫州吁弑其君桓公自立，与宋伐郑，以冯故也。 二十七年，始朝周桓王。 桓王怒其取禾，弗礼也。 二十九年，庄公怒周弗礼，与鲁易祊、许田。 三十三年，宋杀孔父。 三十七年，庄公不朝周，周桓王率陈、蔡、虢、卫伐郑。 庄公与祭仲、高渠弥发兵自救，王师大败。 祝聸射中王臂。 祝聸请从之，郑伯止之，曰：“犯长且难之，况敢陵天子乎？” 乃止。 夜令祭仲问王疾。",
+      "annotated": "<time>二十四年</time>，<p>宋缪公</p>卒，<off>公子</off><p name=\"宋庄公\">冯</p>奔<state>郑</state>。 <state>郑</state><vact>侵</vact><state>周</state>地，<vact>取</vact>禾。 <time>二十五年</time>，<state>卫</state><p>州吁</p><vact>弑</vact>其君<p name=\"卫桓公\">桓公</p><vpol>自立</vpol>，与<state>宋</state><vact>伐</vact><state>郑</state>，以<p name=\"宋庄公\">冯</p>故也。 <time>二十七年</time>，始<vpol>朝</vpol><p>周桓王</p>。 <p name=\"周桓王\">桓王</p>怒其取禾，弗礼也。 <time>二十九年</time>，<p name=\"郑庄公\">庄公</p>怒<state>周</state>弗礼，与<state>鲁</state>易<loc>祊</loc>、<loc>许田</loc>。 <time>三十三年</time>，<state>宋</state><vact>杀</vact><p>孔父</p>。 <time>三十七年</time>，<p name=\"郑庄公\">庄公</p>不<vpol>朝</vpol><state>周</state>，<p>周桓王</p>率<state>陈</state>、<state>蔡</state>、<state>虢</state>、<state>卫</state><vact>伐</vact><state>郑</state>。 <p name=\"郑庄公\">庄公</p>与<p>祭仲</p>、<p>高渠弥</p>发兵自救，王师大败。 <p>祝聸</p><vact>射</vact>中王臂。 <p>祝聸</p>请从之，<p name=\"郑庄公\">郑伯</p>止之，曰：“犯长且难之，况敢陵<role>天子</role>乎？” 乃止。 夜令<p>祭仲</p>问王疾。"
+    },
+    {
+      "pid": "10",
+      "text": "三十八年，北戎伐齐，齐使求救，郑遣太子忽将兵救齐。 齐釐公欲妻之，忽谢曰：“我小国，非齐敌也。” 时祭仲与俱，劝使取之，曰：“君多内宠，太子无大援将不立，三公子皆君也。” 所谓三公子者，太子忽，其弟突，次弟子亹也。",
+      "annotated": "<time>三十八年</time>，<tribe>北戎</tribe><vact>伐</vact><state>齐</state>，<state>齐</state>使求救，<state>郑</state>遣<role>太子</role><p name=\"郑昭公\">忽</p>将兵救<state>齐</state>。 <p>齐釐公</p>欲妻之，<p name=\"郑昭公\">忽</p>谢曰：“我小国，非<state>齐</state>敌也。” 时<p>祭仲</p>与俱，劝使取之，曰：“君多内宠，<role>太子</role>无大援将不立，三<off>公子</off>皆君也。” 所谓三<off>公子</off>者，<role>太子</role><p name=\"郑昭公\">忽</p>，其弟<p name=\"郑厉公\">突</p>，次弟<p>子亹</p>也。"
+    },
+    {
+      "pid": "11",
+      "text": "四十三年，郑庄公卒。 初，祭仲甚有宠於庄公，庄公使为卿；公使娶邓女，生太子忽，故祭仲立之，是为昭公。",
+      "annotated": "<time>四十三年</time>，<p>郑庄公</p>卒。 初，<p>祭仲</p>甚有宠於<p name=\"郑庄公\">庄公</p>，<p name=\"郑庄公\">庄公</p>使为<off>卿</off>；公使娶<state>邓</state>女，生<role>太子</role><p name=\"郑昭公\">忽</p>，故<p>祭仲</p>立之，是为<p name=\"郑昭公\">昭公</p>。"
+    },
+    {
+      "pid": "12",
+      "text": "庄公又娶宋雍氏女，生厉公突。 雍氏有宠於宋。 宋庄公闻祭仲之立忽，乃使人诱召祭仲而执之，曰：“不立突，将死。” 亦执突以求赂焉。 祭仲许宋，与宋盟。 以突归，立之。 昭公忽闻祭仲以宋要立其弟突，九月丁亥，忽出奔卫。 己亥，突至郑，立，是为厉公。",
+      "annotated": "<p name=\"郑庄公\">庄公</p>又娶<state>宋</state><p>雍氏</p>女，生<p name=\"郑厉公\">厉公</p><p name=\"郑厉公\">突</p>。 <p>雍氏</p>有宠於<state>宋</state>。 <p>宋庄公</p>闻<p>祭仲</p>之<vpol>立</vpol><p name=\"郑昭公\">忽</p>，乃使人诱召<p>祭仲</p>而<vact>执</vact>之，曰：“不<vpol>立</vpol><p name=\"郑厉公\">突</p>，将死。” 亦<vact>执</vact><p name=\"郑厉公\">突</p>以求赂焉。 <p>祭仲</p>许<state>宋</state>，与<state>宋</state>盟。 以<p name=\"郑厉公\">突</p>归，立之。 <p name=\"郑昭公\">昭公</p><p name=\"郑昭公\">忽</p>闻<p>祭仲</p>以<state>宋</state>要立其弟<p name=\"郑厉公\">突</p>，<time>九月丁亥</time>，<p name=\"郑昭公\">忽</p>出奔<state>卫</state>。 <time>己亥</time>，<p name=\"郑厉公\">突</p>至<state>郑</state>，立，是为<p name=\"郑厉公\">厉公</p>。"
+    },
+    {
+      "pid": "13",
+      "text": "厉公四年，祭仲专国政。 厉公患之，阴使其婿雍纠欲杀祭仲。 纠妻，祭仲女也，知之，谓其母曰：“父与夫孰亲？” 母曰：“父一而已，人尽夫也。” 女乃告祭仲，祭仲反杀雍纠，戮之於市。 厉公无柰祭仲何，怒纠曰：“谋及妇人，死固宜哉！” 夏，厉公出居边邑栎。 祭仲迎昭公忽，六月乙亥，复入郑，即位。",
+      "annotated": "<p name=\"郑厉公\">厉公</p><time>四年</time>，<p>祭仲</p>专国政。 <p name=\"郑厉公\">厉公</p>患之，阴使其婿<p>雍纠</p>欲<vact>杀</vact><p>祭仲</p>。 <p name=\"雍纠\">纠</p>妻，<p>祭仲</p>女也，知之，谓其母曰：“<role>父</role>与夫孰亲？” 母曰：“<role>父</role>一而已，人尽夫也。” 女乃告<p>祭仲</p>，<p>祭仲</p>反<vact>杀</vact><p>雍纠</p>，<vact>戮</vact>之於市。 <p name=\"郑厉公\">厉公</p>无柰<p>祭仲</p>何，怒<p name=\"雍纠\">纠</p>曰：“谋及<role>妇人</role>，死固宜哉！” 夏，<p name=\"郑厉公\">厉公</p>出居边邑<loc>栎</loc>。 <p>祭仲</p>迎<p name=\"郑昭公\">昭公</p><p name=\"郑昭公\">忽</p>，<time>六月乙亥</time>，复入<state>郑</state>，即位。"
+    },
+    {
+      "pid": "14",
+      "text": "秋，郑厉公突因栎人杀其大夫单伯，遂居之。 诸侯闻厉公出奔，伐郑，弗克而去。 宋颇予厉公兵，自守於栎，郑以故亦不伐栎。 昭公二年，自昭公为太子时，父庄公欲以高渠弥为卿，太子忽恶之，庄公弗听，卒用渠弥为卿。",
+      "annotated": "秋，<p>郑厉公</p><p name=\"郑厉公\">突</p>因<loc>栎</loc>人<vact>杀</vact>其<role>大夫</role><p>单伯</p>，遂居之。 <role>诸侯</role>闻<p name=\"郑厉公\">厉公</p>出奔，<vact>伐</vact><state>郑</state>，弗克而去。 <state>宋</state>颇予<p name=\"郑厉公\">厉公</p>兵，自守於<loc>栎</loc>，<state>郑</state>以故亦不<vact>伐</vact><loc>栎</loc>。 <p name=\"郑昭公\">昭公</p><time>二年</time>，自<p name=\"郑昭公\">昭公</p>为<role>太子</role>时，<role>父</role><p name=\"郑庄公\">庄公</p>欲以<p>高渠弥</p>为<off>卿</off>，<role>太子</role><p name=\"郑昭公\">忽</p>恶之，<p name=\"郑庄公\">庄公</p>弗听，卒用<p name=\"高渠弥\">渠弥</p>为<off>卿</off>。"
+    },
+    {
+      "pid": "15",
+      "text": "及昭公即位，惧其杀己，冬十月辛卯，渠弥与昭公出猎，射杀昭公於野。 祭仲与渠弥不敢入厉公，乃更立昭公弟子亹为君，是为子亹也，无谥号。",
+      "annotated": "及<p name=\"郑昭公\">昭公</p>即位，惧其<vact>杀</vact>己，<time>冬十月辛卯</time>，<p name=\"高渠弥\">渠弥</p>与<p name=\"郑昭公\">昭公</p>出猎，<vact>射</vact><vact>杀</vact><p name=\"郑昭公\">昭公</p>於野。 <p>祭仲</p>与<p name=\"高渠弥\">渠弥</p>不敢入<p name=\"郑厉公\">厉公</p>，乃更<vpol>立</vpol><p name=\"郑昭公\">昭公</p>弟<p>子亹</p>为君，是为<p name=\"郑子亹\">子亹</p>也，无<sys>谥号</sys>。"
+    },
+    {
+      "pid": "16",
+      "text": "子亹元年七月，齐襄公会诸侯於首止，郑子亹往会，高渠弥相，从，祭仲称疾不行。 所以然者，子亹自齐襄公为公子之时，尝会斗，相仇，及会诸侯，祭仲请子亹无行。 子亹曰：“齐彊，而厉公居栎，即不往，是率诸侯伐我，内厉公。我不如往，往何遽必辱，且又何至是！” 卒行。 於是祭仲恐齐并杀之，故称疾。 子亹至，不谢齐侯，齐侯怒，遂伏甲而杀子亹。 高渠弥亡归，归与祭仲谋，召子亹弟公子婴於陈而立之，是为郑子。 是岁，齐襄公使彭生醉拉杀鲁桓公。",
+      "annotated": "<p name=\"郑子亹\">子亹</p><time>元年七月</time>，<p>齐襄公</p>会<role>诸侯</role>於<loc>首止</loc>，<p>郑子亹</p>往会，<p>高渠弥</p>相，从，<p>祭仲</p>称疾不行。 所以然者，<p>子亹</p>自<p>齐襄公</p>为<off>公子</off>之时，尝会斗，相仇，及会<role>诸侯</role>，<p>祭仲</p>请<p>子亹</p>无行。 <p>子亹</p>曰：“<state>齐</state>彊，而<p name=\"郑厉公\">厉公</p>居<loc>栎</loc>，即不往，是率<role>诸侯</role><vact>伐</vact>我，内<p name=\"郑厉公\">厉公</p>。我不如往，往何遽必辱，且又何至是！” 卒行。 於是<p>祭仲</p>恐<state>齐</state>并<vact>杀</vact>之，故称疾。 <p>子亹</p>至，不谢<p name=\"齐襄公\">齐侯</p>，<p name=\"齐襄公\">齐侯</p>怒，遂伏<art>甲</art>而<vact>杀</vact><p>子亹</p>。 <p>高渠弥</p>亡归，归与<p>祭仲</p>谋，召<p>子亹</p>弟<off>公子</off><p name=\"郑子婴\">婴</p>於<state>陈</state>而立之，是为<p name=\"郑子婴\">郑子</p>。 是岁，<p>齐襄公</p>使<p>彭生</p>醉拉<vact>杀</vact><p>鲁桓公</p>。"
+    },
+    {
+      "pid": "17",
+      "text": "郑子八年，齐人管至父等作乱，弑其君襄公。 十二年，宋人长万弑其君湣公。 郑祭仲死。 十四年，故郑亡厉公突在栎者使人诱劫郑大夫甫假，要以求入。 假曰：“舍我，我为君杀郑子而入君。” 厉公与盟，乃舍之。 六月甲子，假杀郑子及其二子而迎厉公突，突自栎复入即位。 初，内蛇与外蛇斗於郑南门中，内蛇死。 居六年，厉公果复入。 入而让其伯父原曰：“我亡国外居，伯父无意入我，亦甚矣。” 原曰：“事君无二心，人臣之职也。原知罪矣。” 遂自杀。 厉公於是谓甫假曰：“子之事君有二心矣。” 遂诛之。 假曰：“重德不报，诚然哉！”",
+      "annotated": "<p name=\"郑子婴\">郑子</p><time>八年</time>，<state>齐</state>人<p>管至父</p>等作乱，<vact>弑</vact>其君<p name=\"齐襄公\">襄公</p>。 <time>十二年</time>，<state>宋</state>人<p>长万</p><vact>弑</vact>其君<p name=\"宋湣公\">湣公</p>。 <state>郑</state><p>祭仲</p>死。 <time>十四年</time>，故<state>郑</state>亡<p name=\"郑厉公\">厉公</p><p name=\"郑厉公\">突</p>在<loc>栎</loc>者使人诱劫<state>郑</state><role>大夫</role><p>甫假</p>，要以求入。 <p name=\"甫假\">假</p>曰：“舍我，我为君<vact>杀</vact><p name=\"郑子婴\">郑子</p>而入君。” <p name=\"郑厉公\">厉公</p>与盟，乃舍之。 <time>六月甲子</time>，<p name=\"甫假\">假</p><vact>杀</vact><p name=\"郑子婴\">郑子</p>及其二子而迎<p name=\"郑厉公\">厉公</p><p name=\"郑厉公\">突</p>，<p name=\"郑厉公\">突</p>自<loc>栎</loc>复入即位。 初，内<bio>蛇</bio>与外<bio>蛇</bio>斗於<state>郑</state><loc>南门</loc>中，内<bio>蛇</bio>死。 居<time name=\"时长\">六年</time>，<p name=\"郑厉公\">厉公</p>果复入。 入而让其伯<role>父</role><p name=\"原繁\">原</p>曰：“我亡国外居，伯<role>父</role>无意入我，亦甚矣。” <p name=\"原繁\">原</p>曰：“事君无二心，<role>人臣</role>之职也。原知罪矣。” 遂<vact>自杀</vact>。 <p name=\"郑厉公\">厉公</p>於是谓<p>甫假</p>曰：“子之事君有二心矣。” 遂<vact>诛</vact>之。 <p name=\"甫假\">假</p>曰：“重德不报，诚然哉！”"
+    },
+    {
+      "pid": "18",
+      "text": "厉公突後元年，齐桓公始霸。 五年，燕、卫与周惠王弟穨伐王，王出奔温，立弟穨为王。 六年，惠王告急郑，厉公发兵击周王子穨，弗胜，於是与周惠王归，王居于栎。 七年春，郑厉公与虢叔袭杀王子穨而入惠王于周。 秋，厉公卒，子文公踕立。 厉公初立四岁，亡居栎，居栎十七岁，复入，立七岁，与亡凡二十八年。",
+      "annotated": "<p name=\"郑厉公\">厉公</p><p name=\"郑厉公\">突</p><time>後元年</time>，<p>齐桓公</p>始霸。 <time>五年</time>，<state>燕</state>、<state>卫</state>与<p>周惠王</p>弟<p name=\"姬穨\">穨</p><vact>伐</vact>王，王出奔<loc>温</loc>，立弟<p name=\"姬穨\">穨</p>为王。 <time>六年</time>，<p name=\"周惠王\">惠王</p>告急<state>郑</state>，<p name=\"郑厉公\">厉公</p>发兵<vact>击</vact><role>周王子</role><p name=\"姬穨\">穨</p>，弗胜，於是与<p>周惠王</p>归，王居于<loc>栎</loc>。 <time>七年春</time>，<p>郑厉公</p>与<p>虢叔</p><vact>袭</vact><vact>杀</vact><role>王子</role><p name=\"姬穨\">穨</p>而<vact>入</vact><p name=\"周惠王\">惠王</p>于<state>周</state>。 秋，<p name=\"郑厉公\">厉公</p>卒，子<p name=\"郑文公\">文公</p><p name=\"郑文公\">踕</p>立。 <p name=\"郑厉公\">厉公</p>初立<time name=\"时长\">四岁</time>，亡居<loc>栎</loc>，居<loc>栎</loc><time name=\"时长\">十七岁</time>，复入，立<time name=\"时长\">七岁</time>，与亡凡<time name=\"时长\">二十八年</time>。"
+    },
+    {
+      "pid": "19",
+      "text": "文公十七年，齐桓公以兵破蔡，遂伐楚，至召陵。 二十四年，文公之贱妾曰燕姞，梦天与之兰，曰：“余为伯鯈。余，尔祖也。以是为而子，兰有国香。” 以梦告文公，文公幸之，而予之草兰为符。 遂生子，名曰兰。 三十六年，晋公子重耳过，文公弗礼。 文公弟叔詹曰：“重耳贤，且又同姓，穷而过君，不可无礼。” 文公曰：“诸侯亡公子过者多矣，安能尽礼之！” 詹曰：“君如弗礼，遂杀之；弗杀，使即反国，为郑忧矣。” 文公弗听。",
+      "annotated": "<p name=\"郑文公\">文公</p><time>十七年</time>，<p>齐桓公</p>以兵<vact>破</vact><state>蔡</state>，遂<vact>伐</vact><state>楚</state>，至<loc>召陵</loc>。 <time>二十四年</time>，<p name=\"郑文公\">文公</p>之贱妾曰<p>燕姞</p>，梦天与之<bio>兰</bio>，曰：“余为<p>伯鯈</p>。余，尔祖也。以是为而子，<bio>兰</bio>有国香。” 以梦告<p name=\"郑文公\">文公</p>，<p name=\"郑文公\">文公</p>幸之，而予之<bio>草兰</bio>为符。 遂生子，名曰<p name=\"郑缪公\">兰</p>。 <time>三十六年</time>，<state>晋</state><off>公子</off><p>重耳</p>过，<p name=\"郑文公\">文公</p>弗礼。 <p name=\"郑文公\">文公</p>弟<p>叔詹</p>曰：“<p>重耳</p>贤，且又同姓，穷而过君，不可无礼。” <p name=\"郑文公\">文公</p>曰：“<role>诸侯</role>亡<off>公子</off>过者多矣，安能尽礼之！” <p name=\"叔詹\">詹</p>曰：“君如弗礼，遂<vact>杀</vact>之；弗<vact>杀</vact>，使即反国，为<state>郑</state>忧矣。” <p name=\"郑文公\">文公</p>弗听。"
+    },
+    {
+      "pid": "20",
+      "text": "三十七年春，晋公子重耳反国，立，是为文公。 秋，郑入滑，滑听命，已而反与卫，於是郑伐滑。 周襄王使伯馃请滑。 郑文公怨惠王之亡在栎，而文公父厉公入之，而惠王不赐厉公爵禄，又怨襄王之与卫滑，故不听襄王请而囚伯馃。",
+      "annotated": "<time>三十七年春</time>，<state>晋</state><off>公子</off><p>重耳</p>反国，立，是为<p name=\"郑文公\">文公</p>。 秋，<state>郑</state><vact>入</vact><loc>滑</loc>，<loc>滑</loc>听命，已而反与<state>卫</state>，於是<state>郑</state><vact>伐</vact><loc>滑</loc>。 <p>周襄王</p>使<p>伯馃</p>请<loc>滑</loc>。 <p>郑文公</p>怨<p name=\"周惠王\">惠王</p>之亡在<loc>栎</loc>，而<p name=\"郑文公\">文公</p><role>父</role><p name=\"郑厉公\">厉公</p>入之，而<p name=\"周惠王\">惠王</p>不赐<p name=\"郑厉公\">厉公</p>爵禄，又怨<p name=\"周襄王\">襄王</p>之与<state>卫</state><loc>滑</loc>，故不听<p name=\"周襄王\">襄王</p>请而<vact>囚</vact><p>伯馃</p>。"
+    },
+    {
+      "pid": "21",
+      "text": "王怒，与翟人伐郑，弗克。 冬，翟攻伐襄王，襄王出奔郑，郑文公居王于氾。 三十八年，晋文公入襄王成周。",
+      "annotated": "王怒，与<tribe>翟</tribe>人<vact>伐</vact><state>郑</state>，弗克。 冬，<tribe>翟</tribe><vact>攻</vact><vact>伐</vact><p name=\"周襄王\">襄王</p>，<p name=\"周襄王\">襄王</p>出奔<state>郑</state>，<p>郑文公</p>居王于<loc>氾</loc>。 <time>三十八年</time>，<p>晋文公</p><vact>入</vact><p name=\"周襄王\">襄王</p><loc>成周</loc>。"
+    },
+    {
+      "pid": "22",
+      "text": "四十一年，助楚击晋。 自晋文公之过无礼，故背晋助楚。 四十三年，晋文公与秦穆公共围郑，讨其助楚攻晋者，及文公过时之无礼也。 初，郑文公有三夫人，宠子五人，皆以罪蚤死。 公怒，溉逐群公子。 子兰奔晋，从晋文公围郑。 时兰事晋文公甚谨，爱幸之，乃私於晋，以求入郑为太子。 晋於是欲得叔詹为僇。 郑文公恐，不敢谓叔詹言。 詹闻，言於郑君曰：”臣谓君，君不听臣，晋卒为患。然晋所以围郑，以詹，詹死而赦郑国，詹之原也。” 乃自杀。 郑人以詹尸与晋。 晋文公曰：”必欲一见郑君，辱之而去。” 郑人患之，乃使人私於秦曰：“破郑益晋，非秦之利也。” 秦兵罢。 晋文公欲入兰为太子，以告郑。 郑大夫石癸曰：“吾闻姞姓乃后稷之元妃，其後当有兴者。子兰母，其後也。且夫人子尽已死，馀庶子无如兰贤。今围急，晋以为请，利孰大焉！”",
+      "annotated": "<time>四十一年</time>，助<state>楚</state><vact>击</vact><state>晋</state>。 自<p>晋文公</p>之过无礼，故<vact>背</vact><state>晋</state>助<state>楚</state>。 <time>四十三年</time>，<p>晋文公</p>与<p>秦穆公</p>共<vact>围</vact><state>郑</state>，讨其助<state>楚</state><vact>攻</vact><state>晋</state>者，及<p name=\"郑文公\">文公</p>过时之无礼也。 初，<p>郑文公</p>有三<role>夫人</role>，宠子<qty>五人</qty>，皆以罪蚤死。 公怒，溉逐<role>群公子</role>。 <p>子兰</p>奔<state>晋</state>，从<p>晋文公</p><vact>围</vact><state>郑</state>。 时<p name=\"郑缪公\">兰</p>事<p>晋文公</p>甚谨，爱幸之，乃私於<state>晋</state>，以求入<state>郑</state>为<role>太子</role>。 <state>晋</state>於是欲得<p>叔詹</p>为僇。 <p>郑文公</p>恐，不敢谓<p>叔詹</p>言。 <p name=\"叔詹\">詹</p>闻，言於<p name=\"郑文公\">郑君</p>曰：”臣谓君，君不听臣，<state>晋</state>卒为患。然<state>晋</state>所以<vact>围</vact><state>郑</state>，以<p name=\"叔詹\">詹</p>，<p name=\"叔詹\">詹</p>死而<vact>赦</vact><state>郑</state>国，<p name=\"叔詹\">詹</p>之原也。” 乃<vact>自杀</vact>。 <state>郑</state>人以<p name=\"叔詹\">詹</p>尸与<state>晋</state>。 <p>晋文公</p>曰：”必欲一见<p name=\"郑文公\">郑君</p>，辱之而去。” <state>郑</state>人患之，乃使人私於<state>秦</state>曰：“<vact>破</vact><state>郑</state>益<state>晋</state>，非<state>秦</state>之利也。” <state>秦</state>兵罢。 <p>晋文公</p>欲入<p name=\"郑缪公\">兰</p>为<role>太子</role>，以告<state>郑</state>。 <state>郑</state><role>大夫</role><p>石癸</p>曰：“吾闻<clan>姞</clan>姓乃<p>后稷</p>之元妃，其後当有兴者。<p>子兰</p>母，其後也。且<role>夫人</role>子尽已死，馀庶子无如<p name=\"郑缪公\">兰</p>贤。今围急，<state>晋</state>以为请，利孰大焉！”"
+    },
+    {
+      "pid": "23",
+      "text": "遂许晋，与盟，而卒立子兰为太子，晋兵乃罢去。",
+      "annotated": "遂许<state>晋</state>，与盟，而卒<vpol>立</vpol><p>子兰</p>为<role>太子</role>，<state>晋</state>兵乃罢去。"
+    },
+    {
+      "pid": "24",
+      "text": "四十五年，文公卒，子兰立，是为缪公。 缪公元年春，秦缪公使三将将兵欲袭郑，至滑，逢郑贾人弦高诈以十二牛劳军，故秦兵不至而还，晋败之於崤。 初，往年郑文公之卒也，郑司城缯贺以郑情卖之，秦兵故来。 三年，郑发兵从晋伐秦，败秦兵於汪。 往年楚太子商臣弑其父成王代立。 二十一年，与宋华元伐郑。 华元杀羊食士，不与其御羊斟，怒以驰郑，郑囚华元。 宋赎华元，元亦亡去。 晋使赵穿以兵伐郑。 二十二年，郑缪公卒，子夷立，是为灵公。",
+      "annotated": "<time>四十五年</time>，<p name=\"郑文公\">文公</p>卒，<p>子兰</p>立，是为<p name=\"郑缪公\">缪公</p>。 <p name=\"郑缪公\">缪公</p><time>元年春</time>，<p>秦缪公</p>使三将将兵欲<vact>袭</vact><state>郑</state>，至<loc>滑</loc>，逢<state>郑</state>贾人<p>弦高</p>诈以十二<bio>牛</bio>劳军，故<state>秦</state>兵不至而还，<state>晋</state><vact>败</vact>之於<loc>崤</loc>。 初，往年<p>郑文公</p>之卒也，<state>郑</state><off>司城</off><p>缯贺</p>以<state>郑</state>情卖之，<state>秦</state>兵故来。 <time>三年</time>，<state>郑</state>发兵从<state>晋</state><vact>伐</vact><state>秦</state>，<vact>败</vact><state>秦</state>兵於<loc>汪</loc>。 往年<state>楚</state><role>太子</role><p>商臣</p><vact>弑</vact>其<role>父</role><p name=\"楚成王\">成王</p>代立。 <time>二十一年</time>，与<state>宋</state><p>华元</p><vact>伐</vact><state>郑</state>。 <p>华元</p><vact>杀</vact><bio>羊</bio>食<role>士</role>，不与其御<p>羊斟</p>，怒以驰<state>郑</state>，<state>郑</state><vact>囚</vact><p>华元</p>。 <state>宋</state>赎<p>华元</p>，<p name=\"华元\">元</p>亦亡去。 <state>晋</state>使<p>赵穿</p>以兵<vact>伐</vact><state>郑</state>。 <time>二十二年</time>，<p>郑缪公</p>卒，子<p name=\"郑灵公\">夷</p>立，是为<p name=\"郑灵公\">灵公</p>。"
+    },
+    {
+      "pid": "25",
+      "text": "灵公元年春，楚献鼋於灵公。 子家、子公将朝灵公，子公之食指动，谓子家曰：“佗日指动，必食异物。” 及入，见灵公进鼋羹，子公笑曰：“果然！” 灵公问其笑故，具告灵公。 灵公召之，独弗予羹。 子公怒，染其指，尝之而出。 公怒，欲杀子公。 子公与子家谋先。 夏，弑灵公。",
+      "annotated": "<p name=\"郑灵公\">灵公</p><time>元年春</time>，<state>楚</state>献<art>鼋</art>於<p name=\"郑灵公\">灵公</p>。 <p>子家</p>、<p>子公</p>将<vpol>朝</vpol><p name=\"郑灵公\">灵公</p>，<p>子公</p>之食指动，谓<p>子家</p>曰：“佗日指动，必食异物。” 及入，见<p name=\"郑灵公\">灵公</p>进<art>鼋羹</art>，<p>子公</p>笑曰：“果然！” <p name=\"郑灵公\">灵公</p>问其笑故，具告<p name=\"郑灵公\">灵公</p>。 <p name=\"郑灵公\">灵公</p>召之，独弗予<art>羹</art>。 <p>子公</p>怒，染其指，尝之而出。 公怒，欲<vact>杀</vact><p>子公</p>。 <p>子公</p>与<p>子家</p>谋先。 夏，<vact>弑</vact><p name=\"郑灵公\">灵公</p>。"
+    },
+    {
+      "pid": "26",
+      "text": "郑人欲立灵公弟去疾，去疾让曰：“必以贤，则去疾不肖；必以顺，则公子坚长。” 坚者，灵公庶弟，去疾之兄也。 於是乃立子坚，是为襄公。 襄公立，将尽去缪氏。 缪氏者，杀灵公、子公之族家也。 去疾曰：“必去缪氏，我将去之。” 乃止。 皆以为大夫。",
+      "annotated": "<state>郑</state>人欲<vpol>立</vpol><p name=\"郑灵公\">灵公</p>弟<p>去疾</p>，<p>去疾</p>让曰：“必以贤，则<p>去疾</p>不肖；必以顺，则<off>公子</off><p name=\"郑襄公\">坚</p>长。” <p name=\"郑襄公\">坚</p>者，<p name=\"郑灵公\">灵公</p>庶弟，<p>去疾</p>之兄也。 於是乃<vpol>立</vpol><p name=\"郑襄公\">子坚</p>，是为<p name=\"郑襄公\">襄公</p>。 <p name=\"郑襄公\">襄公</p>立，将尽去<state>缪</state>氏。 <state>缪</state>氏者，<vact>杀</vact><p name=\"郑灵公\">灵公</p>、<p>子公</p>之族家也。 <p>去疾</p>曰：“必去<state>缪</state>氏，我将去之。” 乃止。 皆以为<role>大夫</role>。"
+    },
+    {
+      "pid": "27",
+      "text": "襄公元年，楚怒郑受宋赂纵华元，伐郑。 郑背楚，与晋亲。 五年，楚复伐郑，晋来救之。 六年，子家卒，国人复逐其族，以其弑灵公也。 七年，郑与晋盟鄢陵。 八年，楚庄王以郑与晋盟，来伐，围郑三月，郑以城降楚。 楚王入自皇门，郑襄公肉袒掔羊以迎，曰：”孤不能事边邑，使君王怀怒以及弊邑，孤之罪也。敢不惟命是听。君王迁之江南，及以赐诸侯，亦惟命是听。若君王不忘厉、宣王，桓、武公，哀不忍绝其社稷，锡不毛之地，使复得改事君王，孤之原也，然非所敢望也。敢布腹心，惟命是听。”",
+      "annotated": "<p name=\"郑襄公\">襄公</p><time>元年</time>，<state>楚</state>怒<state>郑</state>受<state>宋</state>赂纵<p>华元</p>，<vact>伐</vact><state>郑</state>。 <state>郑</state><vact>背</vact><state>楚</state>，与<state>晋</state>亲。 <time>五年</time>，<state>楚</state>复<vact>伐</vact><state>郑</state>，<state>晋</state>来救之。 <time>六年</time>，<p>子家</p>卒，<role>国人</role>复逐其族，以其<vact>弑</vact><p name=\"郑灵公\">灵公</p>也。 <time>七年</time>，<state>郑</state>与<state>晋</state>盟<loc>鄢陵</loc>。 <time>八年</time>，<p>楚庄王</p>以<state>郑</state>与<state>晋</state>盟，来<vact>伐</vact>，<vact>围</vact><state>郑</state><time>三月</time>，<state>郑</state>以城<vact>降</vact><state>楚</state>。 <off>楚王</off>入自<loc>皇门</loc>，<p>郑襄公</p>肉袒掔<bio>羊</bio>以迎，曰：”<role>孤</role>不能事边邑，使<role>君王</role>怀怒以及弊邑，<role>孤</role>之罪也。敢不惟命是听。<role>君王</role>迁之<loc>江</loc>南，及以赐<role>诸侯</role>，亦惟命是听。若<role>君王</role>不忘<p name=\"周厉王\">厉</p>、<p name=\"周宣王\">宣王</p>，<p name=\"郑桓公\">桓</p>、<p name=\"郑武公\">武公</p>，哀不忍绝其<sys>社稷</sys>，锡不毛之地，使复得改事<role>君王</role>，<role>孤</role>之原也，然非所敢望也。敢布腹心，惟命是听。”"
+    },
+    {
+      "pid": "28",
+      "text": "庄王为卻三十里而後舍。 楚群臣曰：“自郢至此，士大夫亦久劳矣。今得国舍之，何如？” 庄王曰：“所为伐，伐不服也。今已服，尚何求乎？” 卒去。 晋闻楚之伐郑，发兵救郑。 其来持两端，故迟，比至河，楚兵已去。 晋将率或欲渡，或欲还，卒渡河。 庄王闻，还击晋。 郑反助楚，大破晋军於河上。 十年，晋来伐郑，以其反晋而亲楚也。",
+      "annotated": "<p name=\"楚庄王\">庄王</p>为卻<qty>三十里</qty>而後舍。 <state>楚</state><role>群臣</role>曰：“自<loc>郢</loc>至此，士<role>大夫</role>亦久劳矣。今得国舍之，何如？” <p name=\"楚庄王\">庄王</p>曰：“所为伐，伐不服也。今已服，尚何求乎？” 卒去。 <state>晋</state>闻<state>楚</state>之<vact>伐</vact><state>郑</state>，发兵救<state>郑</state>。 其来持两端，故迟，比至<loc>河</loc>，<state>楚</state>兵已去。 <state>晋</state>将率或欲渡，或欲还，卒渡<loc>河</loc>。 <p name=\"楚庄王\">庄王</p>闻，还<vact>击</vact><state>晋</state>。 <state>郑</state>反助<state>楚</state>，大<vact>破</vact><state>晋</state>军於<loc>河</loc>上。 <time>十年</time>，<state>晋</state>来<vact>伐</vact><state>郑</state>，以其<vact>反</vact><state>晋</state>而亲<state>楚</state>也。"
+    },
+    {
+      "pid": "29",
+      "text": "十一年，楚庄王伐宋，宋告急于晋。 晋景公欲发兵救宋，伯宗谏晋君曰：“天方开楚，未可伐也。” 乃求壮士得霍人解扬，字子虎，诓楚，令宋毋降。 过郑，郑与楚亲，乃执解扬而献楚。 楚王厚赐与约，使反其言，令宋趣降，三要乃许。 於是楚登解扬楼车，令呼宋。 遂负楚约而致其晋君命曰：“晋方悉国兵以救宋，宋虽急，慎毋降楚，晋兵今至矣！” 楚庄王大怒，将杀之。 解扬曰：“君能制命为义，臣能承命为信。受吾君命以出，有死无陨。” 庄王曰：“若之许我，已而背之，其信安在？” 解扬曰：“所以许王，欲以成吾君命也。” 将死，顾谓楚军曰：“为人臣无忘尽忠得死者！” 楚王诸弟皆谏王赦之，於是赦解扬使归。 晋爵之为上卿。 十八年，襄公卒，子悼公晞立。",
+      "annotated": "<time>十一年</time>，<p>楚庄王</p><vact>伐</vact><state>宋</state>，<state>宋</state>告急于<state>晋</state>。 <p>晋景公</p>欲发兵救<state>宋</state>，<p>伯宗</p>谏<role>晋君</role>曰：“天方开<state>楚</state>，未可伐也。” 乃求<role>壮士</role>得<state>霍</state>人<p>解扬</p>，字<p>子虎</p>，诓<state>楚</state>，令<state>宋</state>毋<vact>降</vact>。 过<state>郑</state>，<state>郑</state>与<state>楚</state>亲，乃<vact>执</vact><p>解扬</p>而献<state>楚</state>。 <off>楚王</off>厚赐与约，使反其言，令<state>宋</state>趣<vact>降</vact>，三要乃许。 於是<state>楚</state>登<p>解扬</p><art>楼车</art>，令呼<state>宋</state>。 遂负<state>楚</state>约而致其<state>晋</state>君命曰：“<state>晋</state>方悉国兵以救<state>宋</state>，<state>宋</state>虽急，慎毋<vact>降</vact><state>楚</state>，<state>晋</state>兵今至矣！” <p>楚庄王</p>大怒，将<vact>杀</vact>之。 <p>解扬</p>曰：“君能制命为义，臣能承命为信。受吾君命以出，有死无陨。” <p name=\"楚庄王\">庄王</p>曰：“若之许我，已而背之，其信安在？” <p>解扬</p>曰：“所以许王，欲以成吾君命也。” 将死，顾谓<state>楚</state>军曰：“为<role>人臣</role>无忘尽忠得死者！” <off>楚王</off>诸弟皆谏王<vact>赦</vact>之，於是<vact>赦</vact><p>解扬</p>使归。 <state>晋</state>爵之为<off>上卿</off>。 <time>十八年</time>，<p name=\"郑襄公\">襄公</p>卒，子<p name=\"郑悼公\">悼公</p><p name=\"郑悼公\">晞</p>立。"
+    },
+    {
+      "pid": "30",
+      "text": "悼公元年，鄦公恶郑於楚，悼公使弟睔於楚自讼。 讼不直，楚囚睔。 於是郑悼公来与晋平，遂亲。 睔私於楚子反，子反言归睔於郑。 二年，楚伐郑，晋兵来救。 是岁，悼公卒，立其弟睔，是为成公。",
+      "annotated": "<p name=\"郑悼公\">悼公</p><time>元年</time>，<p>鄦公</p>恶<state>郑</state>於<state>楚</state>，<p name=\"郑悼公\">悼公</p>使弟<p name=\"郑成公\">睔</p>於<state>楚</state>自讼。 讼不直，<state>楚</state><vact>囚</vact><p name=\"郑成公\">睔</p>。 於是<p>郑悼公</p>来与<state>晋</state>平，遂亲。 <p name=\"郑成公\">睔</p>私於<state>楚</state><p>子反</p>，<p>子反</p>言归<p name=\"郑成公\">睔</p>於<state>郑</state>。 <time>二年</time>，<state>楚</state><vact>伐</vact><state>郑</state>，<state>晋</state>兵来救。 是岁，<p name=\"郑悼公\">悼公</p>卒，立其弟<p name=\"郑成公\">睔</p>，是为<p name=\"郑成公\">成公</p>。"
+    },
+    {
+      "pid": "31",
+      "text": "成公三年，楚共王曰”郑成公孤有德焉”， 使人来与盟。 成公私与盟。 秋，成公朝晋，晋曰“郑私平於楚”， 执之。 使栾书伐郑。 四年春，郑患晋围，公子如乃立成公庶兄繻为君。 其四月，晋闻郑立君，乃归成公。 郑人闻成公归，亦杀君繻，迎成公。 晋兵去。 十年，背晋盟，盟於楚。 晋厉公怒，发兵伐郑。 楚共王救郑。 晋楚战鄢陵，楚兵败，晋射伤楚共王目，俱罢而去。 十三年，晋悼公伐郑，兵於洧上。 郑城守，晋亦去。 十四年，成公卒，子恽立。 是为釐公。",
+      "annotated": "<p name=\"郑成公\">成公</p><time>三年</time>，<p>楚共王</p>曰”<p>郑成公</p><role>孤</role>有德焉”， 使人来与盟。 <p name=\"郑成公\">成公</p>私与盟。 秋，<p name=\"郑成公\">成公</p><vpol>朝</vpol><state>晋</state>，<state>晋</state>曰“<state>郑</state>私平於<state>楚</state>”， <vact>执</vact>之。 使<p>栾书</p><vact>伐</vact><state>郑</state>。 <time>四年春</time>，<state>郑</state>患<state>晋</state>围，<off>公子</off><p name=\"姬如\">如</p>乃<vpol>立</vpol><p name=\"郑成公\">成公</p>庶兄<p name=\"姬繻\">繻</p>为君。 其<time>四月</time>，<state>晋</state>闻<state>郑</state>立君，乃归<p name=\"郑成公\">成公</p>。 <state>郑</state>人闻<p name=\"郑成公\">成公</p>归，亦<vact>杀</vact>君<p name=\"姬繻\">繻</p>，迎<p name=\"郑成公\">成公</p>。 <state>晋</state>兵去。 <time>十年</time>，<vact>背</vact><state>晋</state>盟，盟於<state>楚</state>。 <p>晋厉公</p>怒，发兵<vact>伐</vact><state>郑</state>。 <p>楚共王</p>救<state>郑</state>。 <state>晋楚</state>战<loc>鄢陵</loc>，<state>楚</state>兵<vact>败</vact>，<state>晋</state><vact>射</vact>伤<p>楚共王</p>目，俱罢而去。 <time>十三年</time>，<p>晋悼公</p><vact>伐</vact><state>郑</state>，兵於<loc>洧</loc>上。 <state>郑</state>城守，<state>晋</state>亦去。 <time>十四年</time>，<p name=\"郑成公\">成公</p>卒，子<p name=\"郑釐公\">恽</p>立。 是为<p name=\"郑釐公\">釐公</p>。"
+    },
+    {
+      "pid": "32",
+      "text": "釐公五年，郑相子驷朝釐公，釐公不礼。 子驷怒，使厨人药杀釐公，赴诸侯曰“釐公暴病卒”。 立釐公子嘉，嘉时年五岁，是为简公。",
+      "annotated": "<p name=\"郑釐公\">釐公</p><time>五年</time>，<state>郑</state>相<p>子驷</p><vpol>朝</vpol><p name=\"郑釐公\">釐公</p>，<p name=\"郑釐公\">釐公</p>不礼。 <p>子驷</p>怒，使<art>厨人</art>药<vact>杀</vact><p name=\"郑釐公\">釐公</p>，赴<role>诸侯</role>曰“<p name=\"郑釐公\">釐公</p>暴病卒”。 <vpol>立</vpol><p name=\"郑釐公\">釐公</p>子<p name=\"郑简公\">嘉</p>，<p name=\"郑简公\">嘉</p>时<qty>年五岁</qty>，是为<p name=\"郑简公\">简公</p>。"
+    },
+    {
+      "pid": "33",
+      "text": "简公元年，诸公子谋欲诛相子驷，子驷觉之，反尽诛诸公子。 二年，晋伐郑，郑与盟，晋去。 冬，又与楚盟。 子驷畏诛，故两亲晋、楚。 三年，相子驷欲自立为君，公子子孔使尉止杀相子驷而代之。 子孔又欲自立。 子产曰：“子驷为不可，诛之，今又效之，是乱无时息也。” 於是子孔从之而相郑简公。 四年，晋怒郑与楚盟，伐郑，郑与盟。 楚共王救郑，败晋兵。 简公欲与晋平，楚又囚郑使者。",
+      "annotated": "<p name=\"郑简公\">简公</p><time>元年</time>，诸<off>公子</off>谋欲<vact>诛</vact>相<p>子驷</p>，<p>子驷</p>觉之，反尽<vact>诛</vact>诸<off>公子</off>。 <time>二年</time>，<state>晋</state><vact>伐</vact><state>郑</state>，<state>郑</state>与盟，<state>晋</state>去。 冬，又与<state>楚</state>盟。 <p>子驷</p>畏<vact>诛</vact>，故两亲<state>晋</state>、<state>楚</state>。 <time>三年</time>，相<p>子驷</p>欲<vpol>自立</vpol>为君，<off>公子</off><p>子孔</p>使<p>尉止</p><vact>杀</vact>相<p>子驷</p>而代之。 <p>子孔</p>又欲<vpol>自立</vpol>。 <p>子产</p>曰：“<p>子驷</p>为不可，<vact>诛</vact>之，今又效之，是乱无时息也。” 於是<p>子孔</p>从之而相<p>郑简公</p>。 <time>四年</time>，<state>晋</state>怒<state>郑</state>与<state>楚</state>盟，<vact>伐</vact><state>郑</state>，<state>郑</state>与盟。 <p>楚共王</p>救<state>郑</state>，<vact>败</vact><state>晋</state>兵。 <p name=\"郑简公\">简公</p>欲与<state>晋</state>平，<state>楚</state>又<vact>囚</vact><state>郑</state>使者。"
+    },
+    {
+      "pid": "34",
+      "text": "十二年，简公怒相子孔专国权，诛之，而以子产为卿。 十九年，简公如晋请卫君还，而封子产以六邑。 子产让，受其三邑。 二十二年，吴使延陵季子於郑，见子产如旧交，谓子产曰：“郑之执政者侈，难将至，政将及子。子为政，必以礼；不然，郑将败。” 子产厚遇季子。 二十三年，诸公子争宠相杀，又欲杀子产。 公子或谏曰：“子产仁人，郑所以存者子产也，勿杀！” 乃止。",
+      "annotated": "<time>十二年</time>，<p name=\"郑简公\">简公</p>怒相<p>子孔</p>专国权，<vact>诛</vact>之，而以<p>子产</p>为<off>卿</off>。 <time>十九年</time>，<p name=\"郑简公\">简公</p>如<state>晋</state>请<state>卫</state>君还，而<vpol>封</vpol><p>子产</p>以六邑。 <p>子产</p>让，受其三邑。 <time>二十二年</time>，<state>吴</state>使<p>延陵季子</p>於<state>郑</state>，见<p>子产</p>如旧交，谓<p>子产</p>曰：“<state>郑</state>之<off>执政</off>者侈，难将至，政将及子。子为政，必以礼；不然，<state>郑</state>将败。” <p>子产</p>厚遇<p>季子</p>。 <time>二十三年</time>，诸<off>公子</off>争宠相<vact>杀</vact>，又欲<vact>杀</vact><p>子产</p>。 <off>公子</off>或谏曰：“<p>子产</p>仁人，<state>郑</state>所以存者<p>子产</p>也，勿<vact>杀</vact>！” 乃止。"
+    },
+    {
+      "pid": "35",
+      "text": "二十五年，郑使子产於晋，问平公疾。 平公曰：“卜而曰实沈、台骀为祟，史官莫知，敢问？” 对曰：“高辛氏有二子，长曰阏伯，季曰实沈，居旷林，不相能也，日操干戈以相征伐。后帝弗臧，迁阏伯于商丘，主辰，商人是因，故辰为商星。迁实沈于大夏，主参，唐人是因，服事夏、商，其季世曰唐叔虞。” 当武王邑姜方娠大叔，梦帝谓己：‘余命而子曰虞，乃与之唐，属之参而蕃育其子孙。’及生有文在其掌曰‘虞’，遂以命之。及成王⟦◈灭⟧唐而国大叔焉。故参为晋星。” 由是观之，则实沈，参神也。昔金天氏有裔子曰昧，为玄冥师，生允格、台骀。台骀能业其官，宣汾、洮，障大泽，以处太原。帝用嘉之，国之汾川。沈、姒、蓐、黄实守其祀。今晋主汾川而⟦◈灭⟧之。由是观之，则台骀，汾、洮神也。然是二者不害君身。山川之神，则水旱之菑禜之；日月星辰之神，则雪霜风雨不时禜之；若君疾，饮食哀乐女色所生也。”",
+      "annotated": "<time>二十五年</time>，<state>郑</state>使<p>子产</p>於<state>晋</state>，问<p name=\"晋平公\">平公</p>疾。 <p name=\"晋平公\">平公</p>曰：“卜而曰<astro>实沈</astro>、<p>台骀</p>为祟，<off>史官</off>莫知，敢问？” 对曰：“<clan>高辛氏</clan>有二子，长曰<p>阏伯</p>，季曰<p>实沈</p>，居<loc>旷林</loc>，不相能也，日操<art>干戈</art>以相<vact>征</vact><vact>伐</vact>。后帝弗臧，迁<p>阏伯</p>于<loc>商丘</loc>，主<astro>辰</astro>，<state>商</state>人是因，故<astro>辰</astro>为<state>商</state><astro>星</astro>。迁<p>实沈</p>于<loc>大夏</loc>，主<astro>参</astro>，<state>唐</state>人是因，服事<state>夏</state>、<state>商</state>，其季世曰<p>唐叔虞</p>。” 当<p name=\"周武王\">武王</p><p>邑姜</p>方娠<role>大叔</role>，梦帝谓己：‘余命而子曰<p name=\"唐叔虞\">虞</p>，乃与之<state>唐</state>，属之<astro>参</astro>而蕃育其<role>子孙</role>。’及生有文在其掌曰‘<p name=\"唐叔虞\">虞</p>’，遂以命之。及<p name=\"周成王\">成王</p>⟦◈灭⟧<state>唐</state>而国<role>大叔</role>焉。故<astro>参</astro>为<state>晋</state><astro>星</astro>。” 由是观之，则<p>实沈</p>，<astro>参</astro>神也。昔<clan>金天氏</clan>有裔子曰<p>昧</p>，为<off>玄冥师</off>，生<p>允格</p>、<p>台骀</p>。<p>台骀</p>能业其官，宣<loc>汾</loc>、<loc>洮</loc>，障<loc>大泽</loc>，以处<loc>太原</loc>。帝用嘉之，国之<loc>汾川</loc>。<state>沈</state>、<clan>姒</clan>、<clan>蓐</clan>、<clan>黄</clan>实守其祀。今<state>晋</state>主<loc>汾川</loc>而⟦◈灭⟧之。由是观之，则<p>台骀</p>，<loc>汾</loc>、<loc>洮</loc>神也。然是二者不害君身。<loc>山川</loc>之神，则水旱之菑禜之；<astro>日月星辰</astro>之神，则雪霜风雨不时禜之；若君疾，饮食哀乐女色所生也。”"
+    },
+    {
+      "pid": "36",
+      "text": "平公及叔乡曰：“善，博物君子也！” 厚为之礼於子产。",
+      "annotated": "<p name=\"晋平公\">平公</p>及<p>叔乡</p>曰：“善，博物<idea>君子</idea>也！” 厚为之礼於<p>子产</p>。"
+    },
+    {
+      "pid": "37",
+      "text": "二十七年夏，郑简公朝晋。 冬，畏楚灵王之彊，又朝楚，子产从。 二十八年，郑君病，使子产会诸侯，与楚灵王盟於申，诛齐庆封。 三十六年，简公卒，子定公宁立。 秋，定公朝晋昭公。",
+      "annotated": "<time>二十七年夏</time>，<p>郑简公</p><vpol>朝</vpol><state>晋</state>。 冬，畏<p>楚灵王</p>之彊，又<vpol>朝</vpol><state>楚</state>，<p>子产</p>从。 <time>二十八年</time>，<p name=\"郑简公\">郑君</p>病，使<p>子产</p>会<role>诸侯</role>，与<p>楚灵王</p>盟於<loc>申</loc>，<vact>诛</vact><state>齐</state><p>庆封</p>。 <time>三十六年</time>，<p name=\"郑简公\">简公</p>卒，子<p name=\"郑定公\">定公</p><p name=\"郑定公\">宁</p>立。 秋，<p name=\"郑定公\">定公</p><vpol>朝</vpol><p>晋昭公</p>。"
+    },
+    {
+      "pid": "38",
+      "text": "定公元年，楚公子弃疾弑其君灵王而自立，为平王。 欲行德诸侯。 归灵王所侵郑地于郑。 四年，晋昭公卒，其六卿彊，公室卑。 子产谓韩宣子曰：“为政必以德，毋忘所以立。” 六年，郑火，公欲禳之。 子产曰：“不如修德。”",
+      "annotated": "<p name=\"郑定公\">定公</p><time>元年</time>，<state>楚</state><off>公子</off><p>弃疾</p><vact>弑</vact>其君<p name=\"楚灵王\">灵王</p>而<vpol>自立</vpol>，为<p name=\"楚平王\">平王</p>。 欲行德<role>诸侯</role>。 归<p name=\"楚灵王\">灵王</p>所侵<state>郑</state>地于<state>郑</state>。 <time>四年</time>，<p>晋昭公</p>卒，其六<off>卿</off>彊，公室卑。 <p>子产</p>谓<p>韩宣子</p>曰：“为政必以德，毋忘所以立。” <time>六年</time>，<state>郑</state>火，公欲禳之。 <p>子产</p>曰：“不如修德。”"
+    },
+    {
+      "pid": "39",
+      "text": "八年，楚太子建来奔。 十年，太子建与晋谋袭郑。 郑杀建，建子胜奔吴。 十一年，定公如晋。 晋与郑谋，诛周乱臣，入敬王于周。 十三年，定公卒，子献公虿立。 献公十三年卒，子声公胜立。 当是时，晋六卿彊，侵夺郑，郑遂弱。",
+      "annotated": "<time>八年</time>，<state>楚</state><role>太子</role><p name=\"楚太子建\">建</p>来奔。 <time>十年</time>，<role>太子</role><p name=\"楚太子建\">建</p>与<state>晋</state>谋<vact>袭</vact><state>郑</state>。 <state>郑</state><vact>杀</vact><p name=\"楚太子建\">建</p>，<p name=\"楚太子建\">建</p>子<p name=\"白公胜\">胜</p>奔<state>吴</state>。 <time>十一年</time>，<p name=\"郑定公\">定公</p>如<state>晋</state>。 <state>晋</state>与<state>郑</state>谋，<vact>诛</vact><state>周</state>乱臣，入<p name=\"周敬王\">敬王</p>于<state>周</state>。 <time>十三年</time>，<p name=\"郑定公\">定公</p>卒，子<p name=\"郑献公\">献公</p><p name=\"郑献公\">虿</p>立。 <p name=\"郑献公\">献公</p><time>十三年</time>卒，子<p name=\"郑声公\">声公</p><p name=\"郑声公\">胜</p>立。 当是时，<state>晋</state>六<off>卿</off>彊，<vact>侵</vact><vact>夺</vact><state>郑</state>，<state>郑</state>遂弱。"
+    },
+    {
+      "pid": "40",
+      "text": "声公五年，郑相子产卒，郑人皆哭泣，悲之如亡亲戚。 子产者，郑成公少子也。 为人仁爱人，事君忠厚。 孔子尝过郑，与子产如兄弟云。 及闻子产死，孔子为泣曰：“古之遗爱也！”",
+      "annotated": "<p name=\"郑声公\">声公</p><time>五年</time>，<state>郑</state>相<p>子产</p>卒，<state>郑</state>人皆哭泣，悲之如亡<role>亲戚</role>。 <p>子产</p>者，<p>郑成公</p>少子也。 为人<idea>仁爱</idea>人，事君忠厚。 <p>孔子</p>尝过<state>郑</state>，与<p>子产</p>如<role>兄弟</role>云。 及闻<p>子产</p>死，<p>孔子</p>为泣曰：“<idiom>古之遗爱</idiom>也！”"
+    },
+    {
+      "pid": "41",
+      "text": "八年，晋范、中行氏反晋，告急於郑，郑救之。 晋伐郑，败郑军於铁。 十四年，宋景公⟦◈灭⟧曹。 二十年，齐田常弑其君简公，而常相於齐。 二十二年，楚惠王⟦◈灭⟧陈。 孔子卒。 三十六年，晋知伯伐郑，取九邑。",
+      "annotated": "<time>八年</time>，<state>晋</state><clan>范</clan>、<clan>中行氏</clan><vact>反</vact><state>晋</state>，告急於<state>郑</state>，<state>郑</state>救之。 <state>晋</state><vact>伐</vact><state>郑</state>，<vact>败</vact><state>郑</state>军於<loc>铁</loc>。 <time>十四年</time>，<p>宋景公</p>⟦◈灭⟧<state>曹</state>。 <time>二十年</time>，<state>齐</state><p>田常</p><vact>弑</vact>其君<p name=\"齐简公\">简公</p>，而<p name=\"田常\">常</p>相於<state>齐</state>。 <time>二十二年</time>，<p>楚惠王</p>⟦◈灭⟧<state>陈</state>。 <p>孔子</p>卒。 <time>三十六年</time>，<state>晋</state><p>知伯</p><vact>伐</vact><state>郑</state>，<vact>取</vact>九邑。"
+    },
+    {
+      "pid": "42",
+      "text": "三十七年，声公卒，子哀公易立。 哀公八年，郑人弑哀公而立声公弟丑，是为共公。 共公三年，三晋⟦◈灭⟧知伯。 三十一年，共公卒，子幽公已立。 幽公元年，韩武子伐郑，杀幽公。 郑人立幽公弟骀，是为繻公。",
+      "annotated": "<time>三十七年</time>，<p name=\"郑声公\">声公</p>卒，子<p name=\"郑哀公\">哀公</p><p name=\"郑哀公\">易</p>立。 <p name=\"郑哀公\">哀公</p><time>八年</time>，<state>郑</state>人<vact>弑</vact><p name=\"郑哀公\">哀公</p>而<vpol>立</vpol><p name=\"郑声公\">声公</p>弟<p name=\"郑共公\">丑</p>，是为<p name=\"郑共公\">共公</p>。 <p name=\"郑共公\">共公</p><time>三年</time>，三<state>晋</state>⟦◈灭⟧<p>知伯</p>。 <time>三十一年</time>，<p name=\"郑共公\">共公</p>卒，子<p name=\"郑幽公\">幽公</p><p name=\"郑幽公\">已</p>立。 <p name=\"郑幽公\">幽公</p><time>元年</time>，<p>韩武子</p>伐<state>郑</state>，<vact>杀</vact><p name=\"郑幽公\">幽公</p>。 <state>郑</state>人<vpol>立</vpol><p name=\"郑幽公\">幽公</p>弟<p name=\"郑繻公\">骀</p>，是为<p name=\"郑繻公\">繻公</p>。"
+    },
+    {
+      "pid": "43",
+      "text": "繻公十五年，韩景侯伐郑，取雍丘。 郑城京。 十六年，郑伐韩，败韩兵於负黍。 二十年，韩、赵、魏列为诸侯。 二十三年，郑围韩之阳翟。 二十五年，郑君杀其相子阳。 二十七，子阳之党共弑繻公骀而立幽公弟乙为君，是为郑君。",
+      "annotated": "<p name=\"郑繻公\">繻公</p><time>十五年</time>，<p>韩景侯</p><vact>伐</vact><state>郑</state>，<vact>取</vact><loc>雍丘</loc>。 <state>郑</state>城<loc>京</loc>。 <time>十六年</time>，<state>郑</state><vact>伐</vact><state>韩</state>，<vact>败</vact><state>韩</state>兵於<loc>负黍</loc>。 <time>二十年</time>，<state>韩</state>、<state>赵</state>、<state>魏</state>列为<role>诸侯</role>。 <time>二十三年</time>，<state>郑</state><vact>围</vact><state>韩</state>之<loc>阳翟</loc>。 <time>二十五年</time>，<p name=\"郑繻公\">郑君</p><vact>杀</vact>其相<p>子阳</p>。 <qty>二十七</qty>，<p>子阳</p>之党共<vact>弑</vact><p name=\"郑繻公\">繻公</p><p name=\"郑繻公\">骀</p>而<vpol>立</vpol><p name=\"郑幽公\">幽公</p>弟<p name=\"郑康公\">乙</p>为君，是为<p>郑君</p>。"
+    },
+    {
+      "pid": "44",
+      "text": "郑君乙立二年，郑负黍反，复归韩。 十一年，韩伐郑，取阳城。 二十一年，韩哀侯⟦◈灭⟧郑，并其国。 ::: 太史公曰",
+      "annotated": "<p>郑君</p><p name=\"郑康公\">乙</p>立<time>二年</time>，<state>郑</state><loc>负黍</loc>反，复归<state>韩</state>。 <time>十一年</time>，<state>韩</state><vact>伐</vact><state>郑</state>，<vact>取</vact><loc>阳城</loc>。 <time>二十一年</time>，<p>韩哀侯</p>⟦◈灭⟧<state>郑</state>，并其国。 ::: 太史公曰"
+    },
+    {
+      "pid": "45",
+      "text": "太史公曰： 语有之，“以权利合者，权利尽而交疏”，甫瑕是也。甫瑕虽以劫杀郑子内厉公，厉公终背而杀之，此与晋之里克何异？守节如荀息，身死而不能存奚齐。变所从来，亦多故矣！ ::: ::: 赞",
+      "annotated": "<p>太史公</p>曰： 语有之，“以权利合者，权利尽而交疏”，<p>甫瑕</p>是也。<p>甫瑕</p>虽以劫<vact>杀</vact><p name=\"郑子婴\">郑子</p>内<p name=\"郑厉公\">厉公</p>，<p name=\"郑厉公\">厉公</p>终背而<vact>杀</vact>之，此与<state>晋</state>之<p>里克</p>何异？守节如<p>荀息</p>，身死而不能存<p>奚齐</p>。变所从来，亦多故矣！ ::: ::: 赞"
+    },
+    {
+      "pid": "46",
+      "text": "厉王之子，得封於郑。 代职司徒，缁衣在咏。 虢、郐献邑，祭祝专命。 庄既犯王，厉亦奔命。 居栎克入，梦兰毓庆。 伯服生囚，叔瞻尸聘。 釐、简之後，公室不竞。 负黍虽还，韩哀日盛。 :::",
+      "annotated": "<p name=\"周厉王\">厉王</p>之子，得封於<state>郑</state>。 代职<off>司徒</off>，<book>缁衣</book>在咏。 <state>虢</state>、<state>郐</state>献邑，<p>祭祝</p>专命。 <p name=\"郑庄公\">庄</p>既犯王，<p name=\"郑厉公\">厉</p>亦奔命。 居<loc>栎</loc>克入，梦<bio>兰</bio>毓庆。 <p>伯服</p>生<vact>囚</vact>，<p>叔瞻</p>尸聘。 <p name=\"郑釐公\">釐</p>、<p name=\"郑简公\">简</p>之後，公室不竞。 <loc>负黍</loc>虽还，<p name=\"韩哀侯\">韩哀</p>日盛。 :::"
+    }
+  ]
+}

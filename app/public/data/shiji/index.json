@@ -1,0 +1,917 @@
+{
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "total_chapters": 130,
+  "total_paragraphs": 8231,
+  "chapters": [
+    {
+      "num": "001",
+      "file": "001_五帝本纪",
+      "title": "五帝本纪",
+      "type": "本纪",
+      "paragraphs": 50
+    },
+    {
+      "num": "002",
+      "file": "002_夏本纪",
+      "title": "夏本纪",
+      "type": "本纪",
+      "paragraphs": 39
+    },
+    {
+      "num": "003",
+      "file": "003_殷本纪",
+      "title": "殷本纪",
+      "type": "本纪",
+      "paragraphs": 41
+    },
+    {
+      "num": "004",
+      "file": "004_周本纪",
+      "title": "周本纪",
+      "type": "本纪",
+      "paragraphs": 88
+    },
+    {
+      "num": "005",
+      "file": "005_秦本纪",
+      "title": "秦本纪",
+      "type": "本纪",
+      "paragraphs": 247
+    },
+    {
+      "num": "006",
+      "file": "006_秦始皇本纪",
+      "title": "秦始皇本纪",
+      "type": "本纪",
+      "paragraphs": 503
+    },
+    {
+      "num": "007",
+      "file": "007_项羽本纪",
+      "title": "项羽本纪",
+      "type": "本纪",
+      "paragraphs": 409
+    },
+    {
+      "num": "008",
+      "file": "008_高祖本纪",
+      "title": "高祖本纪",
+      "type": "本纪",
+      "paragraphs": 528
+    },
+    {
+      "num": "009",
+      "file": "009_吕太后本纪",
+      "title": "吕太后本纪",
+      "type": "本纪",
+      "paragraphs": 213
+    },
+    {
+      "num": "010",
+      "file": "010_孝文本纪",
+      "title": "孝文本纪",
+      "type": "本纪",
+      "paragraphs": 166
+    },
+    {
+      "num": "011",
+      "file": "011_孝景本纪",
+      "title": "孝景本纪",
+      "type": "本纪",
+      "paragraphs": 111
+    },
+    {
+      "num": "012",
+      "file": "012_孝武本纪",
+      "title": "孝武本纪",
+      "type": "本纪",
+      "paragraphs": 327
+    },
+    {
+      "num": "013",
+      "file": "013_三代世表",
+      "title": "三代世表",
+      "type": "表",
+      "paragraphs": 44
+    },
+    {
+      "num": "014",
+      "file": "014_十二诸侯年表",
+      "title": "十二诸侯年表",
+      "type": "表",
+      "paragraphs": 20
+    },
+    {
+      "num": "015",
+      "file": "015_六国年表",
+      "title": "六国年表",
+      "type": "表",
+      "paragraphs": 22
+    },
+    {
+      "num": "016",
+      "file": "016_秦楚之际月表",
+      "title": "秦楚之际月表",
+      "type": "表",
+      "paragraphs": 12
+    },
+    {
+      "num": "017",
+      "file": "017_汉兴以来诸侯王年表",
+      "title": "汉兴以来诸侯王年表",
+      "type": "表",
+      "paragraphs": 20
+    },
+    {
+      "num": "018",
+      "file": "018_高祖功臣侯者年表",
+      "title": "高祖功臣侯者年表",
+      "type": "表",
+      "paragraphs": 19
+    },
+    {
+      "num": "019",
+      "file": "019_惠景间侯者年表",
+      "title": "惠景间侯者年表",
+      "type": "表",
+      "paragraphs": 8
+    },
+    {
+      "num": "020",
+      "file": "020_建元以来侯者年表",
+      "title": "建元以来侯者年表",
+      "type": "表",
+      "paragraphs": 5
+    },
+    {
+      "num": "021",
+      "file": "021_建元已来王子侯者年表",
+      "title": "建元已来王子侯者年表",
+      "type": "表",
+      "paragraphs": 3
+    },
+    {
+      "num": "022",
+      "file": "022_汉兴以来将相名臣年表",
+      "title": "汉兴以来将相名臣年表",
+      "type": "表",
+      "paragraphs": 1
+    },
+    {
+      "num": "023",
+      "file": "023_礼书",
+      "title": "礼书",
+      "type": "书",
+      "paragraphs": 89
+    },
+    {
+      "num": "024",
+      "file": "024_乐书",
+      "title": "乐书",
+      "type": "书",
+      "paragraphs": 120
+    },
+    {
+      "num": "025",
+      "file": "025_律书",
+      "title": "律书",
+      "type": "书",
+      "paragraphs": 156
+    },
+    {
+      "num": "026",
+      "file": "026_历书",
+      "title": "历书",
+      "type": "书",
+      "paragraphs": 289
+    },
+    {
+      "num": "027",
+      "file": "027_天官书",
+      "title": "天官书",
+      "type": "书",
+      "paragraphs": 125
+    },
+    {
+      "num": "028",
+      "file": "028_封禅书",
+      "title": "封禅书",
+      "type": "书",
+      "paragraphs": 110
+    },
+    {
+      "num": "029",
+      "file": "029_河渠书",
+      "title": "河渠书",
+      "type": "书",
+      "paragraphs": 15
+    },
+    {
+      "num": "030",
+      "file": "030_平准书",
+      "title": "平准书",
+      "type": "书",
+      "paragraphs": 51
+    },
+    {
+      "num": "031",
+      "file": "031_吴太伯世家",
+      "title": "吴太伯世家",
+      "type": "世家",
+      "paragraphs": 145
+    },
+    {
+      "num": "032",
+      "file": "032_齐太公世家",
+      "title": "齐太公世家",
+      "type": "世家",
+      "paragraphs": 82
+    },
+    {
+      "num": "033",
+      "file": "033_鲁周公世家",
+      "title": "鲁周公世家",
+      "type": "世家",
+      "paragraphs": 82
+    },
+    {
+      "num": "034",
+      "file": "034_燕召公世家",
+      "title": "燕召公世家",
+      "type": "世家",
+      "paragraphs": 36
+    },
+    {
+      "num": "035",
+      "file": "035_管蔡世家",
+      "title": "管蔡世家",
+      "type": "世家",
+      "paragraphs": 41
+    },
+    {
+      "num": "036",
+      "file": "036_陈杞世家",
+      "title": "陈杞世家",
+      "type": "世家",
+      "paragraphs": 32
+    },
+    {
+      "num": "037",
+      "file": "037_卫康叔世家",
+      "title": "卫康叔世家",
+      "type": "世家",
+      "paragraphs": 51
+    },
+    {
+      "num": "038",
+      "file": "038_宋微子世家",
+      "title": "宋微子世家",
+      "type": "世家",
+      "paragraphs": 57
+    },
+    {
+      "num": "039",
+      "file": "039_晋世家",
+      "title": "晋世家",
+      "type": "世家",
+      "paragraphs": 147
+    },
+    {
+      "num": "040",
+      "file": "040_楚世家",
+      "title": "楚世家",
+      "type": "世家",
+      "paragraphs": 103
+    },
+    {
+      "num": "041",
+      "file": "041_越王句践世家",
+      "title": "越王句践世家",
+      "type": "世家",
+      "paragraphs": 42
+    },
+    {
+      "num": "042",
+      "file": "042_郑世家",
+      "title": "郑世家",
+      "type": "世家",
+      "paragraphs": 46
+    },
+    {
+      "num": "043",
+      "file": "043_赵世家",
+      "title": "赵世家",
+      "type": "世家",
+      "paragraphs": 119
+    },
+    {
+      "num": "044",
+      "file": "044_魏世家",
+      "title": "魏世家",
+      "type": "世家",
+      "paragraphs": 76
+    },
+    {
+      "num": "045",
+      "file": "045_韩世家",
+      "title": "韩世家",
+      "type": "世家",
+      "paragraphs": 36
+    },
+    {
+      "num": "046",
+      "file": "046_田敬仲完世家",
+      "title": "田敬仲完世家",
+      "type": "世家",
+      "paragraphs": 57
+    },
+    {
+      "num": "047",
+      "file": "047_孔子世家",
+      "title": "孔子世家",
+      "type": "世家",
+      "paragraphs": 86
+    },
+    {
+      "num": "048",
+      "file": "048_陈涉世家",
+      "title": "陈涉世家",
+      "type": "世家",
+      "paragraphs": 28
+    },
+    {
+      "num": "049",
+      "file": "049_外戚世家",
+      "title": "外戚世家",
+      "type": "世家",
+      "paragraphs": 47
+    },
+    {
+      "num": "050",
+      "file": "050_楚元王世家",
+      "title": "楚元王世家",
+      "type": "世家",
+      "paragraphs": 11
+    },
+    {
+      "num": "051",
+      "file": "051_荆燕世家",
+      "title": "荆燕世家",
+      "type": "世家",
+      "paragraphs": 12
+    },
+    {
+      "num": "052",
+      "file": "052_齐悼惠王世家",
+      "title": "齐悼惠王世家",
+      "type": "世家",
+      "paragraphs": 45
+    },
+    {
+      "num": "053",
+      "file": "053_萧相国世家",
+      "title": "萧相国世家",
+      "type": "世家",
+      "paragraphs": 18
+    },
+    {
+      "num": "054",
+      "file": "054_曹相国世家",
+      "title": "曹相国世家",
+      "type": "世家",
+      "paragraphs": 19
+    },
+    {
+      "num": "055",
+      "file": "055_留侯世家",
+      "title": "留侯世家",
+      "type": "世家",
+      "paragraphs": 31
+    },
+    {
+      "num": "056",
+      "file": "056_陈丞相世家",
+      "title": "陈丞相世家",
+      "type": "世家",
+      "paragraphs": 29
+    },
+    {
+      "num": "057",
+      "file": "057_绛侯周勃世家",
+      "title": "绛侯周勃世家",
+      "type": "世家",
+      "paragraphs": 24
+    },
+    {
+      "num": "058",
+      "file": "058_梁孝王世家",
+      "title": "梁孝王世家",
+      "type": "世家",
+      "paragraphs": 28
+    },
+    {
+      "num": "059",
+      "file": "059_五宗世家",
+      "title": "五宗世家",
+      "type": "世家",
+      "paragraphs": 39
+    },
+    {
+      "num": "060",
+      "file": "060_三王世家",
+      "title": "三王世家",
+      "type": "世家",
+      "paragraphs": 33
+    },
+    {
+      "num": "061",
+      "file": "061_伯夷列传",
+      "title": "伯夷列传",
+      "type": "列传",
+      "paragraphs": 6
+    },
+    {
+      "num": "062",
+      "file": "062_管晏列传",
+      "title": "管晏列传",
+      "type": "列传",
+      "paragraphs": 13
+    },
+    {
+      "num": "063",
+      "file": "063_老子韩非列传",
+      "title": "老子韩非列传",
+      "type": "列传",
+      "paragraphs": 28
+    },
+    {
+      "num": "064",
+      "file": "064_司马穰苴列传",
+      "title": "司马穰苴列传",
+      "type": "列传",
+      "paragraphs": 9
+    },
+    {
+      "num": "065",
+      "file": "065_孙子吴起列传",
+      "title": "孙子吴起列传",
+      "type": "列传",
+      "paragraphs": 16
+    },
+    {
+      "num": "066",
+      "file": "066_伍子胥列传",
+      "title": "伍子胥列传",
+      "type": "列传",
+      "paragraphs": 25
+    },
+    {
+      "num": "067",
+      "file": "067_仲尼弟子列传",
+      "title": "仲尼弟子列传",
+      "type": "列传",
+      "paragraphs": 152
+    },
+    {
+      "num": "068",
+      "file": "068_商君列传",
+      "title": "商君列传",
+      "type": "列传",
+      "paragraphs": 12
+    },
+    {
+      "num": "069",
+      "file": "069_苏秦列传",
+      "title": "苏秦列传",
+      "type": "列传",
+      "paragraphs": 67
+    },
+    {
+      "num": "070",
+      "file": "070_张仪列传",
+      "title": "张仪列传",
+      "type": "列传",
+      "paragraphs": 60
+    },
+    {
+      "num": "071",
+      "file": "071_樗里子甘茂列传",
+      "title": "樗里子甘茂列传",
+      "type": "列传",
+      "paragraphs": 21
+    },
+    {
+      "num": "072",
+      "file": "072_穰侯列传",
+      "title": "穰侯列传",
+      "type": "列传",
+      "paragraphs": 12
+    },
+    {
+      "num": "073",
+      "file": "073_白起王翦列传",
+      "title": "白起王翦列传",
+      "type": "列传",
+      "paragraphs": 16
+    },
+    {
+      "num": "074",
+      "file": "074_孟子荀卿列传",
+      "title": "孟子荀卿列传",
+      "type": "列传",
+      "paragraphs": 14
+    },
+    {
+      "num": "075",
+      "file": "075_孟尝君列传",
+      "title": "孟尝君列传",
+      "type": "列传",
+      "paragraphs": 20
+    },
+    {
+      "num": "076",
+      "file": "076_平原君虞卿列传",
+      "title": "平原君虞卿列传",
+      "type": "列传",
+      "paragraphs": 20
+    },
+    {
+      "num": "077",
+      "file": "077_魏公子列传",
+      "title": "魏公子列传",
+      "type": "列传",
+      "paragraphs": 18
+    },
+    {
+      "num": "078",
+      "file": "078_春申君列传",
+      "title": "春申君列传",
+      "type": "列传",
+      "paragraphs": 25
+    },
+    {
+      "num": "079",
+      "file": "079_范睢蔡泽列传",
+      "title": "范睢蔡泽列传",
+      "type": "列传",
+      "paragraphs": 36
+    },
+    {
+      "num": "080",
+      "file": "080_乐毅列传",
+      "title": "乐毅列传",
+      "type": "列传",
+      "paragraphs": 21
+    },
+    {
+      "num": "081",
+      "file": "081_廉颇蔺相如列传",
+      "title": "廉颇蔺相如列传",
+      "type": "列传",
+      "paragraphs": 195
+    },
+    {
+      "num": "082",
+      "file": "082_田单列传",
+      "title": "田单列传",
+      "type": "列传",
+      "paragraphs": 60
+    },
+    {
+      "num": "083",
+      "file": "083_鲁仲连邹阳列传",
+      "title": "鲁仲连邹阳列传",
+      "type": "列传",
+      "paragraphs": 60
+    },
+    {
+      "num": "084",
+      "file": "084_屈原贾生列传",
+      "title": "屈原贾生列传",
+      "type": "列传",
+      "paragraphs": 36
+    },
+    {
+      "num": "085",
+      "file": "085_吕不韦列传",
+      "title": "吕不韦列传",
+      "type": "列传",
+      "paragraphs": 26
+    },
+    {
+      "num": "086",
+      "file": "086_刺客列传",
+      "title": "刺客列传",
+      "type": "列传",
+      "paragraphs": 57
+    },
+    {
+      "num": "087",
+      "file": "087_李斯列传",
+      "title": "李斯列传",
+      "type": "列传",
+      "paragraphs": 49
+    },
+    {
+      "num": "088",
+      "file": "088_蒙恬列传",
+      "title": "蒙恬列传",
+      "type": "列传",
+      "paragraphs": 15
+    },
+    {
+      "num": "089",
+      "file": "089_张耳陈馀列传",
+      "title": "张耳陈馀列传",
+      "type": "列传",
+      "paragraphs": 30
+    },
+    {
+      "num": "090",
+      "file": "090_魏豹彭越列传",
+      "title": "魏豹彭越列传",
+      "type": "列传",
+      "paragraphs": 13
+    },
+    {
+      "num": "091",
+      "file": "091_黥布列传",
+      "title": "黥布列传",
+      "type": "列传",
+      "paragraphs": 20
+    },
+    {
+      "num": "092",
+      "file": "092_淮阴侯列传",
+      "title": "淮阴侯列传",
+      "type": "列传",
+      "paragraphs": 29
+    },
+    {
+      "num": "093",
+      "file": "093_韩信卢绾列传",
+      "title": "韩信卢绾列传",
+      "type": "列传",
+      "paragraphs": 21
+    },
+    {
+      "num": "094",
+      "file": "094_田儋列传",
+      "title": "田儋列传",
+      "type": "列传",
+      "paragraphs": 15
+    },
+    {
+      "num": "095",
+      "file": "095_樊郦滕灌列传",
+      "title": "樊郦滕灌列传",
+      "type": "列传",
+      "paragraphs": 35
+    },
+    {
+      "num": "096",
+      "file": "096_张丞相列传",
+      "title": "张丞相列传",
+      "type": "列传",
+      "paragraphs": 30
+    },
+    {
+      "num": "097",
+      "file": "097_郦生陆贾列传",
+      "title": "郦生陆贾列传",
+      "type": "列传",
+      "paragraphs": 24
+    },
+    {
+      "num": "098",
+      "file": "098_傅靳蒯成列传",
+      "title": "傅靳蒯成列传",
+      "type": "列传",
+      "paragraphs": 14
+    },
+    {
+      "num": "099",
+      "file": "099_刘敬叔孙通列传",
+      "title": "刘敬叔孙通列传",
+      "type": "列传",
+      "paragraphs": 21
+    },
+    {
+      "num": "100",
+      "file": "100_季布栾布列传",
+      "title": "季布栾布列传",
+      "type": "列传",
+      "paragraphs": 12
+    },
+    {
+      "num": "101",
+      "file": "101_袁盎晁错列传",
+      "title": "袁盎晁错列传",
+      "type": "列传",
+      "paragraphs": 158
+    },
+    {
+      "num": "102",
+      "file": "102_张释之冯唐列传",
+      "title": "张释之冯唐列传",
+      "type": "列传",
+      "paragraphs": 16
+    },
+    {
+      "num": "103",
+      "file": "103_万石张叔列传",
+      "title": "万石张叔列传",
+      "type": "列传",
+      "paragraphs": 27
+    },
+    {
+      "num": "104",
+      "file": "104_田叔列传",
+      "title": "田叔列传",
+      "type": "列传",
+      "paragraphs": 18
+    },
+    {
+      "num": "105",
+      "file": "105_扁鹊仓公列传",
+      "title": "扁鹊仓公列传",
+      "type": "列传",
+      "paragraphs": 53
+    },
+    {
+      "num": "106",
+      "file": "106_吴王濞列传",
+      "title": "吴王濞列传",
+      "type": "列传",
+      "paragraphs": 21
+    },
+    {
+      "num": "107",
+      "file": "107_魏其武安侯列传",
+      "title": "魏其武安侯列传",
+      "type": "列传",
+      "paragraphs": 28
+    },
+    {
+      "num": "108",
+      "file": "108_韩长孺列传",
+      "title": "韩长孺列传",
+      "type": "列传",
+      "paragraphs": 15
+    },
+    {
+      "num": "109",
+      "file": "109_李将军列传",
+      "title": "李将军列传",
+      "type": "列传",
+      "paragraphs": 20
+    },
+    {
+      "num": "110",
+      "file": "110_匈奴列传",
+      "title": "匈奴列传",
+      "type": "列传",
+      "paragraphs": 106
+    },
+    {
+      "num": "111",
+      "file": "111_卫将军骠骑列传",
+      "title": "卫将军骠骑列传",
+      "type": "列传",
+      "paragraphs": 136
+    },
+    {
+      "num": "112",
+      "file": "112_平津侯主父列传",
+      "title": "平津侯主父列传",
+      "type": "列传",
+      "paragraphs": 122
+    },
+    {
+      "num": "113",
+      "file": "113_南越列传",
+      "title": "南越列传",
+      "type": "列传",
+      "paragraphs": 15
+    },
+    {
+      "num": "114",
+      "file": "114_东越列传",
+      "title": "东越列传",
+      "type": "列传",
+      "paragraphs": 12
+    },
+    {
+      "num": "115",
+      "file": "115_朝鲜列传",
+      "title": "朝鲜列传",
+      "type": "列传",
+      "paragraphs": 11
+    },
+    {
+      "num": "116",
+      "file": "116_西南夷列传",
+      "title": "西南夷列传",
+      "type": "列传",
+      "paragraphs": 12
+    },
+    {
+      "num": "117",
+      "file": "117_司马相如列传",
+      "title": "司马相如列传",
+      "type": "列传",
+      "paragraphs": 77
+    },
+    {
+      "num": "118",
+      "file": "118_淮南衡山列传",
+      "title": "淮南衡山列传",
+      "type": "列传",
+      "paragraphs": 45
+    },
+    {
+      "num": "119",
+      "file": "119_循吏列传",
+      "title": "循吏列传",
+      "type": "列传",
+      "paragraphs": 13
+    },
+    {
+      "num": "120",
+      "file": "120_汲郑列传",
+      "title": "汲郑列传",
+      "type": "列传",
+      "paragraphs": 21
+    },
+    {
+      "num": "121",
+      "file": "121_儒林列传",
+      "title": "",
+      "type": "列传",
+      "paragraphs": 26
+    },
+    {
+      "num": "122",
+      "file": "122_酷吏列传",
+      "title": "",
+      "type": "列传",
+      "paragraphs": 44
+    },
+    {
+      "num": "123",
+      "file": "123_大宛列传",
+      "title": "",
+      "type": "列传",
+      "paragraphs": 39
+    },
+    {
+      "num": "124",
+      "file": "124_游侠列传",
+      "title": "",
+      "type": "列传",
+      "paragraphs": 17
+    },
+    {
+      "num": "125",
+      "file": "125_佞幸列传",
+      "title": "",
+      "type": "列传",
+      "paragraphs": 10
+    },
+    {
+      "num": "126",
+      "file": "126_滑稽列传",
+      "title": "滑稽列传",
+      "type": "列传",
+      "paragraphs": 31
+    },
+    {
+      "num": "127",
+      "file": "127_日者列传",
+      "title": "日者列传",
+      "type": "列传",
+      "paragraphs": 39
+    },
+    {
+      "num": "128",
+      "file": "128_龟策列传",
+      "title": "龟策列传",
+      "type": "列传",
+      "paragraphs": 98
+    },
+    {
+      "num": "129",
+      "file": "129_货殖列传",
+      "title": "",
+      "type": "列传",
+      "paragraphs": 43
+    },
+    {
+      "num": "130",
+      "file": "130_太史公自序",
+      "title": "太史公自序",
+      "type": "列传",
+      "paragraphs": 172
+    }
+  ]
+}

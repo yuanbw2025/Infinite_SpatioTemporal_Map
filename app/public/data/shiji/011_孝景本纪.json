@@ -1,0 +1,566 @@
+{
+  "work": "史记",
+  "chapter": "孝景本纪",
+  "chapter_file": "011_孝景本纪",
+  "chapter_type": "本纪",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 111,
+  "paragraph_count_done": 111,
+  "paragraphs": [
+    {
+      "pid": "1.1",
+      "text": "孝景皇帝者，孝文之中子也。母窦太后。",
+      "annotated": "<p>孝景皇帝</p>者，<p>孝文</p>之<role>中子</role>也。<role>母</role><p>窦太后</p>。"
+    },
+    {
+      "pid": "1.2",
+      "text": "孝文在代时，前后有三男，及窦太后得幸，前后死，及三子更死，故孝景得立。",
+      "annotated": "<p>孝文</p>在<state>代</state>时，前后有<role>三男</role>，及<p>窦太后</p>得幸，前后死，及<role>三子</role>更死，故<p>孝景</p>得立。"
+    },
+    {
+      "pid": "2.1",
+      "text": "元年四月乙卯，赦天下。乙巳，赐民爵一级。",
+      "annotated": "<time>元年四月乙卯</time>，<vpol>赦</vpol><idea>天下</idea>。<time>乙巳</time>，赐民爵一级。"
+    },
+    {
+      "pid": "2.2",
+      "text": "五月，除田半租，为孝文立太宗庙。令群臣无朝贺。",
+      "annotated": "<time>五月</time>，除<sys>田半租</sys>，为<p>孝文</p>立<loc>太宗庙</loc>。令<role>群臣</role>无朝贺。"
+    },
+    {
+      "pid": "2.3",
+      "text": "匈奴入代，与约和亲。",
+      "annotated": "<tribe>匈奴</tribe>入<state>代</state>，与约<sys>和亲</sys>。"
+    },
+    {
+      "pid": "3.1",
+      "text": "二年春，封故相国萧何孙系为武陵侯。",
+      "annotated": "<time>二年春</time>，封故<off>相国</off><p>萧何</p><role>孙</role><p name=\"萧系\">系</p>为<off>武陵侯</off>。"
+    },
+    {
+      "pid": "3.2",
+      "text": "男子二十而得傅。",
+      "annotated": "<role>男子</role><qty>二十</qty>而得傅。"
+    },
+    {
+      "pid": "3.3",
+      "text": "四月壬午，孝文太后崩。",
+      "annotated": "<time>四月壬午</time>，<p name=\"薄太后\">孝文太后</p><vpol>崩</vpol>。"
+    },
+    {
+      "pid": "3.4",
+      "text": "广川、长沙王皆之国。",
+      "annotated": "<off name=\"广川王\">广川</off>、<off>长沙王</off>皆<vpol>之国</vpol>。"
+    },
+    {
+      "pid": "3.5",
+      "text": "丞相申屠嘉卒。",
+      "annotated": "<off>丞相</off><p>申屠嘉</p><vpol>卒</vpol>。"
+    },
+    {
+      "pid": "3.6",
+      "text": "八月，以御史大夫开封陶青为丞相。",
+      "annotated": "<time>八月</time>，以<off>御史大夫</off><loc>开封</loc><p>陶青</p>为<off>丞相</off>。"
+    },
+    {
+      "pid": "3.7",
+      "text": "彗星出东北。",
+      "annotated": "<astro>彗星</astro>出东北。"
+    },
+    {
+      "pid": "4.1",
+      "text": "秋，衡山雨雹，大者五寸，深者二尺。",
+      "annotated": "<time>秋</time>，<loc>衡山</loc>雨雹，大者<qty>五寸</qty>，深者<qty>二尺</qty>。"
+    },
+    {
+      "pid": "4.2",
+      "text": "荧惑逆行，守北辰。",
+      "annotated": "<astro>荧惑</astro>逆行，守<astro>北辰</astro>。"
+    },
+    {
+      "pid": "4.3",
+      "text": "月出北辰间。",
+      "annotated": "<astro>月</astro>出<astro>北辰</astro>间。"
+    },
+    {
+      "pid": "4.4",
+      "text": "岁星逆行天廷中。",
+      "annotated": "<astro>岁星</astro>逆行<astro>天廷</astro>中。"
+    },
+    {
+      "pid": "4.5",
+      "text": "置南陵及内史、祋祤为县。",
+      "annotated": "置<loc>南陵</loc>及<loc>内史</loc>、<loc>祋祤</loc>为县。"
+    },
+    {
+      "pid": "5.1",
+      "text": "三年正月乙巳，赦天下。",
+      "annotated": "<time>三年正月乙巳</time>，<vpol>赦</vpol><idea>天下</idea>。"
+    },
+    {
+      "pid": "5.2",
+      "text": "长星出西方。",
+      "annotated": "<astro>长星</astro>出西方。"
+    },
+    {
+      "pid": "5.3",
+      "text": "天火燔雒阳东宫大殿城室。",
+      "annotated": "天火燔<loc>雒阳</loc><loc>东宫</loc>大殿城室。"
+    },
+    {
+      "pid": "6.1",
+      "text": "吴王濞、楚王戊、赵王遂、胶西王卬、济南王辟光、菑川王贤、胶东王雄渠反，发兵西乡。",
+      "annotated": "<off>吴王</off><p name=\"刘濞\">濞</p>、<off>楚王</off><p name=\"刘戊\">戊</p>、<off>赵王</off><p name=\"刘遂\">遂</p>、<off>胶西王</off><p name=\"刘卬\">卬</p>、<off>济南王</off><p name=\"刘辟光\">辟光</p>、<off>菑川王</off><p name=\"刘贤\">贤</p>、<off>胶东王</off><p name=\"刘雄渠\">雄渠</p>反，发兵西乡。"
+    },
+    {
+      "pid": "6.2",
+      "text": "天子为诛晁错，遣袁盎谕告，不止，遂西⟦◈围⟧梁。",
+      "annotated": "<role>天子</role>为<vact>诛</vact><p>晁错</p>，遣<p>袁盎</p>谕告，不止，遂西⟦◈围⟧<state>梁</state>。"
+    },
+    {
+      "pid": "6.3",
+      "text": "上乃遣大将军窦婴、太尉周亚夫将兵诛之。",
+      "annotated": "<role>上</role>乃遣<off>大将军</off><p>窦婴</p>、<off>太尉</off><p>周亚夫</p>将兵<vact>诛</vact>之。"
+    },
+    {
+      "pid": "7.1",
+      "text": "六月乙亥。赦亡军及楚元王子艺等与谋反者。",
+      "annotated": "<time>六月乙亥</time>。<vpol>赦</vpol>亡军及<p>楚元王</p><role>子</role><p name=\"刘艺\">艺</p>等与谋反者。"
+    },
+    {
+      "pid": "7.2",
+      "text": "封大将军窦婴为魏其侯。",
+      "annotated": "<vpol>封</vpol><off>大将军</off><p>窦婴</p>为<off>魏其侯</off>。"
+    },
+    {
+      "pid": "7.3",
+      "text": "立楚元王子平陆侯礼为楚王。",
+      "annotated": "<vpol>立</vpol><p>楚元王</p><role>子</role><off>平陆侯</off><p name=\"刘礼\">礼</p>为<off>楚王</off>。"
+    },
+    {
+      "pid": "8.1",
+      "text": "立皇子端为胶西王，子胜为中山王。",
+      "annotated": "<vpol>立</vpol><role>皇子</role><p name=\"刘端\">端</p>为<off>胶西王</off>，<role>子</role><p name=\"刘胜\">胜</p>为<off>中山王</off>。"
+    },
+    {
+      "pid": "8.2",
+      "text": "徙济北王志为菑川王，淮阳王馀为鲁王，汝南王非为江都王。",
+      "annotated": "徙<off>济北王</off><p name=\"刘志\">志</p>为<off>菑川王</off>，<off>淮阳王</off><p name=\"刘馀\">馀</p>为<off>鲁王</off>，<off>汝南王</off><p name=\"刘非\">非</p>为<off>江都王</off>。"
+    },
+    {
+      "pid": "8.3",
+      "text": "齐王将庐、燕王嘉皆薨。",
+      "annotated": "<off>齐王</off><p name=\"刘将庐\">将庐</p>、<off>燕王</off><p name=\"刘嘉\">嘉</p>皆<vpol>薨</vpol>。"
+    },
+    {
+      "pid": "9.1",
+      "text": "四年夏，立太子。",
+      "annotated": "<time>四年夏</time>，<vpol>立</vpol><role>太子</role>。"
+    },
+    {
+      "pid": "9.2",
+      "text": "立皇子彻为胶东王。",
+      "annotated": "<vpol>立</vpol><role>皇子</role><p name=\"刘彻\">彻</p>为<off>胶东王</off>。"
+    },
+    {
+      "pid": "9.3",
+      "text": "六月甲戌，赦天下。",
+      "annotated": "<time>六月甲戌</time>，<vpol>赦</vpol><idea>天下</idea>。"
+    },
+    {
+      "pid": "9.4",
+      "text": "後九月，更以阳为阳陵。",
+      "annotated": "<time>後九月</time>，更以<loc>阳</loc>为<loc>阳陵</loc>。"
+    },
+    {
+      "pid": "9.5",
+      "text": "复置津关，用传出入。",
+      "annotated": "复置<sys>津关</sys>，用<art>传</art>出入。"
+    },
+    {
+      "pid": "9.6",
+      "text": "冬，以赵国为邯郸郡。",
+      "annotated": "<time>冬</time>，以<loc>赵国</loc>为<loc>邯郸郡</loc>。"
+    },
+    {
+      "pid": "10.1",
+      "text": "五年三月，作阳陵、渭桥。",
+      "annotated": "<time>五年三月</time>，作<loc>阳陵</loc>、<loc>渭桥</loc>。"
+    },
+    {
+      "pid": "10.2",
+      "text": "五月，募徙阳陵，予钱二十万。",
+      "annotated": "<time>五月</time>，募徙<loc>阳陵</loc>，予钱二十万。"
+    },
+    {
+      "pid": "10.3",
+      "text": "江都大暴风从西方来，坏城十二丈。",
+      "annotated": "<loc>江都</loc>大暴风从西方来，坏城<qty>十二丈</qty>。"
+    },
+    {
+      "pid": "10.4",
+      "text": "丁卯，封长公主子蟜为隆虑侯。",
+      "annotated": "<time>丁卯</time>，封<role>长公主</role><role>子</role><p name=\"陈蟜\">蟜</p>为<off>隆虑侯</off>。"
+    },
+    {
+      "pid": "10.5",
+      "text": "徙广川王为赵王。",
+      "annotated": "徙<off>广川王</off>为<off>赵王</off>。"
+    },
+    {
+      "pid": "11.1",
+      "text": "六年春，封中尉绾为建陵侯，江都丞相嘉为建平侯，陇西太守浑邪为平曲侯，赵丞相嘉为江陵侯，故将军布为鄃侯。",
+      "annotated": "<time>六年春</time>，<vpol>封</vpol><off>中尉</off><p name=\"卫绾\">绾</p>为<off>建陵侯</off>，<loc>江都</loc><off>丞相</off><p>嘉</p>为<off>建平侯</off>，<loc>陇西</loc><off>太守</off><p>浑邪</p>为<off>平曲侯</off>，<state>赵</state><off>丞相</off><p>嘉</p>为<off>江陵侯</off>，故<off>将军</off><p name=\"栾布\">布</p>为<off>鄃侯</off>。"
+    },
+    {
+      "pid": "11.2",
+      "text": "梁楚二王皆薨。",
+      "annotated": "<state>梁</state><state>楚</state>二王皆<vpol>薨</vpol>。"
+    },
+    {
+      "pid": "11.3",
+      "text": "後九月，⟦◈伐⟧驰道树，殖兰池。",
+      "annotated": "<time>後九月</time>，⟦◈伐⟧<sys>驰道</sys><bio>树</bio>，殖<loc>兰池</loc>。"
+    },
+    {
+      "pid": "12.1",
+      "text": "七年冬，废栗太子为临江王。",
+      "annotated": "<time>七年冬</time>，<vact>废</vact><p>栗太子</p>为<off>临江王</off>。"
+    },
+    {
+      "pid": "12.2",
+      "text": "十月晦，日有食之。",
+      "annotated": "<time>十月晦</time>，<astro>日</astro>有食之。"
+    },
+    {
+      "pid": "12.3",
+      "text": "春，免徒隶作阳陵者。",
+      "annotated": "<time>春</time>，免徒隶作<loc>阳陵</loc>者。"
+    },
+    {
+      "pid": "12.4",
+      "text": "丞相青免。",
+      "annotated": "<off>丞相</off><p name=\"陶青\">青</p>免。"
+    },
+    {
+      "pid": "12.5",
+      "text": "二月乙巳，以太尉条侯周亚夫为丞相。",
+      "annotated": "<time>二月乙巳</time>，以<off>太尉</off><off>条侯</off><p>周亚夫</p>为<off>丞相</off>。"
+    },
+    {
+      "pid": "13.1",
+      "text": "四月乙巳，立胶东王太后为皇后。",
+      "annotated": "<time>四月乙巳</time>，<vpol>立</vpol><off>胶东王</off><role>太后</role>为<role>皇后</role>。"
+    },
+    {
+      "pid": "13.2",
+      "text": "丁巳，立胶东王为太子。名彻。",
+      "annotated": "<time>丁巳</time>，<vpol>立</vpol><off>胶东王</off>为<role>太子</role>。名<p name=\"刘彻\">彻</p>。"
+    },
+    {
+      "pid": "14.1",
+      "text": "中元年，封故御史大夫周苛孙平为绳侯，故御史大夫周昌左车为安阳侯，",
+      "annotated": "<time>中元年</time>，封故<off>御史大夫</off><p>周苛</p><role>孙</role><p name=\"周平\">平</p>为<off>绳侯</off>，故<off>御史大夫</off><p>周昌</p><p name=\"周左车\">左车</p>为<off>安阳侯</off>，"
+    },
+    {
+      "pid": "14.2",
+      "text": "四月乙巳，赦天下，赐爵一级。除禁锢。",
+      "annotated": "<time>四月乙巳</time>，<vpol>赦</vpol><idea>天下</idea>，<sys>赐爵</sys>一级。除<law>禁锢</law>。"
+    },
+    {
+      "pid": "14.3",
+      "text": "地动。衡山、原都雨雹，大者尺八寸。",
+      "annotated": "地动。<loc>衡山</loc>、<loc>原都</loc>雨雹，大者<qty>尺八寸</qty>。"
+    },
+    {
+      "pid": "15.1",
+      "text": "中二年二月，匈奴入燕，遂不和亲。",
+      "annotated": "<time>中二年二月</time>，<tribe>匈奴</tribe>入<state>燕</state>，遂不<sys>和亲</sys>。"
+    },
+    {
+      "pid": "15.2",
+      "text": "三月，召临江王来。即死中尉府中。",
+      "annotated": "<time>三月</time>，召<off>临江王</off>来。即<vact>死</vact><off>中尉</off>府中。"
+    },
+    {
+      "pid": "15.3",
+      "text": "夏，立皇子越为广川王，子寄为胶东王。封四侯。",
+      "annotated": "<time>夏</time>，<vpol>立</vpol><role>皇子</role><p name=\"刘越\">越</p>为<off>广川王</off>，<role>子</role><p name=\"刘寄\">寄</p>为<off>胶东王</off>。封四侯。"
+    },
+    {
+      "pid": "15.4",
+      "text": "九月甲戌，日食。",
+      "annotated": "<time>九月甲戌</time>，<astro>日食</astro>。"
+    },
+    {
+      "pid": "16.1",
+      "text": "中三年冬，罢诸侯御史中丞。",
+      "annotated": "<time>中三年冬</time>，<vpol>罢</vpol><role>诸侯</role><off>御史中丞</off>。"
+    },
+    {
+      "pid": "16.2",
+      "text": "春，匈奴王二人率其徒来⟦◈降⟧，皆封为列侯。",
+      "annotated": "<time>春</time>，<tribe>匈奴</tribe>王<qty>二人</qty>率其徒来⟦◈降⟧，皆封为<role>列侯</role>。"
+    },
+    {
+      "pid": "16.3",
+      "text": "立皇子方乘为清河王。",
+      "annotated": "<vpol>立</vpol><role>皇子</role><p name=\"刘方乘\">方乘</p>为<off>清河王</off>。"
+    },
+    {
+      "pid": "16.4",
+      "text": "三月，彗星出西北。",
+      "annotated": "<time>三月</time>，<astro>彗星</astro>出西北。"
+    },
+    {
+      "pid": "16.5",
+      "text": "丞相周亚夫免，以御史大夫桃侯刘舍为丞相。",
+      "annotated": "<off>丞相</off><p>周亚夫</p>免，以<off>御史大夫</off><off>桃侯</off><p>刘舍</p>为<off>丞相</off>。"
+    },
+    {
+      "pid": "16.6",
+      "text": "四月，地动。",
+      "annotated": "<time>四月</time>，地动。"
+    },
+    {
+      "pid": "16.7",
+      "text": "九月戊戌晦，日食。军东都门外。",
+      "annotated": "<time>九月戊戌晦</time>，<astro>日食</astro>。军<loc>东都门</loc>外。"
+    },
+    {
+      "pid": "17.1",
+      "text": "中四年三月，置德阳宫。",
+      "annotated": "<time>中四年三月</time>，置<loc>德阳宫</loc>。"
+    },
+    {
+      "pid": "17.2",
+      "text": "大蝗。",
+      "annotated": "大<bio>蝗</bio>。"
+    },
+    {
+      "pid": "17.3",
+      "text": "秋，赦徒作阳陵者。",
+      "annotated": "<time>秋</time>，<vpol>赦</vpol>徒作<loc>阳陵</loc>者。"
+    },
+    {
+      "pid": "18.1",
+      "text": "中五年夏，立皇子舜为常山王。封十侯。",
+      "annotated": "<time>中五年夏</time>，<vpol>立</vpol><role>皇子</role><p name=\"刘舜\">舜</p>为<off>常山王</off>。封十侯。"
+    },
+    {
+      "pid": "18.2",
+      "text": "六月丁巳，赦天下，赐爵一级。",
+      "annotated": "<time>六月丁巳</time>，<vpol>赦</vpol><idea>天下</idea>，<sys>赐爵</sys>一级。"
+    },
+    {
+      "pid": "18.3",
+      "text": "天下大潦。",
+      "annotated": "天下大潦。"
+    },
+    {
+      "pid": "18.4",
+      "text": "更命诸侯丞相曰相。",
+      "annotated": "更<vpol>命</vpol><role>诸侯</role><off>丞相</off>曰<off>相</off>。"
+    },
+    {
+      "pid": "18.5",
+      "text": "秋，地动。",
+      "annotated": "<time>秋</time>，地动。"
+    },
+    {
+      "pid": "19.1",
+      "text": "中六年二月己卯，行幸雍，郊见五帝。",
+      "annotated": "<time>中六年二月己卯</time>，行幸<loc>雍</loc>，郊见<sys>五帝</sys>。"
+    },
+    {
+      "pid": "19.2",
+      "text": "三月，雨雹。",
+      "annotated": "<time>三月</time>，雨雹。"
+    },
+    {
+      "pid": "19.3",
+      "text": "四月，梁孝王、城阳共王、汝南王皆薨。",
+      "annotated": "<time>四月</time>，<p>梁孝王</p>、<p>城阳共王</p>、<p>汝南王</p>皆<vpol>薨</vpol>。"
+    },
+    {
+      "pid": "20.1",
+      "text": "立梁孝王子明为济川王，子彭离为济东王，子定为山阳王，子不识为济阴王。梁分为五。",
+      "annotated": "<vpol>立</vpol><p>梁孝王</p><role>子</role><p name=\"刘明\">明</p>为<off>济川王</off>，<role>子</role><p name=\"刘彭离\">彭离</p>为<off>济东王</off>，<role>子</role><p name=\"刘定\">定</p>为<off>山阳王</off>，<role>子</role><p name=\"刘不识\">不识</p>为<off>济阴王</off>。<state>梁</state>分为五。"
+    },
+    {
+      "pid": "20.2",
+      "text": "封四侯。",
+      "annotated": "封四侯。"
+    },
+    {
+      "pid": "21.1",
+      "text": "更命廷尉为大理，将作少府为将作大匠，主爵中尉为都尉，长信詹事为长信少府，将行为大长秋，大行为行人，奉常为太常，典客为大行，治粟内史为大农。",
+      "annotated": "更命<off>廷尉</off>为<off>大理</off>，<off>将作少府</off>为<off>将作大匠</off>，<off>主爵中尉</off>为<off>都尉</off>，<off>长信詹事</off>为<off>长信少府</off>，<off>将行</off>为<off>大长秋</off>，<off>大行</off>为<off>行人</off>，<off>奉常</off>为<off>太常</off>，<off>典客</off>为<off>大行</off>，<off>治粟内史</off>为<off>大农</off>。"
+    },
+    {
+      "pid": "21.2",
+      "text": "以大内为二千石，置左右内官，属大内。",
+      "annotated": "以<off>大内</off>为<off>二千石</off>，置<off>左右内官</off>，属<off>大内</off>。"
+    },
+    {
+      "pid": "21.3",
+      "text": "七月辛亥，日食。",
+      "annotated": "<time>七月辛亥</time>，<astro>日食</astro>。"
+    },
+    {
+      "pid": "21.4",
+      "text": "八月，匈奴入上郡。",
+      "annotated": "<time>八月</time>，<tribe>匈奴</tribe>入<loc>上郡</loc>。"
+    },
+    {
+      "pid": "22.1",
+      "text": "後元年冬，更命中大夫令为卫尉。",
+      "annotated": "<time>後元年冬</time>，更命<off>中大夫令</off>为<off>卫尉</off>。"
+    },
+    {
+      "pid": "22.2",
+      "text": "三月丁酉，赦天下，赐爵一级，中二千石、诸侯相爵右庶长。",
+      "annotated": "<time>三月丁酉</time>，<vpol>赦</vpol><idea>天下</idea>，<sys>赐爵</sys>一级，<off>中二千石</off>、<role>诸侯</role><off>相</off>爵<off>右庶长</off>。"
+    },
+    {
+      "pid": "22.3",
+      "text": "四月，大酺。",
+      "annotated": "<time>四月</time>，大酺。"
+    },
+    {
+      "pid": "22.4",
+      "text": "五月丙戌，地动，其蚤食时复动。",
+      "annotated": "<time>五月丙戌</time>，地动，其蚤食时复动。"
+    },
+    {
+      "pid": "22.5",
+      "text": "上庸地动二十二日，坏城垣。",
+      "annotated": "<loc>上庸</loc>地动<qty>二十二日</qty>，坏城垣。"
+    },
+    {
+      "pid": "22.6",
+      "text": "七月乙巳，日食。",
+      "annotated": "<time>七月乙巳</time>，<astro>日食</astro>。"
+    },
+    {
+      "pid": "22.7",
+      "text": "丞相刘舍免。",
+      "annotated": "<off>丞相</off><p>刘舍</p>免。"
+    },
+    {
+      "pid": "22.8",
+      "text": "八月壬辰，以御史大夫绾为丞相，封建陵侯。",
+      "annotated": "<time>八月壬辰</time>，以<off>御史大夫</off><p name=\"卫绾\">绾</p>为<off>丞相</off>，<vpol>封</vpol><off>建陵侯</off>。"
+    },
+    {
+      "pid": "23.1",
+      "text": "後二年正月，地一日三动。",
+      "annotated": "<time>後二年正月</time>，地<qty>一日</qty>三动。"
+    },
+    {
+      "pid": "23.2",
+      "text": "郅将军⟦◈击⟧匈奴。酺五日。",
+      "annotated": "<p name=\"郅都\">郅</p><off>将军</off>⟦◈击⟧<tribe>匈奴</tribe>。酺<qty>五日</qty>。"
+    },
+    {
+      "pid": "23.3",
+      "text": "令内史郡不得食马粟，没入县官。",
+      "annotated": "令<loc>内史</loc>郡不得食<bio>马</bio><art>粟</art>，<law>没入</law>县官。"
+    },
+    {
+      "pid": "23.4",
+      "text": "令徒隶衣七布。止马舂。",
+      "annotated": "令徒隶衣<art>七布</art>。止<bio>马</bio>舂。"
+    },
+    {
+      "pid": "24.1",
+      "text": "为岁不登，禁天下食不造岁。",
+      "annotated": "为岁不登，禁<idea>天下</idea>食不造岁。"
+    },
+    {
+      "pid": "24.2",
+      "text": "省列侯遣之国。",
+      "annotated": "省<role>列侯</role>遣<vpol>之国</vpol>。"
+    },
+    {
+      "pid": "24.3",
+      "text": "三月，匈奴入雁门。",
+      "annotated": "<time>三月</time>，<tribe>匈奴</tribe>入<loc>雁门</loc>。"
+    },
+    {
+      "pid": "24.4",
+      "text": "十月，租长陵田。大旱。",
+      "annotated": "<time>十月</time>，租<loc>长陵</loc>田。大旱。"
+    },
+    {
+      "pid": "24.5",
+      "text": "衡山国、河东、云中郡民疫。",
+      "annotated": "<loc>衡山国</loc>、<loc>河东</loc>、<loc>云中郡</loc>民疫。"
+    },
+    {
+      "pid": "25.1",
+      "text": "後三年十月，日月皆赤五日。",
+      "annotated": "<time>後三年十月</time>，<astro>日月</astro>皆赤<qty>五日</qty>。"
+    },
+    {
+      "pid": "25.2",
+      "text": "十二月晦，雷。日如紫。",
+      "annotated": "<time>十二月晦</time>，雷。<astro>日</astro>如紫。"
+    },
+    {
+      "pid": "25.3",
+      "text": "五星逆行守太微。",
+      "annotated": "<astro>五星</astro>逆行守<astro>太微</astro>。"
+    },
+    {
+      "pid": "25.4",
+      "text": "月贯天廷中。",
+      "annotated": "<astro>月</astro>贯<astro>天廷</astro>中。"
+    },
+    {
+      "pid": "26.1",
+      "text": "正月甲寅，皇太子冠。",
+      "annotated": "<time>正月甲寅</time>，<role>皇太子</role>冠。"
+    },
+    {
+      "pid": "26.2",
+      "text": "甲子，孝景皇帝崩。",
+      "annotated": "<time>甲子</time>，<p>孝景皇帝</p><vpol>崩</vpol>。"
+    },
+    {
+      "pid": "27.1",
+      "text": "遗诏赐诸侯王以下至民为父後爵一级，天下户百钱。",
+      "annotated": "遗诏赐<role>诸侯王</role>以下至民为<role>父</role>後爵一级，<idea>天下</idea>户<qty>百钱</qty>。"
+    },
+    {
+      "pid": "27.2",
+      "text": "出宫人归其家，复无所与。",
+      "annotated": "出宫人归其家，复无所与。"
+    },
+    {
+      "pid": "27.3",
+      "text": "太子即位，是为孝武皇帝。",
+      "annotated": "<role>太子</role>即位，是为<p>孝武皇帝</p>。"
+    },
+    {
+      "pid": "28.1",
+      "text": "三月，封皇太后弟蚡为武安侯，弟胜为周阳侯。",
+      "annotated": "<time>三月</time>，封<role>皇太后</role><role>弟</role><p name=\"田蚡\">蚡</p>为<off>武安侯</off>，<role>弟</role><p name=\"田胜\">胜</p>为<off>周阳侯</off>。"
+    },
+    {
+      "pid": "28.2",
+      "text": "置阳陵。 ::: 太史公曰",
+      "annotated": "置<loc>阳陵</loc>。 ::: 太史公曰"
+    },
+    {
+      "pid": "29.1",
+      "text": "太史公曰：汉兴，孝文施大德，天下怀安，至孝景，不复忧异姓，而晁错刻削诸侯，遂使七国俱起，合从而西乡，以诸侯太盛，而错为之不以渐也。",
+      "annotated": "<p>太史公</p>曰：<state>汉</state>兴，<p>孝文</p>施大德，<idea>天下</idea>怀安，至<p>孝景</p>，不复忧异姓，而<p>晁错</p>刻削<role>诸侯</role>，遂使<state>七国</state>俱起，<sys>合从</sys>而西乡，以<role>诸侯</role>太盛，而<p name=\"晁错\">错</p>为之不以渐也。"
+    },
+    {
+      "pid": "29.2",
+      "text": "及主父偃言之，而诸侯以弱，卒以安。安危之机，岂不以谋哉？ ::: ::: 赞 景帝即位，因脩静默。 勉人於农，率下以德。 制度斯创，礼法可则。 一朝吴楚，乍起凶慝。 提局成衅，拒轮致惑。 晁错虽诛，梁城未⟦◈克⟧。 条侯出将，追奔逐北。 坐见枭黥，立翦牟贼。 如何太尉，後卒下狱。 惜哉明君，斯功不录！ :::",
+      "annotated": "及<p>主父偃</p>言之，而<role>诸侯</role>以弱，卒以安。<idiom>安危之机</idiom>，岂不以谋哉？ ::: ::: 赞 <p>景帝</p>即位，因脩静默。 勉人於农，率下以德。 <sys>制度</sys>斯创，<sys>礼法</sys>可则。 一<vpol>朝</vpol><state>吴</state><state>楚</state>，乍起凶慝。 提局成衅，拒轮致惑。 <p>晁错</p>虽<vact>诛</vact>，<state>梁</state>城未⟦◈克⟧。 <off>条侯</off>出将，<idiom>追奔逐北</idiom>。 坐见<law>枭</law>黥，立<law>翦</law>牟贼。 如何<off>太尉</off>，後卒<law>下狱</law>。 惜哉<role>明君</role>，斯功不录！ :::"
+    }
+  ]
+}

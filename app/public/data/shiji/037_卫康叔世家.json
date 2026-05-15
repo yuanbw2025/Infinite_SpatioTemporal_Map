@@ -1,0 +1,266 @@
+{
+  "work": "史记",
+  "chapter": "卫康叔世家",
+  "chapter_file": "037_卫康叔世家",
+  "chapter_type": "世家",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 51,
+  "paragraph_count_done": 51,
+  "paragraphs": [
+    {
+      "pid": "1",
+      "text": "卫康叔名封，周武王同母少弟也。其次尚有厓季，厓季最少。",
+      "annotated": "<state>卫</state><p name=\"卫康叔\">康叔</p>名<p name=\"卫康叔\">封</p>，<p>周武王</p>同母少弟也。其次尚有<p>厓季</p>，<p>厓季</p>最少。"
+    },
+    {
+      "pid": "2",
+      "text": "武王已克殷纣，复以殷馀民封纣子武庚禄父，比诸侯，以奉其先祀勿绝。为武庚未集，恐其有贼心，武王乃令其弟管叔、蔡叔傅相武庚禄父，以和其民。武王既崩，成王少。周公旦代成王治，当国。管叔、蔡叔疑周公，乃与武庚禄父作乱，欲攻成周。周公旦以成王命兴师伐殷，杀武庚禄父、管叔，放蔡叔，以武庚殷馀民封康叔为卫君，居河、淇间故商墟。",
+      "annotated": "<p name=\"周武王\">武王</p>已克<state>殷</state><p name=\"商纣王\">纣</p>，复以<state>殷</state>馀民<law>封</law><p name=\"商纣王\">纣</p><role>子</role><p>武庚</p><p name=\"武庚\">禄父</p>，比<role>诸侯</role>，以奉其先祀勿绝。为<p>武庚</p>未集，恐其有贼心，<p name=\"周武王\">武王</p>乃令其<role>弟</role><p>管叔</p>、<p>蔡叔</p>傅相<p>武庚</p><p name=\"武庚\">禄父</p>，以和其民。<p name=\"周武王\">武王</p>既崩，<p name=\"周成王\">成王</p>少。<p>周公旦</p>代<p name=\"周成王\">成王</p>治，当国。<p>管叔</p>、<p>蔡叔</p>疑<p name=\"周公旦\">周公</p>，乃与<p>武庚</p><p name=\"武庚\">禄父</p>作乱，欲<law>攻</law><loc>成周</loc>。<p>周公旦</p>以<p name=\"周成王\">成王</p>命兴师<law>伐</law><state>殷</state>，<vact>杀</vact><p>武庚</p><p name=\"武庚\">禄父</p>、<p>管叔</p>，<law>放</law><p>蔡叔</p>，以<p>武庚</p><state>殷</state>馀民<law>封</law><p name=\"卫康叔\">康叔</p>为<off>卫君</off>，居<loc>河</loc>、<loc>淇</loc>间故<state>商</state>墟。"
+    },
+    {
+      "pid": "3",
+      "text": "周公旦惧康叔齿少，乃申告康叔曰：“必求殷之贤人君子长者，问其先殷所以兴，所以亡，而务爱民。” 告以纣所以亡者以淫於酒，酒之失，妇人是用，故纣之乱自此始。为梓材，示君子可法则。故谓之康诰、酒诰、梓材以命之。康叔之国，既以此命，能和集其民，民大说。",
+      "annotated": "<p>周公旦</p>惧<p name=\"卫康叔\">康叔</p>齿少，乃申告<p name=\"卫康叔\">康叔</p>曰：“必求<state>殷</state>之<role>贤人</role><idea>君子</idea><role>长者</role>，问其先<state>殷</state>所以兴，所以亡，而务爱<role>民</role>。” 告以<p name=\"商纣王\">纣</p>所以亡者以淫於<art>酒</art>，<art>酒</art>之失，<role>妇人</role>是用，故<p name=\"商纣王\">纣</p>之乱自此始。为<sys>梓材</sys>，示<idea>君子</idea>可法则。故谓之<sys>康诰</sys>、<sys>酒诰</sys>、<sys>梓材</sys>以命之。<p name=\"卫康叔\">康叔</p><vpol>之国</vpol>，既以此命，能和集其<role>民</role>，<role>民</role>大说。"
+    },
+    {
+      "pid": "4",
+      "text": "成王长，用事，举康叔为周司寇，赐卫宝祭器，以章有德。",
+      "annotated": "<p name=\"周成王\">成王</p>长，用事，举<p name=\"卫康叔\">康叔</p>为<state>周</state><off>司寇</off>，赐<state>卫</state><art>宝祭器</art>，以章有德。"
+    },
+    {
+      "pid": "5",
+      "text": "康叔卒，子康伯代立。 康伯卒，子考伯立。 考伯卒，子嗣伯立。 嗣伯卒，子榅伯立。 榅伯卒，子靖伯立。 靖伯卒，子贞伯立。 贞伯卒，子顷侯立。",
+      "annotated": "<p name=\"卫康叔\">康叔</p>卒，<role>子</role><p name=\"卫康伯\">康伯</p>代立。 <p name=\"卫康伯\">康伯</p>卒，<role>子</role><p name=\"卫考伯\">考伯</p>立。 <p name=\"卫考伯\">考伯</p>卒，<role>子</role><p name=\"卫嗣伯\">嗣伯</p>立。 <p name=\"卫嗣伯\">嗣伯</p>卒，<role>子</role><p name=\"卫榅伯\">榅伯</p>立。 <p name=\"卫榅伯\">榅伯</p>卒，<role>子</role><p name=\"卫靖伯\">靖伯</p>立。 <p name=\"卫靖伯\">靖伯</p>卒，<role>子</role><p name=\"卫贞伯\">贞伯</p>立。 <p name=\"卫贞伯\">贞伯</p>卒，<role>子</role><p name=\"卫顷侯\">顷侯</p>立。"
+    },
+    {
+      "pid": "6",
+      "text": "顷侯厚赂周夷王，夷王命卫为侯。顷侯立十二年卒，子釐侯立。",
+      "annotated": "<p name=\"卫顷侯\">顷侯</p>厚赂<p>周夷王</p>，<p name=\"周夷王\">夷王</p>命<state>卫</state>为<off>侯</off>。<p name=\"卫顷侯\">顷侯</p>立<time name=\"时长\">十二年</time>卒，<role>子</role><p name=\"卫釐侯\">釐侯</p>立。"
+    },
+    {
+      "pid": "7",
+      "text": "釐侯十三年，周厉王出奔于彘，共和行政焉。二十八年，周宣王立。",
+      "annotated": "<p name=\"卫釐侯\">釐侯</p><time>十三年</time>，<p>周厉王</p>出奔于<loc>彘</loc>，<sys>共和</sys>行政焉。<time>二十八年</time>，<p>周宣王</p>立。"
+    },
+    {
+      "pid": "8",
+      "text": "四十二年，釐侯卒，太子共伯馀立为君。共伯弟和有宠於釐侯，多予之赂；和以其赂赂士，以袭攻共伯於墓上，共伯入釐侯羡自杀。卫人因葬之釐侯旁，谥曰共伯，而立和为卫侯，是为武公。",
+      "annotated": "<time>四十二年</time>，<p name=\"卫釐侯\">釐侯</p>卒，<role>太子</role><p name=\"卫共伯馀\">共伯</p><p name=\"卫共伯馀\">馀</p><vpol>立</vpol>为<role>君</role>。<p name=\"卫共伯馀\">共伯</p><role>弟</role><p name=\"卫武公\">和</p>有宠於<p name=\"卫釐侯\">釐侯</p>，多予之赂；<p name=\"卫武公\">和</p>以其赂赂<role>士</role>，以袭<law>攻</law><p name=\"卫共伯馀\">共伯</p>於墓上，<p name=\"卫共伯馀\">共伯</p>入<p name=\"卫釐侯\">釐侯</p>羡<law>自杀</law>。<state>卫</state><role>人</role>因葬之<p name=\"卫釐侯\">釐侯</p>旁，<vpol>谥</vpol>曰<p name=\"卫共伯馀\">共伯</p>，而<vpol>立</vpol><p name=\"卫武公\">和</p>为<off>卫侯</off>，是为<p name=\"卫武公\">武公</p>。"
+    },
+    {
+      "pid": "9",
+      "text": "武公即位，修康叔之政，百姓和集。四十二年，犬戎杀周幽王，武公将兵往佐周平戎，甚有功，周平王命武公为公。五十五年，卒，子庄公扬立。",
+      "annotated": "<p name=\"卫武公\">武公</p>即位，修<p name=\"卫康叔\">康叔</p>之政，<role>百姓</role>和集。<time>四十二年</time>，<tribe>犬戎</tribe><vact>杀</vact><p>周幽王</p>，<p name=\"卫武公\">武公</p>将兵往佐<state>周</state><law>平</law><tribe>戎</tribe>，甚有功，<p>周平王</p>命<p name=\"卫武公\">武公</p>为<off>公</off>。<time>五十五年</time>，卒，<role>子</role><p name=\"卫庄公\">庄公</p><p name=\"卫庄公\">扬</p>立。"
+    },
+    {
+      "pid": "10",
+      "text": "庄公五年，取齐女为夫人，好而无子。又取陈女为夫人，生子，蚤死。陈女女弟亦幸於庄公，而生子完。完母死，庄公令夫人齐女子之，立为太子。庄公有宠妾，生子州吁。十八年，州吁长，好兵，庄公使将。石碏谏庄公曰：“庶子好兵，使将，乱自此起。” 不听。二十三年，庄公卒，太子完立，是为桓公。",
+      "annotated": "<p name=\"卫庄公\">庄公</p><time>五年</time>，取<state>齐</state><role>女</role>为<role>夫人</role>，好而无<role>子</role>。又取<state>陈</state><role>女</role>为<role>夫人</role>，生<role>子</role>，蚤死。<state>陈</state><role>女</role><role>女弟</role>亦幸於<p name=\"卫庄公\">庄公</p>，而生<role>子</role><p name=\"卫桓公\">完</p>。<p name=\"卫桓公\">完</p><role>母</role>死，<p name=\"卫庄公\">庄公</p>令<role>夫人</role><state>齐</state><role>女</role>子之，<vpol>立</vpol>为<role>太子</role>。<p name=\"卫庄公\">庄公</p>有宠<role>妾</role>，生<role>子</role><p>州吁</p>。<time>十八年</time>，<p>州吁</p>长，好兵，<p name=\"卫庄公\">庄公</p>使将。<p>石碏</p>谏<p name=\"卫庄公\">庄公</p>曰：“<role>庶子</role>好兵，使将，乱自此起。” 不听。<time>二十三年</time>，<p name=\"卫庄公\">庄公</p>卒，<role>太子</role><p name=\"卫桓公\">完</p>立，是为<p name=\"卫桓公\">桓公</p>。"
+    },
+    {
+      "pid": "11",
+      "text": "桓公二年，弟州吁骄奢，桓公绌之，州吁出奔。十三年，郑伯弟段攻其兄，不胜，亡，而州吁求与之友。十六年，州吁收聚卫亡人以袭杀桓公，州吁自立为卫君。为郑伯弟段欲伐郑，请宋、陈、蔡与俱，三国皆许州吁。州吁新立，好兵，弑桓公，卫人皆不爱。石碏乃因桓公母家於陈，详为善州吁。至郑郊，石碏与陈侯共谋，使右宰丑进食，因杀州吁于濮，而迎桓公弟晋於邢而立之，是为宣公。",
+      "annotated": "<p name=\"卫桓公\">桓公</p><time>二年</time>，<role>弟</role><p>州吁</p>骄奢，<p name=\"卫桓公\">桓公</p>绌之，<p>州吁</p>出奔。<time>十三年</time>，<p name=\"郑庄公\">郑伯</p><role>弟</role><p name=\"共叔段\">段</p><law>攻</law>其<role>兄</role>，不胜，亡，而<p>州吁</p>求与之友。<time>十六年</time>，<p>州吁</p>收聚<state>卫</state><role>亡人</role>以袭<vact>杀</vact><p name=\"卫桓公\">桓公</p>，<p>州吁</p><vpol>自立</vpol>为<off>卫君</off>。为<p name=\"郑庄公\">郑伯</p><role>弟</role><p name=\"共叔段\">段</p>欲<law>伐</law><state>郑</state>，请<state>宋</state>、<state>陈</state>、<state>蔡</state>与俱，三国皆许<p>州吁</p>。<p>州吁</p>新立，好兵，<vact>弑</vact><p name=\"卫桓公\">桓公</p>，<state>卫</state><role>人</role>皆不爱。<p>石碏</p>乃因<p name=\"卫桓公\">桓公</p><role>母</role>家於<state>陈</state>，详为善<p>州吁</p>。至<state>郑</state>郊，<p>石碏</p>与<off>陈侯</off>共谋，使<off>右宰</off><p name=\"右宰丑\">丑</p>进食，因<vact>杀</vact><p>州吁</p>于<loc>濮</loc>，而迎<p name=\"卫桓公\">桓公</p><role>弟</role><p name=\"卫宣公\">晋</p>於<state>邢</state>而立之，是为<p name=\"卫宣公\">宣公</p>。"
+    },
+    {
+      "pid": "12",
+      "text": "宣公七年，鲁弑其君隐公。九年，宋督弑其君殇公，及孔父。十年，晋曲沃庄伯弑其君哀侯。",
+      "annotated": "<p name=\"卫宣公\">宣公</p><time>七年</time>，<state>鲁</state><vact>弑</vact>其<role>君</role><p name=\"鲁隐公\">隐公</p>。<time>九年</time>，<state>宋</state><p name=\"华督\">督</p><vact>弑</vact>其<role>君</role><p name=\"宋殇公\">殇公</p>，及<p name=\"孔父嘉\">孔父</p>。<time>十年</time>，<state>晋</state><loc>曲沃</loc><p name=\"晋庄伯\">庄伯</p><vact>弑</vact>其<role>君</role><p name=\"晋哀侯\">哀侯</p>。"
+    },
+    {
+      "pid": "13",
+      "text": "十八年，初，宣公爱夫人夷姜，夷姜生子伋，以为太子，而令右公子傅之。右公子为太子取齐女，未入室，而宣公见所欲为太子妇者好，说而自取之，更为太子取他女。宣公得齐女，生子寿、子朔，令左公子傅之。太子伋母死，宣公正夫人与朔共谗恶太子伋。宣公自以其夺太子妻也，心恶太子，欲废之。及闻其恶，大怒，乃使太子伋於齐而令盗遮界上杀之，与太子白旄，而告界盗见持白旄者杀之。且行，子朔之兄寿，太子异母弟也，知朔之恶太子而君欲杀之，乃谓太子曰：“界盗见太子白旄，即杀太子，太子可毋行。” 太子曰：“逆父命求生，不可。” 遂行。寿见太子不止，扑盗其沧旄而先驰至界。界盗见其验，即杀之。寿已死，而太子伋又至，谓盗曰：“所当杀乃我也。” 盗并杀太子伋，以报宣公。宣公乃以子朔为太子。十九年，宣公卒，太子朔立，是为惠公。",
+      "annotated": "<time>十八年</time>，初，<p name=\"卫宣公\">宣公</p>爱<role>夫人</role><p>夷姜</p>，<p>夷姜</p>生<role>子</role><p name=\"卫太子伋\">伋</p>，以为<role>太子</role>，而令<p>右公子</p>傅之。<p>右公子</p>为<role>太子</role>取<state>齐</state><role>女</role>，未入室，而<p name=\"卫宣公\">宣公</p>见所欲为<role>太子</role><role>妇</role>者好，说而自取之，更为<role>太子</role>取他<role>女</role>。<p name=\"卫宣公\">宣公</p>得<state>齐</state><role>女</role>，生<role>子</role><p name=\"公子寿\">寿</p>、<role>子</role><p name=\"卫惠公\">朔</p>，令<p>左公子</p>傅之。<role>太子</role><p name=\"卫太子伋\">伋</p><role>母</role>死，<p name=\"卫宣公\">宣公</p>正<role>夫人</role>与<p name=\"卫惠公\">朔</p>共谗恶<role>太子</role><p name=\"卫太子伋\">伋</p>。<p name=\"卫宣公\">宣公</p>自以其夺<role>太子</role><role>妻</role>也，心恶<role>太子</role>，欲<law>废</law>之。及闻其恶，大怒，乃使<role>太子</role><p name=\"卫太子伋\">伋</p>於<state>齐</state>而令<role>盗</role>遮界上<vact>杀</vact>之，与<role>太子</role><art>白旄</art>，而告界<role>盗</role>见持<art>白旄</art>者<vact>杀</vact>之。且行，<role>子</role><p name=\"卫惠公\">朔</p>之<role>兄</role><p name=\"公子寿\">寿</p>，<role>太子</role><role>异母弟</role>也，知<p name=\"卫惠公\">朔</p>之恶<role>太子</role>而<role>君</role>欲<vact>杀</vact>之，乃谓<role>太子</role>曰：“界<role>盗</role>见<role>太子</role><art>白旄</art>，即<vact>杀</vact><role>太子</role>，<role>太子</role>可毋行。” <role>太子</role>曰：“逆<role>父</role>命求生，不可。” 遂行。<p name=\"公子寿\">寿</p>见<role>太子</role>不止，扑<role>盗</role>其<art>沧旄</art>而先驰至界。界<role>盗</role>见其验，即<vact>杀</vact>之。<p name=\"公子寿\">寿</p>已死，而<role>太子</role><p name=\"卫太子伋\">伋</p>又至，谓<role>盗</role>曰：“所当<vact>杀</vact>乃我也。” <role>盗</role>并<vact>杀</vact><role>太子</role><p name=\"卫太子伋\">伋</p>，以报<p name=\"卫宣公\">宣公</p>。<p name=\"卫宣公\">宣公</p>乃以<role>子</role><p name=\"卫惠公\">朔</p>为<role>太子</role>。<time>十九年</time>，<p name=\"卫宣公\">宣公</p>卒，<role>太子</role><p name=\"卫惠公\">朔</p>立，是为<p name=\"卫惠公\">惠公</p>。"
+    },
+    {
+      "pid": "14",
+      "text": "左右公子不平朔之立也，惠公四年，左右公子怨惠公之谗杀前太子伋而代立，乃作乱，攻惠公，立太子伋之弟黔牟为君，惠公奔齐。",
+      "annotated": "<p>左右公子</p>不平<p name=\"卫惠公\">朔</p>之立也，<p name=\"卫惠公\">惠公</p><time>四年</time>，<p>左右公子</p>怨<p name=\"卫惠公\">惠公</p>之谗<vact>杀</vact>前<role>太子</role><p name=\"卫太子伋\">伋</p>而代立，乃作乱，<law>攻</law><p name=\"卫惠公\">惠公</p>，<vpol>立</vpol><role>太子</role><p name=\"卫太子伋\">伋</p>之<role>弟</role><p name=\"卫黔牟\">黔牟</p>为<role>君</role>，<p name=\"卫惠公\">惠公</p>奔<state>齐</state>。"
+    },
+    {
+      "pid": "15",
+      "text": "卫君黔牟立八年，齐襄公率诸侯奉王命共伐卫，纳卫惠公，诛左右公子。卫君黔牟奔于周，惠公复立。惠公立三年出亡，亡八年复入，与前通年凡十三年矣。",
+      "annotated": "<off>卫君</off><p name=\"卫黔牟\">黔牟</p>立<time name=\"时长\">八年</time>，<p>齐襄公</p>率<role>诸侯</role>奉<role>王</role>命共<law>伐</law><state>卫</state>，<law>纳</law><p>卫惠公</p>，<vact>诛</vact><p>左右公子</p>。<off>卫君</off><p name=\"卫黔牟\">黔牟</p>奔于<state>周</state>，<p name=\"卫惠公\">惠公</p>复立。<p name=\"卫惠公\">惠公</p>立<time name=\"时长\">三年</time>出亡，亡<time name=\"时长\">八年</time>复入，与前通年凡<time name=\"时长\">十三年</time>矣。"
+    },
+    {
+      "pid": "16",
+      "text": "二十五年，惠公怨周之容舍黔牟，与燕伐周。周惠王奔温，卫、燕立惠王弟穨为王。二十九年，郑复纳惠王。三十一年，惠公卒，子懿公赤立。",
+      "annotated": "<time>二十五年</time>，<p name=\"卫惠公\">惠公</p>怨<state>周</state>之容舍<p name=\"卫黔牟\">黔牟</p>，与<state>燕</state><law>伐</law><state>周</state>。<p>周惠王</p>奔<loc>温</loc>，<state>卫</state>、<state>燕</state><vpol>立</vpol><p name=\"周惠王\">惠王</p><role>弟</role><p name=\"王子穨\">穨</p>为<off>王</off>。<time>二十九年</time>，<state>郑</state>复<law>纳</law><p name=\"周惠王\">惠王</p>。<time>三十一年</time>，<p name=\"卫惠公\">惠公</p>卒，<role>子</role><p name=\"卫懿公\">懿公</p><p name=\"卫懿公\">赤</p>立。"
+    },
+    {
+      "pid": "17",
+      "text": "懿公即位，好鹤，淫乐奢侈。九年，翟伐卫，卫懿公欲发兵，兵或畔。大臣言曰：“君好穀，穀可令击翟。” 翟於是遂入，杀懿公。",
+      "annotated": "<p name=\"卫懿公\">懿公</p>即位，好<bio>鹤</bio>，淫乐奢侈。<time>九年</time>，<tribe>翟</tribe><law>伐</law><state>卫</state>，<p>卫懿公</p>欲发<role>兵</role>，<role>兵</role>或畔。<role>大臣</role>言曰：“<role>君</role>好穀，穀可令<law>击</law><tribe>翟</tribe>。” <tribe>翟</tribe>於是遂<law>入</law>，<vact>杀</vact><p name=\"卫懿公\">懿公</p>。"
+    },
+    {
+      "pid": "18",
+      "text": "懿公之立也，百姓大臣皆不服。自懿公父惠公朔之谗杀太子伋代立至於懿公，常欲败之，卒⟦◈灭⟧惠公之後而更立黔牟之弟昭伯顽之子申为君，是为戴公。",
+      "annotated": "<p name=\"卫懿公\">懿公</p>之立也，<role>百姓</role><role>大臣</role>皆不服。自<p name=\"卫懿公\">懿公</p><role>父</role><p name=\"卫惠公\">惠公</p><p name=\"卫惠公\">朔</p>之谗<vact>杀</vact><role>太子</role><p name=\"卫太子伋\">伋</p>代立至於<p name=\"卫懿公\">懿公</p>，常欲败之，卒⟦◈灭⟧<p name=\"卫惠公\">惠公</p>之後而更<vpol>立</vpol><p name=\"卫黔牟\">黔牟</p>之<role>弟</role><p name=\"公子昭伯\">昭伯</p><p name=\"公子昭伯\">顽</p>之<role>子</role><p name=\"卫戴公\">申</p>为<role>君</role>，是为<p name=\"卫戴公\">戴公</p>。"
+    },
+    {
+      "pid": "19",
+      "text": "戴公申元年卒。齐桓公以卫数乱，乃率诸侯伐翟，为卫筑楚丘，立戴公弟毁为卫君，初，翟杀懿公也，卫人怜之，思复立宣公前死太子伋之後，伋子又死，而代伋死者子寿又无子。太子伋同母弟二人：其一曰黔牟，黔牟尝代惠公为君，八年复去；其二曰昭伯。昭伯、黔牟皆已前死，故立昭伯子申为戴公。戴公卒，复立其弟毁为文公。",
+      "annotated": "<p name=\"卫戴公\">戴公</p><p name=\"卫戴公\">申</p><time name=\"时长\">元年</time>卒。<p>齐桓公</p>以<state>卫</state>数乱，乃率<role>诸侯</role><law>伐</law><tribe>翟</tribe>，为<state>卫</state>筑<loc>楚丘</loc>，<vpol>立</vpol><p name=\"卫戴公\">戴公</p><role>弟</role><p name=\"卫文公\">毁</p>为<off>卫君</off>，初，<tribe>翟</tribe><vact>杀</vact><p name=\"卫懿公\">懿公</p>也，<state>卫</state><role>人</role>怜之，思复<vpol>立</vpol><p name=\"卫宣公\">宣公</p>前死<role>太子</role><p name=\"卫太子伋\">伋</p>之後，<p name=\"卫太子伋\">伋</p><role>子</role>又死，而代<p name=\"卫太子伋\">伋</p>死者<role>子</role><p name=\"公子寿\">寿</p>又无<role>子</role>。<role>太子</role><p name=\"卫太子伋\">伋</p><role>同母弟</role><qty>二人</qty>：其一曰<p name=\"卫黔牟\">黔牟</p>，<p name=\"卫黔牟\">黔牟</p>尝代<p name=\"卫惠公\">惠公</p>为<role>君</role>，<time name=\"时长\">八年</time>复去；其二曰<p name=\"公子昭伯\">昭伯</p>。<p name=\"公子昭伯\">昭伯</p>、<p name=\"卫黔牟\">黔牟</p>皆已前死，故<vpol>立</vpol><p name=\"公子昭伯\">昭伯</p><role>子</role><p name=\"卫戴公\">申</p>为<p name=\"卫戴公\">戴公</p>。<p name=\"卫戴公\">戴公</p>卒，复立其<role>弟</role><p name=\"卫文公\">毁</p>为<p name=\"卫文公\">文公</p>。"
+    },
+    {
+      "pid": "20",
+      "text": "文公初立，轻赋平罪，身自劳，与百姓同苦，以收卫民。",
+      "annotated": "<p name=\"卫文公\">文公</p>初立，轻赋平罪，身自劳，与<role>百姓</role>同苦，以收<state>卫</state><role>民</role>。"
+    },
+    {
+      "pid": "21",
+      "text": "十六年，晋公子重耳过，无礼。十七年，齐桓公卒。二十五年，文公卒，子成公郑立。",
+      "annotated": "<time>十六年</time>，<state>晋</state><role>公子</role><p name=\"晋文公\">重耳</p>过，无礼。<time>十七年</time>，<p>齐桓公</p>卒。<time>二十五年</time>，<p name=\"卫文公\">文公</p>卒，<role>子</role><p name=\"卫成公\">成公</p><p name=\"卫成公\">郑</p>立。"
+    },
+    {
+      "pid": "22",
+      "text": "成公三年，晋欲假道於卫救宋，成公不许。晋更从南河度，救宋。徵师於卫，卫大夫欲许，成公不肯。大夫元咺攻成公，成公出奔。晋文公重耳伐卫，分其地予宋，讨前过无礼及不救宋患也。卫成公遂出奔陈。二岁，如周求入，与晋文公会。晋使人鸩卫成公，成公私於周主鸩，令薄，得不死。已而周为请晋文公，卒入之卫，而诛元咺，卫君瑕出奔。七年，晋文公卒。十二年，成公朝晋襄公。十四年，秦穆公卒。二十六年，齐邴歜弑其君懿公。三十五年，成公卒，子穆公立。",
+      "annotated": "<p name=\"卫成公\">成公</p><time>三年</time>，<state>晋</state>欲假道於<state>卫</state><law>救</law><state>宋</state>，<p name=\"卫成公\">成公</p>不许。<state>晋</state>更从<loc>南河</loc>度，<law>救</law><state>宋</state>。徵师於<state>卫</state>，<state>卫</state><role>大夫</role>欲许，<p name=\"卫成公\">成公</p>不肯。<role>大夫</role><p>元咺</p><law>攻</law><p name=\"卫成公\">成公</p>，<p name=\"卫成公\">成公</p>出奔。<p>晋文公</p><p name=\"晋文公\">重耳</p><law>伐</law><state>卫</state>，分其地予<state>宋</state>，讨前过无礼及不<law>救</law><state>宋</state>患也。<p>卫成公</p>遂出奔<state>陈</state>。<time>二岁</time>，如<state>周</state>求<law>入</law>，与<p>晋文公</p>会。<state>晋</state>使人<law>鸩</law><p>卫成公</p>，<p name=\"卫成公\">成公</p>私於<state>周</state>主<art>鸩</art>，令薄，得不死。已而<state>周</state>为请<p>晋文公</p>，卒<law>入</law>之<state>卫</state>，而<vact>诛</vact><p>元咺</p>，<off>卫君</off><p name=\"卫君瑕\">瑕</p>出奔。<time>七年</time>，<p>晋文公</p>卒。<time>十二年</time>，<p name=\"卫成公\">成公</p><vpol>朝</vpol><p>晋襄公</p>。<time>十四年</time>，<p>秦穆公</p>卒。<time>二十六年</time>，<state>齐</state><p>邴歜</p><vact>弑</vact>其<role>君</role><p name=\"卫懿公\">懿公</p>。<time>三十五年</time>，<p name=\"卫成公\">成公</p>卒，子<p name=\"卫穆公\">穆公</p>立。"
+    },
+    {
+      "pid": "23",
+      "text": "穆公二年，楚庄王伐陈，杀夏徵舒。三年，楚庄王围郑，郑降，复释之。十一年，孙良夫救鲁伐齐，复得侵地。穆公卒，子定公臧立。定公十二年卒，子献公衎立。",
+      "annotated": "<p name=\"卫穆公\">穆公</p><time>二年</time>，<p>楚庄王</p><law>伐</law><state>陈</state>，<vact>杀</vact><p>夏徵舒</p>。<time>三年</time>，<p>楚庄王</p><law>围</law><state>郑</state>，<state>郑</state><law>降</law>，复<law>释</law>之。<time>十一年</time>，<p>孙良夫</p><law>救</law><state>鲁</state><law>伐</law><state>齐</state>，复得侵地。<p name=\"卫穆公\">穆公</p>卒，子<p name=\"卫定公\">定公</p><p name=\"卫定公\">臧</p>立。<p name=\"卫定公\">定公</p><time>十二年</time>卒，子<p name=\"卫献公\">献公</p><p name=\"卫献公\">衎</p>立。"
+    },
+    {
+      "pid": "24",
+      "text": "献公十三年，公令师曹教宫妾鼓琴，妾不善，曹笞之。妾以幸恶曹於公，公亦笞曹三百。十八年，献公戒孙文子、甯惠子食，皆往。日旰不召，而去射鸿於囿。二子从之，公不释射服与之言。二子怒，如宿。孙文子子数侍公饮，使师曹歌巧言之卒章。师曹又怒公之尝笞三百，乃歌之，欲以怒孙文子，报卫献公。文子语蘧伯玉，伯玉曰：“臣不知也。” 遂攻出献公。献公奔齐，齐置卫献公於聚邑。孙文子、甯惠子共立定公弟秋为卫君，是为殇公。",
+      "annotated": "<p name=\"卫献公\">献公</p><time>十三年</time>，公令<p>师曹</p>教宫<role>妾</role>鼓<art>琴</art>，<role>妾</role>不善，<p name=\"师曹\">曹</p>笞之。<role>妾</role>以幸恶<p name=\"师曹\">曹</p>於公，公亦笞<p name=\"师曹\">曹</p>三百。<time>十八年</time>，<p name=\"卫献公\">献公</p>戒<p name=\"孙林父\">孙文子</p>、<p name=\"甯殖\">甯惠子</p>食，皆往。日旰不召，而去射<bio>鸿</bio>於囿。<role>二子</role>从之，公不释<art>射服</art>与之言。<role>二子</role>怒，如<loc>宿</loc>。<p name=\"孙林父\">孙文子</p>子数侍公饮，使<p>师曹</p>歌<sys>巧言</sys>之卒章。<p>师曹</p>又怒公之尝笞三百，乃歌之，欲以怒<p name=\"孙林父\">孙文子</p>，报<p>卫献公</p>。<p name=\"孙林父\">文子</p>语<p>蘧伯玉</p>，<p name=\"蘧伯玉\">伯玉</p>曰：“<role>臣</role>不知也。” 遂<law>攻</law>出<p name=\"卫献公\">献公</p>。<p name=\"卫献公\">献公</p>奔<state>齐</state>，<state>齐</state><law>置</law><p>卫献公</p>於<loc>聚邑</loc>。<p name=\"孙林父\">孙文子</p>、<p name=\"甯殖\">甯惠子</p>共<vpol>立</vpol><p name=\"卫定公\">定公</p>弟<p name=\"卫殇公\">秋</p>为<off>卫君</off>，是为<p name=\"卫殇公\">殇公</p>。"
+    },
+    {
+      "pid": "25",
+      "text": "殇公秋立，封孙文子林父於宿。十二年，甯喜与孙林父争宠相恶，殇公使甯喜攻孙林父。林父奔晋，复求入故卫献公。献公在齐，齐景公闻之，与卫献公如晋求入。晋为伐卫，诱与盟。卫殇公会晋平公，平公执殇公与甯喜而复入卫献公。献公亡在外十二年而入。",
+      "annotated": "<p name=\"卫殇公\">殇公</p><p name=\"卫殇公\">秋</p>立，<law>封</law><p name=\"孙林父\">孙文子</p><p name=\"孙林父\">林父</p>於<loc>宿</loc>。<time>十二年</time>，<p>甯喜</p>与<p>孙林父</p>争宠相恶，<p name=\"卫殇公\">殇公</p>使<p>甯喜</p><law>攻</law><p>孙林父</p>。<p name=\"孙林父\">林父</p>奔<state>晋</state>，复求<law>入</law>故<p>卫献公</p>。<p name=\"卫献公\">献公</p>在<state>齐</state>，<p>齐景公</p>闻之，与<p>卫献公</p>如<state>晋</state>求<law>入</law>。<state>晋</state>为<law>伐</law><state>卫</state>，诱与盟。<p>卫殇公</p>会<p>晋平公</p>，<p name=\"晋平公\">平公</p><law>执</law><p name=\"卫殇公\">殇公</p>与<p>甯喜</p>而复<law>入</law><p>卫献公</p>。<p name=\"卫献公\">献公</p>亡在外<time name=\"时长\">十二年</time>而<law>入</law>。"
+    },
+    {
+      "pid": "26",
+      "text": "献公後元年，诛甯喜。",
+      "annotated": "<p name=\"卫献公\">献公</p><time name=\"卫献公衎复辟元年\">後元年</time>，<vact>诛</vact><p>甯喜</p>。"
+    },
+    {
+      "pid": "27",
+      "text": "三年，吴延陵季子使过卫，见蘧伯玉、史鰌，曰：“卫多君子，其国无故。” 过宿，孙林父为击磬，曰：“不乐，音大悲，使卫乱乃此矣。” 是年，献公卒，子襄公恶立。",
+      "annotated": "<time>三年</time>，<state>吴</state><p name=\"季札\">延陵季子</p>使过<state>卫</state>，见<p>蘧伯玉</p>、<p name=\"史鱼\">史鰌</p>，曰：“<state>卫</state>多<idea>君子</idea>，其国无故。” 过<loc>宿</loc>，<p>孙林父</p>为<law>击</law><art>磬</art>，曰：“不乐，音大悲，使<state>卫</state>乱乃此矣。” 是年，<p name=\"卫献公\">献公</p>卒，子<p name=\"卫襄公\">襄公</p><p name=\"卫襄公\">恶</p>立。"
+    },
+    {
+      "pid": "28",
+      "text": "襄公六年，楚灵王会诸侯，襄公称病不往。",
+      "annotated": "<p name=\"卫襄公\">襄公</p><time>六年</time>，<p>楚灵王</p>会<role>诸侯</role>，<p name=\"卫襄公\">襄公</p>称病不往。"
+    },
+    {
+      "pid": "29",
+      "text": "九年，襄公卒。初，襄公有贱妾，幸之，有身，梦有人谓曰：“我康叔也，令若子必有卫，名而子曰’元’。” 妾怪之，问孔成子。成子曰：“康叔者，卫祖也。” 及生子，男也，以告襄公。襄公曰：“天所置也。” 名之曰元。襄公夫人无子，於是乃立元为嗣，是为灵公。",
+      "annotated": "<time>九年</time>，<p name=\"卫襄公\">襄公</p>卒。初，<p name=\"卫襄公\">襄公</p>有贱<role>妾</role>，幸之，有身，梦有人谓曰：“我<p name=\"卫康叔\">康叔</p>也，令若子必有<state>卫</state>，名而子曰’<p name=\"卫灵公\">元</p>’。” <role>妾</role>怪之，问<p>孔成子</p>。<p name=\"孔成子\">成子</p>曰：“<p name=\"卫康叔\">康叔</p>者，<state>卫</state>祖也。” 及生子，男也，以告<p name=\"卫襄公\">襄公</p>。<p name=\"卫襄公\">襄公</p>曰：“<idea>天</idea>所<law>置</law>也。” 名之曰<p name=\"卫灵公\">元</p>。<p name=\"卫襄公\">襄公</p><role>夫人</role>无子，於是乃<vpol>立</vpol><p name=\"卫灵公\">元</p>为嗣，是为<p name=\"卫灵公\">灵公</p>。"
+    },
+    {
+      "pid": "30",
+      "text": "灵公五年，朝晋昭公。六年，楚公子弃疾弑灵王自立，为平王。十一年，火。",
+      "annotated": "<p name=\"卫灵公\">灵公</p><time>五年</time>，<vpol>朝</vpol><p>晋昭公</p>。<time>六年</time>，<state>楚</state>公子<p name=\"楚平王\">弃疾</p><vact>弑</vact><p name=\"楚灵王\">灵王</p><vpol>自立</vpol>，为<p name=\"楚平王\">平王</p>。<time>十一年</time>，火。"
+    },
+    {
+      "pid": "31",
+      "text": "三十八年，孔子来，禄之如鲁。後有隙，孔子去。後复来。",
+      "annotated": "<time>三十八年</time>，<p>孔子</p>来，禄之如<state>鲁</state>。後有隙，<p>孔子</p>去。後复来。"
+    },
+    {
+      "pid": "32",
+      "text": "三十九年，太子蒯聩与灵公夫人南子有恶，欲杀南子。蒯聩与其徒戏阳谋，朝，使杀夫人。戏阳後悔，不果。蒯聩数目之，夫人觉之，惧，呼曰：“太子欲杀我！” 灵公怒，太子蒯聩奔宋，已而之晋赵氏。",
+      "annotated": "<time>三十九年</time>，<role>太子</role><p name=\"姬蒯聩\">蒯聩</p>与<p name=\"卫灵公\">灵公</p><role>夫人</role><p>南子</p>有恶，欲<vact>杀</vact><p>南子</p>。<p name=\"姬蒯聩\">蒯聩</p>与其徒<p name=\"戏阳速\">戏阳</p>谋，朝，使<vact>杀</vact><role>夫人</role>。<p name=\"戏阳速\">戏阳</p>後悔，不果。<p name=\"姬蒯聩\">蒯聩</p>数目之，<role>夫人</role>觉之，惧，呼曰：“<role>太子</role>欲<vact>杀</vact>我！” <p name=\"卫灵公\">灵公</p>怒，<role>太子</role><p name=\"姬蒯聩\">蒯聩</p>奔<state>宋</state>，已而之<state>晋</state><clan>赵氏</clan>。"
+    },
+    {
+      "pid": "33",
+      "text": "四十二年春，灵公游于郊，令子郢仆。郢，灵公少子也，字子南。灵公怨太子出奔，谓郢曰：“我将立若为後。” 郢对曰：“郢不足以辱社稷，君更图之。” 夏，灵公卒，夫人命子郢为太子，曰：“此灵公命也。” 郢曰：“亡人太子蒯聩之子辄在也，不敢当。” 於是卫乃以辄为君，是为出公。",
+      "annotated": "<time>四十二年</time><time>春</time>，<p name=\"卫灵公\">灵公</p>游于郊，令子<p name=\"公子郢\">郢</p>仆。<p name=\"公子郢\">郢</p>，<p name=\"卫灵公\">灵公</p>少子也，字<p name=\"公子郢\">子南</p>。<p name=\"卫灵公\">灵公</p>怨<role>太子</role>出奔，谓<p name=\"公子郢\">郢</p>曰：“我将立若为後。” <p name=\"公子郢\">郢</p>对曰：“<p name=\"公子郢\">郢</p>不足以辱<sys>社稷</sys>，<role>君</role>更图之。” <time>夏</time>，<p name=\"卫灵公\">灵公</p>卒，<role>夫人</role>命子<p name=\"公子郢\">郢</p>为<role>太子</role>，曰：“此<p name=\"卫灵公\">灵公</p>命也。” <p name=\"公子郢\">郢</p>曰：“亡人<role>太子</role><p name=\"姬蒯聩\">蒯聩</p>之子<p name=\"卫出公\">辄</p>在也，不敢当。” 於是<state>卫</state>乃以<p name=\"卫出公\">辄</p>为<role>君</role>，是为<p name=\"卫出公\">出公</p>。"
+    },
+    {
+      "pid": "34",
+      "text": "六月乙酉，赵简子欲入蒯聩，乃令阳虎诈命卫十馀人衰绖归，简子送蒯聩。卫人闻之，发兵击蒯聩。蒯聩不得入，入宿而保，卫人亦罢兵。",
+      "annotated": "<time>六月</time><time>乙酉</time>，<state>赵</state><p name=\"赵简子\">简子</p>欲<law>入</law><p name=\"姬蒯聩\">蒯聩</p>，乃令<p>阳虎</p>诈命<state>卫</state><qty>十馀人</qty><art>衰绖</art>归，<p name=\"赵简子\">简子</p>送<p name=\"姬蒯聩\">蒯聩</p>。<state>卫</state>人闻之，发兵<law>击</law><p name=\"姬蒯聩\">蒯聩</p>。<p name=\"姬蒯聩\">蒯聩</p>不得<law>入</law>，<law>入</law><loc>宿</loc>而保，<state>卫</state>人亦罢兵。"
+    },
+    {
+      "pid": "35",
+      "text": "出公辄四年，齐田乞弑其君孺子。八年，齐鲍子弑其君悼公。",
+      "annotated": "<p name=\"卫出公\">出公</p><p name=\"卫出公\">辄</p><time>四年</time>，<state>齐</state><p>田乞</p><vact>弑</vact>其<role>君</role><p name=\"齐孺子\">孺子</p>。<time>八年</time>，<state>齐</state><p name=\"鲍牧\">鲍子</p><vact>弑</vact>其<role>君</role><p name=\"卫悼公\">悼公</p>。"
+    },
+    {
+      "pid": "36",
+      "text": "孔子自陈入卫。九年，孔文子问兵於仲尼，仲尼不对。其後鲁迎仲尼，仲尼反鲁。",
+      "annotated": "<p>孔子</p>自<state>陈</state>入<state>卫</state>。<time>九年</time>，<p>孔文子</p>问兵於<p name=\"孔子\">仲尼</p>，<p name=\"孔子\">仲尼</p>不对。其後<state>鲁</state>迎<p name=\"孔子\">仲尼</p>，<p name=\"孔子\">仲尼</p>反<state>鲁</state>。"
+    },
+    {
+      "pid": "37",
+      "text": "十二年，初，孔圉文子取太子蒯聩之姊，生悝。孔氏之竖浑良夫美好，孔文子卒，良夫通於悝母。太子在宿，悝母使良夫於太子。太子与良夫言曰：“苟能入我国，报子以乘轩，免子三死，毋所与。” 与之盟，许以悝母为妻。闰月，良夫与太子入，舍孔氏之外圃。昏，二人蒙衣而乘，宦者罗御，如孔氏。孔氏之老栾甯问之，称姻妾以告。遂入，適伯姬氏。既食，悝母杖戈而先，太子与五人介，舆猳从之。伯姬劫悝於厕，彊盟之，遂劫以登台。栾甯将饮酒，炙未熟，闻乱，使告仲由。召护驾乘车，行爵食炙，奉出公辄奔鲁。",
+      "annotated": "<time>十二年</time>，初，<p name=\"孔文子\">孔圉</p><p name=\"孔文子\">文子</p>取<role>太子</role><p name=\"姬蒯聩\">蒯聩</p>之姊，生<p name=\"孔悝\">悝</p>。<clan>孔氏</clan>之<role>竖</role><p>浑良夫</p>美好，<p>孔文子</p>卒，<p name=\"浑良夫\">良夫</p>通於<p name=\"孔悝\">悝</p>母。<role>太子</role>在<loc>宿</loc>，<p name=\"孔悝\">悝</p>母使<p name=\"浑良夫\">良夫</p>於<role>太子</role>。<role>太子</role>与<p name=\"浑良夫\">良夫</p>言曰：“苟能入我国，报子以乘<art>轩</art>，免子三死，毋所与。” 与之盟，许以<p name=\"孔悝\">悝</p>母为<role>妻</role>。<time>闰月</time>，<p name=\"浑良夫\">良夫</p>与<role>太子</role>入，舍<clan>孔氏</clan>之外圃。昏，<qty>二人</qty>蒙<art>衣</art>而乘，<role>宦者</role><p name=\"宦者罗\">罗</p>御，如<clan>孔氏</clan>。<clan>孔氏</clan>之<role>老</role><p name=\"栾宁\">栾甯</p>问之，称姻<role>妾</role>以告。遂入，適<p name=\"孔伯姬\">伯姬</p>氏。既食，<p name=\"孔悝\">悝</p>母杖<art>戈</art>而先，<role>太子</role>与<qty>五人</qty>介，舆猳从之。<p name=\"孔伯姬\">伯姬</p>劫<p name=\"孔悝\">悝</p>於厕，彊盟之，遂劫以登台。<p name=\"栾宁\">栾甯</p>将饮酒，炙未熟，闻乱，使告<p>仲由</p>。召护驾乘<art>车</art>，行爵食炙，奉<p name=\"姬辄\">出公</p><p name=\"卫出公\">辄</p>奔<state>鲁</state>。"
+    },
+    {
+      "pid": "38",
+      "text": "仲由将入，遇子羔将出，曰：“门已闭矣。” 子路曰：“吾姑至矣。” 子羔曰：“不及，莫践其难。” 子路曰：“食焉不辟其难。” 子羔遂出。子路入，及门，公孙敢阖门，曰：“毋入为也！” 子路曰：“是公孙也？求利而逃其难。由不然，利其禄，必救其患。” 有使者出，子路乃得入。曰：“太子焉用孔悝？虽杀之，必或继之。” 且曰：“太子无勇。若燔台，必舍孔叔。” 太子闻之，惧，下石乞、盂黡敌子路，以戈击之，割缨。子路曰：“君子死，冠不免。” 结缨而死。孔子闻卫乱，曰：“嗟乎！柴也其来乎？由也其死矣。” 孔悝竟立太子蒯聩，是为庄公。",
+      "annotated": "<p>仲由</p>将<law>入</law>，遇<p name=\"高柴\">子羔</p>将出，曰：“门已闭矣。” <p name=\"仲由\">子路</p>曰：“吾姑至矣。” <p name=\"高柴\">子羔</p>曰：“不及，莫践其难。” <p name=\"仲由\">子路</p>曰：“食焉不辟其难。” <p name=\"高柴\">子羔</p>遂出。<p name=\"仲由\">子路</p><law>入</law>，及门，<p>公孙敢</p>阖门，曰：“毋<law>入</law>为也！” <p name=\"仲由\">子路</p>曰：“是<p name=\"公孙敢\">公孙</p>也？求利而逃其难。<p name=\"仲由\">由</p>不然，利其禄，必<law>救</law>其患。” 有使者出，<p name=\"仲由\">子路</p>乃得<law>入</law>。曰：“<role>太子</role>焉用<p>孔悝</p>？虽<vact>杀</vact>之，必或继之。” 且曰：“<role>太子</role>无勇。若燔台，必舍<p name=\"孔悝\">孔叔</p>。” <role>太子</role>闻之，惧，下<p>石乞</p>、<p>盂黡</p><law>敌</law><p name=\"仲由\">子路</p>，以<art>戈</art><law>击</law>之，割<art>缨</art>。<p name=\"仲由\">子路</p>曰：“<idea>君子</idea>死，<art>冠</art>不免。” <idiom>结缨而死</idiom>。<p>孔子</p>闻<state>卫</state>乱，曰：“嗟乎！<p name=\"高柴\">柴</p>也其来乎？<p name=\"仲由\">由</p>也其死矣。” <p>孔悝</p>竟<vpol>立</vpol><role>太子</role><p name=\"姬蒯聩\">蒯聩</p>，是为<p name=\"卫庄公\">庄公</p>。"
+    },
+    {
+      "pid": "39",
+      "text": "庄公蒯聩者，出公父也，居外，怨大夫莫迎立。元年即位，欲尽诛大臣，曰：“寡人居外久矣，子亦尝闻之乎？” 群臣欲作乱，乃止。",
+      "annotated": "<p name=\"姬蒯聩\">庄公</p><p name=\"姬蒯聩\">蒯聩</p>者，<p name=\"卫出公\">出公</p>父也，居外，怨<role>大夫</role>莫迎立。<time>元年</time>即位，欲尽<vact>诛</vact><role>大臣</role>，曰：“<role>寡人</role>居外久矣，<role>子</role>亦尝闻之乎？” <role>群臣</role>欲作乱，乃止。"
+    },
+    {
+      "pid": "40",
+      "text": "二年，鲁孔丘卒。",
+      "annotated": "<time>二年</time>，<state>鲁</state><p name=\"孔子\">孔丘</p>卒。"
+    },
+    {
+      "pid": "41",
+      "text": "三年，庄公上城，见戎州。曰：“戎虏何为是？” 戎州病之。十月，戎州告赵简子，简子围卫。十一月，庄公出奔，卫人立公子斑师为卫君。齐伐卫，⟦◈虏⟧斑师，更立公子起为卫君。",
+      "annotated": "<time>三年</time>，<p name=\"卫庄公\">庄公</p>上城，见<loc>戎州</loc>。曰：“<tribe>戎</tribe>虏何为是？” <loc>戎州</loc>病之。<time>十月</time>，<loc>戎州</loc>告<state>赵</state><p name=\"赵简子\">简子</p>，<p name=\"赵简子\">简子</p><law>围</law><state>卫</state>。<time>十一月</time>，<p name=\"卫庄公\">庄公</p>出奔，<state>卫</state><role>人</role>立公子<p name=\"公子斑师\">斑师</p>为<off>卫君</off>。<state>齐</state><law>伐</law><state>卫</state>，⟦◈虏⟧<p name=\"公子斑师\">斑师</p>，更立公子<p name=\"卫君起\">起</p>为<off>卫君</off>。"
+    },
+    {
+      "pid": "42",
+      "text": "卫君起元年，卫石曼尃逐其君起，起奔齐。卫出公辄自齐复归立。初，出公立十二年亡，亡在外四年复入。出公後元年，赏从亡者。立二十一年卒，出公季父黔攻出公子而自立，是为悼公。",
+      "annotated": "<off>卫君</off><p name=\"卫君起\">起</p><time>元年</time>，<state>卫</state><p>石曼尃</p><law>逐</law>其<role>君</role><p name=\"卫君起\">起</p>，<p name=\"卫君起\">起</p>奔<state>齐</state>。<p>卫出公</p><p name=\"卫出公\">辄</p>自<state>齐</state>复归立。初，<p name=\"卫出公\">出公</p>立<time name=\"时长\">十二年</time>亡，亡在外<time name=\"时长\">四年</time>复<law>入</law>。<p name=\"卫出公\">出公</p><time name=\"卫出公辄复辟元年\">後元年</time>，赏从亡者。立<time name=\"时长\">二十一年</time>卒，<p name=\"卫出公\">出公</p>季父<p name=\"卫悼公\">黔</p><law>攻</law><p name=\"卫出公\">出公</p>子而<vpol>自立</vpol>，是为<p name=\"卫悼公\">悼公</p>。"
+    },
+    {
+      "pid": "43",
+      "text": "悼公五年卒，子敬公弗立。敬公十九年卒，子昭公纠立。是时三晋彊，卫如小侯，属之。",
+      "annotated": "<p name=\"卫悼公\">悼公</p><time>五年</time>卒，子<p name=\"卫敬公\">敬公</p><p name=\"卫敬公\">弗</p>立。<p name=\"卫敬公\">敬公</p><time>十九年</time>卒，子<p name=\"卫昭公\">昭公</p><p name=\"卫昭公\">纠</p>立。是时<state>三晋</state>彊，<state>卫</state>如小<off>侯</off>，属之。"
+    },
+    {
+      "pid": "44",
+      "text": "昭公六年，公子亹弑之代立，是为怀公。怀公十一年，公子穨弑怀公而代立，是为慎公。慎公父，公子適；適父，敬公也。慎公四十二年卒，子声公训立。声公十一年卒，子成侯立。",
+      "annotated": "<p name=\"卫昭公\">昭公</p><time>六年</time>，公子<p name=\"公子亹\">亹</p><vact>弑</vact>之代立，是为<p name=\"卫怀公\">怀公</p>。<p name=\"卫怀公\">怀公</p><time>十一年</time>，公子<p name=\"王子穨\">穨</p><vact>弑</vact><p name=\"卫怀公\">怀公</p>而代立，是为<p name=\"卫慎公\">慎公</p>。<p name=\"卫慎公\">慎公</p>父，公子<p name=\"公子適\">適</p>；<p name=\"公子適\">適</p>父，<p name=\"卫敬公\">敬公</p>也。<p name=\"卫慎公\">慎公</p><time>四十二年</time>卒，子<p name=\"卫声公\">声公</p><p name=\"卫声公\">训</p>立。<p name=\"卫声公\">声公</p><time>十一年</time>卒，子<p name=\"卫成侯\">成侯</p>立。"
+    },
+    {
+      "pid": "45",
+      "text": "成侯十一年，公孙鞅入秦。十六年，卫更贬号曰侯。",
+      "annotated": "<p name=\"卫成侯\">成侯</p><time>十一年</time>，<p name=\"商鞅\">公孙鞅</p><law>入</law><state>秦</state>。<time>十六年</time>，<state>卫</state>更贬号曰<off>侯</off>。"
+    },
+    {
+      "pid": "46",
+      "text": "二十九年，成侯卒，子平侯立。平侯八年卒，子嗣君立。",
+      "annotated": "<time>二十九年</time>，<p name=\"卫成侯\">成侯</p>卒，子<p name=\"卫平侯\">平侯</p>立。<p name=\"卫平侯\">平侯</p><time>八年</time>卒，子<p name=\"卫嗣君\">嗣君</p>立。"
+    },
+    {
+      "pid": "47",
+      "text": "嗣君五年，更贬号曰君，独有濮阳。",
+      "annotated": "<p name=\"卫嗣君\">嗣君</p><time>五年</time>，更贬号曰<role>君</role>，独有<loc>濮阳</loc>。"
+    },
+    {
+      "pid": "48",
+      "text": "四十二年卒，子怀君立。怀君三十一年，朝魏，魏囚杀怀君。魏更立嗣君弟，是为元君。元君为魏婿，故魏立之。元君十四年，秦拔魏东地，秦初置东郡，更徙卫野王县，而并濮阳为东郡。二十五年，元君卒，子君角立。",
+      "annotated": "<time>四十二年</time>卒，子<p name=\"卫怀君\">怀君</p>立。<p name=\"卫怀君\">怀君</p><time>三十一年</time>，<vpol>朝</vpol><state>魏</state>，<state>魏</state><law>囚</law><vact>杀</vact><p name=\"卫怀君\">怀君</p>。<state>魏</state>更<vpol>立</vpol><p name=\"卫嗣君\">嗣君</p>弟，是为<p name=\"卫元君\">元君</p>。<p name=\"卫元君\">元君</p>为<state>魏</state>婿，故<state>魏</state>立之。<p name=\"卫元君\">元君</p><time>十四年</time>，<state>秦</state><law>拔</law><state>魏</state>东地，<state>秦</state>初<law>置</law><loc>东郡</loc>，更<law>徙</law><state>卫</state><loc>野王县</loc>，而<law>并</law><loc>濮阳</loc>为<loc>东郡</loc>。<time>二十五年</time>，<p name=\"卫元君\">元君</p>卒，子<p name=\"卫君角\">君角</p>立。"
+    },
+    {
+      "pid": "49",
+      "text": "君角九年，秦并天下，立为始皇帝。二十一年，二世废君角为庶人，卫绝祀。 ::: 太史公曰",
+      "annotated": "<p name=\"卫君角\">君角</p><time>九年</time>，<state>秦</state><law>并</law><idea>天下</idea>，<vpol>立</vpol>为<p name=\"秦始皇\">始皇帝</p>。<time>二十一年</time>，<p name=\"秦二世\">二世</p><law>废</law><p name=\"卫君角\">君角</p>为<role>庶人</role>，<state>卫</state>绝祀。 ::: 太史公曰"
+    },
+    {
+      "pid": "50",
+      "text": "太史公曰：余读世家言，至於宣公之太子以妇见诛，弟寿争死以相让，此与晋太子申生不敢明骊姬之过同，俱恶伤父之志。然卒死亡，何其悲也！或父子相杀，兄弟相⟦◈灭⟧，亦独何哉？ ::: ::: 赞",
+      "annotated": "<p name=\"司马迁\">太史公</p>曰：余读<idea>世家</idea>言，至於<p name=\"姬晋\">宣公</p>之<role>太子</role>以<role>妇</role>见<vact>诛</vact>，弟<p name=\"公子寿\">寿</p>争死以相让，此与<state>晋</state><role>太子</role><p name=\"晋申生\">申生</p>不敢明<p>骊姬</p>之过同，俱恶伤<role>父</role>之志。然卒死亡，何其悲也！或<role>父子</role>相<vact>杀</vact>，<role>兄弟</role>相⟦◈灭⟧，亦独何哉？ ::: ::: 赞"
+    },
+    {
+      "pid": "51",
+      "text": "司寇受封，梓材有作。 成锡厥器，夷加其爵。 暨武能脩，从文始约。 诗美归燕，传矜石碏。 皮冠射鸿，乘轩使穀。 宣纵淫嬖，衅生伋、朔。 蒯聩得罪，出公行恶。 卫祚日衰，失於君角。 :::",
+      "annotated": "<off>司寇</off>受封，<sys>梓材</sys>有作。 成锡厥<art>器</art>，<tribe>夷</tribe>加其爵。 暨<p name=\"卫武公\">武</p>能脩，从<p name=\"卫文公\">文</p>始约。 诗美归燕，传矜<p>石碏</p>。 皮冠射<bio>鸿</bio>，乘<art>轩</art>使穀。 <p name=\"卫宣公\">宣</p>纵淫嬖，衅生<p name=\"卫太子伋\">伋</p>、<p name=\"卫惠公\">朔</p>。 <p name=\"姬蒯聩\">蒯聩</p>得罪，<p name=\"姬辄\">出公</p>行恶。 <state>卫</state>祚日衰，失於<p>君角</p>。 :::"
+    }
+  ]
+}

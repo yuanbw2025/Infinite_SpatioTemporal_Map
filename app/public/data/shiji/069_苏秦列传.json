@@ -1,0 +1,346 @@
+{
+  "work": "史记",
+  "chapter": "苏秦列传",
+  "chapter_file": "069_苏秦列传",
+  "chapter_type": "列传",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 67,
+  "paragraph_count_done": 67,
+  "paragraphs": [
+    {
+      "pid": "1",
+      "text": "苏秦者，东周雒阳人也。东事师於齐，而习之於鬼谷先生。",
+      "annotated": "<p>苏秦</p>者，<loc>东周</loc><loc>雒阳</loc>人也。东事师於<state>齐</state>，而习之於<loc>鬼谷</loc><role>先生</role>。"
+    },
+    {
+      "pid": "2",
+      "text": "出游数岁，大困而归。兄弟嫂妹妻妾窃皆笑之，曰：“周人之俗，治产业，力工商，逐什二以为务。今子释本而事口舌，困，不亦宜乎！” 苏秦闻之而惭，自伤，乃闭室不出，出其书遍观之。曰：“夫士业已屈首受书，而不能以⟦◈取⟧尊荣，虽多亦奚以为！” 於是得周书阴符，伏而读之。期年，以出揣摩，曰：“此可以说当世之君矣。” 求说周显王。显王左右素习知苏秦，皆少之。弗信。",
+      "annotated": "出游<time name=\"时长\">数岁</time>，大困而归。<role>兄弟</role><role>嫂</role><role>妹</role><role>妻妾</role>窃皆笑之，曰：“<state>周</state>人之俗，治产业，力工商，逐什二以为务。今<role>子</role>释本而事口舌，困，不亦宜乎！” <p>苏秦</p>闻之而惭，自伤，乃闭室不出，出其书遍观之。曰：“夫<role>士</role>业已屈首受书，而不能以⟦◈取⟧尊荣，虽多亦奚以为！” 於是得<state>周</state>书阴<art>符</art>，伏而读之。期年，以出揣摩，曰：“此可以说当世之<role>君</role>矣。” 求说<state>周</state><p name=\"周显王\">显王</p>。<p name=\"周显王\">显王</p>左右素习知<p>苏秦</p>，皆少之。弗信。"
+    },
+    {
+      "pid": "3",
+      "text": "乃西至秦。秦孝公卒。说惠王曰：“秦四塞之国，被山带渭，东有关河，西有汉中，南有巴蜀，北有代马，此天府也。以秦士民之众，兵法之教，可以吞天下，称帝而治。” 秦王曰：“毛羽未成，不可以高蜚；文理未明，不可以并兼。” 方诛商鞅，疾辩士，弗用。",
+      "annotated": "乃西至<state>秦</state>。<p>秦孝公</p>卒。说<p name=\"秦惠王\">惠王</p>曰：“<state>秦</state>四塞<vpol>之国</vpol>，被山带渭，东有关河，西有<loc>汉中</loc>，南有<loc>巴蜀</loc>，北有<state>代</state><bio>马</bio>，此天府也。以<state>秦</state><role>士</role><role>民</role>之众，<sys>兵法</sys>之教，可以吞<idea>天下</idea>，称帝而治。” <off>秦王</off>曰：“毛羽未成，不可以高蜚；文理未明，不可以并兼。” 方<vact>诛</vact><p>商鞅</p>，疾<role>辩士</role>，弗用。"
+    },
+    {
+      "pid": "4",
+      "text": "乃东之赵。赵肃侯令其弟成为相，号奉阳君。奉阳君弗说之。",
+      "annotated": "乃东之<state>赵</state>。<state>赵</state><p name=\"赵肃侯\">肃侯</p>令其<role>弟</role><p name=\"赵公子成\">成</p>为相，号奉阳<role>君</role>。奉阳<role>君</role>弗说之。"
+    },
+    {
+      "pid": "5",
+      "text": "去游燕，岁馀而後得见。说燕文侯曰：“燕东有朝鲜、辽东，北有林胡、楼烦，西有云中、九原，南有呼沱、易水，地方二千馀里，带甲数十万，车六百乘，骑六千匹，粟支数年。南有碣石、雁门之饶，北有枣栗之利，民虽不佃作而足於枣栗矣。此所谓天府者也。",
+      "annotated": "去游<state>燕</state>，<time name=\"时长\">岁馀</time>而後得见。说<state>燕</state><p name=\"燕文侯\">文侯</p>曰：“<state>燕</state>东有<loc>朝鲜</loc>、<loc>辽东</loc>，北有<tribe>林胡</tribe>、<tribe>楼烦</tribe>，西有<loc>云中</loc>、<loc>九原</loc>，南有呼沱、<loc>易水</loc>，地方<qty>二千馀里</qty>，带甲<qty>数十万</qty>，<art>车</art><qty>六百乘</qty>，骑<qty>六千匹</qty>，粟支<time name=\"时长\">数年</time>。南有<loc>碣石</loc>、<loc>雁门</loc>之饶，北有<bio>枣栗</bio>之利，<role>民</role>虽不佃作而足於<bio>枣栗</bio>矣。此所谓天府者也。"
+    },
+    {
+      "pid": "6",
+      "text": "“夫安乐无事，不见覆军杀将，无过燕者。大王知其所以然乎？夫燕之所以不犯寇被甲兵者，以赵之为蔽其南也。秦赵五⟦◈战⟧，秦再胜而赵三胜。秦赵相毙，而王以全燕制其後，此燕之所以不犯寇也。且夫秦之⟦◈攻⟧燕也，逾云中、九原，过代、上谷，弥地数千里，虽得燕城，秦计固不能守也。秦之不能害燕亦明矣。今赵之⟦◈攻⟧燕也，发号出令，不至十日而数十万之军军於东垣矣。渡呼沱，涉易水，不至四五日而距国都矣。故曰秦之⟦◈攻⟧燕也，⟦◈战⟧於千里之外；赵之⟦◈攻⟧燕也，⟦◈战⟧於百里之内。夫不忧百里之患而重千里之外，计无过於此者。是故原大王与赵从亲，天下为一，则燕国必无患矣。”",
+      "annotated": "“夫安乐无事，不见覆军<vact>杀</vact>将，无过<state>燕</state>者。大王知其所以然乎？夫<state>燕</state>之所以不犯寇被<art>甲兵</art>者，以<state>赵</state>之为蔽其南也。<state>秦</state>赵五⟦◈战⟧，<state>秦</state>再胜而<state>赵</state>三胜。<state>秦</state><state>赵</state>相毙，而王以全<state>燕</state>制其後，此<state>燕</state>之所以不犯寇也。且夫<state>秦</state>之⟦◈攻⟧<state>燕</state>也，逾<loc>云中</loc>、<loc>九原</loc>，过<state>代</state>、<loc>上谷</loc>，弥地<qty>数千里</qty>，虽得<state>燕</state>城，<state>秦</state>计固不能守也。<state>秦</state>之不能害<state>燕</state>亦明矣。今<state>赵</state>之⟦◈攻⟧<state>燕</state>也，发号出令，不至<time name=\"时长\">十日</time>而<qty>数十万</qty>之军军於<loc>东垣</loc>矣。渡呼沱，涉<loc>易水</loc>，不至<time name=\"时长\">四五日</time>而距国都矣。故曰<state>秦</state>之⟦◈攻⟧<state>燕</state>也，⟦◈战⟧於<qty>千里</qty>之外；<state>赵</state>之⟦◈攻⟧<state>燕</state>也，⟦◈战⟧於<qty>百里</qty>之内。夫不忧<qty>百里</qty>之患而重<qty>千里</qty>之外，计无过於此者。是故原大王与<state>赵</state>从亲，<idea>天下</idea>为一，则<state>燕国</state>必无患矣。”"
+    },
+    {
+      "pid": "7",
+      "text": "文侯曰：“子言则可，然吾国小，西迫彊赵，南近齐，齐、赵彊国也。子必欲合从以安燕，寡人请以国从。”",
+      "annotated": "<p name=\"燕文侯\">文侯</p>曰：“<role>子</role>言则可，然吾国小，西迫彊<state>赵</state>，南近<state>齐</state>，<state>齐</state>、<state>赵</state>彊国也。<role>子</role>必欲<sys>合从</sys>以安<state>燕</state>，<role>寡人</role>请以国从。”"
+    },
+    {
+      "pid": "8",
+      "text": "於是资苏秦车马金帛以至赵。而奉阳君已死，即因说赵肃侯曰：“天下卿相人臣及布衣之士，皆高贤君之行义，皆原奉教陈忠於前之日久矣。虽然，奉阳君妒而君不任事，是以宾客游士莫敢自尽於前者。今奉阳君捐馆舍，君乃今复与士民相亲也，臣故敢进其愚虑。",
+      "annotated": "於是资<p>苏秦</p><art>车</art><bio>马</bio><art>金帛</art>以至<state>赵</state>。而奉阳<role>君</role>已死，即因说<state>赵</state><p name=\"赵肃侯\">肃侯</p>曰：“<idea>天下</idea><off>卿</off>相<role>人臣</role>及<role>布衣</role>之<role>士</role>，皆高贤<role>君</role>之行义，皆原奉教陈忠於前之<time name=\"时长\">日久</time>矣。虽然，奉阳<role>君</role>妒而<role>君</role>不任事，是以<role>宾客</role>游<role>士</role>莫敢自尽於前者。今奉阳<role>君</role>捐馆舍，<role>君</role>乃今复与<role>士</role><role>民</role>相亲也，<role>臣</role>故敢进其愚虑。"
+    },
+    {
+      "pid": "9",
+      "text": "“窃为君计者，莫若安民无事，且无庸有事於民也。安民之本，在於择交，择交而得则民安，择交而不得则民终身不安。请言外患：齐秦为两敌而民不得安，倚秦⟦◈攻⟧齐而民不得安，倚齐⟦◈攻⟧秦而民不得安。故夫谋人之主，⟦◈伐⟧人之国，常苦出辞断绝人之交也。原君慎勿出於口。请别白黑所以异，阴阳而已矣。君诚能听臣，燕必致旃裘狗马之地，齐必致鱼盐之海，楚必致橘柚之园，韩、魏、中山皆可使致汤沐之奉，而贵戚父兄皆可以受封侯。夫割地包利，五伯之所以覆军禽将而求也；封侯贵戚，汤武之所以放弑而争也。今君高拱而两有之，此臣之所以为君原也。",
+      "annotated": "“窃为<role>君</role>计者，莫若安<role>民</role>无事，且无庸有事於<role>民</role>也。安<role>民</role>之本，在於择交，择交而得则<role>民</role>安，择交而不得则<role>民</role>终身不安。请言外患：<state>齐</state><state>秦</state>为两敌而<role>民</role>不得安，倚<state>秦</state>⟦◈攻⟧<state>齐</state>而<role>民</role>不得安，倚<state>齐</state>⟦◈攻⟧<state>秦</state>而<role>民</role>不得安。故夫谋人之主，⟦◈伐⟧人<vpol>之国</vpol>，常苦出辞断绝人之交也。原<role>君</role>慎勿出於口。请别白黑所以异，<idea>阴阳</idea>而已矣。<role>君</role>诚能听<role>臣</role>，<state>燕</state>必致<art>旃裘</art>狗<bio>马</bio>之地，<state>齐</state>必致<bio>鱼盐</bio>之海，<state>楚</state>必致橘柚之园，<state>韩</state>、<state>魏</state>、<state>中山</state>皆可使致汤沐之奉，而贵戚<role>父兄</role>皆可以受封侯。夫割地包利，<sys>五伯</sys>之所以覆军禽将而求也；封侯贵戚，<p>汤</p><p name=\"周武王\">武</p>之所以放<vact>弑</vact>而争也。今<role>君</role>高拱而两有之，此<role>臣</role>之所以为<role>君</role>原也。"
+    },
+    {
+      "pid": "10",
+      "text": "“今大王与秦，则秦必弱韩、魏；与齐，则齐必弱楚、魏。魏弱则割河外，韩弱则效宜阳，宜阳效则上郡绝，河外割则道不通，楚弱则无援。此三策者，不可不孰计也。",
+      "annotated": "“今大王与<state>秦</state>，则<state>秦</state>必弱<state>韩</state>、<state>魏</state>；与<state>齐</state>，则<state>齐</state>必弱<state>楚</state>、<state>魏</state>。<state>魏</state>弱则割<loc>河外</loc>，<state>韩</state>弱则效<loc>宜阳</loc>，<loc>宜阳</loc>效则<loc>上郡</loc>绝，<loc>河外</loc>割则道不通，<state>楚</state>弱则无援。此三策者，不可不孰计也。"
+    },
+    {
+      "pid": "11",
+      "text": "“夫秦下轵道，则南阳危；劫韩包周，则赵氏自操兵；据卫⟦◈取⟧卷，则齐必入朝秦。秦欲已得乎山东，则壁举兵而乡赵矣。秦甲渡河逾漳，据番吾，则兵必⟦◈战⟧於邯郸之下矣。此臣之所为君患也。",
+      "annotated": "“夫<state>秦</state>下<loc>轵道</loc>，则<loc>南阳</loc>危；劫<state>韩</state>包<state>周</state>，则<state>赵</state>氏自操兵；据<state>卫</state>⟦◈取⟧卷，则<state>齐</state>必入<vpol>朝</vpol><state>秦</state>。<state>秦</state>欲已得乎<loc>山东</loc>，则壁举兵而乡<state>赵</state>矣。<state>秦</state>甲渡河逾漳，据<loc>番吾</loc>，则兵必⟦◈战⟧於<loc>邯郸</loc>之下矣。此<role>臣</role>之所为<role>君</role>患也。"
+    },
+    {
+      "pid": "12",
+      "text": "“当今之时，山东之建国莫彊於赵。赵地方二千馀里，带甲数十万，车千乘，骑万匹，粟支数年。西有常山，南有河漳，东有清河，北有燕国。燕固弱国，不足畏也。秦之所害於天下者莫如赵，然而秦不敢举兵⟦◈伐⟧赵者，何也？畏韩、魏之议其後也。然则韩、魏，赵之南蔽也。秦之⟦◈攻⟧韩、魏也，无有名山大川之限，稍蚕食之，傅国都而止。韩、魏不能支秦，必入臣於秦。秦无韩、魏之规，则祸必中於赵矣。此臣之所为君患也。",
+      "annotated": "“当今之时，<loc>山东</loc>之建国莫彊於<state>赵</state>。<state>赵</state>地方<qty>二千馀里</qty>，带甲<qty>数十万</qty>，<art>车</art><qty>千乘</qty>，骑<qty>万匹</qty>，粟支<time name=\"时长\">数年</time>。西有<loc>常山</loc>，南有河漳，东有<loc>清河</loc>，北有<state>燕国</state>。<state>燕</state>固弱国，不足畏也。<state>秦</state>之所害於<idea>天下</idea>者莫如<state>赵</state>，然而<state>秦</state>不敢举兵⟦◈伐⟧<state>赵</state>者，何也？畏<state>韩</state>、<state>魏</state>之议其後也。然则<state>韩</state>、<state>魏</state>，<state>赵</state>之南蔽也。<state>秦</state>之⟦◈攻⟧<state>韩</state>、<state>魏</state>也，无有名山大川之限，稍蚕食之，傅国都而止。<state>韩</state>、<state>魏</state>不能支<state>秦</state>，必入臣於<state>秦</state>。<state>秦</state>无<state>韩</state>、<state>魏</state>之规，则祸必中於<state>赵</state>矣。此<role>臣</role>之所为<role>君</role>患也。"
+    },
+    {
+      "pid": "13",
+      "text": "“臣闻尧无三夫之分，舜无咫尺之地，以有天下；禹无百人之聚，以王诸侯；汤武之士不过三千，车不过三百乘，卒不过三万，立为天子：诚得其道也。是故明主外料其敌之彊弱，内度其士卒贤不肖，不待两军相当而胜⟦◈败⟧存亡之机固已形於胸中矣，岂揜於众人之言而以冥冥决事哉！",
+      "annotated": "“<role>臣</role>闻<p>尧</p>无三夫之分，<p>舜</p>无咫尺之地，以有<idea>天下</idea>；<p>禹</p>无<qty>百人</qty>之聚，以王<role>诸侯</role>；<p>汤</p><p name=\"周武王\">武</p>之<role>士</role>不过三千，<art>车</art>不过<qty>三百乘</qty>，卒不过<qty>三万</qty>，<vpol>立</vpol>为<role>天子</role>：诚得其道也。是故明主外料其敌之彊弱，内度其<role>士</role>卒贤不肖，不待两军相当而胜⟦◈败⟧存亡之机固已形於胸中矣，岂揜於<role>众人</role>之言而以冥冥决事哉！"
+    },
+    {
+      "pid": "14",
+      "text": "“臣窃以天下之地图案之，诸侯之地五倍於秦，料度诸侯之卒十倍於秦，六国为一，并力西乡而⟦◈攻⟧秦，秦必⟦◈破⟧矣。今西面而事之，见臣於秦。夫⟦◈破⟧人之与⟦◈破⟧於人也，臣人之与臣於人也，岂可同日而论哉！",
+      "annotated": "“<role>臣</role>窃以<idea>天下</idea>之地图案之，<role>诸侯</role>之地五倍於<state>秦</state>，料度<role>诸侯</role>之卒十倍於<state>秦</state>，<sys>六国</sys>为一，并力西乡而⟦◈攻⟧<state>秦</state>，<state>秦</state>必⟦◈破⟧矣。今西面而事之，见<role>臣</role>於<state>秦</state>。夫⟦◈破⟧人之与⟦◈破⟧於人也，<role>臣</role>人之与<role>臣</role>於人也，岂可同日而论哉！"
+    },
+    {
+      "pid": "15",
+      "text": "“夫衡人者，皆欲割诸侯之地以予秦。秦成，则高台榭，美宫室，听竽瑟之音，前有楼阙轩辕，後有长姣美人，国被秦患而不与其忧。是故夫衡人日夜务以秦权恐愒诸侯以求割地，故原大王孰计之也。",
+      "annotated": "“夫衡人者，皆欲割<role>诸侯</role>之地以予<state>秦</state>。<state>秦</state>成，则高<art>台榭</art>，美<sys>宫室</sys>，听竽瑟之音，前有楼阙轩辕，後有长姣<role>美人</role>，国被<state>秦</state>患而不与其忧。是故夫衡人日夜务以<state>秦</state>权恐愒<role>诸侯</role>以求割地，故原大王孰计之也。"
+    },
+    {
+      "pid": "16",
+      "text": "“臣闻明主绝疑去谗，屏流言之迹，塞朋党之门，故尊主广地彊兵之计臣得陈忠於前矣。故窃为大王计，莫如一韩、魏、齐、楚、燕、赵以从亲，以畔秦。令天下之将相会於洹水之上，通质，刳白马而盟。要约曰：‘秦⟦◈攻⟧楚，齐、魏各出锐师以佐之，韩绝其粮道，赵涉河漳，燕守常山之北。秦⟦◈攻⟧韩魏，则楚绝其後，齐出锐师而佐之，赵涉河漳，燕守云中。秦⟦◈攻⟧齐，则楚绝其後，韩守城皋，魏塞其道，赵涉河漳、博关，燕出锐师以佐之。秦⟦◈攻⟧燕，则赵守常山，楚军武关，齐涉勃海，韩、魏皆出锐师以佐之。秦⟦◈攻⟧赵，则韩军宜阳，楚军武关，魏军河外，齐涉清河，燕出锐师以佐之。诸侯有不如约者，以五国之兵共⟦◈伐⟧之。’六国从亲以宾秦，则秦甲必不敢出於函谷以害山东矣。如此，则霸王之业成矣。”",
+      "annotated": "“<role>臣</role>闻明主绝疑去谗，屏流言之迹，塞朋党之门，故尊主广地彊兵之计<role>臣</role>得陈忠於前矣。故窃为大王计，莫如一<state>韩</state>、<state>魏</state>、<state>齐</state>、<state>楚</state>、<state>燕</state>、<state>赵</state>以从亲，以畔<state>秦</state>。令<idea>天下</idea>之<role>将相</role>会於<loc>洹水</loc>之上，通质，刳白<bio>马</bio>而盟。要约曰：‘<state>秦</state>⟦◈攻⟧<state>楚</state>，<state>齐</state>、<state>魏</state>各出锐师以佐之，<state>韩</state>绝其粮道，<state>赵</state>涉河漳，<state>燕</state>守<loc>常山</loc>之北。<state>秦</state>⟦◈攻⟧<state>韩</state><state>魏</state>，则<state>楚</state>绝其後，<state>齐</state>出锐师而佐之，<state>赵</state>涉河漳，<state>燕</state>守<loc>云中</loc>。<state>秦</state>⟦◈攻⟧<state>齐</state>，则<state>楚</state>绝其後，<state>韩</state>守<loc>城皋</loc>，<state>魏</state>塞其道，<state>赵</state>涉河漳、博关，<state>燕</state>出锐师以佐之。<state>秦</state>⟦◈攻⟧<state>燕</state>，则<state>赵</state>守<loc>常山</loc>，<state>楚</state>军<loc>武关</loc>，<state>齐</state>涉<loc>勃海</loc>，<state>韩</state>、<state>魏</state>皆出锐师以佐之。<state>秦</state>⟦◈攻⟧<state>赵</state>，则<state>韩</state>军<loc>宜阳</loc>，<state>楚</state>军<loc>武关</loc>，<state>魏</state>军<loc>河外</loc>，<state>齐</state>涉<loc>清河</loc>，<state>燕</state>出锐师以佐之。<role>诸侯</role>有不如约者，以五国之兵共⟦◈伐⟧之。’<sys>六国</sys>从亲以宾<state>秦</state>，则<state>秦</state>甲必不敢出於<loc>函谷</loc>以害<loc>山东</loc>矣。如此，则<role>霸王</role>之业成矣。”"
+    },
+    {
+      "pid": "17",
+      "text": "赵王曰：“寡人年少，立国日浅，未尝得闻社稷之长计也。今上客有意存天下，安诸侯寡人敬以国从。” 乃饰车百乘，黄金千溢，白璧百双，锦绣千纯，以约诸侯。",
+      "annotated": "<off>赵王</off>曰：“<role>寡人</role>年少，立国日浅，未尝得闻<sys>社稷</sys>之长计也。今上客有意存<idea>天下</idea>，安<role>诸侯</role><role>寡人</role>敬以国从。” 乃饰<art>车</art><qty>百乘</qty>，<art>黄金</art><qty>千溢</qty>，白<art>璧</art><qty>百双</qty>，锦绣<qty>千纯</qty>，以约<role>诸侯</role>。"
+    },
+    {
+      "pid": "18",
+      "text": "是时周天子致文武之胙於秦惠王。惠王使犀首⟦◈攻⟧魏，禽将龙贾，⟦◈取⟧魏之雕阴，且欲东兵。苏秦恐秦兵之至赵也，乃激怒张仪，入之于秦。",
+      "annotated": "是时<state>周</state><role>天子</role>致<p name=\"周文王\">文</p><p name=\"周武王\">武</p>之胙於<p>秦惠王</p>。<p name=\"秦惠王\">惠王</p>使<p>犀首</p>⟦◈攻⟧<state>魏</state>，禽将<p>龙贾</p>，⟦◈取⟧<state>魏</state>之<loc>雕阴</loc>，且欲东兵。<p>苏秦</p>恐<state>秦</state>兵之至<state>赵</state>也，乃激怒<p>张仪</p>，入之于<state>秦</state>。"
+    },
+    {
+      "pid": "19",
+      "text": "於是说韩宣王曰：“韩北有巩、成皋之固，西有宜阳、商阪之塞，东有宛、穰、洧水，南有陉山，地方九百馀里，带甲数十万，天下之彊弓劲弩皆从韩出。谿子、少府时力、距来者，皆射六百步之外。韩卒超足而射，百发不暇止，远者括蔽洞胸，近者镝弇心。韩卒之剑戟皆出於冥山、棠谿、墨阳、合赙、邓师、宛冯、龙渊、太阿，皆陆断牛马，水截鹄雁，当敌则斩坚甲铁幕，革抉簠芮，无不毕具。以韩卒之勇，被坚甲，蹠劲弩，带利剑，一人当百，不足言也。夫以韩之劲与大王之贤，乃西面事秦，交臂而服，羞社稷而为天下笑，无大於此者矣。是故原大王孰计之。",
+      "annotated": "於是说<state>韩</state><p name=\"韩宣王\">宣王</p>曰：“<state>韩</state>北有巩、<loc>成皋</loc>之固，西有<loc>宜阳</loc>、<loc>商</loc>阪之塞，东有宛、<loc>穰</loc>、洧水，南有<loc>陉山</loc>，地方<qty>九百馀里</qty>，带甲<qty>数十万</qty>，<idea>天下</idea>之彊<art>弓</art>劲弩皆从<state>韩</state>出。谿<role>子</role>、<off>少府</off>时力、距来者，皆射<qty>六百步</qty>之外。<state>韩</state>卒超足而射，百发不暇止，远者括蔽洞胸，近者镝弇心。<state>韩</state>卒之<art>剑</art><art>戟</art>皆出於冥山、棠谿、墨阳、合赙、邓师、宛冯、龙渊、<art>太阿</art>，皆陆断牛<bio>马</bio>，水截鹄雁，当敌则<vact>斩</vact>坚甲铁幕，革抉簠芮，无不毕具。以<state>韩</state>卒之勇，被坚甲，蹠劲弩，带利<art>剑</art>，<qty>一人</qty>当百，不足言也。夫以<state>韩</state>之劲与大王之贤，乃西面事<state>秦</state>，交臂而服，羞<sys>社稷</sys>而为<idea>天下</idea>笑，无大於此者矣。是故原大王孰计之。"
+    },
+    {
+      "pid": "20",
+      "text": "“大王事秦，秦必求宜阳、成皋。今兹效之，明年又复求割地。与则无地以给之，不与则弃前功而受後祸。且大王之地有尽而秦之求无已，以有尽之地而逆无已之求，此所谓市怨结祸者也，不⟦◈战⟧而地已削矣。臣闻鄙谚曰：‘宁为鸡口，无为牛後。’今西面交臂而臣事秦，何异於牛後乎？夫以大王之贤，挟彊韩之兵，而有牛後之名，臣窃为大王羞之。”",
+      "annotated": "“大王事<state>秦</state>，<state>秦</state>必求<loc>宜阳</loc>、<loc>成皋</loc>。今兹效之，<time>明年</time>又复求割地。与则无地以给之，不与则弃前功而受後祸。且大王之地有尽而<state>秦</state>之求无已，以有尽之地而逆无已之求，此所谓市怨结祸者也，不⟦◈战⟧而地已削矣。<role>臣</role>闻鄙谚曰：‘<idiom name=\"宁为鸡口，无为牛后\">宁为鸡口，无为牛後</idiom>。’今西面交臂而<role>臣</role>事<state>秦</state>，何异於牛後乎？夫以大王之贤，挟彊<state>韩</state>之兵，而有牛後之名，<role>臣</role>窃为大王羞之。”"
+    },
+    {
+      "pid": "21",
+      "text": "於是韩王勃然作色，攘臂瞋目，按剑仰天太息曰；“寡人虽不肖，必不能事秦。今主君诏以赵王之教，敬奉社稷以从。”",
+      "annotated": "於是<off>韩王</off>勃然作色，攘臂瞋目，按<art>剑</art>仰天太息曰；“<role>寡人</role>虽不肖，必不能事<state>秦</state>。今主<role>君</role>诏以<off>赵王</off>之教，敬奉<sys>社稷</sys>以从。”"
+    },
+    {
+      "pid": "22",
+      "text": "又说魏襄王曰：“大王之地，南有鸿沟、陈、汝南、许、郾、昆阳、召陵、舞阳、新都、新郪，东有淮、颍、枣、无胥，西有长城之界，北有河外、卷、衍、酸枣，地方千里。地名虽小，然而田舍庐庑之数，曾无所刍牧。人民之众，车马之多，日夜行不绝，輷輷殷殷，若有三军之众。臣窃量大王之国不下楚。，然衡人怵王交彊虎狼之秦以侵天下，卒有秦患，不顾其祸。夫挟彊秦之势以内劫其主，罪无过此者。魏，天下之彊国也；王，天下之贤王也。今乃有意西面而事秦，称东籓，筑帝宫，受冠带，祠春秋，臣窃为大王耻之。",
+      "annotated": "又说<state>魏</state><p name=\"魏襄王\">襄王</p>曰：“大王之地，南有<loc>鸿沟</loc>、<state>陈</state>、<loc>汝南</loc>、许、郾、<loc>昆阳</loc>、<loc>召陵</loc>、<loc>舞阳</loc>、新都、新郪，东有淮、颍、枣、无胥，西有<loc>长城</loc>之界，北有<loc>河外</loc>、卷、衍、<loc>酸枣</loc>，地方<qty>千里</qty>。地名虽小，然而田舍庐庑之数，曾无所刍牧。人<role>民</role>之众，<art>车</art><bio>马</bio>之多，日夜行不绝，輷輷殷殷，若有<sys>三军</sys>之众。<role>臣</role>窃量大王之国不下<state>楚</state>。，然衡人怵王交彊虎狼之<state>秦</state>以侵<idea>天下</idea>，卒有<state>秦</state>患，不顾其祸。夫挟彊<state>秦</state>之势以内劫其主，罪无过此者。<state>魏</state>，<idea>天下</idea>之彊国也；王，<idea>天下</idea>之<role>贤王</role>也。今乃有意西面而事<state>秦</state>，称东籓，筑<sys>帝宫</sys>，受<art>冠带</art>，祠<time>春秋</time>，<role>臣</role>窃为大王耻之。"
+    },
+    {
+      "pid": "23",
+      "text": "“臣闻越王句践⟦◈战⟧敝卒三千人，禽夫差於干遂；武王卒三千人，革车三百乘，制纣於牧野：岂其士卒众哉，诚能奋其威也。今窃闻大王之卒，武士二十万，苍头二十万，奋⟦◈击⟧二十万，厮徒十万，车六百乘，骑五千匹。此其过越王句践、武王远矣，今乃听於群臣之说而欲臣事秦。夫事秦必割地以效实，故兵未用而国已亏矣。凡群臣之言事秦者，皆奸人，非忠臣也。夫为人臣，割其主之地以求外交，偷⟦◈取⟧一时之功而不顾其後，⟦◈破⟧公家而成私门，外挟彊秦之势以内劫其主，以求割地，原大王孰察之。",
+      "annotated": "“<role>臣</role>闻<off>越王</off><p>句践</p>⟦◈战⟧敝卒<qty>三千人</qty>，禽<p>夫差</p>於干遂；<p>武王</p>卒<qty>三千人</qty>，革<art>车</art><qty>三百乘</qty>，制<p>纣</p>於<loc>牧野</loc>：岂其<role>士</role>卒众哉，诚能奋其威也。今窃闻大王之卒，武<role>士</role><qty>二十万</qty>，苍头<qty>二十万</qty>，奋⟦◈击⟧<qty>二十万</qty>，厮徒<qty>十万</qty>，<art>车</art><qty>六百乘</qty>，骑<qty>五千匹</qty>。此其过<off>越王</off><p>句践</p>、<p>武王</p>远矣，今乃听於<role>群臣</role>之说而欲<role>臣</role>事<state>秦</state>。夫事<state>秦</state>必割地以效实，故兵未用而国已亏矣。凡<role>群臣</role>之言事<state>秦</state>者，皆奸人，非<role>忠臣</role>也。夫为<role>人臣</role>，割其主之地以求外交，偷⟦◈取⟧一时之功而不顾其後，⟦◈破⟧公家而成私门，外挟彊<state>秦</state>之势以内劫其主，以求割地，原大王孰察之。"
+    },
+    {
+      "pid": "24",
+      "text": "“周书曰：‘釂釂不绝，蔓蔓柰何？豪氂不⟦◈伐⟧，将用斧柯。’前虑不定，後有大患，将柰之何？大王诚能听臣，六国从亲，专心并力壹意，则必无彊秦之患。故敝邑赵王使臣效愚计，奉明约，在大王之诏诏之。”",
+      "annotated": "“<book>周书</book>曰：‘釂釂不绝，蔓蔓柰何？豪氂不⟦◈伐⟧，将用斧柯。’前虑不定，後有大患，将柰之何？大王诚能听<role>臣</role>，<sys>六国</sys>从亲，专心并力壹意，则必无彊<state>秦</state>之患。故敝邑<off>赵王</off>使<role>臣</role>效愚计，奉明约，在大王之诏诏之。”"
+    },
+    {
+      "pid": "25",
+      "text": "魏王曰：“寡人不肖，未尝得闻明教。今主君以赵王之诏诏之，敬以国从。”",
+      "annotated": "<off>魏王</off>曰：“<role>寡人</role>不肖，未尝得闻明教。今主<role>君</role>以<off>赵王</off>之诏诏之，敬以国从。”"
+    },
+    {
+      "pid": "26",
+      "text": "因东说齐宣王曰：“齐南有泰山，东有琅邪，西有清河，北有勃海，北所谓四塞之国也。齐地方二千馀里，带甲数十万，粟如丘山。三军之良，五家之兵，进如锋矢，⟦◈战⟧如雷霆，解如风雨。即有军役，未尝倍泰山，绝清河，涉勃海也。临菑之中七万户，臣窃度之，不下户三男子，三七二十一万，不待发於远县，而临菑之卒固已二十一万矣。临菑甚富而实，其民无不吹竽鼓瑟，弹琴⟦◈击⟧筑，斗鸡走狗，六博蹋鞠者。临菑之涂，车毂⟦◈击⟧，人肩摩，连衽成帷，举袂成幕，挥汗成雨，家殷人足，志高气扬。夫以大王之贤与齐之彊，天下莫能当。今乃西面而事秦，臣窃为大王羞之。",
+      "annotated": "因东说<p>齐宣王</p>曰：“<state>齐</state>南有<loc>泰山</loc>，东有<loc>琅邪</loc>，西有<loc>清河</loc>，北有<loc>勃海</loc>，北所谓四塞之国也。<state>齐</state>地方<qty>二千馀里</qty>，带甲<qty>数十万</qty>，粟如丘山。<sys>三军</sys>之良，<sys>五家之兵</sys>，进如锋矢，⟦◈战⟧如<astro>雷霆</astro>，解如风雨。即有军役，未尝倍<loc>泰山</loc>，绝<loc>清河</loc>，涉<loc>勃海</loc>也。<loc>临菑</loc>之中<qty>七万户</qty>，<role>臣</role>窃度之，不下户三男<role>子</role>，三七二十一万，不待发於远县，而<loc>临菑</loc>之卒固已二十一万矣。<loc>临菑</loc>甚富而实，其<role>民</role>无不吹竽鼓瑟，弹琴⟦◈击⟧筑，斗鸡走狗，<sys>六博</sys>蹋鞠者。<loc>临菑</loc>之涂，<art>车</art>毂⟦◈击⟧，人肩摩，连衽成帷，举袂成幕，<idiom>挥汗成雨</idiom>，家殷人足，志高气扬。夫以大王之贤与<state>齐</state>之彊，<idea>天下</idea>莫能当。今乃西面而事<state>秦</state>，<role>臣</role>窃为大王羞之。"
+    },
+    {
+      "pid": "27",
+      "text": "“且夫韩、魏之所以重畏秦者，为与秦接境壤界也。兵出而相当，不出十日而⟦◈战⟧胜存亡之机决矣。韩、魏⟦◈战⟧而胜秦，则兵半折，四境不守；⟦◈战⟧而不胜，则国已危亡随其後。是故韩、魏之所以重与秦⟦◈战⟧，而轻为之臣也。今秦之⟦◈攻⟧齐则不然。倍韩、魏之地，过卫阳晋之道，径乎亢父之险，车不得方轨，骑不得比行，百人守险，千人不敢过也。秦虽欲深入，则狼顾，恐韩、魏之议其後也。是故恫疑虚猲，骄矜而不敢进，则秦之不能害齐亦明矣。",
+      "annotated": "“且夫<state>韩</state>、<state>魏</state>之所以重畏<state>秦</state>者，为与<state>秦</state>接境壤界也。兵出而相当，不出<time name=\"时长\">十日</time>而⟦◈战⟧胜存亡之机决矣。<state>韩</state>、<state>魏</state>⟦◈战⟧而胜<state>秦</state>，则兵半折，四境不守；⟦◈战⟧而不胜，则国已危亡随其後。是故<state>韩</state>、<state>魏</state>之所以重与<state>秦</state>⟦◈战⟧，而轻为之<role>臣</role>也。今<state>秦</state>之⟦◈攻⟧<state>齐</state>则不然。倍<state>韩</state>、<state>魏</state>之地，过<state>卫</state><loc>阳晋</loc>之道，径乎<loc>亢父</loc>之险，<art>车</art>不得方轨，骑不得比行，<qty>百人</qty>守险，<qty>千人</qty>不敢过也。<state>秦</state>虽欲深入，则狼顾，恐<state>韩</state>、<state>魏</state>之议其後也。是故恫疑虚猲，骄矜而不敢进，则<state>秦</state>之不能害<state>齐</state>亦明矣。"
+    },
+    {
+      "pid": "28",
+      "text": "“夫不深料秦之无柰齐何，而欲西面而事之，是群臣之计过也。今无臣事秦之名而有彊国之实，臣是故原大王少留意计之。”",
+      "annotated": "“夫不深料<state>秦</state>之无柰<state>齐</state>何，而欲西面而事之，是<role>群臣</role>之计过也。今无<role>臣</role>事<state>秦</state>之名而有彊国之实，<role>臣</role>是故原大王少留意计之。”"
+    },
+    {
+      "pid": "29",
+      "text": "齐王曰：“寡人不敏，僻远守海，穷道东境之国也，未尝得闻馀教。今足下以赵王诏诏之，敬以国从。”",
+      "annotated": "<off>齐王</off>曰：“<role>寡人</role>不敏，僻远守海，穷道东境之国也，未尝得闻馀教。今足下以<off>赵王</off>诏诏之，敬以国从。”"
+    },
+    {
+      "pid": "30",
+      "text": "乃西南说楚威王曰：“楚，天下之彊国也；王，天下之贤王也。西有黔中、巫郡，东有夏州、海阳，南有洞庭、苍梧，北有陉塞、郇阳，地方五千馀里，带甲百万，车千乘，骑万匹，粟支十年。此霸王之资也。夫以楚之彊与王之贤，天下莫能当也。今乃欲西面而事秦，则诸侯莫不西面而朝於章台之下矣。",
+      "annotated": "乃<loc>西南</loc>说<state>楚</state><p name=\"楚威王\">威王</p>曰：“<state>楚</state>，<idea>天下</idea>之彊国也；王，<idea>天下</idea>之<role>贤王</role>也。西有<loc>黔中</loc>、<loc>巫郡</loc>，东有<loc>夏州</loc>、<loc>海阳</loc>，南有<loc>洞庭</loc>、<loc>苍梧</loc>，北有<loc>陉塞</loc>、<loc>郇阳</loc>，地方<qty>五千馀里</qty>，带甲<qty>百万</qty>，<art>车</art><qty>千乘</qty>，骑<qty>万匹</qty>，粟支<time name=\"时长\">十年</time>。此<role>霸王</role>之资也。夫以<state>楚</state>之彊与王之贤，<idea>天下</idea>莫能当也。今乃欲西面而事<state>秦</state>，则<role>诸侯</role>莫不西面而朝於<loc>章台</loc>之下矣。"
+    },
+    {
+      "pid": "31",
+      "text": "“秦之所害莫如楚，楚彊则秦弱，秦彊则楚弱，其势不两立。故为大王计，莫如从亲以孤秦。大王不从，秦必起两军，一军出武关，一军下黔中，则鄢郢动矣。",
+      "annotated": "“<state>秦</state>之所害莫如<state>楚</state>，<state>楚</state>彊则<state>秦</state>弱，<state>秦</state>彊则<state>楚</state>弱，其势不两立。故为大王计，莫如从亲以孤<state>秦</state>。大王不从，<state>秦</state>必起两军，一军出<loc>武关</loc>，一军下<loc>黔中</loc>，则<loc>鄢</loc><loc>郢</loc>动矣。"
+    },
+    {
+      "pid": "32",
+      "text": "“臣闻治之其未乱也，为之其未有也。患至而后忧之，则无及已。故原大王蚤孰计之。",
+      "annotated": "“<role>臣</role>闻治之其未乱也，为之其未有也。患至而后忧之，则无及已。故原大王蚤孰计之。"
+    },
+    {
+      "pid": "33",
+      "text": "“大王诚能听臣，臣请令山东之国奉四时之献，以承大王之明诏，委社稷，奉宗庙，练士厉兵，在大王之所用之。大王诚能用臣之愚计，则韩、魏、齐、燕、赵、卫之妙音美人必充後宫，燕、代橐驼良马必实外厩。故从合则楚王，衡成则秦帝。今释霸王之业，而有事人之名，臣窃为大王不⟦◈取⟧也。",
+      "annotated": "“大王诚能听<role>臣</role>，<role>臣</role>请令<loc>山东</loc>之国奉<time name=\"时长\">四时</time>之献，以承大王之明诏，委<sys>社稷</sys>，奉<sys>宗庙</sys>，练<role>士</role>厉兵，在大王之所用之。大王诚能用<role>臣</role>之愚计，则<state>韩</state>、<state>魏</state>、<state>齐</state>、<state>燕</state>、<state>赵</state>、<state>卫</state>之妙音<role>美人</role>必充後宫，<state>燕</state>、<state>代</state><bio>橐驼</bio>良<bio>马</bio>必实外厩。故从合则<state>楚</state><vpol>王</vpol>，衡成则<state>秦</state>帝。今释<role>霸王</role>之业，而有事人之名，<role>臣</role>窃为大王不⟦◈取⟧也。"
+    },
+    {
+      "pid": "34",
+      "text": "“夫秦，虎狼之国也，有吞天下之心。秦，天下之仇雠也。衡人皆欲割诸侯之地以事秦，此所谓养仇而奉雠者也。夫为人臣，割其主之地以外交彊虎狼之秦，以侵天下，卒有秦患，不顾其祸。夫外挟彊秦之威以内劫其主，以求割地，大逆不忠，无过此者。故从亲则诸侯割地以事楚，衡合则楚割地以事秦，此两策者相去远矣，二者大王何居焉？故敝邑赵王使臣效愚计，奉明约，在大王诏之。”",
+      "annotated": "“夫<state>秦</state>，虎狼之国也，有吞<idea>天下</idea>之心。<state>秦</state>，<idea>天下</idea>之仇雠也。衡人皆欲割<role>诸侯</role>之地以事<state>秦</state>，此所谓养仇而奉雠者也。夫为<role>人臣</role>，割其主之地以外交彊虎狼之<state>秦</state>，以侵<idea>天下</idea>，卒有<state>秦</state>患，不顾其祸。夫外挟彊<state>秦</state>之威以内劫其主，以求割地，大逆不忠，无过此者。故从亲则<role>诸侯</role>割地以事<state>楚</state>，衡合则<state>楚</state>割地以事<state>秦</state>，此两策者相去远矣，二者大王何居焉？故敝邑<off>赵王</off>使<role>臣</role>效愚计，奉明约，在大王诏之。”"
+    },
+    {
+      "pid": "35",
+      "text": "楚王曰：“寡人之国西与秦接境，秦有举巴蜀并汉中之心。秦，虎狼之国，不可亲也。而韩、魏迫於秦患，不可与深谋，与深谋恐反人以入於秦，故谋未发而国已危矣。寡人自料以楚当秦，不见胜也；内与群臣谋，不足恃也。寡人卧不安席，食不甘味，心摇摇然如县旌而无所终薄。今主君欲一天下，收诸侯，存危国，寡人谨奉社稷以从。”",
+      "annotated": "<off>楚王</off>曰：“<role>寡人</role>之国西与<state>秦</state>接境，<state>秦</state>有举<loc>巴蜀</loc>并<loc>汉中</loc>之心。<state>秦</state>，虎狼<vpol>之国</vpol>，不可亲也。而<state>韩</state>、<state>魏</state>迫於<state>秦</state>患，不可与深谋，与深谋恐反人以入於<state>秦</state>，故谋未发而国已危矣。<role>寡人</role>自料以<state>楚</state>当<state>秦</state>，不见胜也；内与<role>群臣</role>谋，不足恃也。<role>寡人</role>卧不安席，食不甘味，心摇摇然如县旌而无所终薄。今主<role>君</role>欲一<idea>天下</idea>，收<role>诸侯</role>，存危国，<role>寡人</role>谨奉<sys>社稷</sys>以从。”"
+    },
+    {
+      "pid": "36",
+      "text": "於是六国从合而并力焉。苏秦为从约长，并相六国。",
+      "annotated": "於是<sys>六国</sys>从合而并力焉。<p>苏秦</p>为从约长，并相<sys>六国</sys>。"
+    },
+    {
+      "pid": "37",
+      "text": "北报赵王，乃行过雒阳，车骑辎重，诸侯各发使送之甚众，疑於王者。周显王闻之恐惧，除道，使人郊劳。苏秦之昆弟妻嫂侧目不敢仰视，俯伏侍⟦◈取⟧食。苏秦笑谓其嫂曰：”何前倨而後恭也？” 嫂委蛇蒲服，以面掩地而谢曰：“见季子位高金多也。” 苏秦喟然叹曰：”此一人之身，富贵则亲戚畏惧之，贫贱则轻易之，况众人乎！且使我有雒阳负郭田二顷，吾岂能佩六国相印乎！” 於是散千金以赐宗族朋友。初，苏秦之燕，贷人百钱为资，乃得富贵，以百金偿之。遍报诸所尝见德者。其从者有一人独未得报，乃前自言。苏秦曰：“我非忘子。子之与我至燕，再三欲去我易水之上，方是时，我困，故望子深，是以",
+      "annotated": "北报<off>赵王</off>，乃行过<loc>雒阳</loc>，<art>车</art>骑辎重，<role>诸侯</role>各发使送之甚众，疑於<role>王者</role>。<state>周</state><p name=\"周显王\">显王</p>闻之恐惧，除道，使人郊劳。<p>苏秦</p>之昆<role>弟</role><role>妻</role><role>嫂</role>侧目不敢仰视，俯伏侍⟦◈取⟧食。<p>苏秦</p>笑谓其<role>嫂</role>曰：”何前倨而後恭也？” <role>嫂</role>委蛇蒲服，以面掩地而谢曰：“见<p name=\"苏秦\">季子</p>位高金多也。” <p>苏秦</p>喟然叹曰：”此<qty>一人</qty>之身，<idea>富贵</idea>则<role>亲戚</role>畏惧之，<idea>贫贱</idea>则轻易之，况<role>众人</role>乎！且使我有<loc>雒阳</loc>负郭田二顷，吾岂能佩<sys>六国</sys>相<art>印</art>乎！” 於是散<art>千金</art>以赐<role>宗族</role>朋友。初，<p>苏秦</p>之<state>燕</state>，贷人<qty>百钱</qty>为资，乃得<idea>富贵</idea>，以<art>百金</art>偿之。遍报诸所尝见德者。其从者有<qty>一人</qty>独未得报，乃前自言。<p>苏秦</p>曰：“我非忘<role>子</role>。<role>子</role>之与我至<state>燕</state>，再三欲去我<loc>易水</loc>之上，方是时，我困，故望<role>子</role>深，是以"
+    },
+    {
+      "pid": "38",
+      "text": "苏秦既约六国从亲，归赵，赵肃侯封为武安君，乃投从约书於秦。秦兵不敢闚函谷关十五年。",
+      "annotated": "<p>苏秦</p>既约<sys>六国</sys>从亲，归<state>赵</state>，<state>赵</state><p name=\"赵肃侯\">肃侯</p>封为<p name=\"苏秦\">武安君</p>，乃投从约书於<state>秦</state>。<state>秦</state>兵不敢闚<loc>函谷关</loc><time name=\"时长\">十五年</time>。"
+    },
+    {
+      "pid": "39",
+      "text": "其後秦使犀首欺齐、魏，与共⟦◈伐⟧赵，欲⟦◈败⟧从约。齐、魏⟦◈伐⟧赵，赵王让苏秦。苏秦恐，请使燕，必报齐。苏秦去赵而从约皆解。",
+      "annotated": "其後<state>秦</state>使<p>犀首</p>欺<state>齐</state>、<state>魏</state>，与共⟦◈伐⟧<state>赵</state>，欲⟦◈败⟧从约。<state>齐</state>、<state>魏</state>⟦◈伐⟧<state>赵</state>，<off>赵王</off>让<p>苏秦</p>。<p>苏秦</p>恐，请使<state>燕</state>，必报<state>齐</state>。<p>苏秦</p>去<state>赵</state>而从约皆解。"
+    },
+    {
+      "pid": "40",
+      "text": "秦惠王以其女为燕太子妇。是岁，文侯卒，太子立，是为燕易王。易王初立，齐宣王因燕丧⟦◈伐⟧燕，⟦◈取⟧十城。易王谓苏秦曰：”往日先生至燕，而先王资先生见赵，遂约六国从。今齐先⟦◈伐⟧赵，次至燕，以先生之故为天下笑，先生能为燕得侵地乎？” 苏秦大惭，曰：“请为王⟦◈取⟧之。”",
+      "annotated": "<p>秦惠王</p>以其<role>女</role>为<state>燕</state><role>太子</role>妇。是岁，<p name=\"燕文侯\">文侯</p>卒，<role>太子</role>立，是为<state>燕</state><p name=\"燕易王\">易王</p>。<p name=\"燕易王\">易王</p>初立，<p>齐宣王</p>因<state>燕</state>丧⟦◈伐⟧<state>燕</state>，⟦◈取⟧<qty>十城</qty>。<p name=\"燕易王\">易王</p>谓<p>苏秦</p>曰：”往日<role>先生</role>至<state>燕</state>，而<role>先王</role>资<role>先生</role>见<state>赵</state>，遂约<sys>六国</sys>从。今<state>齐</state>先⟦◈伐⟧<state>赵</state>，次至<state>燕</state>，以<role>先生</role>之故为<idea>天下</idea>笑，<role>先生</role>能为<state>燕</state>得侵地乎？” <p>苏秦</p>大惭，曰：“请为王⟦◈取⟧之。”"
+    },
+    {
+      "pid": "41",
+      "text": "苏秦见齐王，再拜，俯而庆，仰而吊。 齐王曰：“是何庆吊相随之速也？” 苏秦曰：“臣闻饥人所以饥而不食乌喙者，为其愈充腹而与饿死同患也。今燕虽弱小，即秦王之少婿也。大王利其十城而长与彊秦为仇。今使弱燕为雁行而彊秦敝其後，以招天下之精兵，是食乌喙之类也。” 齐王愀然变色曰：“然则柰何？” 苏秦曰：“臣闻古之善制事者，转祸为福，因⟦◈败⟧为功。大王诚能听臣计，即归燕之十城。燕无故而得十城，必喜；秦王知以己之故而归燕之十城，亦必喜。此所谓弃仇雠而得石交者也。夫燕、秦俱事齐，则大王号令天下，莫敢不听。是王以虚辞附秦，以十城⟦◈取⟧天下。此霸王之业也。” 王曰：“善。” 於是乃归燕之十城。",
+      "annotated": "<p>苏秦</p>见<off>齐王</off>，再拜，俯而庆，仰而吊。 <off>齐王</off>曰：“是何庆吊相随之速也？” <p>苏秦</p>曰：“<role>臣</role>闻饥人所以饥而不食乌喙者，为其愈充腹而与饿死同患也。今<state>燕</state>虽弱小，即<off>秦王</off>之少<role>婿</role>也。大王利其<qty>十城</qty>而长与彊<state>秦</state>为仇。今使弱<state>燕</state>为雁行而彊<state>秦</state>敝其後，以招<idea>天下</idea>之精兵，是食乌喙之类也。” <off>齐王</off>愀然变色曰：“然则柰何？” <p>苏秦</p>曰：“<role>臣</role>闻古之善制事者，转祸为福，因⟦◈败⟧为功。大王诚能听<role>臣</role>计，即归<state>燕</state>之<qty>十城</qty>。<state>燕</state>无故而得<qty>十城</qty>，必喜；<off>秦王</off>知以己之故而归<state>燕</state>之<qty>十城</qty>，亦必喜。此所谓弃仇雠而得石交者也。夫<state>燕</state>、<state>秦</state>俱事<state>齐</state>，则大王号令<idea>天下</idea>，莫敢不听。是王以虚辞附<state>秦</state>，以<qty>十城</qty>⟦◈取⟧<idea>天下</idea>。此<role>霸王</role>之业也。” 王曰：“善。” 於是乃归<state>燕</state>之<qty>十城</qty>。"
+    },
+    {
+      "pid": "42",
+      "text": "人有毁苏秦者曰：“左右卖国反覆之臣也，将作乱。” 苏秦恐得罪归，而燕王不复官也。苏秦见燕王曰：”臣，东周之鄙人也，无有分寸之功，而王亲拜之於庙而礼之於廷。今臣为王卻齐之兵而得十城，宜以益亲。今来而王不官臣者，人必有以不信伤臣於王者。臣之不信，王之福也。臣闻忠信者，所以自为也；进⟦◈取⟧者，所以为人也。且臣之说齐王，曾非欺之也。臣弃老母於东周，固去自为而行进⟦◈取⟧也。今有孝如曾参，廉如伯夷，信如尾生。得此三人者以事大王，何若？” 王曰：“足矣。” 苏秦曰：“孝如曾参，义不离其亲一宿於外，王又安能使之步行千里而事弱燕之危王哉？廉如伯夷，义不为孤竹君之嗣，不肯为武王臣，不受封侯而饿死首阳山下。有廉如此，王又安能使之步行千里而行进⟦◈取⟧於齐哉？信如尾生，与女子期於梁下，女子不来，水至不去，抱柱而死。有信如此，王又安能使之步行千里卻齐之彊兵哉？臣所谓以忠信得罪於上者也。” 燕王曰：“若不忠信耳，岂有以忠信而得罪者乎？” 苏秦曰：“不然。臣闻客有远为吏而其妻私於人者，其夫将来，其私者忧之，妻曰‘勿忧，吾已作药酒待之矣’。居三日，其夫果至，妻使妾举药酒进之。妾欲言酒之有药，则恐其逐主母也，欲勿言乎，则恐其杀主父也。於是乎详僵而弃酒。主父大怒，笞之五十。故妾一僵而覆酒，上存主父，下存主母，然而不免於笞，恶在乎忠信之无罪也？夫臣之过，不幸而类是乎！” 燕王曰：“先生复就故官。” 益厚遇之。",
+      "annotated": "人有毁<p>苏秦</p>者曰：“左右卖国反覆之<role>臣</role>也，将作乱。” <p>苏秦</p>恐得罪归，而<off>燕王</off>不复官也。<p>苏秦</p>见<off>燕王</off>曰：”<role>臣</role>，东<state>周</state>之<role>鄙人</role>也，无有分寸之功，而王亲拜之於庙而<sys>礼</sys>之於廷。今<role>臣</role>为王卻<state>齐</state>之兵而得<qty>十城</qty>，宜以益亲。今来而王不官<role>臣</role>者，人必有以不信伤<role>臣</role>於王者。<role>臣</role>之不信，王之福也。<role>臣</role>闻忠信者，所以自为也；进⟦◈取⟧者，所以为人也。且<role>臣</role>之说<off>齐王</off>，曾非欺之也。<role>臣</role>弃老<role>母</role>於东<state>周</state>，固去自为而行进⟦◈取⟧也。今有孝如<p>曾参</p>，廉如<p>伯夷</p>，信如<p>尾生</p>。得此<qty>三人</qty>者以事大王，何若？” 王曰：“足矣。” <p>苏秦</p>曰：“孝如<p>曾参</p>，义不离其亲一宿於外，王又安能使之步行<qty>千里</qty>而事弱<state>燕</state>之危王哉？廉如<p>伯夷</p>，义不为<state>孤竹</state><role>君</role>之嗣，不肯为<p>武王</p><role>臣</role>，不受封侯而饿死<loc>首阳山</loc>下。有廉如此，王又安能使之步行<qty>千里</qty>而行进⟦◈取⟧於<state>齐</state>哉？信如<p>尾生</p>，与<role>女</role><role>子</role>期於梁下，<role>女</role><role>子</role>不来，水至不去，抱柱而死。有信如此，王又安能使之步行<qty>千里</qty>卻<state>齐</state>之彊兵哉？<role>臣</role>所谓以忠信得罪於上者也。” <off>燕王</off>曰：“若不忠信耳，岂有以忠信而得罪者乎？” <p>苏秦</p>曰：“不然。<role>臣</role>闻客有远为吏而其<role>妻</role>私於人者，其夫将来，其私者忧之，<role>妻</role>曰‘勿忧，吾已作药酒待之矣’。居<time name=\"时长\">三日</time>，其夫果至，<role>妻</role>使<role>妾</role>举药酒进之。<role>妾</role>欲言酒之有药，则恐其逐主<role>母</role>也，欲勿言乎，则恐其<vact>杀</vact><role>主父</role>也。於是乎详僵而弃酒。<role>主父</role>大怒，<vact>笞</vact>之五十。故<role>妾</role>一僵而覆酒，上存<role>主父</role>，下存主<role>母</role>，然而不免於<vact>笞</vact>，恶在乎忠信之无罪也？夫<role>臣</role>之过，不幸而类是乎！” <off>燕王</off>曰：“<role>先生</role>复就故官。” 益厚遇之。"
+    },
+    {
+      "pid": "43",
+      "text": "易王母，文侯夫人也，与苏秦私通。燕王知之，而事之加厚。苏秦恐诛，乃说燕王曰：“臣居燕不能使燕重，而在齐则燕必重。” 燕王曰：”唯先生之所为。” 於是苏秦详为得罪於燕而亡走齐，齐宣王以为客卿。",
+      "annotated": "<p name=\"燕易王\">易王</p><role>母</role>，<p name=\"燕文侯\">文侯</p><role>夫人</role>也，与<p>苏秦</p>私通。<off>燕王</off>知之，而事之加厚。<p>苏秦</p>恐<vact>诛</vact>，乃说<off>燕王</off>曰：“<role>臣</role>居<state>燕</state>不能使<state>燕</state>重，而在<state>齐</state>则<state>燕</state>必重。” <off>燕王</off>曰：”唯<role>先生</role>之所为。” 於是<p>苏秦</p>详为得罪於<state>燕</state>而亡走<state>齐</state>，<p>齐宣王</p>以为<off>客卿</off>。"
+    },
+    {
+      "pid": "44",
+      "text": "齐宣王卒，湣王即位，说湣王厚葬以明孝，高宫室大苑囿以明得意，欲⟦◈破⟧敝齐而为燕。燕易王卒，燕哙立为王。其後齐大夫多与苏秦争宠者，而使人刺苏秦，不死，殊而走。齐王使人求贼，不得。苏秦且死，乃谓齐王曰：“臣即死，车裂臣以徇於市，曰‘苏秦为燕作乱於齐’，如此则臣之贼必得矣。” 於是如其言，而杀苏秦者果自出，齐王因而诛之。燕闻之曰：“甚矣，齐之为苏生报仇也！”",
+      "annotated": "<p>齐宣王</p>卒，<p name=\"齐湣王\">湣王</p>即位，说<p name=\"齐湣王\">湣王</p><sys>厚葬</sys>以明孝，高<sys>宫室</sys>大<sys>苑囿</sys>以明得意，欲⟦◈破⟧敝<state>齐</state>而为<state>燕</state>。<state>燕</state><p name=\"燕易王\">易王</p>卒，<state>燕</state><p name=\"姬哙\">哙</p>立为王。其後<state>齐</state><role>大夫</role>多与<p>苏秦</p>争宠者，而使人<vact>刺</vact><p>苏秦</p>，不死，殊而走。<off>齐王</off>使人求贼，不得。<p>苏秦</p>且死，乃谓<off>齐王</off>曰：“<role>臣</role>即死，<art>车</art>裂<role>臣</role>以徇於市，曰‘<p>苏秦</p>为<state>燕</state>作乱於<state>齐</state>’，如此则<role>臣</role>之贼必得矣。” 於是如其言，而<vact>杀</vact><p>苏秦</p>者果自出，<off>齐王</off>因而<vact>诛</vact>之。<state>燕</state>闻之曰：“甚矣，<state>齐</state>之为<p name=\"苏秦\">苏生</p>报仇也！”"
+    },
+    {
+      "pid": "45",
+      "text": "苏秦既死，其事大泄。齐後闻之，乃恨怒燕。燕甚恐。苏秦之弟曰代，代弟苏厉，见兄遂，亦皆学。及苏秦死，代乃求见燕王，欲⟦◈袭⟧故事。曰：”臣，东周之鄙人也。窃闻大王义甚高，鄙人不敏，释鉏耨而干大王。至於邯郸，所见者绌於所闻於东周，臣窃负其志。及至燕廷，观王之群臣下吏，王，天下之明王也。” 燕王曰：“子所谓明王者何如也？” 对曰：“臣闻明王务闻其过，不欲闻其善，臣请谒王之过。夫齐、赵者，燕之仇雠也；楚、魏者，燕之援国也。今王奉仇雠以⟦◈伐⟧援国，非所以利燕也。王自虑之，此则计过，无以闻者，非忠臣也。” 王曰：“夫齐者固寡人之雠，所欲⟦◈伐⟧也，直患国敝力不足也。子能以燕⟦◈伐⟧齐，则寡人举国委子。” 对曰：“凡天下战国七，燕处弱焉。独⟦◈战⟧则不能，有所附则无不重。南附楚，楚重；西附秦，秦重；中附韩、魏，韩、魏重。且苟所附之国重，此必使王重矣。今夫齐，长主而自用也。南⟦◈攻⟧楚五年，畜聚竭；西困秦三年，士卒罢敝；北与燕人⟦◈战⟧，覆三军，得二将。然而以其馀兵南面举五千乘之大宋，而包十二诸侯。此其君欲得，其民力竭，恶足⟦◈取⟧乎！且臣闻之，数⟦◈战⟧则民劳，久师则兵敝矣。” 燕王曰：“吾闻齐有清济、浊河可以为固，长城、钜防足以为塞，诚有之乎？” 对曰：“天时不与，虽有清济、浊河，恶足以为固！民力罢敝，虽有长城、钜防，恶足以为塞！且异日济西不师，所以备赵也；河北不师，所以备燕也。今济西河北尽已役矣，封内敝矣。夫骄君必好利，而亡国之臣必贪於财。王诚能无羞从子母弟以为质，宝珠玉帛以事左右，彼将有德燕而轻亡宋，则齐可亡已。” 燕王曰：“吾终以子受命於天矣。” 燕乃使一子质於齐。而苏厉因燕质子而求见齐王。齐王怨苏秦，欲囚苏厉。燕质子为谢，已遂委质为齐臣。",
+      "annotated": "<p>苏秦</p>既死，其事大泄。<state>齐</state>後闻之，乃恨怒<state>燕</state>。<state>燕</state>甚恐。<p>苏秦</p>之<role>弟</role>曰<p name=\"苏代\">代</p>，<p name=\"苏代\">代</p><role>弟</role><p>苏厉</p>，见<role>兄</role>遂，亦皆学。及<p>苏秦</p>死，<p name=\"苏代\">代</p>乃求见<off>燕王</off>，欲⟦◈袭⟧故事。曰：”<role>臣</role>，东<state>周</state>之<role>鄙人</role>也。窃闻大王义甚高，<role>鄙人</role>不敏，释鉏耨而干大王。至於<loc>邯郸</loc>，所见者绌於所闻於东<state>周</state>，<role>臣</role>窃负其志。及至<state>燕</state>廷，观王之<role>群臣</role>下吏，王，<idea>天下</idea>之<role>明王</role>也。” <off>燕王</off>曰：“<role>子</role>所谓<role>明王</role>者何如也？” 对曰：“<role>臣</role>闻<role>明王</role>务闻其过，不欲闻其善，<role>臣</role>请谒王之过。夫<state>齐</state>、<state>赵</state>者，<state>燕</state>之仇雠也；<state>楚</state>、<state>魏</state>者，<state>燕</state>之援国也。<role>今王</role>奉仇雠以⟦◈伐⟧援国，非所以利<state>燕</state>也。王自虑之，此则计过，无以闻者，非<role>忠臣</role>也。” 王曰：“夫<state>齐</state>者固<role>寡人</role>之雠，所欲⟦◈伐⟧也，直患国敝力不足也。<role>子</role>能以<state>燕</state>⟦◈伐⟧<state>齐</state>，则<role>寡人</role>举国委<role>子</role>。” 对曰：“凡<idea>天下</idea>战国七，<state>燕</state>处弱焉。独⟦◈战⟧则不能，有所附则无不重。南附<state>楚</state>，<state>楚</state>重；西附<state>秦</state>，<state>秦</state>重；中附<state>韩</state>、<state>魏</state>，<state>韩</state>、<state>魏</state>重。且苟所附之国重，此必使王重矣。今夫<state>齐</state>，长主而自用也。南⟦◈攻⟧<state>楚</state><time name=\"时长\">五年</time>，畜聚竭；西困<state>秦</state><time name=\"时长\">三年</time>，<role>士</role>卒罢敝；北与<state>燕</state>人⟦◈战⟧，覆<sys>三军</sys>，得二将。然而以其馀兵南面举<qty>五千乘</qty>之大<state>宋</state>，而包十二<role>诸侯</role>。此其<role>君</role>欲得，其<role>民</role>力竭，恶足⟦◈取⟧乎！且<role>臣</role>闻之，数⟦◈战⟧则<role>民</role>劳，久师则兵敝矣。” <off>燕王</off>曰：“吾闻<state>齐</state>有清济、<loc>浊河</loc>可以为固，<loc>长城</loc>、钜防足以为塞，诚有之乎？” 对曰：“天时不与，虽有清济、<loc>浊河</loc>，恶足以为固！<role>民</role>力罢敝，虽有<loc>长城</loc>、钜防，恶足以为塞！且异日<loc>济西</loc>不师，所以备<state>赵</state>也；<loc>河北</loc>不师，所以备<state>燕</state>也。今<loc>济西</loc><loc>河北</loc>尽已役矣，封内敝矣。夫骄<role>君</role>必好利，而亡国之<role>臣</role>必贪於财。王诚能无羞从<role>子</role><role>母</role><role>弟</role>以为质，宝珠<art>玉</art>帛以事左右，彼将有德<state>燕</state>而轻亡<state>宋</state>，则<state>齐</state>可亡已。” <off>燕王</off>曰：“吾终以<role>子</role>受命於天矣。” <state>燕</state>乃使一<role>子</role>质於<state>齐</state>。而<p>苏厉</p>因<state>燕</state><role>质子</role>而求见<off>齐王</off>。<off>齐王</off>怨<p>苏秦</p>，欲囚<p>苏厉</p>。<state>燕</state><role>质子</role>为谢，已遂委质为<state>齐</state><role>臣</role>。"
+    },
+    {
+      "pid": "46",
+      "text": "燕相子之与苏代婚，而欲得燕权，乃使苏代侍质子於齐。齐使代报燕，燕王哙问曰：“齐王其霸乎？” 曰：“不能。” 曰：“何也？” 曰：“不信其臣。” 於是燕王专任子之，已而让位，燕大乱。齐⟦◈伐⟧燕，杀王哙、子之。燕立昭王，而苏代、苏厉遂不敢入燕，皆终归齐，齐善待之。",
+      "annotated": "<state>燕</state>相<p>子之</p>与<p>苏代</p>婚，而欲得<state>燕</state>权，乃使<p>苏代</p>侍<role>质子</role>於<state>齐</state>。<state>齐</state>使<p name=\"苏代\">代</p>报<state>燕</state>，<p>燕王哙</p>问曰：“<off>齐王</off>其霸乎？” 曰：“不能。” 曰：“何也？” 曰：“不信其<role>臣</role>。” 於是<off>燕王</off>专任<p>子之</p>，已而让位，<state>燕</state>大乱。<state>齐</state>⟦◈伐⟧<state>燕</state>，<vact>杀</vact><p name=\"姬哙\">王哙</p>、<p>子之</p>。<state>燕</state><vpol>立</vpol><p name=\"燕昭王\">昭王</p>，而<p>苏代</p>、<p>苏厉</p>遂不敢入<state>燕</state>，皆终归<state>齐</state>，<state>齐</state>善待之。"
+    },
+    {
+      "pid": "47",
+      "text": "苏代过魏，魏为燕执代。齐使人谓魏王曰：“齐请以宋地封泾阳君，秦必不受。秦非不利有齐而得宋地也，不信齐王与苏子也。今齐魏不和如此其甚，则齐不欺秦。秦信齐，齐秦合，泾阳君有宋地，非魏之利也。故王不如东苏子，秦必疑齐而不信苏子矣。齐秦不合，天下无变，⟦◈伐⟧齐之形成矣。” 於是出苏代。代之宋，宋善待之。",
+      "annotated": "<p>苏代</p>过<state>魏</state>，<state>魏</state>为<state>燕</state>执<p name=\"苏代\">代</p>。<state>齐</state>使人谓<off>魏王</off>曰：“<state>齐</state>请以<state>宋</state>地<vpol>封</vpol><p name=\"嬴市\">泾阳君</p>，<state>秦</state>必不受。<state>秦</state>非不利有<state>齐</state>而得<state>宋</state>地也，不信<off>齐王</off>与<p name=\"苏代\">苏子</p>也。今<state>齐</state><state>魏</state>不和如此其甚，则<state>齐</state>不欺<state>秦</state>。<state>秦</state>信<state>齐</state>，<state>齐</state><state>秦</state>合，<p name=\"嬴市\">泾阳君</p>有<state>宋</state>地，非<state>魏</state>之利也。故王不如东<p name=\"苏代\">苏子</p>，<state>秦</state>必疑<state>齐</state>而不信<p name=\"苏代\">苏子</p>矣。<state>齐</state><state>秦</state>不合，<idea>天下</idea>无变，⟦◈伐⟧<state>齐</state>之形成矣。” 於是出<p>苏代</p>。<p name=\"苏代\">代</p>之<state>宋</state>，<state>宋</state>善待之。"
+    },
+    {
+      "pid": "48",
+      "text": "齐⟦◈伐⟧宋，宋急，苏代乃遗燕昭王书曰：",
+      "annotated": "<state>齐</state>⟦◈伐⟧<state>宋</state>，<state>宋</state>急，<p>苏代</p>乃遗<p>燕昭王</p>书曰："
+    },
+    {
+      "pid": "49",
+      "text": "夫列在万乘而寄质於齐，名卑而权轻；奉万乘助齐⟦◈伐⟧宋，民劳而实费；夫⟦◈破⟧宋，残楚淮北，肥大齐，雠彊而国害：此三者皆国之大⟦◈败⟧也。然且王行之者，将以⟦◈取⟧信於齐也。齐加不信於王，而忌燕愈甚，是王之计过矣。夫以宋加之淮北，强万乘之国也，而齐并之，是益一齐也。北夷方七百里，加之以鲁、卫，彊万乘之国也，而齐并之，是益二齐也。夫一齐之彊，燕犹狼顾而不能支，今以三齐临燕，其祸必大矣。",
+      "annotated": "夫列在<qty>万乘</qty>而寄质於<state>齐</state>，名卑而权轻；奉<qty>万乘</qty>助<state>齐</state>⟦◈伐⟧<state>宋</state>，<role>民</role>劳而实费；夫⟦◈破⟧<state>宋</state>，残楚<loc>淮北</loc>，肥大<state>齐</state>，雠彊而国害：此三者皆国之大⟦◈败⟧也。然且王行之者，将以⟦◈取⟧信於<state>齐</state>也。<state>齐</state>加不信於王，而忌<state>燕</state>愈甚，是王之计过矣。夫以<state>宋</state>加之<loc>淮北</loc>，强<qty>万乘</qty>之国也，而<state>齐</state>并之，是益一<state>齐</state>也。<tribe>北夷</tribe>方<qty>七百里</qty>，加之以<state>鲁</state>、<state>卫</state>，彊<qty>万乘</qty>之国也，而<state>齐</state>并之，是益二<state>齐</state>也。夫一<state>齐</state>之彊，<state>燕</state>犹狼顾而不能支，今以三<state>齐</state>临<state>燕</state>，其祸必大矣。"
+    },
+    {
+      "pid": "50",
+      "text": "虽然，智者举事，因祸为福，转⟦◈败⟧为功。齐紫，⟦◈败⟧素也，而贾十倍；越王句践栖於会稽，复残彊吴而霸天下：此皆因祸为福，转⟦◈败⟧为功者也。",
+      "annotated": "虽然，<role>智者</role>举事，因祸为福，转⟦◈败⟧为功。<state>齐</state>紫，⟦◈败⟧素也，而贾十倍；<off>越王</off><p>句践</p>栖於<loc>会稽</loc>，复残彊<state>吴</state>而霸<idea>天下</idea>：此皆因祸为福，转⟦◈败⟧为功者也。"
+    },
+    {
+      "pid": "51",
+      "text": "今王若欲因祸为福，转⟦◈败⟧为功，则莫若挑霸齐而尊之，使使盟於周室，焚秦符，曰“其大上计，⟦◈破⟧秦；其次，必长宾之”。秦挟宾以待⟦◈破⟧，秦王必患之。秦五世⟦◈伐⟧诸侯，今为齐下，秦王之志苟得穷齐，不惮以国为功。然则王何不使辩士以此言说秦王曰：“燕、赵⟦◈破⟧宋肥齐，尊之为之下者，燕、赵非利之也。燕、赵不利而势为之者，以不信秦王也。然则王何不使可信者接收燕、赵，令泾阳君、高陵君先於燕、赵？秦有变，因以为质，则燕、赵信秦。秦为西帝，燕为北帝，赵为中帝，立三帝以令於天下。韩、魏不听则秦⟦◈伐⟧之，齐不听则燕、赵⟦◈伐⟧之，天下孰敢不听？天下服听，因驱韩、魏以⟦◈伐⟧齐，曰‘必反宋地，归楚淮北’。反宋地，归楚淮北，燕、赵之所利也；并立三帝，燕、赵之所原也。夫实得所利，尊得所原，燕、赵弃齐如脱鵕矣。今不收燕、赵，齐霸必成。诸侯赞齐而王不从，是国⟦◈伐⟧也；诸侯赞齐而王从之，是名卑也。今收燕、赵，国安而名尊；不收燕、赵，国危而名卑。夫去尊安而取危卑，智者不为也。” 秦王闻若说，必若刺心然。则王何不使辩士以此若言说秦？秦必⟦◈取⟧，齐必⟦◈伐⟧矣。",
+      "annotated": "<role>今王</role>若欲因祸为福，转⟦◈败⟧为功，则莫若挑霸<state>齐</state>而尊之，使使盟於<state>周</state>室，焚<state>秦</state>符，曰“其大上计，⟦◈破⟧<state>秦</state>；其次，必长宾之”。<state>秦</state>挟宾以待⟦◈破⟧，<off>秦王</off>必患之。<state>秦</state><time name=\"时长\">五世</time>⟦◈伐⟧<role>诸侯</role>，今为<state>齐</state>下，<off>秦王</off>之志苟得穷<state>齐</state>，不惮以国为功。然则王何不使<role>辩士</role>以此言说<off>秦王</off>曰：“<state>燕</state>、<state>赵</state>⟦◈破⟧<state>宋</state>肥<state>齐</state>，尊之为之下者，<state>燕</state>、<state>赵</state>非利之也。<state>燕</state>、<state>赵</state>不利而势为之者，以不信<off>秦王</off>也。然则王何不使可信者接收<state>燕</state>、<state>赵</state>，令<p name=\"嬴市\">泾阳君</p>、<p name=\"嬴显\">高陵君</p>先於<state>燕</state>、<state>赵</state>？<state>秦</state>有变，因以为质，则<state>燕</state>、<state>赵</state>信<state>秦</state>。<state>秦</state>为西帝，<state>燕</state>为北帝，<state>赵</state>为中帝，立三帝以令於<idea>天下</idea>。<state>韩</state>、<state>魏</state>不听则<state>秦</state>⟦◈伐⟧之，<state>齐</state>不听则<state>燕</state>、<state>赵</state>⟦◈伐⟧之，<idea>天下</idea>孰敢不听？<idea>天下</idea>服听，因驱<state>韩</state>、<state>魏</state>以⟦◈伐⟧<state>齐</state>，曰‘必反<state>宋</state>地，归楚<loc>淮北</loc>’。反<state>宋</state>地，归楚<loc>淮北</loc>，<state>燕</state>、<state>赵</state>之所利也；并立三帝，<state>燕</state>、<state>赵</state>之所原也。夫实得所利，尊得所原，<state>燕</state>、<state>赵</state>弃<state>齐</state>如脱鵕矣。今不收<state>燕</state>、<state>赵</state>，<state>齐</state>霸必成。<role>诸侯</role>赞<state>齐</state>而王不从，是国⟦◈伐⟧也；<role>诸侯</role>赞<state>齐</state>而王从之，是名卑也。今收<state>燕</state>、<state>赵</state>，国安而名尊；不收<state>燕</state>、<state>赵</state>，国危而名卑。夫去尊安而取危卑，<role>智者</role>不为也。” <off>秦王</off>闻若说，必若<vact>刺</vact>心然。则王何不使<role>辩士</role>以此若言说<state>秦</state>？<state>秦</state>必⟦◈取⟧，<state>齐</state>必⟦◈伐⟧矣。"
+    },
+    {
+      "pid": "52",
+      "text": "夫⟦◈取⟧秦，厚交也；⟦◈伐⟧齐，正利也。尊厚交，务正利，圣王之事也。",
+      "annotated": "夫⟦◈取⟧<state>秦</state>，厚交也；⟦◈伐⟧<state>齐</state>，正利也。尊厚交，务正利，<idea>圣王</idea>之事也。"
+    },
+    {
+      "pid": "53",
+      "text": "燕昭王善其书，曰：“先人尝有德苏氏，子之之乱而苏氏去燕。燕欲报仇於齐，非苏氏莫可。” 乃召苏代，复善待之，与谋⟦◈伐⟧齐。竟⟦◈破⟧齐，湣王出走。",
+      "annotated": "<p>燕昭王</p>善其书，曰：“先人尝有德<clan>苏氏</clan>，<p>子之</p>之乱而<clan>苏氏</clan>去<state>燕</state>。<state>燕</state>欲报仇於<state>齐</state>，非<clan>苏氏</clan>莫可。” 乃召<p>苏代</p>，复善待之，与谋⟦◈伐⟧<state>齐</state>。竟⟦◈破⟧<state>齐</state>，<p name=\"齐湣王\">湣王</p>出走。"
+    },
+    {
+      "pid": "54",
+      "text": "久之，秦召燕王，燕王欲往，苏代约燕王曰：“楚得枳而国亡，齐得宋而国亡，齐、楚不得以有枳、宋而事秦者，何也？则有功者，秦之深雠也。秦⟦◈取⟧天下，非行义也，暴也。秦之行暴，正告天下。",
+      "annotated": "久之，<state>秦</state>召<off>燕王</off>，<off>燕王</off>欲往，<p>苏代</p>约<off>燕王</off>曰：“<state>楚</state>得枳而国亡，<state>齐</state>得<state>宋</state>而国亡，<state>齐</state>、<state>楚</state>不得以有枳、<state>宋</state>而事<state>秦</state>者，何也？则有功者，<state>秦</state>之深雠也。<state>秦</state>⟦◈取⟧<idea>天下</idea>，非行义也，暴也。<state>秦</state>之行暴，正告<idea>天下</idea>。"
+    },
+    {
+      "pid": "55",
+      "text": "“告楚曰：‘蜀地之甲，乘船浮於汶，乘夏水而下江，五日而至郢。汉中之甲，乘船出於巴，乘夏水而下汉，四日而至五渚。寡人积甲宛东下随，智者不及谋，勇土不及怒，寡人如射隼矣。王乃欲待天下之⟦◈攻⟧函谷，不亦远乎！’楚王为是故，十七年事秦。",
+      "annotated": "“告<state>楚</state>曰：‘蜀地之甲，乘船浮於<loc>汶</loc>，乘<loc>夏</loc>水而下江，<time name=\"时长\">五日</time>而至<loc>郢</loc>。<loc>汉中</loc>之甲，乘船出於<state>巴</state>，乘<loc>夏</loc>水而下汉，<time name=\"时长\">四日</time>而至五渚。<role>寡人</role>积甲<loc>宛</loc>东下随，<role>智者</role>不及谋，勇土不及怒，<role>寡人</role>如射隼矣。王乃欲待<idea>天下</idea>之⟦◈攻⟧<loc>函谷</loc>，不亦远乎！’<off>楚王</off>为是故，<time name=\"时长\">十七年</time>事<state>秦</state>。"
+    },
+    {
+      "pid": "56",
+      "text": "“秦正告韩曰：‘我起乎少曲，一日而断大行。我起乎宜阳而触平阳，二日而莫不尽繇。我离两周而触郑，五日而国举。’韩氏以为然，故事秦。",
+      "annotated": "“<state>秦</state>正告<state>韩</state>曰：‘我起乎少曲，<time name=\"时长\">一日</time>而断<loc>大行</loc>。我起乎<loc>宜阳</loc>而触<loc>平阳</loc>，<time name=\"时长\">二日</time>而莫不尽繇。我离两<state>周</state>而触<state>郑</state>，<time name=\"时长\">五日</time>而国举。’<state>韩</state>氏以为然，故事<state>秦</state>。"
+    },
+    {
+      "pid": "57",
+      "text": "“秦正告魏曰：‘我举安邑，塞女戟，韩氏太原卷。我下轵，道南阳，封冀，包两周。乘夏水，浮轻舟，彊弩在前，錟戈在後，决荥口，魏无大梁；决白马之口，魏无外黄、济阳；决宿胥之口，魏无虚、顿丘。陆⟦◈攻⟧则⟦◈击⟧河内，水⟦◈攻⟧则灭大梁。’魏氏以为然，故事秦。",
+      "annotated": "“<state>秦</state>正告<state>魏</state>曰：‘我举<loc>安邑</loc>，塞<role>女</role>戟，<state>韩</state>氏<loc>太原</loc>卷。我下轵，道<loc>南阳</loc>，封冀，包两<state>周</state>。乘<loc>夏</loc>水，浮轻<art>舟</art>，彊弩在前，錟<art>戈</art>在後，决荥口，<state>魏</state>无<loc>大梁</loc>；决白<bio>马</bio>之口，<state>魏</state>无<loc>外黄</loc>、<loc>济阳</loc>；决宿胥之口，<state>魏</state>无虚、顿丘。陆⟦◈攻⟧则⟦◈击⟧<loc>河内</loc>，水⟦◈攻⟧则灭<loc>大梁</loc>。’<state>魏</state>氏以为然，故事<state>秦</state>。"
+    },
+    {
+      "pid": "58",
+      "text": "“秦欲⟦◈攻⟧安邑，恐齐救之，则以宋委於齐。曰：‘宋王无道，为木人以寡人，射其面。寡人地绝兵远，不能⟦◈攻⟧也。王苟能⟦◈破⟧宋有之，寡人如自得之。’已得安邑，塞女戟，因以⟦◈破⟧宋为齐罪。",
+      "annotated": "“<state>秦</state>欲⟦◈攻⟧<loc>安邑</loc>，恐<state>齐</state>救之，则以<state>宋</state>委於<state>齐</state>。曰：‘<off>宋王</off>无道，为木人以<role>寡人</role>，射其面。<role>寡人</role>地绝兵远，不能⟦◈攻⟧也。王苟能⟦◈破⟧<state>宋</state>有之，<role>寡人</role>如自得之。’已得<loc>安邑</loc>，塞<role>女</role>戟，因以⟦◈破⟧<state>宋</state>为<state>齐</state>罪。"
+    },
+    {
+      "pid": "59",
+      "text": "“秦欲⟦◈攻⟧韩，恐天下救之，则以齐委於天下。曰：‘齐王四与寡人约，四欺寡人，必率天下以⟦◈攻⟧寡人者三。有齐无秦，有秦无齐，必⟦◈伐⟧之，必亡之。’已得宜阳、少曲，致蔺、石，因以⟦◈破⟧齐为天下罪。",
+      "annotated": "“<state>秦</state>欲⟦◈攻⟧<state>韩</state>，恐<idea>天下</idea>救之，则以<state>齐</state>委於<idea>天下</idea>。曰：‘<off>齐王</off>四与<role>寡人</role>约，四欺<role>寡人</role>，必率<idea>天下</idea>以⟦◈攻⟧<role>寡人</role>者三。有<state>齐</state>无<state>秦</state>，有<state>秦</state>无<state>齐</state>，必⟦◈伐⟧之，必亡之。’已得<loc>宜阳</loc>、少曲，致蔺、石，因以⟦◈破⟧<state>齐</state>为<idea>天下</idea>罪。"
+    },
+    {
+      "pid": "60",
+      "text": "“秦欲⟦◈攻⟧魏重楚，则以南阳委於楚。曰：‘寡人固与韩且绝矣。残均陵，塞鄳阸戹，苟利於楚，寡人如自有之。’魏弃与国而合於秦，因以塞鄳阸戹为楚罪。",
+      "annotated": "“<state>秦</state>欲⟦◈攻⟧<state>魏</state>重<state>楚</state>，则以<loc>南阳</loc>委於<state>楚</state>。曰：‘<role>寡人</role>固与<state>韩</state>且绝矣。残均陵，塞鄳阸戹，苟利於<state>楚</state>，<role>寡人</role>如自有之。’<state>魏</state>弃与国而合於<state>秦</state>，因以塞鄳阸戹为<state>楚</state>罪。"
+    },
+    {
+      "pid": "61",
+      "text": "“兵困於林中，重燕、赵，以胶东委於燕，以济西委於赵。已得讲於魏，至公子延，因犀首属行而⟦◈攻⟧赵。",
+      "annotated": "“兵困於林中，重<state>燕</state>、<state>赵</state>，以<loc>胶东</loc>委於<state>燕</state>，以<loc>济西</loc>委於<state>赵</state>。已得讲於<state>魏</state>，至<role>公子</role>延，因<p>犀首</p>属行而⟦◈攻⟧<state>赵</state>。"
+    },
+    {
+      "pid": "62",
+      "text": "“兵伤於谯石，而遇⟦◈败⟧於阳马，而重魏，则以叶、蔡委於魏。已得讲於赵，则劫魏，不为割。困则使太后弟穰侯为和，嬴则兼欺舅与母。",
+      "annotated": "“兵伤於谯石，而遇⟦◈败⟧於阳<bio>马</bio>，而重<state>魏</state>，则以叶、<state>蔡</state>委於<state>魏</state>。已得讲於<state>赵</state>，则劫<state>魏</state>，不为割。困则使太后<role>弟</role><p name=\"魏冉\">穰侯</p>为和，嬴则兼欺<role>舅</role>与<role>母</role>。"
+    },
+    {
+      "pid": "63",
+      "text": "“適燕者曰‘以胶东’，適赵者曰‘以济西’，適魏者曰‘以叶、蔡’，適楚者曰‘以塞鄳阸戹’，適齐者曰‘以宋’，此必令言如循环，用兵如刺蜚，母不能制，舅不能约。“龙贾之⟦◈战⟧，岸门之⟦◈战⟧，封陵之⟦◈战⟧，高商之⟦◈战⟧，赵庄之⟦◈战⟧，秦之所杀三晋之民数百万，今其生者皆死秦之孤也。西河之外，上雒之地，三川晋国之祸，三晋之半，秦祸如此其大也。而燕、赵之秦者，皆以争事秦说其主，此臣之所大患也。”",
+      "annotated": "“適<state>燕</state>者曰‘以<loc>胶东</loc>’，適<state>赵</state>者曰‘以<loc>济西</loc>’，適<state>魏</state>者曰‘以叶、<state>蔡</state>’，適<state>楚</state>者曰‘以塞鄳阸戹’，適<state>齐</state>者曰‘以<state>宋</state>’，此必令言如循环，用兵如<vact>刺</vact>蜚，<role>母</role>不能制，<role>舅</role>不能约。“<p>龙贾</p>之⟦◈战⟧，<loc>岸门</loc>之⟦◈战⟧，<loc>封陵</loc>之⟦◈战⟧，<loc>高商</loc>之⟦◈战⟧，<loc>赵庄</loc>之⟦◈战⟧，<state>秦</state>之所<vact>杀</vact>三<state>晋</state>之<role>民</role><qty>数百万</qty>，今其生者皆死<state>秦</state>之孤也。<loc>西河</loc>之外，上雒之地，<loc>三川</loc><state>晋国</state>之祸，三<state>晋</state>之半，<state>秦</state>祸如此其大也。而<state>燕</state>、<state>赵</state>之<state>秦</state>者，皆以争事<state>秦</state>说其主，此<role>臣</role>之所大患也。”"
+    },
+    {
+      "pid": "64",
+      "text": "燕昭王不行。苏代复重於燕。",
+      "annotated": "<p>燕昭王</p>不行。<p>苏代</p>复重於<state>燕</state>。"
+    },
+    {
+      "pid": "65",
+      "text": "燕使约诸侯从亲如苏秦时，或从或不，而天下由此宗苏氏之从约。代、厉皆以寿死，名显诸侯。 ::: 太史公曰",
+      "annotated": "<state>燕</state>使约<role>诸侯</role>从亲如<p>苏秦</p>时，或从或不，而<idea>天下</idea>由此宗<clan>苏氏</clan>之从约。<p name=\"苏代\">代</p>、<p name=\"苏厉\">厉</p>皆以寿死，名显<role>诸侯</role>。 ::: 太史公曰"
+    },
+    {
+      "pid": "66",
+      "text": "太史公曰：苏秦兄弟三人，皆游说诸侯以显名，其术长於权变。而苏秦被反间以死，天下共笑之，讳学其术。然世言苏秦多异，异时事有类之者皆附之苏秦。夫苏秦起闾阎，连六国从亲，此其智有过人者。吾故列其行事，次其时序，毋令独蒙恶声焉。 ::: ::: 赞",
+      "annotated": "<p>太史公</p>曰：<p>苏秦</p><role>兄</role><role>弟</role>三人，皆游说<role>诸侯</role>以显名，其术长於权变。而<p>苏秦</p>被反间以死，<idea>天下</idea>共笑之，讳学其术。然世言<p>苏秦</p>多异，异时事有类之者皆附之<p>苏秦</p>。夫<p>苏秦</p>起闾阎，连<sys>六国</sys>从亲，此其智有过人者。吾故列其行事，次其时序，毋令独蒙恶声焉。 ::: ::: 赞"
+    },
+    {
+      "pid": "67",
+      "text": "季子周人，师事鬼谷。 揣摩既就，阴符伏读。 合从离衡，佩印者六。 天王除道，家人扶服。 贤哉代、厉，继荣党族。 :::",
+      "annotated": "<p name=\"苏秦\">季子</p><state>周</state>人，师事<loc>鬼谷</loc>。 揣摩既就，阴<art>符</art>伏读。 <sys>合从</sys>离衡，佩<art>印</art>者六。 <off>天王</off>除道，家人扶服。 贤哉<p name=\"苏代\">代</p>、<p name=\"苏厉\">厉</p>，继荣党族。 :::"
+    }
+  ]
+}

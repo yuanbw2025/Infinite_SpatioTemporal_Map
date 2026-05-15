@@ -1,0 +1,736 @@
+{
+  "work": "史记",
+  "chapter": "吴太伯世家",
+  "chapter_file": "031_吴太伯世家",
+  "chapter_type": "世家",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 145,
+  "paragraph_count_done": 145,
+  "paragraphs": [
+    {
+      "pid": "1.1",
+      "text": "吴太伯，太伯弟仲雍，皆周太王之子，而王季历之兄也。",
+      "annotated": "<p>吴太伯</p>，<p>太伯</p><role>弟</role><p>仲雍</p>，皆<state>周</state><p>太王</p>之<role>子</role>，而<p>王季历</p>之<role>兄</role>也。"
+    },
+    {
+      "pid": "1.2",
+      "text": "季历贤，而有圣子昌，太王欲立季历以及昌，於是太佰、仲雍二人乃奔荆蛮，文身断发，示不可用，以避季历。",
+      "annotated": "<p>季历</p>贤，而有圣<role>子</role><p>昌</p>，<p>太王</p>欲<vpol>立</vpol><p>季历</p>以及<p>昌</p>，於是<p>太佰</p>、<p>仲雍</p><qty>二人</qty>乃奔<tribe>荆蛮</tribe>，文身断发，示不可用，以避<p>季历</p>。"
+    },
+    {
+      "pid": "1.3",
+      "text": "季历果立，是为王季，而昌为文王。",
+      "annotated": "<p>季历</p>果立，是为<p>王季</p>，而<p>昌</p>为<p>文王</p>。"
+    },
+    {
+      "pid": "1.4",
+      "text": "太伯之奔荆蛮，自号句吴。荆蛮义之，从而归之千馀家，立为吴太伯。",
+      "annotated": "<p>太伯</p>之奔<tribe>荆蛮</tribe>，自号<loc>句吴</loc>。<tribe>荆蛮</tribe>义之，从而归之<qty>千馀家</qty>，<vpol>立</vpol>为<p>吴太伯</p>。"
+    },
+    {
+      "pid": "2.1",
+      "text": "太伯卒，无子，弟仲雍立，是为吴仲雍。",
+      "annotated": "<p>太伯</p>卒，无<role>子</role>，<role>弟</role><p>仲雍</p>立，是为<p>吴仲雍</p>。"
+    },
+    {
+      "pid": "2.2",
+      "text": "仲雍卒，子季简立。季简卒，子叔达立。叔达卒，子周章立。",
+      "annotated": "<p>仲雍</p>卒，<role>子</role><p>季简</p>立。<p>季简</p>卒，<role>子</role><p>叔达</p>立。<p>叔达</p>卒，<role>子</role><p>周章</p>立。"
+    },
+    {
+      "pid": "2.3",
+      "text": "是时周武王克殷，求太伯、仲雍之後，得周章。周章已君吴，因而封之。",
+      "annotated": "是时<state>周</state><p>武王</p>克<state>殷</state>，求<p>太伯</p>、<p>仲雍</p>之後，得<p>周章</p>。<p>周章</p>已君<state>吴</state>，因而封之。"
+    },
+    {
+      "pid": "2.4",
+      "text": "乃封周章弟虞仲於周之北故夏虚，是为虞仲，列为诸侯。",
+      "annotated": "乃<vpol>封</vpol><p>周章</p><role>弟</role><p>虞仲</p>於<state>周</state>之北故<loc>夏虚</loc>，是为<p>虞仲</p>，列为<role>诸侯</role>。"
+    },
+    {
+      "pid": "3.1",
+      "text": "周章卒，子熊遂立，熊遂卒，子柯相立。柯相卒，子彊鸠夷立。彊鸠夷卒，子馀桥疑吾立。馀桥疑吾卒，子柯卢立。柯卢卒，子周繇立。周繇卒，子屈羽立。屈羽卒，子夷吾立。夷吾卒，子禽处立。禽处卒，子转立。转卒，子颇高立。颇高卒，子句卑立。",
+      "annotated": "<p>周章</p>卒，<role>子</role><p>熊遂</p>立，<p>熊遂</p>卒，<role>子</role><p>柯相</p>立。<p>柯相</p>卒，<role>子</role><p>彊鸠夷</p>立。<p>彊鸠夷</p>卒，<role>子</role><p>馀桥疑吾</p>立。<p>馀桥疑吾</p>卒，<role>子</role><p>柯卢</p>立。<p>柯卢</p>卒，<role>子</role><p>周繇</p>立。<p>周繇</p>卒，<role>子</role><p>屈羽</p>立。<p>屈羽</p>卒，<role>子</role><p>夷吾</p>立。<p>夷吾</p>卒，<role>子</role><p>禽处</p>立。<p>禽处</p>卒，<role>子</role><p>转</p>立。<p>转</p>卒，<role>子</role><p>颇高</p>立。<p>颇高</p>卒，<role>子</role><p>句卑</p>立。"
+    },
+    {
+      "pid": "3.2",
+      "text": "是时晋献公⟦◈灭⟧周北虞公，以开晋伐虢也。",
+      "annotated": "是时<p>晋献公</p>⟦◈灭⟧<state>周</state>北<p>虞公</p>，以开<state>晋</state>伐<state>虢</state>也。"
+    },
+    {
+      "pid": "3.3",
+      "text": "句卑卒，子去齐立。去齐卒，子寿梦立。寿梦立而吴始益大，称王。",
+      "annotated": "<p>句卑</p>卒，<role>子</role><p>去齐</p>立。<p>去齐</p>卒，<role>子</role><p>寿梦</p>立。<p>寿梦</p>立而<state>吴</state>始益大，称<off>王</off>。"
+    },
+    {
+      "pid": "4.1",
+      "text": "自太伯作吴，五世而武王克殷，封其後为二：其一虞，在中国；其一吴，在夷蛮。",
+      "annotated": "自<p>太伯</p>作<state>吴</state>，<qty>五世</qty>而<p>武王</p>克<state>殷</state>，封其後为二：其一<state>虞</state>，在<loc>中国</loc>；其一<state>吴</state>，在<tribe>夷蛮</tribe>。"
+    },
+    {
+      "pid": "4.2",
+      "text": "十二世而晋⟦◈灭⟧中国之虞。中国之虞⟦◈灭⟧二世，而夷蛮之吴兴。",
+      "annotated": "<qty>十二世</qty>而<state>晋</state>⟦◈灭⟧<loc>中国</loc>之<state>虞</state>。<loc>中国</loc>之<state>虞</state>⟦◈灭⟧<qty>二世</qty>，而<tribe>夷蛮</tribe>之<state>吴</state>兴。"
+    },
+    {
+      "pid": "4.3",
+      "text": "大凡从太伯至寿梦十九世。",
+      "annotated": "大凡从<p>太伯</p>至<p>寿梦</p><qty>十九世</qty>。"
+    },
+    {
+      "pid": "5.1",
+      "text": "王寿梦二年，楚之亡大夫申公巫臣怨楚将子反而奔晋，自晋使吴，教吴用兵乘车，令其子为吴行人，吴於是始通於中国。吴伐楚。",
+      "annotated": "<off>王</off><p>寿梦</p><time>二年</time>，<state>楚</state>之亡<role>大夫</role><p>申公巫臣</p>怨<state>楚</state><off>将</off><p>子反</p>而奔<state>晋</state>，自<state>晋</state>使<state>吴</state>，教<state>吴</state>用兵<art>乘车</art>，令其<role>子</role>为<state>吴</state><off>行人</off>，<state>吴</state>於是始通於<loc>中国</loc>。<state>吴</state>伐<state>楚</state>。"
+    },
+    {
+      "pid": "5.2",
+      "text": "十六年，楚共王伐吴，至衡山。",
+      "annotated": "<time>十六年</time>，<p>楚共王</p>伐<state>吴</state>，至<loc>衡山</loc>。"
+    },
+    {
+      "pid": "6.1",
+      "text": "二十五年，王寿梦卒。寿梦有子四人，长曰诸樊，次曰馀祭，次曰馀眛，次曰季札。",
+      "annotated": "<time>二十五年</time>，<off>王</off><p>寿梦</p>卒。<p>寿梦</p>有<role>子</role><qty>四人</qty>，长曰<p>诸樊</p>，次曰<p>馀祭</p>，次曰<p>馀眛</p>，次曰<p>季札</p>。"
+    },
+    {
+      "pid": "6.2",
+      "text": "季札贤，而寿梦欲立之，季札让不可，於是乃立长子诸樊，摄行事当国。",
+      "annotated": "<p>季札</p>贤，而<p>寿梦</p>欲立之，<p>季札</p>让不可，於是乃立<role>长子</role><p>诸樊</p>，摄行事当国。"
+    },
+    {
+      "pid": "7.1",
+      "text": "王诸樊元年，诸樊已除丧，让位季札。",
+      "annotated": "<off>王</off><p>诸樊</p><time>元年</time>，<p>诸樊</p>已除丧，让位<p>季札</p>。"
+    },
+    {
+      "pid": "7.2",
+      "text": "季札谢曰： “曹宣公之卒也，诸侯与曹人不义曹君，将立子臧，子臧去之，以成曹君，君子曰‘能守节矣’。君义嗣，谁敢干君！有国，非吾节也。札虽不材，原附於子臧之义。”",
+      "annotated": "<p>季札</p>谢曰： “<p>曹宣公</p>之卒也，<role>诸侯</role>与<state>曹</state>人不义<state>曹</state>君，将<vpol>立</vpol><p>子臧</p>，<p>子臧</p>去之，以成<state>曹</state>君，<idea>君子</idea>曰‘能守节矣’。君义嗣，谁敢干君！有国，非吾节也。<p name=\"季札\">札</p>虽不材，原附於<p>子臧</p>之义。”"
+    },
+    {
+      "pid": "7.3",
+      "text": "吴人固立季札，季札弃其室而耕，乃舍之。",
+      "annotated": "<state>吴</state>人固<vpol>立</vpol><p>季札</p>，<p>季札</p>弃其室而耕，乃舍之。"
+    },
+    {
+      "pid": "7.4",
+      "text": "秋，吴伐楚，楚败我师。四年，晋平公初立。",
+      "annotated": "<time>秋</time>，<state>吴</state>伐<state>楚</state>，<state>楚</state>败我师。<time>四年</time>，<p>晋平公</p>初立。"
+    },
+    {
+      "pid": "8.1",
+      "text": "十三年，王诸樊卒。有命授弟馀祭，欲传以次，必致国於季札而止，以称先王寿梦之意，且嘉季札之义，兄弟皆欲致国，令以渐至焉。",
+      "annotated": "<time>十三年</time>，<off>王</off><p>诸樊</p>卒。有命授<role>弟</role><p>馀祭</p>，欲传以次，必致国於<p>季札</p>而止，以称<role>先王</role><p>寿梦</p>之意，且嘉<p>季札</p>之义，<role>兄弟</role>皆欲致国，令以渐至焉。"
+    },
+    {
+      "pid": "8.2",
+      "text": "季札封於延陵，故号曰延陵季子。",
+      "annotated": "<p>季札</p>封於<loc>延陵</loc>，故号曰<p>延陵季子</p>。"
+    },
+    {
+      "pid": "9.1",
+      "text": "王馀祭三年，齐相庆封有罪，自齐来奔吴。吴予庆封硃方之县，以为奉邑，以女妻之，富於在齐。",
+      "annotated": "<off>王</off><p>馀祭</p><time>三年</time>，<state>齐</state><off>相</off><p>庆封</p>有罪，自<state>齐</state>来奔<state>吴</state>。<state>吴</state>予<p>庆封</p><loc>硃方</loc>之县，以为奉邑，以<role>女</role>妻之，富於在<state>齐</state>。"
+    },
+    {
+      "pid": "10.1",
+      "text": "四年，吴使季札聘於鲁，请观周乐。",
+      "annotated": "<time>四年</time>，<state>吴</state>使<p>季札</p>聘於<state>鲁</state>，请观<book>周乐</book>。"
+    },
+    {
+      "pid": "10.2",
+      "text": "为歌周南、召南。曰： “美哉，始基之矣，犹未也。然勤而不怨。”",
+      "annotated": "为歌<book>周南</book>、<book>召南</book>。曰： “美哉，始基之矣，犹未也。然勤而不怨。”"
+    },
+    {
+      "pid": "10.3",
+      "text": "歌邶、鄘、卫。曰： “美哉，渊乎，忧而不困者也。吾闻卫康叔、武公之德如是，是其卫风乎？”",
+      "annotated": "歌<book>邶</book>、<book>鄘</book>、<book>卫</book>。曰： “美哉，渊乎，忧而不困者也。吾闻<p>卫康叔</p>、<p>武公</p>之德如是，是其<book>卫风</book>乎？”"
+    },
+    {
+      "pid": "10.4",
+      "text": "歌王。曰： “美哉，思而不惧，其周之东乎？”",
+      "annotated": "歌<book>王</book>。曰： “美哉，思而不惧，其<state>周</state>之东乎？”"
+    },
+    {
+      "pid": "10.5",
+      "text": "歌郑。曰： “其细已甚，民不堪也，是其先亡乎？”",
+      "annotated": "歌<book>郑</book>。曰： “其细已甚，民不堪也，是其先亡乎？”"
+    },
+    {
+      "pid": "10.6",
+      "text": "歌齐。曰： “美哉，泱泱乎大风也哉。表东海者，其太公乎？国未可量也。”",
+      "annotated": "歌<book>齐</book>。曰： “美哉，泱泱乎大风也哉。表<loc>东海</loc>者，其<p>太公</p>乎？国未可量也。”"
+    },
+    {
+      "pid": "10.7",
+      "text": "歌豳。曰： “美哉，荡荡乎，乐而不淫，其周公之东乎？”",
+      "annotated": "歌<book>豳</book>。曰： “美哉，荡荡乎，<idiom>乐而不淫</idiom>，其<p>周公</p>之东乎？”"
+    },
+    {
+      "pid": "10.8",
+      "text": "歌秦。曰： “此之谓夏声。夫能夏则大，大之至也，其周之旧乎？”",
+      "annotated": "歌<book>秦</book>。曰： “此之谓夏声。夫能夏则大，大之至也，其<state>周</state>之旧乎？”"
+    },
+    {
+      "pid": "10.9",
+      "text": "歌魏。曰： “美哉，沨沨乎，大而，俭而易，行以德辅，此则盟主也。”",
+      "annotated": "歌<book>魏</book>。曰： “美哉，沨沨乎，大而，俭而易，行以德辅，此则<role>盟主</role>也。”"
+    },
+    {
+      "pid": "10.10",
+      "text": "歌唐。曰： “思深哉，其有陶唐氏之遗风乎？不然，何忧之远也？非令德之後，谁能若是！”",
+      "annotated": "歌<book>唐</book>。曰： “思深哉，其有<clan>陶唐氏</clan>之遗风乎？不然，何忧之远也？非令德之後，谁能若是！”"
+    },
+    {
+      "pid": "10.11",
+      "text": "歌陈。曰： “国无主，其能久乎？”",
+      "annotated": "歌<book>陈</book>。曰： “国无主，其能久乎？”"
+    },
+    {
+      "pid": "10.12",
+      "text": "自郐以下，无讥焉。",
+      "annotated": "自<state>郐</state>以下，无讥焉。"
+    },
+    {
+      "pid": "10.13",
+      "text": "歌小雅。曰： “美哉，思而不贰，怨而不言，其周德之衰乎？犹有先王之遗民也。”",
+      "annotated": "歌<book>小雅</book>。曰： “美哉，思而不贰，怨而不言，其<state>周</state>德之衰乎？犹有<role>先王</role>之遗民也。”"
+    },
+    {
+      "pid": "10.14",
+      "text": "歌大雅。曰： “广哉，熙熙乎，曲而有直体，其文王之德乎？”",
+      "annotated": "歌<book>大雅</book>。曰： “广哉，熙熙乎，曲而有直体，其<p>文王</p>之德乎？”"
+    },
+    {
+      "pid": "10.15",
+      "text": "歌颂。曰： “至矣哉，直而不倨，曲而不诎，近而不偪，远而不携，而迁不淫，复而不厌，哀而不愁，乐而不荒，用而不匮，广而不宣，施而不费，取而不贪，处而不厎，行而不流。五声和，八风平，节有度，守有序，盛德之所同也。”",
+      "annotated": "歌<book>颂</book>。曰： “至矣哉，直而不倨，曲而不诎，近而不偪，远而不携，而迁不淫，复而不厌，哀而不愁，乐而不荒，用而不匮，广而不宣，施而不费，取而不贪，处而不厎，行而不流。<sys>五声</sys>和，八风平，节有度，守有序，盛德之所同也。”"
+    },
+    {
+      "pid": "10.16",
+      "text": "见舞象箾、南籥者，曰： “美哉，犹有感。”",
+      "annotated": "见舞<sys>象箾</sys>、<sys>南籥</sys>者，曰： “美哉，犹有感。”"
+    },
+    {
+      "pid": "10.17",
+      "text": "见舞大武，曰： “美哉，周之盛也其若此乎？”",
+      "annotated": "见舞<sys>大武</sys>，曰： “美哉，<state>周</state>之盛也其若此乎？”"
+    },
+    {
+      "pid": "10.18",
+      "text": "见舞韶护者，曰： “圣人之弘也，犹有惭德，圣人之难也！”",
+      "annotated": "见舞<sys>韶护</sys>者，曰： “<idea>圣人</idea>之弘也，犹有惭德，<idea>圣人</idea>之难也！”"
+    },
+    {
+      "pid": "10.19",
+      "text": "见舞大夏，曰： “美哉，勤而不德！非禹其谁能及之？”",
+      "annotated": "见舞<sys>大夏</sys>，曰： “美哉，勤而不德！非<p>禹</p>其谁能及之？”"
+    },
+    {
+      "pid": "10.20",
+      "text": "见舞招箾，曰： “德至矣哉，大矣，如天之无不焘也，如地之无不载也，虽甚盛德，无以加矣。观止矣，若有他乐，吾不敢观。”",
+      "annotated": "见舞<sys>招箾</sys>，曰： “德至矣哉，大矣，如天之无不焘也，如地之无不载也，虽甚盛德，无以加矣。观止矣，若有他乐，吾不敢观。”"
+    },
+    {
+      "pid": "11.1",
+      "text": "去鲁，遂使齐。说晏平仲曰： “子速纳邑与政。无邑无政，乃免於难。齐国之政将有所归；未得所归，难未息也。”",
+      "annotated": "去<state>鲁</state>，遂使<state>齐</state>。说<p>晏平仲</p>曰： “子速纳邑与政。无邑无政，乃免於难。<state>齐</state>国之政将有所归；未得所归，难未息也。”"
+    },
+    {
+      "pid": "11.2",
+      "text": "故晏子因陈桓子以纳政与邑，是以免於栾高之难。",
+      "annotated": "故<p>晏子</p>因<p>陈桓子</p>以纳政与邑，是以免於<p>栾高</p>之难。"
+    },
+    {
+      "pid": "12.1",
+      "text": "去齐，使於郑。见子产，如旧交。谓子产曰： “郑之执政侈，难将至矣，政必及子。子为政，慎以礼。不然，郑国将败。”",
+      "annotated": "去<state>齐</state>，使於<state>郑</state>。见<p>子产</p>，如旧交。谓<p>子产</p>曰： “<state>郑</state>之<off>执政</off>侈，难将至矣，政必及子。子为政，慎以礼。不然，<state>郑</state>国将败。”"
+    },
+    {
+      "pid": "12.2",
+      "text": "去郑，適卫。说蘧瑗、史狗、史、公子荆、公叔发、公子朝曰： “卫多君子，未有患也。”",
+      "annotated": "去<state>郑</state>，適<state>卫</state>。说<p>蘧瑗</p>、<p>史狗</p>、<p>史</p>、<p>公子荆</p>、<p>公叔发</p>、<p>公子朝</p>曰： “<state>卫</state>多<idea>君子</idea>，未有患也。”"
+    },
+    {
+      "pid": "13.1",
+      "text": "自卫如晋，将舍於宿，闻锺声，曰： “异哉！吾闻之，辩而不德，必加於戮。夫子获罪於君以在此，惧犹不足，而又可以畔乎？夫子之在此，犹燕之巢于幕也。君在殡而可以乐乎？”",
+      "annotated": "自<state>卫</state>如<state>晋</state>，将舍於<loc>宿</loc>，闻锺声，曰： “异哉！吾闻之，辩而不德，必加於<vact>戮</vact>。夫子获罪於君以在此，惧犹不足，而又可以畔乎？夫子之在此，犹<bio>燕</bio>之巢于幕也。君在殡而可以乐乎？”"
+    },
+    {
+      "pid": "13.2",
+      "text": "遂去之。文子闻之，终身不听琴瑟。",
+      "annotated": "遂去之。<p>文子</p>闻之，终身不听<art>琴瑟</art>。"
+    },
+    {
+      "pid": "14.1",
+      "text": "適晋，说赵文子、韩宣子、魏献子曰： “晋国其萃於三家乎！”",
+      "annotated": "適<state>晋</state>，说<p>赵文子</p>、<p>韩宣子</p>、<p>魏献子</p>曰： “<state>晋</state>国其萃於<qty>三家</qty>乎！”"
+    },
+    {
+      "pid": "14.2",
+      "text": "将去，谓叔向曰： “吾子勉之！君侈而多良，大夫皆富，政将在三家。吾子直，必思自免於难。”",
+      "annotated": "将去，谓<p>叔向</p>曰： “吾子勉之！君侈而多良，<role>大夫</role>皆富，政将在<qty>三家</qty>。吾子直，必思自免於难。”"
+    },
+    {
+      "pid": "15.1",
+      "text": "季札之初使，北过徐君。徐君好季札剑，口弗敢言。季札心知之，为使上国，未献。",
+      "annotated": "<p>季札</p>之初使，北过<state>徐</state>君。<state>徐</state>君好<p>季札</p><art>剑</art>，口弗敢言。<p>季札</p>心知之，为使上国，未献。"
+    },
+    {
+      "pid": "15.2",
+      "text": "还至徐，徐君已死，於是乃解其宝剑，系之徐君冢树而去。",
+      "annotated": "还至<state>徐</state>，<state>徐</state>君已死，於是乃解其<art>宝剑</art>，系之<state>徐</state>君冢树而去。"
+    },
+    {
+      "pid": "15.3",
+      "text": "从者曰： “徐君已死，尚谁予乎？”",
+      "annotated": "从者曰： “<state>徐</state>君已死，尚谁予乎？”"
+    },
+    {
+      "pid": "15.4",
+      "text": "季子曰： “不然。始吾心已许之，岂以死倍吾心哉！”",
+      "annotated": "<p name=\"季札\">季子</p>曰： “不然。始吾心已许之，岂以死倍吾心哉！”"
+    },
+    {
+      "pid": "16.1",
+      "text": "七年，楚公子围弑其王夹敖而代立，是为灵王。",
+      "annotated": "<time>七年</time>，<state>楚</state><p name=\"楚灵王\">公子围</p><vact>弑</vact>其<off>王</off><p name=\"楚郏敖\">夹敖</p>而代立，是为<p name=\"楚灵王\">灵王</p>。"
+    },
+    {
+      "pid": "16.2",
+      "text": "十年，楚灵王会诸侯而以伐吴之硃方，以诛齐庆封。吴亦攻楚，取三邑而去。",
+      "annotated": "<time>十年</time>，<p>楚灵王</p>会<role>诸侯</role>而以伐<state>吴</state>之<loc>硃方</loc>，以<vact>诛</vact><state>齐</state><p>庆封</p>。<state>吴</state>亦攻<state>楚</state>，取三邑而去。"
+    },
+    {
+      "pid": "16.3",
+      "text": "十一年，楚伐吴，至雩娄。十二年，楚复来伐，次於乾谿，楚师败走。",
+      "annotated": "<time>十一年</time>，<state>楚</state>伐<state>吴</state>，至<loc>雩娄</loc>。<time>十二年</time>，<state>楚</state>复来伐，次於<loc>乾谿</loc>，<state>楚</state>师败走。"
+    },
+    {
+      "pid": "17.1",
+      "text": "十七年，王馀祭卒，弟馀眛立。",
+      "annotated": "<time>十七年</time>，<off>王</off><p>馀祭</p>卒，<role>弟</role><p>馀眛</p>立。"
+    },
+    {
+      "pid": "17.2",
+      "text": "王馀眛二年，楚公子弃疾弑其君灵王代立焉。",
+      "annotated": "<off>王</off><p>馀眛</p><time>二年</time>，<state>楚</state><p name=\"楚平王\">公子弃疾</p><vact>弑</vact>其君<p name=\"楚灵王\">灵王</p>代立焉。"
+    },
+    {
+      "pid": "18.1",
+      "text": "四年，王馀眛卒，欲授弟季札。季札让，逃去。",
+      "annotated": "<time>四年</time>，<off>王</off><p>馀眛</p>卒，欲授<role>弟</role><p>季札</p>。<p>季札</p>让，逃去。"
+    },
+    {
+      "pid": "18.2",
+      "text": "於是吴人曰： “先王有命，兄卒弟代立，必致季子。季子今逃位，则王馀眛後立。今卒，其子当代。”",
+      "annotated": "於是<state>吴</state>人曰： “<role>先王</role>有命，<role>兄</role>卒<role>弟</role>代立，必致<p name=\"季札\">季子</p>。<p name=\"季札\">季子</p>今逃位，则<off>王</off><p>馀眛</p>後立。今卒，其<role>子</role>当代。”"
+    },
+    {
+      "pid": "18.3",
+      "text": "乃立王馀眛之子僚为王。",
+      "annotated": "乃<vpol>立</vpol><off>王</off><p>馀眛</p>之<role>子</role><p name=\"姬僚\">僚</p>为<off>王</off>。"
+    },
+    {
+      "pid": "19.1",
+      "text": "王僚二年，公子光伐楚，败而亡王舟。光惧，袭楚，复得王舟而还。",
+      "annotated": "<off>王</off><p name=\"姬僚\">僚</p><time>二年</time>，<p>公子光</p>伐<state>楚</state>，败而亡<art>王舟</art>。<p name=\"姬光\">光</p>惧，袭<state>楚</state>，复得<art>王舟</art>而还。"
+    },
+    {
+      "pid": "20.1",
+      "text": "五年，楚之亡臣伍子胥来奔，公子光客之。",
+      "annotated": "<time>五年</time>，<state>楚</state>之亡臣<p>伍子胥</p>来奔，<p>公子光</p>客之。"
+    },
+    {
+      "pid": "20.2",
+      "text": "公子光者，王诸樊之子也。常以为吾父兄弟四人，当传至季子。季子即不受国，光父先立。即不传季子，光当立。阴纳贤士，欲以袭王僚。",
+      "annotated": "<p>公子光</p>者，<off>王</off><p>诸樊</p>之<role>子</role>也。常以为吾<role>父</role><role>兄弟</role><qty>四人</qty>，当传至<p name=\"季札\">季子</p>。<p name=\"季札\">季子</p>即不受国，<p name=\"姬光\">光</p><role>父</role>先立。即不传<p name=\"季札\">季子</p>，<p name=\"姬光\">光</p>当立。阴纳<role>贤士</role>，欲以袭<off>王</off><p name=\"姬僚\">僚</p>。"
+    },
+    {
+      "pid": "21.1",
+      "text": "八年，吴使公子光伐楚，败楚师，迎楚故太子建母於居巢以归。因北伐，败陈、蔡之师。",
+      "annotated": "<time>八年</time>，<state>吴</state>使<p>公子光</p>伐<state>楚</state>，败<state>楚</state>师，迎<state>楚</state>故<role>太子</role><p name=\"太子建\">建</p><role>母</role>於<loc>居巢</loc>以归。因北伐，败<state>陈</state>、<state>蔡</state>之师。"
+    },
+    {
+      "pid": "21.2",
+      "text": "九年，公子光伐楚，拔居巢、锺离。",
+      "annotated": "<time>九年</time>，<p>公子光</p>伐<state>楚</state>，拔<loc>居巢</loc>、<loc>锺离</loc>。"
+    },
+    {
+      "pid": "21.3",
+      "text": "初，楚边邑卑梁氏之处女与吴边邑之女争桑，二女家怒相⟦◈灭⟧，两国边邑长闻之，怒而相攻，⟦◈灭⟧吴之边邑。吴王怒，故遂伐楚，取两都而去。",
+      "annotated": "初，<state>楚</state>边邑<loc>卑梁</loc>氏之处<role>女</role>与<state>吴</state>边邑之<role>女</role>争<bio>桑</bio>，二<role>女</role>家怒相⟦◈灭⟧，两国边邑长闻之，怒而相攻，⟦◈灭⟧<state>吴</state>之边邑。<state>吴</state><off>王</off>怒，故遂伐<state>楚</state>，取两都而去。"
+    },
+    {
+      "pid": "22.1",
+      "text": "伍子胥之初奔吴，说吴王僚以伐楚之利。",
+      "annotated": "<p>伍子胥</p>之初奔<state>吴</state>，说<state>吴</state><off>王</off><p name=\"姬僚\">僚</p>以伐<state>楚</state>之利。"
+    },
+    {
+      "pid": "22.2",
+      "text": "公子光曰： “胥之父兄为僇於楚，欲自报其仇耳。未见其利。”",
+      "annotated": "<p>公子光</p>曰： “<p name=\"伍子胥\">胥</p>之<role>父兄</role>为僇於<state>楚</state>，欲自报其仇耳。未见其利。”"
+    },
+    {
+      "pid": "22.3",
+      "text": "於是伍员知光有他志，乃求勇士专诸，见之光。光喜，乃客伍子胥。子胥退而耕於野，以待专诸之事。",
+      "annotated": "於是<p>伍员</p>知<p name=\"姬光\">光</p>有他志，乃求<role>勇士</role><p>专诸</p>，见之<p name=\"姬光\">光</p>。<p name=\"姬光\">光</p>喜，乃客<p>伍子胥</p>。<p name=\"伍子胥\">子胥</p>退而耕於野，以待<p>专诸</p>之事。"
+    },
+    {
+      "pid": "23.1",
+      "text": "十二年冬，楚平王卒。",
+      "annotated": "<time>十二年冬</time>，<p>楚平王</p>卒。"
+    },
+    {
+      "pid": "23.2",
+      "text": "十三年春，吴欲因楚丧而伐之，使公子盖馀、烛庸以兵围楚之六、灊。使季札於晋，以观诸侯之变。楚发兵绝吴兵後，吴兵不得还。",
+      "annotated": "<time>十三年春</time>，<state>吴</state>欲因<state>楚</state>丧而伐之，使<p>公子盖馀</p>、<p>烛庸</p>以兵围<state>楚</state>之<loc>六</loc>、<loc>灊</loc>。使<p>季札</p>於<state>晋</state>，以观<role>诸侯</role>之变。<state>楚</state>发兵绝<state>吴</state>兵後，<state>吴</state>兵不得还。"
+    },
+    {
+      "pid": "23.3",
+      "text": "於是吴公子光曰： “此时不可失也。”",
+      "annotated": "於是<p>吴公子光</p>曰： “此时不可失也。”"
+    },
+    {
+      "pid": "23.4",
+      "text": "告专诸曰： “不索何获！我真王嗣，当立，吾欲求之。季子虽至，不吾废也。”",
+      "annotated": "告<p>专诸</p>曰： “不索何获！我真<off>王</off>嗣，当立，吾欲求之。<p name=\"季札\">季子</p>虽至，不吾废也。”"
+    },
+    {
+      "pid": "23.5",
+      "text": "专诸曰： “王僚可杀也。母老子弱，而两公子将兵攻楚，楚绝其路。方今吴外困於楚，而内空无骨鲠之臣，是无柰我何。”",
+      "annotated": "<p>专诸</p>曰： “<off>王</off><p name=\"姬僚\">僚</p>可<vact>杀</vact>也。<role>母</role>老<role>子</role>弱，而两<p>公子</p>将兵攻<state>楚</state>，<state>楚</state>绝其路。方今<state>吴</state>外困於<state>楚</state>，而内空无<idiom>骨鲠之臣</idiom>，是无柰我何。”"
+    },
+    {
+      "pid": "23.6",
+      "text": "光曰： “我身，子之身也。”",
+      "annotated": "<p name=\"姬光\">光</p>曰： “我身，子之身也。”"
+    },
+    {
+      "pid": "23.7",
+      "text": "四月丙子，光伏甲士於窟室，而谒王僚饮。王僚使兵陈於道，自王宫至光之家，门阶户席，皆王僚之亲也，人夹持铍。",
+      "annotated": "<time>四月丙子</time>，<p name=\"姬光\">光</p>伏<role>甲士</role>於窟室，而谒<off>王</off><p name=\"姬僚\">僚</p>饮。<off>王</off><p name=\"姬僚\">僚</p>使兵陈於道，自王宫至<p name=\"姬光\">光</p>之家，门阶户席，皆<off>王</off><p name=\"姬僚\">僚</p>之亲也，人夹持<art>铍</art>。"
+    },
+    {
+      "pid": "23.8",
+      "text": "公子光详为足疾，入于窟室，使专诸置匕首於炙鱼之中以进食。手匕首刺王僚，铍交於匈，遂弑王僚。",
+      "annotated": "<p>公子光</p>详为足疾，入于窟室，使<p>专诸</p>置<art>匕首</art>於炙鱼之中以进食。手<art>匕首</art>刺<off>王</off><p name=\"姬僚\">僚</p>，<art>铍</art>交於匈，遂<vact>弑</vact><off>王</off><p name=\"姬僚\">僚</p>。"
+    },
+    {
+      "pid": "23.9",
+      "text": "公子光竟代立为王，是为吴王阖庐。阖庐乃以专诸子为卿。",
+      "annotated": "<p>公子光</p>竟代<vpol>立</vpol>为<off>王</off>，是为<state>吴</state><off>王</off><p>阖庐</p>。<p>阖庐</p>乃以<p>专诸</p><role>子</role>为<off>卿</off>。"
+    },
+    {
+      "pid": "24.1",
+      "text": "季子至，曰： “苟先君无废祀，民人无废主，社稷有奉，乃吾君也。吾敢谁怨乎？哀死事生，以待天命。非我生乱，立者从之，先人之道也。”",
+      "annotated": "<p name=\"季札\">季子</p>至，曰： “苟先君无废祀，<role>民人</role>无废主，<sys>社稷</sys>有奉，乃吾君也。吾敢谁怨乎？哀死事生，以待<idea>天命</idea>。非我生乱，立者从之，先人之道也。”"
+    },
+    {
+      "pid": "24.2",
+      "text": "复命，哭僚墓，复位而待。",
+      "annotated": "复命，哭<p name=\"姬僚\">僚</p>墓，复位而待。"
+    },
+    {
+      "pid": "24.3",
+      "text": "吴公子烛庸、盖馀二人将兵遇围於楚者，闻公子光弑王僚自立，乃以其兵降楚，楚封之於舒。",
+      "annotated": "<state>吴</state><off>公子</off><p>烛庸</p>、<p>盖馀</p><qty>二人</qty>将兵遇围於<state>楚</state>者，闻<p>公子光</p><vact>弑</vact><off>王</off><p name=\"姬僚\">僚</p><vpol>自立</vpol>，乃以其兵降<state>楚</state>，<state>楚</state>封之於<loc>舒</loc>。"
+    },
+    {
+      "pid": "25.1",
+      "text": "王阖庐元年，举伍子胥为行人而与谋国事。楚诛伯州犁，其孙伯嚭亡奔吴，吴以为大夫。",
+      "annotated": "<off>王</off><p>阖庐</p><time>元年</time>，举<p>伍子胥</p>为<off>行人</off>而与谋国事。<state>楚</state><vact>诛</vact><p>伯州犁</p>，其<role>孙</role><p>伯嚭</p>亡奔<state>吴</state>，<state>吴</state>以为<role>大夫</role>。"
+    },
+    {
+      "pid": "26.1",
+      "text": "三年，吴王阖庐与子胥、伯嚭将兵伐楚，拔舒，杀吴亡将二公子。光谋欲入郢，将军孙武曰： “民劳，未可，待之。”",
+      "annotated": "<time>三年</time>，<state>吴</state><off>王</off><p>阖庐</p>与<p name=\"伍子胥\">子胥</p>、<p>伯嚭</p>将兵伐<state>楚</state>，拔<loc>舒</loc>，<vact>杀</vact><state>吴</state>亡<off>将</off>二<p>公子</p>。<p name=\"姬光\">光</p>谋欲入<loc>郢</loc>，<off>将军</off><p>孙武</p>曰： “民劳，未可，待之。”"
+    },
+    {
+      "pid": "26.2",
+      "text": "四年，伐楚，取六与灊。",
+      "annotated": "<time>四年</time>，伐<state>楚</state>，取<loc>六</loc>与<loc>灊</loc>。"
+    },
+    {
+      "pid": "26.3",
+      "text": "五年，伐越，败之。",
+      "annotated": "<time>五年</time>，伐<state>越</state>，败之。"
+    },
+    {
+      "pid": "26.4",
+      "text": "六年，楚使子常囊瓦伐吴。迎而击之，大败楚军於豫章，取楚之居巢而还。",
+      "annotated": "<time>六年</time>，<state>楚</state>使<p>子常囊瓦</p>伐<state>吴</state>。迎而击之，大败<state>楚</state>军於<loc>豫章</loc>，取<state>楚</state>之<loc>居巢</loc>而还。"
+    },
+    {
+      "pid": "27.1",
+      "text": "九年，吴王阖庐请伍子胥、孙武曰： “始子之言郢未可入，今果如何？”",
+      "annotated": "<time>九年</time>，<state>吴</state><off>王</off><p>阖庐</p>请<p>伍子胥</p>、<p>孙武</p>曰： “始子之言<loc>郢</loc>未可入，今果如何？”"
+    },
+    {
+      "pid": "27.2",
+      "text": "二子对曰： “楚将子常贪，而唐、蔡皆怨之。王必欲大伐，必得唐、蔡乃可。”",
+      "annotated": "二子对曰： “<state>楚</state><off>将</off><p>子常</p>贪，而<state>唐</state>、<state>蔡</state>皆怨之。<off>王</off>必欲大伐，必得<state>唐</state>、<state>蔡</state>乃可。”"
+    },
+    {
+      "pid": "27.3",
+      "text": "阖庐从之，悉兴师，与唐、蔡西伐楚，至於汉水。楚亦发兵拒吴，夹水陈。",
+      "annotated": "<p>阖庐</p>从之，悉兴师，与<state>唐</state>、<state>蔡</state>西伐<state>楚</state>，至於<loc>汉水</loc>。<state>楚</state>亦发兵拒<state>吴</state>，夹水陈。"
+    },
+    {
+      "pid": "27.4",
+      "text": "吴王阖庐弟夫欲战，阖庐弗许。夫曰： “王已属臣兵，兵以利为上，尚何待焉？”",
+      "annotated": "<state>吴</state><off>王</off><p>阖庐</p><role>弟</role><p name=\"夫概\">夫</p>欲战，<p>阖庐</p>弗许。<p name=\"夫概\">夫</p>曰： “<off>王</off>已属臣兵，兵以利为上，尚何待焉？”"
+    },
+    {
+      "pid": "27.5",
+      "text": "遂以其部五千人袭冒楚，楚兵大败，走。",
+      "annotated": "遂以其部<qty>五千人</qty>袭冒<state>楚</state>，<state>楚</state>兵大败，走。"
+    },
+    {
+      "pid": "27.6",
+      "text": "於是吴王遂纵兵追之。比至郢，五战，楚五败。楚昭王亡出郢，奔郧。郧公弟欲弑昭王，昭王与郧公奔随。",
+      "annotated": "於是<off>吴王</off>遂纵兵追之。比至<loc>郢</loc>，五战，<state>楚</state>五败。<p>楚昭王</p>亡出<loc>郢</loc>，奔<state>郧</state>。<state>郧</state>公<role>弟</role>欲<vact>弑</vact><p name=\"楚昭王\">昭王</p>，<p name=\"楚昭王\">昭王</p>与<state>郧</state>公奔<state>随</state>。"
+    },
+    {
+      "pid": "27.7",
+      "text": "而吴兵遂入郢。子胥、伯嚭鞭平王之尸以报父雠。",
+      "annotated": "而<state>吴</state>兵遂入<loc>郢</loc>。<p name=\"伍子胥\">子胥</p>、<p>伯嚭</p>鞭<p name=\"楚平王\">平王</p>之尸以报<role>父</role>雠。"
+    },
+    {
+      "pid": "28.1",
+      "text": "十年春，越闻吴王之在郢，国空，乃伐吴。吴使别兵击越。",
+      "annotated": "<time>十年春</time>，<state>越</state>闻<off>吴王</off>之在<loc>郢</loc>，国空，乃伐<state>吴</state>。<state>吴</state>使别兵击<state>越</state>。"
+    },
+    {
+      "pid": "28.2",
+      "text": "楚告急秦，秦遣兵救楚击吴，吴师败。",
+      "annotated": "<state>楚</state>告急<state>秦</state>，<state>秦</state>遣兵救<state>楚</state>击<state>吴</state>，<state>吴</state>师败。"
+    },
+    {
+      "pid": "28.3",
+      "text": "阖庐弟夫见秦越交败吴，吴王留楚不去，夫亡归吴而自立为吴王。阖庐闻之，乃引兵归，攻夫。夫败奔楚。",
+      "annotated": "<p>阖庐</p><role>弟</role><p name=\"夫概\">夫</p>见<state>秦</state><state>越</state>交败<state>吴</state>，<off>吴王</off>留<state>楚</state>不去，<p name=\"夫概\">夫</p>亡归<state>吴</state>而<vpol>自立</vpol>为<off>吴王</off>。<p>阖庐</p>闻之，乃引兵归，攻<p name=\"夫概\">夫</p>。<p name=\"夫概\">夫</p>败奔<state>楚</state>。"
+    },
+    {
+      "pid": "28.4",
+      "text": "楚昭王乃得以九月复入郢，而封夫於堂谿，为堂谿氏。",
+      "annotated": "<p>楚昭王</p>乃得以<time>九月</time>复入<loc>郢</loc>，而<vpol>封</vpol><p name=\"夫概\">夫</p>於<loc>堂谿</loc>，为<clan>堂谿氏</clan>。"
+    },
+    {
+      "pid": "28.5",
+      "text": "十一年，吴王使太子夫差伐楚，取番。楚恐而去郢徙鄀。",
+      "annotated": "<time>十一年</time>，<off>吴王</off>使<role>太子</role><p>夫差</p>伐<state>楚</state>，取<loc>番</loc>。<state>楚</state>恐而去<loc>郢</loc>徙<loc>鄀</loc>。"
+    },
+    {
+      "pid": "29.1",
+      "text": "十五年，孔子相鲁。",
+      "annotated": "<time>十五年</time>，<p>孔子</p>相<state>鲁</state>。"
+    },
+    {
+      "pid": "30.1",
+      "text": "十九年夏，吴伐越，越王句践迎击之槜李。越使死士挑战，三行造吴师，呼，自刭。吴师观之，越因伐吴，败之姑苏，伤吴王阖庐指，军卻七里。",
+      "annotated": "<time>十九年夏</time>，<state>吴</state>伐<state>越</state>，<state>越</state><off>王</off><p>句践</p>迎击之<loc>槜李</loc>。<state>越</state>使<role>死士</role>挑战，<sys>三行</sys>造<state>吴</state>师，呼，自刭。<state>吴</state>师观之，<state>越</state>因伐<state>吴</state>，败之<loc>姑苏</loc>，伤<state>吴</state><off>王</off><p>阖庐</p>指，军卻<qty>七里</qty>。"
+    },
+    {
+      "pid": "30.2",
+      "text": "吴王病伤而死。阖庐使立太子夫差，谓曰： “尔而忘句践杀汝父乎？”",
+      "annotated": "<off>吴王</off>病伤而死。<p>阖庐</p>使<vpol>立</vpol><role>太子</role><p>夫差</p>，谓曰： “尔而忘<p>句践</p><vact>杀</vact>汝<role>父</role>乎？”"
+    },
+    {
+      "pid": "30.3",
+      "text": "对曰： “不敢！”",
+      "annotated": "对曰： “不敢！”"
+    },
+    {
+      "pid": "30.4",
+      "text": "三年，乃报越。",
+      "annotated": "<time>三年</time>，乃报<state>越</state>。"
+    },
+    {
+      "pid": "31.1",
+      "text": "王夫差元年，以大夫伯嚭为太宰。习战射，常以报越为志。",
+      "annotated": "<off>王</off><p>夫差</p><time>元年</time>，以<role>大夫</role><p>伯嚭</p>为<off>太宰</off>。习战射，常以报<state>越</state>为志。"
+    },
+    {
+      "pid": "31.2",
+      "text": "二年，吴王悉精兵以伐越，败之夫椒，报姑苏也。",
+      "annotated": "<time>二年</time>，<off>吴王</off>悉精兵以伐<state>越</state>，败之<loc>夫椒</loc>，报<loc>姑苏</loc>也。"
+    },
+    {
+      "pid": "31.3",
+      "text": "越王句践乃以甲兵五千人栖於会稽，使大夫种因吴太宰嚭而行成，请委国为臣妾。",
+      "annotated": "<state>越</state><off>王</off><p>句践</p>乃以<art>甲兵</art><qty>五千人</qty>栖於<loc>会稽</loc>，使<role>大夫</role><p>种</p>因<state>吴</state><off>太宰</off><p>嚭</p>而行成，请委国为<role>臣妾</role>。"
+    },
+    {
+      "pid": "32.1",
+      "text": "吴王将许之，伍子胥谏曰： “昔有过氏杀斟灌以伐斟寻，⟦◈灭⟧夏后帝相。帝相之妃后缗方娠，逃於有仍而生少康。少康为有仍牧正。有过又欲杀少康，少康奔有虞。有虞思夏德，於是妻之以二女而邑之於纶，有田一成，有众一旅。後遂收夏众，抚其官职。使人诱之，遂⟦◈灭⟧有过氏，复禹之绩，祀夏配天，不失旧物。今吴不如有过之彊，而句践大於少康。今不因此而⟦◈灭⟧之，又将之，不亦难乎！且句践为人能辛苦，今不⟦◈灭⟧，後必悔之。”",
+      "annotated": "<off>吴王</off>将许之，<p>伍子胥</p>谏曰： “昔<clan>有过氏</clan><vact>杀</vact><clan>斟灌</clan>以伐<clan>斟寻</clan>，⟦◈灭⟧<state>夏</state><p>后帝相</p>。<p>帝相</p>之妃<p>后缗</p>方娠，逃於<clan>有仍</clan>而生<p>少康</p>。<p>少康</p>为<clan>有仍</clan><off>牧正</off>。<clan>有过</clan>又欲<vact>杀</vact><p>少康</p>，<p>少康</p>奔<clan>有虞</clan>。<clan>有虞</clan>思<state>夏</state>德，於是妻之以二女而邑之於<loc>纶</loc>，有田一成，有众一旅。後遂收<state>夏</state>众，抚其官职。使人诱之，遂⟦◈灭⟧<clan>有过氏</clan>，复<p>禹</p>之绩，祀<state>夏</state>配天，不失旧物。今<state>吴</state>不如<clan>有过</clan>之彊，而<p>句践</p>大於<p>少康</p>。今不因此而⟦◈灭⟧之，又将之，不亦难乎！且<p>句践</p>为人能辛苦，今不⟦◈灭⟧，後必悔之。”"
+    },
+    {
+      "pid": "32.2",
+      "text": "吴王不听，听太宰嚭，卒许越平，与盟而罢兵去。",
+      "annotated": "<off>吴王</off>不听，听<off>太宰</off><p>嚭</p>，卒许<state>越</state>平，与盟而罢兵去。"
+    },
+    {
+      "pid": "33.1",
+      "text": "七年，吴王夫差闻齐景公死而大臣争宠，新君弱，乃兴师北伐齐。",
+      "annotated": "<time>七年</time>，<state>吴</state><off>王</off><p>夫差</p>闻<p>齐景公</p>死而<role>大臣</role>争宠，新君弱，乃兴师北伐<state>齐</state>。"
+    },
+    {
+      "pid": "33.2",
+      "text": "子胥谏曰： “越王句践食不重味，衣不重采，吊死问疾，且欲有所用其众。此人不死，必为吴患。今越在腹心疾而王不先，而务齐，不亦谬乎！”",
+      "annotated": "<p name=\"伍子胥\">子胥</p>谏曰： “<state>越</state><off>王</off><p>句践</p>食不重味，衣不重采，吊死问疾，且欲有所用其众。此人不死，必为<state>吴</state>患。今<state>越</state>在腹心疾而<off>王</off>不先，而务<state>齐</state>，不亦谬乎！”"
+    },
+    {
+      "pid": "33.3",
+      "text": "吴王不听，遂北伐齐，败齐师於艾陵。至缯，召鲁哀公而徵百牢。季康子使子贡以周礼说太宰嚭，乃得止。因留略地於齐鲁之南。",
+      "annotated": "<off>吴王</off>不听，遂北伐<state>齐</state>，败<state>齐</state>师於<loc>艾陵</loc>。至<loc>缯</loc>，召<p>鲁哀公</p>而徵百牢。<p>季康子</p>使<p>子贡</p>以<book>周礼</book>说<off>太宰</off><p>嚭</p>，乃得止。因留略地於<state>齐</state><state>鲁</state>之南。"
+    },
+    {
+      "pid": "33.4",
+      "text": "九年，为驺伐鲁，至与鲁盟乃去。",
+      "annotated": "<time>九年</time>，为<state>驺</state>伐<state>鲁</state>，至与<state>鲁</state>盟乃去。"
+    },
+    {
+      "pid": "33.5",
+      "text": "十年，因伐齐而归。",
+      "annotated": "<time>十年</time>，因伐<state>齐</state>而归。"
+    },
+    {
+      "pid": "33.6",
+      "text": "十一年，复北伐齐。",
+      "annotated": "<time>十一年</time>，复北伐<state>齐</state>。"
+    },
+    {
+      "pid": "34.1",
+      "text": "越王句践率其众以朝吴，厚献遗之，吴王喜。",
+      "annotated": "<state>越</state><off>王</off><p>句践</p>率其众以<vpol>朝</vpol><state>吴</state>，厚献遗之，<off>吴王</off>喜。"
+    },
+    {
+      "pid": "34.2",
+      "text": "唯子胥惧，曰： “是弃吴也。”",
+      "annotated": "唯<p name=\"伍子胥\">子胥</p>惧，曰： “是弃<state>吴</state>也。”"
+    },
+    {
+      "pid": "34.3",
+      "text": "谏曰： “越在腹心，今得志於齐，犹石田，无所用。且盘庚之诰有颠越勿遗，商之以兴。”",
+      "annotated": "谏曰： “<state>越</state>在腹心，今得志於<state>齐</state>，犹石田，无所用。且<p>盘庚</p>之诰有颠越勿遗，<state>商</state>之以兴。”"
+    },
+    {
+      "pid": "34.4",
+      "text": "吴王不听，使子胥於齐，子胥属其子於齐鲍氏，还报吴王。吴王闻之，大怒，赐子胥属镂之剑以死。",
+      "annotated": "<off>吴王</off>不听，使<p name=\"伍子胥\">子胥</p>於<state>齐</state>，<p name=\"伍子胥\">子胥</p>属其<role>子</role>於<state>齐</state><p>鲍氏</p>，还报<off>吴王</off>。<off>吴王</off>闻之，大怒，赐<p name=\"伍子胥\">子胥</p><art>属镂之剑</art>以死。"
+    },
+    {
+      "pid": "34.5",
+      "text": "将死，曰： “树吾墓上以梓，令可为器。抉吾眼置之吴东门，以观越之⟦◈灭⟧吴也。”",
+      "annotated": "将死，曰： “树吾墓上以<bio>梓</bio>，令可为<art>器</art>。抉吾眼置之<loc>吴东门</loc>，以观<state>越</state>之⟦◈灭⟧<state>吴</state>也。”"
+    },
+    {
+      "pid": "35.1",
+      "text": "齐鲍氏弑齐悼公。吴王闻之，哭於军门外三日，乃从海上攻齐。齐人败吴，吴王乃引兵归。",
+      "annotated": "<state>齐</state><p>鲍氏</p><vact>弑</vact><p>齐悼公</p>。<off>吴王</off>闻之，哭於军门外<time name=\"时长\">三日</time>，乃从<loc>海</loc>上攻<state>齐</state>。<state>齐</state>人败<state>吴</state>，<off>吴王</off>乃引兵归。"
+    },
+    {
+      "pid": "36.1",
+      "text": "十三年，吴召鲁、卫之君会於橐皋。",
+      "annotated": "<time>十三年</time>，<state>吴</state>召<state>鲁</state>、<state>卫</state>之君会於<loc>橐皋</loc>。"
+    },
+    {
+      "pid": "37.1",
+      "text": "十四年春，吴王北会诸侯於黄池，欲霸中国以全周室。",
+      "annotated": "<time>十四年春</time>，<off>吴王</off>北会<role>诸侯</role>於<loc>黄池</loc>，欲霸<loc>中国</loc>以全<state>周</state>室。"
+    },
+    {
+      "pid": "37.2",
+      "text": "六月子，越王句践伐吴。乙酉，越五千人与吴战。丙戌，虏吴太子友。丁亥，入吴。",
+      "annotated": "<time>六月子</time>，<state>越</state><off>王</off><p>句践</p>伐<state>吴</state>。<time>乙酉</time>，<state>越</state><qty>五千人</qty>与<state>吴</state>战。<time>丙戌</time>，虏<state>吴</state><role>太子</role><p name=\"太子友\">友</p>。<time>丁亥</time>，入<state>吴</state>。"
+    },
+    {
+      "pid": "37.3",
+      "text": "吴人告败於王夫差，夫差恶其闻也。或泄其语，吴王怒，斩七人於幕下。",
+      "annotated": "<state>吴</state>人告败於<off>王</off><p>夫差</p>，<p>夫差</p>恶其闻也。或泄其语，<off>吴王</off>怒，<vact>斩</vact><qty>七人</qty>於幕下。"
+    },
+    {
+      "pid": "37.4",
+      "text": "七月辛丑，吴王与晋定公争长。吴王曰： “於周室我为长。”",
+      "annotated": "<time>七月辛丑</time>，<off>吴王</off>与<p>晋定公</p>争长。<off>吴王</off>曰： “於<state>周</state>室我为长。”"
+    },
+    {
+      "pid": "37.5",
+      "text": "晋定公曰： “於姬姓我为伯。”",
+      "annotated": "<p>晋定公</p>曰： “於<clan>姬姓</clan>我为伯。”"
+    },
+    {
+      "pid": "37.6",
+      "text": "赵鞅怒，将伐吴，乃长晋定公。",
+      "annotated": "<p>赵鞅</p>怒，将伐<state>吴</state>，乃长<p>晋定公</p>。"
+    },
+    {
+      "pid": "37.7",
+      "text": "吴王已盟，与晋别，欲伐宋。太宰嚭曰： “可胜而不能居也。”",
+      "annotated": "<off>吴王</off>已盟，与<state>晋</state>别，欲伐<state>宋</state>。<off>太宰</off><p>嚭</p>曰： “可胜而不能居也。”"
+    },
+    {
+      "pid": "37.8",
+      "text": "乃引兵归国。国亡太子，内空，王居外久，士皆罢敝，於是乃使厚币以与越平。",
+      "annotated": "乃引兵归国。国亡<role>太子</role>，内空，<off>王</off>居外久，<role>士</role>皆罢敝，於是乃使厚币以与<state>越</state>平。"
+    },
+    {
+      "pid": "38.1",
+      "text": "十五年，齐田常杀简公。",
+      "annotated": "<time>十五年</time>，<state>齐</state><p>田常</p><vact>杀</vact><p name=\"齐简公\">简公</p>。"
+    },
+    {
+      "pid": "39.1",
+      "text": "十八年，越益彊。越王句践率兵伐败吴师於笠泽。楚⟦◈灭⟧陈。",
+      "annotated": "<time>十八年</time>，<state>越</state>益彊。<state>越</state><off>王</off><p>句践</p>率兵伐败<state>吴</state>师於<loc>笠泽</loc>。<state>楚</state>⟦◈灭⟧<state>陈</state>。"
+    },
+    {
+      "pid": "40.1",
+      "text": "二十年，越王句践复伐吴。",
+      "annotated": "<time>二十年</time>，<state>越</state><off>王</off><p>句践</p>复伐<state>吴</state>。"
+    },
+    {
+      "pid": "40.2",
+      "text": "二十一年，遂围吴。",
+      "annotated": "<time>二十一年</time>，遂围<state>吴</state>。"
+    },
+    {
+      "pid": "40.3",
+      "text": "二十三年十一月丁卯，越败吴。",
+      "annotated": "<time>二十三年十一月丁卯</time>，<state>越</state>败<state>吴</state>。"
+    },
+    {
+      "pid": "41.1",
+      "text": "越王句践欲迁吴王夫差於甬东，予百家居之。",
+      "annotated": "<state>越</state><off>王</off><p>句践</p>欲迁<state>吴</state><off>王</off><p>夫差</p>於<loc>甬东</loc>，予<qty>百家</qty>居之。"
+    },
+    {
+      "pid": "41.2",
+      "text": "吴王曰： “孤老矣，不能事君王也。吾悔不用子胥之言，自令陷此。”",
+      "annotated": "<off>吴王</off>曰： “孤老矣，不能事<role>君王</role>也。吾悔不用<p name=\"伍子胥\">子胥</p>之言，自令陷此。”"
+    },
+    {
+      "pid": "41.3",
+      "text": "遂自刭死。",
+      "annotated": "遂自<law>刭</law>死。"
+    },
+    {
+      "pid": "41.4",
+      "text": "越王⟦◈灭⟧吴，诛太宰嚭，以为不忠，而归。 ::: 太史公曰",
+      "annotated": "<state>越</state><off>王</off>⟦◈灭⟧<state>吴</state>，<vact>诛</vact><off>太宰</off><p name=\"伯嚭\">嚭</p>，以为不忠，而归。 ::: 太史公曰"
+    },
+    {
+      "pid": "42.1",
+      "text": "太史公曰：孔子言“太伯可谓至德矣，三以天下让，民无得而称焉”。余读春秋古文，乃知中国之虞与荆蛮句吴兄弟也。延陵季子之仁心，慕义无穷，见微而知清浊。呜呼，又何其闳览博物君子也！ ::: ::: 赞",
+      "annotated": "<p>太史公</p>曰：<p>孔子</p>言“<p>太伯</p>可谓至德矣，三以<idea>天下</idea>让，民无得而称焉”。余读<book>春秋古文</book>，乃知<loc>中国</loc>之<state>虞</state>与<tribe>荆蛮</tribe><loc>句吴</loc><role>兄弟</role>也。<p>延陵季子</p>之仁心，慕义无穷，<idiom name=\"见微知著\">见微而知清浊</idiom>。呜呼，又何其闳览博物<idea>君子</idea>也！ ::: ::: 赞"
+    },
+    {
+      "pid": "42.2",
+      "text": "太伯作吴，高让雄图。 周章受国，别封於虞。 寿梦初霸，始用兵车。 三子递立，延陵不居。 光既篡位，是称阖闾。 王僚见杀，贼由专诸。 夫差轻越，取败姑苏。 甬东之耻，空惭伍胥。 :::",
+      "annotated": "<p>太伯</p>作<state>吴</state>，高让雄图。 <p>周章</p>受国，别封於<state>虞</state>。 <p>寿梦</p>初霸，始用<art>兵车</art>。 <qty>三子</qty>递立，<loc>延陵</loc>不居。 <p name=\"姬光\">光</p>既篡位，是称<p>阖闾</p>。 <off>王</off><p name=\"姬僚\">僚</p>见<vact>杀</vact>，贼由<p>专诸</p>。 <p>夫差</p>轻<state>越</state>，取败<loc>姑苏</loc>。 <loc>甬东</loc>之耻，空惭<p name=\"伍子胥\">伍胥</p>。 :::"
+    }
+  ]
+}

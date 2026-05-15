@@ -1,0 +1,136 @@
+{
+  "work": "史记",
+  "chapter": "春申君列传",
+  "chapter_file": "078_春申君列传",
+  "chapter_type": "列传",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 25,
+  "paragraph_count_done": 25,
+  "paragraphs": [
+    {
+      "pid": "1",
+      "text": "春申君者，楚人也，名歇，姓黄氏。游学博闻，事楚顷襄王。顷襄王以歇为辩，使於秦。秦昭王使白起⟦◈攻⟧韩、魏，⟦◈败⟧之於华阳，禽魏将芒卯，韩、魏服而事秦。秦昭王方令白起与韩、魏共⟦◈伐⟧楚，未行，而楚使黄歇適至於秦，闻秦之计。当是之时，秦已前使白起⟦◈攻⟧楚，⟦◈取⟧巫、黔中之郡，⟦◈拔⟧鄢郢，东至竟陵，楚顷襄王东徙治於陈县。黄歇见楚怀王之为秦所诱而入朝，遂见欺，留死於秦。顷襄王，其子也，秦轻之，恐壹举兵而⟦◈灭⟧楚。歇乃上书说秦昭王曰：",
+      "annotated": "<p>春申君</p>者，<state>楚</state>人也，名<p name=\"黄歇\">歇</p>，姓<clan>黄氏</clan>。游学博闻，事<p>楚顷襄王</p>。<p name=\"楚顷襄王\">顷襄王</p>以<p name=\"黄歇\">歇</p>为辩，使於<state>秦</state>。<p>秦昭王</p>使<p>白起</p>⟦◈攻⟧<state>韩</state>、<state>魏</state>，⟦◈败⟧之於<loc>华阳</loc>，<vact>禽</vact><state>魏</state>将<p>芒卯</p>，<state>韩</state>、<state>魏</state>服而事<state>秦</state>。<p>秦昭王</p>方令<p>白起</p>与<state>韩</state>、<state>魏</state>共⟦◈伐⟧<state>楚</state>，未行，而<state>楚</state>使<p>黄歇</p>適至於<state>秦</state>，闻<state>秦</state>之计。当是之时，<state>秦</state>已前使<p>白起</p>⟦◈攻⟧<state>楚</state>，⟦◈取⟧<loc>巫</loc>、<loc>黔中</loc>之郡，⟦◈拔⟧<loc>鄢</loc><loc>郢</loc>，东至<loc>竟陵</loc>，<p>楚顷襄王</p>东徙治於<state>陈</state>县。<p>黄歇</p>见<p>楚怀王</p>之为<state>秦</state>所诱而入朝，遂见欺，留死於<state>秦</state>。<p name=\"楚顷襄王\">顷襄王</p>，其<role>子</role>也，<state>秦</state>轻之，恐壹举兵而⟦◈灭⟧<state>楚</state>。<p name=\"黄歇\">歇</p>乃上书说<p>秦昭王</p>曰："
+    },
+    {
+      "pid": "2",
+      "text": "天下莫彊於秦、楚。今闻大王欲⟦◈伐⟧楚，此犹两虎相与斗。两虎相与斗而驽犬受其弊，不如善楚。臣请言其说：臣闻物至则反，冬夏是也；致至则危，累釭是也。今大国之地，遍天下有其二垂，此从生民已来，万乘之地未尝有也。先帝文王、庄王之身，三世不妄接地於齐，以绝从亲之要。今王使盛桥守事於韩，盛桥以其地入秦，是王不用甲，不信威，而得百里之地。王可谓能矣。王又举甲而⟦◈攻⟧魏，杜大梁之门，举河内，⟦◈拔⟧燕、酸枣、虚、桃，入邢，魏之兵云翔而不敢捄。王之功亦多矣。王休甲息众，二年而後复之；又并蒲、衍、首、垣，以临仁、平丘，黄、济阳婴城而魏氏服；王又割濮",
+      "annotated": "<idea>天下</idea>莫彊於<state>秦</state>、<state>楚</state>。今闻大王欲⟦◈伐⟧<state>楚</state>，此犹两虎相与斗。两虎相与斗而驽犬受其弊，不如善<state>楚</state>。<role>臣</role>请言其说：<role>臣</role>闻物至则反，冬夏是也；致至则危，累釭是也。今大国之地，遍<idea>天下</idea>有其二垂，此从生<role>民</role>已来，<qty>万乘</qty>之地未尝有也。<role>先帝</role><p>文王</p>、<p>庄王</p>之身，<time name=\"时长\">三世</time>不妄接地於<state>齐</state>，以绝从亲之要。<role>今王</role>使<p>盛桥</p>守事於<state>韩</state>，<p>盛桥</p>以其地入<state>秦</state>，是王不用<art>甲</art>，不信威，而得<qty>百里</qty>之地。王可谓能矣。王又举<art>甲</art>而⟦◈攻⟧<state>魏</state>，杜<loc>大梁</loc>之门，举<loc>河内</loc>，⟦◈拔⟧<state>燕</state>、<loc>酸枣</loc>、<loc>虚</loc>、<loc>桃</loc>，入<loc>邢</loc>，<state>魏</state>之兵云翔而不敢捄。王之功亦多矣。王休<art>甲</art>息众，<time name=\"时长\">二年</time>而後复之；又并<loc>蒲</loc>、<loc>衍</loc>、<loc>首</loc>、<loc>垣</loc>，以临<loc>仁</loc>、<loc>平丘</loc>，<loc>黄</loc>、<loc>济阳</loc>婴城而<state>魏</state>氏服；王又割<loc>濮</loc>"
+    },
+    {
+      "pid": "3",
+      "text": "之北，注齐秦之要，绝楚赵之脊，天下五合六聚而不敢救。王之威亦单矣。",
+      "annotated": "之北，注齐<state>秦</state>之要，绝<state>楚</state>赵之脊，<idea>天下</idea>五合六聚而不敢救。王之威亦单矣。"
+    },
+    {
+      "pid": "4",
+      "text": "王若能持功守威，绌⟦◈攻⟧⟦◈取⟧之心而肥仁义之地，使无後患，三王不足四，五伯不足六也。王若负人徒之众，仗兵革之彊，乘毁魏之威，而欲以力臣天下之主，臣恐其有後患也。诗曰“靡不有初，鲜⟦◈克⟧有终”。易曰“狐涉水，濡其尾”。此言始之易，终之难也。何以知其然也？昔智氏见⟦◈伐⟧赵之利而不知榆次之祸，吴见⟦◈伐⟧齐之便而不知干隧之⟦◈败⟧。此二国者，非无大功也，没利於前而易患於後也。吴之信越也，从而⟦◈伐⟧齐，既胜齐人於艾陵，还为越王禽三渚之浦。智氏之信韩、魏也，从而⟦◈伐⟧赵，⟦◈攻⟧晋阳城，胜有日矣，韩、魏叛之，杀智伯瑶於凿台之下。今王妒楚之不毁也，而忘毁楚之彊韩、魏也，臣为王虑而不⟦◈取⟧也。",
+      "annotated": "王若能持功守威，绌⟦◈攻⟧⟦◈取⟧之心而肥<idea>仁义</idea>之地，使无後患，<state>三王</state>不足四，<sys>五伯</sys>不足六也。王若负人徒之众，仗<art>兵革</art>之彊，乘毁<state>魏</state>之威，而欲以力<role>臣</role><idea>天下</idea>之主，<role>臣</role>恐其有後患也。诗曰“靡不有初，鲜⟦◈克⟧有终”。易曰“狐涉水，濡其尾”。此言始之易，终之难也。何以知其然也？昔<clan>智氏</clan>见⟦◈伐⟧<state>赵</state>之利而不知<loc>榆次</loc>之祸，<state>吴</state>见⟦◈伐⟧<state>齐</state>之便而不知<loc>干隧</loc>之⟦◈败⟧。此二国者，非无大功也，没利於前而易患於後也。<state>吴</state>之信<state>越</state>也，从而⟦◈伐⟧<state>齐</state>，既<law>胜</law><state>齐</state>人於<loc>艾陵</loc>，还为<off>越王</off><vact>禽</vact><loc>三渚之浦</loc>。<clan>智氏</clan>之信<state>韩</state>、<state>魏</state>也，从而⟦◈伐⟧<state>赵</state>，⟦◈攻⟧<state>晋</state><loc>阳城</loc>，胜有日矣，<state>韩</state>、<state>魏</state>叛之，<vact>杀</vact><p>智伯瑶</p>於<loc>凿台</loc>之下。<role>今王</role>妒<state>楚</state>之不毁也，而忘毁<state>楚</state>之彊<state>韩</state>、<state>魏</state>也，<role>臣</role>为王虑而不⟦◈取⟧也。"
+    },
+    {
+      "pid": "5",
+      "text": "诗曰“大武远宅而不涉”。从此观之，楚国，援也；邻国，敌也。诗云“趯趯",
+      "annotated": "诗曰“<sys>大武</sys>远宅而不涉”。从此观之，<state>楚</state>国，援也；邻国，敌也。诗云“趯趯"
+    },
+    {
+      "pid": "6",
+      "text": "免，还犬获之。他人有心，余忖度之”。今王中道而信韩、魏之善王也，此正吴之信越也。臣闻之，敌不可假，时不可失。臣恐韩、魏卑辞除患而实欲欺大国也。何则？王无重世之德於韩、魏，而有累世之怨焉。夫韩、魏父子兄弟接踵而死於秦者将十世矣。本国残，社稷坏，宗庙毁。刳腹绝肠，折颈摺颐，首身分离，暴骸骨於草泽，头颅僵仆，相望於境，父子老弱系脰束手为群虏者相及於路。鬼神孤伤，无所血食。人民不聊生，族类离散，流亡为仆妾者，盈满海内矣。故韩、魏之不亡，秦社稷之忧也，今王资之与⟦◈攻⟧楚，不亦过乎！",
+      "annotated": "免，还犬获之。他人有心，余忖度之”。<role>今王</role>中道而信<state>韩</state>、<state>魏</state>之善王也，此正<state>吴</state>之信<state>越</state>也。<role>臣</role>闻之，敌不可假，时不可失。<role>臣</role>恐<state>韩</state>、<state>魏</state>卑辞除患而实欲欺大国也。何则？王无重世之德於<state>韩</state>、<state>魏</state>，而有累世之怨焉。夫<state>韩</state>、<state>魏</state><role>父</role>子<role>兄</role>弟接踵而死於<state>秦</state>者将<time name=\"时长\">十世</time>矣。本国残，<sys>社稷</sys>坏，<sys>宗庙</sys>毁。刳腹绝肠，折颈摺颐，首身分离，暴骸骨於草泽，头颅僵仆，相望於境，<role>父</role>子老弱系脰束手为<role>群虏</role>者相及於路。<idea>鬼神</idea>孤伤，无所<sys>血食</sys>。<role>人民</role>不聊生，<vact>族</vact>类离散，流亡为<role>仆妾</role>者，盈满海内矣。故<state>韩</state>、<state>魏</state>之不亡，<state>秦</state><sys>社稷</sys>之忧也，<role>今王</role>资之与⟦◈攻⟧<state>楚</state>，不亦过乎！"
+    },
+    {
+      "pid": "7",
+      "text": "且王⟦◈攻⟧楚将恶出兵？王将借路於仇雠之韩、魏乎？兵出之日而王忧其不返也，是王以兵资於仇雠之韩、魏也。王若不借路於仇雠之韩、魏，必⟦◈攻⟧随水右壤。随水右壤，此皆广川大水，山林谿谷，不食之地也，王虽有之，不为得地。是王有毁楚之名而无得地之实也。",
+      "annotated": "且王⟦◈攻⟧<state>楚</state>将恶出兵？王将借路於仇雠之<state>韩</state>、<state>魏</state>乎？兵出之日而王忧其不返也，是王以兵资於仇雠之<state>韩</state>、<state>魏</state>也。王若不借路於仇雠之<state>韩</state>、<state>魏</state>，必⟦◈攻⟧<loc>随水</loc>右壤。<loc>随水</loc>右壤，此皆<loc>广川</loc>大水，山林谿谷，不食之地也，王虽有之，不为得地。是王有毁<state>楚</state>之名而无得地之实也。"
+    },
+    {
+      "pid": "8",
+      "text": "且王⟦◈攻⟧楚之日，四国必悉起兵以应王。秦、楚之兵构而不离，魏氏将出而⟦◈攻⟧留、方与、铚、湖陵、砀、萧、相，故宋必尽。齐人南面⟦◈攻⟧楚，泗上必举。此皆平原四达，膏腴之地，而使独⟦◈攻⟧。王⟦◈破⟧楚以肥韩、魏於中国而劲齐。韩、魏之彊，足以校於秦。齐南以泗水为境，东负海，北倚河，而无後患，天下之国莫彊於齐、魏，齐、魏得地葆利而详事下吏，一年之後，为帝未能，其於禁王之为帝有馀矣。",
+      "annotated": "且王⟦◈攻⟧<state>楚</state>之日，四国必悉起兵以应王。<state>秦</state>、<state>楚</state>之兵构而不离，<state>魏</state>氏将出而⟦◈攻⟧<loc>留</loc>、<loc>方与</loc>、<loc>铚</loc>、<loc>湖陵</loc>、<loc>砀</loc>、<loc>萧</loc>、<loc>相</loc>，故<state>宋</state>必尽。<state>齐</state>人南面⟦◈攻⟧<state>楚</state>，<loc>泗上</loc>必举。此皆<loc>平原</loc>四达，膏腴之地，而使独⟦◈攻⟧。王⟦◈破⟧<state>楚</state>以肥<state>韩</state>、<state>魏</state>於<loc>中国</loc>而劲<state>齐</state>。<state>韩</state>、<state>魏</state>之彊，足以校於<state>秦</state>。<state>齐</state>南以<loc>泗水</loc>为境，东负<loc>海</loc>，北倚<loc>河</loc>，而无後患，<idea>天下</idea>之国莫彊於<state>齐</state>、<state>魏</state>，<state>齐</state>、<state>魏</state>得地葆利而详事下吏，<time name=\"时长\">一年</time>之後，为帝未能，其於禁王之为帝有馀矣。"
+    },
+    {
+      "pid": "9",
+      "text": "夫以王壤土之博，人徒之众，兵革之彊，壹举事而树怨於楚，迟令韩、魏归帝重於齐，是王失计也。臣为王虑，莫若善楚。秦、楚合而为一以临韩，韩必敛手。王施以东山之险，带以曲河之利，韩必为关内之侯。若是而王以十万戍郑，梁氏寒心，许、鄢陵婴城，而上蔡、召陵不往来也，如此而魏亦关内侯矣。王壹善楚，而关内两万乘之主注地於齐，齐右壤可拱手而⟦◈取⟧也。王之地一经两海，要约天下，是燕、赵无齐、楚，齐、楚无燕、赵也。然後危动燕、赵，直摇齐、楚，此四国者不待痛而服矣。",
+      "annotated": "夫以王壤土之博，人徒之众，兵革之彊，壹举事而树怨於<state>楚</state>，迟令<state>韩</state>、<state>魏</state>归帝重於<state>齐</state>，是王失计也。<role>臣</role>为王虑，莫若善<state>楚</state>。<state>秦</state>、<state>楚</state>合而为一以临<state>韩</state>，<state>韩</state>必敛手。王施以<loc>东山</loc>之险，带以<loc>曲河</loc>之利，<state>韩</state>必为<loc>关内</loc>之<off>侯</off>。若是而王以<qty>十万</qty>戍<state>郑</state>，<state>梁</state>氏寒心，<loc>许</loc>、<loc>鄢</loc>陵婴城，而上<state>蔡</state>、<loc>召陵</loc>不往来也，如此而<state>魏</state>亦<loc>关内</loc><off>侯</off>矣。王壹善<state>楚</state>，而<loc>关内</loc><qty>两万乘</qty>之主注地於<state>齐</state>，<state>齐</state>右壤可拱手而⟦◈取⟧也。王之地一经<qty>两海</qty>，要约<idea>天下</idea>，是<state>燕</state>、<state>赵</state>无<state>齐</state>、<state>楚</state>，<state>齐</state>、<state>楚</state>无<state>燕</state>、<state>赵</state>也。然後危动<state>燕</state>、<state>赵</state>，直摇<state>齐</state>、<state>楚</state>，此四国者不待痛而服矣。"
+    },
+    {
+      "pid": "10",
+      "text": "昭王曰：“善。” 於是乃⟦◈止⟧白起而谢韩、魏。发使赂楚，约为与国。",
+      "annotated": "<p name=\"秦昭王\">昭王</p>曰：“善。” 於是乃⟦◈止⟧<p>白起</p>而谢<state>韩</state>、<state>魏</state>。发<role>使</role>赂<state>楚</state>，约为与国。"
+    },
+    {
+      "pid": "11",
+      "text": "黄歇受约归楚，楚使歇与太子完入质於秦，秦留之数年。楚顷襄王病，太子不得归。而楚太子与秦相应侯善，於是黄歇乃说应侯曰：“相国诚善楚太子乎？” 应侯曰：“然。” 歇曰：“今楚王恐不起疾，秦不如归其太子。太子得立，其事秦必重而德相国无穷，是亲与国而得储万乘也。若不归，则咸阳一布衣耳；楚更立太子，必不事秦。夫失与国而绝万乘之和，非计也。原相国孰虑之。” 应侯以闻秦王。秦王曰：“令楚太子之傅先往问楚王之疾，返而後图之。” 黄歇为楚太子计曰：“秦之留太子也，欲以求利也。今太子力未能有以利秦也，歇忧之甚。而阳文君子二人在中，王若卒大命，太子不在，阳文君子必立为後，太子不得奉宗庙矣。不如亡秦，与使者俱出；臣请止，以死当之。” 楚太子因变衣服为楚使者御以出关，而黄歇守舍，常为谢病。度太子已远，秦不能追，歇乃自言秦昭王曰：“楚太子已归，出远矣。歇当死，原赐死。” 昭王大怒，欲听其自杀也。应侯曰：“歇为人臣，出身以徇其主，太子立，必用歇，故不如无罪而归之，以亲楚。” 秦因遣黄歇。",
+      "annotated": "<p>黄歇</p>受约归<state>楚</state>，<state>楚</state>使<p name=\"黄歇\">歇</p>与<role>太子</role><p name=\"楚考烈王\">完</p>入质於<state>秦</state>，<state>秦</state>留之<time name=\"时长\">数年</time>。<p>楚顷襄王</p>病，<role>太子</role>不得归。而<state>楚</state><role>太子</role>与<state>秦</state>相<off>应侯</off>善，於是<p>黄歇</p>乃说<off>应侯</off>曰：“<off>相国</off>诚善<state>楚</state><role>太子</role>乎？” <off>应侯</off>曰：“然。” <p name=\"黄歇\">歇</p>曰：“今<off>楚王</off>恐不起疾，<state>秦</state>不如归其<role>太子</role>。<role>太子</role>得立，其事<state>秦</state>必重而德<off>相国</off>无穷，是亲与国而得储<qty>万乘</qty>也。若不归，则<loc>咸阳</loc>一<role>布衣</role>耳；<state>楚</state>更<vpol>立</vpol><role>太子</role>，必不事<state>秦</state>。夫失与国而绝<qty>万乘</qty>之和，非计也。原<off>相国</off>孰虑之。” <off>应侯</off>以闻<off>秦王</off>。<off>秦王</off>曰：“令<state>楚</state><role>太子</role>之<off>傅</off>先往问<off>楚王</off>之疾，返而後图之。” <p>黄歇</p>为<state>楚</state><role>太子</role>计曰：“<state>秦</state>之留<role>太子</role>也，欲以求利也。今<role>太子</role>力未能有以利<state>秦</state>也，<p name=\"黄歇\">歇</p>忧之甚。而阳<p name=\"阳文君\">文君</p><role>子</role><qty>二人</qty>在中，王若卒大命，<role>太子</role>不在，阳<p name=\"阳文君\">文君</p><role>子</role>必立为後，<role>太子</role>不得奉<sys>宗庙</sys>矣。不如亡<state>秦</state>，与<role>使者</role>俱出；<role>臣</role>请止，以死当之。” <state>楚</state><role>太子</role>因变<art>衣服</art>为<state>楚</state><role>使者</role>御以出关，而<p>黄歇</p>守舍，常为谢病。度<role>太子</role>已远，<state>秦</state>不能追，<p name=\"黄歇\">歇</p>乃自言<p>秦昭王</p>曰：“<state>楚</state><role>太子</role>已归，出远矣。<p name=\"黄歇\">歇</p><law>当死</law>，原赐死。” <p name=\"秦昭王\">昭王</p>大怒，欲听其<vact>自杀</vact>也。<off>应侯</off>曰：“<p name=\"黄歇\">歇</p>为<role>人臣</role>，出身以徇其主，<role>太子</role>立，必用<p name=\"黄歇\">歇</p>，故不如无罪而归之，以亲<state>楚</state>。” <state>秦</state>因遣<p>黄歇</p>。"
+    },
+    {
+      "pid": "12",
+      "text": "歇至楚三月，楚顷襄王卒，太子完立，是为考烈王。考烈王元年，以黄歇为相，封为春申君，赐淮北地十二县。後十五岁，黄歇言之楚王曰：“淮北地边齐，其事急，请以为郡便。” 因并献淮北十二县。请封於江东。考烈王许之。春申君因城故吴墟，以自为都邑。",
+      "annotated": "<p name=\"黄歇\">歇</p>至<state>楚</state><time name=\"时长\">三月</time>，<p>楚顷襄王</p>卒，<role>太子</role><p name=\"楚考烈王\">完</p>立，是为<p name=\"楚考烈王\">考烈王</p>。<p name=\"楚考烈王\">考烈王</p><time>元年</time>，以<p>黄歇</p>为<off>相</off>，封为<p>春申君</p>，赐<loc>淮北</loc>地<qty>十二县</qty>。後<time name=\"时长\">十五岁</time>，<p>黄歇</p>言之<off>楚王</off>曰：“<loc>淮北</loc>地边<state>齐</state>，其事急，请以为郡便。” 因并献<loc>淮北</loc><qty>十二县</qty>。请封於<loc>江东</loc>。<p name=\"楚考烈王\">考烈王</p>许之。<p>春申君</p>因城故<state>吴</state>墟，以自为都邑。"
+    },
+    {
+      "pid": "13",
+      "text": "春申君既相楚，是时齐有孟尝君，赵有平原君，魏有信陵君，方⟦◈争⟧下士，招致宾客，以相倾夺，辅国持权。",
+      "annotated": "<p>春申君</p>既相<state>楚</state>，是时<state>齐</state>有<p>孟尝君</p>，<state>赵</state>有<p>平原君</p>，<state>魏</state>有<p>信陵君</p>，方⟦◈争⟧下<role>士</role>，招致<role>宾客</role>，以相倾夺，辅<state>国</state>持权。"
+    },
+    {
+      "pid": "14",
+      "text": "春申君为楚相四年，秦⟦◈破⟧赵之长平军四十馀万。五年，⟦◈围⟧邯郸。邯郸告急於楚，楚使春申君将兵往⟦◈救⟧之，秦兵亦去，春申君归。春申君相楚八年，为楚北⟦◈伐⟧⟦◈灭⟧鲁，以荀卿为兰陵令。当是时，楚复彊。",
+      "annotated": "<p>春申君</p>为<state>楚</state>相<time name=\"时长\">四年</time>，<state>秦</state>⟦◈破⟧<state>赵</state>之<loc>长平</loc>军<qty>四十馀万</qty>。<time name=\"时长\">五年</time>，⟦◈围⟧<loc>邯郸</loc>。<loc>邯郸</loc>告急於<state>楚</state>，<state>楚</state>使<p>春申君</p>将兵往⟦◈救⟧之，<state>秦</state>兵亦去，<p>春申君</p>归。<p>春申君</p>相<state>楚</state><time name=\"时长\">八年</time>，为<state>楚</state>北⟦◈伐⟧⟦◈灭⟧<state>鲁</state>，以<p>荀卿</p>为<loc>兰陵</loc>令。当是时，<state>楚</state>复彊。"
+    },
+    {
+      "pid": "15",
+      "text": "赵平原君使人於春申君，春申君舍之於上舍。赵使欲夸楚，为玳瑁簪，刀剑室以珠玉饰之，请命春申君客。春申君客三千馀人，其上客皆蹑珠履以见赵使，赵使大惭。",
+      "annotated": "赵<p>平原君</p>使人於<p>春申君</p>，<p>春申君</p>舍之於上舍。<state>赵</state><role>使</role>欲夸<state>楚</state>，为<art>玳瑁</art><art>簪</art>，刀<art>剑</art>室以珠<art>玉</art>饰之，请命<p>春申君</p><role>客</role>。<p>春申君</p><role>客</role><qty>三千馀人</qty>，其<role>上客</role>皆蹑<art>珠履</art>以见<state>赵</state><role>使</role>，<state>赵</state><role>使</role>大惭。"
+    },
+    {
+      "pid": "16",
+      "text": "春申君相十四年，秦庄襄王立，以吕不韦为相，封为文信侯。⟦◈取⟧东周。",
+      "annotated": "<p>春申君</p>相<time name=\"时长\">十四年</time>，<state>秦</state><p name=\"秦庄襄王\">庄襄王</p>立，以<p>吕不韦</p>为<off>相</off>，封为<p>文信侯</p>。⟦◈取⟧东<state>周</state>。"
+    },
+    {
+      "pid": "17",
+      "text": "春申君相二十二年，诸侯患秦⟦◈攻⟧⟦◈伐⟧无已时，乃相与合从，西⟦◈伐⟧秦，而楚王为从长，春申君用事。至函谷关，秦出兵⟦◈攻⟧，诸侯兵皆⟦◈败⟧走。楚考烈王以咎春申君，春申君以此益疏。",
+      "annotated": "<p>春申君</p>相<time name=\"时长\">二十二年</time>，<role>诸侯</role>患<state>秦</state>⟦◈攻⟧⟦◈伐⟧无已时，乃相与<sys>合从</sys>，西⟦◈伐⟧<state>秦</state>，而<off>楚王</off>为<sys>从长</sys>，<p>春申君</p>用事。至<loc>函谷关</loc>，<state>秦</state>出兵⟦◈攻⟧，<role>诸侯</role>兵皆⟦◈败⟧走。<state>楚</state><p name=\"楚考烈王\">考烈王</p>以咎<p>春申君</p>，<p>春申君</p>以此益疏。"
+    },
+    {
+      "pid": "18",
+      "text": "客有观津人硃英，谓春申君曰：“人皆以楚为彊而君用之弱，其於英不然。先君时善秦二十年而不⟦◈攻⟧楚，何也？秦逾黾隘之塞而⟦◈攻⟧楚，不便；假道於两周，背韩、魏而⟦◈攻⟧楚，不可。今则不然，魏旦暮亡，不能爱许、鄢陵，其许魏割以与秦。秦兵去陈百六十里，臣之所观者，见秦、楚之日斗也。” 楚於是去陈徙寿春；而秦徙卫野王，作置东郡。春申君由此就封於吴，行相事。",
+      "annotated": "客有<loc>观津</loc>人<p>硃英</p>，谓<p>春申君</p>曰：“人皆以<state>楚</state>为彊而<role>君</role>用之弱，其於英不然。先<role>君</role>时善<state>秦</state><time name=\"时长\">二十年</time>而不⟦◈攻⟧<state>楚</state>，何也？<state>秦</state>逾黾隘之塞而⟦◈攻⟧<state>楚</state>，不便；假道於两<state>周</state>，背<state>韩</state>、<state>魏</state>而⟦◈攻⟧<state>楚</state>，不可。今则不然，<state>魏</state>旦暮亡，不能爱<loc>许</loc>、<loc>鄢</loc>陵，其许<state>魏</state>割以与<state>秦</state>。<state>秦</state>兵去<state>陈</state><qty>百六十里</qty>，<role>臣</role>之所观者，见<state>秦</state>、<state>楚</state>之日斗也。” <state>楚</state>於是去<state>陈</state>徙<loc>寿春</loc>；而<state>秦</state>徙<state>卫</state><loc>野王</loc>，作置<loc>东郡</loc>。<p>春申君</p>由此就封於<state>吴</state>，行相事。"
+    },
+    {
+      "pid": "19",
+      "text": "楚考烈王无子，春申君患之，求妇人宜子者进之，甚众，卒无子。赵人李园持其女弟，欲进之楚王，闻其不宜子，恐久毋宠。李园求事春申君为舍人，已而谒归，故失期。还谒，春申君问之状，对曰：“齐王使使求臣之女弟，与其使者饮，故失期。” 春申君曰：“娉入乎？” 对曰：“未也。” 春申君曰：“可得见乎？” 曰：“可。” 於是李园乃进其女弟，即幸於春申君。知其有身，李园乃与其女弟谋。园女弟承间以说春申君曰：“楚王之贵幸君，虽兄弟不如也。今君相楚二十馀年，而王无子，即百岁後将更立兄弟，则楚更立君後，亦各贵其故所亲，君又安得长有宠乎？非徒然也，君贵用事久，多失礼於王兄弟，兄弟诚立，祸且及身，何以保相印江东之封乎？今妾自知有身矣，而人莫知。妾幸君未久，诚以君之重而进妾於楚王，王必幸妾；妾赖天有子男，则是君之子为王也，楚国尽可得，孰与身临不测之罪乎？” 春申君大然之，乃出李园女弟，谨舍而言之楚王。楚王召入幸之，遂生子男，立为太子，以李园女弟为王后。楚王贵李园，园用事。",
+      "annotated": "<state>楚</state><p name=\"楚考烈王\">考烈王</p>无<role>子</role>，<p>春申君</p>患之，求<role>妇人</role>宜<role>子</role>者进之，甚众，卒无<role>子</role>。<state>赵</state>人<p>李园</p>持其<role>女</role><role>弟</role>，欲进之<off>楚王</off>，闻其不宜<role>子</role>，恐久毋宠。<p>李园</p>求事<p>春申君</p>为<off>舍人</off>，已而谒归，故失期。还谒，<p>春申君</p>问之状，对曰：“<off>齐王</off>使<role>使</role>求<role>臣</role>之<role>女</role><role>弟</role>，与其<role>使</role>者饮，故失期。” <p>春申君</p>曰：“娉入乎？” 对曰：“未也。” <p>春申君</p>曰：“可得见乎？” 曰：“可。” 於是<p>李园</p>乃进其<role>女</role><role>弟</role>，即幸於<p>春申君</p>。知其有身，<p>李园</p>乃与其<role>女</role><role>弟</role>谋。<p name=\"李园\">园</p><role>女</role><role>弟</role>承间以说<p>春申君</p>曰：“<off>楚王</off>之贵幸<role>君</role>，虽<role>兄</role>弟不如也。今<role>君</role>相<state>楚</state><time name=\"时长\">二十馀年</time>，而王无<role>子</role>，即<time name=\"时长\">百岁</time>後将更<vpol>立</vpol><role>兄</role>弟，则<state>楚</state>更<vpol>立</vpol><role>君</role>後，亦各贵其故所亲，<role>君</role>又安得长有宠乎？非徒然也，<role>君</role>贵用事久，多失礼於王<role>兄</role>弟，<role>兄</role>弟诚立，祸且及身，何以保<off>相</off><art>印</art><loc>江东</loc>之封乎？今妾自知有身矣，而人莫知。妾幸<role>君</role>未久，诚以<role>君</role>之重而进妾於<off>楚王</off>，王必幸<role>妾</role>；妾赖天有<role>子</role>男，则是<role>君</role>之<role>子</role>为王也，<state>楚</state>国尽可得，孰与身临不测之罪乎？” <p>春申君</p>大然之，乃出<p>李园</p><role>女</role><role>弟</role>，谨舍而言之<off>楚王</off>。<off>楚王</off>召入幸之，遂生<role>子</role>男，<vpol>立</vpol>为<role>太子</role>，以<p>李园</p><role>女</role><role>弟</role>为王后。<off>楚王</off>贵<p>李园</p>，<p name=\"李园\">园</p>用事。"
+    },
+    {
+      "pid": "20",
+      "text": "李园既入其女弟，立为王后，子为太子，恐春申君语泄而益骄，阴养死士，欲杀春申君以灭口，而国人颇有知之者。",
+      "annotated": "<p>李园</p>既入其<role>女</role><role>弟</role>，<vpol>立</vpol>为<role>王后</role>，<role>子</role>为<role>太子</role>，恐<p>春申君</p>语泄而益骄，阴养<role>死士</role>，欲<vact>杀</vact><p>春申君</p>以<law>灭口</law>，而<role>国人</role>颇有知之者。"
+    },
+    {
+      "pid": "21",
+      "text": "春申君相二十五年，楚考烈王病。硃英谓春申君曰：“世有毋望之福，又有毋望之祸。今君处毋望之世，事毋望之主，安可以无毋望之人乎？” 春申君曰：“何谓毋望之福？” 曰：“君相楚二十馀年矣，虽名相国，实楚王也。今楚王病，旦暮且卒，而君相少主，因而代立当国，如伊尹、周公，王长而反政，不即遂南面称孤而有楚国？此所谓毋望之福也。” 春申君曰：“何谓毋望之祸？” 曰：“李园不治国而君之仇也，不为兵而养死士之日久矣，楚王卒，李园必先入据权而杀君以灭口。此所谓毋望之祸也。” 春申君曰：“何谓毋望之人？” 对曰：“君置臣郎中，楚王卒，李园必先入，臣为君杀李园。此所谓毋望之人也。” 春申君曰：“足下置之，李园，弱人也，仆又善之，且又何至此！” 硃英知言不用，恐祸及身，乃亡去。",
+      "annotated": "<p>春申君</p>相<time name=\"时长\">二十五年</time>，<state>楚</state><p name=\"楚考烈王\">考烈王</p>病。<p>硃英</p>谓<p>春申君</p>曰：“世有毋望之福，又有毋望之祸。今<role>君</role>处毋望之世，事毋望之主，安可以无毋望之人乎？” <p>春申君</p>曰：“何谓毋望之福？” 曰：“<role>君</role>相<state>楚</state><time name=\"时长\">二十馀年</time>矣，虽名<off>相国</off>，实<off>楚王</off>也。今<off>楚王</off>病，旦暮且卒，而<role>君</role>相<role>少主</role>，因而代立当国，如<p>伊尹</p>、<p>周公</p>，王长而反<sys>政</sys>，不即遂南面称孤而有<state>楚</state>国？此所谓毋望之福也。” <p>春申君</p>曰：“何谓毋望之祸？” 曰：“<p>李园</p>不治国而<role>君</role>之仇也，不为兵而养<role>死士</role>之<time name=\"时长\">日久</time>矣，<off>楚王</off>卒，<p>李园</p>必先入据权而<vact>杀</vact><role>君</role>以<law>灭口</law>。此所谓毋望之祸也。” <p>春申君</p>曰：“何谓毋望之人？” 对曰：“<role>君</role>置<role>臣</role><off>郎中</off>，<off>楚王</off>卒，<p>李园</p>必先入，<role>臣</role>为<role>君</role><vact>杀</vact><p>李园</p>。此所谓毋望之人也。” <p>春申君</p>曰：“足下置之，<p>李园</p>，弱人也，仆又善之，且又何至此！” <p>硃英</p>知言不用，恐祸及身，乃亡去。"
+    },
+    {
+      "pid": "22",
+      "text": "後十七日，楚考烈王卒，李园果先入，伏死士於棘门之内。春申君入棘门，园死士侠刺春申君，斩其头，投之棘门外。於是遂使吏尽⟦◈灭⟧春申君之家。而李园女弟初幸春申君有身而入之王所生子者遂立，是为楚幽王。",
+      "annotated": "後<time name=\"时长\">十七日</time>，<state>楚</state><p name=\"楚考烈王\">考烈王</p>卒，<p>李园</p>果先入，伏<role>死士</role>於<loc>棘门</loc>之内。<p>春申君</p>入<loc>棘门</loc>，<p name=\"李园\">园</p><role>死士</role>侠<vact>刺</vact><p>春申君</p>，<vact>斩</vact>其头，投之<loc>棘门</loc>外。於是遂使<off>吏</off>尽⟦◈灭⟧<p>春申君</p>之<clan>家</clan>。而<p>李园</p><role>女</role><role>弟</role>初幸<p>春申君</p>有身而入之王所生<role>子</role>者遂立，是为<state>楚</state><p name=\"楚幽王\">幽王</p>。"
+    },
+    {
+      "pid": "23",
+      "text": "是岁也，秦始皇帝立九年矣。嫪毐亦为乱於秦，觉，夷其三族，而吕不韦废。 ::: 太史公曰",
+      "annotated": "是岁也，<p>秦始皇</p>帝立<time name=\"时长\">九年</time>矣。<p>嫪毐</p>亦为乱於<state>秦</state>，觉，<vact>夷</vact>其<qty>三族</qty>，而<p>吕不韦</p>废。 ::: 太史公曰"
+    },
+    {
+      "pid": "24",
+      "text": "太史公曰：吾適楚，观春申君故城，宫室盛矣哉！初，春申君之说秦昭王，及出身遣楚太子归，何其智之明也！後制於李园，旄矣。语曰：“当断不断，反受其乱。” 春申君失硃英之谓邪？ ::: ::: 赞",
+      "annotated": "<p>太史公</p>曰：吾適<state>楚</state>，观<p>春申君</p>故城，<art>宫室</art>盛矣哉！初，<p>春申君</p>之说<p>秦昭王</p>，及出身遣<state>楚</state><role>太子</role>归，何其智之明也！後制於<p>李园</p>，旄矣。语曰：“当断不断，反受其乱。” <p>春申君</p>失<p>硃英</p>之谓邪？ ::: ::: 赞"
+    },
+    {
+      "pid": "25",
+      "text": "黄歇辩智，权略秦、楚。 太子获归，身作宰辅。 珠炫赵客，邑开吴土。 烈王寡胤，李园献女。 无妄成灾，硃英徒语。 :::",
+      "annotated": "<p>黄歇</p>辩智，权略<state>秦</state>、<state>楚</state>。 <role>太子</role>获归，身作宰辅。 珠炫<state>赵</state>客，邑开<state>吴</state>土。 <p name=\"楚考烈王\">烈王</p>寡胤，<p>李园</p>献<role>女</role>。 无妄成灾，<p>硃英</p>徒语。 :::"
+    }
+  ]
+}

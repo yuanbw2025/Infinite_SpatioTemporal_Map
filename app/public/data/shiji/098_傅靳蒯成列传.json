@@ -1,0 +1,81 @@
+{
+  "work": "史记",
+  "chapter": "傅靳蒯成列传",
+  "chapter_file": "098_傅靳蒯成列传",
+  "chapter_type": "列传",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 14,
+  "paragraph_count_done": 14,
+  "paragraphs": [
+    {
+      "pid": "1",
+      "text": "阳陵侯傅宽，以魏五大夫骑将从，为舍人，起横阳。 从攻安阳、杠里，击赵贲军於开封，及击杨熊曲遇、阳武，斩首十二级，赐爵卿。 从至霸上。 沛公立为汉王，汉王赐宽封号共德君。 从入汉中，迁为右骑将。 从定三秦，赐食邑雕阴。 从击项籍，待怀，赐爵通德侯。 从击项冠、周兰、龙且，所将卒斩骑将一人敖下，益食邑。",
+      "annotated": "<off>阳陵侯</off><p>傅宽</p>，以<state>魏</state><off>五大夫</off><off>骑将</off>从，为<off>舍人</off>，起<loc>横阳</loc>。 从<law>攻</law><loc>安阳</loc>、<loc>杠里</loc>，<law>击</law><p>赵贲</p>军於<loc>开封</loc>，及<law>击</law><p>杨熊</p><loc>曲遇</loc>、<loc>阳武</loc>，<law>斩首</law>十二级，<sys>赐爵</sys><off>卿</off>。 从至<loc>霸上</loc>。 <p>沛公</p><vpol>立</vpol>为<p>汉王</p>，<p>汉王</p>赐<p name=\"傅宽\">宽</p>封号<p>共德君</p>。 从入<loc>汉中</loc>，迁为<off>右骑将</off>。 从<law>定</law><state>三秦</state>，<vpol>赐食</vpol>邑<loc>雕阴</loc>。 从<law>击</law><p>项籍</p>，待<loc>怀</loc>，<sys>赐爵</sys><off>通德侯</off>。 从<law>击</law><p>项冠</p>、<p>周兰</p>、<p>龙且</p>，所将卒<law>斩</law><off>骑将</off><qty>一人</qty><loc>敖</loc>下，益<vpol>食</vpol>邑。"
+    },
+    {
+      "pid": "2",
+      "text": "属淮阴，击破齐历下军，击田解。属相国参，残博，益食邑。因定齐地，剖符世世勿绝，封为阳陵侯，二千六百户，除前所食。为齐右丞相，备齐。五岁为齐相国。",
+      "annotated": "属<p name=\"韩信\">淮阴</p>，<law>击</law><law>破</law><state>齐</state><loc>历下</loc>军，<law>击</law><p>田解</p>。属<off>相国</off><p name=\"曹参\">参</p>，<law>残</law><loc>博</loc>，益<vpol>食</vpol>邑。因<law>定</law><state>齐</state>地，<sys>剖符</sys>世世勿绝，封为<off>阳陵侯</off>，<qty>二千六百户</qty>，除前所<vpol>食</vpol>。为<off>齐右丞相</off>，备<state>齐</state>。五岁为<state>齐</state><off>相国</off>。"
+    },
+    {
+      "pid": "3",
+      "text": "四月，击陈豨，属太尉勃，以相国代丞相哙击豨。一月，徙为代相国，将屯。二岁，为代丞相，将屯。",
+      "annotated": "四月，<law>击</law><p>陈豨</p>，属<off>太尉</off><p name=\"周勃\">勃</p>，以<off>相国</off>代<off>丞相</off><p name=\"樊哙\">哙</p><law>击</law><p name=\"陈豨\">豨</p>。一月，徙为<state>代</state><off>相国</off>，将屯。二岁，为<off>代丞相</off>，将屯。"
+    },
+    {
+      "pid": "4",
+      "text": "孝惠五年卒，谥为景侯。 子顷侯精立，二十四年卒。 子共侯则立，十二年卒。 子侯偃立，三十一年，坐与淮南王谋反，死，国除。",
+      "annotated": "<p>孝惠</p><time>五年</time>卒，<vpol>谥</vpol>为<p>景侯</p>。 子<p>顷侯</p><p name=\"傅精\">精</p>立，<time name=\"时长\">二十四年</time>卒。 子<p>共侯</p><p name=\"傅则\">则</p>立，<time name=\"时长\">十二年</time>卒。 子<off>侯</off><p name=\"傅偃\">偃</p>立，<time name=\"时长\">三十一年</time>，坐与<off>淮南王</off><law>谋反</law>，死，<vpol>国除</vpol>。"
+    },
+    {
+      "pid": "5",
+      "text": "信武侯靳歙，以中涓从，起宛朐。 攻济阳。 破李由军。 击秦军亳南、开封东北，斩骑千人将一人，首五十七级，捕虏七十三人，赐爵封号临平君。 又战蓝田北，斩车司马二人，骑长一人，首二十八级，捕虏五十七人。 至霸上。 沛公立为汉王，赐歙爵建武侯，迁为骑都尉。",
+      "annotated": "<off>信武侯</off><p>靳歙</p>，以<off>中涓</off>从，起<loc>宛朐</loc>。 <law>攻</law><loc>济阳</loc>。 <law>破</law><p>李由</p>军。 <law>击</law><state>秦</state>军<loc>亳</loc>南、<loc>开封</loc><loc>东北</loc>，<law>斩</law><off>骑千人将</off><qty>一人</qty>，首五十七级，<law>捕虏</law><qty>七十三人</qty>，<sys>赐爵</sys>封号<off>临平君</off>。 又<law>战</law><loc>蓝田</loc>北，<law>斩</law><off>车司马</off><qty>二人</qty>，<off>骑长</off><qty>一人</qty>，首二十八级，<law>捕虏</law>五十七人。 至<loc>霸上</loc>。 <p>沛公</p><vpol>立</vpol>为<p>汉王</p>，赐<p name=\"靳歙\">歙</p>爵<off>建武侯</off>，迁为<off>骑都尉</off>。"
+    },
+    {
+      "pid": "6",
+      "text": "从定三秦。 别西击章平军於陇西，破之，定陇西六县，所将卒斩车司马、候各四人，骑长十二人。 从东击楚，至彭城。 汉军败还，保雍丘，去击反者王武等。 略梁地，别将击邢说军菑南，破之，身得说都尉二人，司马、候十二人，降吏卒四千一百八十人。 破楚军荥阳东。 三年，赐食邑四千二百户。",
+      "annotated": "从<law>定</law><state>三秦</state>。 别西<law>击</law><p>章平</p>军於<loc>陇西</loc>，<law>破</law>之，<law>定</law><loc>陇西</loc>六县，所将卒<law>斩</law><off>车司马</off>、<off>候</off>各<qty>四人</qty>，<off>骑长</off><qty>十二人</qty>。 从东<law>击</law><state>楚</state>，至<loc>彭城</loc>。 <state>汉</state>军<law>败</law>还，保<loc>雍丘</loc>，去<law>击</law><law>反</law>者<p>王武</p>等。 <law>略</law><state>梁</state>地，别将<law>击</law><p>邢说</p>军<loc>菑</loc>南，<law>破</law>之，身<law>得</law><p name=\"邢说\">说</p>都尉<qty>二人</qty>，<off>司马</off>、<off>候</off><qty>十二人</qty>，<law>降</law>吏卒<qty>四千一百八十人</qty>。 <law>破</law><state>楚</state>军<loc>荥阳</loc>东。 <time>三年</time>，<vpol>赐食</vpol>邑<qty>四千二百户</qty>。"
+    },
+    {
+      "pid": "7",
+      "text": "别之河内，击赵将贲郝军朝歌，破之，所将卒得骑将二人，车马二百五十匹。 从攻安阳以东，至棘蒲，下七县。 别攻破赵军，得其将司马二人，候四人，降吏卒二千四百人。 从攻下邯郸。 别下平阳，身斩守相，所将卒斩兵守、郡守各一人，降鄴。 从攻朝歌、邯郸，及别击破赵军，降邯郸郡六县。 还军敖仓，破项籍军成皋南，击绝楚饟道，起荥阳至襄邑。 破项冠军鲁下。 略地东至缯、郯、下邳，南至蕲、竹邑。 击项悍济阳下。 还击项籍陈下，破之。 别定江陵，降江陵柱国、大司马以下八人，身得江陵王，生致之雒阳，因定南郡。 从至陈，取楚王信，剖符世世勿绝，定食四千六百户，号信武侯。",
+      "annotated": "别之<loc>河内</loc>，<law>击</law><state>赵</state>将<p>贲郝</p>军<loc>朝歌</loc>，<law>破</law>之，所将卒<law>得</law><off>骑将</off><qty>二人</qty>，<art>车</art><bio>马</bio><qty>二百五十匹</qty>。 从<law>攻</law><loc>安阳</loc>以东，至<loc>棘蒲</loc>，<law>下</law>七县。 别<law>攻</law><law>破</law><state>赵</state>军，<law>得</law>其将<off>司马</off><qty>二人</qty>，<off>候</off><qty>四人</qty>，<law>降</law>吏卒<qty>二千四百人</qty>。 从<law>攻</law><law>下</law><loc>邯郸</loc>。 别<law>下</law><loc>平阳</loc>，身<law>斩</law><off>守相</off>，所将卒<law>斩</law><off>兵守</off>、<off>郡守</off>各<qty>一人</qty>，<law>降</law><loc>鄴</loc>。 从<law>攻</law><loc>朝歌</loc>、<loc>邯郸</loc>，及别<law>击</law><law>破</law><state>赵</state>军，<law>降</law><loc>邯郸</loc>郡六县。 还军<loc>敖仓</loc>，<law>破</law><p>项籍</p>军<loc>成皋</loc>南，<law>击</law><law>绝</law><state>楚</state>饟道，起<loc>荥阳</loc>至<loc>襄邑</loc>。 <law>破</law><p>项冠</p>军<state>鲁</state>下。 <law>略</law>地东至<loc>缯</loc>、<loc>郯</loc>、<loc>下邳</loc>，南至<loc>蕲</loc>、<loc>竹邑</loc>。 <law>击</law><p>项悍</p><loc>济阳</loc>下。 还<law>击</law><p>项籍</p><loc>陈</loc>下，<law>破</law>之。 别<law>定</law><loc>江陵</loc>，<law>降</law><loc>江陵</loc><off>柱国</off>、<off>大司马</off>以下<qty>八人</qty>，身<law>得</law><off>江陵王</off>，<law>生致</law>之<loc>雒阳</loc>，因<law>定</law><loc>南郡</loc>。 从至<loc>陈</loc>，<law>取</law><off>楚王</off><p name=\"韩信\">信</p>，<sys>剖符</sys>世世勿绝，<law>定</law>食<qty>四千六百户</qty>，号<off>信武侯</off>。"
+    },
+    {
+      "pid": "8",
+      "text": "以骑都尉从击代，攻韩信平城下，还军东垣。 有功，迁为车骑将军，并将梁、赵、齐、燕、楚车骑，别击陈豨丞相敞，破之，因降曲逆。 从击黥布有功，益封定食五千三百户。 凡斩首九十级，虏百三十二人；别破军十四，降城五十九，定郡、国各一，县二十三；得王、柱国各一人，二千石以下至五百石三十九人。",
+      "annotated": "以<off>骑都尉</off>从<law>击</law><state>代</state>，<law>攻</law><p name=\"韩王信\">韩信</p><loc>平城</loc>下，还军<loc>东垣</loc>。 有功，迁为<off>车骑将军</off>，并将<state>梁</state>、<state>赵</state>、<state>齐</state>、<state>燕</state>、<state>楚</state><off>车骑</off>，别<law>击</law><p>陈豨</p><off>丞相</off><p name=\"侯敞\">敞</p>，<law>破</law>之，因<law>降</law><loc>曲逆</loc>。 从<law>击</law><p>黥布</p>有功，益封<law>定</law>食<qty>五千三百户</qty>。 凡<law>斩首</law>九十级，<law>虏</law><qty>百三十二人</qty>；别<law>破</law>军十四，<law>降</law>城五十九，<law>定</law>郡、国各一，县二十三；<law>得</law>王、<off>柱国</off>各<qty>一人</qty>，<sys>二千石</sys>以下至<sys>五百石</sys>三十九人。"
+    },
+    {
+      "pid": "9",
+      "text": "高后五年，歙卒，谥为肃侯。子亭代侯。二十一年，坐事国人过律，孝文後三年，夺侯，国除。",
+      "annotated": "<p>高后</p><time>五年</time>，<p name=\"靳歙\">歙</p>卒，<vpol>谥</vpol>为<p>肃侯</p>。子<p name=\"靳亭\">亭</p>代侯。<time name=\"时长\">二十一年</time>，坐事国人过律，<p>孝文</p>後<time>三年</time>，夺侯，<vpol>国除</vpol>。"
+    },
+    {
+      "pid": "10",
+      "text": "蒯成侯緤者，沛人也，姓周氏。 常为高祖参乘，以舍人从起沛。 至霸上，西入蜀、汉，还定三秦，食邑池阳。 东绝甬道，从出度平阴，遇淮阴侯兵襄国，军乍利乍不利，终无离上心。 以緤为信武侯，食邑三千三百户。 高祖十二年，以緤为蒯成侯，除前所食邑。",
+      "annotated": "<off>蒯成侯</off><p name=\"周緤\">緤</p>者，<loc>沛</loc>人也，姓<clan>周氏</clan>。 常为<p>高祖</p><off>参乘</off>，以<off>舍人</off>从起<loc>沛</loc>。 至<loc>霸上</loc>，西入<state>蜀</state>、<state>汉</state>，还<law>定</law><state>三秦</state>，<vpol>食邑</vpol><loc>池阳</loc>。 东<law>绝</law><loc>甬道</loc>，从出度<loc>平阴</loc>，遇<off>淮阴侯</off>兵<loc>襄国</loc>，军乍利乍不利，终无离上心。 以<p name=\"周緤\">緤</p>为<off>信武侯</off>，<vpol>食邑</vpol><qty>三千三百户</qty>。 <p>高祖</p><time>十二年</time>，以<p name=\"周緤\">緤</p>为<off>蒯成侯</off>，除前所<vpol>食</vpol>邑。"
+    },
+    {
+      "pid": "11",
+      "text": "上欲自击陈豨，蒯成侯泣曰：“始秦攻破天下，未尝自行。今上常自行，是为无人可使者乎？” 上以为” 爱我”，赐入殿门不趋，杀人不死。",
+      "annotated": "上欲自<law>击</law><p>陈豨</p>，<off>蒯成侯</off>泣曰：“始<state>秦</state><law>攻</law><law>破</law><state>天下</state>，未尝自行。<role>今上</role>常自行，是为无人可使者乎？” 上以为” 爱我”，赐入殿门不趋，<law>杀</law>人不死。"
+    },
+    {
+      "pid": "12",
+      "text": "至孝文五年，緤以寿终，谥为贞侯。子昌代侯，有罪，国除。至孝景中二年，封緤子居代侯。至元鼎三年，居为太常，有罪，国除。 ::: 太史公曰",
+      "annotated": "至<p>孝文</p><time>五年</time>，<p name=\"周緤\">緤</p>以寿终，<vpol>谥</vpol>为<p>贞侯</p>。子<p name=\"周昌\">昌</p>代侯，有罪，<vpol>国除</vpol>。至<p>孝景</p>中<time>二年</time>，<vpol>封</vpol><p name=\"周緤\">緤</p>子<p name=\"周居\">居</p>代侯。至<time>元鼎三年</time>，<p name=\"周居\">居</p>为<off>太常</off>，有罪，<vpol>国除</vpol>。 ::: 太史公曰"
+    },
+    {
+      "pid": "13",
+      "text": "太史公曰：阳陵侯傅宽、信武侯靳歙皆高爵，从高祖起山东，攻项籍，诛杀名将，破军降城以十数，未尝困辱，此亦天授也。 蒯成侯周緤操心坚正，身不见疑，上欲有所之，未尝不垂涕，此有伤心者然，可谓笃厚君子矣。 ::: ::: 赞",
+      "annotated": "<p>太史公</p>曰：<off>阳陵侯</off><p>傅宽</p>、<off>信武侯</off><p>靳歙</p>皆高爵，从<p>高祖</p>起<loc>山东</loc>，<law>攻</law><p>项籍</p>，<law>诛</law><law>杀</law>名将，<law>破</law>军<law>降</law>城以<qty>十数</qty>，未尝困辱，此亦天授也。 <off>蒯成侯</off><p>周緤</p>操心坚正，身不见疑，上欲有所之，未尝不垂涕，此有伤心者然，可谓笃厚<idea>君子</idea>矣。 ::: ::: 赞"
+    },
+    {
+      "pid": "14",
+      "text": "阳陵、信武，结发从汉。 动叶人谋，功实天赞。 定齐破项，我军常冠， 蒯成委质，夷险不乱。 主上称忠，人臣鸧腕。 :::",
+      "annotated": "<p name=\"傅宽\">阳陵</p>、<p name=\"靳歙\">信武</p>，结发从<state>汉</state>。 动叶人谋，功实天赞。 <law>定</law><state>齐</state><law>破</law><p name=\"项籍\">项</p>，我军常冠， <p name=\"蒯成侯周緤\">蒯成</p>委质，夷险不乱。 <role>主上</role>称忠，<role>人臣</role>鸧腕。 :::"
+    }
+  ]
+}

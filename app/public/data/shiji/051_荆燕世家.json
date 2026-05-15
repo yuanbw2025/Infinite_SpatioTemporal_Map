@@ -1,0 +1,71 @@
+{
+  "work": "史记",
+  "chapter": "荆燕世家",
+  "chapter_file": "051_荆燕世家",
+  "chapter_type": "世家",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 12,
+  "paragraph_count_done": 12,
+  "paragraphs": [
+    {
+      "pid": "1",
+      "text": "荆王刘贾者，诸刘，不知其何属初起时。汉王元年，还⟦◈定⟧三秦，刘贾为将军，⟦◈定⟧塞地，从东⟦◈击⟧项籍。",
+      "annotated": "<off>荆王</off><p>刘贾</p>者，<clan>诸刘</clan>，不知其何属初起时。<p>汉王</p><time>元年</time>，还⟦◈定⟧三<state>秦</state>，<p>刘贾</p>为<off>将军</off>，⟦◈定⟧塞地，从东⟦◈击⟧<p>项籍</p>。"
+    },
+    {
+      "pid": "2",
+      "text": "汉四年，汉王之⟦◈败⟧成皋，北渡河，得张耳、韩信军，军脩武，深沟高垒，使刘贾将二万人，骑数百，渡白马津入楚地，烧其积聚，以⟦◈破⟧其业，无以给项王军食。已而楚兵⟦◈击⟧刘贾，贾辄壁不肯与⟦◈战⟧，而与彭越相保。",
+      "annotated": "汉<time>四年</time>，<p>汉王</p>之⟦◈败⟧<loc>成皋</loc>，北渡<loc>河</loc>，得<p>张耳</p>、<p>韩信</p>军，军<loc>脩武</loc>，深沟高垒，使<p>刘贾</p>将<qty>二万人</qty>，骑<qty>数百</qty>，渡<loc>白马津</loc>入<state>楚</state>地，烧其积聚，以⟦◈破⟧其业，无以给<p>项王</p>军食。已而<state>楚</state>兵⟦◈击⟧<p>刘贾</p>，<p name=\"刘贾\">贾</p>辄壁不肯与⟦◈战⟧，而与<p>彭越</p>相保。"
+    },
+    {
+      "pid": "3",
+      "text": "汉五年，汉王追项籍至固陵，使刘贾南渡淮⟦◈围⟧寿春。还至，使人间招楚大司马周殷。周殷反楚，佐刘贾举九江，迎武王黥布兵，皆会垓下，共⟦◈击⟧项籍。汉王因使刘贾将九江兵，与太尉卢绾西南⟦◈击⟧临江王共尉。共尉已死，以临江为南郡。",
+      "annotated": "汉<time>五年</time>，<p>汉王</p>追<p>项籍</p>至<loc>固陵</loc>，使<p>刘贾</p>南渡<loc>淮</loc>⟦◈围⟧<loc>寿春</loc>。还至，使人间招<state>楚</state><off>大司马</off><p>周殷</p>。<p>周殷</p><vact>反</vact><state>楚</state>，佐<p>刘贾</p>举<loc>九江</loc>，迎<p>武王黥布</p>兵，皆会<loc>垓下</loc>，共⟦◈击⟧<p>项籍</p>。<p>汉王</p>因使<p>刘贾</p>将<loc>九江</loc>兵，与<off>太尉</off><p>卢绾</p>西南⟦◈击⟧<off>临江王</off><p>共尉</p>。<p>共尉</p>已死，以<state>临江</state>为<loc>南郡</loc>。"
+    },
+    {
+      "pid": "4",
+      "text": "汉六年春，会诸侯於陈，废楚王信，囚之，分其地为二国。当是时也，高祖子幼，昆弟少，又不贤，欲王同姓以镇天下，乃诏曰：“将军刘贾有功，及择子弟可以为王者。” 群臣皆曰：“立刘贾为荆王，王淮东五十二城；高祖弟交为楚王，王淮西三十六城。” 因立子肥为齐王。始王昆弟刘氏也。",
+      "annotated": "汉<time>六年</time><time>春</time>，会<role>诸侯</role>於<loc>陈</loc>，废<off>楚王</off><p name=\"韩信\">信</p>，<vact>囚</vact>之，分其地为二国。当是时也，<p>高祖</p><role>子</role>幼，<role>昆弟</role>少，又不贤，欲<vpol>王</vpol><sys>同姓</sys>以镇<loc>天下</loc>，乃诏曰：“将军<p>刘贾</p>有功，及择<role>子弟</role>可以为<off>王</off>者。” <role>群臣</role>皆曰：“<vpol>立</vpol><p>刘贾</p>为<off>荆王</off>，<vpol>王</vpol><loc>淮东</loc><qty>五十二城</qty>；<p>高祖</p><role>弟</role><p name=\"刘交\">交</p>为<off>楚王</off>，<vpol>王</vpol><loc>淮西</loc><qty>三十六城</qty>。” 因立<role>子</role><p name=\"刘肥\">肥</p>为<off>齐王</off>。始<vpol>王</vpol><role>昆弟</role><clan>刘氏</clan>也。"
+    },
+    {
+      "pid": "5",
+      "text": "高祖十一年秋，淮南王黥布反，东⟦◈击⟧荆。荆王贾与⟦◈战⟧，不⟦◈胜⟧，⟦◈走⟧富陵，为布军所杀。高祖自⟦◈击⟧⟦◈破⟧布。十二年，立沛侯刘濞为吴王，王故荆地。",
+      "annotated": "<p>高祖</p><time>十一年</time><time>秋</time>，<off>淮南王</off><p>黥布</p><vact>反</vact>，东⟦◈击⟧<state>荆</state>。<off>荆王</off><p name=\"刘贾\">贾</p>与⟦◈战⟧，不⟦◈胜⟧，⟦◈走⟧<loc>富陵</loc>，为<p name=\"黥布\">布</p>军所<vact>杀</vact>。<p>高祖</p>自⟦◈击⟧⟦◈破⟧<p name=\"黥布\">布</p>。<time>十二年</time>，<vpol>立</vpol><off>沛侯</off><p>刘濞</p>为<off>吴王</off>，<vpol>王</vpol>故<state>荆</state>地。"
+    },
+    {
+      "pid": "6",
+      "text": "燕王刘泽者，诸刘远属也。高帝三年，泽为郎中。高帝十一年，泽以将军⟦◈击⟧陈豨，得王黄，为营陵侯。",
+      "annotated": "<off>燕王</off><p>刘泽</p>者，<clan>诸刘</clan>远属也。<p>高帝</p><time>三年</time>，<p name=\"刘泽\">泽</p>为<off>郎中</off>。<p>高帝</p><time>十一年</time>，<p name=\"刘泽\">泽</p>以<off>将军</off>⟦◈击⟧<p>陈豨</p>，得<p>王黄</p>，为<off>营陵侯</off>。"
+    },
+    {
+      "pid": "7",
+      "text": "高后时，齐人田生游乏资，以画干营陵侯泽。泽大说之，用金二百斤为田生寿。田生已得金，即归齐。二年，泽使人谓田生曰：“弗与矣。” 田生如长安，不见泽，而假大宅，令其子求事吕后所幸大谒者张子卿。居数月，田生子请张卿临，亲脩具。张卿许往。田生盛帷帐共具，譬如列侯。张卿惊。酒酣，乃屏人说张卿曰：“臣观诸侯王邸弟百馀，皆高祖一切功臣。今吕氏雅故本推毂高帝就天下，功至大，又亲戚太后之重。太后春秋长，诸吕弱，太后欲立吕产为王，王代。太后又重发之，恐大臣不听。今卿最幸，大臣所敬，何不风大臣以闻太后，太后必喜。诸吕已王，万户侯亦卿之有。太后心欲之，而卿为内臣，不急发，恐祸及身矣。” 张卿大然之，乃风大臣语太后。太后朝，因问大臣。大臣请立吕产为吕王。太后赐张卿千斤金，张卿以其半与田生。田生弗受，因说之曰：“吕产王也，诸大臣未大服。今营陵侯泽，诸刘，为大将军，独此尚觖望。今卿言太后，列十馀县王之，彼得王，喜去，诸吕王益固矣。” 张卿入言，太后然之。乃以营陵侯刘泽为琅邪王。琅邪王乃与田生之国。田生劝泽急行，毋留。出关，太后果使人追止之，已出，即还。",
+      "annotated": "<time>高后时</time>，<state>齐</state>人<p>田生</p>游乏资，以画干<off>营陵侯</off><p name=\"刘泽\">泽</p>。<p name=\"刘泽\">泽</p>大说之，用<art>金</art><qty>二百斤</qty>为<p>田生</p>寿。<p>田生</p>已得<art>金</art>，即归<state>齐</state>。<time>二年</time>，<p name=\"刘泽\">泽</p>使人谓<p>田生</p>曰：“弗与矣。” <p>田生</p>如<loc>长安</loc>，不见<p name=\"刘泽\">泽</p>，而假大宅，令其<role>子</role>求事<p>吕后</p>所幸大<off>谒者</off><p>张子卿</p>。居数月，<p>田生</p><role>子</role>请<p name=\"张子卿\">张卿</p>临，亲脩具。<p name=\"张子卿\">张卿</p>许往。<p>田生</p>盛<art>帷帐</art>共具，譬如<role>列侯</role>。<p name=\"张子卿\">张卿</p>惊。酒酣，乃屏人说<p name=\"张子卿\">张卿</p>曰：“臣观<role>诸侯</role><off>王</off>邸弟<qty>百馀</qty>，皆<p>高祖</p>一切<role>功臣</role>。今<clan>吕氏</clan>雅故本推毂<p>高帝</p>就<loc>天下</loc>，功至大，又<role>亲戚</role><role>太后</role>之重。<role>太后</role>春秋长，<clan>诸吕</clan>弱，<role>太后</role>欲<vpol>立</vpol><p>吕产</p>为<off>王</off>，<vpol>王</vpol><loc>代</loc>。<role>太后</role>又重发之，恐<role>大臣</role>不听。今卿最幸，<role>大臣</role>所敬，何不风<role>大臣</role>以闻<role>太后</role>，<role>太后</role>必喜。<clan>诸吕</clan>已<vpol>王</vpol>，<qty>万户</qty><role>侯</role>亦卿之有。<role>太后</role>心欲之，而卿为内臣，不急发，恐祸及身矣。” <p name=\"张子卿\">张卿</p>大然之，乃风<role>大臣</role>语<role>太后</role>。<role>太后</role>朝，因问<role>大臣</role>。<role>大臣</role>请<vpol>立</vpol><p>吕产</p>为<off>吕王</off>。<role>太后</role>赐<p name=\"张子卿\">张卿</p><qty>千斤</qty><art>金</art>，<p name=\"张子卿\">张卿</p>以其半与<p>田生</p>。<p>田生</p>弗受，因说之曰：“<p>吕产</p><vpol>王</vpol>也，<role>诸大臣</role>未大服。今<off>营陵侯</off><p name=\"刘泽\">泽</p>，<clan>诸刘</clan>，为<off>大将军</off>，独此尚觖望。今卿言<role>太后</role>，列<qty>十馀县</qty><vpol>王</vpol>之，彼得<vpol>王</vpol>，喜去，<clan>诸吕</clan><vpol>王</vpol>益固矣。” <p name=\"张子卿\">张卿</p>入言，<role>太后</role>然之。乃以<off>营陵侯</off><p>刘泽</p>为<off>琅邪王</off>。<off>琅邪王</off>乃与<p>田生</p><vpol>之国</vpol>。<p>田生</p>劝<p name=\"刘泽\">泽</p>急行，毋留。出<loc>关</loc>，<role>太后</role>果使人追止之，已出，即还。"
+    },
+    {
+      "pid": "8",
+      "text": "及太后崩，琅邪王泽乃曰：“帝少，诸吕用事，刘氏孤弱。” 乃引兵与齐王合谋西，欲诛诸吕。至梁，闻汉遣灌将军⟦◈屯⟧荥阳，泽⟦◈还⟧兵⟦◈备⟧西界，遂跳驱至长安。代王亦从代至。诸将相与琅邪王共立代王为天子。天子乃徙泽为燕王，乃复以琅邪予齐，复故地。",
+      "annotated": "及<role>太后</role>崩，<off>琅邪王</off><p name=\"刘泽\">泽</p>乃曰：“<role>帝</role>少，<clan>诸吕</clan>用事，<clan>刘氏</clan>孤弱。” 乃引兵与<off>齐王</off>合谋西，欲<vact>诛</vact><clan>诸吕</clan>。至<loc>梁</loc>，闻<state>汉</state>遣<p name=\"灌婴\">灌将军</p>⟦◈屯⟧<loc>荥阳</loc>，<p name=\"刘泽\">泽</p>⟦◈还⟧兵⟦◈备⟧<loc>西界</loc>，遂跳驱至<loc>长安</loc>。<off>代王</off>亦从<loc>代</loc>至。<role>诸将相</role>与<off>琅邪王</off>共<vpol>立</vpol><off>代王</off>为<role>天子</role>。<role>天子</role>乃徙<p name=\"刘泽\">泽</p>为<off>燕王</off>，乃复以<loc>琅邪</loc>予<state>齐</state>，复故地。"
+    },
+    {
+      "pid": "9",
+      "text": "泽王燕二年，薨，谥为敬王。传子嘉，为康王。",
+      "annotated": "<p name=\"刘泽\">泽</p><vpol>王</vpol><state>燕</state><time name=\"时长\">二年</time>，薨，<vpol>谥</vpol>为<p name=\"刘泽\">敬王</p>。传<role>子</role><p name=\"刘嘉\">嘉</p>，为<p name=\"刘嘉\">康王</p>。"
+    },
+    {
+      "pid": "10",
+      "text": "至孙定国，与父康王姬奸，生子男一人。夺弟妻为姬。与子女三人奸。定国有所欲诛杀臣肥如令郢人，郢人等告定国，定国使谒者以他法劾捕格杀郢人以灭口。至元朔元年，郢人昆弟复上书具言定国阴事，以此发觉。诏下公卿，皆议曰：“定国禽兽行，乱人伦，逆天，当诛。” 上许之。定国自杀，国除为郡。 ::: 太史公曰",
+      "annotated": "至<role>孙</role><p>定国</p>，与<role>父</role><p name=\"刘嘉\">康王</p>姬奸，生子男<qty>一人</qty>。夺<role>弟</role><role>妻</role>为姬。与<role>子女</role><qty>三人</qty>奸。<p>定国</p>有所欲<vact>诛</vact><vact>杀</vact>臣<loc>肥如</loc><off>令</off><p>郢人</p>，<p>郢人</p>等告<p>定国</p>，<p>定国</p>使<off>谒者</off>以他法劾捕格<vact>杀</vact><p>郢人</p>以灭口。至<time>元朔元年</time>，<p>郢人</p><role>昆弟</role>复上书具言<p>定国</p>阴事，以此发觉。诏下<role>公卿</role>，皆议曰：“<p>定国</p>禽兽行，乱人伦，逆<idea>天</idea>，当<vact>诛</vact>。” <role>上</role>许之。<p>定国</p><vact>自杀</vact>，<vpol>国除</vpol>为郡。 ::: 太史公曰"
+    },
+    {
+      "pid": "11",
+      "text": "太史公曰：荆王王也，由汉初⟦◈定⟧，天下未集，故刘贾虽属疏，然以策为王，填江淮之间。 刘泽之王，权激吕氏，然刘泽卒南面称孤者三世。 事发相重，岂不为伟乎！ ::: ::: 赞",
+      "annotated": "<p>太史公</p>曰：<off>荆王</off><vpol>王</vpol>也，由<state>汉</state>初⟦◈定⟧，<loc>天下</loc>未集，故<p>刘贾</p>虽属疏，然以策为<off>王</off>，填<loc>江淮</loc>之间。 <p>刘泽</p>之<vpol>王</vpol>，权激<clan>吕氏</clan>，然<p>刘泽</p>卒<sys>南面</sys>称孤者<qty>三世</qty>。 事发相重，岂不为伟乎！ ::: ::: 赞"
+    },
+    {
+      "pid": "12",
+      "text": "刘贾初从，首⟦◈定⟧三秦。 既渡白马，遂⟦◈围⟧寿春。 始迎黥布，绝间周殷。 赏功胙士，与楚为邻。 营陵始爵，勋由⟦◈击⟧陈。 田生游说，受赐千斤。 权激诸吕，事发荣身。 徙封传嗣，亡於郢人。 :::",
+      "annotated": "<p>刘贾</p>初从，首⟦◈定⟧三<state>秦</state>。 既渡<loc>白马</loc>，遂⟦◈围⟧<loc>寿春</loc>。 始迎<p>黥布</p>，绝间<p>周殷</p>。 赏功胙士，与<state>楚</state>为邻。 <loc>营陵</loc>始爵，勋由⟦◈击⟧<p name=\"陈豨\">陈</p>。 <p>田生</p>游说，受赐<qty>千斤</qty>。 权激<clan>诸吕</clan>，事发荣身。 徙封传嗣，亡於<p>郢人</p>。 :::"
+    }
+  ]
+}

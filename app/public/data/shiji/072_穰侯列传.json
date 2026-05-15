@@ -1,0 +1,71 @@
+{
+  "work": "史记",
+  "chapter": "穰侯列传",
+  "chapter_file": "072_穰侯列传",
+  "chapter_type": "列传",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 12,
+  "paragraph_count_done": 12,
+  "paragraphs": [
+    {
+      "pid": "1",
+      "text": "穰侯魏厓者，秦昭王母宣太后弟也。其先楚人，姓羋氏。",
+      "annotated": "<p name=\"魏冉\">穰侯</p><p name=\"魏冉\">魏厓</p>者，<p>秦昭王</p><role>母</role><p name=\"秦宣太后\">宣太后</p><role>弟</role>也。其先<state>楚</state>人，姓<clan>羋氏</clan>。"
+    },
+    {
+      "pid": "2",
+      "text": "秦武王卒，无子，立其弟为昭王。昭王母故号为羋八子，及昭王即位，羋八子号为宣太后。宣太后非武王母。武王母号曰惠文后，先武王死。宣太后二弟：其异父长弟曰穰侯，姓魏氏，名厓；同父弟曰羋戎，为华阳君。而昭王同母弟曰高陵君、泾阳君。而魏厓最贤，自惠王、武王时任职用事。武王卒，诸弟争立，唯魏厓力为能立昭王。昭王即位，以厓为将军，卫咸阳。诛季君之乱，而⟦◈逐⟧武王后出之魏，昭王诸兄弟不善者皆⟦◈灭⟧之，威振秦国。昭王少，宣太后自治，任魏厓为政。",
+      "annotated": "<p>秦武王</p>卒，无<role>子</role>，立其<role>弟</role>为<p name=\"秦昭王\">昭王</p>。<p name=\"秦昭王\">昭王</p><role>母</role>故号为<p name=\"秦宣太后\">羋八子</p>，及<p name=\"秦昭王\">昭王</p>即位，<p name=\"秦宣太后\">羋八子</p>号为<p name=\"秦宣太后\">宣太后</p>。<p name=\"秦宣太后\">宣太后</p>非<p name=\"秦武王\">武王</p><role>母</role>。<p name=\"秦武王\">武王</p><role>母</role>号曰<p name=\"秦惠文后\">惠文后</p>，先<p name=\"秦武王\">武王</p>死。<p name=\"秦宣太后\">宣太后</p>二<role>弟</role>：其异<role>父</role>长<role>弟</role>曰<p name=\"魏冉\">穰侯</p>，姓<clan>魏氏</clan>，名<p name=\"魏冉\">厓</p>；同<role>父</role><role>弟</role>曰<p>羋戎</p>，为<p name=\"羋戎\">华阳君</p>。而<p name=\"秦昭王\">昭王</p>同<role>母</role><role>弟</role>曰<p name=\"公子市\">高陵君</p>、<p name=\"公子悝\">泾阳君</p>。而<p name=\"魏冉\">魏厓</p>最贤，自<p name=\"秦惠王\">惠王</p>、<p name=\"秦武王\">武王</p>时任职用事。<p name=\"秦武王\">武王</p>卒，诸<role>弟</role>争立，唯<p name=\"魏冉\">魏厓</p>力为能<vpol>立</vpol><p name=\"秦昭王\">昭王</p>。<p name=\"秦昭王\">昭王</p>即位，以<p name=\"魏冉\">厓</p>为<off>将军</off>，卫<loc>咸阳</loc>。<vact>诛</vact><p>季君</p>之乱，而⟦◈逐⟧<p name=\"秦武王后\">武王后</p>出之<state>魏</state>，<p name=\"秦昭王\">昭王</p>诸<role>兄</role><role>弟</role>不善者皆⟦◈灭⟧之，威振<state>秦</state>国。<p name=\"秦昭王\">昭王</p>少，<p name=\"秦宣太后\">宣太后</p>自治，任<p name=\"魏冉\">魏厓</p>为政。"
+    },
+    {
+      "pid": "3",
+      "text": "昭王七年，樗里子死，而使泾阳君质於齐。赵人楼缓来相秦，赵不利，乃使仇液之秦，请以魏厓为秦相。仇液将行，其客宋公谓液曰：“秦不听公，楼缓必怨公。公不若谓楼缓曰‘请为公毋急秦’。秦王见赵请相魏厓之不急，且不听公。公言而事不成，以德楼子；事成，魏厓故德公矣。” 於是仇液从之。而秦果免楼缓而魏厓相秦。",
+      "annotated": "<p name=\"秦昭王\">昭王</p><time name=\"时长\">七年</time>，<p>樗里子</p>死，而使<p name=\"公子悝\">泾阳君</p>质於<state>齐</state>。<state>赵</state>人<p>楼缓</p>来相<state>秦</state>，<state>赵</state>不利，乃使<p>仇液</p>之<state>秦</state>，请以<p name=\"魏冉\">魏厓</p>为<state>秦</state>相。<p>仇液</p>将行，其客<state>宋</state>公谓<p name=\"仇液\">液</p>曰：“<state>秦</state>不听公，<p>楼缓</p>必怨公。公不若谓<p>楼缓</p>曰‘请为公毋急<state>秦</state>’。<off>秦王</off>见<state>赵</state>请相<p name=\"魏冉\">魏厓</p>之不急，且不听公。公言而事不成，以德楼<role>子</role>；事成，<p name=\"魏冉\">魏厓</p>故德公矣。” 於是<p>仇液</p>从之。而<state>秦</state>果<law>免</law><p>楼缓</p>而<p name=\"魏冉\">魏厓</p>相<state>秦</state>。"
+    },
+    {
+      "pid": "4",
+      "text": "欲诛吕礼，礼出奔齐。昭王十四年，魏厓举白起，使代向寿将而⟦◈攻⟧韩、魏，⟦◈败⟧之伊阙，斩首二十四万，⟦◈虏⟧魏将公孙喜。明年，又⟦◈取⟧楚之宛、叶。魏厓谢病免相，以客卿寿烛为相。其明年，烛免，复相厓，乃封魏厓於穰，复益封陶，号曰穰侯。",
+      "annotated": "欲<vact>诛</vact><p>吕礼</p>，<p name=\"吕礼\">礼</p>出奔<state>齐</state>。<p name=\"秦昭王\">昭王</p><time name=\"时长\">十四年</time>，<p name=\"魏冉\">魏厓</p>举<p>白起</p>，使<law>代</law><p>向寿</p><off>将</off>而⟦◈攻⟧<state>韩</state>、<state>魏</state>，⟦◈败⟧之<loc>伊阙</loc>，<law>斩首</law>二十四万，⟦◈虏⟧<state>魏</state>将<p>公孙喜</p>。<time>明年</time>，又⟦◈取⟧<state>楚</state>之<loc>宛</loc>、<loc>叶</loc>。<p name=\"魏冉\">魏厓</p>谢病免<off>相</off>，以<off>客卿</off><p>寿烛</p>为相。其<time>明年</time>，<p name=\"寿烛\">烛</p>免，复相<p name=\"魏冉\">厓</p>，乃<vpol>封</vpol><p name=\"魏冉\">魏厓</p>於<loc>穰</loc>，复益<vpol>封</vpol><loc>陶</loc>，号曰<p name=\"魏冉\">穰侯</p>。"
+    },
+    {
+      "pid": "5",
+      "text": "穰侯封四岁，为秦将⟦◈攻⟧魏。魏献河东方四百里。⟦◈拔⟧魏之河内，⟦◈取⟧城大小六十馀。昭王十九年，秦称西帝，齐称东帝。月馀，吕礼来，而齐、秦各复归帝为王。魏厓复相秦，六岁而免。免二岁，复相秦。四岁，而使白起⟦◈拔⟧楚之郢，秦置南郡。乃封白起为武安君。白起者，穰侯之所任举也，相善。於是穰侯之富，富於王室。",
+      "annotated": "<p name=\"魏冉\">穰侯</p>封<time name=\"时长\">四岁</time>，为<state>秦</state><off>将</off>⟦◈攻⟧<state>魏</state>。<state>魏</state>献<loc>河东</loc>方<qty>四百里</qty>。⟦◈拔⟧<state>魏</state>之<loc>河内</loc>，⟦◈取⟧城大小<qty>六十馀</qty>。<p name=\"秦昭王\">昭王</p><time name=\"时长\">十九年</time>，<state>秦</state>称西帝，<state>齐</state>称东帝。<time>月馀</time>，<p>吕礼</p>来，而<state>齐</state>、<state>秦</state>各复归帝为王。<p name=\"魏冉\">魏厓</p>复相<state>秦</state>，<time name=\"时长\">六岁</time>而<law>免</law>。<law>免</law><time name=\"时长\">二岁</time>，复相<state>秦</state>。<time name=\"时长\">四岁</time>，而使<p>白起</p>⟦◈拔⟧<state>楚</state>之<loc>郢</loc>，<state>秦</state>置<loc>南郡</loc>。乃<vpol>封</vpol><p>白起</p>为<p name=\"白起\">武安君</p>。<p>白起</p>者，<p name=\"魏冉\">穰侯</p>之所任举也，相善。於是<p name=\"魏冉\">穰侯</p>之富，富於王室。"
+    },
+    {
+      "pid": "6",
+      "text": "昭王三十二年，穰侯为相国，将兵⟦◈攻⟧魏，⟦◈走⟧芒卯，入北宅，遂⟦◈围⟧大梁。梁大夫须贾说穰侯曰：“臣闻魏之长吏谓魏王曰：’昔梁惠王⟦◈伐⟧赵，⟦◈战⟧胜三梁，⟦◈拔⟧邯郸；赵氏不割，而邯郸复归。齐人⟦◈攻⟧卫，⟦◈拔⟧故国，杀子良；卫人不割，而故地复反。卫、赵之所以国全兵劲而地不并於诸侯者，以其能忍难而重出地也。宋、中山数⟦◈伐⟧割地，而国随以亡。臣以为卫、赵可法，而宋、中山可为戒也。秦，贪戾之国也，而毋亲。蚕食魏氏，又尽晋国，⟦◈战⟧胜暴子，割八县，地未毕入，兵复出矣。夫秦何厌之有哉！今又⟦◈走⟧芒卯，入北宅，此非敢⟦◈攻⟧梁也，且劫王以求多割地。王必勿听也。今王背楚、赵而讲秦，楚、赵怒而去王，与王争事秦，秦必受之。秦挟楚、赵之兵以复⟦◈攻⟧梁，则国求无亡不可得也。原王之必无讲也。王若欲讲，少割而有质；不然，必见欺。’此臣之所闻於魏也，原君之以是虑事也。周书曰‘惟命不于常’，此言幸之不可数也。夫⟦◈战⟧胜暴子，割八县，此非兵力之精也，又非计之工也，天幸为多矣。今又⟦◈走⟧芒卯，入北宅，以⟦◈攻⟧大梁，是以天幸自为常也。智者不然。臣闻魏氏悉其百县胜甲以上戍大梁，臣以为不下三十万。以三十万之众守梁七仞之城，臣以为汤、武复生，不易⟦◈攻⟧也。夫轻背楚、赵之兵，陵七仞之城，⟦◈战⟧三十万之众，而志必举之，臣以为自天地始分以至于今，未尝有者也。⟦◈攻⟧而不⟦◈拔⟧，秦兵必罢，陶邑必亡，则前功必弃矣。今魏氏方疑，可以少割收也。原君逮楚、赵之兵未至於梁，亟以少割收魏。魏方疑而得以少割为利，必欲之，则君得所欲矣。楚、赵怒於魏之先己也，必争事秦，从以此散，而君後择焉。且君之得地岂必以兵哉！割晋国，秦兵不⟦◈攻⟧，而魏必效绛安邑。又为陶开两道，几尽故宋，卫必效单父。秦兵可全，而君制之，何索而不得，何为而不成！原君熟虑之而无行危。” 穰侯曰：“善。” 乃罢梁⟦◈围⟧。",
+      "annotated": "<p name=\"秦昭王\">昭王</p><time name=\"时长\">三十二年</time>，<p name=\"魏冉\">穰侯</p>为<off>相国</off>，<off>将</off>兵⟦◈攻⟧<state>魏</state>，⟦◈走⟧<p>芒卯</p>，入北宅，遂⟦◈围⟧<loc>大梁</loc>。<role>梁大夫</role><p>须贾</p>说<p name=\"魏冉\">穰侯</p>曰：“<role>臣</role>闻<state>魏</state>之<off>长吏</off>谓<off>魏王</off>曰：’昔<state>梁</state><p name=\"魏惠王\">惠王</p>⟦◈伐⟧<state>赵</state>，⟦◈战⟧胜<state>三梁</state>，⟦◈拔⟧<loc>邯郸</loc>；<clan>赵氏</clan>不割，而<loc>邯郸</loc>复归。<state>齐</state>人⟦◈攻⟧<state>卫</state>，⟦◈拔⟧故国，<vact>杀</vact><p>子良</p>；<state>卫</state>人不割，而故地复反。<state>卫</state>、<state>赵</state>之所以国全兵劲而地不并於<role>诸侯</role>者，以其能忍难而重出地也。<state>宋</state>、<state>中山</state>数⟦◈伐⟧割地，而国随以亡。<role>臣</role>以为<state>卫</state>、<state>赵</state>可法，而<state>宋</state>、<state>中山</state>可为戒也。<state>秦</state>，贪戾之国也，而毋亲。蚕食<clan>魏氏</clan>，又尽<state>晋国</state>，⟦◈战⟧胜暴<role>子</role>，割八县，地未毕入，兵复出矣。夫<state>秦</state>何厌之有哉！今又⟦◈走⟧<p>芒卯</p>，入北宅，此非敢⟦◈攻⟧<state>梁</state>也，且劫王以求多割地。王必勿听也。<role>今王</role>背<state>楚</state>、<state>赵</state>而讲<state>秦</state>，<state>楚</state>、<state>赵</state>怒而去王，与王争事<state>秦</state>，<state>秦</state>必受之。<state>秦</state>挟<state>楚</state>、<state>赵</state>之兵以复⟦◈攻⟧<state>梁</state>，则国求无亡不可得也。原王之必无讲也。王若欲讲，少割而有质；不然，必见欺。’此<role>臣</role>之所闻於<state>魏</state>也，原<role>君</role>之以是虑事也。<book>周书</book>曰‘惟命不于常’，此言幸之不可数也。夫⟦◈战⟧胜暴<role>子</role>，割八县，此非兵力之精也，又非计之工也，天幸为多矣。今又⟦◈走⟧<p>芒卯</p>，入北宅，以⟦◈攻⟧<loc>大梁</loc>，是以天幸自为常也。<role>智者</role>不然。<role>臣</role>闻<clan>魏氏</clan>悉其百县胜甲以上戍<loc>大梁</loc>，<role>臣</role>以为不下<qty>三十万</qty>。以<qty>三十万之众</qty>守<state>梁</state>七仞之城，<role>臣</role>以为<p>汤</p>、<p>武</p>复生，不易⟦◈攻⟧也。夫轻背<state>楚</state>、<state>赵</state>之兵，陵七仞之城，⟦◈战⟧<qty>三十万之众</qty>，而志必举之，<role>臣</role>以为自<astro>天地</astro>始分以至于今，未尝有者也。⟦◈攻⟧而不⟦◈拔⟧，<state>秦</state>兵必<law>罢</law>，<loc>陶</loc>邑必亡，则前功必弃矣。今<clan>魏氏</clan>方疑，可以少割收也。原<role>君</role>逮<state>楚</state>、<state>赵</state>之兵未至於<state>梁</state>，亟以少割收<state>魏</state>。<state>魏</state>方疑而得以少割为利，必欲之，则<role>君</role>得所欲矣。<state>楚</state>、<state>赵</state>怒於<state>魏</state>之先己也，必争事<state>秦</state>，从以此散，而<role>君</role>後择焉。且<role>君</role>之得地岂必以兵哉！割<state>晋国</state>，<state>秦</state>兵不⟦◈攻⟧，而<state>魏</state>必效<loc>绛</loc><loc>安邑</loc>。又为<loc>陶</loc>开两道，几尽故<state>宋</state>，<state>卫</state>必效<loc>单父</loc>。<state>秦</state>兵可全，而<role>君</role>制之，何索而不得，何为而不成！原<role>君</role>熟虑之而无行危。” <p name=\"魏冉\">穰侯</p>曰：“善。” 乃<law>罢</law><state>梁</state>⟦◈围⟧。"
+    },
+    {
+      "pid": "7",
+      "text": "明年，魏背秦，与齐从亲。秦使穰侯⟦◈伐⟧魏，斩首四万，⟦◈走⟧魏将暴鸢，得魏三县。穰侯益封。",
+      "annotated": "<time>明年</time>，<state>魏</state>背<state>秦</state>，与<state>齐</state>从亲。<state>秦</state>使<p name=\"魏冉\">穰侯</p>⟦◈伐⟧<state>魏</state>，<law>斩首</law><qty>四万</qty>，⟦◈走⟧<state>魏</state><off>将</off><p>暴鸢</p>，得<state>魏</state><qty>三县</qty>。<p name=\"魏冉\">穰侯</p>益<vpol>封</vpol>。"
+    },
+    {
+      "pid": "8",
+      "text": "明年，穰侯与白起客卿胡阳复⟦◈攻⟧赵、韩、魏，⟦◈破⟧芒卯於华阳下，斩首十万，⟦◈取⟧魏之卷、蔡阳、长社，赵氏观津。且与赵观津，益赵以兵，⟦◈伐⟧齐。齐襄王惧，使苏代为齐阴遗穰侯书曰：“臣闻往来者言曰‘秦将益赵甲四万以⟦◈伐⟧齐’，臣窃必之敝邑之王曰‘秦王明而熟於计，穰侯智而习於事，必不益赵甲四万以⟦◈伐⟧齐’。是何也？夫三晋之相与也，秦之深雠也。百相背也，百相欺也，不为不信，不为无行。今⟦◈破⟧齐以肥赵。赵，秦之深雠，不利於秦。此一也。秦之谋者，必曰‘⟦◈破⟧齐，弊晋、楚，而後制晋、楚之胜’。夫齐，罢国也，以天下⟦◈攻⟧齐，如以千钧之弩决溃筴也，必死，安能弊晋、楚？此二也。秦少出兵，则晋、楚不信也；多出兵，则晋、楚为制於秦。齐恐，不⟦◈走⟧秦，必⟦◈走⟧晋、楚。此三也。秦割齐以啖晋、楚，晋、楚案之以兵，秦反受敌。此四也。是晋、楚以秦谋齐，以齐谋秦也，何晋、楚之智而秦、齐之愚？此五也。故得安邑以善事之，亦必无患矣。秦有安邑，韩氏必无上党矣。⟦◈取⟧天下之肠胃，与出兵而惧其不反也，孰利？臣故曰秦王明而熟於计，穰侯智而习於事，必不益赵甲四万以⟦◈代⟧齐矣。” 於是穰侯不行，引兵而归。",
+      "annotated": "<time>明年</time>，<p name=\"魏冉\">穰侯</p>与<p>白起</p><off>客卿</off><p>胡阳</p>复⟦◈攻⟧<state>赵</state>、<state>韩</state>、<state>魏</state>，⟦◈破⟧<p>芒卯</p>於<loc>华阳</loc>下，<law>斩首</law><qty>十万</qty>，⟦◈取⟧<state>魏</state>之<loc>卷</loc>、<loc>蔡阳</loc>、<loc>长社</loc>，<clan>赵氏</clan><loc>观津</loc>。且与<state>赵</state><loc>观津</loc>，益<state>赵</state>以兵，⟦◈伐⟧<state>齐</state>。<state>齐</state><p name=\"齐襄王\">襄王</p>惧，使<p>苏代</p>为<state>齐</state>阴遗<p name=\"魏冉\">穰侯</p>书曰：“<role>臣</role>闻往来者言曰‘<state>秦</state><off>将</off>益<state>赵</state>甲<qty>四万</qty>以⟦◈伐⟧<state>齐</state>’，<role>臣</role>窃必之敝邑之王曰‘<off>秦王</off>明而熟於计，<p name=\"魏冉\">穰侯</p>智而习於事，必不益<state>赵</state>甲<qty>四万</qty>以⟦◈伐⟧<state>齐</state>’。是何也？夫三<state>晋</state>之相与也，<state>秦</state>之深雠也。百相背也，百相欺也，不为不信，不为无行。今⟦◈破⟧<state>齐</state>以肥<state>赵</state>。<state>赵</state>，<state>秦</state>之深雠，不利於<state>秦</state>。此一也。<state>秦</state>之<role>谋者</role>，必曰‘⟦◈破⟧<state>齐</state>，弊<state>晋</state>、<state>楚</state>，而後制<state>晋</state>、<state>楚</state>之胜’。夫<state>齐</state>，罢国也，以<idea>天下</idea>⟦◈攻⟧<state>齐</state>，如以<qty>千钧</qty>之<art>弩</art>决溃筴也，必死，安能弊<state>晋</state>、<state>楚</state>？此二也。<state>秦</state>少出兵，则<state>晋</state>、<state>楚</state>不信也；多出兵，则<state>晋</state>、<state>楚</state>为制於<state>秦</state>。<state>齐</state>恐，不⟦◈走⟧<state>秦</state>，必⟦◈走⟧<state>晋</state>、<state>楚</state>。此三也。<state>秦</state>割<state>齐</state>以啖<state>晋</state>、<state>楚</state>，<state>晋</state>、<state>楚</state>案之以兵，<state>秦</state>反受敌。此四也。是<state>晋</state>、<state>楚</state>以<state>秦</state>谋<state>齐</state>，以<state>齐</state>谋<state>秦</state>也，何<state>晋</state>、<state>楚</state>之智而<state>秦</state>、<state>齐</state>之愚？此五也。故得<loc>安邑</loc>以善事之，亦必无患矣。<state>秦</state>有<loc>安邑</loc>，<clan>韩氏</clan>必无<loc>上党</loc>矣。⟦◈取⟧<idea>天下</idea>之肠胃，与出兵而惧其不反也，孰利？<role>臣</role>故曰<off>秦王</off>明而熟於计，<p name=\"魏冉\">穰侯</p>智而习於事，必不益<state>赵</state>甲<qty>四万</qty>以⟦◈代⟧<state>齐</state>矣。” 於是<p name=\"魏冉\">穰侯</p>不行，引兵而归。"
+    },
+    {
+      "pid": "9",
+      "text": "昭王三十六年，相国穰侯言客卿灶，欲⟦◈伐⟧齐⟦◈取⟧刚、寿，以广其陶邑。於是魏人范睢自谓张禄先生，讥穰侯之⟦◈伐⟧齐，乃越三晋以⟦◈攻⟧齐也，以此时奸说秦昭王。昭王於是用范睢。范睢言宣太后专制，穰侯擅权於诸侯，泾阳君、高陵君之属太侈，富於王室。於是秦昭王悟，乃免相国，令泾阳之属皆出关，就封邑。穰侯出关，辎车千乘有馀。",
+      "annotated": "<p name=\"秦昭王\">昭王</p><time name=\"时长\">三十六年</time>，<off>相国</off><p name=\"魏冉\">穰侯</p>言<off>客卿</off><p>灶</p>，欲⟦◈伐⟧<state>齐</state>⟦◈取⟧<loc>刚</loc>、<loc>寿</loc>，以广其<loc>陶</loc>邑。於是<state>魏</state>人<p>范睢</p>自谓<p>张禄先生</p>，讥<p name=\"魏冉\">穰侯</p>之⟦◈伐⟧<state>齐</state>，乃<law>越</law>三<state>晋</state>以⟦◈攻⟧<state>齐</state>也，以此时奸说<p>秦昭王</p>。<p name=\"秦昭王\">昭王</p>於是用<p>范睢</p>。<p>范睢</p>言<p name=\"秦宣太后\">宣太后</p>专制，<p name=\"魏冉\">穰侯</p>擅权於<role>诸侯</role>，<p name=\"公子悝\">泾阳君</p>、<p name=\"公子市\">高陵君</p>之属太侈，富於王室。於是<p>秦昭王</p>悟，乃<law>免</law><off>相国</off>，令<p name=\"公子悝\">泾阳</p>之属皆出关，就封邑。<p name=\"魏冉\">穰侯</p>出关，辎<art>车</art><qty>千乘</qty>有馀。"
+    },
+    {
+      "pid": "10",
+      "text": "穰侯卒於陶，而因葬焉。秦复收陶为郡。 ::: 太史公曰",
+      "annotated": "<p name=\"魏冉\">穰侯</p>卒於<loc>陶</loc>，而因葬焉。<state>秦</state>复收<loc>陶</loc>为郡。 ::: 太史公曰"
+    },
+    {
+      "pid": "11",
+      "text": "太史公曰：穰侯，昭王亲舅也。而秦所以东益地，弱诸侯，尝称帝於天下，天下皆西乡稽首者，穰侯之功也。及其贵极富溢，一夫开说，身折势夺而以忧死，况於羁旅之臣乎！ ::: ::: 赞",
+      "annotated": "<p>太史公</p>曰：<p name=\"魏冉\">穰侯</p>，<p name=\"秦昭王\">昭王</p>亲<role>舅</role>也。而<state>秦</state>所以东益地，<law>弱</law><role>诸侯</role>，尝称帝於<idea>天下</idea>，<idea>天下</idea>皆西乡稽首者，<p name=\"魏冉\">穰侯</p>之功也。及其贵极富溢，一<role>夫</role>开说，身折势夺而以忧死，况於羁旅之<role>臣</role>乎！ ::: ::: 赞"
+    },
+    {
+      "pid": "12",
+      "text": "穰侯智识，应变无方。 内倚太后，外辅昭王。 四登相位，再列封疆。 ⟦◈摧⟧齐⟦◈挠⟧楚，⟦◈破⟧魏⟦◈围⟧梁。 一夫开说，忧愤而亡。 :::",
+      "annotated": "<p name=\"魏冉\">穰侯</p>智识，应变无方。 内倚太后，外辅<p name=\"秦昭王\">昭王</p>。 四登相位，再列封疆。 ⟦◈摧⟧<state>齐</state>⟦◈挠⟧<state>楚</state>，⟦◈破⟧<state>魏</state>⟦◈围⟧<state>梁</state>。 一<role>夫</role>开说，忧愤而亡。 :::"
+    }
+  ]
+}

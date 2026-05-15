@@ -1,0 +1,71 @@
+{
+  "work": "史记",
+  "chapter": "西南夷列传",
+  "chapter_file": "116_西南夷列传",
+  "chapter_type": "列传",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 12,
+  "paragraph_count_done": 12,
+  "paragraphs": [
+    {
+      "pid": "1",
+      "text": "西南夷君长以什数，夜郎最大；其西靡莫之属以什数，滇最大；自滇以北君长以什数，邛都最大：此皆魋结，耕田，有邑聚。其外西自同师以东，北至楪榆，名为巂、昆明，皆编发，随畜迁徙，毋常处，毋君长，地方可数千里。自巂以东北，君长以什数，徙、筰都最大；自筰以东北，君长以什数，厓駹最大。其俗或士箸，或移徙，在蜀之西。自厓駹以东北，君长以什数，白马最大，皆氐类也。此皆巴蜀西南外蛮夷也。",
+      "annotated": "<tribe>西南夷</tribe><off>君长</off>以什数，<state>夜郎</state>最大；其西<state>靡莫</state>之属以什数，<state>滇</state>最大；自<state>滇</state>以北<off>君长</off>以什数，<state>邛都</state>最大：此皆魋结，耕田，有邑聚。其外西自<loc>同师</loc>以东，北至<loc>楪榆</loc>，名为<tribe>巂</tribe>、<tribe>昆明</tribe>，皆编发，随畜迁徙，毋常处，毋<off>君长</off>，地方可<qty>数千里</qty>。自<tribe>巂</tribe>以东北，<off>君长</off>以什数，<state>徙</state>、<state>筰都</state>最大；自<state>筰</state>以东北，<off>君长</off>以什数，<state>厓駹</state>最大。其俗或士箸，或移徙，在<state>蜀</state>之西。自<state>厓駹</state>以东北，<off>君长</off>以什数，<tribe>白马</tribe>最大，皆<tribe>氐</tribe>类也。此皆<loc>巴蜀</loc><loc>西南</loc>外<tribe>蛮夷</tribe>也。"
+    },
+    {
+      "pid": "2",
+      "text": "始楚威王时，使将军庄蹻将兵循江上，略巴、黔中以西。庄蹻者，故楚庄王苗裔也。蹻至滇池，方三百里，旁平地，肥饶数千里，以兵威定属楚。欲归报，会秦⟦◈击⟧夺楚巴、黔中郡，道塞不通，因还，以其众王滇，变服，从其俗，以长之。秦时常頞略通五尺道，诸此国颇置吏焉。十馀岁，秦灭。及汉兴，皆弃此国而开蜀故徼。巴蜀民或窃出商贾，⟦◈取⟧其筰马、僰僮、髦牛，以此巴蜀殷富。",
+      "annotated": "始<p>楚威王</p>时，使<off>将军</off><p>庄蹻</p>将兵循<loc>江</loc>上，略<state>巴</state>、<loc>黔中</loc>以西。<p>庄蹻</p>者，故<p>楚庄王</p><role>苗裔</role>也。<p name=\"庄蹻\">蹻</p>至<loc>滇池</loc>，方<qty>三百里</qty>，旁平地，肥饶<qty>数千里</qty>，以兵威定属<state>楚</state>。欲归报，会<state>秦</state>⟦◈击⟧夺<state>楚</state><state>巴</state>、<loc>黔中</loc>郡，道塞不通，因还，以其众<vpol>王</vpol><state>滇</state>，变服，从其俗，以长之。<state>秦</state>时<p>常頞</p>略通<art>五尺道</art>，诸此国颇置吏焉。<time name=\"时长\">十馀岁</time>，<state>秦</state>灭。及<state>汉</state>兴，皆弃此国而开<state>蜀</state>故徼。<loc>巴蜀</loc><role>民</role>或窃出商贾，⟦◈取⟧其<bio>筰马</bio>、<art>僰僮</art>、<bio>髦牛</bio>，以此<loc>巴蜀</loc>殷富。"
+    },
+    {
+      "pid": "3",
+      "text": "建元六年，大行王恢⟦◈击⟧东越，东越杀王郢以报。恢因兵威使番阳令唐蒙风指晓南越。南越食蒙蜀枸酱，蒙问所从来，曰“道西北牂柯，牂柯江广数里，出番禺城下”。蒙归至长安，问蜀贾人，贾人曰：“独蜀出枸酱，多持窃出市夜郎。夜郎者，临牂柯江，江广百馀步，足以行船。南越以财物役属夜郎，西至同师，然亦不能臣使也。” 蒙乃上书说上曰：“南越王黄屋左纛，地东西万馀里，名为外臣，实一州主也。今以长沙、豫章往，水道多绝，难行。窃闻夜郎所有精兵，可得十馀万，浮船牂柯江，出其不意，此制越一奇也。诚以汉之彊，巴蜀之饶，通夜郎道，为置吏，易甚。” 上许之。乃拜蒙为郎中将，将千人，食重万馀人，从巴蜀筰关入，遂见夜郎侯多同。蒙厚赐，喻以威德，约为置吏，使其子为令。夜郎旁小邑皆贪汉缯帛，以为汉道险，终不能有也，乃且听蒙约。还报，乃以为犍为郡。发巴蜀卒治道，自僰道指牂柯江。蜀人司马相如亦言西夷邛、筰可置郡。使相如以郎中将往喻，皆如南夷，为置一都尉，十馀县，属蜀。",
+      "annotated": "<time>建元六年</time>，<off>大行</off><p>王恢</p>⟦◈击⟧<state>东越</state>，<state>东越</state><vact>杀</vact><off>王</off><p name=\"东越王郢\">郢</p>以报。<p name=\"王恢\">恢</p>因兵威使<off>番阳令</off><p>唐蒙</p>风指晓<state>南越</state>。<state>南越</state>食<p name=\"唐蒙\">蒙</p><art>蜀枸酱</art>，<p name=\"唐蒙\">蒙</p>问所从来，曰“道<loc>西北</loc><loc>牂柯</loc>，<loc>牂柯江</loc>广数里，出<loc>番禺</loc>城下”。<p name=\"唐蒙\">蒙</p>归至<loc>长安</loc>，问<state>蜀</state>贾人，贾人曰：“独<state>蜀</state>出<art>枸酱</art>，多持窃出市<state>夜郎</state>。<state>夜郎</state>者，临<loc>牂柯江</loc>，江广<qty>百馀步</qty>，足以行船。<state>南越</state>以财物役属<state>夜郎</state>，西至<loc>同师</loc>，然亦不能<role>臣</role>使也。” <p name=\"唐蒙\">蒙</p>乃上书说上曰：“<off>南越王</off><art>黄屋</art><art>左纛</art>，地东西<qty>万馀里</qty>，名为外<role>臣</role>，实一州主也。今以<loc>长沙</loc>、<loc>豫章</loc>往，水道多绝，难行。窃闻<state>夜郎</state>所有精兵，可得<qty>十馀万</qty>，浮船<loc>牂柯江</loc>，出其不意，此制越一奇也。诚以<state>汉</state>之彊，<loc>巴蜀</loc>之饶，通<state>夜郎</state>道，为置吏，易甚。” <role>上</role>许之。乃<vpol>拜</vpol><p name=\"唐蒙\">蒙</p>为<off>郎中将</off>，将<qty>千人</qty>，食重<qty>万馀人</qty>，从<loc>巴蜀</loc><loc>筰关</loc>入，遂见<off>夜郎侯</off><p>多同</p>。<p name=\"唐蒙\">蒙</p>厚赐，喻以威德，约为置吏，使其<role>子</role>为令。<state>夜郎</state>旁小邑皆贪汉<art>缯帛</art>，以为<state>汉</state>道险，终不能有也，乃且听<p name=\"唐蒙\">蒙</p>约。还报，乃以为<loc>犍为</loc>郡。发<loc>巴蜀</loc>卒治道，自<loc>僰道</loc>指<loc>牂柯江</loc>。<state>蜀</state>人<p>司马相如</p>亦言<tribe>西夷</tribe><state>邛</state>、<state>筰</state>可置郡。使<p name=\"司马相如\">相如</p>以<off>郎中将</off>往喻，皆如<tribe>南夷</tribe>，为置一<off>都尉</off>，<qty>十馀县</qty>，属<state>蜀</state>。"
+    },
+    {
+      "pid": "4",
+      "text": "当是时，巴蜀四郡通西南夷道，戍转相饟。数岁，道不通，士罢饿离湿死者甚众；西南夷又数反，发兵兴⟦◈击⟧，秏费无功。上患之，使公孙弘往视问焉。还对，言其不便。及弘为御史大夫，是时方筑朔方以据河逐胡，弘因数言西南夷害，可且罢，专力事匈奴。上罢西夷，独置南夷夜郎两县一都尉，稍令犍为自葆就。",
+      "annotated": "当是时，<loc>巴蜀</loc>四郡通<tribe>西南夷</tribe>道，戍转相饟。<time name=\"时长\">数岁</time>，道不通，<role>士</role>罢饿离湿死者甚众；<tribe>西南夷</tribe>又数反，发兵兴⟦◈击⟧，秏费无功。<role>上</role>患之，使<p>公孙弘</p>往视问焉。还对，言其不便。及<p name=\"公孙弘\">弘</p>为<off>御史大夫</off>，是时方筑<loc>朔方</loc>以据河逐<tribe>胡</tribe>，<p name=\"公孙弘\">弘</p>因数言<tribe>西南夷</tribe>害，可且罢，专力事<tribe>匈奴</tribe>。<role>上</role>罢<tribe>西夷</tribe>，独置<tribe>南夷</tribe><state>夜郎</state>两县一<off>都尉</off>，稍令<loc>犍为</loc>自葆就。"
+    },
+    {
+      "pid": "5",
+      "text": "及元狩元年，博望侯张骞使大夏来，言居大夏时见蜀布、邛竹、杖，使问所从来，曰“从东南身毒国，可数千里，得蜀贾人市”。或闻邛西可二千里有身毒国。骞因盛言大夏在汉西南，慕中国，患匈奴隔其道，诚通蜀，身毒国道便近，有利无害。於是天子乃令王然于、柏始昌、吕越人等，使间出西夷西，指求身毒国。至滇，滇王尝羌乃留，为求道西十馀辈。岁馀，皆闭昆明，莫能通身毒国。",
+      "annotated": "及<time>元狩元年</time>，<off>博望侯</off><p>张骞</p>使<state>大夏</state>来，言居<state>大夏</state>时见<art>蜀布</art>、<art>邛竹</art>、<art>杖</art>，使问所从来，曰“从<loc>东南</loc><state>身毒国</state>，可<qty>数千里</qty>，得<state>蜀</state>贾人市”。或闻<state>邛</state>西可<qty>二千里</qty>有<state>身毒国</state>。<p name=\"张骞\">骞</p>因盛言<state>大夏</state>在<state>汉</state>西南，慕<loc>中国</loc>，患<tribe>匈奴</tribe>隔其道，诚通<state>蜀</state>，<state>身毒国</state>道便近，有利无害。於是<role>天子</role>乃令<p>王然于</p>、<p>柏始昌</p>、<p>吕越人</p>等，使间出<tribe>西夷</tribe>西，指求<state>身毒国</state>。至<state>滇</state>，<off>滇王</off><p>尝羌</p>乃留，为求道西<qty>十馀辈</qty>。<time name=\"时长\">岁馀</time>，皆闭<tribe>昆明</tribe>，莫能通<state>身毒国</state>。"
+    },
+    {
+      "pid": "6",
+      "text": "滇王与汉使者言曰：“汉孰与我大？” 及夜郎侯亦然。以道不通故，各自以为一州主，不知汉广大。使者还，因盛言滇大国，足事亲附。天子注意焉。",
+      "annotated": "<off>滇王</off>与<state>汉</state>使者言曰：“<state>汉</state>孰与我大？” 及<off>夜郎侯</off>亦然。以道不通故，各自以为一州主，不知<state>汉</state>广大。使者还，因盛言<state>滇</state>大国，足事亲附。<role>天子</role>注意焉。"
+    },
+    {
+      "pid": "7",
+      "text": "及至南越反，上使驰义侯因犍为发南夷兵。且兰君恐远行，旁国虏其老弱，乃与其众反，杀使者及犍为太守。汉乃发巴蜀罪人尝⟦◈击⟧南越者八校尉⟦◈击⟧⟦◈破⟧之。会越已⟦◈破⟧，汉八校尉不下，即引兵还，行诛头兰。头兰，常隔滇道者也。已平头兰，遂平南夷为牂柯郡。夜郎侯始倚南越，南越已灭，会还诛反者，夜郎遂入朝。上以为夜郎王。",
+      "annotated": "及至<state>南越</state>反，<role>上</role>使<off>驰义侯</off>因<loc>犍为</loc>发<tribe>南夷</tribe>兵。<off>且兰君</off>恐远行，旁国虏其老弱，乃与其众反，<vact>杀</vact>使者及<off>犍为太守</off>。<state>汉</state>乃发<loc>巴蜀</loc>罪人尝⟦◈击⟧<state>南越</state>者八<off>校尉</off>⟦◈击⟧⟦◈破⟧之。会<tribe>越</tribe>已⟦◈破⟧，<state>汉</state>八<off>校尉</off>不下，即引兵还，行<vact>诛</vact><p>头兰</p>。<p>头兰</p>，常隔<state>滇</state>道者也。已平<p>头兰</p>，遂平<tribe>南夷</tribe>为<loc>牂柯</loc>郡。<off>夜郎侯</off>始倚<state>南越</state>，<state>南越</state>已灭，会还<vact>诛</vact>反者，<state>夜郎</state>遂入朝。<role>上</role>以为<off>夜郎王</off>。"
+    },
+    {
+      "pid": "8",
+      "text": "南越⟦◈破⟧後，及汉诛且兰、邛君，并杀筰侯，厓駹皆振恐，请臣置吏。乃以邛都为越巂郡，筰都为沈犁郡，厓駹为汶山郡，广汉西白马为武都郡。",
+      "annotated": "<state>南越</state>⟦◈破⟧後，及<state>汉</state><vact>诛</vact><off name=\"且兰君\">且兰</off>、<off>邛君</off>，并<vact>杀</vact><off>筰侯</off>，<state>厓駹</state>皆振恐，请<role>臣</role>置吏。乃以<state>邛都</state>为<loc>越巂</loc>郡，<state>筰都</state>为<loc>沈犁</loc>郡，<state>厓駹</state>为<loc>汶山</loc>郡，<loc>广汉</loc>西<tribe>白马</tribe>为<loc>武都</loc>郡。"
+    },
+    {
+      "pid": "9",
+      "text": "上使王然于以越⟦◈破⟧及诛南夷兵威风喻滇王入朝。滇王者，其众数万人，其旁东北有劳洸、靡莫，皆同姓相扶，未肯听。劳洸、靡莫数侵犯使者吏卒。元封二年，天子发巴蜀兵⟦◈击⟧⟦◈灭⟧劳洸、靡莫，以兵临滇。滇王始首善，以故弗诛。滇王离难西南夷，举国降，请置吏入朝。於是以为益州郡，赐滇王王印，复长其民。",
+      "annotated": "<role>上</role>使<p>王然于</p>以<tribe>越</tribe>⟦◈破⟧及<vact>诛</vact><tribe>南夷</tribe>兵威风喻<off>滇王</off>入朝。<off>滇王</off>者，其众<qty>数万人</qty>，其旁东北有<state>劳洸</state>、<state>靡莫</state>，皆同姓相扶，未肯听。<state>劳洸</state>、<state>靡莫</state>数侵犯使者<role>吏卒</role>。<time>元封二年</time>，<role>天子</role>发<loc>巴蜀</loc>兵⟦◈击⟧⟦◈灭⟧<state>劳洸</state>、<state>靡莫</state>，以兵临<state>滇</state>。<off>滇王</off>始首善，以故弗<vact>诛</vact>。<off>滇王</off>离难<tribe>西南夷</tribe>，举国降，请置吏入朝。於是以为<loc>益州</loc>郡，赐<off>滇王</off><art>王印</art>，复长其<role>民</role>。"
+    },
+    {
+      "pid": "10",
+      "text": "西南夷君长以百数，独夜郎、滇受王印。滇小邑，最宠焉。 ::: 太史公曰",
+      "annotated": "<tribe>西南夷</tribe><off>君长</off>以百数，独<state>夜郎</state>、<state>滇</state>受<art>王印</art>。<state>滇</state>小邑，最宠焉。 ::: 太史公曰"
+    },
+    {
+      "pid": "11",
+      "text": "太史公曰：楚之先岂有天禄哉？在周为文王师，封楚。 及周之衰，地称五千里。 秦⟦◈灭⟧诸候，唯楚苗裔尚有滇王。 汉诛西南夷，国多⟦◈灭⟧矣，唯滇复为宠王。 然南夷之端，见枸酱番禺，大夏杖、邛竹。 西夷後揃，剽分二方，卒为七郡。 ::: ::: 赞",
+      "annotated": "<p>太史公</p>曰：<state>楚</state>之先岂有天禄哉？在<state>周</state>为<p name=\"周文王\">文王</p>师，封<state>楚</state>。 及<state>周</state>之衰，地称<qty>五千里</qty>。 <state>秦</state>⟦◈灭⟧诸候，唯<state>楚</state><role>苗裔</role>尚有<off>滇王</off>。 <state>汉</state><vact>诛</vact><tribe>西南夷</tribe>，国多⟦◈灭⟧矣，唯<state>滇</state>复为宠王。 然<tribe>南夷</tribe>之端，见<art>枸酱</art><loc>番禺</loc>，<state>大夏</state><art>杖</art>、<art>邛竹</art>。 <tribe>西夷</tribe>後揃，剽分二方，卒为七郡。 ::: ::: 赞"
+    },
+    {
+      "pid": "12",
+      "text": "西南外徼，庄蹻首通。 汉因大夏，乃命唐蒙。 劳洸、靡莫，异俗殊风。 夜郎最大，邛、筰称雄。 及置郡县，万代推功。 :::",
+      "annotated": "西南外徼，<p>庄蹻</p>首通。 <state>汉</state>因<state>大夏</state>，乃命<p>唐蒙</p>。 <state>劳洸</state>、<state>靡莫</state>，异俗殊风。 <state>夜郎</state>最大，<state>邛</state>、<state>筰</state>称雄。 及置郡县，万代推功。 :::"
+    }
+  ]
+}

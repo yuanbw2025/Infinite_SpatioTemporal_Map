@@ -1,0 +1,236 @@
+{
+  "work": "史记",
+  "chapter": "齐悼惠王世家",
+  "chapter_file": "052_齐悼惠王世家",
+  "chapter_type": "世家",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 45,
+  "paragraph_count_done": 45,
+  "paragraphs": [
+    {
+      "pid": "1",
+      "text": "齐悼惠王刘肥者，高祖长庶男也。其母外妇也，曰曹氏。高祖六年，立肥为齐王，食七十城，诸民能齐言者皆予齐王。",
+      "annotated": "<state>齐</state><p>悼惠王</p><p>刘肥</p>者，<p>高祖</p>长庶男也。其母外妇也，曰<clan>曹氏</clan>。<p>高祖</p><time>六年</time>，<vpol>立</vpol><p name=\"刘肥\">肥</p>为<state>齐</state>王，食<qty>七十城</qty>，诸民能<state>齐</state>言者皆予<state>齐</state>王。"
+    },
+    {
+      "pid": "2",
+      "text": "齐王，孝惠帝兄也。孝惠帝二年，齐王入朝。惠帝与齐王燕饮，亢礼如家人。吕太后怒，且诛齐王。齐王惧不得脱，乃用其内史勋计，献城阳郡，以为鲁元公主汤沐邑。吕太后喜，乃得辞就国。",
+      "annotated": "<state>齐</state>王，孝<p>惠帝</p>兄也。孝<p>惠帝</p><time>二年</time>，<state>齐</state>王入朝。<p>惠帝</p>与<state>齐</state>王燕饮，亢<sys>礼</sys>如家人。<p>吕太后</p>怒，且<vact>诛</vact><state>齐</state>王。<state>齐</state>王惧不得脱，乃用其<off>内史</off><p>勋</p>计，献<loc>城阳</loc>郡，以为<p>鲁元</p><role>公主</role>汤沐邑。<p>吕太后</p>喜，乃得辞就国。"
+    },
+    {
+      "pid": "3",
+      "text": "悼惠王即位十三年，以惠帝六年卒。子襄立，是为哀王。",
+      "annotated": "<p name=\"刘肥\">悼惠王</p>即位<time name=\"时长\">十三年</time>，以<p>惠帝</p><time>六年</time>卒。子<p name=\"刘襄\">襄</p>立，是为<p name=\"刘襄\">哀王</p>。"
+    },
+    {
+      "pid": "4",
+      "text": "哀王元年，孝惠帝崩，吕太后称制，天下事皆决於高后。二年，高后立其兄子郦侯吕台为吕王，割齐之济南郡为吕王奉邑。",
+      "annotated": "<p name=\"刘襄\">哀王</p><time>元年</time>，孝<p>惠帝</p>崩，<p>吕太后</p><sys>称制</sys>，<loc>天下</loc>事皆决於<p>高后</p>。<time>二年</time>，<p>高后</p>立其兄子<off>郦侯</off><p>吕台</p>为吕<off>王</off>，割<state>齐</state>之<loc>济南</loc>郡为吕<off>王</off>奉邑。"
+    },
+    {
+      "pid": "5",
+      "text": "哀王三年，其弟章入宿卫於汉，吕太后封为硃虚侯，以吕禄女妻之。後四年，封章弟兴居为东牟侯，皆宿卫长安中。",
+      "annotated": "<p name=\"刘襄\">哀王</p><time>三年</time>，其弟<p name=\"刘章\">章</p>入宿卫於<state>汉</state>，<p>吕太后</p>封为<p>硃虚</p><off>侯</off>，以<p>吕禄</p>女妻之。後<time>四年</time>，<vpol>封</vpol><p name=\"刘章\">章</p>弟<p>兴居</p>为东牟<off>侯</off>，皆宿卫<loc>长安</loc>中。"
+    },
+    {
+      "pid": "6",
+      "text": "哀王八年，高后割齐琅邪郡立营陵侯刘泽为琅邪王。",
+      "annotated": "<p name=\"刘襄\">哀王</p><time>八年</time>，<p>高后</p>割齐<loc>琅邪</loc>郡立<loc>营陵</loc>侯<p>刘泽</p>为<loc>琅邪</loc>王。"
+    },
+    {
+      "pid": "7",
+      "text": "其明年，赵王友入朝，幽死于邸。三赵王皆废。高后立诸吕诸吕为三王，擅权用事。",
+      "annotated": "其<time>明年</time>，<state>赵</state>王<p name=\"刘友\">友</p>入朝，幽死于邸。三<state>赵</state>王皆废。<p>高后</p>立诸<clan>吕</clan>诸<clan>吕</clan>为三<off>王</off>，擅权用事。"
+    },
+    {
+      "pid": "8",
+      "text": "硃虚侯年二十，有气力，忿刘氏不得职。尝入待高后燕饮，高后令硃虚侯刘章为酒吏。章自请曰：“臣，将种也，请得以军法行酒。” 高后曰：“可。” 酒酣，章进饮歌舞。已而曰：“请为太后言耕田歌。” 高后兒子畜之，笑曰：“顾而父知田耳。若生而为王子，安知田乎？” 章曰：“臣知之。” 太后曰：“试为我言田。” 章曰：“深耕穊种，立苗欲疏，非其种者，鉏而去之。” 吕后默然。顷之，诸吕有一人醉，亡酒，章追，拔剑斩之，而还报曰：“有亡酒一人，臣谨行法斩之。” 太后左右皆大惊。业已许其军法，无以罪也。因罢。自是之後，诸吕惮硃虚侯，虽大臣皆依硃虚侯，刘氏为益彊。",
+      "annotated": "<off>硃虚侯</off><time>年二十</time>，有气力，忿<clan>刘氏</clan>不得职。尝入待<p>高后</p>燕饮，<p>高后</p><sys>令</sys><off>硃虚侯</off><p>刘章</p>为酒吏。<p name=\"刘章\">章</p>自请曰：“臣，<role>将种</role>也，请得以军<sys>法</sys>行酒。” <p>高后</p>曰：“可。” 酒酣，<p name=\"刘章\">章</p>进饮歌舞。已而曰：“请为<role>太后</role>言耕田歌。” <p>高后</p>兒子畜之，笑曰：“顾而父知田耳。若生而为<off>王</off>子，安知田乎？” <p name=\"刘章\">章</p>曰：“臣知之。” <role>太后</role>曰：“试为我言田。” <p name=\"刘章\">章</p>曰：“深耕穊种，立苗欲疏，非其种者，鉏而去之。” <p>吕后</p>默然。顷之，诸<clan>吕</clan>有<qty>一人</qty>醉，亡酒，<p name=\"刘章\">章</p>追，拔<art>剑</art><vact>斩</vact>之，而还报曰：“有亡酒<qty>一人</qty>，臣谨行<sys>法</sys><vact>斩</vact>之。” <role>太后</role>左右皆大惊。业已许其军<sys>法</sys>，无以罪也。因罢。自是之後，诸<clan>吕</clan>惮<off>硃虚侯</off>，虽<role>大臣</role>皆依<off>硃虚侯</off>，<clan>刘氏</clan>为益彊。"
+    },
+    {
+      "pid": "9",
+      "text": "其明年，高后崩。赵王吕禄为上将军，吕王产为相国，皆居长安中，聚兵以威大臣，欲为乱。硃虚侯章以吕禄女为妇，知其谋，乃使人阴出告其兄齐王，欲令发兵西，硃虚侯、东牟侯为内应，以诛诸吕，因立齐王为帝。",
+      "annotated": "其<time>明年</time>，<p>高后</p>崩。<state>赵</state>王<p>吕禄</p>为<off>上将军</off>，<clan>吕</clan><off>王</off><p name=\"吕产\">产</p>为<off>相国</off>，皆居<loc>长安</loc>中，聚兵以威<role>大臣</role>，欲为乱。<off>硃虚侯</off><p name=\"刘章\">章</p>以<p>吕禄</p>女为妇，知其谋，乃使人阴出告其兄<state>齐</state>王，欲<sys>令</sys>发兵西，<off>硃虚侯</off>、<off>东牟侯</off>为内应，以<vact>诛</vact>诸<clan>吕</clan>，因立<state>齐</state>王为帝。"
+    },
+    {
+      "pid": "10",
+      "text": "齐王既闻此计，乃与其舅父驷钧、郎中令祝午、中尉魏勃阴谋发兵。齐相召平闻之，乃发卒卫王宫。魏勃绐召平曰：“王欲发兵，非有汉虎符验也。而相君⟦◈围⟧王，固善。勃请为君将兵卫卫王。” 召平信之，乃使魏勃将兵⟦◈围⟧王宫。勃既将兵，使⟦◈围⟧相府。召平曰：“嗟乎！道家之言‘当断不断，反受其乱’，乃是也。” 遂自杀。於是齐王以驷钧为相，魏勃为将军，祝午为内史，悉发国中兵。使祝午东诈琅邪王曰：“吕氏作乱，齐王发兵欲西诛之。齐王自以兒子，年少，不习兵革之事，原举国委大王。大王自高帝将也，习战事。齐王不敢离兵，使臣请大王幸之临菑见齐王计事，并将齐兵以西平关中之乱。” 琅邪王信之，以为然，驰见齐王。齐王与魏勃等因留琅邪王，而使祝午尽发琅邪国而并将其兵。",
+      "annotated": "<state>齐</state>王既闻此计，乃与其舅父<p>驷钧</p>、<off>郎中令</off><p>祝午</p>、<off>中尉</off><p>魏勃</p>阴谋发兵。<state>齐</state>相<p>召平</p>闻之，乃发卒卫<off>王</off>宫。<p>魏勃</p>绐<p>召平</p>曰：“<off>王</off>欲发兵，非有<state>汉</state>虎<art>符</art>验也。而相君⟦◈围⟧<off>王</off>，固善。<p name=\"魏勃\">勃</p>请为君将兵卫卫<off>王</off>。” <p>召平</p>信之，乃使<p>魏勃</p>将兵⟦◈围⟧<off>王</off>宫。<p name=\"魏勃\">勃</p>既将兵，使⟦◈围⟧<off>相府</off>。<p>召平</p>曰：“嗟乎！<sys>道家</sys>之言‘当断不断，反受其乱’，乃是也。” 遂<law>自杀</law>。於是<state>齐</state>王以<p>驷钧</p>为相，<p>魏勃</p>为<off>将军</off>，<p>祝午</p>为<off>内史</off>，悉发国中兵。使<p>祝午</p>东诈<loc>琅邪</loc>王曰：“<clan>吕氏</clan>作乱，<state>齐</state>王发兵欲西<vact>诛</vact>之。<state>齐</state>王自以兒子，年少，不习兵革之事，原举国委大<off>王</off>。大<off>王</off>自<p>高帝</p><off>将</off>也，习战事。<state>齐</state>王不敢离兵，使臣请大<off>王</off>幸之<loc>临菑</loc>见<state>齐</state>王计事，并将<state>齐</state>兵以西平<loc>关中</loc>之乱。” <loc>琅邪</loc>王信之，以为然，驰见<state>齐</state>王。<state>齐</state>王与<p>魏勃</p>等因留<loc>琅邪</loc>王，而使<p>祝午</p>尽发<loc>琅邪</loc>国而并将其兵。"
+    },
+    {
+      "pid": "11",
+      "text": "琅邪王刘泽既见欺，不得反国，乃说齐王曰：“齐悼惠王高皇帝长子，推本言之，而大王高皇帝適长孙也，当立。今诸大臣狐疑未有所定，而泽於刘氏最为长年，大臣固待泽决计。今大王留臣无为也，不如使我入关计事。” 齐王以为然，乃益具车送琅邪王。",
+      "annotated": "<loc>琅邪</loc>王<p>刘泽</p>既见欺，不得反国，乃说<state>齐</state>王曰：“<state>齐</state><p>悼惠王</p><p>高皇帝</p>长子，推本言之，而大<off>王</off><p>高皇帝</p><role>適长孙</role>也，当立。今诸<role>大臣</role>狐疑未有所定，而<p name=\"刘泽\">泽</p>於<clan>刘氏</clan>最为长年，<role>大臣</role>固待<p name=\"刘泽\">泽</p>决计。今大<off>王</off>留臣无为也，不如使我入<loc>关</loc>计事。” <state>齐</state>王以为然，乃益具<art>车</art>送<loc>琅邪</loc>王。"
+    },
+    {
+      "pid": "12",
+      "text": "琅邪王既行，齐遂举兵西⟦◈攻⟧吕国之济南。於是齐哀王遗诸侯王书曰：“高帝平定天下，王诸子弟，悼惠王於齐。悼惠王薨，惠帝使留侯张良立臣为齐王。惠帝崩，高后用事，春秋高，听诸吕擅废高帝所立，又杀三赵王，⟦◈灭⟧梁、燕、赵以王诸吕，分齐国为四。忠臣进谏，上惑乱不听。今高后崩，皇帝春秋富，未能治天下，固恃大臣诸。今诸吕又擅自尊官，聚兵严威，劫列侯忠臣，矫制以令天下，宗庙所以危。今寡人率兵入诛不当为王者。”",
+      "annotated": "<loc>琅邪</loc>王既行，<state>齐</state>遂举兵西⟦◈攻⟧<clan>吕</clan>国之<loc>济南</loc>。於是<state>齐</state><p name=\"刘襄\">哀王</p>遗<off>诸侯王</off>书曰：“<p>高帝</p>平定<loc>天下</loc>，<off>王</off><role>诸子</role>弟，<p>悼惠王</p>於<state>齐</state>。<p>悼惠王</p>薨，<p>惠帝</p>使<off>留侯</off><p>张良</p>立臣为<state>齐</state>王。<p>惠帝</p>崩，<p>高后</p>用事，<time>春秋</time>高，听诸<clan>吕</clan>擅废<p>高帝</p>所立，又<vact>杀</vact>三<state>赵</state>王，⟦◈灭⟧<loc>梁</loc>、<state>燕</state>、<state>赵</state>以<off>王</off>诸<clan>吕</clan>，分<state>齐</state>国为<qty>四</qty>。<role>忠臣</role>进谏，<off>上</off>惑乱不听。今<p>高后</p>崩，<role>皇帝</role><time>春秋</time>富，未能治<loc>天下</loc>，固恃<role>大臣</role>诸。今诸<clan>吕</clan>又擅自尊官，聚兵严威，劫<role>列侯</role><role>忠臣</role>，矫制以<sys>令</sys><loc>天下</loc>，<sys>宗庙</sys>所以危。今<role>寡人</role>率兵入<vact>诛</vact>不当为<off>王</off>者。”"
+    },
+    {
+      "pid": "13",
+      "text": "汉闻齐发兵而西，相国吕产乃遣大将军灌婴东⟦◈击⟧之。灌婴至荥阳，乃谋曰：“诸吕将兵居关中，欲危刘氏而自立。我今⟦◈破⟧齐还报，是益吕氏资也。” 乃留兵屯荥阳，使使喻齐王及诸侯，与连和，以待吕氏之变而共诛之。齐王闻之，乃西取其故济南郡，亦屯兵於齐西界以待约。",
+      "annotated": "<state>汉</state>闻<state>齐</state>发兵而西，<off>相国</off><p>吕产</p>乃遣<off>大将军</off><p>灌婴</p>东⟦◈击⟧之。<p>灌婴</p>至<loc>荥阳</loc>，乃谋曰：“诸<clan>吕</clan>将兵居<loc>关中</loc>，欲危<clan>刘氏</clan>而<vpol>自立</vpol>。我今⟦◈破⟧<state>齐</state>还报，是益<clan>吕氏</clan>资也。” 乃留兵屯<loc>荥阳</loc>，使使喻<state>齐</state>王及<role>诸侯</role>，与连和，以待<clan>吕氏</clan>之变而共<vact>诛</vact>之。<state>齐</state>王闻之，乃西取其故<loc>济南</loc>郡，亦屯兵於<state>齐</state>西界以待约。"
+    },
+    {
+      "pid": "14",
+      "text": "吕禄、吕产欲作乱关中，硃虚侯与太尉勃、丞相平等诛之。硃虚侯首先斩吕产，於是太尉勃等乃得尽诛诸吕。而琅邪王亦从齐至长安。",
+      "annotated": "<p>吕禄</p>、<p>吕产</p>欲作乱<loc>关中</loc>，<off>硃虚侯</off>与<off>太尉</off><p name=\"周勃\">勃</p>、<off>丞相</off><p name=\"陈平\">平</p>等<vact>诛</vact>之。<off>硃虚侯</off>首先<vact>斩</vact><p>吕产</p>，於是<off>太尉</off><p name=\"周勃\">勃</p>等乃得尽<vact>诛</vact>诸<clan>吕</clan>。而<loc>琅邪</loc>王亦从<state>齐</state>至<loc>长安</loc>。"
+    },
+    {
+      "pid": "15",
+      "text": "大臣议欲立齐王，而琅邪王及大臣曰：“齐王母家驷钧，恶戾，虎而冠者也。方以吕氏故几乱天下，今又立齐王，是欲复为吕氏也。代王母家薄氏，君子长者；且代王又亲高帝子，於今见在，且最为长。以子则顺，以善人则大臣安。” 於是大臣乃谋迎立代王，而遣硃虚侯以诛吕氏事告齐王，令罢兵。",
+      "annotated": "<role>大臣</role>议欲立<state>齐</state>王，而<loc>琅邪</loc>王及<role>大臣</role>曰：“<state>齐</state>王母家<p>驷钧</p>，恶戾，<bio>虎</bio>而冠者也。方以<clan>吕氏</clan>故几乱<loc>天下</loc>，今又立<state>齐</state>王，是欲复为<clan>吕氏</clan>也。<state>代</state>王母家<clan>薄氏</clan>，<role>君子长</role>者；且<state>代</state>王又亲<p>高帝</p>子，於今见在，且最为长。以子则顺，以善人则<role>大臣</role>安。” 於是<role>大臣</role>乃谋迎立<state>代</state>王，而遣<off>硃虚侯</off>以<vact>诛</vact><clan>吕氏</clan>事告<state>齐</state>王，<sys>令</sys>罢兵。"
+    },
+    {
+      "pid": "16",
+      "text": "灌婴在荥阳，闻魏勃本教齐王反，既诛吕氏，罢齐兵，使使召责问魏勃。勃曰：“失火之家，岂暇先言大人而後救火乎！” 因退立，股战而栗，恐不能言者，终无他语。灌将军熟视笑曰：“人谓魏勃勇，妄庸人耳，何能为乎！” 乃罢魏勃。魏勃父以善鼓琴见秦皇帝。及魏勃少时，欲求见齐相曹参，家贫无以自通，乃常独早夜埽齐相舍人门外。相舍人怪之，以为物，而伺之，得勃。勃曰：“原见相君，无因，故为子埽，欲以求见。” 於是舍人见勃曹参，因以为舍人。一为参御，言事，参以为贤，言之齐悼惠王。悼惠王召见，则拜为内史。始，悼惠王得自置二千石。及悼惠王卒而哀王立，勃用事，重於齐相。",
+      "annotated": "<p>灌婴</p>在<loc>荥阳</loc>，闻<p>魏勃</p>本教<state>齐</state>王<vact>反</vact>，既<vact>诛</vact><clan>吕氏</clan>，罢<state>齐</state>兵，使使召责问<p>魏勃</p>。<p name=\"魏勃\">勃</p>曰：“失火之家，岂暇先言<role>大人</role>而後救火乎！” 因退立，股战而栗，恐不能言者，终无他语。<p name=\"灌婴\">灌</p><off>将军</off>熟视笑曰：“人谓<p>魏勃</p>勇，妄<role>庸人</role>耳，何能为乎！” 乃罢<p>魏勃</p>。<p>魏勃</p>父以善<art>鼓</art>琴见<state>秦</state><role>皇帝</role>。及<p>魏勃</p>少时，欲求见<state>齐</state>相<p>曹参</p>，家贫无以自通，乃常独早夜埽<state>齐</state><off>相</off><off>舍人</off>门外。<off>相</off><off>舍人</off>怪之，以为物，而伺之，得<p name=\"魏勃\">勃</p>。<p name=\"魏勃\">勃</p>曰：“原见<off>相</off>君，无因，故为子埽，欲以求见。” 於是<off>舍人</off>见<p name=\"魏勃\">勃</p><p>曹参</p>，因以为<off>舍人</off>。一为<p name=\"曹参\">参</p>御，言事，<p name=\"曹参\">参</p>以为贤，言之<state>齐</state><p>悼惠王</p>。<p>悼惠王</p>召见，则<vpol>拜</vpol>为<off>内史</off>。始，<p>悼惠王</p>得自置<off>二千石</off>。及<p>悼惠王</p>卒而<p name=\"刘襄\">哀王</p>立，<p name=\"魏勃\">勃</p>用事，重於<state>齐</state><off>相</off>。"
+    },
+    {
+      "pid": "17",
+      "text": "王既罢兵归，而代王来立，是为孝文帝。",
+      "annotated": "<off>王</off>既罢兵归，而<state>代</state>王来立，是为孝<p>文帝</p>。"
+    },
+    {
+      "pid": "18",
+      "text": "孝文帝元年，尽以高后时所割齐之城阳、琅邪、济南郡复与齐，而徙琅邪王王燕，益封硃虚侯、东牟侯各二千户。",
+      "annotated": "孝<p>文帝</p><time>元年</time>，尽以<p>高后</p>时所割<state>齐</state>之<loc>城阳</loc>、<loc>琅邪</loc>、<loc>济南</loc>郡复与<state>齐</state>，而徙<loc>琅邪</loc>王<off>王</off><state>燕</state>，益封<off>硃虚侯</off>、<off>东牟侯</off>各<qty>二千户</qty>。"
+    },
+    {
+      "pid": "19",
+      "text": "是岁，齐哀王卒，太子立，是为文王。",
+      "annotated": "是岁，<state>齐</state><p name=\"刘襄\">哀王</p>卒，<role>太子</role>立，是为<p name=\"刘则\">文王</p>。"
+    },
+    {
+      "pid": "20",
+      "text": "齐文王元年，汉以齐之城阳郡立硃虚侯为城阳王，以齐济北郡立东牟侯为济北王。",
+      "annotated": "<state>齐</state><p name=\"刘则\">文王</p><time>元年</time>，<state>汉</state>以<state>齐</state>之<loc>城阳</loc>郡<vpol>立</vpol><off>硃虚侯</off>为<loc>城阳</loc>王，以<state>齐</state><loc>济北</loc>郡<vpol>立</vpol><off>东牟侯</off>为<loc>济北</loc>王。"
+    },
+    {
+      "pid": "21",
+      "text": "二年，济北王反，汉诛杀之，地入于汉。",
+      "annotated": "<time>二年</time>，<loc>济北</loc>王<vact>反</vact>，<state>汉</state><vact>诛</vact><vact>杀</vact>之，地入于<state>汉</state>。"
+    },
+    {
+      "pid": "22",
+      "text": "後二年，孝文帝尽封齐悼惠王子罢军等七人皆为列侯。",
+      "annotated": "後<time>二年</time>，孝<p>文帝</p>尽封<state>齐</state><p>悼惠王</p>子<p name=\"刘罢军\">罢军</p>等<qty>七人</qty>皆为<role>列侯</role>。"
+    },
+    {
+      "pid": "23",
+      "text": "齐文王立十四年卒，无子，国除，地入于汉。",
+      "annotated": "<state>齐</state><p name=\"刘则\">文王</p>立<time name=\"时长\">十四年</time>卒，无子，<vpol>国除</vpol>，地入于<state>汉</state>。"
+    },
+    {
+      "pid": "24",
+      "text": "後一岁，孝文帝以所封悼惠王子分齐为王，齐孝王将闾以悼惠王子杨虚侯为齐王。故齐别郡尽以王悼惠王子：子志为济北王，子辟光为济南王，子贤为菑川王，子卬为胶西王，子雄渠为胶东王，与城阳、齐凡七王。",
+      "annotated": "後<time>一岁</time>，孝<p>文帝</p>以所<vpol>封</vpol><p>悼惠王</p>子分<state>齐</state>为<off>王</off>，<state>齐</state><p name=\"刘将闾\">孝王</p><p name=\"刘将闾\">将闾</p>以<p>悼惠王</p>子<off>杨虚侯</off>为<state>齐</state>王。故<state>齐</state>别郡尽以<off>王</off><p>悼惠王</p>子：子<p name=\"刘志\">志</p>为<loc>济北</loc>王，子<p name=\"刘辟光\">辟光</p>为<loc>济南</loc>王，子<p name=\"刘贤\">贤</p>为<loc>菑川</loc>王，子<p name=\"刘卬\">卬</p>为<loc>胶西</loc>王，子<p name=\"刘雄渠\">雄渠</p>为<loc>胶东</loc>王，与<loc>城阳</loc>、<state>齐</state>凡七<off>王</off>。"
+    },
+    {
+      "pid": "25",
+      "text": "齐孝王十一年，吴王濞、楚王戊反，兴兵西，告诸侯曰“将诛汉贼臣晁错以安宗庙”。胶西、胶东、菑川、济南皆擅发兵应吴楚。欲与齐，齐孝王狐疑，城守不听，三国兵共⟦◈围⟧齐。齐王使路中大夫告於天子。天子复令路中大夫还告齐王：“善坚守，吾兵今⟦◈破⟧吴楚矣。” 路中大夫至，三国兵⟦◈围⟧临菑数重，无从入。三国将劫与路中大夫盟，曰：“若反言汉已⟦◈破⟧矣，齐趣下三国，不且见⟦◈屠⟧。” 路中大夫既许之，至城下，望见齐王，曰：“汉已发兵百万，使太尉周亚夫击破吴楚，方引兵救齐，齐必坚守无下！” 三国将诛路中大夫。",
+      "annotated": "<state>齐</state><p name=\"刘将闾\">孝王</p><time>十一年</time>，<off>吴王</off><p name=\"刘濞\">濞</p>、<off>楚王</off><p name=\"刘戊\">戊</p><vact>反</vact>，兴兵西，告<role>诸侯</role>曰“将<vact>诛</vact><state>汉</state><role>贼臣</role><p>晁错</p>以安<sys>宗庙</sys>”。<loc>胶西</loc>、<loc>胶东</loc>、<loc>菑川</loc>、<loc>济南</loc>皆擅发兵应<state>吴</state><state>楚</state>。欲与<state>齐</state>，<state>齐</state><p name=\"刘将闾\">孝王</p>狐疑，城守不听，三国兵共⟦◈围⟧<state>齐</state>。<state>齐</state>王使<p name=\"路中大夫\">路</p><off>中大夫</off>告於<role>天子</role>。<role>天子</role>复<sys>令</sys><p name=\"路中大夫\">路</p><off>中大夫</off>还告<state>齐</state>王：“善坚守，吾兵今⟦◈破⟧<state>吴</state><state>楚</state>矣。” <p name=\"路中大夫\">路</p><off>中大夫</off>至，三国兵⟦◈围⟧<loc>临菑</loc><qty>数重</qty>，无从入。三国<off>将</off>劫与<p name=\"路中大夫\">路</p><off>中大夫</off>盟，曰：“若反言<state>汉</state>已⟦◈破⟧矣，<state>齐</state>趣下三国，不且见⟦◈屠⟧。” <p name=\"路中大夫\">路</p><off>中大夫</off>既许之，至城下，望见<state>齐</state>王，曰：“<state>汉</state>已发兵<qty>百万</qty>，使<off>太尉</off><p>周亚夫</p><law>击破</law><state>吴</state><state>楚</state>，方引兵救<state>齐</state>，<state>齐</state>必坚守无下！” 三国<off>将</off><vact>诛</vact><p name=\"路中大夫\">路</p><off>中大夫</off>。"
+    },
+    {
+      "pid": "26",
+      "text": "齐初⟦◈围⟧急，阴与三国通谋，约未定，会闻路中大夫从汉来，喜，及其大臣乃复劝王毋下三国。居无何，汉将栾布、平阳侯等兵至齐，击破三国兵，解齐⟦◈围⟧。已而复闻齐初与三国有谋，将欲移兵⟦◈伐⟧齐。齐孝王惧，乃饮药自杀。景帝闻之，以为齐首善，以迫劫有谋，非其罪也，乃立孝王太子寿为齐王，是为懿王，续齐後。而胶西、胶东、济南、菑川王咸诛灭，地入于汉。徙济北王王菑川。齐懿王立二十二年卒，子次景立，是为厉王。",
+      "annotated": "<state>齐</state>初⟦◈围⟧急，阴与三国通谋，约未定，会闻<p name=\"路中大夫\">路</p><off>中大夫</off>从<state>汉</state>来，喜，及其<role>大臣</role>乃复劝<off>王</off>毋下三国。居无何，<state>汉</state><off>将</off><p>栾布</p>、<loc>平阳</loc><off>侯</off>等兵至<state>齐</state>，<law>击破</law>三国兵，解<state>齐</state>⟦◈围⟧。已而复闻<state>齐</state>初与三国有谋，将欲移兵⟦◈伐⟧<state>齐</state>。<state>齐</state><p name=\"刘将闾\">孝王</p>惧，乃饮药<law>自杀</law>。<p>景帝</p>闻之，以为<state>齐</state>首善，以迫劫有谋，非其罪也，乃<vpol>立</vpol><p name=\"刘将闾\">孝王</p><role>太子</role><p name=\"刘寿\">寿</p>为<state>齐</state>王，是为<p name=\"刘寿\">懿王</p>，续<state>齐</state>後。而<loc>胶西</loc>、<loc>胶东</loc>、<loc>济南</loc>、<loc>菑川</loc>王咸<law>诛灭</law>，地入于<state>汉</state>。徙<loc>济北</loc>王<off>王</off><loc>菑川</loc>。<state>齐</state><p name=\"刘寿\">懿王</p>立<time name=\"时长\">二十二年</time>卒，子<p name=\"刘次景\">次景</p>立，是为<p name=\"刘次景\">厉王</p>。"
+    },
+    {
+      "pid": "27",
+      "text": "齐厉王，其母曰纪太后。太后取其弟纪氏女为厉王后。王不爱纪氏女。太后欲其家重宠，令其长女纪翁主入王宫，正其後宫，毋令得近王，欲令爱纪氏女。王因与其姊翁主奸。",
+      "annotated": "<state>齐</state><p name=\"刘次景\">厉王</p>，其母曰<p>纪太后</p>。<role>太后</role>取其弟<clan>纪氏</clan>女为<p name=\"刘次景\">厉王</p>后。<off>王</off>不爱<clan>纪氏</clan>女。<role>太后</role>欲其家重宠，<sys>令</sys>其长女纪<sys>翁主</sys>入<off>王</off>宫，正其後宫，毋<sys>令</sys>得近<off>王</off>，欲<sys>令</sys>爱<clan>纪氏</clan>女。<off>王</off>因与其姊<sys>翁主</sys><law>奸</law>。"
+    },
+    {
+      "pid": "28",
+      "text": "齐有宦者徐甲，入事汉皇太后。皇太后有爱女曰脩成君，脩成君非刘氏，太后怜之。脩成君有女名娥，太后欲嫁之於诸侯，宦者甲乃请使齐，必令王上书请娥。皇太后喜，使甲之齐。是时齐人主父偃知甲之使齐以取后事，亦因谓甲：“即事成，幸言偃女原得充王後宫。” 甲既至齐，风以此事。纪太后大怒，曰：“王有后，後宫具备。且甲，齐贫人，急乃为宦者，入事汉，无补益，乃欲乱吾王家！且主父偃何为者？乃欲以女充後宫！” 徐甲大穷，还报皇太后曰：“王已原尚娥，然有一害，恐如燕王。” 燕王者，与其子昆弟奸，新坐以死，亡国，故以燕感太后。太后曰：“无复言嫁女齐事。” 事浸浔闻於天子。主父偃由此亦与齐有卻。",
+      "annotated": "<state>齐</state>有<role>宦者</role><p>徐甲</p>，入事<state>汉</state><p>皇太后</p>。<p>皇太后</p>有爱女曰<p>脩成君</p>，<p>脩成君</p>非<clan>刘氏</clan>，<role>太后</role>怜之。<p>脩成君</p>有女名<p>娥</p>，<role>太后</role>欲嫁之於<role>诸侯</role>，<role>宦者</role><p name=\"徐甲\">甲</p>乃请使<state>齐</state>，必<sys>令</sys><off>王</off>上书请<p>娥</p>。<p>皇太后</p>喜，使<p name=\"徐甲\">甲</p>之<state>齐</state>。是时<state>齐</state>人<p>主父偃</p>知<p name=\"徐甲\">甲</p>之使<state>齐</state>以取后事，亦因谓<p name=\"徐甲\">甲</p>：“即事成，幸言<p name=\"主父偃\">偃</p>女原得充<off>王</off>後宫。” <p name=\"徐甲\">甲</p>既至<state>齐</state>，风以此事。<p>纪太后</p>大怒，曰：“<off>王</off>有后，後宫具备。且<p name=\"徐甲\">甲</p>，<state>齐</state>贫人，急乃为<role>宦者</role>，入事<state>汉</state>，无补益，乃欲乱吾<off>王</off>家！且<p>主父偃</p>何为者？乃欲以女充後宫！” <p>徐甲</p>大穷，还报<p>皇太后</p>曰：“<off>王</off>已原尚<p>娥</p>，然有<qty>一害</qty>，恐如<state>燕</state>王。” <state>燕</state>王者，与其子昆弟<law>奸</law>，新坐以死，亡国，故以<state>燕</state>感<role>太后</role>。<role>太后</role>曰：“无复言嫁女<state>齐</state>事。” 事浸浔闻於<role>天子</role>。<p>主父偃</p>由此亦与<state>齐</state>有卻。"
+    },
+    {
+      "pid": "29",
+      "text": "主父偃方幸於天子，用事，因言：“齐临菑十万户，市租千金，人众殷富，巨於长安，此非天子亲弟爱子不得王此。今齐王於亲属益疏。” 乃从容言：“吕太后时齐欲反，吴楚时孝王几为乱。今闻齐王与其姊乱。” 於是天子乃拜主父偃为齐相，且正其事。主父偃既至齐，乃急治王後宫宦者为王通於姊翁主所者，令其辞证皆引王。王年少，惧大罪为吏所执诛，乃饮药自杀。绝无後。",
+      "annotated": "<p>主父偃</p>方幸於<role>天子</role>，用事，因言：“<state>齐</state><loc>临菑</loc><qty>十万户</qty>，市租千<art>金</art>，人众<state>殷</state>富，巨於<loc>长安</loc>，此非<role>天子</role>亲弟爱子不得<vpol>王</vpol>此。今<state>齐</state>王於亲属益疏。” 乃从容言：“<p>吕太后</p>时<state>齐</state>欲<vact>反</vact>，<state>吴</state><state>楚</state>时<p name=\"刘将闾\">孝王</p>几为乱。今闻<state>齐</state>王与其姊乱。” 於是<role>天子</role>乃<vpol>拜</vpol><p>主父偃</p>为<state>齐</state><off>相</off>，且正其事。<p>主父偃</p>既至<state>齐</state>，乃急治<off>王</off>後宫<role>宦者</role>为<off>王</off>通於姊<sys>翁主</sys>所者，<sys>令</sys>其辞证皆引<off>王</off>。<off>王</off>年少，惧大罪为吏所<vact>执</vact><vact>诛</vact>，乃饮药<law>自杀</law>。绝无後。"
+    },
+    {
+      "pid": "30",
+      "text": "是时赵王惧主父偃一出废齐，恐其渐疏骨肉，乃上书言偃受金及轻重之短。天子亦既囚偃。公孙弘言：“齐王以忧死毋後，国入汉，非诛偃无以塞天下之望。” 遂诛偃。",
+      "annotated": "是时<state>赵</state>王惧<p>主父偃</p>一出废<state>齐</state>，恐其渐疏骨肉，乃上书言<p name=\"主父偃\">偃</p>受<art>金</art>及轻重之短。<role>天子</role>亦既<vact>囚</vact><p name=\"主父偃\">偃</p>。<p>公孙弘</p>言：“<state>齐</state>王以忧死毋後，国入<state>汉</state>，非<vact>诛</vact><p name=\"主父偃\">偃</p>无以塞<loc>天下</loc>之望。” 遂<vact>诛</vact><p name=\"主父偃\">偃</p>。"
+    },
+    {
+      "pid": "31",
+      "text": "齐厉王立五年死，毋後，国入于汉。",
+      "annotated": "<state>齐</state><p name=\"刘次景\">厉王</p>立<time name=\"时长\">五年</time>死，毋後，国入于<state>汉</state>。"
+    },
+    {
+      "pid": "32",
+      "text": "齐悼惠王後尚有二国，城阳及菑川。菑川地比齐。天子怜齐，为悼惠王冢园在郡，割临菑东环悼惠王冢园邑尽以予菑川，以奉悼惠王祭祀。",
+      "annotated": "<state>齐</state><p>悼惠王</p>後尚有二国，<loc>城阳</loc>及<loc>菑川</loc>。<loc>菑川</loc>地比<state>齐</state>。<role>天子</role>怜<state>齐</state>，为<p>悼惠王</p>冢园在郡，割<loc>临菑</loc>东环<p>悼惠王</p>冢园邑尽以予<loc>菑川</loc>，以奉<p>悼惠王</p><sys>祭祀</sys>。"
+    },
+    {
+      "pid": "33",
+      "text": "城阳景王章，齐悼惠王子，以硃虚侯与大臣共诛诸吕，而章身首先斩相国吕王产於未央宫。孝文帝既立，益封章二千户，赐金千斤。孝文二年，以齐之城阳郡立章为城阳王。立二年卒，子喜立，是为共王。",
+      "annotated": "<loc>城阳</loc><p name=\"刘章\">景王</p><p name=\"刘章\">章</p>，<state>齐</state><p>悼惠王</p>子，以<off>硃虚侯</off>与<role>大臣</role>共<vact>诛</vact>诸<clan>吕</clan>，而<p name=\"刘章\">章</p>身首先<vact>斩</vact><off>相国</off><clan>吕</clan><off>王</off><p name=\"吕产\">产</p>於<loc>未央宫</loc>。孝<p>文帝</p>既立，益<vpol>封</vpol><p name=\"刘章\">章</p><qty>二千户</qty>，赐<art>金</art><qty>千斤</qty>。<p name=\"刘恒\">孝文</p><time>二年</time>，以<state>齐</state>之<loc>城阳</loc>郡<vpol>立</vpol><p name=\"刘章\">章</p>为<loc>城阳</loc>王。立<time name=\"时长\">二年</time>卒，子<p name=\"刘喜\">喜</p>立，是为<p name=\"刘喜\">共王</p>。"
+    },
+    {
+      "pid": "34",
+      "text": "共王八年，徙王淮南。四年，复还王城阳。凡三十三年卒，子延立，是为顷王。",
+      "annotated": "<p name=\"刘喜\">共王</p><time>八年</time>，徙<off>王</off><loc>淮南</loc>。<time>四年</time>，复还<off>王</off><loc>城阳</loc>。凡<time name=\"时长\">三十三年</time>卒，子<p name=\"刘延\">延</p>立，是为<p name=\"刘延\">顷王</p>。"
+    },
+    {
+      "pid": "35",
+      "text": "顷王二十年卒，子义立，是为敬王。 敬王九年卒，子武立，是为惠王。 惠王十一年卒，子顺立，是为荒王。 荒王四十六年卒，子恢立，是为戴王。 戴王八年卒，子景立，至建始三年，十五岁，卒。",
+      "annotated": "<p name=\"刘延\">顷王</p><time name=\"时长\">二十年</time>卒，子<p name=\"刘义\">义</p>立，是为<p name=\"刘义\">敬王</p>。 <p name=\"刘义\">敬王</p><time name=\"时长\">九年</time>卒，子<p name=\"刘武\">武</p>立，是为<p name=\"刘武\">惠王</p>。 <p name=\"刘武\">惠王</p><time name=\"时长\">十一年</time>卒，子<p name=\"刘顺\">顺</p>立，是为<p name=\"刘顺\">荒王</p>。 <p name=\"刘顺\">荒王</p><time name=\"时长\">四十六年</time>卒，子<p name=\"刘恢\">恢</p>立，是为<p name=\"刘恢\">戴王</p>。 <p name=\"刘恢\">戴王</p><time name=\"时长\">八年</time>卒，子<p name=\"刘景\">景</p>立，至<time>建始三年</time>，<qty>十五岁</qty>，卒。"
+    },
+    {
+      "pid": "36",
+      "text": "济北王兴居，齐悼惠王子，以东牟侯助大臣诛诸吕，功少。及文帝从代来，兴居曰：“请与太仆婴入清宫。” 废少帝，共与大臣尊立孝文帝。",
+      "annotated": "<loc>济北</loc>王<p>兴居</p>，<state>齐</state><p>悼惠王</p>子，以<off>东牟侯</off>助<role>大臣</role><vact>诛</vact>诸<clan>吕</clan>，功少。及<p>文帝</p>从<loc>代</loc>来，<p>兴居</p>曰：“请与<off>太仆</off><p name=\"夏侯婴\">婴</p>入清宫。” 废<p>少帝</p>，共与<role>大臣</role>尊立孝<p>文帝</p>。"
+    },
+    {
+      "pid": "37",
+      "text": "孝文帝二年，以齐之济北郡立兴居为济北王，与城阳王俱立。立二年，反。始大臣诛吕氏时，硃虚侯功尤大，许尽以赵地王硃虚侯，尽以梁地王东牟侯。及孝文帝立，闻硃虚、东牟之初欲立齐王，故绌其功。及二年，王诸子，乃割齐二郡以王章、兴居。章、兴居自以失职夺功。章死，而兴居闻匈奴大入汉，汉多发兵，使丞相灌婴⟦◈击⟧之，文帝亲幸太原，以为天子自⟦◈击⟧胡，遂发兵反於济北。天子闻之，罢丞相及行兵，皆归长安。使棘蒲侯柴将军击破⟦◈虏⟧济北王，王自杀，地入于汉，为郡。",
+      "annotated": "孝<p>文帝</p><time>二年</time>，以<state>齐</state>之<loc>济北</loc>郡<vpol>立</vpol><p>兴居</p>为<loc>济北</loc>王，与<loc>城阳</loc>王俱立。立<time name=\"时长\">二年</time>，<vact>反</vact>。始<role>大臣</role><vact>诛</vact><clan>吕氏</clan>时，<off>硃虚侯</off>功尤大，许尽以<state>赵</state>地<off>王</off><off>硃虚侯</off>，尽以<loc>梁</loc>地<off>王</off><off>东牟侯</off>。及孝<p>文帝</p>立，闻<p name=\"刘章\">硃虚</p>、<p name=\"刘兴居\">东牟</p>之初欲立<state>齐</state>王，故绌其功。及<time>二年</time>，<off>王</off><role>诸子</role>，乃割<state>齐</state>二郡以<off>王</off><p name=\"刘章\">章</p>、<p>兴居</p>。<p name=\"刘章\">章</p>、<p>兴居</p>自以失职夺功。<p name=\"刘章\">章</p>死，而<p>兴居</p>闻<tribe>匈奴</tribe>大入<state>汉</state>，<state>汉</state>多发兵，使<off>丞相</off><p>灌婴</p>⟦◈击⟧之，<p>文帝</p>亲幸<loc>太原</loc>，以为<role>天子</role>自⟦◈击⟧<tribe>胡</tribe>，遂发兵<vact>反</vact>於<loc>济北</loc>。<role>天子</role>闻之，<vpol>罢</vpol><off>丞相</off>及行兵，皆归<loc>长安</loc>。使<loc>棘蒲</loc><off>侯</off><p name=\"柴武\">柴</p><off>将军</off><law>击破</law>⟦◈虏⟧<loc>济北</loc>王，<off>王</off><law>自杀</law>，地入于<state>汉</state>，为郡。"
+    },
+    {
+      "pid": "38",
+      "text": "後十年，文帝十六年，复以齐悼惠王子安都侯志为济北王。十一年，吴楚反时，志坚守，不与诸侯合谋。吴楚已平，徙志王菑川。",
+      "annotated": "後<time>十年</time>，<p>文帝</p>十<time>六年</time>，复以<state>齐</state><p>悼惠王</p>子<off>安都侯</off><p name=\"刘志\">志</p>为<loc>济北</loc>王。<time>十一年</time>，<state>吴</state><state>楚</state><vact>反</vact>时，<p name=\"刘志\">志</p>坚守，不与<role>诸侯</role>合谋。<state>吴</state><state>楚</state>已平，徙<p name=\"刘志\">志</p><off>王</off><loc>菑川</loc>。"
+    },
+    {
+      "pid": "39",
+      "text": "济南王辟光，齐悼惠王子，以勒侯孝文十六年为济南王。十一年，与吴楚反。汉击破，杀辟光，以济南为郡，地入于汉。",
+      "annotated": "<loc>济南</loc>王<p name=\"刘辟光\">辟光</p>，<state>齐</state><p>悼惠王</p>子，以<off>勒侯</off><p name=\"刘恒\">孝文</p>十<time>六年</time>为<loc>济南</loc>王。<time>十一年</time>，与<state>吴</state><state>楚</state><vact>反</vact>。<state>汉</state><law>击破</law>，<vact>杀</vact><p name=\"刘辟光\">辟光</p>，以<loc>济南</loc>为郡，地入于<state>汉</state>。"
+    },
+    {
+      "pid": "40",
+      "text": "菑川王贤，齐悼惠王子，以武城侯文帝十六年为菑川王。十一年，与吴楚反，汉击破，杀贤。",
+      "annotated": "<loc>菑川</loc>王<p name=\"刘贤\">贤</p>，<state>齐</state><p>悼惠王</p>子，以<off>武城侯</off><p>文帝</p>十<time>六年</time>为<loc>菑川</loc>王。<time>十一年</time>，与<state>吴</state><state>楚</state><vact>反</vact>，<state>汉</state><law>击破</law>，<vact>杀</vact><p name=\"刘贤\">贤</p>。"
+    },
+    {
+      "pid": "41",
+      "text": "天子因徙济北王志王菑川。 志亦齐悼惠王子，以安都侯王济北。 菑川王反，毋後，乃徙济北王王菑川。 凡立三十五年卒，谥为懿王。 子建代立，是为靖王。 二十年卒，子遗代立，是为顷王。 三十六年卒，子终古立，是为思王。 二十八年卒，子尚立，是为孝王。 五年卒，子横立，至建始三年，十一岁，卒。",
+      "annotated": "<role>天子</role>因徙<loc>济北</loc>王<p name=\"刘志\">志</p><off>王</off><loc>菑川</loc>。 <p name=\"刘志\">志</p>亦<state>齐</state><p>悼惠王</p>子，以<off>安都侯</off><off>王</off><loc>济北</loc>。 <loc>菑川</loc>王<vact>反</vact>，毋後，乃徙<loc>济北</loc>王<off>王</off><loc>菑川</loc>。 凡立<time name=\"时长\">三十五年</time>卒，<vpol>谥</vpol>为<p name=\"刘志\">懿王</p>。 子<p name=\"刘建\">建</p>代立，是为<p name=\"刘建\">靖王</p>。 <time name=\"时长\">二十年</time>卒，子<p name=\"刘遗\">遗</p>代立，是为<p name=\"刘遗\">顷王</p>。 <time name=\"时长\">三十六年</time>卒，子<p name=\"刘终古\">终古</p>立，是为<p name=\"刘终古\">思王</p>。 <time name=\"时长\">二十八年</time>卒，子<p name=\"刘尚\">尚</p>立，是为<p name=\"刘尚\">孝王</p>。 <time name=\"时长\">五年</time>卒，子<p name=\"刘横\">横</p>立，至<time>建始三年</time>，<qty>十一岁</qty>，卒。"
+    },
+    {
+      "pid": "42",
+      "text": "胶西王卬，齐悼惠王子，以昌平侯文帝十六年为胶西王。十一年，与吴楚反。汉击破，杀卬，地入于汉，为胶西郡。",
+      "annotated": "<loc>胶西</loc>王<p name=\"刘卬\">卬</p>，<state>齐</state><p>悼惠王</p>子，以<off>昌平侯</off><p>文帝</p>十<time>六年</time>为<loc>胶西</loc>王。<time>十一年</time>，与<state>吴</state><state>楚</state><vact>反</vact>。<state>汉</state><law>击破</law>，<vact>杀</vact><p name=\"刘卬\">卬</p>，地入于<state>汉</state>，为<loc>胶西</loc>郡。"
+    },
+    {
+      "pid": "43",
+      "text": "胶东王雄渠，齐悼惠王子，以白石侯文帝十六年为胶东王。十一年，与吴楚反，汉击破，杀雄渠，地入于汉，为胶东郡。 ::: 太史公曰",
+      "annotated": "<loc>胶东</loc>王<p name=\"刘雄渠\">雄渠</p>，<state>齐</state><p>悼惠王</p>子，以<off>白石侯</off><p>文帝</p>十<time>六年</time>为<loc>胶东</loc>王。<time>十一年</time>，与<state>吴</state><state>楚</state><vact>反</vact>，<state>汉</state><law>击破</law>，<vact>杀</vact><p name=\"刘雄渠\">雄渠</p>，地入于<state>汉</state>，为<loc>胶东</loc>郡。 ::: 太史公曰"
+    },
+    {
+      "pid": "44",
+      "text": "太史公曰：诸侯大国无过齐悼惠王。 以海内初定，子弟少，激秦之无尺土封，故大封同姓，以填万民之心。 及後分裂，固其理也。 ::: ::: 赞",
+      "annotated": "<p>太史公</p>曰：<role>诸侯</role>大国无过<state>齐</state><p name=\"刘肥\">悼惠王</p>。 以海内初定，<role>子弟</role>少，激<state>秦</state>之无尺土封，故大封同姓，以填<role>万民</role>之心。 及後分裂，固其理也。 ::: ::: 赞"
+    },
+    {
+      "pid": "45",
+      "text": "汉矫秦制，树屏自彊。 表海大国，悉封齐王。 吕后肆怒，乃献城阳。 哀王嗣立，其力不量。 硃虚仕汉，功大策长。 东牟受赏，称乱贻殃。 胶东、济北，雄渠，辟光。 齐虽七国，忠孝者昌。 :::",
+      "annotated": "<state>汉</state>矫<state>秦</state>制，树屏自彊。 表海大国，悉封<state>齐</state>王。 <p>吕后</p>肆怒，乃献<loc>城阳</loc>。 <p name=\"刘襄\">哀王</p>嗣立，其力不量。 <p name=\"刘章\">硃虚</p>仕<state>汉</state>，功大策长。 <p name=\"刘兴居\">东牟</p>受赏，称乱贻殃。 <loc>胶东</loc>、<loc>济北</loc>，<p name=\"刘雄渠\">雄渠</p>，<p name=\"刘辟光\">辟光</p>。 <state>齐</state>虽<role>七国</role>，<idea>忠孝</idea>者昌。 :::"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "work": "史记",
+  "chapter": "五宗世家",
+  "chapter_file": "059_五宗世家",
+  "chapter_type": "世家",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 39,
+  "paragraph_count_done": 39,
+  "paragraphs": [
+    {
+      "pid": "1",
+      "text": "孝景皇帝子凡十三人为王，而母五人，同母者为宗亲。栗姬子曰荣、德、阏于。程姬子曰馀、非、端。贾夫人子曰彭祖、胜。唐姬子曰发。王夫人兒姁子曰越、寄、乘、舜。",
+      "annotated": "<p>孝景</p><role>皇帝</role>子凡<qty>十三人</qty>为<off>王</off>，而母<qty>五人</qty>，同母者为<role>宗亲</role>。<p>栗姬</p>子曰<p name=\"刘荣\">荣</p>、<p name=\"刘德\">德</p>、<p name=\"刘阏于\">阏于</p>。<p>程姬</p>子曰<p name=\"刘馀\">馀</p>、<p name=\"刘非\">非</p>、<p name=\"刘端\">端</p>。贾<role>夫人</role>子曰<p name=\"刘彭祖\">彭祖</p>、<p name=\"刘胜\">胜</p>。<p>唐姬</p>子曰<p name=\"刘发\">发</p>。<p>王夫人</p><p>兒姁</p>子曰<p name=\"刘越\">越</p>、<p name=\"刘寄\">寄</p>、<p name=\"刘乘\">乘</p>、<p name=\"刘舜\">舜</p>。"
+    },
+    {
+      "pid": "2",
+      "text": "河间献王德，以孝景帝前二年用皇子为河间王。好儒学，被服造次必於儒者。山东诸儒多从之游。",
+      "annotated": "<state>河间</state><p name=\"河间献王\">献王</p><p name=\"刘德\">德</p>，以<p>孝景</p>帝前<time>二年</time>用<role>皇子</role>为<state>河间</state><off>王</off>。好<idea>儒学</idea>，被服造次必於<idea>儒者</idea>。<loc>山东</loc><role>诸儒</role>多从之游。"
+    },
+    {
+      "pid": "3",
+      "text": "二十六年卒，子共王不害立。 四年卒，子刚王基代立。 十二年卒，子顷王授代立。",
+      "annotated": "<time name=\"时长\">二十六年</time>卒，子<p name=\"河间共王\">共王</p><p name=\"刘不害\">不害</p>立。 <time name=\"时长\">四年</time>卒，子<p name=\"河间刚王\">刚王</p><p name=\"刘基\">基</p>代立。 <time name=\"时长\">十二年</time>卒，子<p name=\"河间顷王\">顷王</p><p name=\"刘授\">授</p>代立。"
+    },
+    {
+      "pid": "4",
+      "text": "临江哀王阏于，以孝景帝前二年用皇子为临江王。三年卒，无後，国除为郡。",
+      "annotated": "<state>临江</state><p name=\"临江哀王\">哀王</p><p name=\"刘阏于\">阏于</p>，以<p>孝景</p>帝前<time>二年</time>用<role>皇子</role>为<state>临江</state><off>王</off>。<time name=\"时长\">三年</time>卒，无後，<vpol>国除</vpol>为郡。"
+    },
+    {
+      "pid": "5",
+      "text": "临江闵王荣，以孝景前四年为皇太子，四岁废，用故太子为临江王。",
+      "annotated": "<state>临江</state><p name=\"临江闵王\">闵王</p><p name=\"刘荣\">荣</p>，以<p>孝景</p>前<time>四年</time>为<role>皇太子</role>，<time name=\"时长\">四岁</time><vact>废</vact>，用故<role>太子</role>为<state>临江</state><off>王</off>。"
+    },
+    {
+      "pid": "6",
+      "text": "四年，坐侵庙壖垣为宫，上⟦◈徵⟧荣。荣行，祖於江陵北门。既已上车，轴折车废。江陵父老流涕窃言曰：“吾王不反矣！” 荣至，诣中尉府簿。中尉郅都责讯王，王恐，自杀。葬蓝田。燕数万衔土置冢上，百姓怜之。",
+      "annotated": "<time>四年</time>，坐侵庙壖垣为宫，上⟦◈徵⟧<p name=\"刘荣\">荣</p>。<p name=\"刘荣\">荣</p>行，祖於<loc>江陵</loc><loc>北门</loc>。既已上<art>车</art>，轴折<art>车</art>废。<loc>江陵</loc><role>父老</role>流涕窃言曰：“吾<off>王</off>不反矣！” <p name=\"刘荣\">荣</p>至，诣<off>中尉</off>府簿。<off>中尉</off><p>郅都</p>责讯<off>王</off>，<off>王</off>恐，<vact>自杀</vact>。葬<loc>蓝田</loc>。<bio>燕</bio><qty>数万</qty>衔土置冢上，<role>百姓</role>怜之。"
+    },
+    {
+      "pid": "7",
+      "text": "荣最长，死无後，国除，地入于汉，为南郡。",
+      "annotated": "<p name=\"刘荣\">荣</p>最长，死无後，<vpol>国除</vpol>，地入于<state>汉</state>，为<loc>南郡</loc>。"
+    },
+    {
+      "pid": "8",
+      "text": "右三国本王皆栗姬之子也。",
+      "annotated": "右三国本<off>王</off>皆<p>栗姬</p>之子也。"
+    },
+    {
+      "pid": "9",
+      "text": "鲁共王馀，以孝景前二年用皇子为淮阳王。二年，吴楚反⟦◈破⟧後，以孝景前三年⟦◈徙⟧为鲁王。好治宫室苑囿狗马。季年好音，不喜辞辩。为人吃。",
+      "annotated": "<state>鲁</state>共<off>王</off><p name=\"刘馀\">馀</p>，以<p>孝景</p>前<time>二年</time>用<role>皇子</role>为<loc>淮阳</loc><off>王</off>。<time>二年</time>，<state>吴</state><state>楚</state><vact>反</vact>⟦◈破⟧後，以<p>孝景</p>前<time>三年</time>⟦◈徙⟧为<state>鲁</state><off>王</off>。好治<sys>宫室</sys><sys>苑囿</sys><bio>狗</bio><bio>马</bio>。季年好音，不喜辞辩。为人吃。"
+    },
+    {
+      "pid": "10",
+      "text": "二十六年卒，子光代为王。初好音舆马；晚节啬，惟恐不足於财。",
+      "annotated": "<time name=\"时长\">二十六年</time>卒，子<p name=\"刘光\">光</p>代为<off>王</off>。初好音舆<bio>马</bio>；晚节啬，惟恐不足於财。"
+    },
+    {
+      "pid": "11",
+      "text": "江都易王非，以孝景前二年用皇子为汝南王。吴楚反时，非年十五，有材力，上书原⟦◈击⟧吴。景帝赐非将军印，⟦◈击⟧吴。吴已⟦◈破⟧，二岁，⟦◈徙⟧为江都王，治吴故国，以军功赐天子旌旗。元光五年，匈奴大入汉为贼，非上书原⟦◈击⟧匈奴，上不许。非好气力，治宫观，招四方豪桀，骄奢甚。",
+      "annotated": "<state>江都</state><p name=\"江都易王\">易王</p><p name=\"刘非\">非</p>，以<p>孝景</p>前<time>二年</time>用<role>皇子</role>为<loc>汝南</loc><off>王</off>。<state>吴</state><state>楚</state><vact>反</vact>时，<p name=\"刘非\">非</p>年<qty>十五</qty>，有材力，上书原⟦◈击⟧<state>吴</state>。<p>景帝</p>赐<p name=\"刘非\">非</p><off>将军</off><art>印</art>，⟦◈击⟧<state>吴</state>。<state>吴</state>已⟦◈破⟧，<time name=\"时长\">二岁</time>，⟦◈徙⟧为<state>江都</state><off>王</off>，治<state>吴</state>故国，以军功赐<role>天子</role><art>旌旗</art>。<time>元光</time><time>五年</time>，<tribe>匈奴</tribe>大入<state>汉</state>为贼，<p name=\"刘非\">非</p>上书原⟦◈击⟧<tribe>匈奴</tribe>，上不许。<p name=\"刘非\">非</p>好气力，治<sys>宫观</sys>，招四方<role>豪桀</role>，骄奢甚。"
+    },
+    {
+      "pid": "12",
+      "text": "立二十六年卒，子建立为王。七年自杀。淮南、衡山谋反时，建颇闻其谋。自以为国近淮南，恐一日发，为所并，即阴作兵器，而时佩其父所赐将军印，载天子旗以出。易王死未葬，建有所说易王宠美人淖姬，夜使人迎与奸服舍中。及淮南事发，治党与颇及江都王建。建恐，因使人多持金钱，事绝其狱。而又信巫祝，使人祷祠妄言。建又尽与其姊弟奸。事既闻，汉公卿请⟦◈捕⟧治建。天子不忍，使大臣即讯王。王服所犯，遂自杀。国除，地入于汉，为广陵郡。",
+      "annotated": "立<time name=\"时长\">二十六年</time>卒，子<p name=\"刘建\">建</p><vpol>立</vpol>为<off>王</off>。<time name=\"时长\">七年</time><vact>自杀</vact>。<state>淮南</state>、<state>衡山</state>谋<vact>反</vact>时，<p name=\"刘建\">建</p>颇闻其谋。自以为国近<state>淮南</state>，恐<time>一日</time>发，为所并，即阴作<art>兵器</art>，而时佩其<role>父</role>所赐<off>将军</off><art>印</art>，载<role>天子</role><art>旗</art>以出。易<off>王</off>死未葬，<p name=\"刘建\">建</p>有所说易<off>王</off>宠<role>美人</role><p>淖姬</p>，夜使人迎与奸服舍中。及<state>淮南</state>事发，治党与颇及<state>江都</state><off>王</off><p name=\"刘建\">建</p>。<p name=\"刘建\">建</p>恐，因使人多持金<art>钱</art>，事绝其狱。而又信<role>巫祝</role>，使人祷祠妄言。<p name=\"刘建\">建</p>又尽与其<role>姊弟</role>奸。事既闻，<state>汉</state><off>公</off>卿请⟦◈捕⟧治<p name=\"刘建\">建</p>。<role>天子</role>不忍，使<role>大臣</role>即讯<off>王</off>。<off>王</off>服所犯，遂<vact>自杀</vact>。<vpol>国除</vpol>，地入于<state>汉</state>，为<loc>广陵</loc>郡。"
+    },
+    {
+      "pid": "13",
+      "text": "胶西于王端，以孝景前三年吴楚七国反⟦◈破⟧後，端用皇子为胶西王。端为人贼戾，又阴痿，一近妇人，病之数月。而有爱幸少年为郎。为郎者顷之与後宫乱，端禽⟦◈灭⟧之，及杀其子母。数犯上法，汉公卿数请诛端，天子为兄弟之故不忍，而端所为滋甚。有司再请⟦◈削⟧其国，去太半。端心愠，遂为无訾省。府库坏漏尽，腐财物以巨万计，终不得收徙。令吏毋得收租赋。端皆去卫，封其宫门，从一门出游。数变名姓，为布衣，之他郡国。",
+      "annotated": "<state>胶西</state><p name=\"胶西于王\">于王</p><p name=\"刘端\">端</p>，以<p>孝景</p>前<time>三年</time><state>吴</state><state>楚</state><state>七国</state><vact>反</vact>⟦◈破⟧後，<p name=\"刘端\">端</p>用<role>皇子</role>为<state>胶西</state><off>王</off>。<p name=\"刘端\">端</p>为人贼戾，又阴痿，一近<role>妇人</role>，病之<time name=\"时长\">数月</time>。而有爱幸<role>少年</role>为<off>郎</off>。为<off>郎</off>者顷之与後宫乱，<p name=\"刘端\">端</p>禽⟦◈灭⟧之，及<vact>杀</vact>其<role>子母</role>。数犯上<sys>法</sys>，<state>汉</state><role>公卿</role>数请<vact>诛</vact><p name=\"刘端\">端</p>，<role>天子</role>为<role>兄弟</role>之故不忍，而<p name=\"刘端\">端</p>所为滋甚。<off>有司</off>再请⟦◈削⟧其国，去太半。<p name=\"刘端\">端</p>心愠，遂为无訾省。<art>府库</art>坏漏尽，腐财物以<qty>巨万</qty>计，终不得收徙。<sys>令</sys>吏毋得收租赋。<p name=\"刘端\">端</p>皆去卫，封其宫门，从一门出游。数变名姓，为<art>布衣</art>，之他郡国。"
+    },
+    {
+      "pid": "14",
+      "text": "相、二千石往者，奉汉法以治，端辄求其罪告之，无罪者诈药杀之。所以设诈究变，彊足以距谏，智足以饰非。相、二千石从王治，则汉绳以法。故胶西小国，而所杀伤二千石甚众。",
+      "annotated": "相、<off>二千石</off>往者，奉<state>汉</state><sys>法</sys>以治，<p name=\"刘端\">端</p>辄求其罪告之，无罪者诈药<vact>杀</vact>之。所以设诈究变，彊足以距谏，智足以饰非。相、<off>二千石</off>从<off>王</off>治，则<state>汉</state>绳以<sys>法</sys>。故<state>胶西</state>小国，而所<vact>杀</vact>伤<off>二千石</off>甚众。"
+    },
+    {
+      "pid": "15",
+      "text": "立四十七年，卒，竟无男代後，国除，地入于汉，为胶西郡。",
+      "annotated": "立<time name=\"时长\">四十七年</time>，卒，竟无男代後，<vpol>国除</vpol>，地入于<state>汉</state>，为<loc>胶西郡</loc>。"
+    },
+    {
+      "pid": "16",
+      "text": "右三国本王皆程姬之子也。",
+      "annotated": "右三国本<off>王</off>皆<p>程姬</p>之子也。"
+    },
+    {
+      "pid": "17",
+      "text": "赵王彭祖，以孝景前二年用皇子为广川王。赵王遂反⟦◈破⟧後，彭祖王广川。四年，⟦◈徙⟧为赵王。十五年，孝景帝崩。彭祖为人巧佞卑谄，足恭而心刻深。好法律，持诡辩以中人。彭祖多内宠姬及子孙。相、二千石欲奉汉法以治，则害於王家。是以每相、二千石至，彭祖衣皁布衣，自行迎，除二千石舍，多设疑事以作动之，得二千石失言，中忌讳，辄书之。二千石欲治者，则以此迫劫；不听，乃上书告，及汙以奸利事。彭祖立五十馀年，相、二千石无能满二岁，辄以罪去，大者死，小者⟦◈刑⟧，以故二千石莫敢治。而赵王擅权，使使即县为贾人榷会，入多於国经租税。以是赵王家多金钱，然所赐姬诸子，亦尽之矣。彭祖取故江都易王宠姬王建所盗与奸淖姬者为姬，甚爱之。",
+      "annotated": "<state>赵</state><off>王</off><p name=\"刘彭祖\">彭祖</p>，以<p>孝景</p>前<time>二年</time>用<role>皇子</role>为<state>广川</state><off>王</off>。<state>赵</state><off>王</off><p name=\"刘遂\">遂</p><vact>反</vact>⟦◈破⟧後，<p name=\"刘彭祖\">彭祖</p><off>王</off><state>广川</state>。<time name=\"时长\">四年</time>，⟦◈徙⟧为<state>赵</state><off>王</off>。<time name=\"时长\">十五年</time>，<p>孝景</p>帝崩。<p name=\"刘彭祖\">彭祖</p>为人巧佞卑谄，足恭而心刻深。好<sys>法律</sys>，持诡辩以中人。<p name=\"刘彭祖\">彭祖</p>多内宠姬及<role>子孙</role>。相、<off>二千石</off>欲奉<state>汉</state><sys>法</sys>以治，则害於<off>王</off>家。是以每相、<off>二千石</off>至，<p name=\"刘彭祖\">彭祖</p>衣皁<art>布衣</art>，自行迎，除<off>二千石</off>舍，多设疑事以作动之，得<off>二千石</off>失言，中忌讳，辄书之。<off>二千石</off>欲治者，则以此迫劫；不听，乃上书告，及汙以奸利事。<p name=\"刘彭祖\">彭祖</p>立<qty>五十馀年</qty>，相、<off>二千石</off>无能满<time name=\"时长\">二岁</time>，辄以罪去，大者死，小者⟦◈刑⟧，以故<off>二千石</off>莫敢治。而<state>赵</state><off>王</off>擅权，使使即县为<role>贾人</role>榷会，入多於国经租税。以是<state>赵</state><off>王</off>家多金<art>钱</art>，然所赐姬<role>诸子</role>，亦尽之矣。<p name=\"刘彭祖\">彭祖</p>取故<state>江都</state><p name=\"江都易王\">易王</p>宠姬<p>王建</p>所盗与奸<p>淖姬</p>者为姬，甚爱之。"
+    },
+    {
+      "pid": "18",
+      "text": "彭祖不好治宫室、禨祥，好为吏事。上书原督国中盗贼。常夜从走卒行徼邯郸中。诸使过客以彭祖险陂，莫敢留邯郸。",
+      "annotated": "<p name=\"刘彭祖\">彭祖</p>不好治<sys>宫室</sys>、禨祥，好为吏事。上书原督国中<role>盗贼</role>。常夜从<role>走卒</role>行徼<loc>邯郸</loc>中。诸使过客以<p name=\"刘彭祖\">彭祖</p>险陂，莫敢留<loc>邯郸</loc>。"
+    },
+    {
+      "pid": "19",
+      "text": "其太子丹与其女及同产姊奸，与其客江充有卻。充告丹，丹以故废。赵更立太子。",
+      "annotated": "其<role>太子</role><p name=\"刘丹\">丹</p>与其<role>女</role>及同产<role>姊</role>奸，与其客<p>江充</p>有卻。<p name=\"江充\">充</p>告<p name=\"刘丹\">丹</p>，<p name=\"刘丹\">丹</p>以故<vact>废</vact>。<state>赵</state>更<vpol>立</vpol><role>太子</role>。"
+    },
+    {
+      "pid": "20",
+      "text": "中山靖王胜，以孝景前三年用皇子为中山王。十四年，孝景帝崩。胜为人乐酒好内，有子枝属百二十馀人。常与兄赵王相非，曰：“兄为王，专代吏治事。王者当日听音乐声色。” 赵王亦非之，曰：“中山王徒日淫，不佐天子拊循百姓，何以称为籓臣！”",
+      "annotated": "<state>中山</state><p name=\"中山靖王\">靖王</p><p name=\"刘胜\">胜</p>，以<p>孝景</p>前<time>三年</time>用<role>皇子</role>为<state>中山</state><off>王</off>。<time name=\"时长\">十四年</time>，<p>孝景</p>帝崩。<p name=\"刘胜\">胜</p>为人乐酒好内，有子枝属<qty>百二十馀人</qty>。常与<role>兄</role><state>赵</state><off>王</off>相非，曰：“<role>兄</role>为<off>王</off>，专代吏治事。<off>王</off>者当日听音乐声色。” <state>赵</state><off>王</off>亦非之，曰：“<state>中山</state><off>王</off>徒日淫，不佐<role>天子</role>拊循<role>百姓</role>，何以称为籓臣！”"
+    },
+    {
+      "pid": "21",
+      "text": "立四十二年卒，子哀王昌立。一年卒，子昆侈代为中山王。",
+      "annotated": "立<time name=\"时长\">四十二年</time>卒，子<p name=\"中山哀王\">哀王</p><p name=\"刘昌\">昌</p>立。<time name=\"时长\">一年</time>卒，子<p name=\"刘昆侈\">昆侈</p>代为<state>中山</state><off>王</off>。"
+    },
+    {
+      "pid": "22",
+      "text": "右二国本王皆贾夫人之子也。",
+      "annotated": "右二国本<off>王</off>皆贾<role>夫人</role>之子也。"
+    },
+    {
+      "pid": "23",
+      "text": "长沙定王发，发之母唐姬，故程姬侍者。景帝召程姬，程姬有所辟，不原进，而饰侍者唐兒使夜进。上醉不知，以为程姬而幸之，遂有身。已乃觉非程姬也。及生子，因命曰发。以孝景前二年用皇子为长沙王。以其母微，无宠，故王卑湿贫国。",
+      "annotated": "<state>长沙</state><p name=\"长沙定王\">定王</p><p name=\"刘发\">发</p>，<p name=\"刘发\">发</p>之母<p>唐姬</p>，故<p>程姬</p>侍者。<p>景帝</p>召<p>程姬</p>，<p>程姬</p>有所辟，不原进，而饰侍者<p name=\"唐姬\">唐兒</p>使夜进。上醉不知，以为<p>程姬</p>而幸之，遂有身。已乃觉非<p>程姬</p>也。及生子，因命曰<p name=\"刘发\">发</p>。以<p>孝景</p>前<time>二年</time>用<role>皇子</role>为<state>长沙</state><off>王</off>。以其<role>母</role>微，无宠，故<off>王</off>卑湿贫国。"
+    },
+    {
+      "pid": "24",
+      "text": "立二十七年卒，子康王庸立。二十八年，卒，子鲋鮈立为长沙王。",
+      "annotated": "立<time name=\"时长\">二十七年</time>卒，子<p name=\"长沙康王\">康王</p><p name=\"刘庸\">庸</p>立。<time name=\"时长\">二十八年</time>，卒，子<p name=\"刘鲋鮈\">鲋鮈</p><vpol>立</vpol>为<state>长沙</state><off>王</off>。"
+    },
+    {
+      "pid": "25",
+      "text": "右一国本王唐姬之子也。",
+      "annotated": "右一国本<off>王</off><p>唐姬</p>之子也。"
+    },
+    {
+      "pid": "26",
+      "text": "广川惠王越，以孝景中二年用皇子为广川王。",
+      "annotated": "<state>广川</state><p name=\"广川惠王\">惠王</p><p name=\"刘越\">越</p>，以<p>孝景</p>中<time>二年</time>用<role>皇子</role>为<state>广川</state><off>王</off>。"
+    },
+    {
+      "pid": "27",
+      "text": "十二年卒，子齐立为王。齐有幸臣桑距。已而有罪，欲诛距，距亡，王因⟦◈禽⟧其宗族。距怨王，乃上书告王齐与同产奸。自是之後，王齐数上书告言汉公卿及幸臣所忠等。",
+      "annotated": "<time name=\"时长\">十二年</time>卒，子<p name=\"刘齐\">齐</p><vpol>立</vpol>为<off>王</off>。<p name=\"刘齐\">齐</p>有<role>幸臣</role><p>桑距</p>。已而有罪，欲<vact>诛</vact><p name=\"桑距\">距</p>，<p name=\"桑距\">距</p>亡，<off>王</off>因⟦◈禽⟧其<role>宗族</role>。<p name=\"桑距\">距</p>怨<off>王</off>，乃上书告<off>王</off><p name=\"刘齐\">齐</p>与同产奸。自是之後，<off>王</off><p name=\"刘齐\">齐</p>数上书告言<state>汉</state><role>公卿</role>及<role>幸臣</role><p>所忠</p>等。"
+    },
+    {
+      "pid": "28",
+      "text": "胶东康王寄，以孝景中二年用皇子为胶东王。二十八年卒。淮南王谋反时，寄微闻其事，私作楼车镞矢战守备，候淮南之起。及吏治淮南之事，辞出之。寄於上最亲，意伤之，发病而死，不敢置後，於是上。寄有长子者名贤，母无宠；少子名庆，母爱幸，寄常欲立之，为不次，因有过，遂无言。上怜之，乃以贤为胶东王奉康王嗣，而封庆於故衡山地，为六安王。",
+      "annotated": "<state>胶东</state><p name=\"胶东康王\">康王</p><p name=\"刘寄\">寄</p>，以<p>孝景</p>中<time>二年</time>用<role>皇子</role>为<state>胶东</state><off>王</off>。<time name=\"时长\">二十八年</time>卒。<state>淮南</state><off>王</off>谋<vact>反</vact>时，<p name=\"刘寄\">寄</p>微闻其事，私作楼<art>车</art><art>镞矢</art>战守备，候<state>淮南</state>之起。及吏治<state>淮南</state>之事，辞出之。<p name=\"刘寄\">寄</p>於上最亲，意伤之，发病而死，不敢置後，於是上。<p name=\"刘寄\">寄</p>有<role>长子</role>者名<p name=\"刘贤\">贤</p>，<role>母</role>无宠；<role>少子</role>名<p name=\"刘庆\">庆</p>，<role>母</role>爱幸，<p name=\"刘寄\">寄</p>常欲立之，为不次，因有过，遂无言。上怜之，乃以<p name=\"刘贤\">贤</p>为<state>胶东</state><off>王</off>奉康<off>王</off>嗣，而<vpol>封</vpol><p name=\"刘庆\">庆</p>於故<state>衡山</state>地，为六安<off>王</off>。"
+    },
+    {
+      "pid": "29",
+      "text": "胶东王贤立十四年卒，谥为哀王。子庆为王。",
+      "annotated": "<state>胶东</state><off>王</off><p name=\"刘贤\">贤</p>立<time name=\"时长\">十四年</time>卒，<vpol>谥</vpol>为<p name=\"胶东哀王\">哀王</p>。子<p name=\"刘庆\">庆</p>为<off>王</off>。"
+    },
+    {
+      "pid": "30",
+      "text": "六安王庆，以元狩二年用胶东康王子为六安王。",
+      "annotated": "六安<off>王</off><p name=\"刘庆\">庆</p>，以<time>元狩</time><time>二年</time>用<state>胶东</state><p name=\"胶东康王\">康王</p>子为六安<off>王</off>。"
+    },
+    {
+      "pid": "31",
+      "text": "清河哀王乘，以孝景中三年用皇子为清河王。十二年卒，无後，国除，地入于汉，为清河郡。",
+      "annotated": "<state>清河</state><p name=\"清河哀王\">哀王</p><p name=\"刘乘\">乘</p>，以<p>孝景</p>中<time>三年</time>用<role>皇子</role>为<state>清河</state><off>王</off>。<time name=\"时长\">十二年</time>卒，无後，<vpol>国除</vpol>，地入于<state>汉</state>，为<loc>清河郡</loc>。"
+    },
+    {
+      "pid": "32",
+      "text": "常山宪王舜，以孝景中五年用皇子为常山王。舜最亲，景帝少子，骄怠多淫，数犯禁，上常宽释之。立三十二年卒，太子勃代立为王。",
+      "annotated": "<state>常山</state><p name=\"常山宪王\">宪王</p><p name=\"刘舜\">舜</p>，以<p>孝景</p>中<time>五年</time>用<role>皇子</role>为<state>常山</state><off>王</off>。<p name=\"刘舜\">舜</p>最亲，<p>景帝</p><role>少子</role>，骄怠多淫，数犯禁，上常宽释之。立<time name=\"时长\">三十二年</time>卒，<role>太子</role><p name=\"刘勃\">勃</p><vpol>代立</vpol>为<off>王</off>。"
+    },
+    {
+      "pid": "33",
+      "text": "初，宪王舜有所不爱姬生长男棁。棁以母无宠故，亦不得幸於王。王后脩生太子勃。王内多，所幸姬生子平、子商，王后希得幸。及宪王病甚，诸幸姬常侍病，故王后亦以妒媢不常侍病，辄归舍。医进药，太子勃不自尝药，又不宿留侍病。及王薨，王后、太子乃至。宪王雅不以长子棁为人数，及薨，又不分与财物。郎或说太子、王后，令诸子与长子棁共分财物，太子、王后不听。太子代立，又不收恤棁。棁怨王后、太子。汉使者视宪王丧，棁自言宪王病时，王后、太子不侍，及薨，六日出舍，太子勃私奸，饮酒，博戏，击筑，与女子载驰，环城过市，入牢视囚。天子遣大行骞验王后及问王勃，请⟦◈逮⟧勃所与奸诸证左，王又匿之。吏求⟦◈捕⟧勃大急，使人致击笞掠，擅出汉所疑囚者。有司请诛宪王后脩及王勃。上以脩素无行，使棁陷之罪，勃无良师傅，不忍诛。有司请废王后脩，⟦◈徙⟧王勃以家属处房陵，上许之。",
+      "annotated": "初，<p name=\"常山宪王\">宪王</p><p name=\"刘舜\">舜</p>有所不爱姬生<role>长男</role><p name=\"刘棁\">棁</p>。<p name=\"刘棁\">棁</p>以<role>母</role>无宠故，亦不得幸於<off>王</off>。<off>王</off>后<p>脩</p>生<role>太子</role><p name=\"刘勃\">勃</p>。<off>王</off>内多，所幸姬生子<p name=\"刘平\">平</p>、子<p name=\"刘商\">商</p>，<off>王</off>后希得幸。及宪<off>王</off>病甚，诸幸姬<off>常侍</off>病，故<off>王</off>后亦以妒媢不<off>常侍</off>病，辄归舍。医进药，<role>太子</role><p name=\"刘勃\">勃</p>不自尝药，又不宿留侍病。及<off>王</off>薨，<off>王</off>后、<role>太子</role>乃至。宪<off>王</off>雅不以<role>长子</role><p name=\"刘棁\">棁</p>为人数，及薨，又不分与财物。<off>郎</off>或说<role>太子</role>、<off>王</off>后，<sys>令</sys><role>诸子</role>与<role>长子</role><p name=\"刘棁\">棁</p>共分财物，<role>太子</role>、<off>王</off>后不听。<role>太子</role>代立，又不收恤<p name=\"刘棁\">棁</p>。<p name=\"刘棁\">棁</p>怨<off>王</off>后、<role>太子</role>。<state>汉</state><off>使者</off>视宪<off>王</off>丧，<p name=\"刘棁\">棁</p>自言宪<off>王</off>病时，<off>王</off>后、<role>太子</role>不侍，及薨，<time name=\"时长\">六日</time>出舍，<role>太子</role><p name=\"刘勃\">勃</p>私奸，饮酒，博戏，击<art>筑</art>，与女子载驰，环城过市，入牢视囚。<role>天子</role>遣<off>大行</off><p>骞</p>验<off>王</off>后及问<off>王</off><p name=\"刘勃\">勃</p>，请⟦◈逮⟧<p name=\"刘勃\">勃</p>所与奸诸证左，<off>王</off>又匿之。吏求⟦◈捕⟧<p name=\"刘勃\">勃</p>大急，使人致击笞掠，擅出<state>汉</state>所疑囚者。<off>有司</off>请<vact>诛</vact>宪<off>王</off>后<p>脩</p>及<off>王</off><p name=\"刘勃\">勃</p>。上以<p>脩</p>素无行，使<p name=\"刘棁\">棁</p>陷之罪，<p name=\"刘勃\">勃</p>无良<off>师傅</off>，不忍<vact>诛</vact>。<off>有司</off>请<vact>废</vact><off>王</off>后<p>脩</p>，⟦◈徙⟧<off>王</off><p name=\"刘勃\">勃</p>以家属处<loc>房陵</loc>，上许之。"
+    },
+    {
+      "pid": "34",
+      "text": "勃王数月，⟦◈迁⟧于房陵，国绝。月馀，天子为最亲，乃诏有司曰：“常山宪王蚤夭，后妾不和，適孽诬争，陷于不义以⟦◈灭⟧国，朕甚闵焉。其封宪王子平三万户，为真定王；封子商三万户，为泗水王。”",
+      "annotated": "<p name=\"刘勃\">勃</p><off>王</off><time name=\"时长\">数月</time>，⟦◈迁⟧于<loc>房陵</loc>，国绝。<time name=\"时长\">月馀</time>，<role>天子</role>为最亲，乃诏<off>有司</off>曰：“<state>常山</state><p name=\"常山宪王\">宪王</p>蚤夭，后妾不和，適孽诬争，陷于不义以⟦◈灭⟧国，朕甚闵焉。其封宪<off>王</off>子<p name=\"刘平\">平</p><qty>三万户</qty>，为<state>真定</state><off>王</off>；封子<p name=\"刘商\">商</p><qty>三万户</qty>，为<state>泗水</state><off>王</off>。”"
+    },
+    {
+      "pid": "35",
+      "text": "真定王平，元鼎四年用常山宪王子为真定王。",
+      "annotated": "<state>真定</state><off>王</off><p name=\"刘平\">平</p>，<time>元鼎</time><time>四年</time>用<state>常山</state><p name=\"常山宪王\">宪王</p>子为<state>真定</state><off>王</off>。"
+    },
+    {
+      "pid": "36",
+      "text": "泗水思王商，以元鼎四年用常山宪王子为泗水王。十一年卒，子哀王安世立。十一年卒，无子。於是上怜泗水王绝，乃立安世弟贺为泗水王。",
+      "annotated": "<state>泗水</state><p name=\"泗水思王\">思王</p><p name=\"刘商\">商</p>，以<time>元鼎</time><time>四年</time>用<state>常山</state><p name=\"常山宪王\">宪王</p>子为<state>泗水</state><off>王</off>。<time name=\"时长\">十一年</time>卒，子<p name=\"泗水哀王\">哀王</p><p name=\"刘安世\">安世</p>立。<time name=\"时长\">十一年</time>卒，无子。於是上怜<state>泗水</state><off>王</off>绝，乃<vpol>立</vpol><p name=\"刘安世\">安世</p>弟<p name=\"刘贺\">贺</p>为<state>泗水</state><off>王</off>。"
+    },
+    {
+      "pid": "37",
+      "text": "右四国本王皆王夫人兒姁子也。其後汉益封其支子为六安王、泗水王二国。凡兒姁子孙，於今为六王。 ::: 太史公曰",
+      "annotated": "右四国本<off>王</off>皆<p>王夫人</p><p>兒姁</p>子也。其後<state>汉</state>益封其支子为六安<off>王</off>、<state>泗水</state><off>王</off>二国。凡<p>兒姁</p><role>子孙</role>，於今为六<off>王</off>。 ::: 太史公曰"
+    },
+    {
+      "pid": "38",
+      "text": "太史公曰：高祖时诸侯皆赋，得自除内史以下，汉独为置丞相，黄金印。诸侯自除御史、廷尉正、博士，拟於天子。自吴楚反後，五宗王世，汉为置二千石，去“丞相” 曰“相”，银印。诸侯独得食租税，夺之权。其後诸侯贫者或乘牛车也。 ::: ::: 赞",
+      "annotated": "<p>太史公</p>曰：<p>高祖</p>时<role>诸侯</role>皆赋，得自除<off>内史</off>以下，<state>汉</state>独为置<off>丞相</off>，<art>黄金印</art>。<role>诸侯</role>自除<off>御史</off>、<off>廷尉正</off>、<off>博士</off>，拟於<role>天子</role>。自<state>吴</state><state>楚</state><vact>反</vact>後，五宗<off>王</off>世，<state>汉</state>为置<off>二千石</off>，去“丞相” 曰“相”，<art>银印</art>。<role>诸侯</role>独得食租税，夺之权。其後<role>诸侯</role>贫者或乘<art>牛车</art>也。 ::: ::: 赞"
+    },
+    {
+      "pid": "39",
+      "text": "景十三子，五宗亲睦。 栗姬既废，临江折轴。 阏于早薨，河间儒服。 馀好宫苑，端事驰逐。 江都有才，中山禔福。 长沙地小，胶东造镞。 仁贤者代，浡乱者⟦◈族⟧。 兒姁四王，分封为六。 :::",
+      "annotated": "景<qty>十三</qty>子，五<role>宗亲</role>睦。 <p>栗姬</p>既<vact>废</vact>，<state>临江</state>折轴。 <p name=\"刘阏于\">阏于</p>早薨，<state>河间</state>儒服。 <p name=\"刘馀\">馀</p>好宫苑，<p name=\"刘端\">端</p>事驰逐。 <state>江都</state>有才，<state>中山</state>禔福。 <state>长沙</state>地小，<state>胶东</state>造镞。 仁贤者代，浡乱者⟦◈族⟧。 <p>兒姁</p>四<off>王</off>，<sys>分封</sys>为六。 :::"
+    }
+  ]
+}

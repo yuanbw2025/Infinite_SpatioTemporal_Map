@@ -1,0 +1,191 @@
+{
+  "work": "史记",
+  "chapter": "韩世家",
+  "chapter_file": "045_韩世家",
+  "chapter_type": "世家",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 36,
+  "paragraph_count_done": 36,
+  "paragraphs": [
+    {
+      "pid": "1",
+      "text": "韩之先与周同姓，姓姬氏。其後苗裔事晋，得封於韩原，曰韩武子。武子後三世有韩厥，从封姓为韩氏。",
+      "annotated": "<clan>韩</clan>之先与<state>周</state>同姓，姓<clan>姬氏</clan>。其後<role>苗裔</role>事<state>晋</state>，得封於<loc>韩原</loc>，曰<p>韩武子</p>。<p name=\"韩武子\">武子</p>後<time name=\"时长\">三世</time>有<p>韩厥</p>，从封姓为<clan>韩氏</clan>。"
+    },
+    {
+      "pid": "2",
+      "text": "韩厥，晋景公之三年，晋司寇屠岸贾将作乱，诛灵公之贼赵盾。赵盾已死矣，欲诛其子赵朔。韩厥止贾，贾不听。厥告赵朔令亡。朔曰：“子必能不绝赵祀，死不恨矣。” 韩厥许之。及贾诛赵氏，厥称疾不出。程婴、公孙杵臼之藏赵孤赵武也，厥知之。",
+      "annotated": "<p>韩厥</p>，<p>晋景公</p>之<time>三年</time>，<state>晋</state><off>司寇</off><p>屠岸贾</p>将作乱，<vact>诛</vact><p name=\"晋灵公\">灵公</p>之贼<p>赵盾</p>。<p>赵盾</p>已死矣，欲<vact>诛</vact>其子<p>赵朔</p>。<p>韩厥</p>止<p name=\"屠岸贾\">贾</p>，<p name=\"屠岸贾\">贾</p>不听。<p name=\"韩厥\">厥</p>告<p>赵朔</p>令亡。<p name=\"赵朔\">朔</p>曰：“子必能不绝<clan>赵</clan>祀，死不恨矣。” <p>韩厥</p>许之。及<p name=\"屠岸贾\">贾</p><vact>诛</vact><clan>赵氏</clan>，<p name=\"韩厥\">厥</p>称疾不出。<p>程婴</p>、<p>公孙杵臼</p>之藏<clan>赵</clan>孤<p>赵武</p>也，<p name=\"韩厥\">厥</p>知之。"
+    },
+    {
+      "pid": "3",
+      "text": "景公十一年，厥与郤克将兵八百乘⟦◈伐⟧齐，⟦◈败⟧齐顷公于鞍，⟦◈获⟧逢丑父。於是晋作六卿，而韩厥在一卿之位，号为献子。",
+      "annotated": "<p name=\"晋景公\">景公</p><time>十一年</time>，<p name=\"韩厥\">厥</p>与<p>郤克</p>将兵<qty>八百乘</qty>⟦◈伐⟧<state>齐</state>，⟦◈败⟧<p>齐顷公</p>于<loc>鞍</loc>，⟦◈获⟧<p>逢丑父</p>。於是<state>晋</state>作<sys>六卿</sys>，而<p>韩厥</p>在一卿之位，号为<p name=\"韩献子\">献子</p>。"
+    },
+    {
+      "pid": "4",
+      "text": "晋景公十七年，病，卜大业之不遂者为祟。韩厥称赵成季之功，今後无祀，以感景公。景公问曰：“尚有世乎？” 厥於是言赵武，而复与故赵氏田邑，续赵氏祀。",
+      "annotated": "<p>晋景公</p><time>十七年</time>，病，卜大业之不遂者为祟。<p>韩厥</p>称<p>赵成季</p>之功，今後无祀，以感<p name=\"晋景公\">景公</p>。<p name=\"晋景公\">景公</p>问曰：“尚有世乎？” <p name=\"韩厥\">厥</p>於是言<p>赵武</p>，而复与故<clan>赵氏</clan>田邑，续<clan>赵氏</clan>祀。"
+    },
+    {
+      "pid": "5",
+      "text": "晋悼公之七年，韩献子老。献子卒，子宣子代。宣字徙居州。",
+      "annotated": "<p>晋悼公</p>之<time>七年</time>，<p>韩献子</p>老。<p name=\"韩献子\">献子</p>卒，子<p name=\"韩宣子\">宣子</p>代。<p name=\"韩宣子\">宣字</p>徙居<loc>州</loc>。"
+    },
+    {
+      "pid": "6",
+      "text": "晋平公十四年，吴季札使晋，曰：“晋国之政卒归於韩、魏、赵矣。” 晋顷公十二年，韩宣子与赵、魏共分祁氏、羊舌氏十县。晋定公十五年，宣子与赵简子⟦◈侵⟧⟦◈伐⟧范、中行氏。宣子卒，子贞子代立。贞子徙居平阳。",
+      "annotated": "<p>晋平公</p><time>十四年</time>，<p>吴季札</p>使<state>晋</state>，曰：“<state>晋</state>国之政卒归於<clan>韩</clan>、<clan>魏</clan>、<clan>赵</clan>矣。” <p>晋顷公</p><time>十二年</time>，<p>韩宣子</p>与<clan>赵</clan>、<clan>魏</clan>共分<clan>祁氏</clan>、<clan>羊舌氏</clan>十县。<p>晋定公</p><time>十五年</time>，<p name=\"韩宣子\">宣子</p>与<p>赵简子</p>⟦◈侵⟧⟦◈伐⟧<clan>范</clan>、<clan>中行氏</clan>。<p name=\"韩宣子\">宣子</p>卒，子<p name=\"韩贞子\">贞子</p>代立。<p name=\"韩贞子\">贞子</p>徙居<loc>平阳</loc>。"
+    },
+    {
+      "pid": "7",
+      "text": "贞子卒，子简子代。 简子卒，子庄子代。 庄子卒，子康子代。 康子与赵襄子、魏桓子共⟦◈败⟧知伯，分其地，地益大，大於诸侯。",
+      "annotated": "<p name=\"韩贞子\">贞子</p>卒，子<p name=\"韩简子\">简子</p>代。 <p name=\"韩简子\">简子</p>卒，子<p name=\"韩庄子\">庄子</p>代。 <p name=\"韩庄子\">庄子</p>卒，子<p name=\"韩康子\">康子</p>代。 <p name=\"韩康子\">康子</p>与<p>赵襄子</p>、<p>魏桓子</p>共⟦◈败⟧<p name=\"荀瑶\">知伯</p>，分其地，地益大，大於<role>诸侯</role>。"
+    },
+    {
+      "pid": "8",
+      "text": "康子卒，子武子代。武子二年，⟦◈伐⟧郑，杀其君幽公。十六年，武子卒，子景侯立。",
+      "annotated": "<p name=\"韩康子\">康子</p>卒，子<p name=\"韩武子\">武子</p>代。<p name=\"韩武子\">武子</p><time>二年</time>，⟦◈伐⟧<state>郑</state>，<vact>杀</vact>其君<p name=\"郑幽公\">幽公</p>。<time>十六年</time>，<p name=\"韩武子\">武子</p>卒，子<p name=\"韩景侯\">景侯</p>立。"
+    },
+    {
+      "pid": "9",
+      "text": "景侯虔元年，⟦◈伐⟧郑，⟦◈取⟧雍丘。二年，郑⟦◈败⟧我负黍。",
+      "annotated": "<p name=\"韩景侯\">景侯</p><p name=\"韩景侯\">虔</p><time>元年</time>，⟦◈伐⟧<state>郑</state>，⟦◈取⟧<loc>雍丘</loc>。<time>二年</time>，<state>郑</state>⟦◈败⟧我<loc>负黍</loc>。"
+    },
+    {
+      "pid": "10",
+      "text": "六年，与赵、魏俱得列为诸侯。",
+      "annotated": "<time>六年</time>，与<state>赵</state>、<state>魏</state>俱得列为<role>诸侯</role>。"
+    },
+    {
+      "pid": "11",
+      "text": "九年，郑⟦◈围⟧我阳翟。景侯卒，子列侯取立。",
+      "annotated": "<time>九年</time>，<state>郑</state>⟦◈围⟧我<loc>阳翟</loc>。<p name=\"韩景侯\">景侯</p>卒，子<p name=\"韩列侯\">列侯</p><p name=\"韩列侯\">取</p>立。"
+    },
+    {
+      "pid": "12",
+      "text": "列侯三年，聂政杀韩相侠累。九年，秦⟦◈伐⟧我宜阳，⟦◈取⟧六邑。十三年，列侯卒，子文侯立。是岁魏文侯卒。",
+      "annotated": "<p name=\"韩列侯\">列侯</p><time>三年</time>，<p>聂政</p><vact>杀</vact><state>韩</state><off>相</off><p>侠累</p>。<time>九年</time>，<state>秦</state>⟦◈伐⟧我<loc>宜阳</loc>，⟦◈取⟧<qty>六邑</qty>。<time>十三年</time>，<p name=\"韩列侯\">列侯</p>卒，子<p name=\"韩文侯\">文侯</p>立。是岁<p>魏文侯</p>卒。"
+    },
+    {
+      "pid": "13",
+      "text": "文侯二年，⟦◈伐⟧郑，⟦◈取⟧阳城。⟦◈伐⟧宋，到彭城，执宋君。七年，⟦◈伐⟧齐，至桑丘。郑⟦◈反⟧晋。九年，⟦◈伐⟧齐，至灵丘。十年，文侯卒，子哀侯立。",
+      "annotated": "<p name=\"韩文侯\">文侯</p><time>二年</time>，⟦◈伐⟧<state>郑</state>，⟦◈取⟧<loc>阳城</loc>。⟦◈伐⟧<state>宋</state>，到<loc>彭城</loc>，<vact>执</vact><off>宋君</off>。<time>七年</time>，⟦◈伐⟧<state>齐</state>，至<loc>桑丘</loc>。<state>郑</state>⟦◈反⟧<state>晋</state>。<time>九年</time>，⟦◈伐⟧<state>齐</state>，至<loc>灵丘</loc>。<time>十年</time>，<p name=\"韩文侯\">文侯</p>卒，子<p name=\"韩哀侯\">哀侯</p>立。"
+    },
+    {
+      "pid": "14",
+      "text": "哀侯元年，与赵、魏分晋国。二年，⟦◈灭⟧郑，因徙都郑。",
+      "annotated": "<p name=\"韩哀侯\">哀侯</p><time>元年</time>，与<state>赵</state>、<state>魏</state>分<state>晋</state>国。<time>二年</time>，⟦◈灭⟧<state>郑</state>，因徙都<state>郑</state>。"
+    },
+    {
+      "pid": "15",
+      "text": "六年，韩严弑其君哀侯。而子懿侯立。",
+      "annotated": "<time>六年</time>，<p>韩严</p><vact>弑</vact>其君<p name=\"韩哀侯\">哀侯</p>。而子<p name=\"韩懿侯\">懿侯</p>立。"
+    },
+    {
+      "pid": "16",
+      "text": "懿侯二年，魏⟦◈败⟧我马陵。五年，与魏惠王会宅阳。九年，魏⟦◈败⟧我澮。十二年，懿侯卒，子昭侯立。",
+      "annotated": "<p name=\"韩懿侯\">懿侯</p><time>二年</time>，<state>魏</state>⟦◈败⟧我<loc>马陵</loc>。<time>五年</time>，与<p>魏惠王</p>会<loc>宅阳</loc>。<time>九年</time>，<state>魏</state>⟦◈败⟧我<loc>澮</loc>。<time>十二年</time>，<p name=\"韩懿侯\">懿侯</p>卒，子<p name=\"韩昭侯\">昭侯</p>立。"
+    },
+    {
+      "pid": "17",
+      "text": "昭侯元年，秦⟦◈败⟧我西山。二年，宋⟦◈取⟧我黄池。魏⟦◈取⟧硃。六年，⟦◈伐⟧东周，⟦◈取⟧陵观、邢丘。",
+      "annotated": "<p name=\"韩昭侯\">昭侯</p><time>元年</time>，<state>秦</state>⟦◈败⟧我<loc>西山</loc>。<time>二年</time>，<state>宋</state>⟦◈取⟧我<loc>黄池</loc>。<state>魏</state>⟦◈取⟧<loc>硃</loc>。<time>六年</time>，⟦◈伐⟧<state>东周</state>，⟦◈取⟧<loc>陵观</loc>、<loc>邢丘</loc>。"
+    },
+    {
+      "pid": "18",
+      "text": "八年，申不害相韩，脩术行道，国内以治，诸侯不来⟦◈侵⟧⟦◈伐⟧。",
+      "annotated": "<time>八年</time>，<p>申不害</p>相<state>韩</state>，脩<idea>术</idea>行道，国内以治，<role>诸侯</role>不来⟦◈侵⟧⟦◈伐⟧。"
+    },
+    {
+      "pid": "19",
+      "text": "十年，韩姬弑其君悼公。十一年，昭侯如秦。二十二年，申不害死。二十四年，秦来⟦◈拔⟧我宜阳。",
+      "annotated": "<time>十年</time>，<p>韩姬</p><vact>弑</vact>其君<p>悼公</p>。<time>十一年</time>，<p name=\"韩昭侯\">昭侯</p>如<state>秦</state>。<time>二十二年</time>，<p>申不害</p>死。<time>二十四年</time>，<state>秦</state>来⟦◈拔⟧我<loc>宜阳</loc>。"
+    },
+    {
+      "pid": "20",
+      "text": "二十五年，旱，作高门。屈宜臼曰：“昭侯不出此门。何也？不时。吾所谓时者，非时日也，人固有利不利时。昭侯尝利矣，不作高门。往年秦⟦◈拔⟧宜阳，今年旱，昭侯不以此时恤民之急，而顾益奢，此谓’时绌举赢’。” 二十六年，高门成，昭侯卒，果不出此门。子宣惠王立。",
+      "annotated": "<time>二十五年</time>，旱，作<art>高门</art>。<p>屈宜臼</p>曰：“<p name=\"韩昭侯\">昭侯</p>不出此门。何也？不时。吾所谓时者，非时日也，人固有利不利时。<p name=\"韩昭侯\">昭侯</p>尝利矣，不作<art>高门</art>。往年<state>秦</state>⟦◈拔⟧<loc>宜阳</loc>，今年旱，<p name=\"韩昭侯\">昭侯</p>不以此时恤民之急，而顾益奢，此谓’时绌举赢’。” <time>二十六年</time>，<art>高门</art>成，<p name=\"韩昭侯\">昭侯</p>卒，果不出此门。子<p name=\"韩宣惠王\">宣惠王</p>立。"
+    },
+    {
+      "pid": "21",
+      "text": "宣惠王五年，张仪相秦。八年，魏⟦◈败⟧我将韩举。十一年，君号为王。与赵会区鼠。十四年，秦⟦◈伐⟧⟦◈败⟧我鄢。",
+      "annotated": "<p name=\"韩宣惠王\">宣惠王</p><time>五年</time>，<p>张仪</p>相<state>秦</state>。<time>八年</time>，<state>魏</state>⟦◈败⟧我将<p>韩举</p>。<time>十一年</time>，君号为王。与<state>赵</state>会<loc>区鼠</loc>。<time>十四年</time>，<state>秦</state>⟦◈伐⟧⟦◈败⟧我<loc>鄢</loc>。"
+    },
+    {
+      "pid": "22",
+      "text": "十六年，秦⟦◈败⟧我脩鱼，⟦◈虏⟧得韩将宧、申差於浊泽。 韩氏急，公仲谓韩王曰：“与国非可恃也。今秦之欲⟦◈伐⟧楚久矣，王不如因张仪为和於秦，赂以一名都，具甲，与之南⟦◈伐⟧楚，此以一易二之计也。” 韩王曰：“善。” 乃警公仲之行，将西购於秦。 楚王闻之大恐，召陈轸告之。 陈轸曰：“秦之欲⟦◈伐⟧楚久矣，今又得韩之名都一而具甲，秦韩并兵而⟦◈伐⟧楚，此秦所祷祀而求也。今已得之矣，楚国必伐矣。王听臣为之警四境之内，起师言救韩，命战车满道路，发信臣，多其车，重其币，使信王之救己也。纵韩不能听我，韩必德王也，必不为雁行以来，是秦韩不和也，兵虽至，楚不大病也。为能听我绝和於秦，秦必大怒，以厚怨韩。韩之南交楚，必轻秦；轻秦，其应秦必不敬：是因秦、韩之兵而免楚国之患也。” 楚王曰：“善。” 乃警四境之内，兴师言救韩。 命战车满道路，发信臣，多其车，重其币。 谓韩王曰：”不穀国虽小，已悉发之矣。原大国遂肆志於秦，不穀将以楚殉韩。” 韩王闻之大说，乃止公仲之行。 公仲曰：“不可。夫以实⟦◈伐⟧我者秦也，以虚名救我者楚也。王恃楚之虚名，而轻绝彊秦之敌，王必为天下大笑。且楚韩非兄弟之国也，又非素约而谋⟦◈伐⟧秦也。已有伐形，因发兵言救韩，此必陈轸之谋也。且王已使人报於秦矣，今不行，是欺秦也。夫轻欺彊秦而信楚之谋臣，恐王必悔之。” 韩王不听，遂绝於秦。 秦因大怒，益甲⟦◈伐⟧韩，大战，楚救不至韩。 十九年，大⟦◈破⟧我岸门。 太子仓质於秦以和。",
+      "annotated": "<time>十六年</time>，<state>秦</state>⟦◈败⟧我<loc>脩鱼</loc>，⟦◈虏⟧得<state>韩</state>将<p name=\"韩宧\">宧</p>、<p>申差</p>於<loc>浊泽</loc>。 <clan>韩氏</clan>急，<p>公仲</p>谓<off>韩王</off>曰：“与国非可恃也。今<state>秦</state>之欲⟦◈伐⟧<state>楚</state>久矣，王不如因<p>张仪</p>为和於<state>秦</state>，赂以一名都，具<art>甲</art>，与之南⟦◈伐⟧<state>楚</state>，此以一易二之计也。” <off>韩王</off>曰：“善。” 乃警<p>公仲</p>之行，将西购於<state>秦</state>。 <off>楚王</off>闻之大恐，召<p>陈轸</p>告之。 <p>陈轸</p>曰：“<state>秦</state>之欲⟦◈伐⟧<state>楚</state>久矣，今又得<state>韩</state>之名都一而具<art>甲</art>，<state>秦</state><state>韩</state>并兵而⟦◈伐⟧<state>楚</state>，此<state>秦</state>所祷祀而求也。今已得之矣，<state>楚</state>国必伐矣。王听臣为之警四境之内，起师言救<state>韩</state>，命<art>战车</art>满道路，发信臣，多其<art>车</art>，重其币，使信王之救己也。纵<state>韩</state>不能听我，<state>韩</state>必德王也，必不为雁行以来，是<state>秦</state><state>韩</state>不和也，兵虽至，<state>楚</state>不大病也。为能听我绝和於<state>秦</state>，<state>秦</state>必大怒，以厚怨<state>韩</state>。<state>韩</state>之南交<state>楚</state>，必轻<state>秦</state>；轻<state>秦</state>，其应<state>秦</state>必不敬：是因<state>秦</state>、<state>韩</state>之兵而免<state>楚</state>国之患也。” <off>楚王</off>曰：“善。” 乃警四境之内，兴师言救<state>韩</state>。 命<art>战车</art>满道路，发信臣，多其<art>车</art>，重其币。 谓<off>韩王</off>曰：”<role>不穀</role>国虽小，已悉发之矣。原大国遂肆志於<state>秦</state>，<role>不穀</role>将以<state>楚</state>殉<state>韩</state>。” <off>韩王</off>闻之大说，乃止<p>公仲</p>之行。 <p>公仲</p>曰：“不可。夫以实⟦◈伐⟧我者<state>秦</state>也，以虚名救我者<state>楚</state>也。王恃<state>楚</state>之虚名，而轻绝彊<state>秦</state>之敌，王必为天下大笑。且<state>楚</state><state>韩</state>非<role>兄弟</role>之国也，又非素约而谋⟦◈伐⟧<state>秦</state>也。已有伐形，因发兵言救<state>韩</state>，此必<p>陈轸</p>之谋也。且王已使人报於<state>秦</state>矣，今不行，是欺<state>秦</state>也。夫轻欺彊<state>秦</state>而信<state>楚</state>之谋臣，恐王必悔之。” <off>韩王</off>不听，遂绝於<state>秦</state>。 <state>秦</state>因大怒，益<art>甲</art>⟦◈伐⟧<state>韩</state>，大战，<state>楚</state>救不至<state>韩</state>。 <time>十九年</time>，大⟦◈破⟧我<loc>岸门</loc>。 <p>太子仓</p>质於<state>秦</state>以和。"
+    },
+    {
+      "pid": "23",
+      "text": "二十一年，与秦共⟦◈攻⟧楚，⟦◈败⟧楚将屈丐，斩首八万於丹阳。” 是岁，宣惠王卒，太子仓立，是为襄王。",
+      "annotated": "<time>二十一年</time>，与<state>秦</state>共⟦◈攻⟧<state>楚</state>，⟦◈败⟧<off>楚将</off><p>屈丐</p>，<law>斩首</law><qty>八万</qty>於<loc>丹阳</loc>。” 是岁，<p name=\"韩宣惠王\">宣惠王</p>卒，<p>太子仓</p>立，是为<p name=\"韩襄王\">襄王</p>。"
+    },
+    {
+      "pid": "24",
+      "text": "襄王四年，与秦武王会临晋。 其秋，秦使甘茂⟦◈攻⟧我宜阳。 五年，秦⟦◈拔⟧我宜阳，斩首六万。 秦武王卒。 六年，秦复与我武遂。 九年，秦复⟦◈取⟧我武遂。 十年，太子婴朝秦而归。 十一年，秦⟦◈伐⟧我，⟦◈取⟧穰。 与秦⟦◈伐⟧楚，⟦◈败⟧楚将唐眛。",
+      "annotated": "<p name=\"韩襄王\">襄王</p><time>四年</time>，与<p>秦武王</p>会<loc>临晋</loc>。 其秋，<state>秦</state>使<p>甘茂</p>⟦◈攻⟧我<loc>宜阳</loc>。 <time>五年</time>，<state>秦</state>⟦◈拔⟧我<loc>宜阳</loc>，<law>斩首</law><qty>六万</qty>。 <p>秦武王</p>卒。 <time>六年</time>，<state>秦</state>复与我<loc>武遂</loc>。 <time>九年</time>，<state>秦</state>复⟦◈取⟧我<loc>武遂</loc>。 <time>十年</time>，<p>太子婴</p><vpol>朝</vpol><state>秦</state>而归。 <time>十一年</time>，<state>秦</state>⟦◈伐⟧我，⟦◈取⟧<loc>穰</loc>。 与<state>秦</state>⟦◈伐⟧<state>楚</state>，⟦◈败⟧<off>楚将</off><p>唐眛</p>。"
+    },
+    {
+      "pid": "25",
+      "text": "十二年，太子婴死。公子咎、公子虮虱争为太子。时虮虱质於楚。苏代谓韩咎曰：“虮虱亡在楚，楚王欲⟦◈内⟧之甚。今楚兵十馀万在方城之外，公何不令楚王筑万室之都雍氏之旁，韩必起兵以救之，公必将矣。公因以韩楚之兵奉虮虱而⟦◈内⟧之，其听公必矣，必以楚韩封公也。” 韩咎从其计。",
+      "annotated": "<time>十二年</time>，<p>太子婴</p>死。<p>公子咎</p>、<p>公子虮虱</p>争为<role>太子</role>。时<p>虮虱</p>质於<state>楚</state>。<p>苏代</p>谓<state>韩</state><p name=\"公子咎\">咎</p>曰：“<p>虮虱</p>亡在<state>楚</state>，<off>楚王</off>欲⟦◈内⟧之甚。今<state>楚</state>兵<qty>十馀万</qty>在<loc>方城</loc>之外，公何不令<off>楚王</off>筑万室之都<loc>雍氏</loc>之旁，<state>韩</state>必起兵以救之，公必将矣。公因以<state>韩</state><state>楚</state>之兵奉<p>虮虱</p>而⟦◈内⟧之，其听公必矣，必以<state>楚</state><state>韩</state>封公也。” <state>韩</state><p name=\"公子咎\">咎</p>从其计。"
+    },
+    {
+      "pid": "26",
+      "text": "楚⟦◈围⟧雍氏，韩求救於秦。秦未为发，使公孙昧入韩。公仲曰：“子以秦为且救韩乎？” 对曰：“秦王之言曰’请道南郑、蓝田，出兵於楚以待公’，殆不合矣。” 公仲曰：“子以为果乎？” 对曰：“秦王必祖张仪之故智。” 楚威王⟦◈攻⟧梁也，张仪谓秦王曰：‘与楚⟦◈攻⟧魏，魏折而入於楚，韩固其与国也，是秦孤也。不如出兵以到之，魏楚大战，秦⟦◈取⟧西河之外以归。‘今其状阳言与韩，其实阴善楚。公待秦而到，必轻与楚战。楚阴得秦之不用也，必易与公相支也。公战而胜楚，遂与公乘楚，施三川而归。公战不胜楚，楚塞三川守之，公不能救也。窃为公患之。司马庚三反於郢，甘茂与昭鱼遇於商於，其言收玺，实类有约也。“公仲恐，曰：“然则柰何？“曰：“公必先韩而後秦，先身而後张仪。公不如亟以国合於齐楚，齐楚必委国於公。公之所恶者张仪也，其实犹不无秦也。“於是楚解雍氏⟦◈围⟧。",
+      "annotated": "<state>楚</state>⟦◈围⟧<loc>雍氏</loc>，<state>韩</state>求救於<state>秦</state>。<state>秦</state>未为发，使<p>公孙昧</p>入<state>韩</state>。<p>公仲</p>曰：“子以<state>秦</state>为且救<state>韩</state>乎？” 对曰：“<off>秦王</off>之言曰’请道<loc>南郑</loc>、<loc>蓝田</loc>，出兵於<state>楚</state>以待公’，殆不合矣。” <p>公仲</p>曰：“子以为果乎？” 对曰：“<off>秦王</off>必祖<p>张仪</p>之故智。” <p>楚威王</p>⟦◈攻⟧<loc>梁</loc>也，<p>张仪</p>谓<off>秦王</off>曰：‘与<state>楚</state>⟦◈攻⟧<state>魏</state>，<state>魏</state>折而入於<state>楚</state>，<state>韩</state>固其与国也，是<state>秦</state>孤也。不如出兵以到之，<state>魏</state><state>楚</state>大战，<state>秦</state>⟦◈取⟧<loc>西河</loc>之外以归。‘今其状阳言与<state>韩</state>，其实阴善<state>楚</state>。公待<state>秦</state>而到，必轻与<state>楚</state>战。<state>楚</state>阴得<state>秦</state>之不用也，必易与公相支也。公战而<law>胜</law><state>楚</state>，遂与公乘<state>楚</state>，施<loc>三川</loc>而归。公战不<law>胜</law><state>楚</state>，<state>楚</state>塞<loc>三川</loc>守之，公不能救也。窃为公患之。<off>司马</off><p name=\"司马庚\">庚</p>三反於<loc>郢</loc>，<p>甘茂</p>与<p>昭鱼</p>遇於<loc>商於</loc>，其言收玺，实类有约也。“<p>公仲</p>恐，曰：“然则柰何？“曰：“公必先<state>韩</state>而後<state>秦</state>，先身而後<p>张仪</p>。公不如亟以国合於<state>齐</state><state>楚</state>，<state>齐</state><state>楚</state>必委国於公。公之所恶者<p>张仪</p>也，其实犹不无<state>秦</state>也。“於是<state>楚</state>解<loc>雍氏</loc>⟦◈围⟧。"
+    },
+    {
+      "pid": "27",
+      "text": "苏代又谓秦太后弟琇戎曰：“公叔伯婴恐秦楚之⟦◈内⟧虮虱也，公何不为韩求质子於楚？楚王听⟦◈入⟧质子於韩，则公叔伯婴知秦楚之不以虮虱为事，必以韩合於秦楚。秦楚挟韩以窘魏，魏氏不敢合於齐，是齐孤也。公又为秦求质子於楚，楚不听，怨结於韩。韩挟齐魏以⟦◈围⟧楚，楚必重公。公挟秦楚之重以积德於韩，公叔伯婴必以国待公。” 於是虮虱竟不得归韩。韩立咎为太子。齐、魏王来。",
+      "annotated": "<p>苏代</p>又谓<p>秦太后</p><role>弟</role><p>琇戎</p>曰：“<p>公叔伯婴</p>恐<state>秦</state><state>楚</state>之⟦◈内⟧<p>虮虱</p>也，公何不为<state>韩</state>求<role>质子</role>於<state>楚</state>？<off>楚王</off>听⟦◈入⟧<role>质子</role>於<state>韩</state>，则<p>公叔伯婴</p>知<state>秦</state><state>楚</state>之不以<p>虮虱</p>为事，必以<state>韩</state>合於<state>秦</state><state>楚</state>。<state>秦</state><state>楚</state>挟<state>韩</state>以窘<state>魏</state>，<clan>魏氏</clan>不敢合於<state>齐</state>，是<state>齐</state>孤也。公又为<state>秦</state>求<role>质子</role>於<state>楚</state>，<state>楚</state>不听，怨结於<state>韩</state>。<state>韩</state>挟<state>齐</state><state>魏</state>以⟦◈围⟧<state>楚</state>，<state>楚</state>必重公。公挟<state>秦</state><state>楚</state>之重以积德於<state>韩</state>，<p>公叔伯婴</p>必以国待公。” 於是<p>虮虱</p>竟不得归<state>韩</state>。<state>韩</state><vpol>立</vpol><p name=\"公子咎\">咎</p>为<role>太子</role>。<off name=\"齐王\">齐</off>、<off>魏王</off>来。"
+    },
+    {
+      "pid": "28",
+      "text": "十四年，与齐、魏王共⟦◈击⟧秦，至函谷而军焉。十六年，秦与我河外及武遂。襄王卒，太子咎立，是为釐王。",
+      "annotated": "<time>十四年</time>，与<off name=\"齐王\">齐</off>、<off>魏王</off>共⟦◈击⟧<state>秦</state>，至<loc>函谷</loc>而军焉。<time>十六年</time>，<state>秦</state>与我<loc>河外</loc>及<loc>武遂</loc>。<p name=\"韩襄王\">襄王</p>卒，<p>太子咎</p>立，是为<p name=\"韩釐王\">釐王</p>。"
+    },
+    {
+      "pid": "29",
+      "text": "釐王三年，使公孙喜率周、魏⟦◈攻⟧秦。秦⟦◈败⟧我二十四万，⟦◈虏⟧喜伊阙。五年，秦⟦◈拔⟧我宛。六年，与秦武遂地二百里。十年，秦⟦◈败⟧我师于夏山。十二年，与秦昭王会西周而佐秦⟦◈攻⟧齐。齐⟦◈败⟧，湣王⟦◈出⟧亡。十四年，与秦会两周间。二十一年，使暴烝救魏，为秦所⟦◈败⟧，烝⟦◈走⟧开封。",
+      "annotated": "<p name=\"韩釐王\">釐王</p><time>三年</time>，使<p>公孙喜</p>率<state>周</state>、<state>魏</state>⟦◈攻⟧<state>秦</state>。<state>秦</state>⟦◈败⟧我<qty>二十四万</qty>，⟦◈虏⟧<p name=\"公孙喜\">喜</p><loc>伊阙</loc>。<time>五年</time>，<state>秦</state>⟦◈拔⟧我<loc>宛</loc>。<time>六年</time>，与<state>秦</state><loc>武遂</loc>地<qty>二百里</qty>。<time>十年</time>，<state>秦</state>⟦◈败⟧我师于<loc>夏山</loc>。<time>十二年</time>，与<p>秦昭王</p>会<loc>西周</loc>而佐<state>秦</state>⟦◈攻⟧<state>齐</state>。<state>齐</state>⟦◈败⟧，<p name=\"齐湣王\">湣王</p>⟦◈出⟧亡。<time>十四年</time>，与<state>秦</state>会两<state>周</state>间。<time>二十一年</time>，使<p name=\"暴鸢\">暴烝</p>救<state>魏</state>，为<state>秦</state>所⟦◈败⟧，<p name=\"暴鸢\">烝</p>⟦◈走⟧<loc>开封</loc>。"
+    },
+    {
+      "pid": "30",
+      "text": "二十三年，赵、魏⟦◈攻⟧我华阳。韩告急於秦，秦不救。韩相国谓陈筮曰：“事急，原公虽病，为一宿之行。” 陈筮见穰侯。穰侯曰：“事急乎？故使公来。” 陈筮曰：“未急也。” 穰侯怒曰：“是可以为公之主使乎？夫冠盖相望，告敝邑甚急，公来言未急，何也？” 陈筮曰：“彼韩急则将变而佗从，以未急，故复来耳。” 穰侯曰：“公无见王，请今发兵救韩。” 八日而至，⟦◈败⟧赵、魏於华阳之下。是岁，釐王卒，子桓惠王立。",
+      "annotated": "<time>二十三年</time>，<state>赵</state>、<state>魏</state>⟦◈攻⟧我<loc>华阳</loc>。<state>韩</state>告急於<state>秦</state>，<state>秦</state>不救。<p name=\"韩信\">韩相国</p>谓<p>陈筮</p>曰：“事急，原公虽病，为一宿之行。” <p>陈筮</p>见<p>穰侯</p>。<p>穰侯</p>曰：“事急乎？故使公来。” <p>陈筮</p>曰：“未急也。” <p>穰侯</p>怒曰：“是可以为公之主使乎？夫冠盖相望，告敝邑甚急，公来言未急，何也？” <p>陈筮</p>曰：“彼<state>韩</state>急则将变而佗从，以未急，故复来耳。” <p>穰侯</p>曰：“公无见王，请今发兵救<state>韩</state>。” <time name=\"时长\">八日</time>而至，⟦◈败⟧<state>赵</state>、<state>魏</state>於<loc>华阳</loc>之下。是岁，<p name=\"韩釐王\">釐王</p>卒，子<p name=\"韩桓惠王\">桓惠王</p>立。"
+    },
+    {
+      "pid": "31",
+      "text": "桓惠王元年，⟦◈伐⟧燕。 九年，秦⟦◈拔⟧我陉，⟦◈城⟧汾旁。 十年，秦⟦◈击⟧我於太行，我上党郡守以上党郡⟦◈降⟧赵。 十四年，秦⟦◈拔⟧赵上党，杀马服子卒四十馀万於长平。 十七年，秦⟦◈拔⟧我阳城、负黍。 二十二年，秦昭王卒。 二十四年，秦⟦◈拔⟧我城皋、荥阳。 二十六年，秦悉⟦◈拔⟧我上党。 二十九年，秦⟦◈拔⟧我十三城。",
+      "annotated": "<p name=\"韩桓惠王\">桓惠王</p><time>元年</time>，⟦◈伐⟧<state>燕</state>。 <time>九年</time>，<state>秦</state>⟦◈拔⟧我<loc>陉</loc>，⟦◈城⟧<loc>汾</loc>旁。 <time>十年</time>，<state>秦</state>⟦◈击⟧我於<loc>太行</loc>，我<off>上党郡守</off>以<loc>上党郡</loc>⟦◈降⟧<state>赵</state>。 <time>十四年</time>，<state>秦</state>⟦◈拔⟧<state>赵</state><loc>上党</loc>，<vact>杀</vact><p>马服子</p>卒<qty>四十馀万</qty>於<loc>长平</loc>。 <time>十七年</time>，<state>秦</state>⟦◈拔⟧我<loc>阳城</loc>、<loc>负黍</loc>。 <time>二十二年</time>，<p>秦昭王</p>卒。 <time>二十四年</time>，<state>秦</state>⟦◈拔⟧我<loc>城皋</loc>、<loc>荥阳</loc>。 <time>二十六年</time>，<state>秦</state>悉⟦◈拔⟧我<loc>上党</loc>。 <time>二十九年</time>，<state>秦</state>⟦◈拔⟧我<qty>十三城</qty>。"
+    },
+    {
+      "pid": "32",
+      "text": "三十四年，桓惠王卒，子王安立。",
+      "annotated": "<time>三十四年</time>，<p name=\"韩桓惠王\">桓惠王</p>卒，子<p name=\"韩安\">王安</p>立。"
+    },
+    {
+      "pid": "33",
+      "text": "王安五年，秦⟦◈攻⟧韩，韩急，使韩非使秦，秦留非，因杀之。",
+      "annotated": "<p name=\"韩安\">王安</p><time>五年</time>，<state>秦</state>⟦◈攻⟧<state>韩</state>，<state>韩</state>急，使<p>韩非</p>使<state>秦</state>，<state>秦</state>留<p name=\"韩非\">非</p>，因<vact>杀</vact>之。"
+    },
+    {
+      "pid": "34",
+      "text": "九年，秦⟦◈虏⟧王安，尽入其地，为颍州郡。韩遂亡。",
+      "annotated": "<time>九年</time>，<state>秦</state>⟦◈虏⟧<p name=\"韩安\">王安</p>，尽入其地，为<loc>颍州郡</loc>。<state>韩</state>遂亡。"
+    },
+    {
+      "pid": "35",
+      "text": "太史公曰：韩厥之感晋景公，绍赵孤之子武，以成程婴、公孙杵臼之义，此天下之阴德也。韩氏之功，於晋未睹其大者也。然与赵、魏终为诸侯十馀世，宜乎哉！ ::: 赞",
+      "annotated": "<p>太史公</p>曰：<p>韩厥</p>之感<p>晋景公</p>，绍<clan>赵</clan>孤之子<p name=\"赵武\">武</p>，以成<p>程婴</p>、<p>公孙杵臼</p>之义，此天下之<idea>阴德</idea>也。<clan>韩氏</clan>之功，於<state>晋</state>未睹其大者也。然与<clan>赵</clan>、<clan>魏</clan>终为<role>诸侯</role><time name=\"时长\">十馀世</time>，宜乎哉！ ::: 赞"
+    },
+    {
+      "pid": "36",
+      "text": "韩氏之先，实宗周武。 事微国小，春秋无语。 後裔事晋，韩原是处。 赵孤克立，智伯可取。 既徙平阳，又⟦◈侵⟧负黍。 景赵俱侯，惠又僭主。 秦⟦◈败⟧脩鱼，魏会区鼠。 韩非虽使，不禁狼虎。 :::",
+      "annotated": "<clan>韩氏</clan>之先，实宗<state>周</state><p name=\"周武王\">武</p>。 事微国小，<book>春秋</book>无语。 後裔事<state>晋</state>，<loc>韩原</loc>是处。 <clan>赵</clan>孤克立，<p name=\"荀瑶\">智伯</p>可取。 既徙<loc>平阳</loc>，又⟦◈侵⟧<loc>负黍</loc>。 <p name=\"韩景侯\">景</p><clan>赵</clan>俱侯，<p name=\"韩宣惠王\">惠</p>又僭主。 <state>秦</state>⟦◈败⟧<loc>脩鱼</loc>，<state>魏</state>会<loc>区鼠</loc>。 <p>韩非</p>虽使，不禁<bio>狼虎</bio>。 :::"
+    }
+  ]
+}

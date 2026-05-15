@@ -1,0 +1,66 @@
+{
+  "work": "史记",
+  "chapter": "楚元王世家",
+  "chapter_file": "050_楚元王世家",
+  "chapter_type": "世家",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 11,
+  "paragraph_count_done": 11,
+  "paragraphs": [
+    {
+      "pid": "1.1",
+      "text": "楚元王刘交者，高祖之同母少弟也，字游。",
+      "annotated": "<p>楚元王刘交</p>者，<p>高祖</p>之同母<role>少弟</role>也，字<p name=\"刘交\">游</p>。"
+    },
+    {
+      "pid": "2",
+      "text": "高祖兄弟四人，长兄伯，伯蚤卒。始高祖微时，尝辟事，时时与宾客过巨嫂食。嫂厌叔，叔与客来，嫂详为羹尽，栎釜，宾客以故去。已而视釜中尚有羹，高祖由此怨其嫂。及高祖为帝，封昆弟，而伯子独不得封。太上皇以为言，高祖曰：”某非忘封之也，为其母不长者耳。” 於是乃封其子信为羹颉侯。而王次兄仲於代。",
+      "annotated": "<p>高祖</p><role>兄弟</role><qty>四人</qty>，<role>长兄</role><p name=\"刘伯\">伯</p>，<p name=\"刘伯\">伯</p>蚤卒。始<p>高祖</p>微时，尝辟事，时时与<role>宾客</role>过巨嫂食。<role>嫂</role>厌<role>叔</role>，<role>叔</role>与<role>客</role>来，<role>嫂</role>详为<art>羹</art>尽，栎<art>釜</art>，<role>宾客</role>以故去。已而视<art>釜</art>中尚有<art>羹</art>，<p>高祖</p>由此怨其<role>嫂</role>。及<p>高祖</p>为帝，封<role>昆弟</role>，而<p name=\"刘伯\">伯</p><role>子</role>独不得封。<p>太上皇</p>以为言，<p>高祖</p>曰：”某非忘封之也，为其<role>母</role>不<role>长者</role>耳。” 於是乃封其<role>子</role><p name=\"刘信\">信</p>为<off>羹颉侯</off>。而<vpol>王</vpol><role>次兄</role><p name=\"刘仲\">仲</p>於<state>代</state>。"
+    },
+    {
+      "pid": "1.3",
+      "text": "高祖六年，已禽楚王韩信於陈，乃以弟交为楚王，都彭城。即位二十三年卒，子夷王郢立。",
+      "annotated": "<p>高祖</p><time>六年</time>，已<law name=\"擒\">禽</law><p>楚王韩信</p>於<state>陈</state>，乃以<role>弟</role><p name=\"刘交\">交</p>为<off>楚王</off>，都<loc>彭城</loc>。即位<time name=\"时长\">二十三年</time>卒，<role>子</role><p>夷王</p><p name=\"刘郢\">郢</p>立。"
+    },
+    {
+      "pid": "2.1",
+      "text": "王戊立二十年，冬，坐为薄太后服私奸，削东海郡。春，戊与吴王合谋反，其相张尚、太傅赵夷吾谏，不听。戊则杀尚、夷吾，起兵与吴西攻梁，破棘壁。至昌邑南，与汉将周亚夫战。汉绝吴楚粮道，士卒饥，吴王走，楚王戊自杀，军遂降汉。",
+      "annotated": "<p>王戊</p>立<time name=\"时长\">二十年</time>，<time>冬</time>，坐为<p>薄太后</p>服私奸，<law>削</law><loc>东海郡</loc>。<time>春</time>，<p>戊</p>与<p>吴王</p>合谋<law>反</law>，其<off>相</off><p>张尚</p>、<off>太傅</off><p>赵夷吾</p>谏，不听。<p>戊</p>则<law>杀</law><p name=\"张尚\">尚</p>、<p name=\"赵夷吾\">夷吾</p>，<law>起兵</law>与<state>吴</state>西<law>攻</law><state>梁</state>，<law>破</law><loc>棘壁</loc>。至<loc>昌邑</loc>南，与<state>汉</state><off>将</off><p>周亚夫</p><law>战</law>。<state>汉</state>绝<state>吴</state><state>楚</state><art>粮</art>道，<role>士卒</role>饥，<p>吴王</p><law>走</law>，<p>楚王戊</p>自<law>杀</law>，<role>军</role>遂<law>降</law><state>汉</state>。"
+    },
+    {
+      "pid": "3.1",
+      "text": "汉已平吴楚，孝景帝欲以德侯子续吴，以元王子礼续楚。窦太后曰：“吴王，老人也，宜为宗室顺善。今乃首率七国，纷乱天下，柰何续其後！” 不许吴，许立楚後。是时礼为汉宗正。乃拜礼为楚王，奉元王宗庙，是为楚文王。",
+      "annotated": "<state>汉</state>已<law>平</law><state>吴</state><state>楚</state>，<p>孝景帝</p>欲以<p>德侯</p><role>子</role>续<state>吴</state>，以<p name=\"楚元王\">元王</p><role>子</role><p name=\"刘礼\">礼</p>续<state>楚</state>。<p>窦太后</p>曰：“<p>吴王</p>，<role>老人</role>也，宜为<role>宗室</role>顺善。今乃首<law>率</law><state>七国</state>，纷乱天下，柰何续其後！” 不许<state>吴</state>，许立<state>楚</state>後。是时<p name=\"刘礼\">礼</p>为<state>汉</state><off>宗正</off>。乃<vpol>拜</vpol><p name=\"刘礼\">礼</p>为<off>楚王</off>，奉<p name=\"楚元王\">元王</p><sys>宗庙</sys>，是为<p>楚文王</p>。"
+    },
+    {
+      "pid": "4.1",
+      "text": "文王立三年卒，子安王道立。安王二十二年卒，子襄王注立。襄王立十四年卒，子王纯代立。王纯立，地节二年，中人上书告楚王谋反，王自杀，国除，入汉为彭城郡。",
+      "annotated": "<p name=\"楚文王\">文王</p>立<time name=\"时长\">三年</time>卒，<role>子</role><p>安王</p><p name=\"刘道\">道</p>立。<p name=\"楚安王\">安王</p><time name=\"时长\">二十二年</time>卒，<role>子</role><p>襄王</p><p name=\"刘注\">注</p>立。<p name=\"楚襄王\">襄王</p>立<time name=\"时长\">十四年</time>卒，<role>子</role>王<p name=\"刘纯\">纯</p>代立。王<p name=\"刘纯\">纯</p>立，<time>地节二年</time>，<role>中人</role>上书告<p name=\"楚王纯\">楚王</p>谋<law>反</law>，<p name=\"楚王纯\">王</p>自<law>杀</law>，<vpol>国除</vpol>，入<state>汉</state>为<loc>彭城郡</loc>。"
+    },
+    {
+      "pid": "5.1",
+      "text": "赵王刘遂者，其父高祖中子，名友，谥曰”幽”。幽王以忧死，故为”幽”。高后王吕禄於赵，一岁而高后崩。大臣诛诸吕吕禄等，乃立幽王子遂为赵王。",
+      "annotated": "<p>赵王刘遂</p>者，其<role>父</role><p>高祖</p><role>中子</role>，名<p name=\"刘友\">友</p>，谥曰”幽”。<p name=\"赵幽王\">幽王</p>以忧死，故为”幽”。<p>高后</p><vpol>王</vpol><p>吕禄</p>於<state>赵</state>，<time name=\"时长\">一岁</time>而<p>高后</p>崩。<role>大臣</role><law>诛</law>诸<clan>吕</clan><p>吕禄</p>等，乃<vpol>立</vpol><p name=\"赵幽王\">幽王</p><role>子</role><p name=\"刘遂\">遂</p>为<off>赵王</off>。"
+    },
+    {
+      "pid": "6.1",
+      "text": "孝文帝即位二年，立遂弟辟彊，取赵之河间郡为河间王，为文王。立十三年卒，子哀王福立。一年卒，无子，绝後，国除，入于汉。",
+      "annotated": "<p>孝文帝</p>即位<time>二年</time>，<vpol>立</vpol><p name=\"刘遂\">遂</p><role>弟</role><p name=\"刘辟彊\">辟彊</p>，取<state>赵</state>之<loc>河间郡</loc>为<off>河间王</off>，为<p name=\"河间文王\">文王</p>。立<time name=\"时长\">十三年</time>卒，<role>子</role><p>哀王</p><p name=\"刘福\">福</p>立。<time name=\"时长\">一年</time>卒，无<role>子</role>，绝後，<vpol>国除</vpol>，入于<state>汉</state>。"
+    },
+    {
+      "pid": "7.1",
+      "text": "遂既王赵二十六年，孝景帝时坐晁错以適削赵王常山之郡。吴楚反，赵王遂与合谋起兵。其相建德、内史王悍谏，不听。遂烧杀建德、王悍，发兵屯其西界，欲待吴与俱西。北使匈奴，与连和攻汉。汉使曲周侯郦寄击之。赵王遂还，城守邯郸，相距七月。吴楚败於梁，不能西。匈奴闻之，亦止，不肯入汉边。栾布自破齐还，乃并兵引水灌赵城。赵城坏，赵王自杀，邯郸遂降。赵幽王绝後。",
+      "annotated": "<p name=\"刘遂\">遂</p>既<vpol>王</vpol><state>赵</state><time name=\"时长\">二十六年</time>，<p>孝景帝</p>时坐<p>晁错</p>以適<law>削</law><p name=\"赵王遂\">赵王</p><loc>常山</loc>之郡。<state>吴</state><state>楚</state><law>反</law>，<p>赵王遂</p>与合谋<law>起兵</law>。其<off>相</off><p>建德</p>、<off>内史</off><p>王悍</p>谏，不听。<p name=\"刘遂\">遂</p><law>烧杀</law><p>建德</p>、<p>王悍</p>，<law>发兵</law>屯其西界，欲待<state>吴</state>与俱西。北使<tribe>匈奴</tribe>，与连和<law>攻</law><state>汉</state>。<state>汉</state>使<off>曲周侯</off><p>郦寄</p><law>击</law>之。<p>赵王遂</p>还，城守<loc>邯郸</loc>，相距<time name=\"时长\">七月</time>。<state>吴</state><state>楚</state><law>败</law>於<state>梁</state>，不能西。<tribe>匈奴</tribe>闻之，亦止，不肯入<state>汉</state>边。<p>栾布</p>自<law>破</law><state>齐</state>还，乃并兵引<art>水</art><law>灌</law><state>赵</state>城。<state>赵</state>城坏，<p name=\"赵王遂\">赵王</p>自<law>杀</law>，<loc>邯郸</loc>遂<law>降</law>。<p>赵幽王</p>绝後。"
+    },
+    {
+      "pid": "8.1",
+      "text": "太史公曰：国之将兴，必有祯祥，君子用而小人退。国之将亡，贤人隐，乱臣贵。使楚王戊毋刑申公，遵其言，赵任防与先生，岂有篡杀之谋，为天下僇哉？贤人乎，贤人乎！非质有其内，恶能用之哉？甚矣，“安危在出令，存亡在所任”，诚哉是言也！ ::: 赞",
+      "annotated": "<p>太史公</p>曰：国之将兴，必有祯祥，<role>君子</role>用而<role>小人</role>退。国之将亡，<role>贤人</role>隐，<role>乱臣</role>贵。使<p>楚王戊</p>毋<law>刑</law><p>申公</p>，遵其言，<state>赵</state>任<p>防</p>与<role>先生</role>，岂有<law>篡</law><law>杀</law>之谋，为天下<law>僇</law>哉？<role>贤人</role>乎，<role>贤人</role>乎！非质有其内，恶能用之哉？甚矣，“安危在出令，存亡在所任”，诚哉是言也！ ::: 赞"
+    },
+    {
+      "pid": "9",
+      "text": "汉封同姓，楚有令名。 既灭韩信，王於彭城。 穆生置醴，韦孟作程。 王戊弃德，与吴连兵。 太后命礼，为楚罪轻。 文襄继立，世挺才英。 如何赵遂，代殒厥声！ 兴亡之兆，所任宜明。 :::",
+      "annotated": "<state>汉</state>封<role>同姓</role>，<state>楚</state>有令名。 既<law>灭</law><p>韩信</p>，<vpol>王</vpol>於<loc>彭城</loc>。 <p>穆生</p>置<art>醴</art>，<p>韦孟</p>作程。 <p>王戊</p>弃<idea>德</idea>，与<state>吴</state>连兵。 <p name=\"窦太后\">太后</p>命<p name=\"刘礼\">礼</p>，为<state>楚</state>罪轻。 <p name=\"楚文王\">文</p><p name=\"楚襄王\">襄</p>继立，世挺才英。 如何<p name=\"刘遂\">赵遂</p>，代殒厥声！ 兴亡之兆，所任宜明。 :::"
+    }
+  ]
+}

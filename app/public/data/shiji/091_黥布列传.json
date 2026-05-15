@@ -1,0 +1,111 @@
+{
+  "work": "史记",
+  "chapter": "黥布列传",
+  "chapter_file": "091_黥布列传",
+  "chapter_type": "列传",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 20,
+  "paragraph_count_done": 20,
+  "paragraphs": [
+    {
+      "pid": "1",
+      "text": "黥布者，六人也，姓英氏。秦时为布衣。少年，有客相之曰：“当刑而王。” 及壮，坐法黥。布欣然笑曰；“人相我当刑而王，几是乎？” 人有闻者，共俳笑之。布已论输丽山，丽山之徒数十万人，布皆与其徒长豪桀交通，乃率其曹偶，亡之江中为群盗。",
+      "annotated": "<p>黥布</p>者，<loc>六</loc>人也，姓<clan>英氏</clan>。<state>秦</state>时为<role>布衣</role>。少年，有客相之曰：“当刑而王。” 及壮，<law>坐法</law><law>黥</law>。<p name=\"黥布\">布</p>欣然笑曰；“人相我当刑而王，几是乎？” 人有闻者，共俳笑之。<p name=\"黥布\">布</p>已论输<loc>丽山</loc>，<loc>丽山</loc>之徒<qty>数十万人</qty>，<p name=\"黥布\">布</p>皆与其徒长<role>豪桀</role>交通，乃率其曹偶，亡之<loc>江</loc>中为群盗。"
+    },
+    {
+      "pid": "2",
+      "text": "陈胜之起也，布乃见番君，与其众叛秦，聚兵数千人。番君以其女妻之。章邯之灭陈胜，破吕臣军，布乃引兵北击秦左右校，破之清波，引兵而东。闻项梁定江东会稽，涉江而西。陈婴以项氏世为楚将，乃以兵属项梁，渡淮南，英布、蒲将军亦以兵属项梁。",
+      "annotated": "<p>陈胜</p>之起也，<p name=\"黥布\">布</p>乃见<p>番君</p>，与其众<law>叛</law><state>秦</state>，<law>聚兵</law><qty>数千人</qty>。<p>番君</p>以其<role>女</role>妻之。<p>章邯</p>之<law>灭</law><p>陈胜</p>，<law>破</law><p>吕臣</p>军，<p name=\"黥布\">布</p>乃<law>引兵</law>北<law>击</law><state>秦</state><off>左右校</off>，<law>破</law>之清波，<law>引兵</law>而东。闻<p>项梁</p><law>定</law><loc>江东</loc><loc>会稽</loc>，涉江而西。<p>陈婴</p>以<clan>项氏</clan>世为<state>楚</state>将，乃以兵属<p>项梁</p>，<law>渡</law><loc>淮南</loc>，<p>英布</p>、<p>蒲将军</p>亦以兵属<p>项梁</p>。"
+    },
+    {
+      "pid": "3",
+      "text": "项梁涉淮而西，击景驹、秦嘉等，布常冠军。项梁至薛，闻陈王定死，乃立楚怀王。项梁号为武信君，英布为当阳君。项梁败死定陶，怀王徙都彭城，诸将英布亦皆保聚彭城。当是时，秦急围赵，赵数使人请救。怀王使宋义为上将，范曾为末将，项籍为次将，英在、蒲将军皆为将军，悉属宋义，北救赵。及项籍杀宋义於河上，怀王因立籍为上将军，诸将皆属项籍。项籍使布先渡河击秦，布数有利，籍乃悉引兵涉河从之，遂破秦军，降章邯等。楚兵常胜，功冠诸侯。诸侯兵皆以服属楚者，以布数以少败众也。",
+      "annotated": "<p>项梁</p>涉<loc>淮</loc>而西，<law>击</law><p>景驹</p>、<p>秦嘉</p>等，<p name=\"黥布\">布</p>常冠军。<p>项梁</p>至<loc>薛</loc>，闻<p>陈王</p>定死，乃<law>立</law><p>楚怀王</p>。<p>项梁</p>号为<off>武信君</off>，<p>英布</p>为<off>当阳君</off>。<p>项梁</p><law>败</law>死<loc>定陶</loc>，<p name=\"楚怀王\">怀王</p>徙都<loc>彭城</loc>，<role>诸将</role><p>英布</p>亦皆保聚<loc>彭城</loc>。当是时，<state>秦</state>急<law>围</law><state>赵</state>，<state>赵</state>数使人请<law>救</law>。<p name=\"楚怀王\">怀王</p>使<p>宋义</p>为<off>上将</off>，<p>范曾</p>为<off>末将</off>，<p>项籍</p>为<off>次将</off>，<p>英在</p>、<p>蒲将军</p>皆为将军，悉属<p>宋义</p>，北<law>救</law><state>赵</state>。及<p>项籍</p><law>杀</law><p>宋义</p>於<loc>河上</loc>，<p name=\"楚怀王\">怀王</p>因<law>立</law><p name=\"项籍\">籍</p>为<off>上将军</off>，<role>诸将</role>皆属<p>项籍</p>。<p>项籍</p>使<p name=\"黥布\">布</p>先<law>渡</law>河<law>击</law><state>秦</state>，<p name=\"黥布\">布</p>数有利，<p name=\"项籍\">籍</p>乃悉<law>引兵</law>涉河从之，遂<law>破</law><state>秦</state>军，<law>降</law><p>章邯</p>等。<state>楚</state>兵常胜，功冠<role>诸侯</role>。<role>诸侯</role>兵皆以服属<state>楚</state>者，以<p name=\"黥布\">布</p>数以少<law>败</law>众也。"
+    },
+    {
+      "pid": "4",
+      "text": "项籍之引兵西至新安，又使布等夜击阬章邯秦卒二十馀万人。至关，不得入，又使布等先从间道破关下军，遂得入，至咸阳。布常为军锋。项王封诸将，立布为九江王，都六。",
+      "annotated": "<p>项籍</p>之<law>引兵</law>西至<loc>新安</loc>，又使<p name=\"黥布\">布</p>等夜<law>击</law><law>阬</law><p>章邯</p><state>秦</state>卒<qty>二十馀万人</qty>。至关，不得入，又使<p name=\"黥布\">布</p>等先从间道<law>破</law>关下军，遂得入，至<loc>咸阳</loc>。<p name=\"黥布\">布</p>常为军锋。<p>项王</p><law>封</law>诸将，<law>立</law><p name=\"黥布\">布</p>为<off>九江王</off>，都<loc>六</loc>。"
+    },
+    {
+      "pid": "5",
+      "text": "汉元年四月，诸侯皆罢戏下，各就国。项氏立怀王为义帝，徙都长沙，乃阴令九江王布等行击之。其八月，布使将击义帝，追杀之郴县。",
+      "annotated": "<time>汉元年四月</time>，<role>诸侯</role>皆<vpol>罢</vpol><loc>戏下</loc>，各就国。<clan>项氏</clan><law>立</law><p name=\"楚怀王\">怀王</p>为<p>义帝</p>，徙都<loc>长沙</loc>，乃阴令<off>九江王</off><p name=\"黥布\">布</p>等行<law>击</law>之。其<time>八月</time>，<p name=\"黥布\">布</p>使将<law>击</law><p>义帝</p>，<law>追杀</law>之<loc>郴县</loc>。"
+    },
+    {
+      "pid": "6",
+      "text": "汉二年，齐王田荣畔楚，项王往击齐，徵兵九江，九江王布称病不往，遣将将数千人行。汉之败楚彭城，布又称病不佐楚。项王由此怨布，数使使者诮让召布，布愈恐，不敢往。项王方北忧齐、赵，西患汉，所与者独九江王，又多布材，欲亲用之，以故未击。",
+      "annotated": "<time>汉二年</time>，<off>齐王</off><p>田荣</p><law>畔</law><state>楚</state>，<p>项王</p>往<law>击</law><state>齐</state>，<law>徵兵</law><state>九江</state>，<off>九江王</off><p name=\"黥布\">布</p>称病不往，遣将将<qty>数千人</qty>行。<state>汉</state>之<law>败</law><state>楚</state><loc>彭城</loc>，<p name=\"黥布\">布</p>又称病不佐<state>楚</state>。<p>项王</p>由此怨<p name=\"黥布\">布</p>，数使使者诮让召<p name=\"黥布\">布</p>，<p name=\"黥布\">布</p>愈恐，不敢往。<p>项王</p>方北忧<state>齐</state>、<state>赵</state>，西患<state>汉</state>，所与者独<off>九江王</off>，又多<p name=\"黥布\">布</p>材，欲亲用之，以故未<law>击</law>。"
+    },
+    {
+      "pid": "7",
+      "text": "汉三年，汉王击楚，大战彭城，不利，出梁地，至虞，谓左右曰：“如彼等者，无足与计天下事。” 谒者随何进曰：“不审陛下所谓。” 汉王曰：“孰能为我使淮南，令之发兵倍楚，留项王於齐数月，我之取天下可以百全。” 随何曰：“臣请使之。” 乃与二十人俱，使淮南。至，因太宰主之，三日不得见。随何因说太宰曰：“王之不见何，必以楚为彊，以汉为弱，此臣之所以为使。使何得见，言之而是邪，是大王所欲闻也；言之而非邪，使何等二十人伏斧质淮南市，以明王倍汉而与楚也。” 太宰乃言之王，王见之。随何曰：“汉王使臣敬进书大王御者，窃怪大王与楚何亲也。” 淮南王曰：“寡人北乡而臣事之。” 随何曰：“大王与项王俱列为诸侯，北乡而臣事之，必以楚为彊，可以讬国也。项王伐齐，身负板筑，以为士卒先，大王宜悉淮南之众，身自将之，为楚军前锋，今乃发四千人以助楚。夫北面而臣事人者，固若是乎？夫汉王战於彭城，项王未出齐也，大王宜骚淮南之兵渡淮，日夜会战彭城下，大王抚万人之众，无一人渡淮者，垂拱而观其孰胜。夫讬国於人者，固若是乎？大王提空名以乡楚，而欲厚自讬，臣窃为大王不取也。然而大王不背楚者，以汉为弱也。夫楚兵虽彊，天下负之以不义之名，以其背盟约而杀义帝也。然而楚王恃战胜自彊，汉王收诸侯，还守成皋、荥阳，下蜀、汉之粟，深沟壁垒，分卒守徼乘塞，楚人还兵，间以梁地，深入敌国八九百里，欲战则不得，攻城则力不能，老弱转粮千里之外；楚兵至荥阳、成皋，汉坚守而不动，进则不得攻，退则不得解。故曰楚兵不足恃也。使楚胜汉，则诸侯自危惧而相救。夫楚之彊，適足以致天下之兵耳。故楚不如汉，其势易见也。今大王不与万全之汉而自讬於危亡之楚，臣窃为大王惑之。臣非以淮南之兵足以亡楚也。夫大王发兵而倍楚，项王必留；留数月，汉之取天下可以万全。臣请与大王提剑而归汉，汉王必裂地而封大王，又况淮南，淮南必大王有也。故汉王敬使使臣进愚计，原大王之留意也。” 淮南王曰：“请奉命。” 阴许畔楚与汉，未敢泄也。",
+      "annotated": "<time>汉三年</time>，<off>汉王</off><law>击</law><state>楚</state>，大<law>战</law><loc>彭城</loc>，不利，出<loc>梁地</loc>，至<loc>虞</loc>，谓左右曰：“如彼等者，无足与计<idea>天下</idea>事。” <off>谒者</off><p>随何</p>进曰：“不审<role>陛下</role>所谓。” <off>汉王</off>曰：“孰能为我使<state>淮南</state>，令之<law>发兵</law>倍<state>楚</state>，留<p>项王</p>於<state>齐</state><time name=\"时长\">数月</time>，我之<law>取</law><idea>天下</idea>可以百全。” <p>随何</p>曰：“<role>臣</role>请使之。” 乃与<qty>二十人</qty>俱，使<state>淮南</state>。至，因<off>太宰</off>主之，<time name=\"时长\">三日</time>不得见。<p>随何</p>因说<off>太宰</off>曰：“王之不见<p name=\"随何\">何</p>，必以<state>楚</state>为彊，以<state>汉</state>为弱，此<role>臣</role>之所以为使。使<p name=\"随何\">何</p>得见，言之而是邪，是大王所欲闻也；言之而非邪，使<p name=\"随何\">何</p>等<qty>二十人</qty>伏<art>斧质</art><loc>淮南</loc>市，以<role>明王</role>倍<state>汉</state>而与<state>楚</state>也。” <off>太宰</off>乃言之王，王见之。<p>随何</p>曰：“<off>汉王</off>使<role>臣</role>敬进书大王御者，窃怪大王与<state>楚</state>何亲也。” <off>淮南王</off>曰：“<role>寡人</role>北乡而<role>臣</role>事之。” <p>随何</p>曰：“大王与<p>项王</p>俱列为<role>诸侯</role>，北乡而<role>臣</role>事之，必以<state>楚</state>为彊，可以讬国也。<p>项王</p><law>伐</law><state>齐</state>，身负<art>板筑</art>，以为士卒先，大王宜悉<state>淮南</state>之众，身自将之，为<state>楚</state>军前锋，今乃<law>发</law><qty>四千人</qty>以助<state>楚</state>。夫北面而<role>臣</role>事人者，固若是乎？夫<off>汉王</off><law>战</law>於<loc>彭城</loc>，<p>项王</p>未出<state>齐</state>也，大王宜骚<state>淮南</state>之兵<law>渡</law>淮，日夜<law>会战</law><loc>彭城</loc>下，大王抚<qty>万人</qty>之众，无<qty>一人</qty><law>渡</law>淮者，垂拱而观其孰胜。夫讬国於人者，固若是乎？大王提空名以乡<state>楚</state>，而欲厚自讬，<role>臣</role>窃为大王不<law>取</law>也。然而大王不背<state>楚</state>者，以<state>汉</state>为弱也。夫<state>楚</state>兵虽彊，<idea>天下</idea>负之以不义之名，以其背盟约而<law>杀</law><p>义帝</p>也。然而<off>楚王</off>恃<law>战</law>胜自彊，<off>汉王</off><law>收</law><role>诸侯</role>，还守<loc>成皋</loc>、<loc>荥阳</loc>，<law>下</law><state>蜀</state>、<loc>汉</loc>之粟，深沟壁垒，分卒守徼乘塞，<state>楚</state>人<law>还兵</law>，间以<loc>梁地</loc>，深入敌国<qty>八九百里</qty>，欲<law>战</law>则不得，<law>攻</law>城则力不能，老弱转粮<qty>千里</qty>之外；<state>楚</state>兵至<loc>荥阳</loc>、<loc>成皋</loc>，<state>汉</state>坚守而不动，进则不得<law>攻</law>，退则不得解。故曰<state>楚</state>兵不足恃也。使<state>楚</state><law>胜</law><state>汉</state>，则<role>诸侯</role>自危惧而相<law>救</law>。夫<state>楚</state>之彊，適足以致<idea>天下</idea>之兵耳。故<state>楚</state>不如<state>汉</state>，其势易见也。今大王不与万全之<state>汉</state>而自讬於危亡之<state>楚</state>，<role>臣</role>窃为大王惑之。<role>臣</role>非以<state>淮南</state>之兵足以<law>亡</law><state>楚</state>也。夫大王<law>发</law>兵而倍<state>楚</state>，<p>项王</p>必留；留<time name=\"时长\">数月</time>，<state>汉</state>之<law>取</law><idea>天下</idea>可以万全。<role>臣</role>请与大王提<tribe>剑</tribe>而归<state>汉</state>，<off>汉王</off>必<law>裂地</law>而<law>封</law>大王，又况<state>淮南</state>，<state>淮南</state>必大王有也。故<off>汉王</off>敬使使<role>臣</role>进愚计，原大王之留意也。” <off>淮南王</off>曰：“请奉命。” 阴许<law>畔</law><state>楚</state>与<state>汉</state>，未敢泄也。"
+    },
+    {
+      "pid": "8",
+      "text": "楚使者在，方急责英布发兵，舍传舍。随何直入，坐楚使者上坐，曰：“九江王已归汉，楚何以得发兵？” 布愕然。楚使者起。何因说布曰：“事已搆，可遂杀楚使者，无使归，而疾走汉并力。” 布曰：“如使者教，因起兵而击之耳。” 於是杀使者，因起兵而攻楚。楚使项声、龙且攻淮南，项王留而攻下邑。数月，龙且击淮南，破布军。布欲引兵走汉，恐楚王杀之，故间行与何俱归汉。",
+      "annotated": "<state>楚</state>使者在，方急责<p>英布</p><law>发</law>兵，舍传舍。<p>随何</p>直入，坐<state>楚</state>使者上坐，曰：“<off>九江王</off>已归<state>汉</state>，<state>楚</state>何以得<law>发</law>兵？” <p name=\"黥布\">布</p>愕然。<state>楚</state>使者起。<p name=\"随何\">何</p>因说<p name=\"黥布\">布</p>曰：“事已搆，可遂<law>杀</law><state>楚</state>使者，无使归，而疾走<state>汉</state>并力。” <p name=\"黥布\">布</p>曰：“如使者教，因<law>起兵</law>而<law>击</law>之耳。” 於是<law>杀</law>使者，因<law>起兵</law>而<law>攻</law><state>楚</state>。<state>楚</state>使<p>项声</p>、<p>龙且</p><law>攻</law><state>淮南</state>，<p>项王</p>留而<law>攻</law><loc>下邑</loc>。<time name=\"时长\">数月</time>，<p>龙且</p><law>击</law><state>淮南</state>，<law>破</law><p name=\"黥布\">布</p>军。<p name=\"黥布\">布</p>欲<law>引兵</law>走<state>汉</state>，恐<off>楚王</off><law>杀</law>之，故间行与<p name=\"随何\">何</p>俱归<state>汉</state>。"
+    },
+    {
+      "pid": "9",
+      "text": "淮南王至，上方踞床洗，召布入见，布大怒，悔来，欲自杀。出就舍，帐御饮食从官如汉王居，布又大喜过望。於是乃使人入九江。楚已使项伯收九江兵，尽杀布妻子。布使者颇得故人幸臣，将众数千人归汉。汉益分布兵而与俱北，收兵至成皋。四年七月，立布为淮南王，与击项籍。",
+      "annotated": "<off>淮南王</off>至，<p name=\"汉高祖\">上</p>方踞床洗，召<p name=\"黥布\">布</p>入见，<p name=\"黥布\">布</p>大怒，悔来，欲<vact>自杀</vact>。出就舍，帐御饮食从官如<off>汉王</off>居，<p name=\"黥布\">布</p>又大喜过望。於是乃使人入<state>九江</state>。<state>楚</state>已使<p>项伯</p><law>收</law><state>九江</state>兵，尽<law>杀</law><p name=\"黥布\">布</p><role>妻子</role>。<p name=\"黥布\">布</p>使者颇得故人<role>幸臣</role>，将众<qty>数千人</qty>归<state>汉</state>。<state>汉</state>益分<p name=\"黥布\">布</p>兵而与俱北，<law>收兵</law>至<loc>成皋</loc>。<time>四年七月</time>，<law>立</law><p name=\"黥布\">布</p>为<off>淮南王</off>，与<law>击</law><p>项籍</p>。"
+    },
+    {
+      "pid": "10",
+      "text": "汉五年，布使人入九江，得数县。六年，布与刘贾入九江，诱大司马周殷，周殷反楚，遂举九江兵与汉击楚，破之垓下。",
+      "annotated": "<time>汉五年</time>，<p name=\"黥布\">布</p>使人入<state>九江</state>，得数县。<time>六年</time>，<p name=\"黥布\">布</p>与<p>刘贾</p>入<state>九江</state>，诱<off>大司马</off><p>周殷</p>，<p>周殷</p><law>反</law><state>楚</state>，遂<law>举</law><state>九江</state>兵与<state>汉</state><law>击</law><state>楚</state>，<law>破</law>之<loc>垓下</loc>。"
+    },
+    {
+      "pid": "11",
+      "text": "项籍死，天下定，上置酒。 上折随何之功，谓何为腐儒，为天下安用腐儒。 随何跪曰：“夫陛下引兵攻彭城，楚王未去齐也，陛下发步卒五万人，骑五千，能以取淮南乎？” 上曰：“不能。” 随何曰：“陛下使何与二十人使淮南，至，如陛下之意，是何之功贤於步卒五万人骑五千也。然而陛下谓何腐儒，为天下安用腐儒，何也？” 上曰：“吾方图子之功。” 乃以随何为护军中尉。 布遂剖符为淮南王，都六，九江、庐江、衡山、豫章郡皆属布。",
+      "annotated": "<p>项籍</p>死，<idea>天下</idea>定，<p name=\"汉高祖\">上</p>置酒。 <p name=\"汉高祖\">上</p>折<p>随何</p>之功，谓<p name=\"随何\">何</p>为腐儒，为<idea>天下</idea>安用腐儒。 <p>随何</p>跪曰：“夫<role>陛下</role><law>引兵</law><law>攻</law><loc>彭城</loc>，<off>楚王</off>未去<state>齐</state>也，<role>陛下</role><law>发</law>步卒<qty>五万人</qty>，骑<qty>五千</qty>，能以<law>取</law><state>淮南</state>乎？” <p name=\"汉高祖\">上</p>曰：“不能。” <p>随何</p>曰：“<role>陛下</role>使<p name=\"随何\">何</p>与<qty>二十人</qty>使<state>淮南</state>，至，如<role>陛下</role>之意，是<p name=\"随何\">何</p>之功贤於步卒<qty>五万人骑</qty><qty>五千</qty>也。然而<role>陛下</role>谓<p name=\"随何\">何</p>腐儒，为<idea>天下</idea>安用腐儒，何也？” <p name=\"汉高祖\">上</p>曰：“吾方图<role>子</role>之功。” 乃以<p>随何</p>为<off>护军中尉</off>。 <p name=\"黥布\">布</p>遂<sys>剖符</sys>为<off>淮南王</off>，都<loc>六</loc>，<state>九江</state>、<state>庐江</state>、<state>衡山</state>、<loc>豫章</loc>郡皆属<p name=\"黥布\">布</p>。"
+    },
+    {
+      "pid": "12",
+      "text": "七年，朝陈。 八年，朝雒阳。 九年，朝长安。",
+      "annotated": "<time>七年</time>，朝<loc>陈</loc>。 <time>八年</time>，朝<loc>雒阳</loc>。 <time>九年</time>，朝<loc>长安</loc>。"
+    },
+    {
+      "pid": "13",
+      "text": "十一年，高后诛淮阴侯，布因心恐。夏，汉诛梁王彭越，醢之，盛其醢遍赐诸侯。至淮南，淮南王方猎，见醢，因大恐，阴令人部聚兵，候伺旁郡警急。",
+      "annotated": "<time>十一年</time>，<p>高后</p><law>诛</law><off>淮阴侯</off>，<p name=\"黥布\">布</p>因心恐。夏，<state>汉</state><law>诛</law><off>梁王</off><p>彭越</p>，<law>醢</law>之，盛其醢遍赐<role>诸侯</role>。至<state>淮南</state>，<off>淮南王</off>方猎，见醢，因大恐，阴令人部<law>聚兵</law>，候伺旁郡警急。"
+    },
+    {
+      "pid": "14",
+      "text": "布所幸姬疾，请就医，医家与中大夫贲赫对门，姬数如医家，贲赫自以为侍中，乃厚餽遗，从姬饮医家。姬侍王，从容语次，誉赫长者也。王怒曰：“汝安从知之？” 具说状。王疑其与乱。赫恐，称病。王愈怒，欲捕赫。赫言变事，乘传诣长安。布使人追，不及。赫至，上变，言布谋反有端，可先未发诛也。上读其书，语萧相国。相国曰：“布不宜有此，恐仇怨妄诬之。请击赫，使人微验淮南王。” 淮南王布见赫以罪亡，上变，固已疑其言国阴事；汉使又来，颇有所验，遂族赫家，发兵反。反书闻，上乃赦贲赫，以为将军。",
+      "annotated": "<p name=\"黥布\">布</p>所幸姬疾，请就医，医家与<off>中大夫</off><p>贲赫</p>对门，姬数如医家，<p>贲赫</p>自以为<off>侍中</off>，乃厚餽遗，从姬饮医家。姬侍王，从容语次，誉<p name=\"贲赫\">赫</p>长者也。王怒曰：“汝安从知之？” 具说状。王疑其与乱。<p name=\"贲赫\">赫</p>恐，称病。王愈怒，欲<law>捕</law><p name=\"贲赫\">赫</p>。<p name=\"贲赫\">赫</p>言变事，乘传诣<loc>长安</loc>。<p name=\"黥布\">布</p>使人<law>追</law>，不及。<p name=\"贲赫\">赫</p>至，<p name=\"汉高祖\">上</p>变，言<p name=\"黥布\">布</p>谋<law>反</law>有端，可先未发<law>诛</law>也。<p name=\"汉高祖\">上</p>读其书，语<p name=\"萧何\">萧</p><off>相国</off>。<off>相国</off>曰：“<p name=\"黥布\">布</p>不宜有此，恐仇怨妄诬之。请<law>击</law><p name=\"贲赫\">赫</p>，使人微验<off>淮南王</off>。” <off>淮南王</off><p name=\"黥布\">布</p>见<p name=\"贲赫\">赫</p>以罪亡，<p name=\"汉高祖\">上</p>变，固已疑其言国阴事；<state>汉</state>使又来，颇有所验，遂<law>族</law><p name=\"贲赫\">赫</p>家，<law>发兵</law><law>反</law>。<law>反</law>书闻，<p name=\"汉高祖\">上</p>乃<law>赦</law><p>贲赫</p>，以为将军。"
+    },
+    {
+      "pid": "15",
+      "text": "上召诸将问曰：“布反，为之柰何？” 皆曰；“发兵击之，阬竖子耳。何能为乎！” 汝阴侯滕公召故楚令尹问之。 令尹曰：“是故当反。” 滕公曰：“上裂地而王之，疏爵而贵之，南面而立万乘之主，其反何也？” 令尹曰：“往年杀彭越，前年杀韩信，此三人者，同功一体之人也。自疑祸及身，故反耳。” 滕公言之上曰：“臣客故楚令尹薛公者，其人有筹筴之计，可问。” 上乃召见问薛公。 薛公对曰：“布反不足怪也。使布出於上计，山东非汉之有也；出於中计，胜败之数未可知也；出於下计，陛下安枕而卧矣。” 上曰：“何谓上计？” 令尹对曰：“东取吴，西取楚，并齐取鲁，传檄燕、赵，固守其所，山东非汉之有也。” “何谓中计？” “东取吴，西取楚，并韩取魏，据敖庾之粟，塞成皋之口，胜败之数未可知也。” “何谓下计？” “东取吴，西取下蔡，归重於越，身归长沙，陛下安枕而卧，汉无事矣。” 上曰：“是计将安出？” 令尹对曰：“出下计。” 上曰：“何谓废上中计而出下计？” 令尹曰：“布故丽山之徒也，自致万乘之主，此皆为身，不顾後为百姓万世虑者也，故曰出下计。” 上曰：“善。” 封薛公千户。 乃立皇子长为淮南王。 上遂发兵自将东击布。",
+      "annotated": "<p name=\"汉高祖\">上</p>召诸将问曰：“<p name=\"黥布\">布</p><law>反</law>，为之柰何？” 皆曰；“<law>发兵</law><law>击</law>之，<law>阬</law><art>竖子</art>耳。何能为乎！” <off>汝阴侯</off><p>滕公</p>召故<state>楚</state><off>令尹</off>问之。 <off>令尹</off>曰：“是故当<law>反</law>。” <p>滕公</p>曰：“<p name=\"汉高祖\">上</p><law>裂地</law>而王之，疏爵而贵之，南面而<law>立</law><qty>万乘</qty>之主，其<law>反</law>何也？” <off>令尹</off>曰：“往年<law>杀</law><p>彭越</p>，前年<law>杀</law><p>韩信</p>，此<qty>三人</qty>者，同功一体之人也。自疑祸及身，故<law>反</law>耳。” <p>滕公</p>言之<p name=\"汉高祖\">上</p>曰：“<role>臣</role>客故<state>楚</state><off>令尹</off><p>薛公</p>者，其人有筹筴之计，可问。” <p name=\"汉高祖\">上</p>乃召见问<p>薛公</p>。 <p>薛公</p>对曰：“<p name=\"黥布\">布</p><law>反</law>不足怪也。使<p name=\"黥布\">布</p>出於上计，<loc>山东</loc>非<state>汉</state>之有也；出於中计，胜<law>败</law>之数未可知也；出於下计，<role>陛下</role>安枕而卧矣。” <p name=\"汉高祖\">上</p>曰：“何谓上计？” <off>令尹</off>对曰：“东<law>取</law><state>吴</state>，西<law>取</law><state>楚</state>，<law>并</law><state>齐</state><law>取</law><state>鲁</state>，传檄<state>燕</state>、<state>赵</state>，固守其所，<loc>山东</loc>非<state>汉</state>之有也。” “何谓中计？” “东<law>取</law><state>吴</state>，西<law>取</law><state>楚</state>，<law>并</law><state>韩</state><law>取</law><state>魏</state>，据<sys>敖庾</sys>之粟，<law>塞</law><loc>成皋</loc>之口，胜<law>败</law>之数未可知也。” “何谓下计？” “东<law>取</law><state>吴</state>，西<law>取</law><loc>下蔡</loc>，归重於<state>越</state>，身归<loc>长沙</loc>，<role>陛下</role>安枕而卧，<state>汉</state>无事矣。” <p name=\"汉高祖\">上</p>曰：“是计将安出？” <off>令尹</off>对曰：“出下计。” <p name=\"汉高祖\">上</p>曰：“何谓废上中计而出下计？” <off>令尹</off>曰：“<p name=\"黥布\">布</p>故<loc>丽山</loc>之徒也，自致<qty>万乘</qty>之主，此皆为身，不顾後为<role>百姓</role>万世虑者也，故曰出下计。” <p name=\"汉高祖\">上</p>曰：“善。” <law>封</law><p>薛公</p><qty>千户</qty>。 乃<law>立</law><role>皇子</role><p name=\"刘长\">长</p>为<off>淮南王</off>。 <p name=\"汉高祖\">上</p>遂<law>发兵</law>自将东<law>击</law><p name=\"黥布\">布</p>。"
+    },
+    {
+      "pid": "16",
+      "text": "布之初反，谓其将曰：“上老矣，厌兵，必不能来。使诸将，诸将独患淮阴、彭越，今皆已死，馀不足畏也。” 故遂反。果如薛公筹之，东击荆，荆王刘贾走死富陵。尽劫其兵，渡淮击楚。楚发兵与战徐、僮间，为三军，欲以相救为奇。或说楚将曰：“布善用兵，民素畏之。且兵法，诸侯战其地为散地。今别为三，彼败吾一军，馀皆走，安能相救！” 不听。布果破其一军，其二军散走。",
+      "annotated": "<p name=\"黥布\">布</p>之初<law>反</law>，谓其将曰：“<p name=\"汉高祖\">上</p>老矣，厌兵，必不能来。使<role>诸将</role>，<role>诸将</role>独患<p name=\"韩信\">淮阴</p>、<p>彭越</p>，今皆已死，馀不足畏也。” 故遂<law>反</law>。果如<p>薛公</p>筹之，东<law>击</law><state>荆</state>，<off>荆王</off><p>刘贾</p><law>走</law>死<loc>富陵</loc>。尽<law>劫</law>其兵，<law>渡</law>淮<law>击</law><state>楚</state>。<state>楚</state><law>发兵</law>与<law>战</law><loc>徐</loc>、<loc>僮</loc>间，为<sys>三军</sys>，欲以相<law>救</law>为奇。或说<state>楚</state>将曰：“<p name=\"黥布\">布</p>善用兵，<role>民</role>素畏之。且<sys>兵法</sys>，<role>诸侯</role><law>战</law>其地为散地。今别为三，彼<law>败</law>吾一军，馀皆走，安能相<law>救</law>！” 不听。<p name=\"黥布\">布</p>果<law>破</law>其一军，其<sys>二军</sys><law>散</law>走。"
+    },
+    {
+      "pid": "17",
+      "text": "遂西，与上兵遇蕲西，会甀。布兵精甚，上乃壁庸城，望布军置陈如项籍军，上恶之。与布相望见，遥谓布曰：“何苦而反？” 布曰：“欲为帝耳。” 上怒骂之，遂大战。布军败走，渡淮，数止战，不利，与百馀人走江南。布故与番君婚，以故长沙哀王使人绐布，伪与亡，诱走越，故信而随之番阳。番阳人杀布兹乡民田舍，遂灭黥布。",
+      "annotated": "遂西，与<p name=\"汉高祖\">上</p>兵<law>遇</law><loc>蕲</loc>西，会<loc>甀</loc>。<p name=\"黥布\">布</p>兵精甚，<p name=\"汉高祖\">上</p>乃<law>壁</law><loc>庸城</loc>，望<p name=\"黥布\">布</p>军置陈如<p>项籍</p>军，<p name=\"汉高祖\">上</p>恶之。与<p name=\"黥布\">布</p>相望见，遥谓<p name=\"黥布\">布</p>曰：“何苦而<law>反</law>？” <p name=\"黥布\">布</p>曰：“欲为帝耳。” <p name=\"汉高祖\">上</p>怒骂之，遂大<law>战</law>。<p name=\"黥布\">布</p>军<law>败</law>走，<law>渡</law>淮，数止<law>战</law>，不利，与<qty>百馀人</qty><law>走</law><loc>江南</loc>。<p name=\"黥布\">布</p>故与<p>番君</p>婚，以故<loc>长沙</loc><p name=\"长沙哀王\">哀王</p>使人<law>绐</law><p name=\"黥布\">布</p>，伪与亡，<law>诱</law>走<state>越</state>，故信而随之<loc>番阳</loc>。<loc>番阳</loc>人<law>杀</law><p name=\"黥布\">布</p><loc>兹乡</loc><role>民</role>田舍，遂<law>灭</law><p>黥布</p>。"
+    },
+    {
+      "pid": "18",
+      "text": "立皇子长为淮南王，封贲赫为期思侯，诸将率多以功封者。 ::: 太史公曰",
+      "annotated": "<law>立</law><role>皇子</role><p name=\"刘长\">长</p>为<off>淮南王</off>，<law>封</law><p>贲赫</p>为<off>期思侯</off>，诸将率多以功<law>封</law>者。 ::: 太史公曰"
+    },
+    {
+      "pid": "19",
+      "text": "太史公曰：英布者，其先岂春秋所见楚灭英、六，皋陶之後哉？身被刑法，何其拔兴之暴也！项氏之所阬杀人以千万数，而布常为首虐。功冠诸侯，用此得王，亦不免於身为世大僇。祸之兴自爱姬殖，妒媢生患，竟以灭国！ ::: ::: 赞",
+      "annotated": "<p>太史公</p>曰：<p>英布</p>者，其先岂<book>春秋</book>所见<state>楚</state><law>灭</law><state>英</state>、<loc>六</loc>，<p>皋陶</p>之後哉？身被<law>刑法</law>，何其拔兴之暴也！<clan>项氏</clan>之所<law>阬杀</law>人以<qty>千万数</qty>，而<p name=\"黥布\">布</p>常为首虐。功冠<role>诸侯</role>，用此得王，亦不免於身为世大<law>僇</law>。祸之兴自爱姬殖，妒媢生患，竟以<law>灭</law>国！ ::: ::: 赞"
+    },
+    {
+      "pid": "20",
+      "text": "九江初筮，当刑而王。 既免徒中，聚盗江上。 再雄楚卒，频破秦将。 病为羽疑，归受汉杖。 贲赫见毁，卒致无妄。 :::",
+      "annotated": "<state>九江</state>初筮，当刑而王。 既免徒中，聚盗<loc>江</loc>上。 再雄<state>楚</state>卒，频<law>破</law><state>秦</state>将。 病为<p name=\"项羽\">羽</p>疑，归受<state>汉</state>杖。 <p>贲赫</p>见毁，卒致无妄。 :::"
+    }
+  ]
+}

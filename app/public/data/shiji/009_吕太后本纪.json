@@ -1,0 +1,1076 @@
+{
+  "work": "史记",
+  "chapter": "吕太后本纪",
+  "chapter_file": "009_吕太后本纪",
+  "chapter_type": "本纪",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 213,
+  "paragraph_count_done": 213,
+  "paragraphs": [
+    {
+      "pid": "1.1",
+      "text": "吕太后者，高祖微时妃也，生孝惠帝、女鲁元太后。",
+      "annotated": "<p>吕太后</p>者，<p>高祖</p>微时<role>妃</role>也，生<p>孝惠帝</p>、<role>女</role><p>鲁元太后</p>。"
+    },
+    {
+      "pid": "1.2",
+      "text": "及高祖为汉王，得定陶戚姬，爱幸，生赵隐王如意。",
+      "annotated": "及<p>高祖</p>为<state>汉</state>王，得<loc>定陶</loc><p>戚姬</p>，爱幸，生<p>赵隐王</p><p>如意</p>。"
+    },
+    {
+      "pid": "2.1",
+      "text": "孝惠为人仁弱，高祖以为不类我，常欲废太子，立戚姬子如意，如意类我。",
+      "annotated": "<p>孝惠</p>为人仁弱，<p>高祖</p>以为不类我，常欲<vpol>废</vpol><role>太子</role>，<vpol>立</vpol><p>戚姬</p><role>子</role><p>如意</p>，<p>如意</p>类我。"
+    },
+    {
+      "pid": "2.2",
+      "text": "戚姬幸，常从上之关东，日夜啼泣，欲立其子代太子。",
+      "annotated": "<p>戚姬</p>幸，常从上之<loc>关东</loc>，日夜啼泣，欲立其<role>子</role>代<role>太子</role>。"
+    },
+    {
+      "pid": "2.3",
+      "text": "吕后年长，常留守，希见上，益疏。",
+      "annotated": "<p>吕后</p>年长，常留守，希见上，益疏。"
+    },
+    {
+      "pid": "2.4",
+      "text": "如意立为赵王後，几代太子者数矣，赖大臣争之，及留侯策，太子得毋废。",
+      "annotated": "<p>如意</p><vpol>立</vpol>为<off>赵王</off>後，几代<role>太子</role>者数矣，赖<role>大臣</role>争之，及<p>留侯</p>策，<role>太子</role>得毋废。"
+    },
+    {
+      "pid": "3.1",
+      "text": "吕后为人刚毅，佐高祖定天下，所诛大臣多吕后力。",
+      "annotated": "<p>吕后</p>为人刚毅，佐<p>高祖</p>定<idea>天下</idea>，所<vact>诛</vact><role>大臣</role>多<p>吕后</p>力。"
+    },
+    {
+      "pid": "3.2",
+      "text": "吕后兄二人，皆为将。",
+      "annotated": "<p>吕后</p><role>兄</role><qty>二人</qty>，皆为<off>将</off>。"
+    },
+    {
+      "pid": "3.3",
+      "text": "长兄周吕侯死事，封其子吕台为郦侯，子产为交侯；",
+      "annotated": "<role>长兄</role><p>周吕侯</p>死事，封其<role>子</role><p>吕台</p>为<off>郦侯</off>，<role>子</role><p name=\"吕产\">产</p>为<off>交侯</off>；"
+    },
+    {
+      "pid": "3.4",
+      "text": "次兄吕释之为建成侯。",
+      "annotated": "<role>次兄</role><p>吕释之</p>为<off>建成侯</off>。"
+    },
+    {
+      "pid": "4.1",
+      "text": "高祖十二年四月甲辰，崩长乐宫，太子袭号为帝。",
+      "annotated": "<p>高祖</p><time>十二年四月甲辰</time>，<vpol>崩</vpol><loc>长乐宫</loc>，<role>太子</role>袭号为帝。"
+    },
+    {
+      "pid": "4.2",
+      "text": "是时高祖八子：长男肥，孝惠兄也，异母，肥为齐王；",
+      "annotated": "是时<p>高祖</p><role>八子</role>：<role>长男</role><p name=\"刘肥\">肥</p>，<p>孝惠</p><role>兄</role>也，<role>异母</role>，<p name=\"刘肥\">肥</p>为<off>齐王</off>；"
+    },
+    {
+      "pid": "4.3",
+      "text": "馀皆孝惠弟，戚姬子如意为赵王，薄夫人子恆为代王，诸姬子子恢为梁王，子友为淮阳王，子长为淮南王，子建为燕王。",
+      "annotated": "馀皆<p>孝惠</p><role>弟</role>，<p>戚姬</p><role>子</role><p>如意</p>为<off>赵王</off>，<p>薄夫人</p><role>子</role><p name=\"刘恆\">恆</p>为<off>代王</off>，诸姬<role>子</role>子<p name=\"刘恢\">恢</p>为<off>梁王</off>，子<p name=\"刘友\">友</p>为<off>淮阳王</off>，子<p name=\"刘长\">长</p>为<off>淮南王</off>，子<p name=\"刘建\">建</p>为<off>燕王</off>。"
+    },
+    {
+      "pid": "4.4",
+      "text": "高祖弟交为楚王，兄子濞为吴王。",
+      "annotated": "<p>高祖</p><role>弟</role><p name=\"刘交\">交</p>为<off>楚王</off>，<role>兄子</role><p name=\"刘濞\">濞</p>为<off>吴王</off>。"
+    },
+    {
+      "pid": "4.5",
+      "text": "非刘氏功臣番君吴芮子臣为长沙王。",
+      "annotated": "非<clan>刘氏</clan><role>功臣</role><p>番君</p><p>吴芮</p><role>子</role><p name=\"吴臣\">臣</p>为<off>长沙王</off>。"
+    },
+    {
+      "pid": "5.1",
+      "text": "吕后最怨戚夫人及其子赵王，乃令永巷囚戚夫人，而召赵王。",
+      "annotated": "<p>吕后</p>最怨<p>戚夫人</p>及其<role>子</role><off>赵王</off>，乃令<loc>永巷</loc><vact>囚</vact><p>戚夫人</p>，而召<off>赵王</off>。"
+    },
+    {
+      "pid": "5.2",
+      "text": "使者三反，赵相建平侯周昌谓使者曰： “高帝属臣赵王，赵王年少。窃闻太后怨戚夫人，欲召赵王并诛之，臣不敢遣王。王且亦病，不能奉诏。”",
+      "annotated": "使者三反，<off>赵相</off><off>建平侯</off><p>周昌</p>谓使者曰： “<p>高帝</p>属臣<off>赵王</off>，<off>赵王</off>年少。窃闻<p>太后</p>怨<p>戚夫人</p>，欲召<off>赵王</off>并<vact>诛</vact>之，臣不敢遣王。王且亦病，不能奉诏。”"
+    },
+    {
+      "pid": "5.3",
+      "text": "吕后大怒，乃使人召赵相。",
+      "annotated": "<p>吕后</p>大怒，乃使人召<off>赵相</off>。"
+    },
+    {
+      "pid": "5.4",
+      "text": "赵相徵至长安，乃使人复召赵王。",
+      "annotated": "<off>赵相</off>徵至<loc>长安</loc>，乃使人复召<off>赵王</off>。"
+    },
+    {
+      "pid": "6.1",
+      "text": "王来，未到。孝惠帝慈仁，知太后怒，自迎赵王霸上，与入宫，自挟与赵王起居饮食。",
+      "annotated": "王来，未到。<p>孝惠帝</p>慈仁，知<p>太后</p>怒，自迎<off>赵王</off><loc>霸上</loc>，与入宫，自挟与<off>赵王</off>起居饮食。"
+    },
+    {
+      "pid": "6.2",
+      "text": "太后欲杀之，不得间。",
+      "annotated": "<p>太后</p>欲<vact>杀</vact>之，不得间。"
+    },
+    {
+      "pid": "6.3",
+      "text": "孝惠元年十二月，帝晨出射。赵王少，不能蚤起。",
+      "annotated": "<p>孝惠</p><time>元年十二月</time>，帝晨出射。<off>赵王</off>少，不能蚤起。"
+    },
+    {
+      "pid": "6.4",
+      "text": "太后闻其独居，使人持酖饮之。犁明，孝惠还，赵王已死。",
+      "annotated": "<p>太后</p>闻其独居，使人持酖饮之。犁明，<p>孝惠</p>还，<off>赵王</off>已死。"
+    },
+    {
+      "pid": "6.5",
+      "text": "於是乃徙淮阳王友为赵王。",
+      "annotated": "於是乃徙<off>淮阳王</off><p name=\"刘友\">友</p>为<off>赵王</off>。"
+    },
+    {
+      "pid": "7.1",
+      "text": "夏，诏赐郦侯父追谥为令武侯。",
+      "annotated": "<time>夏</time>，诏<vpol>赐</vpol><off>郦侯</off><role>父</role>追<vpol>谥</vpol>为<off>令武侯</off>。"
+    },
+    {
+      "pid": "7.2",
+      "text": "太后遂断戚夫人手足，去眼，煇耳，饮瘖药，使居厕中，命曰“人彘”。",
+      "annotated": "<p>太后</p>遂断<p>戚夫人</p>手足，去眼，煇耳，饮瘖药，使居厕中，命曰“<p name=\"戚夫人\">人彘</p>”。"
+    },
+    {
+      "pid": "7.3",
+      "text": "居数日，乃召孝惠帝观人彘。",
+      "annotated": "居<time>数日</time>，乃召<p>孝惠帝</p>观<p name=\"戚夫人\">人彘</p>。"
+    },
+    {
+      "pid": "7.4",
+      "text": "孝惠见，问，乃知其戚夫人，乃大哭，因病，岁馀不能起。",
+      "annotated": "<p>孝惠</p>见，问，乃知其<p>戚夫人</p>，乃大哭，因病，<time name=\"时长\">岁馀</time>不能起。"
+    },
+    {
+      "pid": "7.5",
+      "text": "使人请太后曰： “此非人所为。臣为太后子，终不能治天下。”",
+      "annotated": "使人请<p>太后</p>曰： “此非人所为。臣为<p>太后</p><role>子</role>，终不能治<idea>天下</idea>。”"
+    },
+    {
+      "pid": "7.6",
+      "text": "孝惠以此日饮为淫乐，不听政，故有病也。",
+      "annotated": "<p>孝惠</p>以此日饮为淫乐，不听政，故有病也。"
+    },
+    {
+      "pid": "8.1",
+      "text": "二年，楚元王、齐悼惠王皆来朝。",
+      "annotated": "<time>二年</time>，<p>楚元王</p>、<p>齐悼惠王</p>皆来朝。"
+    },
+    {
+      "pid": "8.2",
+      "text": "十月，孝惠与齐王燕饮太后前，孝惠以为齐王兄，置上坐，如家人之礼。",
+      "annotated": "<time>十月</time>，<p>孝惠</p>与<off>齐王</off>燕饮<p>太后</p>前，<p>孝惠</p>以为<off>齐王</off><role>兄</role>，置上坐，如家人之礼。"
+    },
+    {
+      "pid": "8.3",
+      "text": "太后怒，乃令酌两卮酖，置前，令齐王起为寿。",
+      "annotated": "<p>太后</p>怒，乃令酌两<art>卮</art>酖，置前，令<off>齐王</off>起为寿。"
+    },
+    {
+      "pid": "8.4",
+      "text": "齐王起，孝惠亦起，取卮欲俱为寿。",
+      "annotated": "<off>齐王</off>起，<p>孝惠</p>亦起，取<art>卮</art>欲俱为寿。"
+    },
+    {
+      "pid": "8.5",
+      "text": "太后乃恐，自起泛孝惠卮。",
+      "annotated": "<p>太后</p>乃恐，自起泛<p>孝惠</p><art>卮</art>。"
+    },
+    {
+      "pid": "8.6",
+      "text": "齐王怪之，因不敢饮，详醉去。",
+      "annotated": "<off>齐王</off>怪之，因不敢饮，详醉去。"
+    },
+    {
+      "pid": "9.1",
+      "text": "问，知其酖，齐王恐，自以为不得脱长安，忧。",
+      "annotated": "问，知其酖，<off>齐王</off>恐，自以为不得脱<loc>长安</loc>，忧。"
+    },
+    {
+      "pid": "9.2",
+      "text": "齐内史士说王曰： “太后独有孝惠与鲁元公主。今王有七十馀城，而公主乃食数城。王诚以一郡上太后，为公主汤沐邑，太后必喜，王必无忧。”",
+      "annotated": "<off>齐内史</off><p>士</p>说王曰： “<p>太后</p>独有<p>孝惠</p>与<p>鲁元公主</p>。<role>今王</role>有<qty>七十馀城</qty>，而<role>公主</role>乃食<qty>数城</qty>。王诚以一郡上<p>太后</p>，为<role>公主</role>汤沐邑，<p>太后</p>必喜，王必无忧。”"
+    },
+    {
+      "pid": "9.3",
+      "text": "於是齐王乃上城阳之郡，尊公主为王太后。",
+      "annotated": "於是<off>齐王</off>乃上<loc>城阳</loc>之郡，<vpol>尊</vpol><role>公主</role>为<role>王太后</role>。"
+    },
+    {
+      "pid": "9.4",
+      "text": "吕后喜，许之。乃置酒齐邸，乐饮，罢，归齐王。",
+      "annotated": "<p>吕后</p>喜，许之。乃置酒<loc>齐邸</loc>，乐饮，罢，归<off>齐王</off>。"
+    },
+    {
+      "pid": "10.1",
+      "text": "三年，方筑长安城，四年就半，五年六年城就。",
+      "annotated": "<time>三年</time>，方筑<loc>长安</loc>城，<time>四年</time>就半，<time>五年六年</time>城就。"
+    },
+    {
+      "pid": "10.2",
+      "text": "诸侯来会。十月朝贺。",
+      "annotated": "<role>诸侯</role>来会。<time>十月</time>朝贺。"
+    },
+    {
+      "pid": "11.1",
+      "text": "七年秋八月戊寅，孝惠帝崩。",
+      "annotated": "<time>七年秋八月戊寅</time>，<p>孝惠帝</p><vpol>崩</vpol>。"
+    },
+    {
+      "pid": "11.2",
+      "text": "发丧，太后哭，泣不下。",
+      "annotated": "发丧，<p>太后</p>哭，泣不下。"
+    },
+    {
+      "pid": "11.3",
+      "text": "留侯子张辟彊为侍中，年十五，谓丞相曰： “太后独有孝惠，今崩，哭不悲，君知其解乎？”",
+      "annotated": "<p>留侯</p><role>子</role><p>张辟彊</p>为<off>侍中</off>，年十五，谓<off>丞相</off>曰： “<p>太后</p>独有<p>孝惠</p>，今<vpol>崩</vpol>，哭不悲，君知其解乎？”"
+    },
+    {
+      "pid": "11.4",
+      "text": "丞相曰： “何解？”",
+      "annotated": "<off>丞相</off>曰： “何解？”"
+    },
+    {
+      "pid": "11.5",
+      "text": "辟彊曰： “帝毋壮子，太后畏君等。君今请拜吕台、吕产、吕禄为将，将兵居南北军，及诸吕皆入宫，居中用事，如此则太后心安，君等幸得脱祸矣。”",
+      "annotated": "<p>辟彊</p>曰： “帝毋<role>壮子</role>，<p>太后</p>畏君等。君今请<vpol>拜</vpol><p>吕台</p>、<p>吕产</p>、<p>吕禄</p>为<off>将</off>，将兵居南<off>北军</off>，及诸<clan>吕</clan>皆入宫，居中用事，如此则<p>太后</p>心安，君等幸得脱祸矣。”"
+    },
+    {
+      "pid": "11.6",
+      "text": "丞相乃如辟彊计。太后说，其哭乃哀。",
+      "annotated": "<off>丞相</off>乃如<p>辟彊</p>计。<p>太后</p>说，其哭乃哀。"
+    },
+    {
+      "pid": "11.7",
+      "text": "吕氏权由此起。乃大赦天下。",
+      "annotated": "<clan>吕氏</clan>权由此起。乃<law>大赦</law><idea>天下</idea>。"
+    },
+    {
+      "pid": "11.8",
+      "text": "九月辛丑，葬。太子即位为帝，谒高庙。",
+      "annotated": "<time>九月辛丑</time>，葬。<role>太子</role>即位为帝，谒<loc>高庙</loc>。"
+    },
+    {
+      "pid": "11.9",
+      "text": "元年，号令一出太后。",
+      "annotated": "<time>元年</time>，号令一出<p>太后</p>。"
+    },
+    {
+      "pid": "12.1",
+      "text": "太后称制，议欲立诸吕为王，问右丞相王陵。",
+      "annotated": "<p>太后</p><sys>称制</sys>，议欲立诸<clan>吕</clan>为王，问<off>右丞相</off><p>王陵</p>。"
+    },
+    {
+      "pid": "12.2",
+      "text": "王陵曰： “高帝刑白马盟曰‘非刘氏而王，天下共击之’。今王吕氏，非约也。”",
+      "annotated": "<p>王陵</p>曰： “<p>高帝</p><sys>刑白马盟</sys>曰‘非<clan>刘氏</clan>而<vpol>王</vpol>，<idea>天下</idea>共击之’。今<vpol>王</vpol><clan>吕氏</clan>，非约也。”"
+    },
+    {
+      "pid": "12.3",
+      "text": "太后不说。问左丞相陈平、绛侯周勃。",
+      "annotated": "<p>太后</p>不说。问<off>左丞相</off><p>陈平</p>、<off>绛侯</off><p>周勃</p>。"
+    },
+    {
+      "pid": "12.4",
+      "text": "勃等对曰： “高帝定天下，王子弟，今太后称制，王昆弟诸吕，无所不可。”",
+      "annotated": "<p name=\"周勃\">勃</p>等对曰： “<p>高帝</p>定<idea>天下</idea>，<vpol>王</vpol><role>子弟</role>，今<p>太后</p><sys>称制</sys>，<vpol>王</vpol><role>昆弟</role>诸<clan>吕</clan>，无所不可。”"
+    },
+    {
+      "pid": "12.5",
+      "text": "太后喜，罢朝。",
+      "annotated": "<p>太后</p>喜，罢朝。"
+    },
+    {
+      "pid": "13.1",
+      "text": "王陵让陈平、绛侯曰： “始与高帝喋血盟，诸君不在邪？今高帝崩，太后女主，欲王吕氏，诸君从欲阿意背约，何面目见高帝地下？”",
+      "annotated": "<p>王陵</p>让<p>陈平</p>、<off>绛侯</off>曰： “始与<p>高帝</p><sys>喋血盟</sys>，诸君不在邪？今<p>高帝</p><vpol>崩</vpol>，<p>太后</p>女主，欲王<clan>吕氏</clan>，诸君从欲阿意背约，何面目见<p>高帝</p>地下？”"
+    },
+    {
+      "pid": "13.2",
+      "text": "陈平、绛侯曰： “於今面折廷争，臣不如君；夫全社稷，定刘氏之後，君亦不如臣。”",
+      "annotated": "<p>陈平</p>、<off>绛侯</off>曰： “於今<idiom>面折廷争</idiom>，臣不如君；夫全<sys>社稷</sys>，定<clan>刘氏</clan>之後，君亦不如臣。”"
+    },
+    {
+      "pid": "13.3",
+      "text": "王陵无以应之。",
+      "annotated": "<p>王陵</p>无以应之。"
+    },
+    {
+      "pid": "14.1",
+      "text": "十一月，太后欲废王陵，乃拜为帝太傅，夺之相权。",
+      "annotated": "<time>十一月</time>，<p>太后</p>欲<vpol>废</vpol><p>王陵</p>，乃<vpol>拜</vpol>为<off>帝太傅</off>，夺之相权。"
+    },
+    {
+      "pid": "14.2",
+      "text": "王陵遂病免归。",
+      "annotated": "<p>王陵</p>遂病免归。"
+    },
+    {
+      "pid": "14.3",
+      "text": "乃以左丞相平为右丞相，以辟阳侯审食其为左丞相。",
+      "annotated": "乃以<off>左丞相</off><p name=\"陈平\">平</p>为<off>右丞相</off>，以<off>辟阳侯</off><p>审食其</p>为<off>左丞相</off>。"
+    },
+    {
+      "pid": "14.4",
+      "text": "左丞相不治事，令监宫中，如郎中令。",
+      "annotated": "<off>左丞相</off>不治事，令监宫中，如<off>郎中令</off>。"
+    },
+    {
+      "pid": "14.5",
+      "text": "食其故得幸太后，常用事，公卿皆因而决事。",
+      "annotated": "<p>食其</p>故得幸<p>太后</p>，常用事，<role>公卿</role>皆因而决事。"
+    },
+    {
+      "pid": "14.6",
+      "text": "乃追尊郦侯父为悼武王，欲以王诸吕为渐。",
+      "annotated": "乃追<vpol>尊</vpol><off>郦侯</off><role>父</role>为<p>悼武王</p>，欲以<vpol>王</vpol>诸<clan>吕</clan>为渐。"
+    },
+    {
+      "pid": "15.1",
+      "text": "四月，太后欲侯诸吕，乃先封高祖之功臣郎中令无择为博城侯。",
+      "annotated": "<time>四月</time>，<p>太后</p>欲侯诸<clan>吕</clan>，乃先<vpol>封</vpol><p>高祖</p>之<role>功臣</role><off>郎中令</off><p>无择</p>为<off>博城侯</off>。"
+    },
+    {
+      "pid": "15.2",
+      "text": "鲁元公主薨，赐谥为鲁元太后。子偃为鲁王。",
+      "annotated": "<p>鲁元公主</p><vpol>薨</vpol>，赐<vpol>谥</vpol>为<p>鲁元太后</p>。<role>子</role><p name=\"张偃\">偃</p>为<off>鲁王</off>。"
+    },
+    {
+      "pid": "15.3",
+      "text": "鲁王父，宣平侯张敖也。",
+      "annotated": "<off>鲁王</off><role>父</role>，<off>宣平侯</off><p>张敖</p>也。"
+    },
+    {
+      "pid": "15.4",
+      "text": "封齐悼惠王子章为硃虚侯，以吕禄女妻之。",
+      "annotated": "<vpol>封</vpol><p>齐悼惠王</p><role>子</role><p name=\"刘章\">章</p>为<off>硃虚侯</off>，以<p>吕禄</p><role>女</role>妻之。"
+    },
+    {
+      "pid": "15.5",
+      "text": "齐丞相寿为平定侯。少府延为梧侯。",
+      "annotated": "<off>齐丞相</off><p name=\"贾寿\">寿</p>为<off>平定侯</off>。<off>少府</off><p name=\"阳城延\">延</p>为<off>梧侯</off>。"
+    },
+    {
+      "pid": "15.6",
+      "text": "乃封吕种为沛侯，吕平为扶柳侯，张买为南宫侯。",
+      "annotated": "乃<vpol>封</vpol><p>吕种</p>为<off>沛侯</off>，<p>吕平</p>为<off>扶柳侯</off>，<p>张买</p>为<off>南宫侯</off>。"
+    },
+    {
+      "pid": "16.1",
+      "text": "太后欲王吕氏，先立孝惠後宫子彊为淮阳王，子不疑为常山王，子山为襄城侯，子朝为轵侯，子武为壶关侯。",
+      "annotated": "<p>太后</p>欲王<clan>吕氏</clan>，先<vpol>立</vpol><p>孝惠</p>後宫<role>子</role><p name=\"刘辟彊\">彊</p>为<off>淮阳王</off>，<role>子</role><p>不疑</p>为<off>常山王</off>，<role>子</role><p name=\"刘山\">山</p>为<off>襄城侯</off>，<role>子</role><p name=\"刘朝\">朝</p>为<off>轵侯</off>，<role>子</role><p name=\"刘武\">武</p>为<off>壶关侯</off>。"
+    },
+    {
+      "pid": "16.2",
+      "text": "太后风大臣，大臣请立郦侯吕台为吕王，太后许之。",
+      "annotated": "<p>太后</p>风<role>大臣</role>，<role>大臣</role>请<vpol>立</vpol><off>郦侯</off><p>吕台</p>为<off>吕王</off>，<p>太后</p>许之。"
+    },
+    {
+      "pid": "16.3",
+      "text": "建成康侯释之卒，嗣子有罪，废，立其弟吕禄为胡陵侯，续康侯後。",
+      "annotated": "<off>建成康侯</off><p>释之</p><vpol>卒</vpol>，<role>嗣子</role>有罪，废，立其<role>弟</role><p>吕禄</p>为<off>胡陵侯</off>，续<p>康侯</p>後。"
+    },
+    {
+      "pid": "17.1",
+      "text": "二年，常山王薨，以其弟襄城侯山为常山王，更名义。",
+      "annotated": "<time>二年</time>，<off>常山王</off><vpol>薨</vpol>，以其<role>弟</role><off>襄城侯</off><p name=\"刘山\">山</p>为<off>常山王</off>，更名<p name=\"刘义\">义</p>。"
+    },
+    {
+      "pid": "17.2",
+      "text": "十一月，吕王台薨，谥为肃王，太子嘉代立为王。",
+      "annotated": "<time>十一月</time>，<off>吕王</off><p name=\"吕台\">台</p><vpol>薨</vpol>，<vpol>谥</vpol>为<p>肃王</p>，<role>太子</role><p name=\"吕嘉\">嘉</p>代立为王。"
+    },
+    {
+      "pid": "17.3",
+      "text": "三年，无事。",
+      "annotated": "<time>三年</time>，无事。"
+    },
+    {
+      "pid": "18.1",
+      "text": "四年，封吕嬃为临光侯，吕他为俞侯，吕更始为赘其侯，吕忿为吕城侯，及诸侯丞相五人。",
+      "annotated": "<time>四年</time>，<vpol>封</vpol><p>吕嬃</p>为<off>临光侯</off>，<p>吕他</p>为<off>俞侯</off>，<p>吕更始</p>为<off>赘其侯</off>，<p>吕忿</p>为<off>吕城侯</off>，及<role>诸侯</role><off>丞相</off><qty>五人</qty>。"
+    },
+    {
+      "pid": "19.1",
+      "text": "宣平侯女为孝惠皇后时，无子，详为有身，取美人子名之，杀其母，立所名子为太子。",
+      "annotated": "<off>宣平侯</off><role>女</role>为<p name=\"张嫣\">孝惠皇后</p>时，无<role>子</role>，详为有身，取<role>美人</role><role>子</role>名之，<vact>杀</vact>其<role>母</role>，立所名<role>子</role>为<role>太子</role>。"
+    },
+    {
+      "pid": "19.2",
+      "text": "孝惠崩，太子立为帝。",
+      "annotated": "<p>孝惠</p><vpol>崩</vpol>，<role>太子</role>立为帝。"
+    },
+    {
+      "pid": "19.3",
+      "text": "帝壮，或闻其母死，非真皇后子，乃出言曰： “后安能杀吾母而名我？我未壮，壮即为变。”",
+      "annotated": "帝壮，或闻其<role>母</role>死，非真<role>皇后</role><role>子</role>，乃出言曰： “后安能<vact>杀</vact>吾<role>母</role>而名我？我未壮，壮即为变。”"
+    },
+    {
+      "pid": "20.1",
+      "text": "太后闻而患之，恐其为乱，乃幽之永卷中，言帝病甚，左右莫得见。",
+      "annotated": "<p>太后</p>闻而患之，恐其为乱，乃幽之<loc>永卷</loc>中，言帝病甚，左右莫得见。"
+    },
+    {
+      "pid": "20.2",
+      "text": "太后曰： “凡有天下治为万民命者，盖之如天，容之如地，上有欢心以安百姓，百姓欣然以事其上，欢欣交通而天下治。今皇帝病久不已，乃失惑惛乱，不能继嗣奉宗庙祭祀，不可属天下，其代之。”",
+      "annotated": "<p>太后</p>曰： “凡有<idea>天下</idea>治为万民命者，盖之如天，容之如地，上有欢心以安<role>百姓</role>，<role>百姓</role>欣然以事其上，欢欣交通而<idea>天下</idea>治。今<role>皇帝</role>病久不已，乃失惑惛乱，不能继嗣奉<sys>宗庙</sys><sys>祭祀</sys>，不可属<idea>天下</idea>，其代之。”"
+    },
+    {
+      "pid": "20.3",
+      "text": "群臣皆顿首言： “皇太后为天下齐民计所以安宗庙社稷甚深，群臣顿首奉诏。”",
+      "annotated": "<role>群臣</role>皆顿首言： “<role>皇太后</role>为<idea>天下</idea>齐民计所以安<sys>宗庙</sys><sys>社稷</sys>甚深，<role>群臣</role>顿首奉诏。”"
+    },
+    {
+      "pid": "20.4",
+      "text": "帝废位，太后幽杀之。",
+      "annotated": "帝废位，<p>太后</p>幽<vact>杀</vact>之。"
+    },
+    {
+      "pid": "21.1",
+      "text": "五月丙辰，立常山王义为帝，更名曰弘。",
+      "annotated": "<time>五月丙辰</time>，<vpol>立</vpol><off>常山王</off><p name=\"刘义\">义</p>为帝，更名曰<p name=\"刘弘\">弘</p>。"
+    },
+    {
+      "pid": "21.2",
+      "text": "不称元年者，以太后制天下事也。",
+      "annotated": "不称<time>元年</time>者，以<p>太后</p><sys>制天下事</sys>也。"
+    },
+    {
+      "pid": "21.3",
+      "text": "以轵侯朝为常山王。",
+      "annotated": "以<off>轵侯</off><p name=\"刘朝\">朝</p>为<off>常山王</off>。"
+    },
+    {
+      "pid": "21.4",
+      "text": "置太尉官，绛侯勃为太尉。",
+      "annotated": "置<off>太尉</off>官，<off>绛侯</off><p name=\"周勃\">勃</p>为<off>太尉</off>。"
+    },
+    {
+      "pid": "22.1",
+      "text": "五年八月，淮阳王薨，以弟壶关侯武为淮阳王。",
+      "annotated": "<time>五年八月</time>，<off>淮阳王</off><vpol>薨</vpol>，以<role>弟</role><off>壶关侯</off><p name=\"刘武\">武</p>为<off>淮阳王</off>。"
+    },
+    {
+      "pid": "22.2",
+      "text": "六年十月，太后曰吕王嘉居处骄恣，废之，以肃王台弟吕产为吕王。",
+      "annotated": "<time>六年十月</time>，<p>太后</p>曰<off>吕王</off><p name=\"吕嘉\">嘉</p>居处骄恣，废之，以<p>肃王</p><p name=\"吕台\">台</p><role>弟</role><p>吕产</p>为<off>吕王</off>。"
+    },
+    {
+      "pid": "22.3",
+      "text": "夏，赦天下。封齐悼惠王子兴居为东牟侯。",
+      "annotated": "<time>夏</time>，<vact>赦</vact><idea>天下</idea>。<vpol>封</vpol><p>齐悼惠王</p><role>子</role><p>兴居</p>为<off>东牟侯</off>。"
+    },
+    {
+      "pid": "23.1",
+      "text": "七年正月，太后召赵王友。",
+      "annotated": "<time>七年正月</time>，<p>太后</p>召<off>赵王</off><p name=\"刘友\">友</p>。"
+    },
+    {
+      "pid": "23.2",
+      "text": "友以诸吕女为受后，弗爱，爱他姬，诸吕女妒，怒去，谗之於太后，诬以罪过，曰： “吕氏安得王！太后百岁後，吾必击之”。",
+      "annotated": "<p name=\"刘友\">友</p>以诸<clan>吕</clan><role>女</role>为受<role>后</role>，弗爱，爱他<role>姬</role>，诸<clan>吕</clan><role>女</role>妒，怒去，谗之於<p>太后</p>，诬以罪过，曰： “<clan>吕氏</clan>安得王！<p>太后</p>百岁後，吾必击之”。"
+    },
+    {
+      "pid": "23.3",
+      "text": "太后怒，以故召赵王。",
+      "annotated": "<p>太后</p>怒，以故召<off>赵王</off>。"
+    },
+    {
+      "pid": "23.4",
+      "text": "赵王至，置邸不见，令卫围守之，弗与食。",
+      "annotated": "<off>赵王</off>至，置邸不见，令卫围守之，弗与食。"
+    },
+    {
+      "pid": "23.5",
+      "text": "其群臣或窃馈，辄捕论之，赵王饿，乃歌曰： ::: 诗歌 “诸吕用事兮刘氏危，迫胁王侯兮彊授我妃。我妃既妒兮诬我以恶，谗女乱国兮上曾不寤。我无忠臣兮何故弃国？自决中野兮苍天举直！于嗟不可悔兮宁蚤自财。为王而饿死兮谁者怜之！吕氏绝理兮讬天报仇。” :::",
+      "annotated": "其<role>群臣</role>或窃馈，辄捕论之，<off>赵王</off>饿，乃歌曰： ::: 诗歌 “诸<clan>吕</clan>用事兮<clan>刘氏</clan>危，迫胁<off>王侯</off>兮彊授我妃。我妃既妒兮诬我以恶，谗女乱国兮上曾不寤。我无<role>忠臣</role>兮何故弃国？自决中野兮<astro>苍天</astro>举直！于嗟不可悔兮宁蚤自财。为王而饿死兮谁者怜之！<clan>吕氏</clan>绝理兮讬天报仇。” :::"
+    },
+    {
+      "pid": "23.6",
+      "text": "丁丑，赵王幽死，以民礼葬之长安民冢次。",
+      "annotated": "<time>丁丑</time>，<off>赵王</off>幽死，以民礼葬之<loc>长安</loc>民冢次。"
+    },
+    {
+      "pid": "24.1",
+      "text": "己丑，日食，昼晦。",
+      "annotated": "<time>己丑</time>，<astro>日食</astro>，昼晦。"
+    },
+    {
+      "pid": "24.2",
+      "text": "太后恶之，心不乐，乃谓左右曰： “此为我也。”",
+      "annotated": "<p>太后</p>恶之，心不乐，乃谓左右曰： “此为我也。”"
+    },
+    {
+      "pid": "25.1",
+      "text": "二月，徙梁王恢为赵王。",
+      "annotated": "<time>二月</time>，徙<off>梁王</off><p name=\"刘恢\">恢</p>为<off>赵王</off>。"
+    },
+    {
+      "pid": "25.2",
+      "text": "吕王产徙为梁王，梁王不之国，为帝太傅。",
+      "annotated": "<off>吕王</off><p name=\"吕产\">产</p>徙为<off>梁王</off>，<off>梁王</off>不<vpol>之国</vpol>，为<off>帝太傅</off>。"
+    },
+    {
+      "pid": "25.3",
+      "text": "立皇子平昌侯太为吕王。",
+      "annotated": "<vpol>立</vpol><role>皇子</role><off>平昌侯</off><p name=\"刘太\">太</p>为<off>吕王</off>。"
+    },
+    {
+      "pid": "25.4",
+      "text": "更名梁曰吕，吕曰济川。",
+      "annotated": "更名<state>梁</state>曰<state>吕</state>，<state>吕</state>曰<state>济川</state>。"
+    },
+    {
+      "pid": "26.1",
+      "text": "太后女弟吕嬃有女为营陵侯刘泽妻，泽为大将军。",
+      "annotated": "<p>太后</p><role>女弟</role><p>吕嬃</p>有<role>女</role>为<off>营陵侯</off><p>刘泽</p><role>妻</role>，<p name=\"刘泽\">泽</p>为<off>大将军</off>。"
+    },
+    {
+      "pid": "26.2",
+      "text": "太后王诸吕，恐即崩後刘将军为害，乃以刘泽为琅邪王，以慰其心。",
+      "annotated": "<p>太后</p><vpol>王</vpol>诸<clan>吕</clan>，恐即<vpol>崩</vpol>後<p>刘将军</p>为害，乃以<p>刘泽</p>为<off>琅邪王</off>，以慰其心。"
+    },
+    {
+      "pid": "27.1",
+      "text": "梁王恢之徙王赵，心怀不乐。",
+      "annotated": "<off>梁王</off><p name=\"刘恢\">恢</p>之徙王<state>赵</state>，心怀不乐。"
+    },
+    {
+      "pid": "27.2",
+      "text": "太后以吕产女为赵王后。",
+      "annotated": "<p>太后</p>以<p>吕产</p><role>女</role>为<off>赵王</off><role>后</role>。"
+    },
+    {
+      "pid": "27.3",
+      "text": "王后从官皆诸吕，擅权，微伺赵王，赵王不得自恣。",
+      "annotated": "<role>王后</role>从官皆诸<clan>吕</clan>，擅权，微伺<off>赵王</off>，<off>赵王</off>不得自恣。"
+    },
+    {
+      "pid": "27.4",
+      "text": "王有所爱姬，王后使人酖杀之。",
+      "annotated": "王有所爱<role>姬</role>，<role>王后</role>使人酖<vact>杀</vact>之。"
+    },
+    {
+      "pid": "27.5",
+      "text": "王乃为歌诗四章，令乐人歌之。王悲，六月即自杀。",
+      "annotated": "王乃为歌诗四章，令乐人歌之。王悲，<time>六月</time>即<law>自杀</law>。"
+    },
+    {
+      "pid": "27.6",
+      "text": "太后闻之，以为王用妇人弃宗庙礼，废其嗣。",
+      "annotated": "<p>太后</p>闻之，以为王用妇人弃<sys>宗庙</sys>礼，废其嗣。"
+    },
+    {
+      "pid": "28.1",
+      "text": "宣平侯张敖卒，以子偃为鲁王，敖赐谥为鲁元王。",
+      "annotated": "<off>宣平侯</off><p>张敖</p><vpol>卒</vpol>，以<role>子</role><p name=\"张偃\">偃</p>为<off>鲁王</off>，<p name=\"张敖\">敖</p>赐<vpol>谥</vpol>为<p>鲁元王</p>。"
+    },
+    {
+      "pid": "28.2",
+      "text": "秋，太后使使告代王，欲徙王赵。代王谢，原守代边。",
+      "annotated": "<time>秋</time>，<p>太后</p>使使告<off>代王</off>，欲徙王<state>赵</state>。<off>代王</off>谢，原守<state>代</state>边。"
+    },
+    {
+      "pid": "29.1",
+      "text": "太傅产、丞相平等言，武信侯吕禄上侯，位次第一，请立为赵王。",
+      "annotated": "<off>太傅</off><p name=\"吕产\">产</p>、<off>丞相</off><p name=\"陈平\">平</p>等言，<off>武信侯</off><p>吕禄</p>上侯，位次第一，请<vpol>立</vpol>为<off>赵王</off>。"
+    },
+    {
+      "pid": "29.2",
+      "text": "太后许之，追尊禄父康侯为赵昭王。",
+      "annotated": "<p>太后</p>许之，追<vpol>尊</vpol><p name=\"吕禄\">禄</p><role>父</role><p>康侯</p>为<p>赵昭王</p>。"
+    },
+    {
+      "pid": "29.3",
+      "text": "九月，燕灵王建薨，有美人子，太后使人杀之，无後，国除。",
+      "annotated": "<time>九月</time>，<p>燕灵王</p><p name=\"刘建\">建</p><vpol>薨</vpol>，有<role>美人</role><role>子</role>，<p>太后</p>使人<vact>杀</vact>之，无後，<vpol>国除</vpol>。"
+    },
+    {
+      "pid": "29.4",
+      "text": "八年十月，立吕肃王子东平侯吕通为燕王，封通弟吕庄为东平侯。",
+      "annotated": "<time>八年十月</time>，<vpol>立</vpol><off>吕肃王</off><role>子</role><off>东平侯</off><p>吕通</p>为<off>燕王</off>，<vpol>封</vpol><p name=\"吕通\">通</p><role>弟</role><p>吕庄</p>为<off>东平侯</off>。"
+    },
+    {
+      "pid": "30.1",
+      "text": "三月中，吕后祓，还过轵道，见物如苍犬，据高后掖，忽弗复见。",
+      "annotated": "<time>三月</time>中，<p>吕后</p>祓，还过<loc>轵道</loc>，见物如<bio>苍犬</bio>，据<p>高后</p>掖，忽弗复见。"
+    },
+    {
+      "pid": "30.2",
+      "text": "卜之，云赵王如意为祟。",
+      "annotated": "卜之，云<off>赵王</off><p>如意</p>为祟。"
+    },
+    {
+      "pid": "30.3",
+      "text": "高后遂病掖伤。",
+      "annotated": "<p>高后</p>遂病掖伤。"
+    },
+    {
+      "pid": "31.1",
+      "text": "高后为外孙鲁元王偃年少，蚤失父母，孤弱，乃封张敖前姬两子，侈为新都侯，寿为乐昌侯，以辅鲁元王偃。",
+      "annotated": "<p>高后</p>为<role>外孙</role><p>鲁元王</p><p name=\"张偃\">偃</p>年少，蚤失<role>父母</role>，孤弱，乃<vpol>封</vpol><p>张敖</p><role>前姬</role><role>两子</role>，<p name=\"张侈\">侈</p>为<off>新都侯</off>，<p name=\"贾寿\">寿</p>为<off>乐昌侯</off>，以辅<p>鲁元王</p><p name=\"张偃\">偃</p>。"
+    },
+    {
+      "pid": "31.2",
+      "text": "及封中大谒者张释为建陵侯，吕荣为祝兹侯。",
+      "annotated": "及<vpol>封</vpol><off>中大谒者</off><p>张释</p>为<off>建陵侯</off>，<p>吕荣</p>为<off>祝兹侯</off>。"
+    },
+    {
+      "pid": "31.3",
+      "text": "诸中宦者令丞皆为关内侯，食邑五百户。",
+      "annotated": "诸<off>中宦者</off>令丞皆为<off>关内侯</off>，<vpol>食邑</vpol><qty>五百户</qty>。"
+    },
+    {
+      "pid": "32.1",
+      "text": "七月中，高后病甚，乃令赵王吕禄为上将军，军北军；吕王产居南军。",
+      "annotated": "<time>七月</time>中，<p>高后</p>病甚，乃令<off>赵王</off><p>吕禄</p>为<off>上将军</off>，军<off>北军</off>；<off>吕王</off><p name=\"吕产\">产</p>居南军。"
+    },
+    {
+      "pid": "32.2",
+      "text": "吕太后诫产、禄曰： “高帝已定天下，与大臣约，曰‘非刘氏王者，天下共击之’。今吕氏王，大臣弗平。我即崩，帝年少，大臣恐为变。必据兵卫宫，慎毋送丧，毋为人所制。”",
+      "annotated": "<p>吕太后</p>诫<p name=\"吕产\">产</p>、<p name=\"吕禄\">禄</p>曰： “<p>高帝</p>已定<idea>天下</idea>，与<role>大臣</role>约，曰‘非<clan>刘氏</clan><role>王者</role>，<idea>天下</idea>共击之’。今<clan>吕氏</clan>王，<role>大臣</role>弗平。我即<vpol>崩</vpol>，帝年少，<role>大臣</role>恐为变。必据兵卫宫，慎毋送丧，毋为人所制。”"
+    },
+    {
+      "pid": "32.3",
+      "text": "辛巳，高后崩，遗诏赐诸侯王各千金，将相列侯郎吏皆以秩赐金。",
+      "annotated": "<time>辛巳</time>，<p>高后</p><vpol>崩</vpol>，遗诏赐<role>诸侯王</role>各<art>千金</art>，<role>将相</role><role>列侯</role>郎吏皆以秩<vpol>赐</vpol><art>金</art>。"
+    },
+    {
+      "pid": "32.4",
+      "text": "大赦天下。以吕王产为相国，以吕禄女为帝后。",
+      "annotated": "<law>大赦</law><idea>天下</idea>。以<off>吕王</off><p name=\"吕产\">产</p>为<off>相国</off>，以<p>吕禄</p><role>女</role>为<role>帝后</role>。"
+    },
+    {
+      "pid": "33",
+      "text": "高后已葬，以左丞相审食其为帝太傅。",
+      "annotated": "<p>高后</p>已葬，以<off>左丞相</off><p>审食其</p>为<off>帝太傅</off>。"
+    },
+    {
+      "pid": "34.1",
+      "text": "硃虚侯刘章有气力，东牟侯兴居其弟也。皆齐哀王弟，居长安。",
+      "annotated": "<off>硃虚侯</off><p>刘章</p>有气力，<off>东牟侯</off><p>兴居</p>其<role>弟</role>也。皆<p>齐哀王</p><role>弟</role>，居<loc>长安</loc>。"
+    },
+    {
+      "pid": "34.2",
+      "text": "当是时，诸吕用事擅权，欲为乱，畏高帝故大臣绛、灌等，未敢发。",
+      "annotated": "当是时，诸<clan>吕</clan>用事擅权，欲为乱，畏<p>高帝</p>故<role>大臣</role><p name=\"周勃\">绛</p>、<p name=\"灌婴\">灌</p>等，未敢发。"
+    },
+    {
+      "pid": "34.3",
+      "text": "硃虚侯妇，吕禄女，阴知其谋。恐见诛，乃阴令人告其兄齐王，欲令发兵西，诛诸吕而立。",
+      "annotated": "<off>硃虚侯</off><role>妇</role>，<p>吕禄</p><role>女</role>，阴知其谋。恐见<vact>诛</vact>，乃阴令人告其<role>兄</role><off>齐王</off>，欲令发兵西，<vact>诛</vact>诸<clan>吕</clan>而立。"
+    },
+    {
+      "pid": "34.4",
+      "text": "硃虚侯欲从中与大臣为应。",
+      "annotated": "<off>硃虚侯</off>欲从中与<role>大臣</role>为应。"
+    },
+    {
+      "pid": "35.1",
+      "text": "齐王欲发兵，其相弗听。",
+      "annotated": "<off>齐王</off>欲发兵，其相弗听。"
+    },
+    {
+      "pid": "35.2",
+      "text": "八月丙午，齐王欲使人诛相，相召平乃反，举兵欲围王，王因杀其相，遂发兵东，诈夺琅邪王兵，并将之而西。",
+      "annotated": "<time>八月丙午</time>，<off>齐王</off>欲使人<vact>诛</vact>相，相<p>召平</p>乃反，举兵欲围王，王因<vact>杀</vact>其相，遂发兵东，诈夺<off>琅邪王</off>兵，并将之而西。"
+    },
+    {
+      "pid": "35.3",
+      "text": "语在齐王语中。",
+      "annotated": "语在<off>齐王</off>语中。"
+    },
+    {
+      "pid": "36.1",
+      "text": "齐王乃遗诸侯王书曰： ::: 齐王檄文 “高帝平定天下，王诸子弟，悼惠王王齐。悼惠王薨，孝惠帝使留侯良立臣为齐王。孝惠崩，高后用事，春秋高，听诸吕，擅废帝更立，又比杀三赵王，⟦◈灭⟧梁、赵、燕以王诸吕，分齐为四。忠臣进谏，上惑乱弗听。今高后崩，而帝春秋富，未能治天下，固恃大臣诸侯。而诸吕又擅自尊官，聚兵严威，劫列侯忠臣，矫制以令天下，宗庙所以危。寡人率兵入诛不当为王者。” :::",
+      "annotated": "<off>齐王</off>乃遗<role>诸侯王</role>书曰： ::: 齐王檄文 “<p>高帝</p>平定<idea>天下</idea>，<vpol>王</vpol><role>诸子</role><role>弟</role>，<p>悼惠王</p><vpol>王</vpol><state>齐</state>。<p>悼惠王</p><vpol>薨</vpol>，<p>孝惠帝</p>使<off>留侯</off><p name=\"张良\">良</p>立臣为<off>齐王</off>。<p>孝惠</p><vpol>崩</vpol>，<p>高后</p>用事，春秋高，听诸<clan>吕</clan>，擅<vact>废</vact>帝更<vpol>立</vpol>，又比<vact>杀</vact>三<off>赵王</off>，⟦◈灭⟧<state>梁</state>、<state>赵</state>、<state>燕</state>以<vpol>王</vpol>诸<clan>吕</clan>，分<state>齐</state>为四。<role>忠臣</role>进谏，上惑乱弗听。今<p>高后</p><vpol>崩</vpol>，而帝春秋富，未能治<idea>天下</idea>，固恃<role>大臣</role><role>诸侯</role>。而诸<clan>吕</clan>又擅自尊官，聚兵严威，劫<role>列侯</role><role>忠臣</role>，矫制以令<idea>天下</idea>，<sys>宗庙</sys>所以危。<role>寡人</role>率兵入<vact>诛</vact>不当为<role>王者</role>。” :::"
+    },
+    {
+      "pid": "37.1",
+      "text": "汉闻之，相国吕产等乃遣颍阴侯灌婴将兵击之。",
+      "annotated": "<state>汉</state>闻之，<off>相国</off><p>吕产</p>等乃遣<off>颍阴侯</off><p>灌婴</p>将兵击之。"
+    },
+    {
+      "pid": "37.2",
+      "text": "灌婴至荥阳，乃谋曰： “诸吕权兵关中，欲危刘氏而自立。今我⟦◈破⟧齐还报，此益吕氏之资也。”",
+      "annotated": "<p>灌婴</p>至<loc>荥阳</loc>，乃谋曰： “诸<clan>吕</clan>权兵<loc>关中</loc>，欲危<clan>刘氏</clan>而<vpol>自立</vpol>。今我⟦◈破⟧<state>齐</state>还报，此益<clan>吕氏</clan>之资也。”"
+    },
+    {
+      "pid": "37.3",
+      "text": "乃留屯荥阳，使使谕齐王及诸侯，与连和，以待吕氏变，共诛之。",
+      "annotated": "乃留屯<loc>荥阳</loc>，使使谕<off>齐王</off>及<role>诸侯</role>，与连和，以待<clan>吕氏</clan>变，共<vact>诛</vact>之。"
+    },
+    {
+      "pid": "37.4",
+      "text": "齐王闻之，乃还兵西界待约。",
+      "annotated": "<off>齐王</off>闻之，乃还兵西界待约。"
+    },
+    {
+      "pid": "38.1",
+      "text": "吕禄、吕产欲发乱关中，内惮绛侯、硃虚等，外畏齐、楚兵，又恐灌婴畔之，欲待灌婴兵与齐合而发，犹豫未决。",
+      "annotated": "<p>吕禄</p>、<p>吕产</p>欲发乱<loc>关中</loc>，内惮<off>绛侯</off>、<p>硃虚</p>等，外畏<state>齐</state>、<state>楚</state>兵，又恐<p>灌婴</p>畔之，欲待<p>灌婴</p>兵与<state>齐</state>合而发，<idiom>犹豫未决</idiom>。"
+    },
+    {
+      "pid": "38.2",
+      "text": "当是时，济川王太、淮阳王武、常山王朝名为少帝弟，及鲁元王吕后外孙，皆年少未之国，居长安。",
+      "annotated": "当是时，<off>济川王</off><p name=\"刘太\">太</p>、<off>淮阳王</off><p name=\"刘武\">武</p>、<off>常山王</off><p name=\"刘朝\">朝</p>名为<role>少帝</role><role>弟</role>，及<p>鲁元王</p><p>吕后</p><role>外孙</role>，皆年少未<vpol>之国</vpol>，居<loc>长安</loc>。"
+    },
+    {
+      "pid": "38.3",
+      "text": "赵王禄、梁王产各将兵居南北军，皆吕氏之人。列侯群臣莫自坚其命。",
+      "annotated": "<off>赵王</off><p name=\"吕禄\">禄</p>、<off>梁王</off><p name=\"吕产\">产</p>各将兵居南<off>北军</off>，皆<clan>吕氏</clan>之人。<role>列侯</role><role>群臣</role>莫自坚其命。"
+    },
+    {
+      "pid": "39.1",
+      "text": "太尉绛侯勃不得入军中主兵。",
+      "annotated": "<off>太尉</off><off>绛侯</off><p name=\"周勃\">勃</p>不得入军中主兵。"
+    },
+    {
+      "pid": "39.2",
+      "text": "曲周侯郦商老病，其子寄与吕禄善。",
+      "annotated": "<off>曲周侯</off><p>郦商</p>老病，其<role>子</role><p name=\"郦寄\">寄</p>与<p>吕禄</p>善。"
+    },
+    {
+      "pid": "39.3",
+      "text": "绛侯乃与丞相陈平谋，使人劫郦商。",
+      "annotated": "<off>绛侯</off>乃与<off>丞相</off><p>陈平</p>谋，使人劫<p>郦商</p>。"
+    },
+    {
+      "pid": "39.4",
+      "text": "令其子寄往绐说吕禄曰： “高帝与吕后共定天下，刘氏所立九王，吕氏所立三王，皆大臣之议，事已布告诸侯，诸侯皆以为宜。今太后崩，帝少，而足下佩赵王印，不急之国守籓，乃为上将，将兵留此，为大臣诸侯所疑。足下何不归印，以兵属太尉？请梁王归相国印，与大臣盟而之国，齐兵必罢，大臣得安，足下高枕而王千里，此万世之利也。”",
+      "annotated": "令其<role>子</role><p name=\"郦寄\">寄</p>往绐说<p>吕禄</p>曰： “<p>高帝</p>与<p>吕后</p>共定<idea>天下</idea>，<clan>刘氏</clan>所立九王，<clan>吕氏</clan>所立<state>三王</state>，皆<role>大臣</role>之议，事已布告<role>诸侯</role>，<role>诸侯</role>皆以为宜。今<p>太后</p><vpol>崩</vpol>，帝少，而足下佩<off>赵王</off><art>印</art>，不急之国守籓，乃为<off>上将</off>，将兵留此，为<role>大臣</role><role>诸侯</role>所疑。足下何不归<art>印</art>，以兵属<off>太尉</off>？请<off>梁王</off>归<off>相国</off><art>印</art>，与<role>大臣</role>盟而<vpol>之国</vpol>，<state>齐</state>兵必罢，<role>大臣</role>得安，足下高枕而王<qty>千里</qty>，此万世之利也。”"
+    },
+    {
+      "pid": "40.1",
+      "text": "吕禄信然其计，欲归将印，以兵属太尉。",
+      "annotated": "<p>吕禄</p>信然其计，欲归<off>将</off><art>印</art>，以兵属<off>太尉</off>。"
+    },
+    {
+      "pid": "40.2",
+      "text": "使人报吕产及诸吕老人，或以为便，或曰不便，计犹豫未有所决。",
+      "annotated": "使人报<p>吕产</p>及诸<clan>吕</clan><astro>老人</astro>，或以为便，或曰不便，计犹豫未有所决。"
+    },
+    {
+      "pid": "40.3",
+      "text": "吕禄信郦寄，时与出游猎。",
+      "annotated": "<p>吕禄</p>信<p>郦寄</p>，时与出游猎。"
+    },
+    {
+      "pid": "40.4",
+      "text": "过其姑吕嬃，嬃大怒，曰： “若为将而弃军，吕氏今无处矣。”",
+      "annotated": "过其<role>姑</role><p>吕嬃</p>，<p name=\"吕嬃\">嬃</p>大怒，曰： “若为<off>将</off>而弃军，<clan>吕氏</clan>今无处矣。”"
+    },
+    {
+      "pid": "40.5",
+      "text": "乃悉出珠玉宝器散堂下，曰： “毋为他人守也”",
+      "annotated": "乃悉出<art>珠</art><art>玉</art><art>宝器</art>散堂下，曰： “毋为他人守也”"
+    },
+    {
+      "pid": "41",
+      "text": "左丞相食其免。",
+      "annotated": "<off>左丞相</off><p>食其</p>免。"
+    },
+    {
+      "pid": "42.1",
+      "text": "八月庚申旦，平阳侯窋行御史大夫事，见相国产计事。",
+      "annotated": "<time>八月庚申</time>旦，<off>平阳侯</off><p name=\"曹窋\">窋</p>行<off>御史大夫</off>事，见<off>相国</off><p name=\"吕产\">产</p>计事。"
+    },
+    {
+      "pid": "42.2",
+      "text": "郎中令贾寿使从齐来，因数产曰： “王不蚤之国，今虽欲行，尚可得邪？”",
+      "annotated": "<off>郎中令</off><p>贾寿</p>使从<state>齐</state>来，因数<p name=\"吕产\">产</p>曰： “王不蚤<vpol>之国</vpol>，今虽欲行，尚可得邪？”"
+    },
+    {
+      "pid": "42.3",
+      "text": "具以灌婴与齐楚合从，欲诛诸吕告产，乃趣产急入宫。",
+      "annotated": "具以<p>灌婴</p>与<state>齐</state><state>楚</state><sys>合从</sys>，欲<vact>诛</vact>诸<clan>吕</clan>告<p name=\"吕产\">产</p>，乃趣<p name=\"吕产\">产</p>急入宫。"
+    },
+    {
+      "pid": "43.1",
+      "text": "平阳侯颇闻其语，乃驰告丞相、太尉。",
+      "annotated": "<off>平阳侯</off>颇闻其语，乃驰告<off>丞相</off>、<off>太尉</off>。"
+    },
+    {
+      "pid": "43.2",
+      "text": "太尉欲入北军，不得入。襄平侯通尚符节。",
+      "annotated": "<off>太尉</off>欲入<off>北军</off>，不得入。<off>襄平侯</off><p name=\"吕通\">通</p>尚<art>符节</art>。"
+    },
+    {
+      "pid": "43.3",
+      "text": "乃令持节矫内太尉北军。",
+      "annotated": "乃令持<art>节</art>矫内<off>太尉</off><off>北军</off>。"
+    },
+    {
+      "pid": "43.4",
+      "text": "太尉复令郦寄与典客刘揭先说吕禄曰： “帝使太尉守北军，欲足下之国，急归将印辞去，不然，祸且起。”",
+      "annotated": "<off>太尉</off>复令<p>郦寄</p>与<off>典客</off><p>刘揭</p>先说<p>吕禄</p>曰： “帝使<off>太尉</off>守<off>北军</off>，欲足下<vpol>之国</vpol>，急归<off>将</off><art>印</art>辞去，不然，祸且起。”"
+    },
+    {
+      "pid": "43.5",
+      "text": "吕禄以为郦兄不欺己，遂解印属典客，而以兵授太尉。",
+      "annotated": "<p>吕禄</p>以为<p name=\"郦寄\">郦</p><role>兄</role>不欺己，遂解<art>印</art>属<off>典客</off>，而以兵授<off>太尉</off>。"
+    },
+    {
+      "pid": "44.1",
+      "text": "太尉将之入军门，行令军中曰： “为吕氏右襢，为刘氏左襢。”",
+      "annotated": "<off>太尉</off>将之入军门，行令军中曰： “为<clan>吕氏</clan>右襢，为<clan>刘氏</clan>左襢。”"
+    },
+    {
+      "pid": "44.2",
+      "text": "军中皆左襢为刘氏。",
+      "annotated": "军中皆左襢为<clan>刘氏</clan>。"
+    },
+    {
+      "pid": "44.3",
+      "text": "太尉行至，将军吕禄亦已解上将印去，太尉遂将北军。",
+      "annotated": "<off>太尉</off>行至，<off>将军</off><p>吕禄</p>亦已解<off>上将</off><art>印</art>去，<off>太尉</off>遂将<off>北军</off>。"
+    },
+    {
+      "pid": "45.1",
+      "text": "然尚有南军。",
+      "annotated": "然尚有南军。"
+    },
+    {
+      "pid": "45.2",
+      "text": "平阳侯闻之，以吕产谋告丞相平，丞相平乃召硃虚侯佐太尉。",
+      "annotated": "<off>平阳侯</off>闻之，以<p>吕产</p>谋告<off>丞相</off><p name=\"陈平\">平</p>，<off>丞相</off><p name=\"陈平\">平</p>乃召<off>硃虚侯</off>佐<off>太尉</off>。"
+    },
+    {
+      "pid": "45.3",
+      "text": "太尉令硃虚侯监军门。令平阳侯告卫尉： “毋入相国产殿门。”",
+      "annotated": "<off>太尉</off>令<off>硃虚侯</off>监军门。令<off>平阳侯</off>告<off>卫尉</off>： “毋入<off>相国</off><p name=\"吕产\">产</p>殿门。”"
+    },
+    {
+      "pid": "46.1",
+      "text": "吕产不知吕禄已去北军，乃入未央宫，欲为乱，殿门弗得入，裴回往来。",
+      "annotated": "<p>吕产</p>不知<p>吕禄</p>已去<off>北军</off>，乃入<loc>未央宫</loc>，欲为乱，殿门弗得入，裴回往来。"
+    },
+    {
+      "pid": "46.2",
+      "text": "平阳侯恐弗胜，驰语太尉。",
+      "annotated": "<off>平阳侯</off>恐弗胜，驰语<off>太尉</off>。"
+    },
+    {
+      "pid": "46.3",
+      "text": "太尉尚恐不胜诸吕，未敢讼言诛之，乃遣硃虚侯谓曰： “急入宫卫帝。”",
+      "annotated": "<off>太尉</off>尚恐不胜诸<clan>吕</clan>，未敢讼言<vact>诛</vact>之，乃遣<off>硃虚侯</off>谓曰： “急入宫卫帝。”"
+    },
+    {
+      "pid": "47.1",
+      "text": "硃虚侯请卒，太尉予卒千馀人。",
+      "annotated": "<off>硃虚侯</off>请卒，<off>太尉</off>予卒<qty>千馀人</qty>。"
+    },
+    {
+      "pid": "47.2",
+      "text": "入未央宫门，遂见产廷中。日餔时，遂⟦◈击⟧产。",
+      "annotated": "入<loc>未央宫</loc>门，遂见<p name=\"吕产\">产</p>廷中。日餔时，遂⟦◈击⟧<p name=\"吕产\">产</p>。"
+    },
+    {
+      "pid": "47.3",
+      "text": "产走，天风大起，以故其从官乱，莫敢斗。",
+      "annotated": "<p name=\"吕产\">产</p>走，天风大起，以故其从官乱，莫敢斗。"
+    },
+    {
+      "pid": "47.4",
+      "text": "逐产，杀之郎中府吏厕中。",
+      "annotated": "逐<p name=\"吕产\">产</p>，<vact>杀</vact>之<loc>郎中府</loc>吏厕中。"
+    },
+    {
+      "pid": "48.1",
+      "text": "硃虚侯已杀产，帝命谒者持节劳硃虚侯。",
+      "annotated": "<off>硃虚侯</off>已<vact>杀</vact><p name=\"吕产\">产</p>，帝命<off>谒者</off>持<art>节</art>劳<off>硃虚侯</off>。"
+    },
+    {
+      "pid": "48.2",
+      "text": "硃虚侯欲夺节信，谒者不肯，硃虚侯则从与载，因节信驰走，斩长乐卫尉吕更始。",
+      "annotated": "<off>硃虚侯</off>欲夺<art>节</art>信，<off>谒者</off>不肯，<off>硃虚侯</off>则从与载，因<art>节</art>信驰走，<vact>斩</vact><off>长乐卫尉</off><p>吕更始</p>。"
+    },
+    {
+      "pid": "48.3",
+      "text": "还，驰入北军，报太尉。",
+      "annotated": "还，驰入<off>北军</off>，报<off>太尉</off>。"
+    },
+    {
+      "pid": "48.4",
+      "text": "太尉起，拜贺硃虚侯曰： “所患独吕产，今已诛，天下定矣。”",
+      "annotated": "<off>太尉</off>起，拜贺<off>硃虚侯</off>曰： “所患独<p>吕产</p>，今已<vact>诛</vact>，<idea>天下</idea>定矣。”"
+    },
+    {
+      "pid": "48.5",
+      "text": "遂遣人分部悉捕诸吕男女，无少长皆斩之。",
+      "annotated": "遂遣人分部悉捕诸<clan>吕</clan><role>男女</role>，无<role>少长</role>皆<vact>斩</vact>之。"
+    },
+    {
+      "pid": "49.1",
+      "text": "辛酉，捕斩吕禄，而笞杀吕嬃。",
+      "annotated": "<time>辛酉</time>，捕<vact>斩</vact><p>吕禄</p>，而<vact>笞</vact><vact>杀</vact><p>吕嬃</p>。"
+    },
+    {
+      "pid": "49.2",
+      "text": "使人诛燕王吕通，而废鲁王偃。",
+      "annotated": "使人<vact>诛</vact><off>燕王</off><p>吕通</p>，而<vpol>废</vpol><off>鲁王</off><p name=\"张偃\">偃</p>。"
+    },
+    {
+      "pid": "49.3",
+      "text": "壬戌，以帝太傅食其复为左丞相。",
+      "annotated": "<time>壬戌</time>，以<off>帝太傅</off><p>食其</p>复为<off>左丞相</off>。"
+    },
+    {
+      "pid": "49.4",
+      "text": "戊辰，徙济川王王梁，立赵幽王子遂为赵王。",
+      "annotated": "<time>戊辰</time>，徙<off>济川王</off>王<state>梁</state>，<vpol>立</vpol><p>赵幽王</p><role>子</role><p name=\"刘遂\">遂</p>为<off>赵王</off>。"
+    },
+    {
+      "pid": "49.5",
+      "text": "遣硃虚侯章以诛诸吕氏事告齐王，令罢兵。",
+      "annotated": "遣<off>硃虚侯</off><p name=\"刘章\">章</p>以<vact>诛</vact>诸<clan>吕氏</clan>事告<off>齐王</off>，令罢兵。"
+    },
+    {
+      "pid": "49.6",
+      "text": "灌婴兵亦罢荥阳而归。",
+      "annotated": "<p>灌婴</p>兵亦<vpol>罢</vpol><loc>荥阳</loc>而归。"
+    },
+    {
+      "pid": "50.1",
+      "text": "诸大臣相与阴谋曰： “少帝及梁、淮阳、常山王，皆非真孝惠子也。吕后以计诈名他人子，杀其母，养後宫，令孝惠子之，立以为後，及诸王，以彊吕氏。今皆已夷⟦◈灭⟧诸吕，而置所立，即长用事，吾属无类矣。不如视诸王最贤者立之。”",
+      "annotated": "诸<role>大臣</role>相与阴谋曰： “<role>少帝</role>及<state>梁</state>、<state>淮阳</state>、<off>常山王</off>，皆非真<p>孝惠</p><role>子</role>也。<p>吕后</p>以计诈名他人<role>子</role>，<vact>杀</vact>其<role>母</role>，养後宫，令<p>孝惠</p>子之，立以为後，及诸王，以彊<clan>吕氏</clan>。今皆已夷⟦◈灭⟧诸<clan>吕</clan>，而置所立，即长用事，吾属无类矣。不如视诸王最贤者立之。”"
+    },
+    {
+      "pid": "50.2",
+      "text": "或言 “齐悼惠王高帝长子，今其適子为齐王，推本言之，高帝適长孙，可立也”。",
+      "annotated": "或言 “<p>齐悼惠王</p><p>高帝</p><role>长子</role>，今其<role>適子</role>为<off>齐王</off>，推本言之，<p>高帝</p><role>適长孙</role>，可立也”。"
+    },
+    {
+      "pid": "50.3",
+      "text": "大臣皆曰： “吕氏以外家恶而几危宗庙，乱功臣今齐王母家驷，驷钧，恶人也。即立齐王，则复为吕氏。”",
+      "annotated": "<role>大臣</role>皆曰： “<clan>吕氏</clan>以<role>外家</role>恶而几危<sys>宗庙</sys>，乱<role>功臣</role>今<off>齐王</off><role>母家</role><p name=\"驷钧\">驷</p>，<p name=\"驷钧\">驷</p>钧，恶人也。即立<off>齐王</off>，则复为<clan>吕氏</clan>。”"
+    },
+    {
+      "pid": "50.4",
+      "text": "欲立淮南王，以为少，母家又恶。",
+      "annotated": "欲<vpol>立</vpol><off>淮南王</off>，以为少，<role>母家</role>又恶。"
+    },
+    {
+      "pid": "50.5",
+      "text": "乃曰： “代王方今高帝见子，最长，仁孝宽厚。太后家薄氏谨良。且立长故顺，以仁孝闻於天下，便。”",
+      "annotated": "乃曰： “<off>代王</off>方今<p>高帝</p><role>见子</role>，最长，仁孝宽厚。<p>太后</p>家<clan>薄氏</clan>谨良。且立长故顺，以仁孝闻於<idea>天下</idea>，便。”"
+    },
+    {
+      "pid": "50.6",
+      "text": "乃相与共阴使人召代王。",
+      "annotated": "乃相与共阴使人召<off>代王</off>。"
+    },
+    {
+      "pid": "50.7",
+      "text": "代王使人辞谢。再反，然後乘六乘传。",
+      "annotated": "<off>代王</off>使人辞谢。再反，然後乘<qty>六乘</qty>传。"
+    },
+    {
+      "pid": "50.8",
+      "text": "後九月晦日己酉，至长安，舍代邸。",
+      "annotated": "<time name=\"高后八年闰九月晦日\">後九月晦日己酉</time>，至<loc>长安</loc>，舍<loc>代邸</loc>。"
+    },
+    {
+      "pid": "50.9",
+      "text": "大臣皆往谒，奉天子玺上代王，共尊立为天子。",
+      "annotated": "<role>大臣</role>皆往谒，奉<role>天子</role><art>玺</art>上<off>代王</off>，共尊<vpol>立</vpol>为<role>天子</role>。"
+    },
+    {
+      "pid": "50.10",
+      "text": "代王数让，群臣固请，然後听。",
+      "annotated": "<off>代王</off>数让，<role>群臣</role>固请，然後听。"
+    },
+    {
+      "pid": "51.1",
+      "text": "东牟侯兴居曰： “诛吕氏吾无功，请得除宫。”",
+      "annotated": "<off>东牟侯</off><p>兴居</p>曰： “<vact>诛</vact><clan>吕氏</clan>吾无功，请得除宫。”"
+    },
+    {
+      "pid": "51.2",
+      "text": "乃与太仆汝阴侯滕公入宫，前谓少帝曰： “足下非刘氏，不当立。”",
+      "annotated": "乃与<off>太仆</off><off>汝阴侯</off><p>滕公</p>入宫，前谓<role>少帝</role>曰： “足下非<clan>刘氏</clan>，不当立。”"
+    },
+    {
+      "pid": "51.3",
+      "text": "乃顾麾左右执戟者掊兵罢去。",
+      "annotated": "乃顾麾左右<off>执戟</off>者掊兵罢去。"
+    },
+    {
+      "pid": "51.4",
+      "text": "有数人不肯去兵，宦者令张泽谕告，亦去兵。",
+      "annotated": "有<qty>数人</qty>不肯去兵，<off>宦者令</off><p>张泽</p>谕告，亦去兵。"
+    },
+    {
+      "pid": "51.5",
+      "text": "滕公乃召乘舆车载少帝出。",
+      "annotated": "<p>滕公</p>乃召<art>乘舆</art>车载<role>少帝</role>出。"
+    },
+    {
+      "pid": "51.6",
+      "text": "少帝曰： “欲将我安之乎？”",
+      "annotated": "<role>少帝</role>曰： “欲将我安之乎？”"
+    },
+    {
+      "pid": "51.7",
+      "text": "滕公曰 “出就舍。”",
+      "annotated": "<p>滕公</p>曰 “出就舍。”"
+    },
+    {
+      "pid": "51.8",
+      "text": "舍少府。",
+      "annotated": "舍<off>少府</off>。"
+    },
+    {
+      "pid": "52.1",
+      "text": "乃奉天子法驾，迎代王於邸。报曰： “宫谨除。”",
+      "annotated": "乃奉<role>天子</role><art>法驾</art>，迎<off>代王</off>於邸。报曰： “宫谨除。”"
+    },
+    {
+      "pid": "52.2",
+      "text": "代王即夕入未央宫。",
+      "annotated": "<off>代王</off>即夕入<loc>未央宫</loc>。"
+    },
+    {
+      "pid": "52.3",
+      "text": "有谒者十人持戟卫端门，曰： “天子在也，足下何为者而入？”",
+      "annotated": "有<off>谒者</off><qty>十人</qty>持戟卫端门，曰： “<role>天子</role>在也，足下何为者而入？”"
+    },
+    {
+      "pid": "52.4",
+      "text": "代王乃谓太尉。太尉往谕，谒者十人皆掊兵而去。",
+      "annotated": "<off>代王</off>乃谓<off>太尉</off>。<off>太尉</off>往谕，<off>谒者</off><qty>十人</qty>皆掊兵而去。"
+    },
+    {
+      "pid": "52.5",
+      "text": "代王遂入而听政。",
+      "annotated": "<off>代王</off>遂入而听政。"
+    },
+    {
+      "pid": "52.6",
+      "text": "夜，有司分部诛⟦◈灭⟧梁、淮阳、常山王及少帝於邸。",
+      "annotated": "夜，<off>有司</off>分部<vact>诛</vact>⟦◈灭⟧<state>梁</state>、<state>淮阳</state>、<off>常山王</off>及<role>少帝</role>於邸。"
+    },
+    {
+      "pid": "53",
+      "text": "代王立为天子。二十三年崩，谥为孝文皇帝。 ::: 太史公曰",
+      "annotated": "<off>代王</off><vpol>立</vpol>为<role>天子</role>。<time name=\"时长\">二十三年</time><vpol>崩</vpol>，<vpol>谥</vpol>为<p name=\"汉文帝\">孝文皇帝</p>。 ::: 太史公曰"
+    },
+    {
+      "pid": "54",
+      "text": "太史公曰：孝惠皇帝、高后之时，黎民得离战国之苦，君臣俱欲休息乎无为，故惠帝垂拱，高后女主称制，政不出房户，天下晏然。 ::: ::: 赞",
+      "annotated": "<p>太史公</p>曰：<p>孝惠皇帝</p>、<p>高后</p>之时，<role>黎民</role>得离<state>战国</state>之苦，<role>君臣</role>俱欲休息乎<idea>无为</idea>，故<p>惠帝</p>垂拱，<p>高后</p>女主<sys>称制</sys>，政不出房户，<idiom>天下晏然</idiom>。 ::: ::: 赞"
+    },
+    {
+      "pid": "55",
+      "text": "刑罚罕用，罪人是希。 民务稼穑，衣食滋殖。 高祖犹微，吕氏作妃。 及正轩掖，潜用福威。 志怀安忍，性挟猜疑。 置鸩齐悼，残彘戚姬。 孝惠崩殒，其哭不悲。 诸吕用事，天下示私。 大臣菹醢，支孽芟夷。 祸盈斯验，苍狗为菑。 :::",
+      "annotated": "<sys>刑罚</sys>罕用，罪人是希。 民务稼穑，衣食滋殖。 <p>高祖</p>犹微，<clan>吕氏</clan>作妃。 及正轩掖，潜用福威。 志怀安忍，性挟猜疑。 置鸩<p name=\"齐悼惠王\">齐悼</p>，残彘<p>戚姬</p>。 <p>孝惠</p><vpol>崩</vpol>殒，其哭不悲。 诸<clan>吕</clan>用事，<idea>天下</idea>示私。 <role>大臣</role>菹醢，支孽芟夷。 祸盈斯验，<bio>苍狗</bio>为菑。 :::"
+    }
+  ]
+}

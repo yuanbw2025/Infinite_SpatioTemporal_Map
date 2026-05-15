@@ -1,0 +1,1246 @@
+{
+  "work": "史记",
+  "chapter": "秦本纪",
+  "chapter_file": "005_秦本纪",
+  "chapter_type": "本纪",
+  "source": "shiji-kb (CC BY-NC-SA 4.0, baojie@gmail.com)",
+  "paragraph_count_total": 247,
+  "paragraph_count_done": 247,
+  "paragraphs": [
+    {
+      "pid": "1",
+      "text": "秦之先，帝颛顼之苗裔孙曰女脩。女脩织，玄鸟陨卵，女脩吞之，生子大业。大业取少典之子，曰女华。女华生大费，与禹平水土。已成，帝锡玄圭。禹受曰：“非予能成，亦大费为辅。” 帝舜曰：“咨尔费，赞禹功，其赐尔皁游。尔後嗣将大出。” 乃妻之姚姓之玉女。大费拜受，佐舜调驯鸟兽，鸟兽多驯服，是为柏翳。舜赐姓嬴氏。",
+      "annotated": "<state>秦</state>之先，<p>帝颛顼</p>之苗裔孙曰<p>女脩</p>。<p>女脩</p>织，<bio>玄鸟</bio>陨卵，<p>女脩</p>吞之，生<role>子</role><p>大业</p>。<p>大业</p>取<p>少典</p>之<role>子</role>，曰<p>女华</p>。<p>女华</p>生<p>大费</p>，与<p>禹</p>平水土。已成，<p name=\"帝舜\">帝</p>锡<art>玄圭</art>。<p>禹</p>受曰：“非予能成，亦<p>大费</p>为辅。” <p>帝舜</p>曰：“咨尔<p name=\"大费\">费</p>，赞<p>禹</p>功，其赐尔<art>皁游</art>。尔後嗣将大出。” 乃妻之<clan>姚姓</clan>之<p>玉女</p>。<p>大费</p>拜受，佐<p>舜</p>调驯<bio>鸟兽</bio>，<bio>鸟兽</bio>多驯服，是为<p>柏翳</p>。<p>舜</p>赐姓<clan>嬴氏</clan>。"
+    },
+    {
+      "pid": "2",
+      "text": "大费生子二人：一曰大廉，实鸟俗氏；二曰若木，实费氏。 其玄孙曰费昌，子孙或在中国，或在夷狄。 费昌当夏桀之时，去夏归商，为汤御，以⟦◈败⟧桀於鸣条。 大廉玄孙曰孟戏、中衍，鸟身人言。 帝太戊闻而卜之使御，吉，遂致使御而妻之。 自太戊以下，中衍之後，遂世有功，以佐殷国，故嬴姓多显，遂为诸侯。",
+      "annotated": "<p>大费</p>生<role>子</role><qty>二人</qty>：一曰<p>大廉</p>，实<clan>鸟俗氏</clan>；二曰<p>若木</p>，实<clan>费氏</clan>。 其玄孙曰<p>费昌</p>，<role>子孙</role>或在<loc>中国</loc>，或在<tribe>夷狄</tribe>。 <p>费昌</p>当<state>夏</state><p>桀</p>之时，去<state>夏</state><law>归</law><state>商</state>，为<p>汤</p>御，以⟦◈败⟧<p>桀</p>於<loc>鸣条</loc>。 <p>大廉</p>玄孙曰<p>孟戏</p>、<p>中衍</p>，<bio>鸟</bio>身人言。 <p>帝太戊</p>闻而卜之使御，吉，遂致使御而妻之。 自<p>太戊</p>以下，<p>中衍</p>之後，遂世有功，以佐<state>殷</state>国，故<clan>嬴姓</clan>多显，遂为<role>诸侯</role>。"
+    },
+    {
+      "pid": "3",
+      "text": "其玄孙曰中潏，在西戎，保西垂。 生蜚廉。 蜚廉生恶来。 恶来有力，蜚廉善走，父子俱以材力事殷纣。 周武王之⟦◈伐⟧纣，并杀恶来。 是时蜚廉为纣石北方，还，无所报，为坛霍太山而报，得石棺，铭曰“帝令处父不与殷乱，赐尔石棺以华氏”。 死，遂葬於霍太山。 蜚廉复有子曰季胜。 季胜生孟增。 孟增幸於周成王，是为宅皋狼。 皋狼生衡父，衡父生造父。",
+      "annotated": "其玄孙曰<p>中潏</p>，在<tribe>西戎</tribe>，保<loc>西垂</loc>。 生<p>蜚廉</p>。 <p>蜚廉</p>生<p>恶来</p>。 <p>恶来</p>有力，<p>蜚廉</p>善走，<role>父子</role>俱以材力事<state>殷</state><p>纣</p>。 <p>周武王</p>之⟦◈伐⟧<p>纣</p>，并<vact>杀</vact><p>恶来</p>。 是时<p>蜚廉</p>为<p>纣</p>石<loc>北方</loc>，还，无所报，为坛<loc>霍太山</loc>而报，得<art>石棺</art>，铭曰“帝令处父不与<state>殷</state>乱，赐尔<art>石棺</art>以<clan>华氏</clan>”。 死，遂葬於<loc>霍太山</loc>。 <p>蜚廉</p>复有<role>子</role>曰<p>季胜</p>。 <p>季胜</p>生<p>孟增</p>。 <p>孟增</p>幸於<p>周成王</p>，是为<p name=\"皋狼\">宅皋狼</p>。 <p>皋狼</p>生<p>衡父</p>，<p>衡父</p>生<p>造父</p>。"
+    },
+    {
+      "pid": "3.1",
+      "text": "造父以善御幸於周缪王，得骥、温骊、骅緌、騄耳之驷，西巡狩，乐而忘归。徐偃王作乱，造父为缪王御，长驱归周，一日千里以救乱。缪王以赵城封造父，造父族由此为赵氏。自蜚廉生季胜已下五世至造父，别居赵。赵衰其後也。恶来革者，蜚廉子也，蚤死。有非子居犬丘，好马及畜，善养息之。犬丘人言之周孝王，孝王召使主马于汧渭之间，马大蕃息。",
+      "annotated": "<p>造父</p>以善御幸於<p>周缪王</p>，得<bio>骥</bio>、<bio>温骊</bio>、<bio>骅緌</bio>、<bio>騄耳</bio>之驷，西<sys>巡狩</sys>，乐而忘归。<p>徐偃王</p>作乱，<p>造父</p>为<p name=\"周缪王\">缪王</p>御，长驱归<state>周</state>，<time>一日</time><qty>千里</qty>以救乱。<p name=\"周缪王\">缪王</p>以<loc>赵城</loc><vpol>封</vpol><p>造父</p>，<p>造父</p>族由此为<clan>赵氏</clan>。自<p>蜚廉</p>生<p>季胜</p>已下<qty>五世</qty>至<p>造父</p>，别居<state>赵</state>。<p>赵衰</p>其後也。<p>恶来革</p>者，<p>蜚廉</p><role>子</role>也，蚤死。有<p>非子</p>居<loc>犬丘</loc>，好<bio>马</bio>及畜，善养息之。<loc>犬丘</loc>人言之<p>周孝王</p>，<p>孝王</p>召使主<bio>马</bio>于<loc>汧渭</loc>之间，<bio>马</bio>大蕃息。"
+    },
+    {
+      "pid": "3.2",
+      "text": "孝王欲以为大骆適嗣。申侯之女为大骆妻，生子成为適。申侯乃言孝王曰： “昔我先郦山之女，为戎胥轩妻，生中潏，以亲故归周，保西垂，西垂以其故和睦。今我复与大骆妻，生適子成。申骆重婚，西戎皆服，所以为王。王其图之。”",
+      "annotated": "<p>孝王</p>欲以为<p>大骆</p>適嗣。<p>申侯</p>之<role>女</role>为<p>大骆</p><role>妻</role>，生<role>子</role><p name=\"大骆子成\">成</p>为適。<p>申侯</p>乃言<p>孝王</p>曰： “昔我先<loc>郦山</loc>之<role>女</role>，为<tribe>戎</tribe><p>胥轩</p><role>妻</role>，生<p>中潏</p>，以亲故归<state>周</state>，保<loc>西垂</loc>，<loc>西垂</loc>以其故和睦。今我复与<p>大骆</p><role>妻</role>，生適<role>子</role><p name=\"大骆子成\">成</p>。<p name=\"申侯\">申</p><p name=\"大骆\">骆</p>重婚，<tribe>西戎</tribe>皆服，所以为王。王其图之。”"
+    },
+    {
+      "pid": "3.3",
+      "text": "於是孝王曰： “昔伯翳为舜主畜，畜多息，故有土，赐姓嬴。今其後世亦为朕息马，朕其分土为附庸。” 邑之秦，使复续嬴氏祀，号曰秦嬴。亦不废申侯之女子为骆適者，以和西戎。",
+      "annotated": "於是<p>孝王</p>曰： “昔<p>伯翳</p>为<p>舜</p>主畜，畜多息，故有土，赐姓<clan>嬴</clan>。今其後世亦为朕息<bio>马</bio>，朕其分土为附庸。” 邑之<state>秦</state>，使复续<clan>嬴氏</clan>祀，号曰<p>秦嬴</p>。亦不<vpol>废</vpol><p>申侯</p>之<role>女子</role>为<p name=\"大骆\">骆</p>適者，以和<tribe>西戎</tribe>。"
+    },
+    {
+      "pid": "4",
+      "text": "秦嬴生秦侯。秦侯立十年，卒。生公伯。",
+      "annotated": "<p>秦嬴</p>生<p>秦侯</p>。<p>秦侯</p>立<time name=\"时长\">十年</time>，卒。生<p>公伯</p>。"
+    },
+    {
+      "pid": "4.1",
+      "text": "公伯立三年，卒。生秦仲。",
+      "annotated": "<p>公伯</p>立<time name=\"时长\">三年</time>，卒。生<p>秦仲</p>。"
+    },
+    {
+      "pid": "5",
+      "text": "秦仲立三年，周厉王无道，诸侯或叛之。西戎反王室，⟦◈灭⟧犬丘大骆之族。周宣王即位，乃以秦仲为大夫，诛西戎。西戎杀秦仲。秦仲立二十三年，死於戎。有子五人，其长者曰庄公。周宣王乃召庄公昆弟五人，与兵七千人，使⟦◈伐⟧西戎，⟦◈破⟧之。於是复予秦仲後，及其先大骆地犬丘并有之，为西垂大夫。",
+      "annotated": "<p>秦仲</p>立<time name=\"时长\">三年</time>，<p>周厉王</p>无道，<role>诸侯</role>或叛之。<tribe>西戎</tribe>反王室，⟦◈灭⟧<loc>犬丘</loc><p>大骆</p>之族。<p>周宣王</p>即位，乃以<p>秦仲</p>为<role>大夫</role>，<vact>诛</vact><tribe>西戎</tribe>。<tribe>西戎</tribe><vact>杀</vact><p>秦仲</p>。<p>秦仲</p>立<time name=\"时长\">二十三年</time>，死於<tribe>戎</tribe>。有<role>子</role><qty>五人</qty>，其长者曰<p>庄公</p>。<p>周宣王</p>乃召<p>庄公</p><role>昆弟</role><qty>五人</qty>，与兵<qty>七千人</qty>，使⟦◈伐⟧<tribe>西戎</tribe>，⟦◈破⟧之。於是复予<p>秦仲</p>後，及其先<p>大骆</p>地<loc>犬丘</loc>并有之，为<off>西垂大夫</off>。"
+    },
+    {
+      "pid": "6",
+      "text": "庄公居其故西犬丘，生子三人，其长男世父。世父曰：“戎杀我大父仲，我非杀戎王则不敢入邑。” 遂将⟦◈击⟧戎，让其弟襄公。襄公为太子。庄公立四十四年，卒，太子襄公代立。",
+      "annotated": "<p>庄公</p>居其故<loc>西犬丘</loc>，生<role>子</role><qty>三人</qty>，其<role>长男</role><p>世父</p>。<p>世父</p>曰：“<tribe>戎</tribe><vact>杀</vact>我<role>大父</role><p name=\"秦仲\">仲</p>，我非<vact>杀</vact><tribe>戎</tribe>王则不敢入邑。” 遂将⟦◈击⟧<tribe>戎</tribe>，让其<role>弟</role><p>襄公</p>。<p>襄公</p>为<role>太子</role>。<p>庄公</p>立<time name=\"时长\">四十四年</time>，卒，<role>太子</role><p>襄公</p>代立。"
+    },
+    {
+      "pid": "6.1",
+      "text": "襄公元年，以女弟缪嬴为丰王妻。",
+      "annotated": "<p>襄公</p><time>元年</time>，以<role>女弟</role><p>缪嬴</p>为<p>丰王</p><role>妻</role>。"
+    },
+    {
+      "pid": "6.2",
+      "text": "襄公二年，戎⟦◈围⟧犬丘，世父⟦◈击⟧之，为戎人所⟦◈虏⟧。岁馀，复归世父。",
+      "annotated": "<p>襄公</p><time>二年</time>，<tribe>戎</tribe>⟦◈围⟧<loc>犬丘</loc>，<p>世父</p>⟦◈击⟧之，为<tribe>戎</tribe>人所⟦◈虏⟧。<time>岁馀</time>，复归<p>世父</p>。"
+    },
+    {
+      "pid": "6.3",
+      "text": "七年春，周幽王用襃姒废太子，立襃姒子为適，数欺诸侯，诸侯叛之。西戎犬戎与申侯⟦◈伐⟧周，杀幽王郦山下。而秦襄公将兵⟦◈救⟧周，⟦◈战⟧甚力，有功。周避犬戎难，东徙雒邑，襄公以兵送周平王。",
+      "annotated": "<time>七年</time><time>春</time>，<p>周幽王</p>用<p>襃姒</p>废<role>太子</role>，<vpol>立</vpol><p>襃姒</p><role>子</role>为適，数欺<role>诸侯</role>，<role>诸侯</role>叛之。<tribe>西戎</tribe><tribe>犬戎</tribe>与<p>申侯</p>⟦◈伐⟧<state>周</state>，<vact>杀</vact><p>幽王</p><loc>郦山</loc>下。而<p>秦襄公</p>将兵⟦◈救⟧<state>周</state>，⟦◈战⟧甚力，有功。<state>周</state>避<tribe>犬戎</tribe>难，东徙<loc>雒邑</loc>，<p>襄公</p>以兵送<p>周平王</p>。"
+    },
+    {
+      "pid": "6.4",
+      "text": "平王封襄公为诸侯，赐之岐以西之地。曰：“戎无道，侵夺我岐、丰之地，秦能⟦◈攻⟧逐戎，即有其地。” 与誓，封爵之。襄公於是始国，与诸侯通使聘享之礼，乃用緌驹、黄牛、羝羊各三，祠上帝西畤。十二年，⟦◈伐⟧戎而至岐，卒。生文公。",
+      "annotated": "<p name=\"周平王\">平王</p><vpol>封</vpol><p>襄公</p>为<role>诸侯</role>，赐之<loc>岐</loc>以西之地。曰：“<tribe>戎</tribe>无道，侵夺我<loc>岐</loc>、<loc>丰</loc>之地，<state>秦</state>能⟦◈攻⟧逐<tribe>戎</tribe>，即有其地。” 与誓，<vpol>封</vpol>爵之。<p>襄公</p>於是始国，与<role>诸侯</role>通使<sys>聘享</sys>之礼，乃用<art>緌驹</art>、<bio>黄牛</bio>、<bio>羝羊</bio>各三，祠<idea>上帝</idea><loc>西畤</loc>。<time>十二年</time>，⟦◈伐⟧<tribe>戎</tribe>而至<loc>岐</loc>，卒。生<p>文公</p>。"
+    },
+    {
+      "pid": "7",
+      "text": "文公元年，居西垂宫。",
+      "annotated": "<p>文公</p><time>元年</time>，居<loc>西垂宫</loc>。"
+    },
+    {
+      "pid": "7.2",
+      "text": "三年，文公以兵七百人东猎。",
+      "annotated": "<time>三年</time>，<p>文公</p>以兵<qty>七百人</qty>东猎。"
+    },
+    {
+      "pid": "7.3",
+      "text": "四年，至汧渭之会。曰：“昔周邑我先秦嬴於此，後卒获为诸侯。” 乃卜居之，占曰吉，即营邑之。",
+      "annotated": "<time>四年</time>，至<loc>汧渭</loc>之会。曰：“昔<state>周</state>邑我先<p>秦嬴</p>於此，後卒获为<role>诸侯</role>。” 乃卜居之，占曰吉，即营邑之。"
+    },
+    {
+      "pid": "7.4",
+      "text": "十年，初为鄜畤，用三牢。",
+      "annotated": "<time>十年</time>，初为<loc>鄜畤</loc>，用三牢。"
+    },
+    {
+      "pid": "7.5",
+      "text": "十三年，初有史以纪事，民多化者。",
+      "annotated": "<time>十三年</time>，初有<off>史</off>以纪事，民多化者。"
+    },
+    {
+      "pid": "7.6",
+      "text": "十六年，文公以兵⟦◈伐⟧戎，戎⟦◈败⟧走。於是文公遂收周馀民有之，地至岐，岐以东献之周。",
+      "annotated": "<time>十六年</time>，<p>文公</p>以兵⟦◈伐⟧<tribe>戎</tribe>，<tribe>戎</tribe>⟦◈败⟧走。於是<p>文公</p>遂收<state>周</state>馀民有之，地至<loc>岐</loc>，<loc>岐</loc>以东献之<state>周</state>。"
+    },
+    {
+      "pid": "7.7",
+      "text": "十九年，得陈宝。",
+      "annotated": "<time>十九年</time>，得<art>陈宝</art>。"
+    },
+    {
+      "pid": "7.8",
+      "text": "二十年，法初有三族之罪。",
+      "annotated": "<time>二十年</time>，法初有<law>三族之罪</law>。"
+    },
+    {
+      "pid": "7.9",
+      "text": "二十七年，⟦◈伐⟧南山大梓，丰大特。",
+      "annotated": "<time>二十七年</time>，⟦◈伐⟧<loc>南山</loc>大梓，丰大特。"
+    },
+    {
+      "pid": "7.10",
+      "text": "四十八年，文公太子卒，赐谥为竫公。竫为太子，是文公孙也。",
+      "annotated": "<time>四十八年</time>，<p>文公</p><role>太子</role><vpol>卒</vpol>，赐<vpol>谥</vpol>为<p>竫公</p>。<p name=\"竫公\">竫</p>为<role>太子</role>，是<p>文公</p><role>孙</role>也。"
+    },
+    {
+      "pid": "7.11",
+      "text": "五十年，文公卒，葬西山。竫公子立，是为宁公。",
+      "annotated": "<time>五十年</time>，<p>文公</p><vpol>卒</vpol>，葬<loc>西山</loc>。<p>竫公</p><role>子</role><vpol>立</vpol>，是为<p>宁公</p>。"
+    },
+    {
+      "pid": "8",
+      "text": "宁公二年，公徙居平阳。遣兵⟦◈伐⟧荡社。",
+      "annotated": "<p>宁公</p><time>二年</time>，公徙居<loc>平阳</loc>。遣兵⟦◈伐⟧<loc>荡社</loc>。"
+    },
+    {
+      "pid": "8.1",
+      "text": "三年，与亳⟦◈战⟧，亳王奔戎，遂⟦◈灭⟧荡社。",
+      "annotated": "<time>三年</time>，与<loc>亳</loc>⟦◈战⟧，<loc>亳</loc>王奔<tribe>戎</tribe>，遂⟦◈灭⟧<loc>荡社</loc>。"
+    },
+    {
+      "pid": "8.2",
+      "text": "四年，鲁公子翚弑其君隐公。",
+      "annotated": "<time>四年</time>，<state>鲁</state><p>公子翚</p><vact>弑</vact>其君<p>隐公</p>。"
+    },
+    {
+      "pid": "8.3",
+      "text": "十二年，⟦◈伐⟧荡氏，⟦◈取⟧之。宁公生十岁立，立十二年卒，葬西山。生子三人，长男武公为太子。武公弟德公，同母鲁姬子。生出子。宁公卒，大庶长弗忌、威垒、三父废太子而立出子为君。",
+      "annotated": "<time>十二年</time>，⟦◈伐⟧<loc>荡氏</loc>，⟦◈取⟧之。<p>宁公</p>生<time>十岁</time><vpol>立</vpol>，立<time name=\"时长\">十二年</time><vpol>卒</vpol>，葬<loc>西山</loc>。生<role>子</role><qty>三人</qty>，<role>长男</role><p>武公</p>为<role>太子</role>。<p>武公</p><role>弟</role><p>德公</p>，同<role>母</role><p>鲁姬</p><role>子</role>。生<p>出子</p>。<p>宁公</p><vpol>卒</vpol>，<off>大庶长</off><p>弗忌</p>、<p>威垒</p>、<p>三父</p>废<role>太子</role>而<vpol>立</vpol><p>出子</p>为君。"
+    },
+    {
+      "pid": "8.4",
+      "text": "出子六年，三父等复共令人贼杀出子。出子生五岁立，立六年卒。三父等乃复立故太子武公。",
+      "annotated": "<p>出子</p><time>六年</time>，<p>三父</p>等复共令人贼<vact>杀</vact><p>出子</p>。<p>出子</p>生<time>五岁</time><vpol>立</vpol>，立<time name=\"时长\">六年</time><vpol>卒</vpol>。<p>三父</p>等乃复立故<role>太子</role><p>武公</p>。"
+    },
+    {
+      "pid": "9",
+      "text": "武公元年，⟦◈伐⟧彭戏氏，至于华山下，居平阳封宫。",
+      "annotated": "<p>武公</p><time>元年</time>，⟦◈伐⟧<loc>彭戏氏</loc>，至于<loc>华山</loc>下，居<loc>平阳封宫</loc>。"
+    },
+    {
+      "pid": "9.1",
+      "text": "三年，诛三父等而夷三族，以其杀出子也。郑高渠眯杀其君昭公。",
+      "annotated": "<time>三年</time>，<vact>诛</vact><p>三父</p>等而<law>夷三族</law>，以其<vact>杀</vact><p>出子</p>也。<state>郑</state><p>高渠眯</p><vact>杀</vact>其君<p>昭公</p>。"
+    },
+    {
+      "pid": "9.2",
+      "text": "十年，⟦◈伐⟧邽、冀戎，初县之。",
+      "annotated": "<time>十年</time>，⟦◈伐⟧<loc>邽</loc>、<loc>冀戎</loc>，初县之。"
+    },
+    {
+      "pid": "9.3",
+      "text": "十一年，初县杜、郑。⟦◈灭⟧小虢。",
+      "annotated": "<time>十一年</time>，初县<loc>杜</loc>、<loc>郑</loc>。⟦◈灭⟧小<state>虢</state>。"
+    },
+    {
+      "pid": "10",
+      "text": "十三年，齐人管至父、连称等杀其君襄公而立公孙无知。晋⟦◈灭⟧霍、魏、耿。齐雍廪杀无知、管至父等而立齐桓公。齐、晋为彊国。",
+      "annotated": "<time>十三年</time>，<state>齐</state>人<p>管至父</p>、<p>连称</p>等<vact>杀</vact>其君<p name=\"齐襄公\">襄公</p>而<vpol>立</vpol><p>公孙无知</p>。<state>晋</state>⟦◈灭⟧<state>霍</state>、<state>魏</state>、<state>耿</state>。<state>齐</state><p>雍廪</p><vact>杀</vact><p>无知</p>、<p>管至父</p>等而<vpol>立</vpol><p>齐桓公</p>。<state>齐</state>、<state>晋</state>为彊国。"
+    },
+    {
+      "pid": "11",
+      "text": "十九年，晋曲沃始为晋侯。齐桓公伯於鄄。",
+      "annotated": "<time>十九年</time>，<state>晋</state><loc>曲沃</loc>始为<state>晋</state>侯。<p>齐桓公</p>伯於<loc>鄄</loc>。"
+    },
+    {
+      "pid": "12",
+      "text": "二十年，武公卒，葬雍平阳。初以人从死，从死者六十六人。有子一人，名曰白，白不立，封平阳。立其弟德公。",
+      "annotated": "<time>二十年</time>，<p>武公</p><vpol>卒</vpol>，葬<loc>雍平阳</loc>。初以人从死，从死者<qty>六十六人</qty>。有<role>子</role><qty>一人</qty>，名曰<p name=\"嬴白\">白</p>，<p name=\"嬴白\">白</p>不立，<vpol>封</vpol><loc>平阳</loc>。立其<role>弟</role><p>德公</p>。"
+    },
+    {
+      "pid": "13",
+      "text": "德公元年，初居雍城大郑宫。以牺三百牢祠鄜畤。卜居雍。後子孙饮马於河。梁伯、芮伯来朝。",
+      "annotated": "<p>德公</p><time>元年</time>，初居<loc>雍城大郑宫</loc>。以牺<qty>三百</qty>牢祠<loc>鄜畤</loc>。卜居<loc>雍</loc>。後子孙饮<bio>马</bio>於<loc>河</loc>。<p>梁伯</p>、<p>芮伯</p>来朝。"
+    },
+    {
+      "pid": "13.1",
+      "text": "二年，初伏，以狗御蛊。德公生三十三岁而立，立二年卒。生子三人：长子宣公，中子成公，少子缪公。长子宣公立。",
+      "annotated": "<time>二年</time>，初伏，以<bio>狗</bio>御蛊。<p>德公</p>生<qty>三十三岁</qty>而立，立<time name=\"时长\">二年</time><vpol>卒</vpol>。生<role>子</role><qty>三人</qty>：<role>长子</role><p>宣公</p>，<role>中子</role><p>成公</p>，<role>少子</role><p>缪公</p>。<role>长子</role><p>宣公</p><vpol>立</vpol>。"
+    },
+    {
+      "pid": "14",
+      "text": "宣公元年，卫、燕⟦◈伐⟧周，出惠王，立王子穨。",
+      "annotated": "<p>宣公</p><time>元年</time>，<state>卫</state>、<state>燕</state>⟦◈伐⟧<state>周</state>，出<p name=\"周惠王\">惠王</p>，<vpol>立</vpol><p name=\"子穨\">王子穨</p>。"
+    },
+    {
+      "pid": "14.1",
+      "text": "三年，郑伯、虢叔杀子穨而入惠王。",
+      "annotated": "<time>三年</time>，<p>郑伯</p>、<p>虢叔</p><vact>杀</vact><p>子穨</p>而入<p name=\"周惠王\">惠王</p>。"
+    },
+    {
+      "pid": "14.2",
+      "text": "四年，作密畤。与晋⟦◈战⟧河阳，胜之。",
+      "annotated": "<time>四年</time>，作<loc>密畤</loc>。与<state>晋</state>⟦◈战⟧<loc>河阳</loc>，胜之。"
+    },
+    {
+      "pid": "14.3",
+      "text": "十二年，宣公卒。生子九人，莫立，立其弟成公。",
+      "annotated": "<time>十二年</time>，<p>宣公</p><vpol>卒</vpol>。生<role>子</role><qty>九人</qty>，莫立，立其<role>弟</role><p>成公</p>。"
+    },
+    {
+      "pid": "15",
+      "text": "成公元年，梁伯、芮伯来朝。齐桓公⟦◈伐⟧山戎，次于孤竹。",
+      "annotated": "<p>成公</p><time>元年</time>，<p>梁伯</p>、<p>芮伯</p>来朝。<p>齐桓公</p>⟦◈伐⟧<tribe>山戎</tribe>，次于<loc>孤竹</loc>。"
+    },
+    {
+      "pid": "16",
+      "text": "成公立四年卒。子七人，莫立，立其弟缪公。",
+      "annotated": "<p>成公</p>立<time name=\"时长\">四年</time><vpol>卒</vpol>。<role>子</role><qty>七人</qty>，莫立，立其<role>弟</role><p>缪公</p>。"
+    },
+    {
+      "pid": "17",
+      "text": "缪公任好元年，自将⟦◈伐⟧茅津，胜之。",
+      "annotated": "<p>缪公</p>任好<time>元年</time>，自将⟦◈伐⟧<loc>茅津</loc>，胜之。"
+    },
+    {
+      "pid": "17.1",
+      "text": "四年，迎妇於晋，晋太子申生姊也。其岁，齐桓公⟦◈伐⟧楚，至邵陵。",
+      "annotated": "<time>四年</time>，迎<role>妇</role>於<state>晋</state>，<state>晋</state><role>太子</role><p>申生</p><role>姊</role>也。其<time>岁</time>，<p>齐桓公</p>⟦◈伐⟧<state>楚</state>，至<loc>邵陵</loc>。"
+    },
+    {
+      "pid": "18",
+      "text": "五年，晋献公⟦◈灭⟧虞、虢，⟦◈虏⟧虞君与其大夫百里傒，以璧马赂於虞故也。 既⟦◈虏⟧百里傒，以为秦缪公夫人媵於秦。 百里傒亡秦走宛，楚鄙人执之。 缪公闻百里傒贤，欲重赎之，恐楚人不与，乃使人谓楚曰：“吾媵臣百里傒在焉，请以五羖羊皮赎之。” 楚人遂许与之。 当是时，百里傒年已七十馀。 缪公释其囚，与语国事。 谢曰：“臣亡国之臣，何足问！” 缪公曰：“虞君不用子，故亡，非子罪也。” 固问，语三日，缪公大说，授之国政，号曰五羖大夫。",
+      "annotated": "<time>五年</time>，<p>晋献公</p>⟦◈灭⟧<state>虞</state>、<state>虢</state>，⟦◈虏⟧<state>虞</state>君与其<role>大夫</role><p>百里傒</p>，以<art>璧</art><bio>马</bio>赂於<state>虞</state>故也。 既⟦◈虏⟧<p>百里傒</p>，以为<p>秦缪公</p><role>夫人</role>媵於<state>秦</state>。 <p>百里傒</p>亡<state>秦</state>走<loc>宛</loc>，<state>楚</state>鄙人<vact>执</vact>之。 <p>缪公</p>闻<p>百里傒</p>贤，欲重赎之，恐<state>楚</state>人不与，乃使人谓<state>楚</state>曰：“吾媵臣<p>百里傒</p>在焉，请以五<art>羖羊皮</art>赎之。” <state>楚</state>人遂许与之。 当是时，<p>百里傒</p>年已<qty>七十馀</qty>。 <p>缪公</p>释其囚，与语国事。 谢曰：“臣亡国之臣，何足问！” <p>缪公</p>曰：“<state>虞</state>君不用子，故亡，非子罪也。” 固问，语<time>三日</time>，<p>缪公</p>大说，授之国政，号曰<p>五羖大夫</p>。"
+    },
+    {
+      "pid": "18.1",
+      "text": "百里傒让曰：“臣不及臣友蹇叔，蹇叔贤而世莫知。臣常游困於齐而乞食綍人，蹇叔收臣。臣因而欲事齐君无知，蹇叔止臣，臣得脱齐难，遂之周。周王子穨好牛，臣以养牛干之。及穨欲用臣，蹇叔止臣，臣去，得不诛。事虞君，蹇叔止臣。臣知虞君不用臣，臣诚私利禄爵，且留。再用其言，得脱，一不用，及虞君难：是以知其贤。” 於是缪公使人厚币迎蹇叔，以为上大夫。",
+      "annotated": "<p>百里傒</p>让曰：“臣不及臣友<p>蹇叔</p>，<p>蹇叔</p>贤而世莫知。臣常游困於<state>齐</state>而乞食綍人，<p>蹇叔</p>收臣。臣因而欲事<p>齐君无知</p>，<p>蹇叔</p>止臣，臣得脱<state>齐</state>难，遂之<state>周</state>。<state>周</state><p name=\"子穨\">王子穨</p>好<bio>牛</bio>，臣以养<bio>牛</bio>干之。及<p name=\"子穨\">穨</p>欲用臣，<p>蹇叔</p>止臣，臣去，得不<vact>诛</vact>。事<state>虞</state>君，<p>蹇叔</p>止臣。臣知<state>虞</state>君不用臣，臣诚私利禄爵，且留。再用其言，得脱，一不用，及<state>虞</state>君难：是以知其贤。” 於是<p>缪公</p>使人厚币迎<p>蹇叔</p>，以为<off>上大夫</off>。"
+    },
+    {
+      "pid": "19",
+      "text": "秋，缪公自将⟦◈伐⟧晋，⟦◈战⟧於河曲。晋骊姬作乱，太子申生死新城，重耳、夷吾出奔。",
+      "annotated": "<time>秋</time>，<p>缪公</p>自将⟦◈伐⟧<state>晋</state>，⟦◈战⟧於<loc>河曲</loc>。<state>晋</state><p>骊姬</p>作乱，<role>太子</role><p>申生</p>死<loc>新城</loc>，<p>重耳</p>、<p>夷吾</p>出奔。"
+    },
+    {
+      "pid": "20",
+      "text": "九年，齐桓公会诸侯於葵丘。",
+      "annotated": "<time>九年</time>，<p>齐桓公</p>会<role>诸侯</role>於<loc>葵丘</loc>。"
+    },
+    {
+      "pid": "21",
+      "text": "晋献公卒。立骊姬子奚齐，其臣里克杀奚齐。荀息立卓子，克又杀卓子及荀息。夷吾使人请秦，求入晋。於是缪公许之，使百里傒将兵送夷吾。夷吾谓曰：“诚得立，请割晋之河西八城与秦。” 及至，已立，而使丕郑谢秦，背约不与河西城，而杀里克。",
+      "annotated": "<p>晋献公</p><vpol>卒</vpol>。<vpol>立</vpol><p>骊姬</p><role>子</role><p>奚齐</p>，其臣<p>里克</p><vact>杀</vact><p>奚齐</p>。<p>荀息</p><vpol>立</vpol><p>卓子</p>，<p name=\"里克\">克</p>又<vact>杀</vact><p>卓子</p>及<p>荀息</p>。<p>夷吾</p>使人请<state>秦</state>，求入<state>晋</state>。於是<p>缪公</p>许之，使<p>百里傒</p>将兵送<p>夷吾</p>。<p>夷吾</p>谓曰：“诚得立，请割<state>晋</state>之<loc>河西</loc><qty>八城</qty>与<state>秦</state>。” 及至，已立，而使<p>丕郑</p>谢<state>秦</state>，背约不与<loc>河西</loc>城，而<vact>杀</vact><p>里克</p>。"
+    },
+    {
+      "pid": "21.1",
+      "text": "丕郑闻之，恐，因与缪公谋曰：“晋人不欲夷吾，实欲重耳。今背秦约而杀里克，皆吕甥、郤芮之计也。原君以利急召吕、郤，吕、郤至，则更入重耳便。” 缪公许之，使人与丕郑归，召吕、郤。吕、郤等疑丕郑有间，乃言夷吾杀丕郑。丕郑子丕豹奔秦，说缪公曰：“晋君无道，百姓不亲，可⟦◈伐⟧也。” 缪公曰：“百姓苟不便，何故能诛其大臣？能诛其大臣，此其调也。” 不听，而阴用豹。",
+      "annotated": "<p>丕郑</p>闻之，恐，因与<p>缪公</p>谋曰：“<state>晋</state>人不欲<p>夷吾</p>，实欲<p>重耳</p>。今背<state>秦</state>约而<vact>杀</vact><p>里克</p>，皆<p>吕甥</p>、<p>郤芮</p>之计也。原君以利急召<p name=\"吕礼\">吕</p>、<p name=\"郤芮\">郤</p>，<p name=\"吕礼\">吕</p>、<p name=\"郤芮\">郤</p>至，则更入<p>重耳</p>便。” <p>缪公</p>许之，使人与<p>丕郑</p>归，召<p name=\"吕礼\">吕</p>、<p name=\"郤芮\">郤</p>。<p name=\"吕礼\">吕</p>、<p name=\"郤芮\">郤</p>等疑<p>丕郑</p>有间，乃言<p>夷吾</p><vact>杀</vact><p>丕郑</p>。<p>丕郑</p><role>子</role><p>丕豹</p>奔<state>秦</state>，说<p>缪公</p>曰：“<state>晋</state>君无道，<role>百姓</role>不亲，可⟦◈伐⟧也。” <p>缪公</p>曰：“<role>百姓</role>苟不便，何故能<vact>诛</vact>其<role>大臣</role>？能<vact>诛</vact>其<role>大臣</role>，此其调也。” 不听，而阴用<p name=\"丕豹\">豹</p>。"
+    },
+    {
+      "pid": "22",
+      "text": "十二年，齐管仲、隰朋死。",
+      "annotated": "<time>十二年</time>，<state>齐</state><p>管仲</p>、<p>隰朋</p>死。"
+    },
+    {
+      "pid": "23",
+      "text": "晋旱，来请粟。丕豹说缪公勿与，因其饥而⟦◈伐⟧之。缪公问公孙支，支曰：“饥穰更事耳，不可不与。” 问百里傒，傒曰：“夷吾得罪於君，其百姓何罪？” 於是用百里傒、公孙支言，卒与之粟。以船漕车转，自雍相望至绛。",
+      "annotated": "<state>晋</state>旱，来请粟。<p>丕豹</p>说<p>缪公</p>勿与，因其饥而⟦◈伐⟧之。<p>缪公</p>问<p>公孙支</p>，<p name=\"公孙支\">支</p>曰：“饥穰更事耳，不可不与。” 问<p>百里傒</p>，<p name=\"百里傒\">傒</p>曰：“<p>夷吾</p>得罪於君，其<role>百姓</role>何罪？” 於是用<p>百里傒</p>、<p>公孙支</p>言，卒与之粟。以<art>船</art>漕<art>车</art>转，自<loc>雍</loc>相望至<loc>绛</loc>。"
+    },
+    {
+      "pid": "24",
+      "text": "十四年，秦饥，请粟於晋。晋君谋之群臣。虢射曰：“因其饥⟦◈伐⟧之，可有大功。” 晋君从之。",
+      "annotated": "<time>十四年</time>，<state>秦</state>饥，请粟於<state>晋</state>。<state>晋</state>君谋之<role>群臣</role>。<p>虢射</p>曰：“因其饥⟦◈伐⟧之，可有大功。” <state>晋</state>君从之。"
+    },
+    {
+      "pid": "24.1",
+      "text": "十五年，兴兵将⟦◈攻⟧秦。缪公发兵，使丕豹将，自往⟦◈击⟧之。九月壬戌，与晋惠公夷吾合⟦◈战⟧於韩地。晋君弃其军，与秦争利，还而马騺。缪公与麾下驰追之，不能得晋君，反为晋军所⟦◈围⟧。晋⟦◈击⟧缪公，缪公伤。於是岐下食善马者三百人驰冒晋军，晋军解⟦◈围⟧，遂脱缪公而反生得晋君。初，缪公亡善马，岐下野人共得而食之者三百馀人，吏逐得，欲法之。缪公曰：“君子不以畜产害人。吾闻食善马肉不饮酒，伤人。” 乃皆赐酒而赦之。三百人者闻秦⟦◈击⟧晋，皆求从，从而见缪公窘，亦皆推锋争死，以报食马之德。",
+      "annotated": "<time>十五年</time>，兴兵将⟦◈攻⟧<state>秦</state>。<p>缪公</p>发兵，使<p>丕豹</p>将，自往⟦◈击⟧之。<time>九月壬戌</time>，与<p>晋惠公</p><p>夷吾</p>合⟦◈战⟧於<loc>韩地</loc>。<state>晋</state>君弃其军，与<state>秦</state>争利，还而<bio>马</bio>騺。<p>缪公</p>与麾下驰追之，不能得<state>晋</state>君，反为<state>晋</state>军所⟦◈围⟧。<state>晋</state>⟦◈击⟧<p>缪公</p>，<p>缪公</p>伤。於是<loc>岐下</loc>食善<bio>马</bio>者<qty>三百人</qty>驰冒<state>晋</state>军，<state>晋</state>军解⟦◈围⟧，遂脱<p>缪公</p>而反生得<state>晋</state>君。初，<p>缪公</p>亡善<bio>马</bio>，<loc>岐下</loc><role>野人</role>共得而食之者<qty>三百馀人</qty>，吏逐得，欲法之。<p>缪公</p>曰：“<idea>君子</idea>不以畜产害人。吾闻食善<bio>马</bio>肉不饮酒，伤人。” 乃皆赐酒而<vact>赦</vact>之。<qty>三百人</qty>者闻<state>秦</state>⟦◈击⟧<state>晋</state>，皆求从，从而见<p>缪公</p>窘，亦皆推锋争死，以报食<bio>马</bio>之德。"
+    },
+    {
+      "pid": "24.2",
+      "text": "於是缪公虏晋君以归，令於国，齐宿，吾将以晋君祠上帝。周天子闻之，曰“晋我同姓”，为请晋君。夷吾姊亦为缪公夫人，夫人闻之，乃衰绖跣，曰：“妾兄弟不能相救，以辱君命。” 缪公曰：“我得晋君以为功，今天子为请，夫人是忧。” 乃与晋君盟，许归之，更舍上舍，而馈之七牢。十一月，归晋君夷吾，夷吾献其河西地，使太子圉为质於秦。秦妻子圉以宗女。是时秦地东至河。",
+      "annotated": "於是<p>缪公</p>虏<state>晋</state>君以归，令於国，齐宿，吾将以<state>晋</state>君祠<idea>上帝</idea>。<role>周天子</role>闻之，曰“<state>晋</state>我同姓”，为请<state>晋</state>君。<p>夷吾</p><role>姊</role>亦为<p>缪公</p><role>夫人</role>，<role>夫人</role>闻之，乃<art>衰绖</art>跣，曰：“<role>妾</role><role>兄弟</role>不能相救，以辱君命。” <p>缪公</p>曰：“我得<state>晋</state>君以为功，今<role>天子</role>为请，<role>夫人</role>是忧。” 乃与<state>晋</state>君盟，许归之，更舍上舍，而馈之<art>七牢</art>。<time>十一月</time>，归<state>晋</state>君<p>夷吾</p>，<p>夷吾</p>献其<loc>河西</loc>地，使<role>太子</role><p name=\"公子圉\">圉</p>为质於<state>秦</state>。<state>秦</state>妻<role>子</role><p name=\"公子圉\">圉</p>以<role>宗女</role>。是时<state>秦</state>地东至<loc>河</loc>。"
+    },
+    {
+      "pid": "25",
+      "text": "十八年，齐桓公卒。",
+      "annotated": "<time>十八年</time>，<p>齐桓公</p><vpol>卒</vpol>。"
+    },
+    {
+      "pid": "25.1",
+      "text": "二十年，秦灭梁、芮。",
+      "annotated": "<time>二十年</time>，<state>秦</state>灭<state>梁</state>、<state>芮</state>。"
+    },
+    {
+      "pid": "26",
+      "text": "二十二年，晋公子圉闻晋君病，曰：“梁，我母家也，而秦灭之。我兄弟多，即君百岁後，秦必留我，而晋轻，亦更立他子。” 子圉乃亡归晋。",
+      "annotated": "<time>二十二年</time>，<state>晋</state><p>公子圉</p>闻<state>晋</state>君病，曰：“<state>梁</state>，我<role>母家</role>也，而<state>秦</state>灭之。我<role>兄弟</role>多，即君<time>百岁</time>後，<state>秦</state>必留我，而<state>晋</state>轻，亦更立他<role>子</role>。” <role>子</role><p name=\"公子圉\">圉</p>乃亡归<state>晋</state>。"
+    },
+    {
+      "pid": "26.1",
+      "text": "二十三年，晋惠公卒，子圉立为君。秦怨圉亡去，乃迎晋公子重耳於楚，而妻以故子圉妻。重耳初谢，後乃受。缪公益礼厚遇之。",
+      "annotated": "<time>二十三年</time>，<p>晋惠公</p><vpol>卒</vpol>，<role>子</role><p name=\"公子圉\">圉</p>立为君。<state>秦</state>怨<p name=\"公子圉\">圉</p>亡去，乃迎<state>晋</state><role>公子</role><p>重耳</p>於<state>楚</state>，而妻以故<role>子</role><p name=\"公子圉\">圉</p><role>妻</role>。<p>重耳</p>初谢，後乃受。<p>缪公</p>益礼厚遇之。"
+    },
+    {
+      "pid": "26.2",
+      "text": "二十四年春，秦使人告晋大臣，欲入重耳。晋许之，於是使人送重耳。二月，重耳立为晋君，是为文公。文公使人杀子圉。子圉是为怀公。",
+      "annotated": "<time>二十四年</time><time>春</time>，<state>秦</state>使人告<state>晋</state><role>大臣</role>，欲入<p>重耳</p>。<state>晋</state>许之，於是使人送<p>重耳</p>。<time>二月</time>，<p>重耳</p>立为<state>晋</state>君，是为<p name=\"晋文公\">文公</p>。<p name=\"晋文公\">文公</p>使人杀<role>子</role><p name=\"公子圉\">圉</p>。<role>子</role><p name=\"公子圉\">圉</p>是为<p name=\"晋怀公\">怀公</p>。"
+    },
+    {
+      "pid": "27",
+      "text": "其秋，周襄王弟带以翟伐王，王出居郑。",
+      "annotated": "其<time>秋</time>，<p>周襄王</p><role>弟</role><p>带</p>以<tribe>翟</tribe>伐王，王出居<state>郑</state>。"
+    },
+    {
+      "pid": "27.1",
+      "text": "二十五年，周王使人告难於晋、秦。秦缪公将兵助晋文公入襄王，杀王弟带。",
+      "annotated": "<time>二十五年</time>，<off>周王</off>使人告难於<state>晋</state>、<state>秦</state>。<state>秦</state><p>缪公</p>将兵助<p>晋文公</p>入<p name=\"周襄王\">襄王</p>，杀<role>王弟</role><p>带</p>。"
+    },
+    {
+      "pid": "27.2",
+      "text": "二十八年，晋文公败楚於城濮。",
+      "annotated": "<time>二十八年</time>，<p>晋文公</p>败<state>楚</state>於<loc>城濮</loc>。"
+    },
+    {
+      "pid": "27.3",
+      "text": "三十年，缪公助晋文公围郑。郑使人言缪公曰：“亡郑厚晋，於晋而得矣，而秦未有利。晋之彊，秦之忧也。” 缪公乃罢兵归。晋亦罢。",
+      "annotated": "<time>三十年</time>，<p>缪公</p>助<p>晋文公</p>围<state>郑</state>。<state>郑</state>使人言<p>缪公</p>曰：“亡<state>郑</state>厚<state>晋</state>，於<state>晋</state>而得矣，而<state>秦</state>未有利。<state>晋</state>之彊，<state>秦</state>之忧也。” <p>缪公</p>乃罢兵归。<state>晋</state>亦罢。"
+    },
+    {
+      "pid": "27.4",
+      "text": "三十二年冬，晋文公卒。",
+      "annotated": "<time>三十二年</time><time>冬</time>，<p>晋文公</p><vpol>卒</vpol>。"
+    },
+    {
+      "pid": "28",
+      "text": "郑人有卖郑於秦曰：“我主其城门，郑可袭也。” 缪公问蹇叔、百里傒，对曰：“径数国千里而袭人，希有得利者。且人卖郑，庸知我国人不有以我情告郑者乎？不可。” 缪公曰：“子不知也，吾已决矣。” 遂发兵，使百里傒子孟明视，蹇叔子西乞术及白乙丙将兵。 行日，百里傒、蹇叔二人哭之。 缪公闻，怒曰：“孤发兵而子沮哭吾军，何也？” 二老曰：“臣非敢沮君军。军行，臣子与往；臣老，迟还恐不相见，故哭耳。” 二老退，谓其子曰：“汝军即败，必於殽厄矣。”",
+      "annotated": "<state>郑</state>人有卖<state>郑</state>於<state>秦</state>曰：“我主其城门，<state>郑</state>可袭也。” <p>缪公</p>问<p>蹇叔</p>、<p>百里傒</p>，对曰：“径数国<qty>千里</qty>而袭人，希有得利者。且人卖<state>郑</state>，庸知我<role>国人</role>不有以我情告<state>郑</state>者乎？不可。” <p>缪公</p>曰：“子不知也，吾已决矣。” 遂发兵，使<p>百里傒</p><role>子</role><p>孟明视</p>，<p>蹇叔</p><role>子</role><p>西乞术</p>及<p>白乙丙</p>将兵。 行<time>日</time>，<p>百里傒</p>、<p>蹇叔</p><qty>二人</qty>哭之。 <p>缪公</p>闻，怒曰：“<role>孤</role>发兵而子沮哭吾军，何也？” 二老曰：“臣非敢沮君军。军行，臣<role>子</role>与往；臣老，迟还恐不相见，故哭耳。” 二老退，谓其<role>子</role>曰：“汝军即败，必於<loc>殽厄</loc>矣。”"
+    },
+    {
+      "pid": "28.1",
+      "text": "三十三年春，秦兵遂东，更晋地，过周北门。 周王孙满曰：“秦师无礼，不败何待！” 兵至滑，郑贩卖贾人弦高，持十二牛将卖之周，见秦兵，恐死虏，因献其牛，曰：“闻大国将诛郑，郑君谨修守御备，使臣以牛十二劳军士。” 秦三将军相谓曰：“将袭郑，郑今已觉之，往无及已。” 灭滑。 滑，晋之边邑也。",
+      "annotated": "<time>三十三年</time><time>春</time>，<state>秦</state>兵遂东，更<state>晋</state>地，过<state>周</state><loc>北门</loc>。 <p>周王孙满</p>曰：“<state>秦</state>师无礼，不败何待！” 兵至<loc>滑</loc>，<state>郑</state><role>贩卖贾人</role><p>弦高</p>，持十二<bio>牛</bio>将卖之<state>周</state>，见<state>秦</state>兵，恐死虏，因献其<bio>牛</bio>，曰：“闻大国将诛<state>郑</state>，<state>郑</state>君谨修守御备，使臣以<bio>牛</bio>十二劳军士。” <state>秦</state>三将军相谓曰：“将袭<state>郑</state>，<state>郑</state>今已觉之，往无及已。” 灭<loc>滑</loc>。 <loc>滑</loc>，<state>晋</state>之边邑也。"
+    },
+    {
+      "pid": "29",
+      "text": "当是时，晋文公丧尚未葬。 太子襄公怒曰：“秦侮我孤，因丧破我滑。” 遂墨衰绖，发兵遮秦兵於殽，击之，大破秦军，无一人得脱者。 虏秦三将以归。 文公夫人，秦女也，为秦三囚将请曰：“缪公之怨此三人入於骨髓，原令此三人归，令我君得自快烹之。” 晋君许之，归秦三将。 三将至，缪公素服郊迎，乡三人哭曰：“孤以不用百里傒、蹇叔言以辱三子，三子何罪乎？子其悉心雪耻，毋怠。” 遂复三人官秩如故，愈益厚之。",
+      "annotated": "当是时，<p>晋文公</p>丧尚未葬。 <role>太子</role><p name=\"晋襄公\">襄公</p>怒曰：“<state>秦</state>侮我<role>孤</role>，因丧破我<loc>滑</loc>。” 遂墨<art>衰绖</art>，发兵遮<state>秦</state>兵於<loc>殽</loc>，击之，大破<state>秦</state>军，无<qty>一人</qty>得脱者。 虏<state>秦</state>三将以归。 <p name=\"晋文公\">文公</p><role>夫人</role>，<state>秦</state><role>女</role>也，为<state>秦</state>三囚将请曰：“<p>缪公</p>之怨此<qty>三人</qty>入於骨髓，原令此<qty>三人</qty>归，令我君得自快烹之。” <state>晋</state>君许之，归<state>秦</state>三将。 三将至，<p>缪公</p>素服郊迎，乡<qty>三人</qty>哭曰：“<role>孤</role>以不用<p>百里傒</p>、<p>蹇叔</p>言以辱三子，三子何罪乎？子其悉心雪耻，毋怠。” 遂复<qty>三人</qty>官秩如故，愈益厚之。"
+    },
+    {
+      "pid": "30",
+      "text": "三十四年，楚太子商臣弑其父成王代立。",
+      "annotated": "<time>三十四年</time>，<state>楚</state><role>太子</role><p>商臣</p>弑其<role>父</role><p name=\"楚成王\">成王</p>代立。"
+    },
+    {
+      "pid": "31",
+      "text": "缪公於是复使孟明视等将兵伐晋，战于彭衙。秦不利，引兵归。",
+      "annotated": "<p>缪公</p>於是复使<p>孟明视</p>等将兵伐<state>晋</state>，战于<loc>彭衙</loc>。<state>秦</state>不利，引兵归。"
+    },
+    {
+      "pid": "32",
+      "text": "戎王使由余於秦。 由余，其先晋人也，亡入戎，能晋言。 闻缪公贤，故使由余观秦。 秦缪公示以宫室、积聚。 由余曰：“使鬼为之，则劳神矣。使人为之，亦苦民矣。” 缪公怪之，问曰：“中国以诗书礼乐法度为政，然尚时乱，今戎夷无此，何以为治，不亦难乎？” 由余笑曰：“此乃中国所以乱也。 夫自上圣黄帝作为礼乐法度，身以先之，仅以小治。 及其後世，日以骄淫。 阻法度之威，以责督於下，下罢极则以仁义怨望於上，上下交争怨而相篡弑，至於灭宗，皆以此类也。 夫戎夷不然。 上含淳德以遇其下，下怀忠信以事其上，一国之政犹一身之治，不知所以治，此真圣人之治也。”",
+      "annotated": "<tribe>戎</tribe>王使<p>由余</p>於<state>秦</state>。 <p>由余</p>，其先<state>晋</state>人也，亡入<tribe>戎</tribe>，能<state>晋</state>言。 闻<p>缪公</p>贤，故使<p>由余</p>观<state>秦</state>。 <state>秦</state><p>缪公</p>示以<sys>宫室</sys>、积聚。 <p>由余</p>曰：“使<idea>鬼</idea>为之，则劳神矣。使人为之，亦苦民矣。” <p>缪公</p>怪之，问曰：“<loc>中国</loc>以<book>诗</book><book>书</book><book>礼</book><book>乐</book><sys>法度</sys>为政，然尚时乱，今<tribe>戎夷</tribe>无此，何以为治，不亦难乎？” <p>由余</p>笑曰：“此乃<loc>中国</loc>所以乱也。 夫自上圣<p>黄帝</p>作为<sys>礼乐法度</sys>，身以先之，仅以小治。 及其後世，日以骄淫。 阻<sys>法度</sys>之威，以责督於下，下罢极则以<idea>仁义</idea>怨望於上，上下交争怨而相篡弑，至於灭宗，皆以此类也。 夫<tribe>戎夷</tribe>不然。 上含淳德以遇其下，下怀忠信以事其上，一国之政犹一身之治，不知所以治，此真<idea>圣人</idea>之治也。”"
+    },
+    {
+      "pid": "32.1",
+      "text": "於是缪公退而问内史廖曰：“孤闻邻国有圣人，敌国之忧也。今由余贤，寡人之害，将奈之何？” 内史廖曰：“戎王处辟匿，未闻中国之声。君试遗其女乐，以夺其志；为由余请，以疏其间；留而莫遣，以失其期。戎王怪之，必疑由余。君臣有间，乃可虏也。且戎王好乐，必怠於政。” 缪公曰：“善。” 因与由余曲席而坐，传器而食，问其地形与其兵势尽察，而後令内史廖以女乐二八遗戎王。 戎王受而说之，终年不还。 於是秦乃归由余。 由余数谏不听，缪公又数使人间要由余，由余遂去降秦。 缪公以客礼礼之，问伐戎之形。",
+      "annotated": "於是<p>缪公</p>退而问<off>内史</off><p>廖</p>曰：“<role>孤</role>闻邻国有圣人，敌国之忧也。今由余贤，<role>寡人</role>之害，将奈之何？” <off>内史</off><p>廖</p>曰：“<tribe>戎</tribe>王处辟匿，未闻<loc>中国</loc>之声。君试遗其女乐，以夺其志；为<p>由余</p>请，以疏其间；留而莫遣，以失其期。<tribe>戎</tribe>王怪之，必疑<p>由余</p>。君臣有间，乃可虏也。且<tribe>戎</tribe>王好乐，必怠於政。” <p>缪公</p>曰：“善。” 因与<p>由余</p>曲席而坐，传器而食，问其地形与其兵势尽察，而後令<off>内史</off><p>廖</p>以女乐二八遗<tribe>戎</tribe>王。 <tribe>戎</tribe>王受而说之，终年不还。 於是<state>秦</state>乃归<p>由余</p>。 <p>由余</p>数谏不听，<p>缪公</p>又数使人间要<p>由余</p>，<p>由余</p>遂去降<state>秦</state>。 <p>缪公</p>以<sys>客礼</sys>礼之，问伐<tribe>戎</tribe>之形。"
+    },
+    {
+      "pid": "33",
+      "text": "三十六年，缪公复益厚孟明等，使将兵伐晋，渡河焚船，大败晋人，取王官及鄗，以报殽之役。晋人皆城守不敢出。於是缪公乃自茅津渡河，封殽中尸，为发丧，哭之三日。乃誓於军曰：“嗟士卒！听无譁，余誓告汝。古之人谋黄发番番，则无所过。” 以申思不用蹇叔、百里傒之谋，故作此誓，令後世以记余过。君子闻之，皆为垂涕，曰：“嗟乎！秦缪公之与人周也，卒得孟明之庆。”",
+      "annotated": "<time>三十六年</time>，<p>缪公</p>复益厚<p>孟明</p>等，使将兵伐<state>晋</state>，渡<loc>河</loc>焚<art>船</art>，大败<state>晋</state>人，取<loc>王官</loc>及<loc>鄗</loc>，以报<loc>殽</loc>之役。<state>晋</state>人皆城守不敢出。於是<p>缪公</p>乃自<loc>茅津</loc>渡<loc>河</loc>，<vpol>封</vpol><loc>殽</loc>中尸，为发丧，哭之<time>三日</time>。乃誓於军曰：“嗟士卒！听无譁，余誓告汝。古之人谋黄发番番，则无所过。” 以申思不用<p>蹇叔</p>、<p>百里傒</p>之谋，故作此誓，令後世以记余过。<idea>君子</idea>闻之，皆为垂涕，曰：“嗟乎！<p>秦缪公</p>之与人周也，卒得<p>孟明</p>之庆。”"
+    },
+    {
+      "pid": "33.1",
+      "text": "三十七年，秦用由余谋伐戎王，益国十二，开地千里，遂霸西戎。天子使召公过贺缪公以金鼓。",
+      "annotated": "<time>三十七年</time>，<state>秦</state>用<p>由余</p>谋伐<tribe>戎</tribe>王，益国十二，开地<qty>千里</qty>，遂霸<tribe>西戎</tribe>。<role>天子</role>使<p>召公</p>过贺<p>缪公</p>以<art>金鼓</art>。"
+    },
+    {
+      "pid": "33.2",
+      "text": "三十九年，缪公卒，葬雍。从死者百七十七人，秦之良臣子舆氏三人名曰奄息、仲行、针虎，亦在从死之中。秦人哀之，为作歌黄鸟之诗。 ::: 君子曰 君子曰：“秦缪公广地益国，东服彊晋，西霸戎夷，然不为诸侯盟主，亦宜哉。死而弃民，收其良臣而从死。且先王崩，尚犹遗德垂法，况夺之善人良臣百姓所哀者乎？是以知秦不能复东征也。” ::: 缪公子四十人，其太子代立，是为康公。",
+      "annotated": "<time>三十九年</time>，<p>缪公</p><vpol>卒</vpol>，葬<loc>雍</loc>。从死者<qty>百七十七人</qty>，<state>秦</state>之良臣<p>子舆氏</p><qty>三人</qty>名曰<p>奄息</p>、<p>仲行</p>、<p>针虎</p>，亦在从死之中。<state>秦</state>人哀之，为作歌<book>黄鸟之诗</book>。 ::: 君子曰 <idea>君子</idea>曰：“<p>秦缪公</p>广地益国，东服彊<state>晋</state>，西霸<tribe>戎夷</tribe>，然不为<role>诸侯</role><off>盟主</off>，亦宜哉。死而弃民，收其<role>良臣</role>而从死。且<role>先王</role><vpol>崩</vpol>，尚犹遗德垂法，况夺之善人<role>良臣</role><role>百姓</role>所哀者乎？是以知<state>秦</state>不能复东征也。” ::: <p>缪公</p><role>子</role><qty>四十人</qty>，其<role>太子</role>代<vpol>立</vpol>，是为<p name=\"秦康公\">康公</p>。"
+    },
+    {
+      "pid": "34",
+      "text": "康公元年。往岁缪公之卒，晋襄公亦卒；襄公之弟名雍，秦出也，在秦。晋赵盾欲立之，使随会来迎雍，秦以兵送至令狐。晋立襄公子而反击秦师，秦师败，随会来奔。",
+      "annotated": "<p name=\"秦康公\">康公</p><time>元年</time>。往<time>岁</time><p>缪公</p>之卒，<p>晋襄公</p>亦卒；<p name=\"晋襄公\">襄公</p>之<role>弟</role>名<p>雍</p>，<state>秦</state>出也，在<state>秦</state>。<state>晋</state><p>赵盾</p>欲立之，使<p>随会</p>来迎<p>雍</p>，<state>秦</state>以兵送至<loc>令狐</loc>。<state>晋</state><vpol>立</vpol><p name=\"晋襄公\">襄公</p><role>子</role>而反击<state>秦</state>师，<state>秦</state>师败，<p>随会</p>来奔。"
+    },
+    {
+      "pid": "34.1",
+      "text": "二年，秦伐晋，取武城，报令狐之役。",
+      "annotated": "<time>二年</time>，<state>秦</state>伐<state>晋</state>，取<loc>武城</loc>，报<loc>令狐</loc>之役。"
+    },
+    {
+      "pid": "34.2",
+      "text": "四年，晋伐秦，取少梁。",
+      "annotated": "<time>四年</time>，<state>晋</state>伐<state>秦</state>，取<loc>少梁</loc>。"
+    },
+    {
+      "pid": "34.3",
+      "text": "六年，秦伐晋，取羁马。战於河曲，大败晋军。晋人患随会在秦为乱，乃使魏雠馀详反，合谋会，诈而得会，会遂归晋。",
+      "annotated": "<time>六年</time>，<state>秦</state>伐<state>晋</state>，取<loc>羁马</loc>。战於<loc>河曲</loc>，大败<state>晋</state>军。<state>晋</state>人患<p>随会</p>在<state>秦</state>为乱，乃使<p>魏雠馀</p>详反，合谋<p name=\"随会\">会</p>，诈而得<p name=\"随会\">会</p>，<p name=\"随会\">会</p>遂归<state>晋</state>。"
+    },
+    {
+      "pid": "34.4",
+      "text": "康公立十二年卒，子共公立。",
+      "annotated": "<p name=\"秦康公\">康公</p>立<time name=\"时长\">十二年</time><vpol>卒</vpol>，<role>子</role><p name=\"秦共公\">共公</p><vpol>立</vpol>。"
+    },
+    {
+      "pid": "35",
+      "text": "共公二年，晋赵穿弑其君灵公。",
+      "annotated": "<p>共公</p><time>二年</time>，<state>晋</state><p>赵穿</p>弑其君<p name=\"晋灵公\">灵公</p>。"
+    },
+    {
+      "pid": "35.1",
+      "text": "三年，楚庄王彊，北兵至雒，问周鼎。",
+      "annotated": "<time>三年</time>，<p>楚庄王</p>彊，北兵至<loc>雒</loc>，问<art>周鼎</art>。"
+    },
+    {
+      "pid": "35.2",
+      "text": "共公立五年卒，子桓公立。",
+      "annotated": "<p>共公</p>立<time name=\"时长\">五年</time><vpol>卒</vpol>，<role>子</role><p>桓公</p><vpol>立</vpol>。"
+    },
+    {
+      "pid": "36",
+      "text": "桓公三年，晋败我一将。",
+      "annotated": "<p>桓公</p><time>三年</time>，<state>晋</state>败我一将。"
+    },
+    {
+      "pid": "36.1",
+      "text": "十年，楚庄王服郑，北败晋兵於河上。当是之时，楚霸，为会盟合诸侯。",
+      "annotated": "<time>十年</time>，<p>楚庄王</p>服<state>郑</state>，北败<state>晋</state>兵於<loc>河</loc>上。当是之时，<state>楚</state>霸，为<sys>会盟</sys>合<role>诸侯</role>。"
+    },
+    {
+      "pid": "36.2",
+      "text": "二十四年，晋厉公初立，与秦桓公夹河而盟。归而秦倍盟，与翟合谋击晋。",
+      "annotated": "<time>二十四年</time>，<p>晋厉公</p>初立，与<p>秦桓公</p>夹<loc>河</loc>而盟。归而<state>秦</state>倍盟，与<tribe>翟</tribe>合谋击<state>晋</state>。"
+    },
+    {
+      "pid": "36.3",
+      "text": "二十六年，晋率诸侯伐秦，秦军败走，追至泾而还。",
+      "annotated": "<time>二十六年</time>，<state>晋</state>率<role>诸侯</role>伐<state>秦</state>，<state>秦</state>军败走，追至<loc>泾</loc>而还。"
+    },
+    {
+      "pid": "36.4",
+      "text": "桓公立二十七年卒，子景公立。",
+      "annotated": "<p>桓公</p>立<time name=\"时长\">二十七年</time><vpol>卒</vpol>，<role>子</role><p>景公</p><vpol>立</vpol>。"
+    },
+    {
+      "pid": "37",
+      "text": "景公四年，晋栾书弑其君厉公。",
+      "annotated": "<p name=\"秦景公\">景公</p><time>四年</time>，<state>晋</state><p>栾书</p>弑其君<p name=\"晋厉公\">厉公</p>。"
+    },
+    {
+      "pid": "37.1",
+      "text": "十五年，救郑，败晋兵於栎。是时晋悼公为盟主。",
+      "annotated": "<time>十五年</time>，救<state>郑</state>，败<state>晋</state>兵於<loc>栎</loc>。是时<p>晋悼公</p>为<off>盟主</off>。"
+    },
+    {
+      "pid": "37.2",
+      "text": "十八年，晋悼公彊，数会诸侯，率以伐秦，败秦军。秦军走，晋兵追之，遂渡泾，至棫林而还。",
+      "annotated": "<time>十八年</time>，<p>晋悼公</p>彊，数会<role>诸侯</role>，率以伐<state>秦</state>，败<state>秦</state>军。<state>秦</state>军走，<state>晋</state>兵追之，遂渡<loc>泾</loc>，至<loc>棫林</loc>而还。"
+    },
+    {
+      "pid": "37.3",
+      "text": "二十七年，景公如晋，与平公盟，已而背之。",
+      "annotated": "<time>二十七年</time>，<p>景公</p>如<state>晋</state>，与<p name=\"晋平公\">平公</p>盟，已而背之。"
+    },
+    {
+      "pid": "37.4",
+      "text": "三十六年，楚公子围弑其君而自立，是为灵王。景公母弟后子针有宠，景公母弟富，或谮之，恐诛，乃奔晋，车重千乘。晋平公曰：“后子富如此，何以自亡？” 对曰：“秦公无道，畏诛，欲待其後世乃归。”",
+      "annotated": "<time>三十六年</time>，<state>楚</state><p>公子围</p>弑其君而<vpol>自立</vpol>，是为<p name=\"楚灵王\">灵王</p>。<p>景公</p><role>母弟</role><role>后子</role><p name=\"针虎\">针</p>有宠，<p>景公</p><role>母弟</role><p>富</p>，或谮之，恐诛，乃奔<state>晋</state>，<art>车</art>重<loc>千乘</loc>。<p>晋平公</p>曰：“<role>后子</role><p>富</p>如此，何以自亡？” 对曰：“<state>秦</state>公无道，畏诛，欲待其後世乃归。”"
+    },
+    {
+      "pid": "37.5",
+      "text": "三十九年，楚灵王彊，会诸侯於申，为盟主，杀齐庆封。",
+      "annotated": "<time>三十九年</time>，<p>楚灵王</p>彊，会<role>诸侯</role>於<loc>申</loc>，为<off>盟主</off>，杀<p>齐庆封</p>。"
+    },
+    {
+      "pid": "37.6",
+      "text": "景公立四十年卒，子哀公立。后子复来归秦。",
+      "annotated": "<p>景公</p>立<time name=\"时长\">四十年</time><vpol>卒</vpol>，<role>子</role><p>哀公</p><vpol>立</vpol>。<role>后子</role>复来归<state>秦</state>。"
+    },
+    {
+      "pid": "38",
+      "text": "哀公八年，楚公子弃疾弑灵王而自立，是为平王。",
+      "annotated": "<p>哀公</p><time>八年</time>，<state>楚</state><p>公子弃疾</p>弑<p name=\"楚灵王\">灵王</p>而<vpol>自立</vpol>，是为<p name=\"楚平王\">平王</p>。"
+    },
+    {
+      "pid": "38.1",
+      "text": "十一年，楚平王来求秦女为太子建妻。至国，女好而自娶之。",
+      "annotated": "<time>十一年</time>，<p>楚平王</p>来求<state>秦</state><role>女</role>为<role>太子</role><p>建</p><role>妻</role>。至国，女好而自娶之。"
+    },
+    {
+      "pid": "38.2",
+      "text": "十五年，楚平王欲诛建，建亡；伍子胥奔吴。晋公室卑而六卿彊，欲内相攻，是以久秦晋不相攻。",
+      "annotated": "<time>十五年</time>，<p>楚平王</p>欲诛<p>建</p>，<p>建</p>亡；<p>伍子胥</p>奔<state>吴</state>。<state>晋</state>公室卑而<off>六卿</off>彊，欲内相攻，是以久<state>秦</state><state>晋</state>不相攻。"
+    },
+    {
+      "pid": "38.3",
+      "text": "三十一年，吴王阖闾与伍子胥伐楚，楚王亡奔随，吴遂入郢。楚大夫申包胥来告急，七日不食，日夜哭泣。於是秦乃发五百乘救楚，败吴师。吴师归，楚昭王乃得复入郢。",
+      "annotated": "<time>三十一年</time>，<off>吴王</off><p>阖闾</p>与<p>伍子胥</p>伐<state>楚</state>，<state>楚</state>王亡奔<loc>随</loc>，<state>吴</state>遂入<loc>郢</loc>。<state>楚</state><role>大夫</role><p>申包胥</p>来告急，<time>七日</time>不食，日夜哭泣。於是<state>秦</state>乃发<qty>五百乘</qty>救<state>楚</state>，败<state>吴</state>师。<state>吴</state>师归，<p>楚昭王</p>乃得复入<loc>郢</loc>。"
+    },
+    {
+      "pid": "38.4",
+      "text": "哀公立三十六年卒。太子夷公，夷公蚤死，不得立，立夷公子，是为惠公。",
+      "annotated": "<p>哀公</p>立<time name=\"时长\">三十六年</time><vpol>卒</vpol>。<role>太子</role><p>夷公</p>，<p>夷公</p>蚤死，不得立，<vpol>立</vpol><p>夷公</p><role>子</role>，是为<p>惠公</p>。"
+    },
+    {
+      "pid": "39",
+      "text": "惠公元年，孔子行鲁相事。",
+      "annotated": "<p>惠公</p><time>元年</time>，<p>孔子</p>行<state>鲁</state><off>相</off>事。"
+    },
+    {
+      "pid": "39.1",
+      "text": "五年，晋卿中行、范氏反晋，晋使智氏、赵简子攻之，范、中行氏亡奔齐。",
+      "annotated": "<time>五年</time>，<state>晋</state>卿<clan name=\"中行氏\">中行</clan>、<clan>范氏</clan>反<state>晋</state>，<state>晋</state>使<clan>智氏</clan>、<p>赵简子</p>攻之，<clan name=\"范氏\">范</clan>、<clan>中行氏</clan>亡奔<state>齐</state>。"
+    },
+    {
+      "pid": "39.2",
+      "text": "惠公立十年卒，子悼公立。",
+      "annotated": "<p>惠公</p>立<time name=\"时长\">十年</time><vpol>卒</vpol>，<role>子</role><p>悼公</p><vpol>立</vpol>。"
+    },
+    {
+      "pid": "40",
+      "text": "悼公二年，齐臣田乞弑其君孺子，立其兄阳生，是为悼公。",
+      "annotated": "<p>悼公</p><time>二年</time>，<state>齐</state>臣<p>田乞</p>弑其君<p>孺子</p>，立其<role>兄</role><p>阳生</p>，是为<p name=\"齐悼公\">悼公</p>。"
+    },
+    {
+      "pid": "40.1",
+      "text": "六年，吴败齐师。齐人弑悼公，立其子简公。",
+      "annotated": "<time>六年</time>，<state>吴</state>败<state>齐</state>师。<state>齐</state>人弑<p name=\"齐悼公\">悼公</p>，立其<role>子</role><p name=\"齐简公\">简公</p>。"
+    },
+    {
+      "pid": "40.2",
+      "text": "九年，晋定公与吴王夫差盟，争长於黄池，卒先吴。吴彊，陵中国。",
+      "annotated": "<time>九年</time>，<p>晋定公</p>与<off>吴王</off><p>夫差</p>盟，争长於<loc>黄池</loc>，卒先<state>吴</state>。<state>吴</state>彊，陵<loc>中国</loc>。"
+    },
+    {
+      "pid": "40.3",
+      "text": "十二年，齐田常弑简公，立其弟平公，常相之。",
+      "annotated": "<time>十二年</time>，<state>齐</state><p>田常</p>弑<p name=\"齐简公\">简公</p>，立其<role>弟</role><p name=\"齐平公\">平公</p>，<p name=\"田常\">常</p>相之。"
+    },
+    {
+      "pid": "40.4",
+      "text": "十三年，楚灭陈。",
+      "annotated": "<time>十三年</time>，<state>楚</state>灭<state>陈</state>。"
+    },
+    {
+      "pid": "40.5",
+      "text": "秦悼公立十四年卒，子厉共公立。孔子以悼公十二年卒。",
+      "annotated": "<state>秦</state><p>悼公</p>立<time name=\"时长\">十四年</time><vpol>卒</vpol>，<role>子</role><p>厉共公</p><vpol>立</vpol>。<p>孔子</p>以<p>悼公</p><time>十二年</time><vpol>卒</vpol>。"
+    },
+    {
+      "pid": "41",
+      "text": "厉共公二年，蜀人来赂。",
+      "annotated": "<p>厉共公</p><time>二年</time>，<state>蜀</state>人来赂。"
+    },
+    {
+      "pid": "41.1",
+      "text": "十六年，巉河旁。以兵二万伐大荔，取其王城。",
+      "annotated": "<time>十六年</time>，巉<loc>河</loc>旁。以兵<qty>二万</qty>伐<tribe>大荔</tribe>，取其<loc>王城</loc>。"
+    },
+    {
+      "pid": "41.2",
+      "text": "二十一年，初县频阳。晋取武成。",
+      "annotated": "<time>二十一年</time>，初县<loc>频阳</loc>。<state>晋</state>取<loc>武成</loc>。"
+    },
+    {
+      "pid": "41.3",
+      "text": "二十四年，晋乱，杀智伯，分其国与赵、韩、魏。",
+      "annotated": "<time>二十四年</time>，<state>晋</state>乱，杀<p>智伯</p>，分其国与<state>赵</state>、<state>韩</state>、<state>魏</state>。"
+    },
+    {
+      "pid": "41.4",
+      "text": "二十五年，智开与邑人来奔。",
+      "annotated": "<time>二十五年</time>，<p>智开</p>与邑人来奔。"
+    },
+    {
+      "pid": "41.5",
+      "text": "三十三年，伐义渠，虏其王。",
+      "annotated": "<time>三十三年</time>，伐<tribe>义渠</tribe>，虏其王。"
+    },
+    {
+      "pid": "41.6",
+      "text": "三十四年，日食。厉共公卒，子躁公立。",
+      "annotated": "<time>三十四年</time>，<astro>日食</astro>。<p>厉共公</p><vpol>卒</vpol>，<role>子</role><p>躁公</p><vpol>立</vpol>。"
+    },
+    {
+      "pid": "41.7",
+      "text": "躁公二年，南郑反。",
+      "annotated": "<p>躁公</p><time>二年</time>，<loc>南郑</loc>反。"
+    },
+    {
+      "pid": "41.8",
+      "text": "十三年，义渠来伐，至渭南。",
+      "annotated": "<time>十三年</time>，<tribe>义渠</tribe>来伐，至<loc>渭南</loc>。"
+    },
+    {
+      "pid": "41.9",
+      "text": "十四年，躁公卒，立其弟怀公。",
+      "annotated": "<time>十四年</time>，<p>躁公</p><vpol>卒</vpol>，立其<role>弟</role><p>怀公</p>。"
+    },
+    {
+      "pid": "42",
+      "text": "怀公四年，庶长晁与大臣围怀公，怀公自杀。怀公太子曰昭子，蚤死，大臣乃立太子昭子之子，是为灵公。灵公，怀公孙也。",
+      "annotated": "<p>怀公</p><time>四年</time>，<off>庶长</off><p>晁</p>与<role>大臣</role>围<p>怀公</p>，<p>怀公</p>自杀。<p>怀公</p><role>太子</role>曰<p>昭子</p>，蚤死，<role>大臣</role>乃立<role>太子</role><p>昭子</p>之<role>子</role>，是为<p>灵公</p>。<p>灵公</p>，<p>怀公</p><role>孙</role>也。"
+    },
+    {
+      "pid": "43",
+      "text": "灵公六年，晋城少梁，秦击之。",
+      "annotated": "<p>灵公</p><time>六年</time>，<state>晋</state>城<loc>少梁</loc>，<state>秦</state>击之。"
+    },
+    {
+      "pid": "43.1",
+      "text": "十三年，城籍姑。灵公卒，子献公不得立，立灵公季父悼子，是为简公。简公，昭子之弟而怀公子也。",
+      "annotated": "<time>十三年</time>，城<loc>籍姑</loc>。<p>灵公</p><vpol>卒</vpol>，<role>子</role><p>献公</p>不得立，<vpol>立</vpol><p>灵公</p><role>季父</role><p>悼子</p>，是为<p>简公</p>。<p>简公</p>，<p>昭子</p>之<role>弟</role>而<p>怀公</p><role>子</role>也。"
+    },
+    {
+      "pid": "44",
+      "text": "简公六年，令吏初带剑。巉洛。城重泉。",
+      "annotated": "<p>简公</p><time>六年</time>，令吏初带<art>剑</art>。巉<loc>洛</loc>。城<loc>重泉</loc>。"
+    },
+    {
+      "pid": "44.1",
+      "text": "十六年卒，子惠公立。",
+      "annotated": "<time>十六年</time><vpol>卒</vpol>，<role>子</role><p>惠公</p><vpol>立</vpol>。"
+    },
+    {
+      "pid": "45",
+      "text": "惠公十二年，子出子生。",
+      "annotated": "<p>惠公</p><time>十二年</time>，<role>子</role><p>出子</p>生。"
+    },
+    {
+      "pid": "45.1",
+      "text": "十三年，伐蜀，取南郑。惠公卒，出子立。",
+      "annotated": "<time>十三年</time>，伐<state>蜀</state>，取<loc>南郑</loc>。<p>惠公</p><vpol>卒</vpol>，<p>出子</p><vpol>立</vpol>。"
+    },
+    {
+      "pid": "46",
+      "text": "出子二年，庶长改迎灵公之子献公于河西而立之。杀出子及其母，沈之渊旁。",
+      "annotated": "<p>出子</p><time>二年</time>，<off>庶长</off><p>改</p>迎<p>灵公</p>之<role>子</role><p>献公</p>于<loc>河西</loc>而立之。杀<p>出子</p>及其<role>母</role>，沈之渊旁。"
+    },
+    {
+      "pid": "46.1",
+      "text": "秦以往者数易君，君臣乖乱，故晋复彊，夺秦河西地。",
+      "annotated": "<state>秦</state>以往者数易君，君臣乖乱，故<state>晋</state>复彊，夺<state>秦</state><loc>河西</loc>地。"
+    },
+    {
+      "pid": "47",
+      "text": "献公元年，止从死。",
+      "annotated": "<p>献公</p><time>元年</time>，止从死。"
+    },
+    {
+      "pid": "47.1",
+      "text": "二年，城栎阳。",
+      "annotated": "<time>二年</time>，城<loc>栎阳</loc>。"
+    },
+    {
+      "pid": "47.2",
+      "text": "四年正月庚寅，孝公生。",
+      "annotated": "<time>四年</time><time>正月庚寅</time>，<p>孝公</p>生。"
+    },
+    {
+      "pid": "47.3",
+      "text": "十一年，周太史儋见献公曰：“周故与秦国合而别，别五百岁复合，合十七岁而霸王出。”",
+      "annotated": "<time>十一年</time>，<state>周</state><off>太史</off><p>儋</p>见<p>献公</p>曰：“<state>周</state>故与<state>秦</state>国合而别，别<time>五百岁</time>复合，合<time>十七岁</time>而<role>霸王</role>出。”"
+    },
+    {
+      "pid": "47.4",
+      "text": "十六年，桃冬花。",
+      "annotated": "<time>十六年</time>，<bio>桃</bio><time>冬</time>花。"
+    },
+    {
+      "pid": "47.5",
+      "text": "十八年，雨金栎阳。",
+      "annotated": "<time>十八年</time>，雨<art>金</art><loc>栎阳</loc>。"
+    },
+    {
+      "pid": "47.6",
+      "text": "二十一年，与晋战於石门，斩首六万，天子贺以襜霡。",
+      "annotated": "<time>二十一年</time>，与<state>晋</state>战於<loc>石门</loc>，<law>斩首</law><qty>六万</qty>，<role>天子</role>贺以<art>襜霡</art>。"
+    },
+    {
+      "pid": "47.7",
+      "text": "二十三年，与魏晋战少梁，虏其将公孙痤。",
+      "annotated": "<time>二十三年</time>，与<state>魏</state><state>晋</state>战<loc>少梁</loc>，虏其将<p>公孙痤</p>。"
+    },
+    {
+      "pid": "47.8",
+      "text": "二十四年，献公卒，子孝公立，年已二十一岁矣。",
+      "annotated": "<time>二十四年</time>，<p>献公</p><vpol>卒</vpol>，<role>子</role><p>孝公</p><vpol>立</vpol>，年已<qty>二十一岁</qty>矣。"
+    },
+    {
+      "pid": "48",
+      "text": "孝公元年，河山以东彊国六，与齐威、楚宣、魏惠、燕悼、韩哀、赵成侯并。淮泗之间小国十馀。楚、魏与秦接界。魏筑长城，自郑滨洛以北，有上郡。楚自汉中，南有巴、黔中。周室微，诸侯力政，争相并。秦僻在雍州，不与中国诸侯之会盟，夷翟遇之。",
+      "annotated": "<p>孝公</p><time>元年</time>，<loc>河</loc><loc>山</loc>以东彊国六，与<p>齐威</p>、<p>楚宣</p>、<p>魏惠</p>、<p>燕悼</p>、<p>韩哀</p>、<p>赵成侯</p>并。<loc>淮</loc><loc>泗</loc>之间小国<qty>十馀</qty>。<state>楚</state>、<state>魏</state>与<state>秦</state>接界。<state>魏</state>筑<loc>长城</loc>，自<loc>郑</loc>滨<loc>洛</loc>以北，有<loc>上郡</loc>。<state>楚</state>自<loc>汉中</loc>，南有<loc>巴</loc>、<loc>黔中</loc>。<state>周</state>室微，<role>诸侯</role>力政，争相并。<state>秦</state>僻在<loc>雍州</loc>，不与<loc>中国</loc><role>诸侯</role>之<sys>会盟</sys>，<tribe>夷翟</tribe>遇之。"
+    },
+    {
+      "pid": "48.1",
+      "text": "孝公於是布惠，振孤寡，招战士，明功赏。下令国中曰：“昔我缪公自岐雍之间，修德行武，东平晋乱，以河为界，西霸戎翟，广地千里，天子致伯，诸侯毕贺，为後世开业，甚光美。会往者厉、躁、简公、出子之不宁，国家内忧，未遑外事，三晋攻夺我先君河西地，诸侯卑秦、丑莫大焉。献公即位，镇抚边境，徙治栎阳，且欲东伐，复缪公之故地，脩缪公之政令。寡人思念先君之意，常痛於心。宾客群臣有能出奇计彊秦者，吾且尊官，与之分土。” 於是乃出兵东围陕城，西斩戎之獂王。",
+      "annotated": "<p>孝公</p>於是布惠，振孤寡，招战士，明功赏。下令国中曰：“昔我<p>缪公</p>自<loc>岐</loc><loc>雍</loc>之间，修<idea>德</idea>行武，东平<state>晋</state>乱，以<loc>河</loc>为界，西霸<tribe>戎翟</tribe>，广地<qty>千里</qty>，<role>天子</role>致伯，<role>诸侯</role>毕贺，为後世开业，甚光美。会往者<p name=\"秦厉共公\">厉</p>、<p name=\"秦躁公\">躁</p>、<p name=\"秦简公\">简公</p>、<p name=\"秦出子\">出子</p>之不宁，国家内忧，未遑外事，<state>三晋</state>攻夺我<role>先君</role><loc>河西</loc>地，<role>诸侯</role>卑<state>秦</state>、丑莫大焉。<p>献公</p>即位，镇抚边境，徙治<loc>栎阳</loc>，且欲东伐，复<p>缪公</p>之故地，脩<p>缪公</p>之政令。<role>寡人</role>思念<role>先君</role>之意，常痛於心。<role>宾客</role><role>群臣</role>有能出奇计彊<state>秦</state>者，吾且尊官，与之分土。” 於是乃出兵东围<loc>陕城</loc>，西斩<tribe>戎</tribe>之獂王。"
+    },
+    {
+      "pid": "49",
+      "text": "卫鞅闻是令下，西入秦，因景监求见孝公。",
+      "annotated": "<p>卫鞅</p>闻是令下，西入<state>秦</state>，因<p>景监</p>求见<p>孝公</p>。"
+    },
+    {
+      "pid": "50",
+      "text": "二年，天子致胙。",
+      "annotated": "<time>二年</time>，<role>天子</role>致胙。"
+    },
+    {
+      "pid": "51",
+      "text": "三年，卫鞅说孝公变法修刑，内务耕稼，外劝战死之赏罚，孝公善之。甘龙、杜挚等弗然，相与争之。卒用鞅法，百姓苦之；居三年，百姓便之。乃拜鞅为左庶长。其事在商君语中。",
+      "annotated": "<time>三年</time>，<p>卫鞅</p>说<p>孝公</p><sys>变法</sys>修刑，内务耕稼，外劝战死之赏罚，<p>孝公</p>善之。<p>甘龙</p>、<p>杜挚</p>等弗然，相与争之。卒用<p name=\"卫鞅\">鞅</p>法，<role>百姓</role>苦之；居<time>三年</time>，<role>百姓</role>便之。乃<vpol>拜</vpol><p name=\"卫鞅\">鞅</p>为<off>左庶长</off>。其事在<book>商君语</book>中。"
+    },
+    {
+      "pid": "52",
+      "text": "七年，与魏惠王会杜平。",
+      "annotated": "<time>七年</time>，与<p>魏惠王</p>会<loc>杜平</loc>。"
+    },
+    {
+      "pid": "52.1",
+      "text": "八年，与魏战元里，有功。",
+      "annotated": "<time>八年</time>，与<state>魏</state>战<loc>元里</loc>，有功。"
+    },
+    {
+      "pid": "52.2",
+      "text": "十年，卫鞅为大良造，将兵围魏安邑，降之。",
+      "annotated": "<time>十年</time>，<p>卫鞅</p>为<off>大良造</off>，将兵围<state>魏</state><loc>安邑</loc>，降之。"
+    },
+    {
+      "pid": "52.3",
+      "text": "十二年，作为咸阳，筑冀阙，秦徙都之。并诸小乡聚，集为大县，县一令，四十一县。为田开阡陌。东地渡洛。",
+      "annotated": "<time>十二年</time>，作为<loc>咸阳</loc>，筑<art>冀阙</art>，<state>秦</state>徙都之。并诸小乡聚，集为大县，县一令，<qty>四十一县</qty>。为田开<sys>阡陌</sys>。东地渡<loc>洛</loc>。"
+    },
+    {
+      "pid": "52.4",
+      "text": "十四年，初为赋。",
+      "annotated": "<time>十四年</time>，初为<sys>赋</sys>。"
+    },
+    {
+      "pid": "52.5",
+      "text": "十九年，天子致伯。",
+      "annotated": "<time>十九年</time>，<role>天子</role>致伯。"
+    },
+    {
+      "pid": "52.6",
+      "text": "二十年，诸侯毕贺。秦使公子少官率师会诸侯逢泽，朝天子。",
+      "annotated": "<time>二十年</time>，<role>诸侯</role>毕贺。<state>秦</state>使<p>公子少官</p>率师会<role>诸侯</role><loc>逢泽</loc>，朝<role>天子</role>。"
+    },
+    {
+      "pid": "53",
+      "text": "二十一年，齐败魏马陵。",
+      "annotated": "<time>二十一年</time>，<state>齐</state>败<state>魏</state><loc>马陵</loc>。"
+    },
+    {
+      "pid": "54",
+      "text": "二十二年，卫鞅击魏，虏魏公子卬。封鞅为列侯，号商君。",
+      "annotated": "<time>二十二年</time>，<p>卫鞅</p>击<state>魏</state>，虏<state>魏</state><p>公子卬</p>。<vpol>封</vpol><p name=\"卫鞅\">鞅</p>为<role>列侯</role>，号<p>商君</p>。"
+    },
+    {
+      "pid": "55",
+      "text": "二十四年，与晋战雁门，虏其将魏错。",
+      "annotated": "<time>二十四年</time>，与<state>晋</state>战<loc>雁门</loc>，虏其将<p>魏错</p>。"
+    },
+    {
+      "pid": "56",
+      "text": "孝公卒，子惠文君立。 是岁，诛卫鞅。 鞅之初为秦施法，法不行，太子犯禁。 鞅曰：“法之不行，自於贵戚。君必欲行法，先於太子。太子不可黥，黥其傅师。” 於是法大用，秦人治。 及孝公卒，太子立，宗室多怨鞅，鞅亡，因以为反，而卒车裂以徇秦国。",
+      "annotated": "<p>孝公</p><vpol>卒</vpol>，<role>子</role><p>惠文君</p><vpol>立</vpol>。 是<time>岁</time>，诛<p>卫鞅</p>。 <p name=\"卫鞅\">鞅</p>之初为<state>秦</state>施法，法不行，<role>太子</role>犯禁。 <p name=\"卫鞅\">鞅</p>曰：“法之不行，自於贵戚。君必欲行法，先於<role>太子</role>。<role>太子</role>不可黥，黥其<off>傅师</off>。” 於是法大用，<state>秦</state>人治。 及<p>孝公</p><vpol>卒</vpol>，<role>太子</role><vpol>立</vpol>，<role>宗室</role>多怨<p name=\"卫鞅\">鞅</p>，<p name=\"卫鞅\">鞅</p>亡，因以为反，而卒<law>车裂</law>以徇<state>秦</state>国。"
+    },
+    {
+      "pid": "57",
+      "text": "惠文君元年，楚、韩、赵、蜀人来朝。",
+      "annotated": "<p>惠文君</p><time>元年</time>，<state>楚</state>、<state>韩</state>、<state>赵</state>、<state>蜀</state>人来朝。"
+    },
+    {
+      "pid": "57.1",
+      "text": "二年，天子贺。",
+      "annotated": "<time>二年</time>，<role>天子</role>贺。"
+    },
+    {
+      "pid": "57.2",
+      "text": "三年，王冠。",
+      "annotated": "<time>三年</time>，王冠。"
+    },
+    {
+      "pid": "57.3",
+      "text": "四年，天子致文武胙。齐、魏为王。",
+      "annotated": "<time>四年</time>，<role>天子</role>致<art>文武胙</art>。<state>齐</state>、<state>魏</state>为王。"
+    },
+    {
+      "pid": "58",
+      "text": "五年，阴晋人犀首为大良造。",
+      "annotated": "<time>五年</time>，<loc>阴晋</loc>人<p>犀首</p>为<off>大良造</off>。"
+    },
+    {
+      "pid": "58.1",
+      "text": "六年，魏纳阴晋，阴晋更名宁秦。",
+      "annotated": "<time>六年</time>，<state>魏</state>纳<loc>阴晋</loc>，<loc>阴晋</loc>更名<loc>宁秦</loc>。"
+    },
+    {
+      "pid": "58.2",
+      "text": "七年，公子卬与魏战，虏其将龙贾，斩首八万。",
+      "annotated": "<time>七年</time>，<p>公子卬</p>与<state>魏</state>战，虏其将<p>龙贾</p>，<law>斩首</law><qty>八万</qty>。"
+    },
+    {
+      "pid": "58.3",
+      "text": "八年，魏纳河西地。",
+      "annotated": "<time>八年</time>，<state>魏</state>纳<loc>河西</loc>地。"
+    },
+    {
+      "pid": "58.4",
+      "text": "九年，渡河，取汾阴、皮氏。与魏王会应。围焦，降之。",
+      "annotated": "<time>九年</time>，渡<loc>河</loc>，取<loc>汾阴</loc>、<loc>皮氏</loc>。与<off>魏王</off>会<loc>应</loc>。围<loc>焦</loc>，降之。"
+    },
+    {
+      "pid": "58.5",
+      "text": "十年，张仪相秦。魏纳上郡十五县。",
+      "annotated": "<time>十年</time>，<p>张仪</p>相<state>秦</state>。<state>魏</state>纳<loc>上郡</loc><qty>十五县</qty>。"
+    },
+    {
+      "pid": "58.6",
+      "text": "十一年，县义渠。归魏焦、曲沃。义渠君为臣。更名少梁曰夏阳。",
+      "annotated": "<time>十一年</time>，县<tribe>义渠</tribe>。归<state>魏</state><loc>焦</loc>、<loc>曲沃</loc>。<tribe>义渠</tribe>君为臣。更名<loc>少梁</loc>曰<loc>夏阳</loc>。"
+    },
+    {
+      "pid": "58.7",
+      "text": "十二年，初腊。",
+      "annotated": "<time>十二年</time>，初腊。"
+    },
+    {
+      "pid": "58.8",
+      "text": "十三年四月戊午，魏君为王，韩亦为王。使张仪伐取陕，出其人与魏。",
+      "annotated": "<time>十三年</time><time>四月戊午</time>，<state>魏</state>君为王，<state>韩</state>亦为王。使<p>张仪</p>伐取<loc>陕</loc>，出其人与<state>魏</state>。"
+    },
+    {
+      "pid": "59",
+      "text": "十四年，更为元年。",
+      "annotated": "<time>十四年</time>，更为<time>元年</time>。"
+    },
+    {
+      "pid": "59.1",
+      "text": "二年，张仪与齐、楚大臣会齧桑。",
+      "annotated": "<time>二年</time>，<p>张仪</p>与<state>齐</state>、<state>楚</state><role>大臣</role>会<loc>齧桑</loc>。"
+    },
+    {
+      "pid": "59.2",
+      "text": "三年，韩、魏太子来朝。张仪相魏。",
+      "annotated": "<time>三年</time>，<state>韩</state>、<state>魏</state><role>太子</role>来朝。<p>张仪</p>相<state>魏</state>。"
+    },
+    {
+      "pid": "59.3",
+      "text": "五年，王游至北河。",
+      "annotated": "<time>五年</time>，王游至<loc>北河</loc>。"
+    },
+    {
+      "pid": "59.4",
+      "text": "七年，乐池相秦。韩、赵、魏、燕、齐帅匈奴共攻秦。秦使庶长疾与战修鱼，虏其将申差，败赵公子渴、韩太子奂，斩首八万二千。",
+      "annotated": "<time>七年</time>，<p>乐池</p>相<state>秦</state>。<state>韩</state>、<state>赵</state>、<state>魏</state>、<state>燕</state>、<state>齐</state>帅<tribe>匈奴</tribe>共攻<state>秦</state>。<state>秦</state>使<off>庶长</off><p name=\"樗里疾\">疾</p>与战<loc>修鱼</loc>，虏其将<p>申差</p>，败<state>赵</state><p>公子渴</p>、<state>韩</state><role>太子</role><p>奂</p>，<law>斩首</law><qty>八万二千</qty>。"
+    },
+    {
+      "pid": "59.5",
+      "text": "八年，张仪复相秦。",
+      "annotated": "<time>八年</time>，<p>张仪</p>复相<state>秦</state>。"
+    },
+    {
+      "pid": "59.6",
+      "text": "九年，司马错伐蜀，灭之。伐取赵中都、西阳。",
+      "annotated": "<time>九年</time>，<p>司马错</p>伐<state>蜀</state>，灭之。伐取<state>赵</state><loc>中都</loc>、<loc>西阳</loc>。"
+    },
+    {
+      "pid": "59.7",
+      "text": "十年，韩太子苍来质。伐取韩石章。伐败赵将泥。伐取义渠二十五城。",
+      "annotated": "<time>十年</time>，<state>韩</state><role>太子</role><p>苍</p>来质。伐取<state>韩</state><loc>石章</loc>。伐败<state>赵</state>将<p>泥</p>。伐取<tribe>义渠</tribe><qty>二十五城</qty>。"
+    },
+    {
+      "pid": "59.8",
+      "text": "十一年，醿里疾攻魏焦，降之。败韩岸门，斩首万，其将犀首走。公子通封於蜀。燕君让其臣子之。",
+      "annotated": "<time>十一年</time>，<p>醿里疾</p>攻<state>魏</state><loc>焦</loc>，降之。败<state>韩</state><loc>岸门</loc>，<law>斩首</law>万，其将<p>犀首</p>走。<p>公子通</p><vpol>封</vpol>於<state>蜀</state>。<state>燕</state>君让其臣<p>子之</p>。"
+    },
+    {
+      "pid": "59.9",
+      "text": "十二年，王与梁王会临晋。庶长疾攻赵，虏赵将庄。张仪相楚。",
+      "annotated": "<time>十二年</time>，王与<off>梁王</off>会<loc>临晋</loc>。<off>庶长</off><p name=\"樗里疾\">疾</p>攻<state>赵</state>，虏<state>赵</state>将<p>庄</p>。<p>张仪</p>相<state>楚</state>。"
+    },
+    {
+      "pid": "59.10",
+      "text": "十三年，庶长章击楚於丹阳，虏其将屈匄，斩首八万；又攻楚汉中，取地六百里，置汉中郡。楚围雍氏，秦使庶长疾助韩而东攻齐，到满助魏攻燕。",
+      "annotated": "<time>十三年</time>，<off>庶长</off><p>章</p>击<state>楚</state>於<loc>丹阳</loc>，虏其将<p>屈匄</p>，<law>斩首</law><qty>八万</qty>；又攻<state>楚</state><loc>汉中</loc>，取地<qty>六百里</qty>，置<loc>汉中郡</loc>。<state>楚</state>围<loc>雍氏</loc>，<state>秦</state>使<off>庶长</off><p name=\"樗里疾\">疾</p>助<state>韩</state>而东攻<state>齐</state>，到<p name=\"周王孙满\">满</p>助<state>魏</state>攻<state>燕</state>。"
+    },
+    {
+      "pid": "59.11",
+      "text": "十四年，伐楚，取召陵。丹、犁臣，蜀相壮杀蜀侯来降。",
+      "annotated": "<time>十四年</time>，伐<state>楚</state>，取<loc>召陵</loc>。<tribe>丹</tribe>、<tribe>犁</tribe>臣，<state>蜀</state><off>相</off><p>壮</p>杀<state>蜀</state>侯来降。"
+    },
+    {
+      "pid": "60",
+      "text": "惠王卒，子武王立。韩、魏、齐、楚、越皆宾从。",
+      "annotated": "<p name=\"秦惠文王\">惠王</p><vpol>卒</vpol>，<role>子</role><p>武王</p><vpol>立</vpol>。<state>韩</state>、<state>魏</state>、<state>齐</state>、<state>楚</state>、<state>越</state>皆宾从。"
+    },
+    {
+      "pid": "61",
+      "text": "武王元年，与魏惠王会临晋。诛蜀相壮。张仪、魏章皆东出之魏。伐义渠、丹、犁。",
+      "annotated": "<p>武王</p><time>元年</time>，与<p>魏惠王</p>会<loc>临晋</loc>。诛<state>蜀</state><off>相</off><p>壮</p>。<p>张仪</p>、<p>魏章</p>皆东出之<state>魏</state>。伐<tribe>义渠</tribe>、<tribe>丹</tribe>、<tribe>犁</tribe>。"
+    },
+    {
+      "pid": "61.1",
+      "text": "二年，初置丞相，醿里疾、甘茂为左右丞相。张仪死於魏。",
+      "annotated": "<time>二年</time>，初置<off>丞相</off>，<p>醿里疾</p>、<p>甘茂</p>为左右<off>丞相</off>。<p>张仪</p>死於<state>魏</state>。"
+    },
+    {
+      "pid": "61.2",
+      "text": "三年，与韩襄王会临晋外。南公揭卒，醿里疾相韩。武王谓甘茂曰：“寡人欲容车通三川，窥周室，死不恨矣。” 其秋，使甘茂、庶长封伐宜阳。",
+      "annotated": "<time>三年</time>，与<p>韩襄王</p>会<loc>临晋</loc>外。<p>南公揭</p><vpol>卒</vpol>，<p>醿里疾</p>相<state>韩</state>。<p>武王</p>谓<p>甘茂</p>曰：“<role>寡人</role>欲容<art>车</art>通<loc>三川</loc>，窥<state>周</state>室，死不恨矣。” 其<time>秋</time>，使<p>甘茂</p>、<off>庶长</off><p>封</p>伐<loc>宜阳</loc>。"
+    },
+    {
+      "pid": "61.3",
+      "text": "四年，拔宜阳，斩首六万。涉河，城武遂。魏太子来朝。武王有力好戏，力士任鄙、乌获、孟说皆至大官。王与孟说举鼎，绝膑。八月，武王死。族孟说。武王取魏女为后，无子。立异母弟，是为昭襄王。昭襄母楚人，姓琇氏，号宣太后。武王死时，昭襄王为质於燕，燕人送归，得立。",
+      "annotated": "<time>四年</time>，拔<loc>宜阳</loc>，<law>斩首</law><qty>六万</qty>。涉<loc>河</loc>，城<loc>武遂</loc>。<state>魏</state><role>太子</role>来朝。<p>武王</p>有力好戏，<role>力士</role><p>任鄙</p>、<p>乌获</p>、<p>孟说</p>皆至<off>大官</off>。王与<p>孟说</p>举<art>鼎</art>，绝膑。<time>八月</time>，<p>武王</p>死。<vact>族</vact><p>孟说</p>。<p>武王</p>取<state>魏</state><role>女</role>为<off>后</off>，无<role>子</role>。立<role>异母弟</role>，是为<p>昭襄王</p>。<p>昭襄</p><role>母</role><state>楚</state>人，姓<clan>琇氏</clan>，号<p>宣太后</p>。<p>武王</p>死时，<p>昭襄王</p>为质於<state>燕</state>，<state>燕</state>人送归，得立。"
+    },
+    {
+      "pid": "62",
+      "text": "昭襄王元年，严君疾为相。甘茂出之魏。",
+      "annotated": "<p>昭襄王</p><time>元年</time>，<p>严君疾</p>为<off>相</off>。<p>甘茂</p>出之<state>魏</state>。"
+    },
+    {
+      "pid": "62.1",
+      "text": "二年，彗星见。庶长壮与大臣、诸侯、公子为逆，皆诛，及惠文后皆不得良死。悼武王后出归魏。",
+      "annotated": "<time>二年</time>，<astro>彗星</astro>见。<off>庶长</off><p>壮</p>与<role>大臣</role>、<role>诸侯</role>、<role>公子</role>为逆，皆诛，及<p>惠文后</p>皆不得良死。<p>悼武王</p><off>后</off>出归<state>魏</state>。"
+    },
+    {
+      "pid": "62.2",
+      "text": "三年，王冠。与楚王会黄棘，与楚上庸。",
+      "annotated": "<time>三年</time>，王冠。与<state>楚</state>王会<loc>黄棘</loc>，与<state>楚</state><loc>上庸</loc>。"
+    },
+    {
+      "pid": "62.3",
+      "text": "四年，取蒲阪。彗星见。",
+      "annotated": "<time>四年</time>，取<loc>蒲阪</loc>。<astro>彗星</astro>见。"
+    },
+    {
+      "pid": "62.4",
+      "text": "五年，魏王来朝应亭，复与魏蒲阪。",
+      "annotated": "<time>五年</time>，<state>魏</state>王来朝<loc>应亭</loc>，复与<state>魏</state><loc>蒲阪</loc>。"
+    },
+    {
+      "pid": "62.5",
+      "text": "六年，蜀侯煇反，司马错定蜀。庶长奂伐楚，斩首二万。泾阳君质於齐。日食，昼晦。",
+      "annotated": "<time>六年</time>，<state>蜀</state>侯<p>煇</p>反，<p>司马错</p>定<state>蜀</state>。<off>庶长</off><p>奂</p>伐<state>楚</state>，<law>斩首</law><qty>二万</qty>。<p>泾阳君</p>质於<state>齐</state>。<astro>日食</astro>，昼晦。"
+    },
+    {
+      "pid": "62.6",
+      "text": "七年，拔新城。醿里子卒。",
+      "annotated": "<time>七年</time>，拔<loc>新城</loc>。<p>醿里子</p><vpol>卒</vpol>。"
+    },
+    {
+      "pid": "62.7",
+      "text": "八年，使将军羋戎攻楚，取新市。齐使章子，魏使公孙喜，韩使暴鸢共攻楚方城，取唐眛。赵破中山，其君亡，竟死齐。魏公子劲、韩公子长为诸侯。",
+      "annotated": "<time>八年</time>，使<off>将军</off><p>羋戎</p>攻<state>楚</state>，取<loc>新市</loc>。<state>齐</state>使<p>章子</p>，<state>魏</state>使<p>公孙喜</p>，<state>韩</state>使<p>暴鸢</p>共攻<state>楚</state><loc>方城</loc>，取<loc>唐眛</loc>。<state>赵</state>破<loc>中山</loc>，其君亡，竟死<state>齐</state>。<state>魏</state><role>公子</role><p>劲</p>、<state>韩</state><role>公子</role><p>长</p>为<role>诸侯</role>。"
+    },
+    {
+      "pid": "62.8",
+      "text": "九年，孟尝君薛文来相秦。奂攻楚，取八城，杀其将景快。",
+      "annotated": "<time>九年</time>，<p>孟尝君</p><p name=\"孟尝君\">薛文</p>来相<state>秦</state>。<p>奂</p>攻<state>楚</state>，取<qty>八城</qty>，杀其<off>将</off><p>景快</p>。"
+    },
+    {
+      "pid": "62.9",
+      "text": "十年，楚怀王入朝秦，秦留之。薛文以金受免。楼缓为丞相。",
+      "annotated": "<time>十年</time>，<p>楚怀王</p>入<vpol>朝</vpol><state>秦</state>，<state>秦</state>留之。<p>薛文</p>以<art>金</art>受免。<p>楼缓</p>为<off>丞相</off>。"
+    },
+    {
+      "pid": "62.10",
+      "text": "十一年，齐、韩、魏、赵、宋、中山五国共攻秦，至盐氏而还。秦与韩、魏河北及封陵以和。彗星见。楚怀王走之赵，赵不受，还之秦，即死，归葬。",
+      "annotated": "<time>十一年</time>，<state>齐</state>、<state>韩</state>、<state>魏</state>、<state>赵</state>、<state>宋</state>、<loc>中山</loc>五国共攻<state>秦</state>，至<loc>盐氏</loc>而还。<state>秦</state>与<state>韩</state>、<state>魏</state><loc>河北</loc>及<loc>封陵</loc>以和。<astro>彗星</astro>见。<p>楚怀王</p>走之<state>赵</state>，<state>赵</state>不受，还之<state>秦</state>，即死，归葬。"
+    },
+    {
+      "pid": "62.11",
+      "text": "十二年，楼缓免，穰侯魏厓为相。予楚粟五万石。",
+      "annotated": "<time>十二年</time>，<p>楼缓</p>免，<p>穰侯</p><p name=\"魏冉\">魏厓</p>为<off>相</off>。予<state>楚</state><art>粟</art><qty>五万石</qty>。"
+    },
+    {
+      "pid": "63",
+      "text": "十三年，向寿伐韩，取武始。左更白起攻新城。五大夫礼出亡奔魏。任鄙为汉中守。",
+      "annotated": "<time>十三年</time>，<p>向寿</p>伐<state>韩</state>，取<loc>武始</loc>。<off>左更</off><p>白起</p>攻<loc>新城</loc>。<off>五大夫</off><p name=\"吕礼\">礼</p>出亡奔<state>魏</state>。<p>任鄙</p>为<loc>汉中</loc>守。"
+    },
+    {
+      "pid": "63.1",
+      "text": "十四年，左更白起攻韩、魏於伊阙，斩首二十四万，虏公孙喜，拔五城。",
+      "annotated": "<time>十四年</time>，<off>左更</off><p>白起</p>攻<state>韩</state>、<state>魏</state>於<loc>伊阙</loc>，<law>斩首</law><qty>二十四万</qty>，虏<p>公孙喜</p>，拔<qty>五城</qty>。"
+    },
+    {
+      "pid": "63.2",
+      "text": "十五年，大良造白起攻魏，取垣，复予之。攻楚，取宛。",
+      "annotated": "<time>十五年</time>，<off>大良造</off><p>白起</p>攻<state>魏</state>，取<loc>垣</loc>，复予之。攻<state>楚</state>，取<loc>宛</loc>。"
+    },
+    {
+      "pid": "63.3",
+      "text": "十六年，左更错取轵及邓。厓免，封公子市宛，公子悝邓，魏厓陶，为诸侯。",
+      "annotated": "<time>十六年</time>，<off>左更</off><p name=\"司马错\">错</p>取<loc>轵</loc>及<loc>邓</loc>。<p name=\"魏厓\">厓</p>免，<vpol>封</vpol><role>公子</role><p>市</p><loc>宛</loc>，<role>公子</role><p>悝</p><loc>邓</loc>，<p>魏厓</p><loc>陶</loc>，为<role>诸侯</role>。"
+    },
+    {
+      "pid": "63.4",
+      "text": "十七年，城阳君入朝，及东周君来朝。秦以垣为蒲阪、皮氏。王之宜阳。",
+      "annotated": "<time>十七年</time>，<p>城阳君</p>入朝，及<p>东周君</p>来朝。<state>秦</state>以<loc>垣</loc>为<loc>蒲阪</loc>、<loc>皮氏</loc>。王之<loc>宜阳</loc>。"
+    },
+    {
+      "pid": "63.5",
+      "text": "十八年，错攻垣、河雍，决桥取之。",
+      "annotated": "<time>十八年</time>，<p name=\"司马错\">错</p>攻<loc>垣</loc>、<loc>河雍</loc>，决桥取之。"
+    },
+    {
+      "pid": "63.6",
+      "text": "十九年，王为西帝，齐为东帝，皆复去之。吕礼来自归。齐破宋，宋王在魏，死温。任鄙卒。",
+      "annotated": "<time>十九年</time>，王为西帝，<state>齐</state>为东帝，皆复去之。<p>吕礼</p>来自归。<state>齐</state>破<state>宋</state>，<state>宋</state>王在<state>魏</state>，死<loc>温</loc>。<p>任鄙</p><vpol>卒</vpol>。"
+    },
+    {
+      "pid": "63.7",
+      "text": "二十年，王之汉中，又之上郡、北河。",
+      "annotated": "<time>二十年</time>，王之<loc>汉中</loc>，又之<loc>上郡</loc>、<loc>北河</loc>。"
+    },
+    {
+      "pid": "63.8",
+      "text": "二十一年，错攻魏河内。魏献安邑，秦出其人，募徙河东赐爵，赦罪人迁之。泾阳君封宛。",
+      "annotated": "<time>二十一年</time>，<p name=\"司马错\">错</p>攻<state>魏</state><loc>河内</loc>。<state>魏</state>献<loc>安邑</loc>，<state>秦</state>出其人，募徙<loc>河东</loc><sys>赐爵</sys>，<law>赦罪</law>人迁之。<p>泾阳君</p><vpol>封</vpol><loc>宛</loc>。"
+    },
+    {
+      "pid": "63.9",
+      "text": "二十二年，蒙武伐齐。河东为九县。与楚王会宛。与赵王会中阳。",
+      "annotated": "<time>二十二年</time>，<p>蒙武</p>伐<state>齐</state>。<loc>河东</loc>为<qty>九县</qty>。与<state>楚</state>王会<loc>宛</loc>。与<state>赵</state>王会<loc>中阳</loc>。"
+    },
+    {
+      "pid": "63.10",
+      "text": "二十三年，尉斯离与三晋、燕伐齐，破之济西。王与魏王会宜阳，与韩王会新城。",
+      "annotated": "<time>二十三年</time>，<off>尉</off><p>斯离</p>与三<state>晋</state>、<state>燕</state>伐<state>齐</state>，破之<loc>济西</loc>。王与<state>魏</state>王会<loc>宜阳</loc>，与<state>韩</state>王会<loc>新城</loc>。"
+    },
+    {
+      "pid": "63.11",
+      "text": "二十四年，与楚王会鄢，又会穰。秦取魏安城，至大梁，燕、赵救之，秦军去。魏厓免相。",
+      "annotated": "<time>二十四年</time>，与<state>楚</state>王会<loc>鄢</loc>，又会<loc>穰</loc>。<state>秦</state>取<state>魏</state><loc>安城</loc>，至<loc>大梁</loc>，<state>燕</state>、<state>赵</state>救之，<state>秦</state>军去。<p>魏厓</p><vpol>免</vpol><off>相</off>。"
+    },
+    {
+      "pid": "63.12",
+      "text": "二十五年，拔赵二城。与韩王会新城，与魏王会新明邑。",
+      "annotated": "<time>二十五年</time>，拔<state>赵</state><qty>二城</qty>。与<state>韩</state>王会<loc>新城</loc>，与<state>魏</state>王会<loc>新明邑</loc>。"
+    },
+    {
+      "pid": "63.13",
+      "text": "二十六年，赦罪人迁之穰。侯厓复相。",
+      "annotated": "<time>二十六年</time>，<law>赦罪</law>人迁之<loc>穰</loc>。侯<p name=\"魏厓\">厓</p>复<off>相</off>。"
+    },
+    {
+      "pid": "63.14",
+      "text": "二十七年，错攻楚。赦罪人迁之南阳。白起攻赵，取代光狼城。又使司马错发陇西，因蜀攻楚黔中，拔之。",
+      "annotated": "<time>二十七年</time>，<p name=\"司马错\">错</p>攻<state>楚</state>。<law>赦罪</law>人迁之<loc>南阳</loc>。<p>白起</p>攻<state>赵</state>，取<loc>代光狼城</loc>。又使<p>司马错</p>发<loc>陇西</loc>，因<state>蜀</state>攻<state>楚</state><loc>黔中</loc>，拔之。"
+    },
+    {
+      "pid": "63.15",
+      "text": "二十八年，大良造白起攻楚，取鄢、邓，赦罪人迁之。",
+      "annotated": "<time>二十八年</time>，<off>大良造</off><p>白起</p>攻<state>楚</state>，取<loc>鄢</loc>、<loc>邓</loc>，<law>赦罪</law>人迁之。"
+    },
+    {
+      "pid": "63.16",
+      "text": "二十九年，大良造白起攻楚，取郢为南郡，楚王走。周君来。王与楚王会襄陵。白起为武安君。",
+      "annotated": "<time>二十九年</time>，<off>大良造</off><p>白起</p>攻<state>楚</state>，取<loc>郢</loc>为<loc>南郡</loc>，<state>楚</state>王走。<state>周</state>君来。王与<state>楚</state>王会<loc>襄陵</loc>。<p>白起</p>为<off>武安君</off>。"
+    },
+    {
+      "pid": "63.17",
+      "text": "三十年，蜀守若伐楚，取巫郡，及江南为黔中郡。",
+      "annotated": "<time>三十年</time>，<state>蜀</state>守<p name=\"若木\">若</p>伐<state>楚</state>，取<loc>巫郡</loc>，及<loc>江南</loc>为<loc>黔中郡</loc>。"
+    },
+    {
+      "pid": "63.18",
+      "text": "三十一年，白起伐魏，取两城。楚人反我江南。",
+      "annotated": "<time>三十一年</time>，<p>白起</p>伐<state>魏</state>，取<qty>两城</qty>。<state>楚</state>人反我<loc>江南</loc>。"
+    },
+    {
+      "pid": "63.19",
+      "text": "三十二年，相穰侯攻魏，至大梁，破暴鸢，斩首四万，鸢走，魏入三县请和。",
+      "annotated": "<time>三十二年</time>，<off>相</off><p>穰侯</p>攻<state>魏</state>，至<loc>大梁</loc>，破<p>暴鸢</p>，<law>斩首</law><qty>四万</qty>，<p name=\"暴鸢\">鸢</p>走，<state>魏</state>入<qty>三县</qty>请和。"
+    },
+    {
+      "pid": "63.20",
+      "text": "三十三年，客卿胡攻魏卷、蔡阳、长社，取之。击芒卯华阳，破之，斩首十五万。魏入南阳以和。",
+      "annotated": "<time>三十三年</time>，<off>客卿</off><p name=\"胡陽\">胡</p>攻<state>魏</state><loc>卷</loc>、<loc>蔡阳</loc>、<loc>长社</loc>，取之。击<p>芒卯</p><loc>华阳</loc>，破之，<law>斩首</law><qty>十五万</qty>。<state>魏</state>入<loc>南阳</loc>以和。"
+    },
+    {
+      "pid": "63.21",
+      "text": "三十四年，秦与魏、韩上庸地为一郡，南阳免臣迁居之。",
+      "annotated": "<time>三十四年</time>，<state>秦</state>与<state>魏</state>、<state>韩</state><loc>上庸</loc>地为<qty>一郡</qty>，<loc>南阳</loc>免臣迁居之。"
+    },
+    {
+      "pid": "63.22",
+      "text": "三十五年，佐韩、魏、楚伐燕。初置南阳郡。",
+      "annotated": "<time>三十五年</time>，佐<state>韩</state>、<state>魏</state>、<state>楚</state>伐<state>燕</state>。初置<loc>南阳郡</loc>。"
+    },
+    {
+      "pid": "63.23",
+      "text": "三十六年，客卿灶攻齐，取刚、寿，予穰侯。",
+      "annotated": "<time>三十六年</time>，<off>客卿</off><p>灶</p>攻<state>齐</state>，取<loc>刚</loc>、<loc>寿</loc>，予<p>穰侯</p>。"
+    },
+    {
+      "pid": "63.24",
+      "text": "三十八年，中更胡攻赵阏与，不能取。",
+      "annotated": "<time>三十八年</time>，<off>中更</off><p name=\"胡陽\">胡</p>攻<state>赵</state><loc>阏与</loc>，不能取。"
+    },
+    {
+      "pid": "63.25",
+      "text": "四十年，悼太子死魏，归葬芷阳。",
+      "annotated": "<time>四十年</time>，<p>悼太子</p>死<state>魏</state>，归葬<loc>芷阳</loc>。"
+    },
+    {
+      "pid": "63.26",
+      "text": "四十一年夏，攻魏，取邢丘、怀。",
+      "annotated": "<time>四十一年</time><time>夏</time>，攻<state>魏</state>，取<loc>邢丘</loc>、<loc>怀</loc>。"
+    },
+    {
+      "pid": "63.27",
+      "text": "四十二年，安国君为太子。十月，宣太后薨，葬芷阳郦山。九月，穰侯出之陶。",
+      "annotated": "<time>四十二年</time>，<p>安国君</p>为太子。<time>十月</time>，<p>宣太后</p><vpol>薨</vpol>，葬<loc>芷阳</loc><loc>郦山</loc>。<time>九月</time>，<p>穰侯</p>出之<loc>陶</loc>。"
+    },
+    {
+      "pid": "63.28",
+      "text": "四十三年，武安君白起攻韩，拔九城，斩首五万。",
+      "annotated": "<time>四十三年</time>，<off>武安君</off><p>白起</p>攻<state>韩</state>，拔<qty>九城</qty>，<law>斩首</law><qty>五万</qty>。"
+    },
+    {
+      "pid": "63.29",
+      "text": "四十四年，攻韩南，取之。",
+      "annotated": "<time>四十四年</time>，攻<state>韩</state>南，取之。"
+    },
+    {
+      "pid": "63.30",
+      "text": "四十五年，五大夫贲攻韩，取十城。叶阳君悝出之国，未至而死。",
+      "annotated": "<time>四十五年</time>，<off>五大夫</off><p>贲</p>攻<state>韩</state>，取<qty>十城</qty>。<p>叶阳君</p><p name=\"公子悝\">悝</p>出<vpol>之国</vpol>，未至而死。"
+    },
+    {
+      "pid": "63.31",
+      "text": "四十七年，秦攻韩上党，上党降赵，秦因攻赵，赵发兵击秦，相距。秦使武安君白起击，大破赵於长平，四十馀万尽杀之。",
+      "annotated": "<time>四十七年</time>，<state>秦</state>攻<state>韩</state><loc>上党</loc>，<loc>上党</loc>降<state>赵</state>，<state>秦</state>因攻<state>赵</state>，<state>赵</state>发兵击<state>秦</state>，相距。<state>秦</state>使<off>武安君</off><p>白起</p>击，大破<state>赵</state>於<loc>长平</loc>，<qty>四十馀</qty>万尽杀之。"
+    },
+    {
+      "pid": "63.32",
+      "text": "四十八年十月，韩献垣雍。秦军分为三军。武安君归。王龁将伐赵皮牢，拔之。司马梗北定太原，尽有韩上党。正月，兵罢，复守上党。其十月，五大夫陵攻赵邯郸。",
+      "annotated": "<time>四十八年</time><time>十月</time>，<state>韩</state>献<loc>垣雍</loc>。<state>秦</state>军分为<sys>三军</sys>。<off>武安君</off>归。<p>王龁</p>将伐<state>赵</state><loc>皮牢</loc>，拔之。<p>司马梗</p>北定<loc>太原</loc>，尽有<state>韩</state><loc>上党</loc>。<time>正月</time>，兵罢，复守<loc>上党</loc>。其<time>十月</time>，<off>五大夫</off><p>陵</p>攻<state>赵</state><loc>邯郸</loc>。"
+    },
+    {
+      "pid": "63.33",
+      "text": "四十九年正月，益发卒佐陵。陵战不善，免，王龁代将。其十月，将军张唐攻魏，为蔡尉捐弗守，还斩之。",
+      "annotated": "<time>四十九年</time><time>正月</time>，益发卒佐<p>陵</p>。<p>陵</p>战不善，免，<p>王龁</p>代将。其<time>十月</time>，<off>将军</off><p>张唐</p>攻<state>魏</state>，为<off>蔡尉</off><p>捐</p>弗守，还斩之。"
+    },
+    {
+      "pid": "63.34",
+      "text": "五十年十月，武安君白起有罪，为士伍，迁阴密。张唐攻郑，拔之。十二月，益发卒军汾城旁。武安君白起有罪，死。龁攻邯郸，不拔，去，还奔汾军。二月馀攻晋军，斩首六千，晋楚流死河二万人。攻汾城，即从唐拔宁新中，宁新中更名安阳。初作河桥。",
+      "annotated": "<time>五十年</time><time>十月</time>，<off>武安君</off><p>白起</p>有罪，为士伍，迁<loc>阴密</loc>。<p>张唐</p>攻<loc>郑</loc>，拔之。<time>十二月</time>，益发卒军<loc>汾城</loc>旁。<off>武安君</off><p>白起</p>有罪，死。<p name=\"王龁\">龁</p>攻<loc>邯郸</loc>，不拔，去，还奔<loc>汾</loc>军。<time>二月</time>馀攻<state>晋</state>军，<law>斩首</law><qty>六千</qty>，<state>晋</state><state>楚</state>流死<loc>河</loc><qty>二万人</qty>。攻<loc>汾城</loc>，即从<p name=\"张唐\">唐</p>拔<loc>宁新中</loc>，<loc>宁新中</loc>更名<loc>安阳</loc>。初作<art>河桥</art>。"
+    },
+    {
+      "pid": "64",
+      "text": "五十一年，将军摎攻韩，取阳城、负黍，斩首四万。攻赵，取二十馀县，首虏九万。西周君背秦，与诸侯约从，将天下锐兵出伊阙攻秦，令秦毋得通阳城。於是秦使将军摎攻西周。西周君走来自归，顿首受罪，尽献其邑三十六城，口三万。秦王受献，归其君於周。",
+      "annotated": "<time>五十一年</time>，<off>将军</off><p name=\"秦摎\">摎</p>攻<state>韩</state>，取<loc>阳城</loc>、<loc>负黍</loc>，<law>斩首</law><qty>四万</qty>。攻<state>赵</state>，取<qty>二十馀县</qty>，首虏<qty>九万</qty>。<state>西周</state>君背<state>秦</state>，与<role>诸侯</role>约从，将<idea>天下</idea>锐兵出<loc>伊阙</loc>攻<state>秦</state>，令<state>秦</state>毋得通<loc>阳城</loc>。於是<state>秦</state>使<off>将军</off><p name=\"秦摎\">摎</p>攻<state>西周</state>。<state>西周</state>君走来自归，顿首受罪，尽献其邑<qty>三十六城</qty>，口<qty>三万</qty>。<state>秦</state>王受献，归其君於<state>周</state>。"
+    },
+    {
+      "pid": "64.1",
+      "text": "五十二年，周民东亡，其器九鼎入秦。周初亡。",
+      "annotated": "<time>五十二年</time>，<state>周</state>民东亡，其器<art>九鼎</art>入<state>秦</state>。<state>周</state>初亡。"
+    },
+    {
+      "pid": "65",
+      "text": "五十三年，天下来宾。魏後，秦使摎伐魏，取吴城。韩王入朝，魏委国听令。",
+      "annotated": "<time>五十三年</time>，<idea>天下</idea>来宾。<state>魏</state>後，<state>秦</state>使<p name=\"秦摎\">摎</p>伐<state>魏</state>，取<loc>吴城</loc>。<state>韩</state>王入朝，<state>魏</state>委国听令。"
+    },
+    {
+      "pid": "65.1",
+      "text": "五十四年，王郊见上帝於雍。",
+      "annotated": "<time>五十四年</time>，王郊见<idea>上帝</idea>於<loc>雍</loc>。"
+    },
+    {
+      "pid": "65.2",
+      "text": "五十六年秋，昭襄王卒，子孝文王立。尊唐八子为唐太后，而合其葬於先王。韩王衰绖入吊祠，诸侯皆使其将相来吊祠，视丧事。",
+      "annotated": "<time>五十六年</time><time>秋</time>，<p>昭襄王</p><vpol>卒</vpol>，<role>子</role><p>孝文王</p><vpol>立</vpol>。<vpol>尊</vpol><p>唐八子</p>为<p>唐太后</p>，而合其葬於<role>先王</role>。<state>韩</state>王<art>衰绖</art>入吊祠，<role>诸侯</role>皆使其<role>将相</role>来吊祠，视丧事。"
+    },
+    {
+      "pid": "66",
+      "text": "孝文王元年，赦罪人，修先王功臣，襃厚亲戚，弛苑囿。孝文王除丧，十月己亥即位，三日辛丑卒，子庄襄王立。",
+      "annotated": "<p>孝文王</p><time>元年</time>，<law>赦罪</law>人，修<role>先王</role><role>功臣</role>，襃厚<role>亲戚</role>，弛<sys>苑囿</sys>。<p>孝文王</p>除丧，<time>十月己亥</time>即位，<time>三日辛丑</time><vpol>卒</vpol>，<role>子</role><p>庄襄王</p><vpol>立</vpol>。"
+    },
+    {
+      "pid": "67",
+      "text": "庄襄王元年，大赦罪人，修先王功臣，施德厚骨肉而布惠於民。东周君与诸侯谋秦，秦使相国吕不韦诛之，尽入其国。秦不绝其祀，以阳人地赐周君，奉其祭祀。使蒙骜伐韩，韩献成皋、巩。秦界至大梁，初置三川郡。",
+      "annotated": "<p>庄襄王</p><time>元年</time>，大<law>赦罪</law>人，修<role>先王</role><role>功臣</role>，施德厚骨肉而布惠於民。<p>东周君</p>与<role>诸侯</role>谋<state>秦</state>，<state>秦</state>使<off>相国</off><p>吕不韦</p>诛之，尽入其国。<state>秦</state>不绝其祀，以<loc>阳人</loc>地赐<state>周</state>君，奉其<sys>祭祀</sys>。使<p>蒙骜</p>伐<state>韩</state>，<state>韩</state>献<loc>成皋</loc>、<loc>巩</loc>。<state>秦</state>界至<loc>大梁</loc>，初置<loc>三川郡</loc>。"
+    },
+    {
+      "pid": "67.1",
+      "text": "二年，使蒙骜攻赵，定太原。",
+      "annotated": "<time>二年</time>，使<p>蒙骜</p>攻<state>赵</state>，定<loc>太原</loc>。"
+    },
+    {
+      "pid": "67.2",
+      "text": "三年，蒙骜攻魏高都、汲，拔之。攻赵榆次、新城、狼孟，取三十七城。四月日食。王龁攻上党。初置太原郡。魏将无忌率五国兵击秦，秦卻於河外。蒙骜败，解而去。五月丙午，庄襄王卒，子政立，是为秦始皇帝。",
+      "annotated": "<time>三年</time>，<p>蒙骜</p>攻<state>魏</state><loc>高都</loc>、<loc>汲</loc>，拔之。攻<state>赵</state><loc>榆次</loc>、<loc>新城</loc>、<loc>狼孟</loc>，取<qty>三十七城</qty>。<time>四月</time><astro>日食</astro>。<p>王龁</p>攻<loc>上党</loc>。初置<loc>太原郡</loc>。<state>魏</state>将<p>无忌</p>率五国兵击<state>秦</state>，<state>秦</state>卻於<loc>河外</loc>。<p>蒙骜</p>败，解而去。<time>五月丙午</time>，<p>庄襄王</p><vpol>卒</vpol>，<role>子</role><p name=\"嬴政\">政</p><vpol>立</vpol>，是为<p>秦始皇帝</p>。"
+    },
+    {
+      "pid": "68",
+      "text": "秦王政立二十六年，初并天下为三十六郡，号为始皇帝。",
+      "annotated": "<p>秦王政</p>立<time name=\"时长\">二十六年</time>，初并<idea>天下</idea>为<qty>三十六郡</qty>，号为<p>始皇帝</p>。"
+    },
+    {
+      "pid": "68.1",
+      "text": "始皇帝五十一年而崩，子胡亥立，是为二世皇帝。",
+      "annotated": "<p>始皇帝</p><time name=\"时长\">五十一年</time>而<vpol>崩</vpol>，<role>子</role><p>胡亥</p><vpol>立</vpol>，是为<p>二世皇帝</p>。"
+    },
+    {
+      "pid": "68.2",
+      "text": "三年，诸侯并起叛秦，赵高杀二世，立子婴。子婴立月馀，诸侯诛之，遂灭秦。其语在始皇本纪中。 ::: 太史公曰",
+      "annotated": "<time>三年</time>，<role>诸侯</role>并起叛<state>秦</state>，<p>赵高</p>杀<p>二世</p>，<vpol>立</vpol><p>子婴</p>。<p>子婴</p>立<time name=\"时长\">月馀</time>，<role>诸侯</role>诛之，遂灭<state>秦</state>。其语在<book>始皇本纪</book>中。 ::: 太史公曰"
+    },
+    {
+      "pid": "69",
+      "text": "太史公曰：秦之先为嬴姓。其後分封，以国为姓，有徐氏、郯氏、莒氏、终黎氏、运奄氏、菟裘氏、将梁氏、黄氏、江氏、脩鱼氏、白冥氏、蜚廉氏、秦氏。然秦以其先造父封赵城，为赵氏。 ::: ::: 赞",
+      "annotated": "<p>太史公</p>曰：<state>秦</state>之先为<clan>嬴姓</clan>。其後<sys>分封</sys>，以国为姓，有<clan>徐氏</clan>、<clan>郯氏</clan>、<clan>莒氏</clan>、<clan>终黎氏</clan>、<clan>运奄氏</clan>、<clan>菟裘氏</clan>、<clan>将梁氏</clan>、<clan>黄氏</clan>、<clan>江氏</clan>、<clan>脩鱼氏</clan>、<clan>白冥氏</clan>、<clan>蜚廉氏</clan>、<clan>秦氏</clan>。然<state>秦</state>以其先<p>造父</p><vpol>封</vpol><loc>赵城</loc>，为<clan>赵氏</clan>。 ::: ::: 赞"
+    },
+    {
+      "pid": "70",
+      "text": "柏翳佐舜，皁斿是旌。 蜚廉事纣，石椁斯营。 造父善驭，封之赵城。 非子息马，厥号秦嬴。 礼乐射御，西垂有声。 襄公救周，始命列国。 金祠白帝，龙祚水德。 祥应陈宝，妖除丰特。 里奚致霸，卫鞅任刻。 厥後吞并，卒成凶慝。 :::",
+      "annotated": "<p>柏翳</p>佐<p>舜</p>，<art>皁斿</art>是旌。 <p>蜚廉</p>事<p>纣</p>，<art>石椁</art>斯营。 <p>造父</p>善驭，<vpol>封</vpol>之<loc>赵城</loc>。 <p>非子</p>息<bio>马</bio>，厥号<p>秦嬴</p>。 <sys>礼乐射御</sys>，<loc>西垂</loc>有声。 <p name=\"秦襄公\">襄公</p>救<state>周</state>，始命列国。 金祠<idea>白帝</idea>，龙祚<idea>水德</idea>。 祥应<art>陈宝</art>，妖除丰特。 <p>里奚</p>致霸，<p>卫鞅</p>任刻。 厥後吞并，卒成凶慝。 :::"
+    }
+  ]
+}
