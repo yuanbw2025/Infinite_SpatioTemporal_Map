@@ -135,10 +135,49 @@ function buildLayers() {
   ]
 }
 
+// 历史地形底图样式 — 羊皮纸色背景 + 山体阴影，无现代街道标注
+const HISTORICAL_STYLE = {
+  version: 8,
+  sources: {
+    'terrain-dem': {
+      type: 'raster-dem',
+      url: 'https://demotiles.maplibre.org/terrain-tiles/tiles.json',
+      tileSize: 256,
+      maxzoom: 14
+    },
+    'hillshade-dem': {
+      type: 'raster-dem',
+      url: 'https://demotiles.maplibre.org/terrain-tiles/tiles.json',
+      tileSize: 256,
+      maxzoom: 14
+    }
+  },
+  terrain: { source: 'terrain-dem', exaggeration: 2.0 },
+  layers: [
+    {
+      id: 'background',
+      type: 'background',
+      paint: { 'background-color': '#c8b78a' }
+    },
+    {
+      id: 'hillshade',
+      type: 'hillshade',
+      source: 'hillshade-dem',
+      paint: {
+        'hillshade-shadow-color': '#5c4a2a',
+        'hillshade-highlight-color': '#f0e6c4',
+        'hillshade-accent-color': '#8b7040',
+        'hillshade-illumination-direction': 315,
+        'hillshade-exaggeration': 0.65
+      }
+    }
+  ]
+}
+
 onMounted(() => {
   map = new maplibregl.Map({
     container: mapContainer.value,
-    style: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
+    style: HISTORICAL_STYLE,
     center: [113.5, 34.5],  // 中原
     zoom: 5,
     pitch: 40,
@@ -147,14 +186,6 @@ onMounted(() => {
 
   map.on('load', () => {
     mapLoaded.value = true
-    // 3D 地形
-    map.addSource('raster-dem', {
-      type: 'raster-dem',
-      url: 'https://demotiles.maplibre.org/terrain-tiles/tiles.json',
-      tileSize: 256,
-      maxzoom: 14
-    })
-    map.setTerrain({ source: 'raster-dem', exaggeration: 1.5 })
 
     // 天空
     map.setSky({
@@ -205,47 +236,12 @@ onMounted(() => {
       layers: buildLayers()
     })
     map.addControl(deckOverlay)
-
-    // 汉化地图标签
-    localizeMap()
-
-    // 隐藏现代城市标签（这是古代地图）
-    hideModernLabels()
   })
 })
 
 onUnmounted(() => {
   if (map) map.remove()
 })
-
-function localizeMap() {
-  if (!map) return
-  const layers = map.getStyle().layers
-  layers.forEach(layer => {
-    if (layer.type === 'symbol' && layer.layout && layer.layout['text-field']) {
-      map.setLayoutProperty(layer.id, 'text-field', [
-        'coalesce',
-        ['get', 'name_zh'],
-        ['get', 'name:zh'],
-        ['get', 'name'],
-        layer.layout['text-field']
-      ])
-    }
-  })
-}
-
-function hideModernLabels() {
-  if (!map) return
-  const layers = map.getStyle().layers
-  layers.forEach(layer => {
-    if (layer.type === 'symbol') {
-      if (layer.id.includes('place') || layer.id.includes('city') ||
-          layer.id.includes('country') || layer.id.includes('label')) {
-        map.setLayoutProperty(layer.id, 'visibility', 'none')
-      }
-    }
-  })
-}
 
 // 选中地点变化时更新图层
 watch(selectedLocation, () => {
