@@ -13,20 +13,41 @@ const props = defineProps({
 })
 
 const TAG_COLORS = {
-  p:    { bg: 'rgba(139,0,0,0.08)',    border: '#8b0000', color: '#8b0000', label: '人物' },
-  loc:  { bg: 'rgba(0,100,140,0.08)',  border: '#006488', color: '#006488', label: '地名' },
-  geo:  { bg: 'rgba(34,120,74,0.08)',  border: '#22784a', color: '#22784a', label: '地理' },
-  off:  { bg: 'rgba(120,70,20,0.08)',  border: '#784614', color: '#784614', label: '官职' },
-  time: { bg: 'rgba(180,120,0,0.08)',  border: '#b47800', color: '#b47800', label: '时间' },
-  evt:  { bg: 'rgba(160,30,50,0.08)',  border: '#a01e32', color: '#a01e32', label: '事件' },
-  art:  { bg: 'rgba(180,150,30,0.08)', border: '#b4961e', color: '#b4961e', label: '器物' },
-  ruin: { bg: 'rgba(100,80,60,0.08)',  border: '#64503c', color: '#64503c', label: '遗址' }
+  // 原有标签
+  p:     { bg: 'rgba(139,0,0,0.08)',     border: '#8b0000', color: '#8b0000', label: '人物' },
+  loc:   { bg: 'rgba(0,100,140,0.08)',   border: '#006488', color: '#006488', label: '地名' },
+  geo:   { bg: 'rgba(34,120,74,0.08)',   border: '#22784a', color: '#22784a', label: '地理' },
+  off:   { bg: 'rgba(120,70,20,0.08)',   border: '#784614', color: '#784614', label: '官职' },
+  time:  { bg: 'rgba(180,120,0,0.08)',   border: '#b47800', color: '#b47800', label: '时间' },
+  evt:   { bg: 'rgba(160,30,50,0.08)',   border: '#a01e32', color: '#a01e32', label: '事件' },
+  art:   { bg: 'rgba(180,150,30,0.08)',  border: '#b4961e', color: '#b4961e', label: '器物' },
+  ruin:  { bg: 'rgba(100,80,60,0.08)',   border: '#64503c', color: '#64503c', label: '遗址' },
+  // shiji-kb 扩展标签
+  state: { bg: 'rgba(80,0,120,0.08)',    border: '#500078', color: '#500078', label: '邦国' },
+  role:  { bg: 'rgba(60,80,20,0.08)',    border: '#3c5014', color: '#3c5014', label: '身份' },
+  clan:  { bg: 'rgba(130,50,0,0.08)',    border: '#823200', color: '#823200', label: '氏族' },
+  sys:   { bg: 'rgba(0,80,100,0.08)',    border: '#005064', color: '#005064', label: '制度' },
+  idea:  { bg: 'rgba(60,60,120,0.08)',   border: '#3c3c78', color: '#3c3c78', label: '思想' },
+  law:   { bg: 'rgba(140,0,60,0.08)',    border: '#8c003c', color: '#8c003c', label: '刑法' },
+  tribe: { bg: 'rgba(40,100,60,0.08)',   border: '#28643c', color: '#28643c', label: '族群' },
+  astro: { bg: 'rgba(20,60,140,0.08)',   border: '#143c8c', color: '#143c8c', label: '天文' },
+  bio:   { bg: 'rgba(0,120,40,0.08)',    border: '#007828', color: '#007828', label: '生物' },
+  book:  { bg: 'rgba(80,60,0,0.08)',     border: '#503c00', color: '#503c00', label: '典籍' },
+  rite:  { bg: 'rgba(100,0,80,0.08)',    border: '#640050', color: '#640050', label: '礼仪' },
+  qty:   { bg: 'rgba(60,100,100,0.08)',  border: '#3c6464', color: '#3c6464', label: '数量' },
+  myth:  { bg: 'rgba(80,0,160,0.08)',    border: '#5000a0', color: '#5000a0', label: '神话' },
+  // 动词标签
+  vact:  { bg: 'rgba(180,0,0,0.06)',     border: '#b40000', color: '#b40000', label: '军事动词' },
+  vpol:  { bg: 'rgba(0,0,160,0.06)',     border: '#0000a0', color: '#0000a0', label: '政治动词' },
+  vecon: { bg: 'rgba(0,120,0,0.06)',     border: '#007800', color: '#007800', label: '经济动词' },
+  vpen:  { bg: 'rgba(80,0,0,0.06)',      border: '#500000', color: '#500000', label: '刑罚动词' },
+  idiom: { bg: 'rgba(120,100,0,0.06)',   border: '#786400', color: '#786400', label: '成语典故' },
 }
 
 function parseAnnotatedXml(annotatedStr) {
   if (!annotatedStr) return []
   const tokens = []
-  const tagRegex = /<(p|loc|geo|off|time|evt|art|ruin)(\s[^>]*)?>([^<]*)<\/\1>/g
+  const tagRegex = /<(p|loc|geo|off|time|evt|art|ruin|state|role|clan|sys|idea|law|tribe|astro|bio|book|rite|qty|myth|vact|vpol|vecon|vpen|idiom)(\s[^>]*)?>([^<]*)<\/\1>/g
   let lastIndex = 0
   let match
   while ((match = tagRegex.exec(annotatedStr)) !== null) {
