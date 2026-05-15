@@ -1,22 +1,11 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref } from 'vue'
 import MapView from './MapView.vue'
 import ReaderView from './ReaderView.vue'
 
-const router = useRouter()
-const splitRatio = ref(50) 
+const splitRatio = ref(50)
 const activeEntity = ref(null)
-
-// 默认加载《史记》第一卷
-onMounted(() => {
-  if (!router.currentRoute.value.query.book) {
-    router.replace({ 
-      path: '/', 
-      query: { book: 'ershisishe', file: '001.txt' } 
-    })
-  }
-})
+const mapFocusName = ref(null)
 
 function handleMapClick(entity) {
   activeEntity.value = entity
@@ -24,6 +13,10 @@ function handleMapClick(entity) {
 
 function handleReaderClick(entity) {
   activeEntity.value = entity
+  // 地名/地理实体 → 驱动地图飞到对应位置
+  if (entity.type === 'loc' || entity.type === 'geo') {
+    mapFocusName.value = entity.name
+  }
 }
 </script>
 
@@ -33,9 +26,9 @@ function handleReaderClick(entity) {
     <div class="split-container" :style="{ gridTemplateColumns: `${splitRatio}% 1fr` }">
       <!-- Map Section -->
       <section class="section-map">
-        <MapView 
-          class="integrated-map" 
-          :is-mini="false" 
+        <MapView
+          class="integrated-map"
+          :focus-name="mapFocusName"
           @entity-select="handleMapClick"
         />
       </section>

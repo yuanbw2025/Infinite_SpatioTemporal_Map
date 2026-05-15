@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, onUnmounted, ref, computed, watch } from 'vue'
+import { onMounted, onUnmounted, ref, watch } from 'vue'
 import maplibregl from 'maplibre-gl'
 import { MapboxOverlay } from '@deck.gl/mapbox'
 import { ScatterplotLayer, TextLayer, GeoJsonLayer } from '@deck.gl/layers'
@@ -7,9 +7,15 @@ import { ScatterplotLayer, TextLayer, GeoJsonLayer } from '@deck.gl/layers'
 // 项羽本纪地名数据
 import locationsData from '../../public/data/xiangyu_locations.json'
 
+const props = defineProps({
+  focusName: { type: String, default: null }
+})
+const emit = defineEmits(['entity-select'])
+
 const mapContainer = ref(null)
 const hoveredLocation = ref(null)
 const selectedLocation = ref(null)
+const mapLoaded = ref(false)
 
 let map = null
 let deckOverlay = null
@@ -69,6 +75,7 @@ function buildLayers() {
       onClick: (info) => {
         if (info.object) {
           selectedLocation.value = info.object
+          emit('entity-select', { type: 'loc', name: info.object.name, data: info.object })
         }
       },
       onHover: (info) => {
@@ -139,6 +146,7 @@ onMounted(() => {
   })
 
   map.on('load', () => {
+    mapLoaded.value = true
     // 3D 地形
     map.addSource('raster-dem', {
       type: 'raster-dem',
@@ -243,6 +251,17 @@ function hideModernLabels() {
 watch(selectedLocation, () => {
   if (deckOverlay) {
     deckOverlay.setProps({ layers: buildLayers() })
+  }
+})
+
+// 外部传入焦点地名时，飞到对应位置并高亮
+watch(() => props.focusName, (name) => {
+  if (!name || !mapLoaded.value) return
+  const loc = (locationsData.locations || []).find(l => l.name === name)
+  if (loc) {
+    selectedLocation.value = loc
+    map.flyTo({ center: [loc.lng, loc.lat], zoom: 7, duration: 800 })
+    if (deckOverlay) deckOverlay.setProps({ layers: buildLayers() })
   }
 })
 
