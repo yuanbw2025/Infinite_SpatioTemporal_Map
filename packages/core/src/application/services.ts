@@ -1,10 +1,13 @@
 import type {
   AtlasQuery,
+  EditionId,
   EntityId,
-  PageRequest,
+  EntityQuery,
   PassageId,
+  PassageQuery,
   SearchQuery,
   WorkId,
+  WorkQuery,
 } from "@infinite-spacetime/contracts";
 import { NotFoundError } from "../domain/errors";
 import type { RepositoryBundle } from "./repositories";
@@ -12,7 +15,7 @@ import type { RepositoryBundle } from "./repositories";
 export interface ApplicationServices {
   readonly library: {
     listWorks(
-      request?: PageRequest,
+      query?: WorkQuery,
     ): ReturnType<RepositoryBundle["catalog"]["listWorks"]>;
     openWork(id: WorkId): Promise<{
       work: NonNullable<
@@ -22,15 +25,26 @@ export interface ApplicationServices {
         ReturnType<RepositoryBundle["catalog"]["listEditions"]>
       >;
     }>;
+    listVolumes(
+      editionId: EditionId,
+    ): ReturnType<RepositoryBundle["catalog"]["listVolumes"]>;
   };
   readonly reader: {
+    listPassages(
+      query: PassageQuery,
+    ): ReturnType<RepositoryBundle["reader"]["listPassages"]>;
     readPassage(
       id: PassageId,
     ): Promise<
-      NonNullable<Awaited<ReturnType<RepositoryBundle["reader"]["getPassage"]>>>
+      NonNullable<
+        Awaited<ReturnType<RepositoryBundle["reader"]["getPassageContext"]>>
+      >
     >;
   };
   readonly knowledge: {
+    listEntities(
+      query?: EntityQuery,
+    ): ReturnType<RepositoryBundle["knowledge"]["listEntities"]>;
     openEntity(
       id: EntityId,
     ): Promise<
@@ -47,6 +61,9 @@ export interface ApplicationServices {
   readonly search: {
     run(query: SearchQuery): ReturnType<RepositoryBundle["search"]["search"]>;
   };
+  readonly metadata: {
+    overview(): ReturnType<RepositoryBundle["metadata"]["getDatasetOverview"]>;
+  };
 }
 
 /** The single application façade consumed by every presentation surface. */
@@ -55,7 +72,7 @@ export function createApplicationServices(
 ): ApplicationServices {
   return {
     library: {
-      listWorks: (request) => repositories.catalog.listWorks(request),
+      listWorks: (query) => repositories.catalog.listWorks(query),
       async openWork(id) {
         const work = await repositories.catalog.getWork(id);
         if (!work) throw new NotFoundError("Work", id);
@@ -64,15 +81,18 @@ export function createApplicationServices(
           editions: await repositories.catalog.listEditions(id),
         };
       },
+      listVolumes: (editionId) => repositories.catalog.listVolumes(editionId),
     },
     reader: {
+      listPassages: (query) => repositories.reader.listPassages(query),
       async readPassage(id) {
-        const passage = await repositories.reader.getPassage(id);
-        if (!passage) throw new NotFoundError("Passage", id);
-        return passage;
+        const context = await repositories.reader.getPassageContext(id);
+        if (!context) throw new NotFoundError("Passage", id);
+        return context;
       },
     },
     knowledge: {
+      listEntities: (query) => repositories.knowledge.listEntities(query),
       async openEntity(id) {
         const profile = await repositories.knowledge.getEntityProfile(id);
         if (!profile) throw new NotFoundError("Entity", id);
@@ -84,6 +104,9 @@ export function createApplicationServices(
     },
     search: {
       run: (query) => repositories.search.search(query),
+    },
+    metadata: {
+      overview: () => repositories.metadata.getDatasetOverview(),
     },
   };
 }

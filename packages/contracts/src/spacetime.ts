@@ -1,5 +1,10 @@
-import type { ReviewStatus, TemporalValue } from "./common";
-import type { EntityId, GeometryId, PlaceIdentityId } from "./ids";
+import type { EvidenceSpan, ReviewStatus, TemporalValue } from "./common";
+import type {
+  EntityId,
+  GeometryId,
+  OccurrenceId,
+  PlaceIdentityId,
+} from "./ids";
 
 export interface GeoPoint {
   readonly type: "Point";
@@ -34,10 +39,38 @@ export interface PlaceIdentity {
   readonly parentPlaceIds: readonly PlaceIdentityId[];
 }
 
+export type OccurrenceKind =
+  | "birth"
+  | "death"
+  | "native_place"
+  | "residence"
+  | "office"
+  | "journey"
+  | "event"
+  | "creation"
+  | "discovery"
+  | "collection"
+  | "other";
+
+/** Connects any entity to a historical place and time with source evidence. */
+export interface SpatiotemporalOccurrence {
+  readonly id: OccurrenceId;
+  readonly entityId: EntityId;
+  readonly placeId: PlaceIdentityId;
+  readonly kind: OccurrenceKind;
+  readonly label?: string;
+  readonly temporal?: TemporalValue;
+  readonly sequence?: number;
+  readonly evidence: readonly EvidenceSpan[];
+  readonly reviewStatus: ReviewStatus;
+}
+
 export interface MapObservation {
   readonly entityId: EntityId;
   readonly placeId: PlaceIdentityId;
   readonly geometryId: GeometryId;
+  readonly occurrenceId?: OccurrenceId;
+  readonly geometry: GeoPoint | GeoPolygon;
   readonly temporal?: TemporalValue;
   readonly label: string;
   readonly category: string;

@@ -22,6 +22,9 @@ importers:
       "@infinite-spacetime/adapters":
         specifier: workspace:*
         version: link:../../packages/adapters
+      "@infinite-spacetime/contracts":
+        specifier: workspace:*
+        version: link:../../packages/contracts
       "@infinite-spacetime/core":
         specifier: workspace:*
         version: link:../../packages/core

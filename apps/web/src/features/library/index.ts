@@ -1,5 +1,6 @@
 import { defineFeature } from "@infinite-spacetime/core";
 import LibraryPage from "./LibraryPage.vue";
+import WorkPage from "./WorkPage.vue";
 
 export const libraryFeature = {
   manifest: defineFeature({
@@ -9,4 +10,11 @@ export const libraryFeature = {
     capabilities: ["catalog:browse"],
   }),
   component: LibraryPage,
+  additionalRoutes: [
+    {
+      path: "/works/:workId",
+      name: "work",
+      component: WorkPage,
+    },
+  ],
 };

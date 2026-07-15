@@ -22,6 +22,7 @@
 - `HistoricalPlaceName`：某时期使用的地名。
 - `HistoricalGeometry`：带有效时期、精度与审核状态的点或面。
 - `MapObservation`：地图查询返回的轻量观测，不是新的领域实体。
+- `SpatiotemporalOccurrence`：把人物、事件或文博对象连接到历史地点和时间，并携带证据；籍贯、任职、游历、事件现场和文物流转都使用这一结构。
 
 ## 文本层
 

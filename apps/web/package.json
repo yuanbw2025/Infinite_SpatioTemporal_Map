@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@infinite-spacetime/adapters": "workspace:*",
+    "@infinite-spacetime/contracts": "workspace:*",
     "@infinite-spacetime/core": "workspace:*",
     "vue": "^3.5.32",
     "vue-router": "^4.6.4"

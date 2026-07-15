@@ -37,6 +37,26 @@
       },
       "additionalProperties": false
     },
+    "facsimile": {
+      "type": "object",
+      "required": ["pageId"],
+      "properties": {
+        "pageId": { "type": "string", "minLength": 1 },
+        "canvasUrl": { "type": "string", "format": "uri" },
+        "imageUrl": { "type": "string", "format": "uri" },
+        "region": {
+          "type": "array",
+          "prefixItems": [
+            { "type": "number" },
+            { "type": "number" },
+            { "type": "number", "minimum": 0 },
+            { "type": "number", "minimum": 0 }
+          ],
+          "items": false
+        }
+      },
+      "additionalProperties": false
+    },
     "revision": { "type": "integer", "minimum": 1 }
   },
   "additionalProperties": false

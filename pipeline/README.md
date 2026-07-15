@@ -5,3 +5,12 @@
 固定阶段为：导入 → 规范化 → 分段 → 文本分层 → 实体/关系候选 → 对齐消歧 → 人工审核 → 契约校验 → 发布。每一步实现 `PipelineStage`，可以替换工具，但不能绕过统一发布边界。
 
 将来接入一批数据时，只需新增来源适配器和必要的阶段实现；公众应用与领域内核不随数据来源改变。
+
+## 发布命令
+
+```bash
+PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline validate ../apps/web/public/data/publication.json
+PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline assemble path/to/shards ../apps/web/public/data/publication.json
+```
+
+`assemble` 会读取 `manifest.json` 和各类可选集合文件，组装前执行引用、时空范围与证据校验。任一错误都会阻止发布。

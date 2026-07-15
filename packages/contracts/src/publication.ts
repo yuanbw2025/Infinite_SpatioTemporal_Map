@@ -1,6 +1,10 @@
 import type { Edition, Passage, Volume, Work } from "./catalog";
 import type { Assertion, Entity, Mention } from "./knowledge";
-import type { HistoricalGeometry, PlaceIdentity } from "./spacetime";
+import type {
+  HistoricalGeometry,
+  PlaceIdentity,
+  SpatiotemporalOccurrence,
+} from "./spacetime";
 
 export interface PublicationManifest {
   readonly contractVersion: string;
@@ -22,4 +26,5 @@ export interface KnowledgePublication {
   readonly assertions: readonly Assertion[];
   readonly places: readonly PlaceIdentity[];
   readonly geometries: readonly HistoricalGeometry[];
+  readonly occurrences: readonly SpatiotemporalOccurrence[];
 }

@@ -6,4 +6,4 @@ export * from "./publication";
 export * from "./queries";
 export * from "./spacetime";
 
-export const CONTRACT_VERSION = "0.2.0" as const;
+export const CONTRACT_VERSION = "0.3.0" as const;

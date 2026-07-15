@@ -10,4 +10,11 @@ export const readerFeature = {
     dependsOn: ["library"],
   }),
   component: ReaderPage,
+  additionalRoutes: [
+    {
+      path: "/reader/:passageId",
+      name: "reader-passage",
+      component: ReaderPage,
+    },
+  ],
 };

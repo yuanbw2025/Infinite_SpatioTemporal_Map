@@ -10,4 +10,5 @@ export type MentionId = Id<"MentionId">;
 export type AssertionId = Id<"AssertionId">;
 export type PlaceIdentityId = Id<"PlaceIdentityId">;
 export type GeometryId = Id<"GeometryId">;
+export type OccurrenceId = Id<"OccurrenceId">;
 export type CollectionId = Id<"CollectionId">;

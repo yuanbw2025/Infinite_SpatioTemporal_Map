@@ -10,6 +10,7 @@
     "test": "pnpm -r --if-present test",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "data:validate": "PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline validate apps/web/public/data/publication.json",
     "verify": "pnpm format:check && pnpm typecheck && pnpm test && pnpm build"
   },
   "devDependencies": {

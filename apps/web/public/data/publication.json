@@ -1,0 +1,19 @@
+{
+  "manifest": {
+    "contractVersion": "0.3.0",
+    "publicationId": "empty",
+    "title": "无限时空图空数据发布包",
+    "generatedAt": "1970-01-01T00:00:00.000Z",
+    "sourceDescription": "等待接入正式方志数据"
+  },
+  "works": [],
+  "editions": [],
+  "volumes": [],
+  "passages": [],
+  "entities": [],
+  "mentions": [],
+  "assertions": [],
+  "places": [],
+  "geometries": [],
+  "occurrences": []
+}

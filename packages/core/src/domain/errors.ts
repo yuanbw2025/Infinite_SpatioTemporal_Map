@@ -1,9 +1,9 @@
 export class DomainError extends Error {
-  override readonly name = "DomainError";
+  override readonly name: string = "DomainError";
 }
 
 export class NotFoundError extends DomainError {
-  override readonly name = "NotFoundError";
+  override readonly name: string = "NotFoundError";
 
   constructor(kind: string, id: string) {
     super(`${kind} not found: ${id}`);
@@ -11,5 +11,5 @@ export class NotFoundError extends DomainError {
 }
 
 export class ContractMismatchError extends DomainError {
-  override readonly name = "ContractMismatchError";
+  override readonly name: string = "ContractMismatchError";
 }

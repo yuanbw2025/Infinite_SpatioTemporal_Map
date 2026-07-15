@@ -4,7 +4,7 @@
 
 ## 当前阶段
 
-这是全新原创架构的基础版本。目前已建立长期稳定的数据契约、领域内核、应用服务、存储适配器、模块注册方式、六个公众功能边界和数据生产管线，不迁移旧项目代码或生成数据。
+这是全新原创架构的首个可运行产品版本。方志书库、分层阅读、实体档案、证据回溯、人物行迹、时空地图、文博浏览、全库检索和数据状态页面均已接入统一应用服务；目前唯一缺少的是正式方志发布包。
 
 ## 架构约束
 
@@ -32,6 +32,7 @@ data/fixtures          可公开的小型测试样本
 ```bash
 pnpm install
 pnpm dev
+pnpm data:validate
 pnpm verify
 ```
 
@@ -40,6 +41,7 @@ pnpm verify
 - [总体架构](docs/architecture.md)
 - [功能架构](docs/functional-architecture.md)
 - [统一数据模型](docs/data-model.md)
+- [数据接入手册](docs/data-onboarding.md)
 - [扩展指南](docs/extension-guide.md)
 - [开发路线](docs/roadmap.md)
 

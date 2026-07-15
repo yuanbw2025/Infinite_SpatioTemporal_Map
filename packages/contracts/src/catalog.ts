@@ -2,9 +2,11 @@ import type {
   EditionId,
   FacsimilePageId,
   PassageId,
+  PlaceIdentityId,
   VolumeId,
   WorkId,
 } from "./ids";
+import type { TemporalValue } from "./common";
 
 export interface Work {
   readonly id: WorkId;
@@ -14,6 +16,11 @@ export interface Work {
     "gazetteer" | "history" | "genealogy" | "catalogue" | "other";
   readonly describedRegion?: string;
   readonly abstract?: string;
+  readonly coverage?: {
+    readonly temporal?: TemporalValue;
+    readonly regionLabels: readonly string[];
+    readonly placeIds: readonly PlaceIdentityId[];
+  };
 }
 
 export interface Edition {

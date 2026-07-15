@@ -10,7 +10,8 @@ export type FeatureCapability =
   | "atlas:explore"
   | "people:explore"
   | "heritage:explore"
-  | "search:global";
+  | "search:global"
+  | "metadata:inspect";
 
 export interface FeatureModule {
   readonly id: string;
