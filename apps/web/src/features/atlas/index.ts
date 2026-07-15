@@ -6,6 +6,7 @@ export const atlasFeature = {
     id: "atlas",
     route: "/atlas",
     navigation: { label: "无限时空", order: 30 },
+    capabilities: ["atlas:explore"],
     dependsOn: ["library"],
   }),
   component: AtlasPage,

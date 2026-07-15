@@ -3,10 +3,20 @@ export interface FeatureNavigation {
   readonly order: number;
 }
 
+export type FeatureCapability =
+  | "catalog:browse"
+  | "text:read"
+  | "knowledge:explore"
+  | "atlas:explore"
+  | "people:explore"
+  | "heritage:explore"
+  | "search:global";
+
 export interface FeatureModule {
   readonly id: string;
   readonly route: string;
   readonly navigation: FeatureNavigation;
+  readonly capabilities: readonly FeatureCapability[];
   readonly dependsOn?: readonly string[];
 }
 

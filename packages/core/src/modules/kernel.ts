@@ -2,6 +2,7 @@ import type { FeatureModule } from "./feature-module";
 
 export interface ApplicationKernel {
   readonly features: readonly FeatureModule[];
+  hasCapability(capability: string): boolean;
 }
 
 export function createApplicationKernel(
@@ -9,6 +10,7 @@ export function createApplicationKernel(
 ): ApplicationKernel {
   const byId = new Map<string, FeatureModule>();
   const routes = new Set<string>();
+  const capabilities = new Set<string>();
 
   for (const feature of features) {
     if (byId.has(feature.id)) {
@@ -19,6 +21,7 @@ export function createApplicationKernel(
     }
     byId.set(feature.id, feature);
     routes.add(feature.route);
+    for (const capability of feature.capabilities) capabilities.add(capability);
   }
 
   for (const feature of features) {
@@ -35,5 +38,6 @@ export function createApplicationKernel(
     features: [...features].sort(
       (left, right) => left.navigation.order - right.navigation.order,
     ),
+    hasCapability: (capability) => capabilities.has(capability),
   };
 }

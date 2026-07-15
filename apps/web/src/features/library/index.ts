@@ -6,6 +6,7 @@ export const libraryFeature = {
     id: "library",
     route: "/",
     navigation: { label: "方志博览", order: 10 },
+    capabilities: ["catalog:browse"],
   }),
   component: LibraryPage,
 };

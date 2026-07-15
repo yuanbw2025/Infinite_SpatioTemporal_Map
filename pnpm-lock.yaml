@@ -19,6 +19,9 @@ importers:
 
   apps/web:
     dependencies:
+      "@infinite-spacetime/adapters":
+        specifier: workspace:*
+        version: link:../../packages/adapters
       "@infinite-spacetime/core":
         specifier: workspace:*
         version: link:../../packages/core
@@ -38,6 +41,15 @@ importers:
       vue-tsc:
         specifier: ^3.2.6
         version: 3.3.7(typescript@6.0.3)
+
+  packages/adapters:
+    dependencies:
+      "@infinite-spacetime/contracts":
+        specifier: workspace:*
+        version: link:../contracts
+      "@infinite-spacetime/core":
+        specifier: workspace:*
+        version: link:../core
 
   packages/contracts: {}
 

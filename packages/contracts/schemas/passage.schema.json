@@ -8,10 +8,17 @@
     "id": { "type": "string", "minLength": 1 },
     "source": {
       "type": "object",
-      "required": ["workId", "editionId", "volumeLabel", "passageId"],
+      "required": [
+        "workId",
+        "editionId",
+        "volumeId",
+        "volumeLabel",
+        "passageId"
+      ],
       "properties": {
         "workId": { "type": "string" },
         "editionId": { "type": "string" },
+        "volumeId": { "type": "string" },
         "volumeLabel": { "type": "string" },
         "sectionLabel": { "type": "string" },
         "pageId": { "type": "string" },

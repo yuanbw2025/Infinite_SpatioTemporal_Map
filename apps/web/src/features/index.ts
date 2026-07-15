@@ -6,7 +6,9 @@ import type { Component } from "vue";
 import { atlasFeature } from "./atlas";
 import { heritageFeature } from "./heritage";
 import { libraryFeature } from "./library";
+import { peopleFeature } from "./people";
 import { readerFeature } from "./reader";
+import { searchFeature } from "./search";
 
 interface RegisteredFeature {
   readonly manifest: FeatureModule;
@@ -17,7 +19,9 @@ const features: readonly RegisteredFeature[] = [
   libraryFeature,
   readerFeature,
   atlasFeature,
+  peopleFeature,
   heritageFeature,
+  searchFeature,
 ];
 
 export const kernel = createApplicationKernel(

@@ -6,6 +6,7 @@ import type {
   MentionId,
   Passage,
   PassageId,
+  VolumeId,
   WorkId,
 } from "@infinite-spacetime/contracts";
 import { validateMention } from "../src";
@@ -16,6 +17,7 @@ const passage: Passage = {
   source: {
     workId: "work-1" as WorkId,
     editionId: "edition-1" as EditionId,
+    volumeId: "volume-1" as VolumeId,
     volumeLabel: "卷一",
     passageId,
   },

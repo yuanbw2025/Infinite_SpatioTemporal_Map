@@ -4,7 +4,7 @@
 
 ## 当前阶段
 
-这是全新原创架构的第一个基础版本。目前只建立长期稳定的领域内核、数据契约、模块接入方式、公众应用骨架和质量门禁，不迁移旧项目代码或生成数据。
+这是全新原创架构的基础版本。目前已建立长期稳定的数据契约、领域内核、应用服务、存储适配器、模块注册方式、六个公众功能边界和数据生产管线，不迁移旧项目代码或生成数据。
 
 ## 架构约束
 
@@ -21,6 +21,7 @@
 apps/web              公众博览应用
 packages/contracts    唯一的数据交换契约
 packages/core         领域规则、应用端口和模块内核
+packages/adapters     静态发布包及未来存储的适配层
 pipeline              数据导入、校验与发布管线
 docs                  愿景、架构、数据和决策文档
 data/fixtures          可公开的小型测试样本
@@ -33,6 +34,14 @@ pnpm install
 pnpm dev
 pnpm verify
 ```
+
+## 从哪里继续
+
+- [总体架构](docs/architecture.md)
+- [功能架构](docs/functional-architecture.md)
+- [统一数据模型](docs/data-model.md)
+- [扩展指南](docs/extension-guide.md)
+- [开发路线](docs/roadmap.md)
 
 ## 权利说明
 
