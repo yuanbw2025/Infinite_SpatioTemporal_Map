@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+data/private/
+data/raw/
+data/derived/
+!data/fixtures/
+__pycache__/
+.pytest_cache/
+.venv/
+
