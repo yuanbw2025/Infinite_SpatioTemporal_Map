@@ -36,6 +36,8 @@ pnpm data:validate
 pnpm verify
 ```
 
+地图使用 MapLibre GL JS。默认底图无需密钥，也可通过 `VITE_MAP_STYLE_URL` 切换为自建或其他兼容样式。
+
 ## 从哪里继续
 
 - [总体架构](docs/architecture.md)

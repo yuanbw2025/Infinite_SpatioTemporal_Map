@@ -12,10 +12,12 @@
     "@infinite-spacetime/adapters": "workspace:*",
     "@infinite-spacetime/contracts": "workspace:*",
     "@infinite-spacetime/core": "workspace:*",
+    "maplibre-gl": "^5.24.0",
     "vue": "^3.5.32",
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
+    "@types/geojson": "^7946.0.16",
     "@vitejs/plugin-vue": "^6.0.6",
     "vite": "^8.0.9",
     "vue-tsc": "^3.2.6"

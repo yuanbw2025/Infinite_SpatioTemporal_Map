@@ -16,10 +16,20 @@ export interface GeoPolygon {
   readonly coordinates: readonly (readonly (readonly [number, number])[])[];
 }
 
+export interface GeoMultiPolygon {
+  readonly type: "MultiPolygon";
+  readonly coordinates: readonly (readonly (readonly (readonly [
+    number,
+    number,
+  ])[])[])[];
+}
+
+export type HistoricalShape = GeoPoint | GeoPolygon | GeoMultiPolygon;
+
 export interface HistoricalGeometry {
   readonly id: GeometryId;
   readonly placeId: PlaceIdentityId;
-  readonly geometry: GeoPoint | GeoPolygon;
+  readonly geometry: HistoricalShape;
   readonly validDuring?: TemporalValue;
   readonly precision: "site" | "settlement" | "region" | "unknown";
   readonly reviewStatus: ReviewStatus;
@@ -70,7 +80,7 @@ export interface MapObservation {
   readonly placeId: PlaceIdentityId;
   readonly geometryId: GeometryId;
   readonly occurrenceId?: OccurrenceId;
-  readonly geometry: GeoPoint | GeoPolygon;
+  readonly geometry: HistoricalShape;
   readonly temporal?: TemporalValue;
   readonly label: string;
   readonly category: string;

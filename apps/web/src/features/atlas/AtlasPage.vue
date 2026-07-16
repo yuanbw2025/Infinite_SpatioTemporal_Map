@@ -5,15 +5,17 @@ import type {
   MapObservation,
   TemporalValue,
 } from "@infinite-spacetime/contracts";
-import { computed, onMounted, ref } from "vue";
+import { computed, onBeforeUnmount, onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import EmptyState from "../../components/EmptyState.vue";
 import PageHeader from "../../components/PageHeader.vue";
 import { useApplication } from "../../composables/useApplication";
+import HistoricalMap from "./components/HistoricalMap.vue";
 
 const { services } = useApplication();
 const route = useRoute();
 const observations = ref<readonly MapObservation[]>([]);
+const journeyObservations = ref<readonly MapObservation[]>([]);
 const activeTypes = ref<EntityType[]>([
   "place",
   "person",
@@ -27,6 +29,17 @@ const selected = ref<MapObservation>();
 const loading = ref(false);
 const error = ref("");
 const nextCursor = ref<string>();
+const currentYear = ref<number>();
+const playbackStep = ref(10);
+const playing = ref(false);
+const showPoints = ref(true);
+const showRegions = ref(true);
+const showRoutes = ref(true);
+const showLabels = ref(true);
+const viewport = ref({ west: 73, south: 18, east: 135, north: 54 });
+let playbackTimer: ReturnType<typeof setInterval> | undefined;
+let journeyRequestId = 0;
+let mapRequestId = 0;
 
 const typeOptions: readonly { value: EntityType; label: string }[] = [
   { value: "place", label: "地点" },
@@ -36,18 +49,16 @@ const typeOptions: readonly { value: EntityType; label: string }[] = [
   { value: "artifact", label: "文物" },
 ];
 
-const pointObservations = computed(() =>
-  observations.value.filter((item) => item.geometry.type === "Point"),
-);
-
-const focusedEntityId = computed(() =>
-  typeof route.query.entity === "string" ? route.query.entity : undefined,
+const focusedEntityId = computed<EntityId | undefined>(() =>
+  typeof route.query.entity === "string"
+    ? (route.query.entity as EntityId)
+    : undefined,
 );
 
 const journeyPoints = computed(() => {
   const entityId = selected.value?.entityId ?? focusedEntityId.value;
   if (!entityId) return [];
-  return pointObservations.value
+  return journeyObservations.value
     .filter((item) => item.entityId === entityId && item.occurrenceId)
     .toSorted(
       (left, right) =>
@@ -55,20 +66,19 @@ const journeyPoints = computed(() => {
     );
 });
 
-const journeyPolyline = computed(() =>
-  journeyPoints.value
-    .map((item) => {
-      if (item.geometry.type !== "Point") return "";
-      const [longitude, latitude] = item.geometry.coordinates;
-      const x = Math.min(100, Math.max(0, ((longitude - 73) / 62) * 100));
-      const y = Math.min(100, Math.max(0, (1 - (latitude - 18) / 36) * 100));
-      return `${x},${y}`;
-    })
-    .filter(Boolean)
-    .join(" "),
+const journeyEntityId = computed(
+  () => selected.value?.entityId ?? focusedEntityId.value,
 );
 
 function temporalQuery(): TemporalValue | undefined {
+  if (currentYear.value !== undefined) {
+    return {
+      original: String(currentYear.value),
+      startYear: currentYear.value,
+      endYear: currentYear.value,
+      certainty: "exact",
+    };
+  }
   if (startYear.value === undefined && endYear.value === undefined)
     return undefined;
   return {
@@ -81,15 +91,89 @@ function temporalQuery(): TemporalValue | undefined {
   };
 }
 
-function pointStyle(observation: MapObservation) {
-  if (observation.geometry.type !== "Point") return {};
-  const [longitude, latitude] = observation.geometry.coordinates;
-  const left = Math.min(100, Math.max(0, ((longitude - 73) / 62) * 100));
-  const top = Math.min(100, Math.max(0, (1 - (latitude - 18) / 36) * 100));
-  return { left: `${left}%`, top: `${top}%` };
+function stopPlayback() {
+  if (playbackTimer) clearInterval(playbackTimer);
+  playbackTimer = undefined;
+  playing.value = false;
+}
+
+function applyRange() {
+  stopPlayback();
+  currentYear.value = undefined;
+  void load();
+}
+
+function togglePlayback() {
+  if (playing.value) {
+    stopPlayback();
+    return;
+  }
+  if (startYear.value === undefined || endYear.value === undefined) {
+    error.value = "请先填写时间轴的起始年和终止年。";
+    return;
+  }
+  if (startYear.value > endYear.value) {
+    error.value = "时间轴起始年不能晚于终止年。";
+    return;
+  }
+  error.value = "";
+  currentYear.value = startYear.value;
+  playing.value = true;
+  void load();
+  playbackTimer = setInterval(() => {
+    if (
+      currentYear.value === undefined ||
+      endYear.value === undefined ||
+      currentYear.value >= endYear.value
+    ) {
+      stopPlayback();
+      return;
+    }
+    currentYear.value = Math.min(
+      endYear.value,
+      currentYear.value + Math.max(1, playbackStep.value),
+    );
+    void load();
+  }, 900);
+}
+
+function handleViewport(bounds: {
+  west: number;
+  south: number;
+  east: number;
+  north: number;
+}) {
+  viewport.value = bounds;
+}
+
+async function loadJourney(entityId: EntityId | undefined) {
+  const requestId = ++journeyRequestId;
+  journeyObservations.value = [];
+  if (!entityId) return;
+
+  const items: MapObservation[] = [];
+  let cursor: string | undefined;
+  try {
+    do {
+      const page = await services.atlas.explore({
+        entityIds: [entityId],
+        limit: 200,
+        ...(cursor ? { cursor } : {}),
+      });
+      items.push(...page.observations);
+      cursor = page.nextCursor;
+    } while (cursor && requestId === journeyRequestId);
+    if (requestId === journeyRequestId) journeyObservations.value = items;
+  } catch (reason) {
+    if (requestId === journeyRequestId) {
+      error.value =
+        reason instanceof Error ? reason.message : "完整时空行迹加载失败";
+    }
+  }
 }
 
 async function load(append = false) {
+  const requestId = ++mapRequestId;
   loading.value = true;
   error.value = "";
   if (!append) {
@@ -99,18 +183,14 @@ async function load(append = false) {
   try {
     const temporal = temporalQuery();
     const page = await services.atlas.explore({
-      west: 73,
-      south: 18,
-      east: 135,
-      north: 54,
+      ...viewport.value,
       entityTypes: activeTypes.value,
-      ...(focusedEntityId.value
-        ? { entityIds: [focusedEntityId.value as EntityId] }
-        : {}),
+      ...(focusedEntityId.value ? { entityIds: [focusedEntityId.value] } : {}),
       limit: 100,
       ...(append && nextCursor.value ? { cursor: nextCursor.value } : {}),
       ...(temporal ? { temporal } : {}),
     });
+    if (requestId !== mapRequestId) return;
     observations.value = append
       ? [...observations.value, ...page.observations]
       : page.observations;
@@ -127,13 +207,20 @@ async function load(append = false) {
       selected.value = undefined;
     }
   } catch (reason) {
-    error.value = reason instanceof Error ? reason.message : "时空数据加载失败";
+    if (requestId === mapRequestId) {
+      error.value =
+        reason instanceof Error ? reason.message : "时空数据加载失败";
+    }
   } finally {
-    loading.value = false;
+    if (requestId === mapRequestId) loading.value = false;
   }
 }
 
 onMounted(() => load());
+onBeforeUnmount(stopPlayback);
+watch(journeyEntityId, (entityId) => void loadJourney(entityId), {
+  immediate: true,
+});
 </script>
 
 <template>
@@ -160,47 +247,65 @@ onMounted(() => load());
         ><span>终止年</span
         ><input v-model.number="endYear" type="number" placeholder="如 1644"
       /></label>
-      <button class="primary-button" type="button" @click="load()">
+      <button class="primary-button" type="button" @click="applyRange">
         应用时空筛选
       </button>
+      <button class="secondary-button" type="button" @click="load()">
+        搜索当前视野
+      </button>
+    </div>
+
+    <div class="timeline-control">
+      <div class="timeline-readout">
+        <span>时间轴</span>
+        <strong>{{ currentYear ?? "范围模式" }}</strong>
+      </div>
+      <input
+        v-if="startYear !== undefined && endYear !== undefined"
+        v-model.number="currentYear"
+        class="timeline-slider"
+        type="range"
+        :min="startYear"
+        :max="endYear"
+        :step="Math.max(1, playbackStep)"
+        @change="load()"
+      />
+      <label class="timeline-step">
+        <span>步长</span>
+        <input v-model.number="playbackStep" type="number" min="1" />
+      </label>
+      <button class="timeline-play" type="button" @click="togglePlayback">
+        {{ playing ? "暂停" : "播放时代变化" }}
+      </button>
+    </div>
+
+    <div class="map-layer-controls" role="group" aria-label="地图图层">
+      <label><input v-model="showPoints" type="checkbox" /> 点位与聚合</label>
+      <label><input v-model="showRegions" type="checkbox" /> 历史区域</label>
+      <label><input v-model="showRoutes" type="checkbox" /> 人物行迹</label>
+      <label><input v-model="showLabels" type="checkbox" /> 地名标注</label>
     </div>
 
     <p v-if="error" class="error-line">{{ error }}</p>
     <div class="atlas-layout">
-      <div class="map-canvas" aria-label="历史地理坐标图">
-        <div class="map-grid" aria-hidden="true"></div>
-        <svg
-          v-if="journeyPoints.length > 1"
-          class="map-route-layer"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          aria-label="人物行迹连线"
-        >
-          <polyline :points="journeyPolyline" />
-        </svg>
-        <div class="map-label map-label--north">北</div>
-        <div class="map-label map-label--west">73°E</div>
-        <div class="map-label map-label--east">135°E</div>
-        <button
-          v-for="observation in pointObservations"
-          :key="`${observation.entityId}-${observation.geometryId}`"
-          class="map-point"
-          :class="{ active: selected?.geometryId === observation.geometryId }"
-          :data-category="observation.category"
-          :style="pointStyle(observation)"
-          type="button"
-          :aria-label="observation.label"
-          @click="selected = observation"
-        >
-          <span>{{ observation.label }}</span>
-        </button>
-
+      <div class="atlas-map-stage">
+        <HistoricalMap
+          :observations="observations"
+          :selected="selected"
+          :journey="journeyPoints"
+          :show-points="showPoints"
+          :show-regions="showRegions"
+          :show-routes="showRoutes"
+          :show-labels="showLabels"
+          @select="selected = $event"
+          @viewport="handleViewport"
+        />
         <div v-if="loading" class="map-overlay">正在读取时空观测……</div>
         <EmptyState
-          v-else-if="!pointObservations.length"
+          v-else-if="!observations.length"
           compact
           title="地图引擎已经就绪"
-          description="加入地点身份和历史坐标后，点位、类型筛选、时代筛选与档案跳转会直接启用。"
+          description="加入地点身份和历史坐标后，聚合点位、历史区域、时间轴和人物行迹会直接启用。"
         />
       </div>
 

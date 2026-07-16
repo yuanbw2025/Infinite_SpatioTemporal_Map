@@ -34,6 +34,36 @@ class PublicationValidationError(ValueError):
     """Raised when a publication breaks referential or evidence rules."""
 
 
+def _valid_position(value: Any) -> bool:
+    return (
+        isinstance(value, list)
+        and len(value) == 2
+        and all(
+            isinstance(number, (int, float)) and not isinstance(number, bool)
+            for number in value
+        )
+        and -180 <= value[0] <= 180
+        and -90 <= value[1] <= 90
+    )
+
+
+def _valid_linear_ring(value: Any) -> bool:
+    return (
+        isinstance(value, list)
+        and len(value) >= 4
+        and all(_valid_position(position) for position in value)
+        and value[0] == value[-1]
+    )
+
+
+def _valid_polygon_coordinates(value: Any) -> bool:
+    return (
+        isinstance(value, list)
+        and len(value) >= 1
+        and all(_valid_linear_ring(ring) for ring in value)
+    )
+
+
 def _load_json(path: Path) -> Any:
     with path.open("r", encoding="utf-8") as file:
         return json.load(file)
@@ -327,21 +357,31 @@ def validate_publication(value: Any) -> None:
         if not isinstance(shape, dict) or shape.get("type") not in {
             "Point",
             "Polygon",
+            "MultiPolygon",
         }:
             raise PublicationValidationError(
                 f"Geometry {geometry['id']} has an unsupported shape"
             )
         if shape.get("type") == "Point":
             coordinates = shape.get("coordinates")
-            if (
-                not isinstance(coordinates, list)
-                or len(coordinates) != 2
-                or not all(isinstance(number, (int, float)) for number in coordinates)
-                or not -180 <= coordinates[0] <= 180
-                or not -90 <= coordinates[1] <= 90
-            ):
+            if not _valid_position(coordinates):
                 raise PublicationValidationError(
                     f"Geometry {geometry['id']} has invalid point coordinates"
+                )
+        elif shape.get("type") == "Polygon":
+            if not _valid_polygon_coordinates(shape.get("coordinates")):
+                raise PublicationValidationError(
+                    f"Geometry {geometry['id']} has invalid polygon coordinates"
+                )
+        else:
+            coordinates = shape.get("coordinates")
+            if (
+                not isinstance(coordinates, list)
+                or not coordinates
+                or not all(_valid_polygon_coordinates(item) for item in coordinates)
+            ):
+                raise PublicationValidationError(
+                    f"Geometry {geometry['id']} has invalid multipolygon coordinates"
                 )
 
     _ids(value["occurrences"], "occurrences")

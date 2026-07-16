@@ -11,6 +11,7 @@ import {
   type EntityProfile,
   type EntityQuery,
   type EntitySummary,
+  type HistoricalGeometry,
   type KnowledgePublication,
   type Page,
   type PageRequest,
@@ -87,6 +88,33 @@ function overlaps(
     return true;
   }
   return candidateEnd >= requestedStart && candidateStart <= requestedEnd;
+}
+
+function intersectsBounds(
+  historicalGeometry: HistoricalGeometry,
+  query: AtlasQuery,
+): boolean {
+  const shape = historicalGeometry.geometry;
+  const positions =
+    shape.type === "Point"
+      ? [shape.coordinates]
+      : shape.type === "Polygon"
+        ? shape.coordinates.flatMap((ring) => ring)
+        : shape.coordinates.flatMap((polygon) =>
+            polygon.flatMap((ring) => ring),
+          );
+  if (!positions.length) return false;
+  const longitudes = positions.map((position) => position[0]);
+  const latitudes = positions.map((position) => position[1]);
+  const west = Math.min(...longitudes);
+  const east = Math.max(...longitudes);
+  const south = Math.min(...latitudes);
+  const north = Math.max(...latitudes);
+  if (query.west !== undefined && east < query.west) return false;
+  if (query.east !== undefined && west > query.east) return false;
+  if (query.south !== undefined && north < query.south) return false;
+  if (query.north !== undefined && south > query.north) return false;
+  return true;
 }
 
 export function createStaticPublicationRepository(
@@ -319,18 +347,11 @@ export function createStaticPublicationRepository(
       const entityTypeSet = query.entityTypes
         ? new Set(query.entityTypes)
         : undefined;
-      const inBounds = (geometry: (typeof publication.geometries)[number]) => {
-        if (!overlaps(geometry.validDuring, query.temporal)) return [];
-        if (geometry.geometry.type !== "Point") return [];
-        const [longitude, latitude] = geometry.geometry.coordinates;
-        if (query.west !== undefined && longitude < query.west) return [];
-        if (query.east !== undefined && longitude > query.east) return [];
-        if (query.south !== undefined && latitude < query.south) return [];
-        if (query.north !== undefined && latitude > query.north) return [];
-        return [geometry];
-      };
+      const inBounds = (geometry: HistoricalGeometry) =>
+        overlaps(geometry.validDuring, query.temporal) &&
+        intersectsBounds(geometry, query);
       const placeObservations = publication.geometries.flatMap((geometry) => {
-        if (!inBounds(geometry).length) return [];
+        if (!inBounds(geometry)) return [];
         const place = places.get(geometry.placeId);
         if (!place) return [];
         const entity = entities.get(place.entityId);
@@ -360,7 +381,7 @@ export function createStaticPublicationRepository(
             return [];
           return (geometriesByPlace.get(occurrence.placeId) ?? []).flatMap(
             (geometry) => {
-              if (!inBounds(geometry).length) return [];
+              if (!inBounds(geometry)) return [];
               return [
                 {
                   entityId: entity.id,

@@ -48,7 +48,7 @@ pnpm data:validate
 | passages                   | 原文目录、分层阅读、全文检索      |
 | entities + mentions        | 实体高亮、人物/文博列表、原文出现 |
 | assertions + evidence      | 实体档案、关系、时代与出处回溯    |
-| places + geometries        | 历史地点底图、名称和范围          |
+| places + geometries        | 历史地点、名称、单区与不连续辖区  |
 | occurrences                | 人物游历、事件现场与文物流转      |
 | facsimile anchors          | 阅读器影印联动                    |
 
@@ -58,3 +58,8 @@ pnpm data:validate
 - `Mention.start/end` 必须以原文 Unicode 字符索引为准。
 - 正式 `Assertion` 至少有一个 `EvidenceSpan`。
 - 页面功能不得直接修改发布包；数据修订必须回到管线重新发布。
+- `Polygon` 和 `MultiPolygon` 的每个环至少四点且首尾闭合，坐标使用 WGS 84 经度、纬度顺序。
+
+## 地图底图
+
+时空数据层由 MapLibre 在浏览器中渲染，点、面、多面、聚合和行迹均来自发布包。默认使用公开矢量底图；如需部署自有瓦片或适配特定网络环境，在 `apps/web/.env` 设置 `VITE_MAP_STYLE_URL` 即可，更换底图不会改变历史数据契约。外部底图不可用时页面会切换到本地空白样式，历史数据层仍能工作。

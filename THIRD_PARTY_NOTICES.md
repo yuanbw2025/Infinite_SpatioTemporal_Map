@@ -8,7 +8,9 @@
 
 - Vue
 - Vue Router
+- MapLibre GL JS
 - Vite
 - TypeScript
+- GeoJSON TypeScript definitions
 - Vitest
 - Prettier
