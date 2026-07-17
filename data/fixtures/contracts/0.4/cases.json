@@ -1,0 +1,14 @@
+[
+  {
+    "file": "valid/minimal-publication.json",
+    "valid": true
+  },
+  {
+    "file": "invalid/missing-root-collection.json",
+    "valid": false
+  },
+  {
+    "file": "invalid/assertion-object-xor.json",
+    "valid": false
+  }
+]

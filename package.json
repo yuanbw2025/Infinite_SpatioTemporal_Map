@@ -5,15 +5,26 @@
   "packageManager": "pnpm@11.7.0",
   "scripts": {
     "dev": "pnpm --filter @infinite-spacetime/web dev",
+    "dev:curation": "pnpm --filter @infinite-spacetime/curation dev",
     "build": "pnpm -r --if-present build",
+    "build:budget": "node scripts/check-build-budgets.mjs",
+    "architecture:check": "node scripts/check-architecture.mjs",
+    "hygiene:check": "node scripts/check-repository-hygiene.mjs",
+    "contracts:generate": "node scripts/generate-contracts.mjs",
+    "contracts:check": "node scripts/generate-contracts.mjs --check",
     "typecheck": "pnpm -r --if-present typecheck",
     "test": "pnpm -r --if-present test",
+    "coverage:ts": "pnpm --filter @infinite-spacetime/contracts exec vitest run --coverage && pnpm --filter @infinite-spacetime/core exec vitest run --coverage",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "pipeline:test": "PYTHONPATH=pipeline/src python3 -m unittest discover -s pipeline/tests -p 'test_*.py'",
+    "coverage:pipeline": "PYTHONPATH=pipeline/src python3 -m coverage run --rcfile=pipeline/.coveragerc -m unittest discover -s pipeline/tests -p 'test_*.py' && python3 -m coverage report --rcfile=pipeline/.coveragerc",
     "data:validate": "PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline validate apps/web/public/data/publication.json",
-    "verify": "pnpm format:check && pnpm typecheck && pnpm test && pnpm build"
+    "verify": "pnpm architecture:check && pnpm hygiene:check && pnpm contracts:check && pnpm format:check && pnpm typecheck && pnpm coverage:ts && pnpm coverage:pipeline && pnpm data:validate && pnpm build && pnpm build:budget"
   },
   "devDependencies": {
+    "@vitest/coverage-v8": "4.1.10",
+    "json-schema-to-typescript": "15.0.4",
     "prettier": "^3.6.2",
     "typescript": "^6.0.2",
     "vitest": "^4.0.18"

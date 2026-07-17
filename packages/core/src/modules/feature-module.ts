@@ -11,7 +11,10 @@ export type FeatureCapability =
   | "people:explore"
   | "heritage:explore"
   | "search:global"
-  | "metadata:inspect";
+  | "metadata:inspect"
+  | "graph:explore"
+  | "timeline:explore"
+  | "research:inspect";
 
 export interface FeatureModule {
   readonly id: string;

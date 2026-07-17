@@ -1,13 +1,16 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://infinite-spacetime.local/schemas/publication.schema.json",
-  "title": "Infinite SpatioTemporal Map Knowledge Publication",
+  "$id": "https://infinite-spacetime.org/schemas/0.4.0/publication.schema.json",
+  "title": "KnowledgePublication",
+  "description": "Canonical portable publication contract for Infinite SpatioTemporal Map.",
   "type": "object",
   "required": [
     "manifest",
+    "sources",
     "works",
     "editions",
     "volumes",
+    "facsimilePages",
     "passages",
     "entities",
     "mentions",
@@ -17,305 +20,81 @@
     "occurrences"
   ],
   "properties": {
-    "manifest": {
-      "type": "object",
-      "required": [
-        "contractVersion",
-        "publicationId",
-        "title",
-        "generatedAt",
-        "sourceDescription"
-      ],
-      "properties": {
-        "contractVersion": { "const": "0.3.0" },
-        "publicationId": { "$ref": "#/$defs/id" },
-        "title": { "type": "string", "minLength": 1 },
-        "generatedAt": { "type": "string", "format": "date-time" },
-        "sourceDescription": { "type": "string", "minLength": 1 }
-      },
-      "additionalProperties": false
+    "manifest": { "$ref": "#/definitions/PublicationManifest" },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/SourceRecord" }
     },
     "works": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["id", "title", "alternativeTitles", "category"],
-        "properties": {
-          "id": { "$ref": "#/$defs/id" },
-          "title": { "type": "string", "minLength": 1 },
-          "alternativeTitles": { "$ref": "#/$defs/strings" },
-          "category": {
-            "enum": ["gazetteer", "history", "genealogy", "catalogue", "other"]
-          },
-          "describedRegion": { "type": "string" },
-          "abstract": { "type": "string" },
-          "coverage": {
-            "type": "object",
-            "required": ["regionLabels", "placeIds"],
-            "properties": {
-              "temporal": { "$ref": "#/$defs/temporal" },
-              "regionLabels": { "$ref": "#/$defs/strings" },
-              "placeIds": { "$ref": "#/$defs/ids" }
-            },
-            "additionalProperties": false
-          }
-        },
-        "additionalProperties": false
-      }
+      "items": { "$ref": "#/definitions/Work" }
     },
     "editions": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["id", "workId", "label"],
-        "properties": {
-          "id": { "$ref": "#/$defs/id" },
-          "workId": { "$ref": "#/$defs/id" },
-          "label": { "type": "string", "minLength": 1 },
-          "publicationStatement": { "type": "string" },
-          "holdingInstitution": { "type": "string" },
-          "sourceUrl": { "type": "string", "format": "uri" },
-          "rightsStatement": { "type": "string" }
-        },
-        "additionalProperties": false
-      }
+      "items": { "$ref": "#/definitions/Edition" }
     },
     "volumes": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["id", "editionId", "label", "sequence"],
-        "properties": {
-          "id": { "$ref": "#/$defs/id" },
-          "editionId": { "$ref": "#/$defs/id" },
-          "label": { "type": "string", "minLength": 1 },
-          "sequence": { "type": "integer", "minimum": 0 },
-          "parentVolumeId": { "$ref": "#/$defs/id" }
-        },
-        "additionalProperties": false
-      }
+      "items": { "$ref": "#/definitions/Volume" }
+    },
+    "facsimilePages": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/FacsimilePage" }
     },
     "passages": {
       "type": "array",
-      "items": { "$ref": "passage.schema.json" }
+      "items": { "$ref": "#/definitions/Passage" }
     },
     "entities": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["id", "type", "preferredName", "aliases"],
-        "properties": {
-          "id": { "$ref": "#/$defs/id" },
-          "type": { "$ref": "#/$defs/entityType" },
-          "preferredName": { "type": "string", "minLength": 1 },
-          "aliases": { "$ref": "#/$defs/strings" },
-          "summary": { "type": "string" },
-          "reviewStatus": { "$ref": "#/$defs/reviewStatus" }
-        },
-        "additionalProperties": false
-      }
+      "items": { "$ref": "#/definitions/Entity" }
     },
     "mentions": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "required": [
-          "id",
-          "passageId",
-          "entityId",
-          "start",
-          "end",
-          "surface",
-          "reviewStatus"
-        ],
-        "properties": {
-          "id": { "$ref": "#/$defs/id" },
-          "passageId": { "$ref": "#/$defs/id" },
-          "entityId": { "$ref": "#/$defs/id" },
-          "start": { "type": "integer", "minimum": 0 },
-          "end": { "type": "integer", "minimum": 1 },
-          "surface": { "type": "string", "minLength": 1 },
-          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
-          "reviewStatus": { "$ref": "#/$defs/reviewStatus" }
-        },
-        "additionalProperties": false
-      }
+      "items": { "$ref": "#/definitions/Mention" }
     },
     "assertions": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "required": [
-          "id",
-          "subjectId",
-          "predicate",
-          "evidence",
-          "reviewStatus"
-        ],
-        "properties": {
-          "id": { "$ref": "#/$defs/id" },
-          "subjectId": { "$ref": "#/$defs/id" },
-          "predicate": { "type": "string", "minLength": 1 },
-          "objectId": { "$ref": "#/$defs/id" },
-          "literalValue": { "type": "string" },
-          "temporal": { "$ref": "#/$defs/temporal" },
-          "evidence": { "$ref": "#/$defs/evidenceList" },
-          "reviewStatus": { "$ref": "#/$defs/reviewStatus" }
-        },
-        "oneOf": [
-          { "required": ["objectId"] },
-          { "required": ["literalValue"] }
-        ],
-        "additionalProperties": false
-      }
+      "items": { "$ref": "#/definitions/Assertion" }
     },
     "places": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "required": [
-          "id",
-          "entityId",
-          "preferredName",
-          "historicalNames",
-          "parentPlaceIds"
-        ],
-        "properties": {
-          "id": { "$ref": "#/$defs/id" },
-          "entityId": { "$ref": "#/$defs/id" },
-          "preferredName": { "type": "string", "minLength": 1 },
-          "historicalNames": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": ["name"],
-              "properties": {
-                "name": { "type": "string", "minLength": 1 },
-                "validDuring": { "$ref": "#/$defs/temporal" },
-                "kind": { "type": "string" }
-              },
-              "additionalProperties": false
-            }
-          },
-          "parentPlaceIds": { "$ref": "#/$defs/ids" }
-        },
-        "additionalProperties": false
-      }
+      "items": { "$ref": "#/definitions/PlaceIdentity" }
     },
     "geometries": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["id", "placeId", "geometry", "precision", "reviewStatus"],
-        "properties": {
-          "id": { "$ref": "#/$defs/id" },
-          "placeId": { "$ref": "#/$defs/id" },
-          "geometry": {
-            "oneOf": [
-              {
-                "type": "object",
-                "required": ["type", "coordinates"],
-                "properties": {
-                  "type": { "const": "Point" },
-                  "coordinates": { "$ref": "#/$defs/position" }
-                },
-                "additionalProperties": false
-              },
-              {
-                "type": "object",
-                "required": ["type", "coordinates"],
-                "properties": {
-                  "type": { "const": "Polygon" },
-                  "coordinates": { "$ref": "#/$defs/polygonCoordinates" }
-                },
-                "additionalProperties": false
-              },
-              {
-                "type": "object",
-                "required": ["type", "coordinates"],
-                "properties": {
-                  "type": { "const": "MultiPolygon" },
-                  "coordinates": {
-                    "type": "array",
-                    "minItems": 1,
-                    "items": { "$ref": "#/$defs/polygonCoordinates" }
-                  }
-                },
-                "additionalProperties": false
-              }
-            ]
-          },
-          "validDuring": { "$ref": "#/$defs/temporal" },
-          "precision": { "enum": ["site", "settlement", "region", "unknown"] },
-          "reviewStatus": { "$ref": "#/$defs/reviewStatus" }
-        },
-        "additionalProperties": false
-      }
+      "items": { "$ref": "#/definitions/HistoricalGeometry" }
     },
     "occurrences": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "required": [
-          "id",
-          "entityId",
-          "placeId",
-          "kind",
-          "evidence",
-          "reviewStatus"
-        ],
-        "properties": {
-          "id": { "$ref": "#/$defs/id" },
-          "entityId": { "$ref": "#/$defs/id" },
-          "placeId": { "$ref": "#/$defs/id" },
-          "kind": {
-            "enum": [
-              "birth",
-              "death",
-              "native_place",
-              "residence",
-              "office",
-              "journey",
-              "event",
-              "creation",
-              "discovery",
-              "collection",
-              "other"
-            ]
-          },
-          "label": { "type": "string" },
-          "temporal": { "$ref": "#/$defs/temporal" },
-          "sequence": { "type": "integer", "minimum": 0 },
-          "evidence": { "$ref": "#/$defs/evidenceList" },
-          "reviewStatus": { "$ref": "#/$defs/reviewStatus" }
-        },
-        "additionalProperties": false
-      }
+      "items": { "$ref": "#/definitions/SpatiotemporalOccurrence" }
     }
   },
-  "$defs": {
-    "id": { "type": "string", "minLength": 1 },
-    "ids": { "type": "array", "items": { "$ref": "#/$defs/id" } },
-    "strings": { "type": "array", "items": { "type": "string" } },
-    "position": {
-      "type": "array",
-      "prefixItems": [
-        { "type": "number", "minimum": -180, "maximum": 180 },
-        { "type": "number", "minimum": -90, "maximum": 90 }
-      ],
-      "items": false
+  "additionalProperties": false,
+  "definitions": {
+    "Id": {
+      "title": "WireId",
+      "type": "string",
+      "minLength": 1
     },
-    "linearRing": {
-      "type": "array",
-      "minItems": 4,
-      "items": { "$ref": "#/$defs/position" }
+    "NonEmptyString": {
+      "type": "string",
+      "minLength": 1
     },
-    "polygonCoordinates": {
-      "type": "array",
-      "minItems": 1,
-      "items": { "$ref": "#/$defs/linearRing" }
+    "Uri": {
+      "type": "string",
+      "format": "uri"
     },
-    "reviewStatus": {
+    "Timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "Checksum": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "ReviewStatus": {
+      "title": "ReviewStatus",
       "enum": [
         "raw",
         "machine_suggested",
@@ -325,7 +104,257 @@
         "rejected"
       ]
     },
-    "entityType": {
+    "TemporalValue": {
+      "title": "TemporalValue",
+      "type": "object",
+      "required": ["original", "certainty"],
+      "properties": {
+        "original": { "$ref": "#/definitions/NonEmptyString" },
+        "startYear": { "type": "integer" },
+        "startMonth": { "type": "integer", "minimum": 1, "maximum": 12 },
+        "startDay": { "type": "integer", "minimum": 1, "maximum": 31 },
+        "endYear": { "type": "integer" },
+        "endMonth": { "type": "integer", "minimum": 1, "maximum": 12 },
+        "endDay": { "type": "integer", "minimum": 1, "maximum": 31 },
+        "certainty": {
+          "enum": ["exact", "approximate", "range", "unknown"]
+        },
+        "calendar": { "$ref": "#/definitions/NonEmptyString" }
+      },
+      "dependentRequired": {
+        "startMonth": ["startYear"],
+        "startDay": ["startYear", "startMonth"],
+        "endMonth": ["endYear"],
+        "endDay": ["endYear", "endMonth"]
+      },
+      "additionalProperties": false
+    },
+    "EvidenceSpan": {
+      "title": "EvidenceSpan",
+      "type": "object",
+      "required": ["passageId", "start", "end"],
+      "properties": {
+        "passageId": { "$ref": "#/definitions/Id" },
+        "start": { "type": "integer", "minimum": 0 },
+        "end": { "type": "integer", "minimum": 1 },
+        "note": { "$ref": "#/definitions/NonEmptyString" }
+      },
+      "additionalProperties": false
+    },
+    "SourceRef": {
+      "title": "SourceRef",
+      "type": "object",
+      "required": ["sourceId"],
+      "properties": {
+        "sourceId": { "$ref": "#/definitions/Id" },
+        "locator": { "$ref": "#/definitions/NonEmptyString" },
+        "note": { "$ref": "#/definitions/NonEmptyString" }
+      },
+      "additionalProperties": false
+    },
+    "PublicationManifest": {
+      "title": "PublicationManifest",
+      "type": "object",
+      "required": [
+        "contractVersion",
+        "publicationId",
+        "datasetVersion",
+        "title",
+        "generatedAt",
+        "contentChecksum",
+        "sourceDescription"
+      ],
+      "properties": {
+        "contractVersion": { "const": "0.4.0" },
+        "publicationId": { "$ref": "#/definitions/Id" },
+        "datasetVersion": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-[0-9A-Za-z.-]+)?$"
+        },
+        "title": { "$ref": "#/definitions/NonEmptyString" },
+        "generatedAt": { "$ref": "#/definitions/Timestamp" },
+        "contentChecksum": { "$ref": "#/definitions/Checksum" },
+        "sourceDescription": { "$ref": "#/definitions/NonEmptyString" }
+      },
+      "additionalProperties": false
+    },
+    "SourceRecord": {
+      "title": "SourceRecord",
+      "type": "object",
+      "required": ["id", "kind", "title", "rightsStatement"],
+      "properties": {
+        "id": { "$ref": "#/definitions/Id" },
+        "kind": {
+          "enum": [
+            "facsimile",
+            "transcription",
+            "catalogue",
+            "gis",
+            "dataset",
+            "bibliography",
+            "other"
+          ]
+        },
+        "title": { "$ref": "#/definitions/NonEmptyString" },
+        "holdingInstitution": { "$ref": "#/definitions/NonEmptyString" },
+        "url": { "$ref": "#/definitions/Uri" },
+        "rightsStatement": { "$ref": "#/definitions/NonEmptyString" },
+        "checksum": { "$ref": "#/definitions/Checksum" },
+        "accessedAt": { "$ref": "#/definitions/Timestamp" }
+      },
+      "additionalProperties": false
+    },
+    "WorkCoverage": {
+      "title": "WorkCoverage",
+      "type": "object",
+      "required": ["regionLabels", "placeIds"],
+      "properties": {
+        "temporal": { "$ref": "#/definitions/TemporalValue" },
+        "regionLabels": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/NonEmptyString" },
+          "uniqueItems": true
+        },
+        "placeIds": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Id" },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "Work": {
+      "title": "Work",
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "alternativeTitles",
+        "category",
+        "sourceRefs"
+      ],
+      "properties": {
+        "id": { "$ref": "#/definitions/Id" },
+        "title": { "$ref": "#/definitions/NonEmptyString" },
+        "alternativeTitles": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/NonEmptyString" },
+          "uniqueItems": true
+        },
+        "category": {
+          "enum": ["gazetteer", "history", "genealogy", "catalogue", "other"]
+        },
+        "abstract": { "$ref": "#/definitions/NonEmptyString" },
+        "coverage": { "$ref": "#/definitions/WorkCoverage" },
+        "sourceRefs": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/SourceRef" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Edition": {
+      "title": "Edition",
+      "type": "object",
+      "required": ["id", "workId", "label", "sourceRefs"],
+      "properties": {
+        "id": { "$ref": "#/definitions/Id" },
+        "workId": { "$ref": "#/definitions/Id" },
+        "label": { "$ref": "#/definitions/NonEmptyString" },
+        "publicationStatement": { "$ref": "#/definitions/NonEmptyString" },
+        "sourceRefs": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/SourceRef" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Volume": {
+      "title": "Volume",
+      "type": "object",
+      "required": ["id", "editionId", "label", "sequence"],
+      "properties": {
+        "id": { "$ref": "#/definitions/Id" },
+        "editionId": { "$ref": "#/definitions/Id" },
+        "parentVolumeId": { "$ref": "#/definitions/Id" },
+        "label": { "$ref": "#/definitions/NonEmptyString" },
+        "sequence": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "FacsimilePage": {
+      "title": "FacsimilePage",
+      "type": "object",
+      "required": ["id", "volumeId", "sourceId", "sequence"],
+      "properties": {
+        "id": { "$ref": "#/definitions/Id" },
+        "volumeId": { "$ref": "#/definitions/Id" },
+        "sourceId": { "$ref": "#/definitions/Id" },
+        "label": { "$ref": "#/definitions/NonEmptyString" },
+        "sequence": { "type": "integer", "minimum": 0 },
+        "canvasUrl": { "$ref": "#/definitions/Uri" },
+        "imageUrl": { "$ref": "#/definitions/Uri" },
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "TextLayers": {
+      "title": "TextLayers",
+      "type": "object",
+      "required": ["original"],
+      "properties": {
+        "original": { "type": "string" },
+        "simplified": { "type": "string" },
+        "punctuated": { "type": "string" },
+        "modernTranslation": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "FacsimileAnchor": {
+      "title": "FacsimileAnchor",
+      "type": "object",
+      "required": ["pageId"],
+      "properties": {
+        "pageId": { "$ref": "#/definitions/Id" },
+        "region": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": { "type": "number", "minimum": 0 }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Passage": {
+      "title": "Passage",
+      "type": "object",
+      "required": [
+        "id",
+        "volumeId",
+        "sequence",
+        "text",
+        "facsimileAnchors",
+        "revision"
+      ],
+      "properties": {
+        "id": { "$ref": "#/definitions/Id" },
+        "volumeId": { "$ref": "#/definitions/Id" },
+        "sectionLabel": { "$ref": "#/definitions/NonEmptyString" },
+        "sequence": { "type": "integer", "minimum": 0 },
+        "text": { "$ref": "#/definitions/TextLayers" },
+        "facsimileAnchors": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/FacsimileAnchor" }
+        },
+        "revision": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "EntityType": {
+      "title": "EntityType",
       "enum": [
         "person",
         "place",
@@ -341,34 +370,270 @@
         "inscription"
       ]
     },
-    "temporal": {
+    "Entity": {
+      "title": "Entity",
       "type": "object",
-      "required": ["original", "certainty"],
+      "required": ["id", "type", "preferredName", "aliases", "reviewStatus"],
       "properties": {
-        "original": { "type": "string" },
-        "startYear": { "type": "integer" },
-        "endYear": { "type": "integer" },
-        "certainty": { "enum": ["exact", "approximate", "range", "unknown"] },
-        "calendar": { "type": "string" }
+        "id": { "$ref": "#/definitions/Id" },
+        "type": { "$ref": "#/definitions/EntityType" },
+        "preferredName": { "$ref": "#/definitions/NonEmptyString" },
+        "aliases": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/NonEmptyString" },
+          "uniqueItems": true
+        },
+        "summary": { "$ref": "#/definitions/NonEmptyString" },
+        "reviewStatus": { "$ref": "#/definitions/ReviewStatus" }
       },
       "additionalProperties": false
     },
-    "evidence": {
+    "Mention": {
+      "title": "Mention",
       "type": "object",
-      "required": ["passageId", "start", "end"],
+      "required": [
+        "id",
+        "passageId",
+        "entityId",
+        "start",
+        "end",
+        "surface",
+        "reviewStatus"
+      ],
       "properties": {
-        "passageId": { "$ref": "#/$defs/id" },
+        "id": { "$ref": "#/definitions/Id" },
+        "passageId": { "$ref": "#/definitions/Id" },
+        "entityId": { "$ref": "#/definitions/Id" },
         "start": { "type": "integer", "minimum": 0 },
         "end": { "type": "integer", "minimum": 1 },
-        "note": { "type": "string" }
+        "surface": { "$ref": "#/definitions/NonEmptyString" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "reviewStatus": { "$ref": "#/definitions/ReviewStatus" }
       },
       "additionalProperties": false
     },
-    "evidenceList": {
+    "Assertion": {
+      "title": "Assertion",
+      "oneOf": [
+        { "$ref": "#/definitions/EntityAssertion" },
+        { "$ref": "#/definitions/LiteralAssertion" }
+      ]
+    },
+    "EntityAssertion": {
+      "title": "EntityAssertion",
+      "type": "object",
+      "required": [
+        "id",
+        "subjectId",
+        "predicate",
+        "objectId",
+        "evidence",
+        "reviewStatus"
+      ],
+      "properties": {
+        "id": { "$ref": "#/definitions/Id" },
+        "subjectId": { "$ref": "#/definitions/Id" },
+        "predicate": { "$ref": "#/definitions/NonEmptyString" },
+        "objectId": { "$ref": "#/definitions/Id" },
+        "temporal": { "$ref": "#/definitions/TemporalValue" },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/EvidenceSpan" }
+        },
+        "reviewStatus": { "$ref": "#/definitions/ReviewStatus" }
+      },
+      "additionalProperties": false
+    },
+    "LiteralAssertion": {
+      "title": "LiteralAssertion",
+      "type": "object",
+      "required": [
+        "id",
+        "subjectId",
+        "predicate",
+        "literalValue",
+        "evidence",
+        "reviewStatus"
+      ],
+      "properties": {
+        "id": { "$ref": "#/definitions/Id" },
+        "subjectId": { "$ref": "#/definitions/Id" },
+        "predicate": { "$ref": "#/definitions/NonEmptyString" },
+        "literalValue": { "type": "string" },
+        "temporal": { "$ref": "#/definitions/TemporalValue" },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/EvidenceSpan" }
+        },
+        "reviewStatus": { "$ref": "#/definitions/ReviewStatus" }
+      },
+      "additionalProperties": false
+    },
+    "HistoricalName": {
+      "title": "HistoricalName",
+      "type": "object",
+      "required": ["name", "evidence", "sourceRefs"],
+      "properties": {
+        "name": { "$ref": "#/definitions/NonEmptyString" },
+        "validDuring": { "$ref": "#/definitions/TemporalValue" },
+        "kind": { "$ref": "#/definitions/NonEmptyString" },
+        "evidence": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/EvidenceSpan" }
+        },
+        "sourceRefs": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/SourceRef" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "PlaceIdentity": {
+      "title": "PlaceIdentity",
+      "type": "object",
+      "required": ["id", "entityId", "historicalNames", "parentPlaceIds"],
+      "properties": {
+        "id": { "$ref": "#/definitions/Id" },
+        "entityId": { "$ref": "#/definitions/Id" },
+        "historicalNames": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/HistoricalName" }
+        },
+        "parentPlaceIds": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Id" },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "Position": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": { "type": "number" }
+    },
+    "LinearRing": {
+      "type": "array",
+      "minItems": 4,
+      "items": { "$ref": "#/definitions/Position" }
+    },
+    "PolygonCoordinates": {
       "type": "array",
       "minItems": 1,
-      "items": { "$ref": "#/$defs/evidence" }
+      "items": { "$ref": "#/definitions/LinearRing" }
+    },
+    "GeoPoint": {
+      "title": "GeoPoint",
+      "type": "object",
+      "required": ["type", "coordinates"],
+      "properties": {
+        "type": { "const": "Point" },
+        "coordinates": { "$ref": "#/definitions/Position" }
+      },
+      "additionalProperties": false
+    },
+    "GeoPolygon": {
+      "title": "GeoPolygon",
+      "type": "object",
+      "required": ["type", "coordinates"],
+      "properties": {
+        "type": { "const": "Polygon" },
+        "coordinates": { "$ref": "#/definitions/PolygonCoordinates" }
+      },
+      "additionalProperties": false
+    },
+    "GeoMultiPolygon": {
+      "title": "GeoMultiPolygon",
+      "type": "object",
+      "required": ["type", "coordinates"],
+      "properties": {
+        "type": { "const": "MultiPolygon" },
+        "coordinates": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/PolygonCoordinates" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "HistoricalGeometry": {
+      "title": "HistoricalGeometry",
+      "type": "object",
+      "required": [
+        "id",
+        "placeId",
+        "geometry",
+        "precision",
+        "sourceRefs",
+        "reviewStatus"
+      ],
+      "properties": {
+        "id": { "$ref": "#/definitions/Id" },
+        "placeId": { "$ref": "#/definitions/Id" },
+        "geometry": {
+          "oneOf": [
+            { "$ref": "#/definitions/GeoPoint" },
+            { "$ref": "#/definitions/GeoPolygon" },
+            { "$ref": "#/definitions/GeoMultiPolygon" }
+          ]
+        },
+        "validDuring": { "$ref": "#/definitions/TemporalValue" },
+        "precision": { "enum": ["site", "settlement", "region", "unknown"] },
+        "sourceRefs": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/SourceRef" }
+        },
+        "reviewStatus": { "$ref": "#/definitions/ReviewStatus" }
+      },
+      "additionalProperties": false
+    },
+    "OccurrenceKind": {
+      "title": "OccurrenceKind",
+      "enum": [
+        "birth",
+        "death",
+        "native_place",
+        "residence",
+        "office",
+        "journey",
+        "event",
+        "creation",
+        "discovery",
+        "collection",
+        "other"
+      ]
+    },
+    "SpatiotemporalOccurrence": {
+      "title": "SpatiotemporalOccurrence",
+      "type": "object",
+      "required": [
+        "id",
+        "entityId",
+        "placeId",
+        "kind",
+        "evidence",
+        "reviewStatus"
+      ],
+      "properties": {
+        "id": { "$ref": "#/definitions/Id" },
+        "entityId": { "$ref": "#/definitions/Id" },
+        "placeId": { "$ref": "#/definitions/Id" },
+        "kind": { "$ref": "#/definitions/OccurrenceKind" },
+        "label": { "$ref": "#/definitions/NonEmptyString" },
+        "temporal": { "$ref": "#/definitions/TemporalValue" },
+        "sequence": { "type": "integer", "minimum": 0 },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/EvidenceSpan" }
+        },
+        "reviewStatus": { "$ref": "#/definitions/ReviewStatus" }
+      },
+      "additionalProperties": false
     }
-  },
-  "additionalProperties": false
+  }
 }

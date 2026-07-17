@@ -3,7 +3,7 @@ import type { Work } from "@infinite-spacetime/contracts";
 import { onMounted, ref } from "vue";
 import EmptyState from "../../components/EmptyState.vue";
 import PageHeader from "../../components/PageHeader.vue";
-import { useApplication } from "../../composables/useApplication";
+import { useApplication } from "../../composables/use-application";
 
 const runtime = useApplication();
 const { services } = runtime;
@@ -110,7 +110,7 @@ onMounted(() => loadMore());
           <h2>{{ work.title }}</h2>
           <p>{{ work.abstract ?? "进入版本、卷章与全文目录。" }}</p>
           <footer>
-            <span>{{ work.describedRegion ?? "地域待标注" }}</span>
+            <span>{{ work.coverage?.regionLabels[0] ?? "地域待标注" }}</span>
             <span v-if="work.coverage?.temporal">{{
               work.coverage.temporal.original
             }}</span>

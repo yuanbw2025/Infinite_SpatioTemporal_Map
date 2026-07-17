@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import type { EntityId, EntityProfile } from "@infinite-spacetime/contracts";
+import type {
+  EntityId,
+  EntityProfile,
+  PlaceIdentityId,
+} from "@infinite-spacetime/contracts";
 import { ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import AssertionList from "../../components/AssertionList.vue";
@@ -7,7 +11,7 @@ import EmptyState from "../../components/EmptyState.vue";
 import EntityTypeBadge from "../../components/EntityTypeBadge.vue";
 import PageHeader from "../../components/PageHeader.vue";
 import ReviewBadge from "../../components/ReviewBadge.vue";
-import { useApplication } from "../../composables/useApplication";
+import { useApplication } from "../../composables/use-application";
 
 const route = useRoute();
 const { services } = useApplication();
@@ -28,6 +32,17 @@ const occurrenceLabels = {
   collection: "收藏",
   other: "其他",
 } as const;
+
+function placeName(placeId: PlaceIdentityId): string {
+  const place = profile.value?.occurrencePlaces.find(
+    (candidate) => candidate.id === placeId,
+  );
+  return (
+    profile.value?.occurrencePlaceEntities.find(
+      (entity) => entity.id === place?.entityId,
+    )?.preferredName ?? placeId
+  );
+}
 
 async function load() {
   const entityId = route.params.entityId;
@@ -65,6 +80,16 @@ watch(() => route.params.entityId, load, { immediate: true });
             v-if="profile.entity.reviewStatus"
             :status="profile.entity.reviewStatus"
           />
+          <router-link
+            class="secondary-button"
+            :to="{ path: '/graph', query: { entity: profile.entity.id } }"
+            >展开关系网</router-link
+          >
+          <router-link
+            class="secondary-button"
+            :to="{ path: '/timeline', query: { entity: profile.entity.id } }"
+            >查看时间线</router-link
+          >
         </template>
       </PageHeader>
 
@@ -88,11 +113,7 @@ watch(() => route.params.entityId, load, { immediate: true });
                 }}</span>
                 <div>
                   <strong>{{
-                    occurrence.label ??
-                    profile.occurrencePlaces.find(
-                      (place) => place.id === occurrence.placeId,
-                    )?.preferredName ??
-                    occurrence.placeId
+                    occurrence.label ?? placeName(occurrence.placeId)
                   }}</strong>
                   <p v-if="occurrence.temporal">
                     {{ occurrence.temporal.original }}

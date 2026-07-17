@@ -1,29 +1,14 @@
+import type * as Wire from "./generated/publication";
 import type { PassageId } from "./ids";
 
-export type ReviewStatus =
-  | "raw"
-  | "machine_suggested"
-  | "reviewed"
-  | "verified"
-  | "disputed"
-  | "rejected";
+export type ReviewStatus = Wire.ReviewStatus;
+export type Certainty = Wire.TemporalValue["certainty"];
 
-export type Certainty = "exact" | "approximate" | "range" | "unknown";
+export type EvidenceSpan = Readonly<
+  Omit<Wire.EvidenceSpan, "passageId"> & { readonly passageId: PassageId }
+>;
 
-export interface EvidenceSpan {
-  readonly passageId: PassageId;
-  readonly start: number;
-  readonly end: number;
-  readonly note?: string;
-}
-
-export interface TemporalValue {
-  readonly original: string;
-  readonly startYear?: number;
-  readonly endYear?: number;
-  readonly certainty: Certainty;
-  readonly calendar?: string;
-}
+export type TemporalValue = Readonly<Wire.TemporalValue>;
 
 export interface RevisionInfo {
   readonly revision: number;

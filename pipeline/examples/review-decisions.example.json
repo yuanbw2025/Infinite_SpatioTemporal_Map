@@ -1,0 +1,14 @@
+[
+  {
+    "candidateId": "candidate-replace-with-generated-id",
+    "status": "verified",
+    "reviewer": "reviewer-name",
+    "decidedAt": "2026-01-01T00:00:00+00:00",
+    "note": "已核对原文和上下文。",
+    "correctedPayload": {
+      "type": "place",
+      "preferredName": "金陵",
+      "aliases": []
+    }
+  }
+]

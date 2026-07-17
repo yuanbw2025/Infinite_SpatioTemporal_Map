@@ -1,0 +1,12 @@
+{
+  "sources": {
+    "texts/volume-01.txt": {
+      "sourceKey": "work-1/edition-1/volume-1",
+      "rightsStatus": "public_domain",
+      "rightsStatement": "原件已进入公有领域；数字化文件使用条件以来源机构说明为准。",
+      "sourceUrl": "https://example.org/source/volume-01",
+      "holdingInstitution": "示例馆藏机构",
+      "notes": "请用真实来源信息替换本示例。"
+    }
+  }
+}

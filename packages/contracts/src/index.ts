@@ -1,9 +1,10 @@
 export * from "./catalog";
 export * from "./common";
+export * from "./curation";
 export * from "./ids";
 export * from "./knowledge";
 export * from "./publication";
 export * from "./queries";
 export * from "./spacetime";
-
-export const CONTRACT_VERSION = "0.3.0" as const;
+export * from "./validation";
+export { CONTRACT_VERSION } from "./generated/version";

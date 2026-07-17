@@ -1,6 +1,8 @@
 node_modules/
 dist/
 coverage/
+.coverage
+.coverage.*
 .DS_Store
 .env
 .env.*
@@ -11,6 +13,6 @@ data/raw/
 data/derived/
 !data/fixtures/
 __pycache__/
+*.egg-info/
 .pytest_cache/
 .venv/
-

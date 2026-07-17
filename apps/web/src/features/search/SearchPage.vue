@@ -1,17 +1,30 @@
 <script setup lang="ts">
-import type { EntityType, SearchHit } from "@infinite-spacetime/contracts";
-import { ref, watch } from "vue";
+import type {
+  EntityType,
+  ReviewStatus,
+  SearchHit,
+  TemporalValue,
+  Work,
+  WorkId,
+} from "@infinite-spacetime/contracts";
+import { onMounted, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import EmptyState from "../../components/EmptyState.vue";
 import EntityTypeBadge from "../../components/EntityTypeBadge.vue";
 import PageHeader from "../../components/PageHeader.vue";
-import { useApplication } from "../../composables/useApplication";
+import { useApplication } from "../../composables/use-application";
 
 const route = useRoute();
 const router = useRouter();
 const { services } = useApplication();
 const query = ref("");
 const entityType = ref<EntityType>();
+const workId = ref<WorkId>();
+const region = ref("");
+const startYear = ref<number>();
+const endYear = ref<number>();
+const reviewStatus = ref<ReviewStatus>();
+const works = ref<readonly Work[]>([]);
 const hits = ref<readonly SearchHit[]>([]);
 const searched = ref(false);
 const loading = ref(false);
@@ -27,6 +40,39 @@ const entityTypes: readonly { value: EntityType; label: string }[] = [
   { value: "artifact", label: "文物" },
   { value: "site", label: "遗址" },
 ];
+
+const reviewStatuses: readonly { value: ReviewStatus; label: string }[] = [
+  { value: "raw", label: "原始录入" },
+  { value: "machine_suggested", label: "机器建议" },
+  { value: "reviewed", label: "已复核" },
+  { value: "verified", label: "已核定" },
+  { value: "disputed", label: "有争议" },
+  { value: "rejected", label: "已驳回" },
+];
+
+function temporalQuery(): TemporalValue | undefined {
+  if (startYear.value === undefined && endYear.value === undefined)
+    return undefined;
+  return {
+    original: [startYear.value, endYear.value]
+      .filter((value) => value !== undefined)
+      .join("—"),
+    certainty: startYear.value === endYear.value ? "exact" : "range",
+    ...(startYear.value !== undefined ? { startYear: startYear.value } : {}),
+    ...(endYear.value !== undefined ? { endYear: endYear.value } : {}),
+  };
+}
+
+function routeString(value: unknown): string | undefined {
+  return typeof value === "string" && value ? value : undefined;
+}
+
+function routeYear(value: unknown): number | undefined {
+  const text = routeString(value);
+  if (!text) return undefined;
+  const parsed = Number.parseInt(text, 10);
+  return Number.isFinite(parsed) ? parsed : undefined;
+}
 
 async function search(updateUrl = true, append = false) {
   const text = query.value.trim();
@@ -46,10 +92,15 @@ async function search(updateUrl = true, append = false) {
     const nextQuery = {
       q: text,
       ...(entityType.value ? { type: entityType.value } : {}),
+      ...(workId.value ? { work: workId.value } : {}),
+      ...(region.value.trim() ? { region: region.value.trim() } : {}),
+      ...(startYear.value !== undefined
+        ? { start: String(startYear.value) }
+        : {}),
+      ...(endYear.value !== undefined ? { end: String(endYear.value) } : {}),
+      ...(reviewStatus.value ? { review: reviewStatus.value } : {}),
     };
-    const unchanged =
-      route.query.q === nextQuery.q &&
-      route.query.type === ("type" in nextQuery ? nextQuery.type : undefined);
+    const unchanged = JSON.stringify(route.query) === JSON.stringify(nextQuery);
     if (!unchanged) {
       await router.replace({ query: nextQuery });
       loading.value = false;
@@ -57,11 +108,16 @@ async function search(updateUrl = true, append = false) {
     }
   }
   try {
+    const temporal = temporalQuery();
     const page = await services.search.run({
       text,
       limit: 100,
       ...(append && nextCursor.value ? { cursor: nextCursor.value } : {}),
       ...(entityType.value ? { entityTypes: [entityType.value] } : {}),
+      ...(workId.value ? { workIds: [workId.value] } : {}),
+      ...(region.value.trim() ? { region: region.value.trim() } : {}),
+      ...(temporal ? { temporal } : {}),
+      ...(reviewStatus.value ? { reviewStatuses: [reviewStatus.value] } : {}),
     });
     hits.value = append ? [...hits.value, ...page.items] : page.items;
     nextCursor.value = page.nextCursor;
@@ -73,13 +129,38 @@ async function search(updateUrl = true, append = false) {
   }
 }
 
+onMounted(async () => {
+  try {
+    const page = await services.library.listWorks({ limit: 200 });
+    works.value = page.items;
+  } catch {
+    // Search remains available even if the optional source list fails.
+  }
+});
+
 watch(
-  () => [route.query.q, route.query.type],
+  () => [
+    route.query.q,
+    route.query.type,
+    route.query.work,
+    route.query.region,
+    route.query.start,
+    route.query.end,
+    route.query.review,
+  ],
   () => {
-    query.value = typeof route.query.q === "string" ? route.query.q : "";
+    query.value = routeString(route.query.q) ?? "";
     const type = route.query.type;
     entityType.value = entityTypes.some((item) => item.value === type)
       ? (type as EntityType)
+      : undefined;
+    workId.value = routeString(route.query.work) as WorkId | undefined;
+    region.value = routeString(route.query.region) ?? "";
+    startYear.value = routeYear(route.query.start);
+    endYear.value = routeYear(route.query.end);
+    const review = route.query.review;
+    reviewStatus.value = reviewStatuses.some((item) => item.value === review)
+      ? (review as ReviewStatus)
       : undefined;
     void search(false);
   },
@@ -119,6 +200,42 @@ watch(
         </select>
       </label>
       <button class="primary-button" type="submit">检索全库</button>
+      <div class="search-advanced">
+        <label>
+          <span>限定文献</span>
+          <select v-model="workId">
+            <option :value="undefined">全部文献</option>
+            <option v-for="work in works" :key="work.id" :value="work.id">
+              {{ work.title }}
+            </option>
+          </select>
+        </label>
+        <label>
+          <span>地域</span>
+          <input v-model="region" type="text" placeholder="如：南京府" />
+        </label>
+        <label>
+          <span>起始年</span>
+          <input v-model.number="startYear" type="number" placeholder="1368" />
+        </label>
+        <label>
+          <span>终止年</span>
+          <input v-model.number="endYear" type="number" placeholder="1644" />
+        </label>
+        <label>
+          <span>审核状态</span>
+          <select v-model="reviewStatus">
+            <option :value="undefined">全部状态</option>
+            <option
+              v-for="item in reviewStatuses"
+              :key="item.value"
+              :value="item.value"
+            >
+              {{ item.label }}
+            </option>
+          </select>
+        </label>
+      </div>
     </form>
 
     <p v-if="loading" class="loading-line">正在检索文献与知识网络……</p>
@@ -140,7 +257,7 @@ watch(
           <p>
             {{
               hit.work.abstract ??
-              hit.work.describedRegion ??
+              hit.work.coverage?.regionLabels.join("、") ??
               "进入版本与卷章目录"
             }}
           </p>
@@ -149,7 +266,7 @@ watch(
           <span class="result-kind">原文</span>
           <h2>
             <router-link :to="`/reader/${hit.passage.id}`">{{
-              hit.passage.source.sectionLabel ?? hit.passage.source.volumeLabel
+              hit.passage.sectionLabel ?? hit.passage.volumeId
             }}</router-link>
           </h2>
           <p class="serif-snippet">

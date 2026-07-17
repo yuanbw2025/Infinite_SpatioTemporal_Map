@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useApplication } from "../composables/useApplication";
+import { useApplication } from "../composables/use-application";
 
 const runtime = useApplication();
 </script>

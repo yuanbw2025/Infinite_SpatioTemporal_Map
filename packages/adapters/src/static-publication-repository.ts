@@ -4,6 +4,7 @@ import {
   type AtlasQuery,
   type AtlasResult,
   type DatasetOverview,
+  type DataContext,
   type Edition,
   type EditionId,
   type Entity,
@@ -11,16 +12,27 @@ import {
   type EntityProfile,
   type EntityQuery,
   type EntitySummary,
+  type EvidenceSpan,
   type HistoricalGeometry,
+  type KnowledgeGraphQuery,
+  type KnowledgeGraphResult,
   type KnowledgePublication,
   type Page,
-  type PageRequest,
   type Passage,
   type PassageContext,
   type PassageId,
   type PassageQuery,
+  type PlaceIdentity,
+  type ResearchFinding,
+  type ResearchFindingKind,
+  type ResearchQuery,
+  type ResearchReport,
   type SearchHit,
   type SearchQuery,
+  type SourceId,
+  type TimelineItem,
+  type TimelineQuery,
+  type TimelineResult,
   type Volume,
   type Work,
   type WorkId,
@@ -29,93 +41,35 @@ import {
 import type {
   AtlasRepository,
   CatalogRepository,
+  KnowledgeGraphRepository,
   KnowledgeRepository,
   MetadataRepository,
   ReaderRepository,
   RepositoryBundle,
+  ResearchRepository,
   SearchRepository,
+  TimelineRepository,
 } from "@infinite-spacetime/core";
 import { ContractMismatchError } from "@infinite-spacetime/core";
+import {
+  boundedLimit,
+  groupBy,
+  historicalNameAt,
+  intersectsBounds,
+  overlaps,
+  overlapsYears,
+  paginate,
+} from "./static-query-helpers";
 
 type StaticRepository = CatalogRepository &
   ReaderRepository &
   KnowledgeRepository &
   AtlasRepository &
   SearchRepository &
-  MetadataRepository;
-
-function paginate<T>(items: readonly T[], request: PageRequest = {}): Page<T> {
-  const start = Number.parseInt(request.cursor ?? "0", 10) || 0;
-  const limit = Math.min(Math.max(request.limit ?? 50, 1), 200);
-  const pageItems = items.slice(start, start + limit);
-  const next = start + pageItems.length;
-  return next < items.length
-    ? { items: pageItems, nextCursor: String(next) }
-    : { items: pageItems };
-}
-
-function groupBy<T, K>(
-  items: readonly T[],
-  keyOf: (item: T) => K,
-): Map<K, readonly T[]> {
-  const groups = new Map<K, T[]>();
-  for (const item of items) {
-    const key = keyOf(item);
-    const group = groups.get(key) ?? [];
-    group.push(item);
-    groups.set(key, group);
-  }
-  return groups;
-}
-
-function overlaps(
-  candidate:
-    { readonly startYear?: number; readonly endYear?: number } | undefined,
-  requested:
-    { readonly startYear?: number; readonly endYear?: number } | undefined,
-): boolean {
-  if (!requested || !candidate) return true;
-  const candidateStart = candidate.startYear ?? candidate.endYear;
-  const candidateEnd = candidate.endYear ?? candidate.startYear;
-  const requestedStart = requested.startYear ?? requested.endYear;
-  const requestedEnd = requested.endYear ?? requested.startYear;
-  if (
-    candidateStart === undefined ||
-    candidateEnd === undefined ||
-    requestedStart === undefined ||
-    requestedEnd === undefined
-  ) {
-    return true;
-  }
-  return candidateEnd >= requestedStart && candidateStart <= requestedEnd;
-}
-
-function intersectsBounds(
-  historicalGeometry: HistoricalGeometry,
-  query: AtlasQuery,
-): boolean {
-  const shape = historicalGeometry.geometry;
-  const positions =
-    shape.type === "Point"
-      ? [shape.coordinates]
-      : shape.type === "Polygon"
-        ? shape.coordinates.flatMap((ring) => ring)
-        : shape.coordinates.flatMap((polygon) =>
-            polygon.flatMap((ring) => ring),
-          );
-  if (!positions.length) return false;
-  const longitudes = positions.map((position) => position[0]);
-  const latitudes = positions.map((position) => position[1]);
-  const west = Math.min(...longitudes);
-  const east = Math.max(...longitudes);
-  const south = Math.min(...latitudes);
-  const north = Math.max(...latitudes);
-  if (query.west !== undefined && east < query.west) return false;
-  if (query.east !== undefined && west > query.east) return false;
-  if (query.south !== undefined && north < query.south) return false;
-  if (query.north !== undefined && south > query.north) return false;
-  return true;
-}
+  MetadataRepository &
+  KnowledgeGraphRepository &
+  TimelineRepository &
+  ResearchRepository;
 
 export function createStaticPublicationRepository(
   publication: KnowledgePublication,
@@ -127,10 +81,22 @@ export function createStaticPublicationRepository(
   }
 
   const works = new Map(publication.works.map((item) => [item.id, item]));
+  const sources = new Map(publication.sources.map((item) => [item.id, item]));
   const passages = new Map(publication.passages.map((item) => [item.id, item]));
   const entities = new Map(publication.entities.map((item) => [item.id, item]));
   const editions = new Map(publication.editions.map((item) => [item.id, item]));
+  const volumes = new Map(publication.volumes.map((item) => [item.id, item]));
   const places = new Map(publication.places.map((item) => [item.id, item]));
+  const editionIdForPassage = (passage: Passage) =>
+    volumes.get(passage.volumeId)?.editionId;
+  const workIdForPassage = (passage: Passage) => {
+    const editionId = editionIdForPassage(passage);
+    return editionId ? editions.get(editionId)?.workId : undefined;
+  };
+  const placeLabel = (place: PlaceIdentity) =>
+    entities.get(place.entityId)?.preferredName ??
+    place.historicalNames[0]?.name ??
+    place.id;
   const geometriesByPlace = groupBy(
     publication.geometries,
     (item) => item.placeId,
@@ -144,13 +110,11 @@ export function createStaticPublicationRepository(
     publication.volumes,
     (item) => item.editionId,
   );
-  const passagesByWork = groupBy(
-    publication.passages,
-    (item) => item.source.workId,
+  const passagesByWork = groupBy(publication.passages, (item) =>
+    workIdForPassage(item),
   );
-  const passagesByEdition = groupBy(
-    publication.passages,
-    (item) => item.source.editionId,
+  const passagesByEdition = groupBy(publication.passages, (item) =>
+    editionIdForPassage(item),
   );
   const mentionsByPassage = groupBy(
     publication.mentions,
@@ -199,7 +163,7 @@ export function createStaticPublicationRepository(
         .filter(
           (work) =>
             !region ||
-            `${work.describedRegion ?? ""} ${work.coverage?.regionLabels.join(" ") ?? ""}`
+            `${work.coverage?.regionLabels.join(" ") ?? ""}`
               .toLocaleLowerCase()
               .includes(region),
         )
@@ -215,14 +179,24 @@ export function createStaticPublicationRepository(
     async listVolumes(editionId: EditionId): Promise<readonly Volume[]> {
       return volumesByEdition.get(editionId) ?? [];
     },
+    async listSources(sourceIds: readonly SourceId[]) {
+      return sourceIds.flatMap((sourceId) => {
+        const source = sources.get(sourceId);
+        return source ? [source] : [];
+      });
+    },
     async getPassage(id: PassageId): Promise<Passage | null> {
       return passages.get(id) ?? null;
     },
     async getPassageContext(id: PassageId): Promise<PassageContext | null> {
       const passage = passages.get(id);
       if (!passage) return null;
+      const volume = volumes.get(passage.volumeId);
+      const edition = volume ? editions.get(volume.editionId) : undefined;
+      const work = edition ? works.get(edition.workId) : undefined;
+      if (!volume || !edition || !work) return null;
       const siblings = [
-        ...(passagesByEdition.get(passage.source.editionId) ?? []),
+        ...(passagesByEdition.get(editionIdForPassage(passage)) ?? []),
       ].toSorted((left, right) => left.sequence - right.sequence);
       const index = siblings.findIndex((item) => item.id === id);
       const mentions = mentionsByPassage.get(id) ?? [];
@@ -238,6 +212,15 @@ export function createStaticPublicationRepository(
           : undefined;
       return {
         passage,
+        work,
+        edition,
+        volume,
+        facsimiles: passage.facsimileAnchors.flatMap((anchor) => {
+          const page = publication.facsimilePages.find(
+            (candidate) => candidate.id === anchor.pageId,
+          );
+          return page ? [{ anchor, page }] : [];
+        }),
         mentions,
         mentionedEntities,
         evidencedAssertions,
@@ -251,12 +234,11 @@ export function createStaticPublicationRepository(
           .filter(
             (item) =>
               query.editionId === undefined ||
-              item.source.editionId === query.editionId,
+              editionIdForPassage(item) === query.editionId,
           )
           .filter(
             (item) =>
-              query.volumeId === undefined ||
-              item.source.volumeId === query.volumeId,
+              query.volumeId === undefined || item.volumeId === query.volumeId,
           )
           .toSorted((left, right) => left.sequence - right.sequence),
         query,
@@ -341,6 +323,13 @@ export function createStaticPublicationRepository(
           const place = places.get(placeId);
           return place ? [place] : [];
         }),
+        occurrencePlaceEntities: [
+          ...new Set(occurrences.map((item) => item.placeId)),
+        ].flatMap((placeId) => {
+          const place = places.get(placeId);
+          const placeEntity = place ? entities.get(place.entityId) : undefined;
+          return placeEntity ? [placeEntity] : [];
+        }),
       };
     },
     async exploreAtlas(query: AtlasQuery): Promise<AtlasResult> {
@@ -364,7 +353,11 @@ export function createStaticPublicationRepository(
             placeId: place.id,
             geometryId: geometry.id,
             geometry: geometry.geometry,
-            label: entity.preferredName,
+            label: historicalNameAt(
+              place,
+              query.temporal,
+              entity.preferredName,
+            ),
             category: entity.type,
             ...(geometry.validDuring ? { temporal: geometry.validDuring } : {}),
           },
@@ -411,8 +404,152 @@ export function createStaticPublicationRepository(
     async search(query: SearchQuery): Promise<Page<SearchHit>> {
       const term = query.text.trim().toLocaleLowerCase();
       if (!term) return { items: [] };
+      const region = query.region?.trim().toLocaleLowerCase();
+      const reviewStatuses = query.reviewStatuses
+        ? new Set(query.reviewStatuses)
+        : undefined;
+      const workIsAllowed = (workId: WorkId | undefined) =>
+        workId !== undefined &&
+        (!query.workIds || query.workIds.includes(workId));
+      const workMatchesRegion = (work: Work | undefined) =>
+        !region ||
+        Boolean(
+          work &&
+          [...(work.coverage?.regionLabels ?? [])]
+            .filter(Boolean)
+            .join(" ")
+            .toLocaleLowerCase()
+            .includes(region),
+        );
+      const workMatchesTemporal = (work: Work | undefined) =>
+        !query.temporal ||
+        Boolean(
+          work?.coverage?.temporal &&
+          overlaps(work.coverage.temporal, query.temporal),
+        );
+      const passageAssertions = (passageId: PassageId) =>
+        assertionsByPassage.get(passageId) ?? [];
+      const passageMentions = (passageId: PassageId) =>
+        mentionsByPassage.get(passageId) ?? [];
+      const passageMatchesStatus = (passage: Passage) =>
+        !reviewStatuses ||
+        passageAssertions(passage.id).some((item) =>
+          reviewStatuses.has(item.reviewStatus),
+        ) ||
+        passageMentions(passage.id).some((item) =>
+          reviewStatuses.has(item.reviewStatus),
+        );
+      const passageMatchesTemporal = (passage: Passage) => {
+        if (!query.temporal) return true;
+        if (
+          passageAssertions(passage.id).some((item) =>
+            Boolean(item.temporal && overlaps(item.temporal, query.temporal)),
+          )
+        ) {
+          return true;
+        }
+        const mentionedIds = new Set(
+          passageMentions(passage.id).map((item) => item.entityId),
+        );
+        if (
+          publication.occurrences.some(
+            (item) =>
+              mentionedIds.has(item.entityId) &&
+              overlaps(item.temporal, query.temporal),
+          )
+        ) {
+          return true;
+        }
+        return workMatchesTemporal(works.get(workIdForPassage(passage)!));
+      };
+      const entityPassages = (entityId: EntityId) =>
+        (mentionsByEntity.get(entityId) ?? [])
+          .map((mention) => passages.get(mention.passageId))
+          .filter((passage): passage is Passage => Boolean(passage));
+      const entityMatchesWork = (entityId: EntityId) => {
+        if (!query.workIds) return true;
+        const directEvidence = (assertionsByEntity.get(entityId) ?? []).some(
+          (assertion) =>
+            assertion.evidence.some((evidence) => {
+              const passage = passages.get(evidence.passageId);
+              return Boolean(
+                passage && workIsAllowed(workIdForPassage(passage)),
+              );
+            }),
+        );
+        return (
+          directEvidence ||
+          entityPassages(entityId).some((passage) =>
+            workIsAllowed(workIdForPassage(passage)),
+          )
+        );
+      };
+      const entityMatchesStatus = (entity: Entity) =>
+        !reviewStatuses ||
+        (entity.reviewStatus !== undefined &&
+          reviewStatuses.has(entity.reviewStatus)) ||
+        (mentionsByEntity.get(entity.id) ?? []).some((item) =>
+          reviewStatuses.has(item.reviewStatus),
+        ) ||
+        (assertionsByEntity.get(entity.id) ?? []).some((item) =>
+          reviewStatuses.has(item.reviewStatus),
+        ) ||
+        (occurrencesByEntity.get(entity.id) ?? []).some((item) =>
+          reviewStatuses.has(item.reviewStatus),
+        );
+      const entityMatchesTemporal = (entityId: EntityId) =>
+        !query.temporal ||
+        (assertionsByEntity.get(entityId) ?? []).some((item) =>
+          Boolean(item.temporal && overlaps(item.temporal, query.temporal)),
+        ) ||
+        (occurrencesByEntity.get(entityId) ?? []).some((item) =>
+          Boolean(item.temporal && overlaps(item.temporal, query.temporal)),
+        ) ||
+        entityPassages(entityId).some((passage) =>
+          workMatchesTemporal(works.get(workIdForPassage(passage)!)),
+        );
+      const entityMatchesRegion = (entity: Entity) => {
+        if (!region) return true;
+        const ownPlace = publication.places.find(
+          (place) => place.entityId === entity.id,
+        );
+        if (
+          ownPlace &&
+          [
+            placeLabel(ownPlace),
+            ...ownPlace.historicalNames.map((item) => item.name),
+          ]
+            .join(" ")
+            .toLocaleLowerCase()
+            .includes(region)
+        ) {
+          return true;
+        }
+        if (
+          (occurrencesByEntity.get(entity.id) ?? []).some((occurrence) => {
+            const place = places.get(occurrence.placeId);
+            return Boolean(
+              place &&
+              [
+                placeLabel(place),
+                ...place.historicalNames.map((item) => item.name),
+              ]
+                .join(" ")
+                .toLocaleLowerCase()
+                .includes(region),
+            );
+          })
+        ) {
+          return true;
+        }
+        return entityPassages(entity.id).some((passage) =>
+          workMatchesRegion(works.get(workIdForPassage(passage)!)),
+        );
+      };
       const workHits: SearchHit[] = publication.works
-        .filter((item) => !query.workIds || query.workIds.includes(item.id))
+        .filter((item) => workIsAllowed(item.id))
+        .filter((item) => workMatchesRegion(item))
+        .filter((item) => workMatchesTemporal(item))
         .filter((item) =>
           `${item.title} ${item.alternativeTitles.join(" ")}`
             .toLocaleLowerCase()
@@ -420,10 +557,10 @@ export function createStaticPublicationRepository(
         )
         .map((work) => ({ kind: "work", score: 1, work }));
       const passageHits: SearchHit[] = publication.passages
-        .filter(
-          (item) =>
-            !query.workIds || query.workIds.includes(item.source.workId),
-        )
+        .filter((item) => workIsAllowed(workIdForPassage(item)))
+        .filter((item) => workMatchesRegion(works.get(workIdForPassage(item)!)))
+        .filter((item) => passageMatchesTemporal(item))
+        .filter((item) => passageMatchesStatus(item))
         .filter((item) =>
           Object.values(item.text).some((text) =>
             text?.toLocaleLowerCase().includes(term),
@@ -434,6 +571,10 @@ export function createStaticPublicationRepository(
         .filter(
           (item) => !query.entityTypes || query.entityTypes.includes(item.type),
         )
+        .filter((item) => entityMatchesWork(item.id))
+        .filter((item) => entityMatchesRegion(item))
+        .filter((item) => entityMatchesTemporal(item.id))
+        .filter((item) => entityMatchesStatus(item))
         .filter((item) =>
           `${item.preferredName} ${item.aliases.join(" ")}`
             .toLocaleLowerCase()
@@ -442,7 +583,390 @@ export function createStaticPublicationRepository(
         .map((entity) => ({ kind: "entity", score: 1, entity }));
       return paginate([...workHits, ...entityHits, ...passageHits], query);
     },
+    async exploreGraph(
+      query: KnowledgeGraphQuery = {},
+    ): Promise<KnowledgeGraphResult> {
+      const limit = boundedLimit(query.limit, 80, 200);
+      const depth = boundedLimit(query.depth, 1, 3);
+      const typeSet = query.entityTypes
+        ? new Set(query.entityTypes)
+        : undefined;
+      const statusSet = query.reviewStatuses
+        ? new Set(query.reviewStatuses)
+        : undefined;
+      const relations = publication.assertions.filter(
+        (assertion) =>
+          assertion.objectId !== undefined &&
+          (!statusSet || statusSet.has(assertion.reviewStatus)),
+      );
+      const degree = new Map<EntityId, number>();
+      for (const assertion of relations) {
+        degree.set(
+          assertion.subjectId,
+          (degree.get(assertion.subjectId) ?? 0) + 1,
+        );
+        if (assertion.objectId) {
+          degree.set(
+            assertion.objectId,
+            (degree.get(assertion.objectId) ?? 0) + 1,
+          );
+        }
+      }
+      const accepts = (entityId: EntityId) => {
+        const entity = entities.get(entityId);
+        return Boolean(
+          entity &&
+          (!typeSet ||
+            typeSet.has(entity.type) ||
+            entityId === query.centerEntityId),
+        );
+      };
+      const selectedIds = new Set<EntityId>();
+      let truncated = false;
+
+      if (query.centerEntityId && entities.has(query.centerEntityId)) {
+        selectedIds.add(query.centerEntityId);
+        let frontier = new Set<EntityId>([query.centerEntityId]);
+        for (let level = 0; level < depth && frontier.size; level += 1) {
+          const next = new Set<EntityId>();
+          for (const assertion of relations) {
+            const objectId = assertion.objectId;
+            if (!objectId) continue;
+            const touchesSubject = frontier.has(assertion.subjectId);
+            const touchesObject = frontier.has(objectId);
+            if (!touchesSubject && !touchesObject) continue;
+            const candidateId = touchesSubject ? objectId : assertion.subjectId;
+            if (!accepts(candidateId) || selectedIds.has(candidateId)) continue;
+            if (selectedIds.size >= limit) {
+              truncated = true;
+              continue;
+            }
+            selectedIds.add(candidateId);
+            next.add(candidateId);
+          }
+          frontier = next;
+        }
+      } else {
+        const ranked = publication.entities
+          .filter((entity) => accepts(entity.id))
+          .toSorted((left, right) => {
+            const score = (entityId: EntityId) =>
+              (degree.get(entityId) ?? 0) * 4 +
+              (mentionsByEntity.get(entityId)?.length ?? 0) +
+              (occurrencesByEntity.get(entityId)?.length ?? 0) * 2;
+            return score(right.id) - score(left.id);
+          });
+        for (const entity of ranked.slice(0, limit)) selectedIds.add(entity.id);
+        truncated = ranked.length > limit;
+      }
+
+      const nodes = [...selectedIds].flatMap((entityId) => {
+        const entity = entities.get(entityId);
+        if (!entity) return [];
+        return [
+          {
+            entity,
+            mentionCount: mentionsByEntity.get(entityId)?.length ?? 0,
+            assertionCount: assertionsByEntity.get(entityId)?.length ?? 0,
+            occurrenceCount: occurrencesByEntity.get(entityId)?.length ?? 0,
+          },
+        ];
+      });
+      const edges = relations.flatMap((assertion) => {
+        if (
+          !assertion.objectId ||
+          !selectedIds.has(assertion.subjectId) ||
+          !selectedIds.has(assertion.objectId)
+        ) {
+          return [];
+        }
+        return [
+          {
+            assertionId: assertion.id,
+            sourceId: assertion.subjectId,
+            targetId: assertion.objectId,
+            predicate: assertion.predicate,
+            ...(assertion.temporal ? { temporal: assertion.temporal } : {}),
+            evidence: assertion.evidence,
+            reviewStatus: assertion.reviewStatus,
+          },
+        ];
+      });
+      return { nodes, edges, truncated };
+    },
+    async buildTimeline(query: TimelineQuery = {}): Promise<TimelineResult> {
+      const limit = boundedLimit(query.limit, 500, 2_000);
+      const entityIdSet = query.entityIds
+        ? new Set(query.entityIds)
+        : undefined;
+      const entityTypeSet = query.entityTypes
+        ? new Set(query.entityTypes)
+        : undefined;
+      const workIdSet = query.workIds ? new Set(query.workIds) : undefined;
+      const acceptsEntity = (entityId: EntityId) => {
+        const entity = entities.get(entityId);
+        return Boolean(
+          entity &&
+          (!entityIdSet || entityIdSet.has(entityId)) &&
+          (!entityTypeSet || entityTypeSet.has(entity.type)),
+        );
+      };
+      const acceptsEvidence = (evidence: readonly EvidenceSpan[]) =>
+        !workIdSet ||
+        evidence.some((span) => {
+          const passage = passages.get(span.passageId);
+          const workId = passage ? workIdForPassage(passage) : undefined;
+          return workId !== undefined && workIdSet.has(workId);
+        });
+
+      const allItems: TimelineItem[] = [];
+      let undatedCount = 0;
+      for (const occurrence of publication.occurrences) {
+        if (!acceptsEntity(occurrence.entityId)) continue;
+        if (!acceptsEvidence(occurrence.evidence)) continue;
+        if (!occurrence.temporal) {
+          undatedCount += 1;
+          continue;
+        }
+        if (
+          !overlapsYears(occurrence.temporal, query.startYear, query.endYear)
+        ) {
+          continue;
+        }
+        allItems.push({
+          id: occurrence.id,
+          kind: "occurrence",
+          entityId: occurrence.entityId,
+          label: occurrence.label ?? occurrence.kind,
+          temporal: occurrence.temporal,
+          placeId: occurrence.placeId,
+          evidence: occurrence.evidence,
+          reviewStatus: occurrence.reviewStatus,
+        });
+      }
+      for (const assertion of publication.assertions) {
+        if (!acceptsEntity(assertion.subjectId)) continue;
+        if (!acceptsEvidence(assertion.evidence)) continue;
+        if (!assertion.temporal) {
+          undatedCount += 1;
+          continue;
+        }
+        if (
+          !overlapsYears(assertion.temporal, query.startYear, query.endYear)
+        ) {
+          continue;
+        }
+        const objectLabel = assertion.objectId
+          ? entities.get(assertion.objectId)?.preferredName
+          : assertion.literalValue;
+        allItems.push({
+          id: assertion.id,
+          kind: "assertion",
+          entityId: assertion.subjectId,
+          label: [assertion.predicate, objectLabel].filter(Boolean).join("："),
+          temporal: assertion.temporal,
+          predicate: assertion.predicate,
+          evidence: assertion.evidence,
+          reviewStatus: assertion.reviewStatus,
+        });
+      }
+
+      const sortedItems = allItems.toSorted(
+        (left, right) =>
+          (left.temporal.startYear ?? left.temporal.endYear ?? 0) -
+          (right.temporal.startYear ?? right.temporal.endYear ?? 0),
+      );
+      const limitedItems = sortedItems.slice(0, limit);
+      const itemsByEntity = groupBy(limitedItems, (item) => item.entityId);
+      const tracks = [...itemsByEntity.entries()].flatMap(
+        ([entityId, items]) => {
+          const entity = entities.get(entityId);
+          return entity ? [{ entity, items }] : [];
+        },
+      );
+      const numericYears = limitedItems.flatMap((item) => [
+        ...(item.temporal.startYear !== undefined
+          ? [item.temporal.startYear]
+          : []),
+        ...(item.temporal.endYear !== undefined ? [item.temporal.endYear] : []),
+      ]);
+      const range = numericYears.length
+        ? {
+            startYear: Math.min(...numericYears),
+            endYear: Math.max(...numericYears),
+          }
+        : undefined;
+      return {
+        tracks,
+        ...(range ? { range } : {}),
+        undatedCount,
+        truncated: sortedItems.length > limit,
+      };
+    },
+    async inspectResearch(query: ResearchQuery = {}): Promise<ResearchReport> {
+      const limit = boundedLimit(query.limit, 200, 1_000);
+      const entityIdSet = query.entityIds
+        ? new Set(query.entityIds)
+        : undefined;
+      const workIdSet = query.workIds ? new Set(query.workIds) : undefined;
+      const kindSet = query.kinds ? new Set(query.kinds) : undefined;
+      const acceptsEntity = (entityId: EntityId) =>
+        !entityIdSet || entityIdSet.has(entityId);
+      const passageIdsFor = (evidence: readonly EvidenceSpan[]) => [
+        ...new Set(evidence.map((span) => span.passageId)),
+      ];
+      const acceptsEvidence = (evidence: readonly EvidenceSpan[]) =>
+        !workIdSet ||
+        evidence.some((span) => {
+          const passage = passages.get(span.passageId);
+          const workId = passage ? workIdForPassage(passage) : undefined;
+          return workId !== undefined && workIdSet.has(workId);
+        });
+      const findings: ResearchFinding[] = [];
+      const pushFinding = (finding: ResearchFinding) => {
+        if (!kindSet || kindSet.has(finding.kind)) findings.push(finding);
+      };
+
+      const assertionGroups = groupBy(
+        publication.assertions.filter(
+          (assertion) =>
+            acceptsEntity(assertion.subjectId) &&
+            acceptsEvidence(assertion.evidence),
+        ),
+        (assertion) => `${assertion.subjectId}\u0000${assertion.predicate}`,
+      );
+      for (const assertions of assertionGroups.values()) {
+        const valueOf = (assertion: Assertion) =>
+          assertion.objectId ?? assertion.literalValue ?? "";
+        const conflicting = assertions.filter((assertion, index) =>
+          assertions.some(
+            (candidate, candidateIndex) =>
+              candidateIndex !== index &&
+              valueOf(candidate) !== valueOf(assertion) &&
+              overlaps(assertion.temporal, candidate.temporal),
+          ),
+        );
+        if (conflicting.length <= 1) continue;
+        const values = new Set(conflicting.map(valueOf));
+        const first = conflicting[0]!;
+        const subject = entities.get(first.subjectId);
+        const evidence = conflicting.flatMap((assertion) => assertion.evidence);
+        pushFinding({
+          id: `contradiction:${first.subjectId}:${first.predicate}`,
+          kind: "contradictory_assertions",
+          severity: "warning",
+          title: `${subject?.preferredName ?? "实体"}的“${first.predicate}”存在不同记载`,
+          description: `当前发布包保留了 ${values.size} 个不同值，应回到各自原文核验，不自动合并。`,
+          entityIds: [first.subjectId],
+          assertionIds: conflicting.map((assertion) => assertion.id),
+          passageIds: passageIdsFor(evidence),
+        });
+      }
+
+      for (const assertion of publication.assertions) {
+        if (
+          assertion.reviewStatus !== "disputed" ||
+          !acceptsEntity(assertion.subjectId) ||
+          !acceptsEvidence(assertion.evidence)
+        ) {
+          continue;
+        }
+        pushFinding({
+          id: `disputed:${assertion.id}`,
+          kind: "disputed_record",
+          severity: "notice",
+          title: `争议主张：${entities.get(assertion.subjectId)?.preferredName ?? assertion.subjectId}`,
+          description: `“${assertion.predicate}”已标记为争议，系统保留原始证据供并列考察。`,
+          entityIds: [assertion.subjectId],
+          assertionIds: [assertion.id],
+          passageIds: passageIdsFor(assertion.evidence),
+        });
+      }
+
+      const unresolved = new Set<string>();
+      for (const occurrence of publication.occurrences) {
+        if (!acceptsEntity(occurrence.entityId)) continue;
+        if (!acceptsEvidence(occurrence.evidence)) continue;
+        if ((geometriesByPlace.get(occurrence.placeId) ?? []).length) continue;
+        const key = `${occurrence.entityId}:${occurrence.placeId}`;
+        if (unresolved.has(key)) continue;
+        unresolved.add(key);
+        pushFinding({
+          id: `geometry:${key}`,
+          kind: "unresolved_geometry",
+          severity: "notice",
+          title: `${entities.get(occurrence.entityId)?.preferredName ?? "实体"}的时空记录尚未定位`,
+          description: `地点“${places.get(occurrence.placeId) ? placeLabel(places.get(occurrence.placeId)!) : occurrence.placeId}”尚无经过审核的历史几何；原始地名会继续保留。`,
+          entityIds: [occurrence.entityId],
+          assertionIds: [],
+          passageIds: passageIdsFor(occurrence.evidence),
+        });
+      }
+
+      for (const [
+        entityId,
+        entityOccurrences,
+      ] of occurrencesByEntity.entries()) {
+        if (!acceptsEntity(entityId)) continue;
+        const sequenced = entityOccurrences
+          .filter(
+            (item) =>
+              item.sequence !== undefined &&
+              item.temporal?.startYear !== undefined,
+          )
+          .toSorted((left, right) => left.sequence! - right.sequence!);
+        for (let index = 1; index < sequenced.length; index += 1) {
+          const previous = sequenced[index - 1]!;
+          const current = sequenced[index]!;
+          if (current.temporal!.startYear! >= previous.temporal!.startYear!) {
+            continue;
+          }
+          const evidence = [...previous.evidence, ...current.evidence];
+          pushFinding({
+            id: `chronology:${entityId}:${previous.id}:${current.id}`,
+            kind: "chronology_conflict",
+            severity: "critical",
+            title: `${entities.get(entityId)?.preferredName ?? "实体"}的行迹次序与年代冲突`,
+            description:
+              "记录的 sequence 顺序与公元纪年倒置，需要核对纪年换算或事件排序。",
+            entityIds: [entityId],
+            assertionIds: [],
+            passageIds: passageIdsFor(evidence),
+          });
+        }
+      }
+
+      const counts: Record<ResearchFindingKind, number> = {
+        contradictory_assertions: 0,
+        disputed_record: 0,
+        unresolved_geometry: 0,
+        chronology_conflict: 0,
+      };
+      for (const finding of findings) counts[finding.kind] += 1;
+      return {
+        findings: findings.slice(0, limit),
+        counts,
+        truncated: findings.length > limit,
+      };
+    },
     async getDatasetOverview(): Promise<DatasetOverview> {
+      const reviewCounts = {
+        raw: 0,
+        machine_suggested: 0,
+        reviewed: 0,
+        verified: 0,
+        disputed: 0,
+        rejected: 0,
+      };
+      for (const status of [
+        ...publication.entities.map((item) => item.reviewStatus),
+        ...publication.mentions.map((item) => item.reviewStatus),
+        ...publication.assertions.map((item) => item.reviewStatus),
+        ...publication.geometries.map((item) => item.reviewStatus),
+        ...publication.occurrences.map((item) => item.reviewStatus),
+      ]) {
+        if (status) reviewCounts[status] += 1;
+      }
       return {
         manifest: publication.manifest,
         counts: {
@@ -457,38 +981,51 @@ export function createStaticPublicationRepository(
           geometries: publication.geometries.length,
           occurrences: publication.occurrences.length,
         },
+        quality: {
+          reviewCounts,
+          coverage: {
+            facsimilePassages: publication.passages.filter(
+              (item) => item.facsimileAnchors.length > 0,
+            ).length,
+            simplifiedPassages: publication.passages.filter(
+              (item) => item.text.simplified,
+            ).length,
+            translatedPassages: publication.passages.filter(
+              (item) => item.text.modernTranslation,
+            ).length,
+            evidencedAssertions: publication.assertions.filter(
+              (item) => item.evidence.length,
+            ).length,
+            datedAssertions: publication.assertions.filter(
+              (item) => item.temporal,
+            ).length,
+            locatedPlaces: new Set(
+              publication.geometries.map((item) => item.placeId),
+            ).size,
+            datedOccurrences: publication.occurrences.filter(
+              (item) => item.temporal,
+            ).length,
+          },
+        },
       };
     },
   };
 
   return {
+    dataContext: Object.freeze({
+      contractVersion: publication.manifest.contractVersion,
+      publicationId: publication.manifest.publicationId,
+      datasetVersion: publication.manifest.datasetVersion,
+      contentChecksum: publication.manifest.contentChecksum,
+    }) satisfies DataContext,
     catalog: repository,
     reader: repository,
     knowledge: repository,
     atlas: repository,
     search: repository,
     metadata: repository,
-  };
-}
-
-export function createEmptyPublication(): KnowledgePublication {
-  return {
-    manifest: {
-      contractVersion: CONTRACT_VERSION,
-      publicationId: "empty",
-      title: "尚未接入数据",
-      generatedAt: "1970-01-01T00:00:00.000Z",
-      sourceDescription: "Architecture-only placeholder",
-    },
-    works: [],
-    editions: [],
-    volumes: [],
-    passages: [],
-    entities: [],
-    mentions: [],
-    assertions: [],
-    places: [],
-    geometries: [],
-    occurrences: [],
+    graph: repository,
+    timeline: repository,
+    research: repository,
   };
 }

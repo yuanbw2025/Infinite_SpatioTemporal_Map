@@ -22,6 +22,8 @@ describe("application kernel", () => {
       "library",
       "atlas",
     ]);
+    expect(kernel.hasCapability("atlas:explore")).toBe(true);
+    expect(kernel.hasCapability("research:inspect")).toBe(false);
   });
 
   it("rejects parallel feature identities", () => {
@@ -41,5 +43,36 @@ describe("application kernel", () => {
         }),
       ]),
     ).toThrow("Duplicate feature id");
+  });
+
+  it("rejects duplicate routes and missing dependencies", () => {
+    expect(() =>
+      createApplicationKernel([
+        defineFeature({
+          id: "one",
+          route: "/same",
+          navigation: { label: "一", order: 1 },
+          capabilities: [],
+        }),
+        defineFeature({
+          id: "two",
+          route: "/same",
+          navigation: { label: "二", order: 2 },
+          capabilities: [],
+        }),
+      ]),
+    ).toThrow("Duplicate feature route");
+
+    expect(() =>
+      createApplicationKernel([
+        defineFeature({
+          id: "dependent",
+          route: "/dependent",
+          navigation: { label: "依赖", order: 1 },
+          capabilities: [],
+          dependsOn: ["missing"],
+        }),
+      ]),
+    ).toThrow("depends on missing feature");
   });
 });

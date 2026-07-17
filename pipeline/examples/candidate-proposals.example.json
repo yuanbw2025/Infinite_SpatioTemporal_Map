@@ -1,0 +1,19 @@
+[
+  {
+    "kind": "entity",
+    "payload": {
+      "type": "place",
+      "preferredName": "金陵",
+      "aliases": []
+    },
+    "evidence": [
+      {
+        "passageId": "passage-replace-with-real-id",
+        "start": 0,
+        "end": 2
+      }
+    ],
+    "confidence": 0.9,
+    "notes": "机器或规则只提出候选，不能直接进入正式发布。"
+  }
+]

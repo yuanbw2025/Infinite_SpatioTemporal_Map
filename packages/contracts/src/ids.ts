@@ -1,5 +1,7 @@
 export type Id<Kind extends string> = string & { readonly __kind: Kind };
 
+export type PublicationId = Id<"PublicationId">;
+export type SourceId = Id<"SourceId">;
 export type WorkId = Id<"WorkId">;
 export type EditionId = Id<"EditionId">;
 export type VolumeId = Id<"VolumeId">;

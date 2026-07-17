@@ -1,75 +1,78 @@
+import type * as Wire from "./generated/publication";
 import type {
   EditionId,
   FacsimilePageId,
   PassageId,
   PlaceIdentityId,
+  SourceId,
   VolumeId,
   WorkId,
 } from "./ids";
 import type { TemporalValue } from "./common";
 
-export interface Work {
-  readonly id: WorkId;
-  readonly title: string;
-  readonly alternativeTitles: readonly string[];
-  readonly category:
-    "gazetteer" | "history" | "genealogy" | "catalogue" | "other";
-  readonly describedRegion?: string;
-  readonly abstract?: string;
-  readonly coverage?: {
+export type SourceRef = Readonly<
+  Omit<Wire.SourceRef, "sourceId"> & { readonly sourceId: SourceId }
+>;
+
+export type SourceRecord = Readonly<
+  Omit<Wire.SourceRecord, "id"> & { readonly id: SourceId }
+>;
+
+export type WorkCoverage = Readonly<
+  Omit<Wire.WorkCoverage, "temporal" | "placeIds" | "regionLabels"> & {
     readonly temporal?: TemporalValue;
-    readonly regionLabels: readonly string[];
     readonly placeIds: readonly PlaceIdentityId[];
-  };
-}
+    readonly regionLabels: readonly string[];
+  }
+>;
 
-export interface Edition {
-  readonly id: EditionId;
-  readonly workId: WorkId;
-  readonly label: string;
-  readonly publicationStatement?: string;
-  readonly holdingInstitution?: string;
-  readonly sourceUrl?: string;
-  readonly rightsStatement?: string;
-}
+export type Work = Readonly<
+  Omit<Wire.Work, "id" | "alternativeTitles" | "coverage" | "sourceRefs"> & {
+    readonly id: WorkId;
+    readonly alternativeTitles: readonly string[];
+    readonly coverage?: WorkCoverage;
+    readonly sourceRefs: readonly [SourceRef, ...SourceRef[]];
+  }
+>;
 
-export interface Volume {
-  readonly id: VolumeId;
-  readonly editionId: EditionId;
-  readonly label: string;
-  readonly sequence: number;
-  readonly parentVolumeId?: VolumeId;
-}
+export type Edition = Readonly<
+  Omit<Wire.Edition, "id" | "workId" | "sourceRefs"> & {
+    readonly id: EditionId;
+    readonly workId: WorkId;
+    readonly sourceRefs: readonly [SourceRef, ...SourceRef[]];
+  }
+>;
 
-export interface SourceLocator {
-  readonly workId: WorkId;
-  readonly editionId: EditionId;
-  readonly volumeId: VolumeId;
-  readonly volumeLabel: string;
-  readonly sectionLabel?: string;
-  readonly pageId?: FacsimilePageId;
-  readonly passageId: PassageId;
-}
+export type Volume = Readonly<
+  Omit<Wire.Volume, "id" | "editionId" | "parentVolumeId"> & {
+    readonly id: VolumeId;
+    readonly editionId: EditionId;
+    readonly parentVolumeId?: VolumeId;
+  }
+>;
 
-export interface TextLayers {
-  /** Immutable transcription. Character conversion must never overwrite it. */
-  readonly original: string;
-  readonly simplified?: string;
-  readonly modernTranslation?: string;
-}
+export type FacsimilePage = Readonly<
+  Omit<Wire.FacsimilePage, "id" | "volumeId" | "sourceId"> & {
+    readonly id: FacsimilePageId;
+    readonly volumeId: VolumeId;
+    readonly sourceId: SourceId;
+  }
+>;
 
-export interface FacsimileAnchor {
-  readonly pageId: FacsimilePageId;
-  readonly canvasUrl?: string;
-  readonly imageUrl?: string;
-  readonly region?: readonly [number, number, number, number];
-}
+export type TextLayers = Readonly<Wire.TextLayers>;
 
-export interface Passage {
-  readonly id: PassageId;
-  readonly source: SourceLocator;
-  readonly sequence: number;
-  readonly text: TextLayers;
-  readonly facsimile?: FacsimileAnchor;
-  readonly revision: number;
-}
+export type FacsimileAnchor = Readonly<
+  Omit<Wire.FacsimileAnchor, "pageId" | "region"> & {
+    readonly pageId: FacsimilePageId;
+    readonly region?: readonly [number, number, number, number];
+  }
+>;
+
+export type Passage = Readonly<
+  Omit<Wire.Passage, "id" | "volumeId" | "text" | "facsimileAnchors"> & {
+    readonly id: PassageId;
+    readonly volumeId: VolumeId;
+    readonly text: TextLayers;
+    readonly facsimileAnchors: readonly FacsimileAnchor[];
+  }
+>;

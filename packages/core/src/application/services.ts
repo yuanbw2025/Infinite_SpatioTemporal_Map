@@ -1,11 +1,15 @@
 import type {
   AtlasQuery,
+  DataContext,
   EditionId,
   EntityId,
   EntityQuery,
+  KnowledgeGraphQuery,
   PassageId,
   PassageQuery,
   SearchQuery,
+  ResearchQuery,
+  TimelineQuery,
   WorkId,
   WorkQuery,
 } from "@infinite-spacetime/contracts";
@@ -13,18 +17,15 @@ import { NotFoundError } from "../domain/errors";
 import type { RepositoryBundle } from "./repositories";
 
 export interface ApplicationServices {
+  /** Exact publication identity used by every service below. */
+  readonly dataContext: DataContext;
   readonly library: {
     listWorks(
       query?: WorkQuery,
     ): ReturnType<RepositoryBundle["catalog"]["listWorks"]>;
-    openWork(id: WorkId): Promise<{
-      work: NonNullable<
-        Awaited<ReturnType<RepositoryBundle["catalog"]["getWork"]>>
-      >;
-      editions: Awaited<
-        ReturnType<RepositoryBundle["catalog"]["listEditions"]>
-      >;
-    }>;
+    openWork(
+      id: WorkId,
+    ): Promise<import("@infinite-spacetime/contracts").WorkDetails>;
     listVolumes(
       editionId: EditionId,
     ): ReturnType<RepositoryBundle["catalog"]["listVolumes"]>;
@@ -64,6 +65,21 @@ export interface ApplicationServices {
   readonly metadata: {
     overview(): ReturnType<RepositoryBundle["metadata"]["getDatasetOverview"]>;
   };
+  readonly graph: {
+    explore(
+      query?: KnowledgeGraphQuery,
+    ): ReturnType<RepositoryBundle["graph"]["exploreGraph"]>;
+  };
+  readonly timeline: {
+    build(
+      query?: TimelineQuery,
+    ): ReturnType<RepositoryBundle["timeline"]["buildTimeline"]>;
+  };
+  readonly research: {
+    inspect(
+      query?: ResearchQuery,
+    ): ReturnType<RepositoryBundle["research"]["inspectResearch"]>;
+  };
 }
 
 /** The single application façade consumed by every presentation surface. */
@@ -71,14 +87,25 @@ export function createApplicationServices(
   repositories: RepositoryBundle,
 ): ApplicationServices {
   return {
+    dataContext: repositories.dataContext,
     library: {
       listWorks: (query) => repositories.catalog.listWorks(query),
       async openWork(id) {
         const work = await repositories.catalog.getWork(id);
         if (!work) throw new NotFoundError("Work", id);
+        const editions = await repositories.catalog.listEditions(id);
+        const sourceIds = [
+          ...new Set([
+            ...work.sourceRefs.map((reference) => reference.sourceId),
+            ...editions.flatMap((edition) =>
+              edition.sourceRefs.map((reference) => reference.sourceId),
+            ),
+          ]),
+        ];
         return {
           work,
-          editions: await repositories.catalog.listEditions(id),
+          editions,
+          sources: await repositories.catalog.listSources(sourceIds),
         };
       },
       listVolumes: (editionId) => repositories.catalog.listVolumes(editionId),
@@ -107,6 +134,15 @@ export function createApplicationServices(
     },
     metadata: {
       overview: () => repositories.metadata.getDatasetOverview(),
+    },
+    graph: {
+      explore: (query) => repositories.graph.exploreGraph(query),
+    },
+    timeline: {
+      build: (query) => repositories.timeline.buildTimeline(query),
+    },
+    research: {
+      inspect: (query) => repositories.research.inspectResearch(query),
     },
   };
 }

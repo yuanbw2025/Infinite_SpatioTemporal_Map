@@ -9,7 +9,7 @@ import { computed, onBeforeUnmount, onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import EmptyState from "../../components/EmptyState.vue";
 import PageHeader from "../../components/PageHeader.vue";
-import { useApplication } from "../../composables/useApplication";
+import { useApplication } from "../../composables/use-application";
 import HistoricalMap from "./components/HistoricalMap.vue";
 
 const { services } = useApplication();
@@ -29,8 +29,9 @@ const selected = ref<MapObservation>();
 const loading = ref(false);
 const error = ref("");
 const nextCursor = ref<string>();
-const currentYear = ref<number>();
-const playbackStep = ref(10);
+const currentTick = ref<number>();
+const timeResolution = ref<"year" | "month">("year");
+const playbackStep = ref(1);
 const playing = ref(false);
 const showPoints = ref(true);
 const showRegions = ref(true);
@@ -61,8 +62,7 @@ const journeyPoints = computed(() => {
   return journeyObservations.value
     .filter((item) => item.entityId === entityId && item.occurrenceId)
     .toSorted(
-      (left, right) =>
-        (left.temporal?.startYear ?? 0) - (right.temporal?.startYear ?? 0),
+      (left, right) => temporalSortValue(left) - temporalSortValue(right),
     );
 });
 
@@ -70,12 +70,57 @@ const journeyEntityId = computed(
   () => selected.value?.entityId ?? focusedEntityId.value,
 );
 
+const sliderMin = computed(() => {
+  if (startYear.value === undefined) return undefined;
+  return timeResolution.value === "month"
+    ? startYear.value * 12
+    : startYear.value;
+});
+
+const sliderMax = computed(() => {
+  if (endYear.value === undefined) return undefined;
+  return timeResolution.value === "month"
+    ? endYear.value * 12 + 11
+    : endYear.value;
+});
+
+const currentTimeLabel = computed(() => {
+  if (currentTick.value === undefined) return "范围模式";
+  if (timeResolution.value === "year") return `${currentTick.value}年`;
+  const { year, month } = yearMonthFromTick(currentTick.value);
+  return `${year}年${String(month).padStart(2, "0")}月`;
+});
+
+function yearMonthFromTick(tick: number): { year: number; month: number } {
+  const year = Math.floor(tick / 12);
+  return { year, month: tick - year * 12 + 1 };
+}
+
+function temporalSortValue(observation: MapObservation): number {
+  const temporal = observation.temporal;
+  const year = temporal?.startYear ?? temporal?.endYear ?? 0;
+  const month = temporal?.startMonth ?? temporal?.endMonth ?? 1;
+  const day = temporal?.startDay ?? temporal?.endDay ?? 1;
+  return year * 372 + (month - 1) * 31 + day - 1;
+}
+
 function temporalQuery(): TemporalValue | undefined {
-  if (currentYear.value !== undefined) {
+  if (currentTick.value !== undefined) {
+    if (timeResolution.value === "month") {
+      const { year, month } = yearMonthFromTick(currentTick.value);
+      return {
+        original: `${year}年${month}月`,
+        startYear: year,
+        startMonth: month,
+        endYear: year,
+        endMonth: month,
+        certainty: "exact",
+      };
+    }
     return {
-      original: String(currentYear.value),
-      startYear: currentYear.value,
-      endYear: currentYear.value,
+      original: String(currentTick.value),
+      startYear: currentTick.value,
+      endYear: currentTick.value,
       certainty: "exact",
     };
   }
@@ -99,8 +144,14 @@ function stopPlayback() {
 
 function applyRange() {
   stopPlayback();
-  currentYear.value = undefined;
+  currentTick.value = undefined;
   void load();
+}
+
+function changeResolution() {
+  stopPlayback();
+  currentTick.value = undefined;
+  playbackStep.value = 1;
 }
 
 function togglePlayback() {
@@ -117,21 +168,21 @@ function togglePlayback() {
     return;
   }
   error.value = "";
-  currentYear.value = startYear.value;
+  currentTick.value = sliderMin.value;
   playing.value = true;
   void load();
   playbackTimer = setInterval(() => {
     if (
-      currentYear.value === undefined ||
-      endYear.value === undefined ||
-      currentYear.value >= endYear.value
+      currentTick.value === undefined ||
+      sliderMax.value === undefined ||
+      currentTick.value >= sliderMax.value
     ) {
       stopPlayback();
       return;
     }
-    currentYear.value = Math.min(
-      endYear.value,
-      currentYear.value + Math.max(1, playbackStep.value),
+    currentTick.value = Math.min(
+      sliderMax.value,
+      currentTick.value + Math.max(1, playbackStep.value),
     );
     void load();
   }, 900);
@@ -258,20 +309,27 @@ watch(journeyEntityId, (entityId) => void loadJourney(entityId), {
     <div class="timeline-control">
       <div class="timeline-readout">
         <span>时间轴</span>
-        <strong>{{ currentYear ?? "范围模式" }}</strong>
+        <strong>{{ currentTimeLabel }}</strong>
       </div>
+      <label class="timeline-resolution">
+        <span>播放粒度</span>
+        <select v-model="timeResolution" @change="changeResolution">
+          <option value="year">按年</option>
+          <option value="month">按月</option>
+        </select>
+      </label>
       <input
-        v-if="startYear !== undefined && endYear !== undefined"
-        v-model.number="currentYear"
+        v-if="sliderMin !== undefined && sliderMax !== undefined"
+        v-model.number="currentTick"
         class="timeline-slider"
         type="range"
-        :min="startYear"
-        :max="endYear"
+        :min="sliderMin"
+        :max="sliderMax"
         :step="Math.max(1, playbackStep)"
         @change="load()"
       />
       <label class="timeline-step">
-        <span>步长</span>
+        <span>步长（{{ timeResolution === "month" ? "月" : "年" }}）</span>
         <input v-model.number="playbackStep" type="number" min="1" />
       </label>
       <button class="timeline-play" type="button" @click="togglePlayback">

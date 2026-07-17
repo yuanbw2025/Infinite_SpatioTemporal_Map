@@ -1,4 +1,6 @@
-import type { EvidenceSpan, ReviewStatus, TemporalValue } from "./common";
+import type * as Wire from "./generated/publication";
+import type { EvidenceSpan, TemporalValue } from "./common";
+import type { SourceRef } from "./catalog";
 import type {
   EntityId,
   GeometryId,
@@ -26,54 +28,53 @@ export interface GeoMultiPolygon {
 
 export type HistoricalShape = GeoPoint | GeoPolygon | GeoMultiPolygon;
 
-export interface HistoricalGeometry {
-  readonly id: GeometryId;
-  readonly placeId: PlaceIdentityId;
-  readonly geometry: HistoricalShape;
-  readonly validDuring?: TemporalValue;
-  readonly precision: "site" | "settlement" | "region" | "unknown";
-  readonly reviewStatus: ReviewStatus;
-}
+export type HistoricalGeometry = Readonly<
+  Omit<
+    Wire.HistoricalGeometry,
+    "id" | "placeId" | "geometry" | "validDuring" | "sourceRefs"
+  > & {
+    readonly id: GeometryId;
+    readonly placeId: PlaceIdentityId;
+    readonly geometry: HistoricalShape;
+    readonly validDuring?: TemporalValue;
+    readonly sourceRefs: readonly [SourceRef, ...SourceRef[]];
+  }
+>;
 
-export interface HistoricalPlaceName {
-  readonly name: string;
-  readonly validDuring?: TemporalValue;
-  readonly kind?: string;
-}
+export type HistoricalName = Readonly<
+  Omit<Wire.HistoricalName, "validDuring" | "evidence" | "sourceRefs"> & {
+    readonly validDuring?: TemporalValue;
+    readonly evidence: readonly EvidenceSpan[];
+    readonly sourceRefs: readonly SourceRef[];
+  }
+>;
 
-export interface PlaceIdentity {
-  readonly id: PlaceIdentityId;
-  readonly entityId: EntityId;
-  readonly preferredName: string;
-  readonly historicalNames: readonly HistoricalPlaceName[];
-  readonly parentPlaceIds: readonly PlaceIdentityId[];
-}
+export type PlaceIdentity = Readonly<
+  Omit<
+    Wire.PlaceIdentity,
+    "id" | "entityId" | "historicalNames" | "parentPlaceIds"
+  > & {
+    readonly id: PlaceIdentityId;
+    readonly entityId: EntityId;
+    readonly historicalNames: readonly HistoricalName[];
+    readonly parentPlaceIds: readonly PlaceIdentityId[];
+  }
+>;
 
-export type OccurrenceKind =
-  | "birth"
-  | "death"
-  | "native_place"
-  | "residence"
-  | "office"
-  | "journey"
-  | "event"
-  | "creation"
-  | "discovery"
-  | "collection"
-  | "other";
+export type OccurrenceKind = Wire.OccurrenceKind;
 
-/** Connects any entity to a historical place and time with source evidence. */
-export interface SpatiotemporalOccurrence {
-  readonly id: OccurrenceId;
-  readonly entityId: EntityId;
-  readonly placeId: PlaceIdentityId;
-  readonly kind: OccurrenceKind;
-  readonly label?: string;
-  readonly temporal?: TemporalValue;
-  readonly sequence?: number;
-  readonly evidence: readonly EvidenceSpan[];
-  readonly reviewStatus: ReviewStatus;
-}
+export type SpatiotemporalOccurrence = Readonly<
+  Omit<
+    Wire.SpatiotemporalOccurrence,
+    "id" | "entityId" | "placeId" | "temporal" | "evidence"
+  > & {
+    readonly id: OccurrenceId;
+    readonly entityId: EntityId;
+    readonly placeId: PlaceIdentityId;
+    readonly temporal?: TemporalValue;
+    readonly evidence: readonly [EvidenceSpan, ...EvidenceSpan[]];
+  }
+>;
 
 export interface MapObservation {
   readonly entityId: EntityId;

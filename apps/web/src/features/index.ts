@@ -7,10 +7,13 @@ import type { RouteRecordRaw } from "vue-router";
 import { atlasFeature } from "./atlas";
 import { dataFeature } from "./data";
 import { heritageFeature } from "./heritage";
+import { graphFeature } from "./graph";
 import { libraryFeature } from "./library";
 import { peopleFeature } from "./people";
 import { readerFeature } from "./reader";
+import { researchFeature } from "./research";
 import { searchFeature } from "./search";
+import { timelineFeature } from "./timeline";
 
 interface RegisteredFeature {
   readonly manifest: FeatureModule;
@@ -24,6 +27,9 @@ const features: readonly RegisteredFeature[] = [
   atlasFeature,
   peopleFeature,
   heritageFeature,
+  graphFeature,
+  timelineFeature,
+  researchFeature,
   searchFeature,
   dataFeature,
 ];

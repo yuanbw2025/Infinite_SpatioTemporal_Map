@@ -3,6 +3,7 @@ import type {
   Edition,
   EditionId,
   Passage,
+  SourceRecord,
   Volume,
   VolumeId,
   Work,
@@ -12,7 +13,7 @@ import { computed, onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import EmptyState from "../../components/EmptyState.vue";
 import PageHeader from "../../components/PageHeader.vue";
-import { useApplication } from "../../composables/useApplication";
+import { useApplication } from "../../composables/use-application";
 
 const route = useRoute();
 const { services } = useApplication();
@@ -21,6 +22,7 @@ const work = ref<Work>();
 const editions = ref<readonly Edition[]>([]);
 const volumes = ref<readonly Volume[]>([]);
 const passages = ref<readonly Passage[]>([]);
+const sources = ref<readonly SourceRecord[]>([]);
 const selectedEditionId = ref<EditionId>();
 const selectedVolumeId = ref<VolumeId>();
 const loading = ref(true);
@@ -29,6 +31,23 @@ const nextCursor = ref<string>();
 const selectedEdition = computed(() =>
   editions.value.find((edition) => edition.id === selectedEditionId.value),
 );
+const selectedEditionSources = computed(
+  () =>
+    selectedEdition.value?.sourceRefs.flatMap((reference) => {
+      const source = sources.value.find(
+        (item) => item.id === reference.sourceId,
+      );
+      return source ? [source] : [];
+    }) ?? [],
+);
+
+function passageLabel(passage: Passage): string {
+  return (
+    passage.sectionLabel ??
+    volumes.value.find((volume) => volume.id === passage.volumeId)?.label ??
+    "未命名卷章"
+  );
+}
 
 async function loadVolumes() {
   if (!selectedEditionId.value) {
@@ -67,6 +86,7 @@ onMounted(async () => {
     const result = await services.library.openWork(workId);
     work.value = result.work;
     editions.value = result.editions;
+    sources.value = result.sources;
     selectedEditionId.value = result.editions[0]?.id;
     if (!selectedEditionId.value) await loadPassages();
   } catch (reason) {
@@ -88,7 +108,15 @@ onMounted(async () => {
         :description="work.abstract ?? '选择版本与卷章，进入可引用的原文段落。'"
       >
         <template #actions>
-          <router-link class="text-link" to="/">← 返回书库</router-link>
+          <div class="header-action-links">
+            <router-link
+              v-if="editions.length > 1"
+              class="text-link"
+              :to="`/works/${workId}/compare`"
+              >版本对读</router-link
+            >
+            <router-link class="text-link" to="/">← 返回书库</router-link>
+          </div>
         </template>
       </PageHeader>
 
@@ -128,21 +156,17 @@ onMounted(async () => {
             selectedEdition.publicationStatement ?? selectedEdition.label
           }}</strong>
         </div>
-        <div v-if="selectedEdition.holdingInstitution">
-          <span>收藏机构</span>
-          <strong>{{ selectedEdition.holdingInstitution }}</strong>
+        <div v-for="source in selectedEditionSources" :key="source.id">
+          <span>{{ source.holdingInstitution ?? source.title }}</span>
+          <strong>{{ source.rightsStatement }}</strong>
+          <a
+            v-if="source.url"
+            :href="source.url"
+            target="_blank"
+            rel="noreferrer"
+            >查看来源</a
+          >
         </div>
-        <div v-if="selectedEdition.rightsStatement">
-          <span>权利说明</span>
-          <strong>{{ selectedEdition.rightsStatement }}</strong>
-        </div>
-        <a
-          v-if="selectedEdition.sourceUrl"
-          :href="selectedEdition.sourceUrl"
-          target="_blank"
-          rel="noreferrer"
-          >查看来源</a
-        >
       </aside>
 
       <template v-if="passages.length">
@@ -152,9 +176,7 @@ onMounted(async () => {
             :key="passage.id"
             :to="`/reader/${passage.id}`"
           >
-            <span>{{
-              passage.source.sectionLabel ?? passage.source.volumeLabel
-            }}</span>
+            <span>{{ passageLabel(passage) }}</span>
             <p>
               {{ passage.text.original.slice(0, 96)
               }}{{ passage.text.original.length > 96 ? "…" : "" }}

@@ -1,7 +1,24 @@
-import type { Passage, Work } from "./catalog";
+import type {
+  Edition,
+  FacsimileAnchor,
+  FacsimilePage,
+  Passage,
+  SourceRecord,
+  Volume,
+  Work,
+} from "./catalog";
 import type { TemporalValue } from "./common";
 import type { Assertion, Entity, EntityType, Mention } from "./knowledge";
-import type { EditionId, EntityId, PassageId, VolumeId, WorkId } from "./ids";
+import type {
+  AssertionId,
+  EditionId,
+  EntityId,
+  PassageId,
+  PlaceIdentityId,
+  VolumeId,
+  WorkId,
+} from "./ids";
+import type { EvidenceSpan, ReviewStatus } from "./common";
 import type { PublicationManifest } from "./publication";
 import type {
   MapObservation,
@@ -19,6 +36,14 @@ export interface Page<T> {
   readonly nextCursor?: string;
 }
 
+/** Immutable identity shared by every use case in one application runtime. */
+export type DataContext = Readonly<
+  Pick<
+    PublicationManifest,
+    "contractVersion" | "publicationId" | "datasetVersion" | "contentChecksum"
+  >
+>;
+
 export interface WorkQuery extends PageRequest {
   readonly text?: string;
   readonly region?: string;
@@ -31,6 +56,8 @@ export interface SearchQuery extends PageRequest {
   readonly entityTypes?: readonly EntityType[];
   readonly workIds?: readonly WorkId[];
   readonly temporal?: TemporalValue;
+  readonly region?: string;
+  readonly reviewStatuses?: readonly ReviewStatus[];
 }
 
 export type SearchHit =
@@ -64,11 +91,20 @@ export interface PassageQuery extends PageRequest {
 
 export interface PassageContext {
   readonly passage: Passage;
+  readonly work: Work;
+  readonly edition: Edition;
+  readonly volume: Volume;
+  readonly facsimiles: readonly PassageFacsimile[];
   readonly previousPassageId?: PassageId;
   readonly nextPassageId?: PassageId;
   readonly mentions: readonly Mention[];
   readonly mentionedEntities: readonly Entity[];
   readonly evidencedAssertions: readonly Assertion[];
+}
+
+export interface PassageFacsimile {
+  readonly anchor: FacsimileAnchor;
+  readonly page: FacsimilePage;
 }
 
 export interface EntityQuery extends PageRequest {
@@ -93,6 +129,13 @@ export interface EntityProfile {
   readonly relatedEntities: readonly Entity[];
   readonly occurrences: readonly SpatiotemporalOccurrence[];
   readonly occurrencePlaces: readonly PlaceIdentity[];
+  readonly occurrencePlaceEntities: readonly Entity[];
+}
+
+export interface WorkDetails {
+  readonly work: Work;
+  readonly editions: readonly Edition[];
+  readonly sources: readonly SourceRecord[];
 }
 
 export interface AtlasResult {
@@ -114,4 +157,113 @@ export interface DatasetOverview {
     readonly geometries: number;
     readonly occurrences: number;
   };
+  readonly quality: {
+    readonly reviewCounts: Readonly<Record<ReviewStatus, number>>;
+    readonly coverage: {
+      readonly facsimilePassages: number;
+      readonly simplifiedPassages: number;
+      readonly translatedPassages: number;
+      readonly evidencedAssertions: number;
+      readonly datedAssertions: number;
+      readonly locatedPlaces: number;
+      readonly datedOccurrences: number;
+    };
+  };
+}
+
+export interface KnowledgeGraphQuery {
+  readonly centerEntityId?: EntityId;
+  readonly entityTypes?: readonly EntityType[];
+  readonly reviewStatuses?: readonly ReviewStatus[];
+  readonly depth?: number;
+  readonly limit?: number;
+}
+
+export interface KnowledgeGraphNode {
+  readonly entity: Entity;
+  readonly mentionCount: number;
+  readonly assertionCount: number;
+  readonly occurrenceCount: number;
+}
+
+export interface KnowledgeGraphEdge {
+  readonly assertionId: AssertionId;
+  readonly sourceId: EntityId;
+  readonly targetId: EntityId;
+  readonly predicate: string;
+  readonly temporal?: TemporalValue;
+  readonly evidence: readonly EvidenceSpan[];
+  readonly reviewStatus: ReviewStatus;
+}
+
+export interface KnowledgeGraphResult {
+  readonly nodes: readonly KnowledgeGraphNode[];
+  readonly edges: readonly KnowledgeGraphEdge[];
+  readonly truncated: boolean;
+}
+
+export interface TimelineQuery {
+  readonly entityIds?: readonly EntityId[];
+  readonly entityTypes?: readonly EntityType[];
+  readonly workIds?: readonly WorkId[];
+  readonly startYear?: number;
+  readonly endYear?: number;
+  readonly limit?: number;
+}
+
+export interface TimelineItem {
+  readonly id: string;
+  readonly kind: "occurrence" | "assertion";
+  readonly entityId: EntityId;
+  readonly label: string;
+  readonly temporal: TemporalValue;
+  readonly placeId?: PlaceIdentityId;
+  readonly predicate?: string;
+  readonly evidence: readonly EvidenceSpan[];
+  readonly reviewStatus: ReviewStatus;
+}
+
+export interface TimelineTrack {
+  readonly entity: Entity;
+  readonly items: readonly TimelineItem[];
+}
+
+export interface TimelineResult {
+  readonly tracks: readonly TimelineTrack[];
+  readonly range?: {
+    readonly startYear: number;
+    readonly endYear: number;
+  };
+  readonly undatedCount: number;
+  readonly truncated: boolean;
+}
+
+export type ResearchFindingKind =
+  | "contradictory_assertions"
+  | "disputed_record"
+  | "unresolved_geometry"
+  | "chronology_conflict";
+
+export interface ResearchQuery {
+  readonly entityIds?: readonly EntityId[];
+  readonly workIds?: readonly WorkId[];
+  readonly kinds?: readonly ResearchFindingKind[];
+  readonly limit?: number;
+}
+
+export interface ResearchFinding {
+  readonly id: string;
+  readonly kind: ResearchFindingKind;
+  readonly severity: "notice" | "warning" | "critical";
+  readonly title: string;
+  readonly description: string;
+  readonly entityIds: readonly EntityId[];
+  readonly assertionIds: readonly AssertionId[];
+  readonly passageIds: readonly PassageId[];
+}
+
+export interface ResearchReport {
+  readonly findings: readonly ResearchFinding[];
+  readonly counts: Readonly<Record<ResearchFindingKind, number>>;
+  readonly truncated: boolean;
 }

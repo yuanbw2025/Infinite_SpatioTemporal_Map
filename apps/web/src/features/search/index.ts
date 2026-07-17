@@ -5,7 +5,7 @@ export const searchFeature = {
   manifest: defineFeature({
     id: "search",
     route: "/search",
-    navigation: { label: "全库检索", order: 60 },
+    navigation: { label: "全库检索", order: 90 },
     capabilities: ["search:global"],
     dependsOn: ["library"],
   }),

@@ -3,6 +3,7 @@ import type {
   AtlasQuery,
   AtlasResult,
   DatasetOverview,
+  DataContext,
   Edition,
   EditionId,
   Entity,
@@ -10,6 +11,8 @@ import type {
   EntityProfile,
   EntityQuery,
   EntitySummary,
+  KnowledgeGraphQuery,
+  KnowledgeGraphResult,
   Page,
   PageRequest,
   Passage,
@@ -18,6 +21,12 @@ import type {
   PassageQuery,
   SearchHit,
   SearchQuery,
+  SourceId,
+  SourceRecord,
+  ResearchQuery,
+  ResearchReport,
+  TimelineQuery,
+  TimelineResult,
   Volume,
   Work,
   WorkId,
@@ -30,6 +39,7 @@ export interface CatalogRepository {
   getWork(id: WorkId): Promise<Work | null>;
   listEditions(workId: WorkId): Promise<readonly Edition[]>;
   listVolumes(editionId: EditionId): Promise<readonly Volume[]>;
+  listSources(sourceIds: readonly SourceId[]): Promise<readonly SourceRecord[]>;
 }
 
 export interface ReaderRepository {
@@ -57,11 +67,28 @@ export interface MetadataRepository {
   getDatasetOverview(): Promise<DatasetOverview>;
 }
 
+export interface KnowledgeGraphRepository {
+  exploreGraph(query?: KnowledgeGraphQuery): Promise<KnowledgeGraphResult>;
+}
+
+export interface TimelineRepository {
+  buildTimeline(query?: TimelineQuery): Promise<TimelineResult>;
+}
+
+export interface ResearchRepository {
+  inspectResearch(query?: ResearchQuery): Promise<ResearchReport>;
+}
+
 export interface RepositoryBundle {
+  /** One identity for the complete bundle; mixing publications is forbidden. */
+  readonly dataContext: DataContext;
   readonly catalog: CatalogRepository;
   readonly reader: ReaderRepository;
   readonly knowledge: KnowledgeRepository;
   readonly atlas: AtlasRepository;
   readonly search: SearchRepository;
   readonly metadata: MetadataRepository;
+  readonly graph: KnowledgeGraphRepository;
+  readonly timeline: TimelineRepository;
+  readonly research: ResearchRepository;
 }

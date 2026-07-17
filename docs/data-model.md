@@ -3,10 +3,11 @@
 ## 文献轴
 
 - `Work`：抽象作品，如一部地方志。
-- `Edition`：可追溯到来源、馆藏与权利说明的具体版本。
+- `SourceRecord/SourceRef`：统一登记来源、馆藏、权利、URL 与校验值，其他记录只引用。
+- `Edition`：通过 SourceRef 可追溯到来源、馆藏与权利说明的具体版本。
 - `Volume`：卷、章等有序结构。
 - `Passage`：最小稳定引用单元；实体出现、知识证据和搜索结果都回到这里。
-- `FacsimileAnchor`：未来影印页及版面区域锚点，文本阶段可以为空。
+- `FacsimilePage/FacsimileAnchor`：影印页面及段落版面区域锚点，文本阶段可以为空。
 
 ## 知识轴
 
@@ -26,7 +27,9 @@
 
 ## 文本层
 
-`Passage.text` 分为 `original`、`simplified` 和 `modernTranslation`。原文是不可变基准；简体转换和白话译文是派生层，允许独立修订，永远不能回写原文。
+`Passage.text` 分为 `original`、`simplified`、`punctuated` 和 `modernTranslation`。原文是不可变基准；简体转换、标点和白话译文是派生层，允许独立修订，永远不能回写原文。
+
+`TemporalValue` 在保留 `original` 的同时，可使用 `startYear/startMonth/startDay` 与 `endYear/endMonth/endDay` 表达公元范围。缺少可靠换算时只保留原文和 `unknown`，不得猜算。
 
 ## 发布边界
 
@@ -35,3 +38,9 @@
 ## 扩展规则
 
 人物、地图、时间线和文博模块不得复制核心对象。模块需要的新属性优先表达为带来源的 `Assertion`；只有真正稳定、普遍、高频且有明确迁移价值的属性才升级为核心字段。
+
+## 目标契约迁移说明
+
+0.4 契约已按 ADR 0010 收敛：`Passage` 只保留 `volumeId`，`Volume → Edition → Work` 负责归属；地点规范名由 Entity 唯一拥有；作品地域统一进入 coverage；来源统一进入 Source Registry。0.3 数据必须通过版本化迁移器进入新契约，不能手工删改字段。
+
+0.4 的逐字段名称、类型、必填性和引用关系以 `field-dictionary.md` 为准。

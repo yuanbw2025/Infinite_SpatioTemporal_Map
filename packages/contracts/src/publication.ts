@@ -1,25 +1,34 @@
-import type { Edition, Passage, Volume, Work } from "./catalog";
+import type * as Wire from "./generated/publication";
+import type {
+  Edition,
+  FacsimilePage,
+  Passage,
+  SourceRecord,
+  Volume,
+  Work,
+} from "./catalog";
 import type { Assertion, Entity, Mention } from "./knowledge";
+import type { PublicationId } from "./ids";
 import type {
   HistoricalGeometry,
   PlaceIdentity,
   SpatiotemporalOccurrence,
 } from "./spacetime";
 
-export interface PublicationManifest {
-  readonly contractVersion: string;
-  readonly publicationId: string;
-  readonly title: string;
-  readonly generatedAt: string;
-  readonly sourceDescription: string;
-}
+export type PublicationManifest = Readonly<
+  Omit<Wire.PublicationManifest, "publicationId"> & {
+    readonly publicationId: PublicationId;
+  }
+>;
 
 /** Portable boundary consumed by static, database, or remote API adapters. */
 export interface KnowledgePublication {
   readonly manifest: PublicationManifest;
+  readonly sources: readonly SourceRecord[];
   readonly works: readonly Work[];
   readonly editions: readonly Edition[];
   readonly volumes: readonly Volume[];
+  readonly facsimilePages: readonly FacsimilePage[];
   readonly passages: readonly Passage[];
   readonly entities: readonly Entity[];
   readonly mentions: readonly Mention[];

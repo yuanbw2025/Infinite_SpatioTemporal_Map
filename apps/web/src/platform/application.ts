@@ -4,7 +4,12 @@ import {
 } from "@infinite-spacetime/adapters";
 import type {
   DatasetOverview,
+  DataContext,
   KnowledgePublication,
+} from "@infinite-spacetime/contracts";
+import {
+  ContractValidationError,
+  parseKnowledgePublication,
 } from "@infinite-spacetime/contracts";
 import {
   createApplicationServices,
@@ -16,29 +21,11 @@ export type DataLoadStatus = "ready" | "empty" | "error";
 
 export interface ApplicationRuntime {
   readonly services: ApplicationServices;
+  readonly dataContext: DataContext;
   readonly overview: DatasetOverview;
   readonly status: DataLoadStatus;
   readonly sourceUrl: string;
   readonly errorMessage?: string;
-}
-
-function isPublication(value: unknown): value is KnowledgePublication {
-  if (!value || typeof value !== "object") return false;
-  const candidate = value as Partial<KnowledgePublication>;
-  return Boolean(
-    candidate.manifest &&
-    typeof candidate.manifest.contractVersion === "string" &&
-    Array.isArray(candidate.works) &&
-    Array.isArray(candidate.editions) &&
-    Array.isArray(candidate.volumes) &&
-    Array.isArray(candidate.passages) &&
-    Array.isArray(candidate.entities) &&
-    Array.isArray(candidate.mentions) &&
-    Array.isArray(candidate.assertions) &&
-    Array.isArray(candidate.places) &&
-    Array.isArray(candidate.geometries) &&
-    Array.isArray(candidate.occurrences),
-  );
 }
 
 function hasRecords(overview: DatasetOverview): boolean {
@@ -56,6 +43,7 @@ async function buildRuntime(
   const overview = await services.metadata.overview();
   return {
     services,
+    dataContext: services.dataContext,
     overview,
     status: errorMessage ? "error" : hasRecords(overview) ? "ready" : "empty",
     sourceUrl,
@@ -74,16 +62,14 @@ export async function initializeApplicationRuntime(): Promise<ApplicationRuntime
       throw new Error(`数据服务返回 ${response.status}`);
     }
     const data: unknown = await response.json();
-    if (!isPublication(data)) {
-      return buildRuntime(
-        createEmptyPublication(),
-        sourceUrl,
-        "数据发布包结构不完整，已进入安全空数据模式。",
-      );
-    }
-    return await buildRuntime(data, sourceUrl);
+    return await buildRuntime(parseKnowledgePublication(data), sourceUrl);
   } catch (error) {
-    const message = error instanceof Error ? error.message : "未知加载错误";
+    const message =
+      error instanceof ContractValidationError
+        ? `数据发布包不符合 0.4 契约：${error.message}`
+        : error instanceof Error
+          ? error.message
+          : "未知加载错误";
     return buildRuntime(
       createEmptyPublication(),
       sourceUrl,

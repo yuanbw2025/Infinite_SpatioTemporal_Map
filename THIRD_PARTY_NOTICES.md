@@ -12,5 +12,8 @@
 - Vite
 - TypeScript
 - GeoJSON TypeScript definitions
+- Ajv
+- Python jsonschema
 - Vitest
 - Prettier
+- pypdf

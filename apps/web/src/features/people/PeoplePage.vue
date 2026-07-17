@@ -5,7 +5,7 @@ import EmptyState from "../../components/EmptyState.vue";
 import EntityTypeBadge from "../../components/EntityTypeBadge.vue";
 import PageHeader from "../../components/PageHeader.vue";
 import ReviewBadge from "../../components/ReviewBadge.vue";
-import { useApplication } from "../../composables/useApplication";
+import { useApplication } from "../../composables/use-application";
 
 const { services } = useApplication();
 const people = ref<readonly EntitySummary[]>([]);

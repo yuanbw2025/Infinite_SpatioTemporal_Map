@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 import DataBanner from "./components/DataBanner.vue";
-import { useApplication } from "./composables/useApplication";
+import { useApplication } from "./composables/use-application";
 import { kernel } from "./features";
 
 const router = useRouter();
