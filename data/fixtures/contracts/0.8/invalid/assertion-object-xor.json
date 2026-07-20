@@ -1,6 +1,6 @@
 {
   "manifest": {
-    "contractVersion": "0.7.0",
+    "contractVersion": "0.8.0",
     "publicationId": "invalid-assertion-xor",
     "datasetVersion": "0.0.0",
     "title": "断言对象互斥反例",
@@ -9,6 +9,7 @@
     "sourceDescription": "反例"
   },
   "sources": [],
+  "sourceRelations": [],
   "works": [],
   "editions": [],
   "volumes": [],

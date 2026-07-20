@@ -6,6 +6,7 @@ import type {
   PassageId,
   PlaceIdentityId,
   SourceId,
+  SourceRelationId,
   VolumeId,
   WorkId,
 } from "./ids";
@@ -17,6 +18,19 @@ export type SourceRef = Readonly<
 
 export type SourceRecord = Readonly<
   Omit<Wire.SourceRecord, "id"> & { readonly id: SourceId }
+>;
+
+export type SourceRelation = Readonly<
+  Omit<
+    Wire.SourceRelation,
+    "id" | "subjectSourceId" | "objectSourceId" | "sourceRefs" | "evidence"
+  > & {
+    readonly id: SourceRelationId;
+    readonly subjectSourceId: SourceId;
+    readonly objectSourceId: SourceId;
+    readonly sourceRefs: readonly [SourceRef, ...SourceRef[]];
+    readonly evidence: readonly import("./common").EvidenceSpan[];
+  }
 >;
 
 export type WorkCoverage = Readonly<

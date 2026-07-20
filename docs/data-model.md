@@ -4,6 +4,7 @@
 
 - `Work`：抽象作品，如一部地方志。
 - `SourceRecord/SourceRef`：统一登记来源、馆藏、权利、URL 与校验值，其他记录只引用。
+- `SourceRelation`：连接已登记来源的引用、派生、版本、复制、著录和数字化谱系；关系自身保留审核依据。
 - `Edition`：通过 SourceRef 可追溯到来源、馆藏与权利说明的具体版本。
 - `Volume`：卷、章等有序结构。
 - `Passage`：最小稳定引用单元；实体出现、知识证据和搜索结果都回到这里。
@@ -42,6 +43,6 @@
 
 ## 目标契约迁移说明
 
-0.7 契约继续遵守 ADR 0010：`Passage` 只保留 `volumeId`，`Volume → Edition → Work` 负责归属；`PassageAlignment` 只引用已有 Work、Edition 与 Passage；地点规范名由 Entity 唯一拥有；作品地域统一进入 coverage；来源统一进入 Source Registry；`Assertion.predicate` 使用版本化核心词表。地方社会与文博只生成临时专题投影，不新增平行事实集合。历史数据必须通过迁移器逐版本进入当前契约，不能手工猜测或删改字段。
+0.8 契约继续遵守 ADR 0010：`Passage` 只保留 `volumeId`，`Volume → Edition → Work` 负责归属；`PassageAlignment` 只引用已有 Work、Edition 与 Passage；地点规范名由 Entity 唯一拥有；作品地域统一进入 coverage；来源统一进入 Source Registry，`SourceRelation` 只连接已有来源；`Assertion.predicate` 使用版本化核心词表。地方社会与文博只生成临时专题投影，不新增平行事实集合。历史数据必须通过迁移器逐版本进入当前契约，不能手工猜测或删改字段。
 
-0.6 的逐字段名称、类型、必填性和引用关系以 `field-dictionary.md` 为准。
+0.8 的逐字段名称、类型、必填性和引用关系以 `field-dictionary.md` 为准。

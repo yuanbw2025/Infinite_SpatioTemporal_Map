@@ -33,6 +33,7 @@ from .migrations import (
     migrate_0_4_to_0_5,
     migrate_0_5_to_0_6,
     migrate_0_6_to_0_7,
+    migrate_0_7_to_0_8,
     migrate_to_current,
 )
 from .promotion import merge_reviewed_candidates, promote_candidates_atomically
@@ -91,6 +92,7 @@ __all__ = [
     "migrate_0_4_to_0_5",
     "migrate_0_5_to_0_6",
     "migrate_0_6_to_0_7",
+    "migrate_0_7_to_0_8",
     "migrate_to_current",
     "merge_reviewed_candidates",
     "promote_candidates_atomically",

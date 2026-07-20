@@ -245,7 +245,7 @@ sourceRefs[]
 reviewStatus
 ```
 
-坐标或疆域可能来自外部 GIS，不能强制伪造 Passage 证据，但必须引用来源台账。当前契约需要补 `sourceRefs`。
+坐标或疆域可能来自外部 GIS，不能强制伪造 Passage 证据，但必须通过已有 `sourceRefs` 引用来源台账。
 
 #### SpatiotemporalOccurrence
 
@@ -269,7 +269,7 @@ reviewStatus
 1. **文本证据**：能指向本项目 Passage 的事实使用 `EvidenceSpan`；
 2. **外部来源**：GIS、馆藏目录、测绘、权利声明使用 `SourceRef`，指向 Source Registry。
 
-Source Registry 是规范数据中的单一来源台账集合。Edition、HistoricalName、HistoricalGeometry 等只保存 SourceRef，不重复 URL、馆藏和权利字段；面向公众的 Publication 可以包含经过权利过滤的来源记录。
+Source Registry 是规范数据中的单一来源台账集合。Edition、HistoricalName、HistoricalGeometry 等只保存 SourceRef，不重复 URL、馆藏和权利字段；`SourceRelation` 只连接台账中已有来源并保存自身依据。面向公众的 Publication 可以包含经过权利过滤的来源记录。
 
 ```text
 SourceRecord

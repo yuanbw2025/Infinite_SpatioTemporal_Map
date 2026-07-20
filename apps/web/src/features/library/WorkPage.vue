@@ -166,6 +166,7 @@ onMounted(async () => {
             rel="noreferrer"
             >查看来源</a
           >
+          <router-link :to="`/sources/${source.id}`">查看来源链</router-link>
         </div>
       </aside>
 

@@ -24,6 +24,8 @@ import type {
   PassageQuery,
   ResearchQuery,
   ResearchReport,
+  SourceId,
+  SourceProvenance,
   SocietyQuery,
   SocietyResult,
   SearchHit,
@@ -40,6 +42,7 @@ import type {
   FacsimileImagePort,
   HistoricalMapResourcePort,
   PublicationReadPort,
+  ResearchRulePort,
   SearchIndexPort,
   SpatialQueryPort,
 } from "@infinite-spacetime/ports";
@@ -54,6 +57,7 @@ import { PublicationIndex } from "./publication-index";
 import { readPassage, listPassages } from "./reader-use-cases";
 import { inspectResearch } from "./research-use-case";
 import { search } from "./search-use-case";
+import { openSourceProvenance } from "./source-provenance-use-case";
 import { buildTimeline } from "./timeline-use-case";
 import { exploreHeritage, exploreSociety } from "./thematic-use-cases";
 
@@ -77,6 +81,9 @@ export interface ApplicationServices {
   readonly knowledge: {
     listEntities(query?: EntityQuery): Promise<Page<EntitySummary>>;
     openEntity(id: EntityId): Promise<EntityProfile>;
+  };
+  readonly provenance: {
+    openSource(sourceId: SourceId, depth?: number): Promise<SourceProvenance>;
   };
   readonly society: {
     explore(query?: SocietyQuery): Promise<SocietyResult>;
@@ -106,6 +113,7 @@ export interface ApplicationDependencies {
   readonly historicalMapResources?: HistoricalMapResourcePort;
   readonly searchIndex?: SearchIndexPort;
   readonly spatialQuery?: SpatialQueryPort;
+  readonly researchRules?: readonly ResearchRulePort[];
 }
 
 /** Composition of use cases around one immutable publication and one shared index. */
@@ -144,6 +152,13 @@ export function createApplicationServices(
       listEntities: async (query) => listEntities(index, query),
       openEntity: async (id) => openEntity(index, id),
     },
+    provenance: {
+      openSource: async (sourceId, depth) =>
+        openSourceProvenance(index, {
+          sourceId,
+          ...(depth === undefined ? {} : { depth }),
+        }),
+    },
     society: { explore: async (query) => exploreSociety(index, query) },
     heritage: { explore: async (query) => exploreHeritage(index, query) },
     atlas: {
@@ -168,6 +183,14 @@ export function createApplicationServices(
     metadata: { overview: async () => getDatasetOverview(index) },
     graph: { explore: async (query) => exploreGraph(index, query) },
     timeline: { build: async (query) => buildTimeline(index, query) },
-    research: { inspect: async (query) => inspectResearch(index, query) },
+    research: {
+      inspect: async (query) =>
+        inspectResearch(
+          index,
+          port.dataContext,
+          query,
+          dependencies.researchRules ?? [],
+        ),
+    },
   };
 }

@@ -66,7 +66,6 @@ def migrate_0_6_to_0_7(
     )
     next_manifest["contentChecksum"] = "sha256:" + ("0" * 64)
     publication = with_content_checksum(publication)
-    validate_publication(publication)
     return publication, {
         "fromContractVersion": "0.6.0",
         "toContractVersion": "0.7.0",
@@ -79,5 +78,35 @@ def migrate_0_6_to_0_7(
             "society.custom",
             "event.kind",
         ],
+        "contentChecksum": publication["manifest"]["contentChecksum"],
+    }
+
+
+def migrate_0_7_to_0_8(
+    value: dict[str, Any],
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    """Add the canonical source-relation collection without inferring relations."""
+
+    if not isinstance(value, dict):
+        raise MigrationError("0.7 publication must be an object")
+    manifest = value.get("manifest")
+    if not isinstance(manifest, dict) or manifest.get("contractVersion") != "0.7.0":
+        raise MigrationError("input manifest.contractVersion must be 0.7.0")
+    if "sourceRelations" in value:
+        raise MigrationError("0.7 publication unexpectedly contains sourceRelations")
+    publication = deepcopy(value)
+    publication["sourceRelations"] = []
+    next_manifest = publication["manifest"]
+    next_manifest["contractVersion"] = "0.8.0"
+    next_manifest["datasetVersion"] = _next_dataset_version_for(
+        next_manifest["datasetVersion"], "0.8"
+    )
+    next_manifest["contentChecksum"] = "sha256:" + ("0" * 64)
+    publication = with_content_checksum(publication)
+    validate_publication(publication)
+    return publication, {
+        "fromContractVersion": "0.7.0",
+        "toContractVersion": "0.8.0",
+        "createdSourceRelations": 0,
         "contentChecksum": publication["manifest"]["contentChecksum"],
     }

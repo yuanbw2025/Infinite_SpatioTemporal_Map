@@ -1,14 +1,15 @@
 {
   "manifest": {
-    "contractVersion": "0.7.0",
+    "contractVersion": "0.8.0",
     "publicationId": "empty",
-    "datasetVersion": "0.0.1-contract.0.7",
+    "datasetVersion": "0.0.2-contract.0.8",
     "title": "无限时空图空数据发布包",
     "generatedAt": "1970-01-01T00:00:00.000Z",
-    "contentChecksum": "sha256:c81c4ae802eaa683921d8a8eb5868d8d7e88e0e7ac475784b89bf86a281c1644",
+    "contentChecksum": "sha256:8cf9496d711354c9a9cc5e4070f6ad62d66868c49ad3cb5d840171f3665e8053",
     "sourceDescription": "等待接入正式方志数据"
   },
   "sources": [],
+  "sourceRelations": [],
   "works": [],
   "editions": [],
   "volumes": [],

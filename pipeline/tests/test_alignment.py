@@ -16,7 +16,7 @@ def _publication() -> dict:
     return with_content_checksum(
         {
             "manifest": {
-                "contractVersion": "0.7.0",
+                "contractVersion": "0.8.0",
                 "publicationId": "alignment-test",
                 "datasetVersion": "0.0.0",
                 "title": "对齐测试",
@@ -25,6 +25,7 @@ def _publication() -> dict:
                 "sourceDescription": "测试",
             },
             "sources": [],
+            "sourceRelations": [],
             "works": [],
             "editions": [],
             "volumes": [],

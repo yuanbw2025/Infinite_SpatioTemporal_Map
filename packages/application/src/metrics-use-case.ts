@@ -20,12 +20,15 @@ export function getDatasetOverview(index: PublicationIndex): DatasetOverview {
     ...index.publication.geometries.map((item) => item.reviewStatus),
     ...index.publication.occurrences.map((item) => item.reviewStatus),
     ...index.publication.passageAlignments.map((item) => item.reviewStatus),
+    ...index.publication.sourceRelations.map((item) => item.reviewStatus),
   ])
     reviewCounts[status] += 1;
   const publication = index.publication;
   return {
     manifest: publication.manifest,
     counts: {
+      sources: publication.sources.length,
+      sourceRelations: publication.sourceRelations.length,
       works: publication.works.length,
       editions: publication.editions.length,
       volumes: publication.volumes.length,

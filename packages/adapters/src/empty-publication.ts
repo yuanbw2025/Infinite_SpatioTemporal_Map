@@ -17,6 +17,7 @@ export function createEmptyPublication(): KnowledgePublication {
       sourceDescription: "Architecture-only placeholder",
     },
     sources: [],
+    sourceRelations: [],
     works: [],
     editions: [],
     volumes: [],

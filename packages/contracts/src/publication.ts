@@ -5,6 +5,7 @@ import type {
   Passage,
   PassageAlignment,
   SourceRecord,
+  SourceRelation,
   Volume,
   Work,
 } from "./catalog";
@@ -26,6 +27,7 @@ export type PublicationManifest = Readonly<
 export interface KnowledgePublication {
   readonly manifest: PublicationManifest;
   readonly sources: readonly SourceRecord[];
+  readonly sourceRelations: readonly SourceRelation[];
   readonly works: readonly Work[];
   readonly editions: readonly Edition[];
   readonly volumes: readonly Volume[];

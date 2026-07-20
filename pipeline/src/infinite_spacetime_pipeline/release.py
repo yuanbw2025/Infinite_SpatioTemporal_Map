@@ -7,7 +7,13 @@ from typing import Any
 from .curation import CurationError, candidate_review_summary
 from .publication import PublicationValidationError, validate_publication
 
-CURATED_COLLECTIONS = ("mentions", "assertions", "geometries", "occurrences")
+CURATED_COLLECTIONS = (
+    "sourceRelations",
+    "mentions",
+    "assertions",
+    "geometries",
+    "occurrences",
+)
 
 
 def evaluate_release_gate(

@@ -1,14 +1,14 @@
 {
   "manifest": {
-    "contractVersion": "0.7.0",
-    "publicationId": "contract-golden-empty",
+    "contractVersion": "0.8.0",
+    "publicationId": "invalid-missing-sources",
     "datasetVersion": "0.0.0",
-    "title": "0.7 契约最小金标准发布包",
+    "title": "缺少根集合",
     "generatedAt": "1970-01-01T00:00:00.000Z",
     "contentChecksum": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
-    "sourceDescription": "仅用于跨语言结构契约一致性测试"
+    "sourceDescription": "反例"
   },
-  "sources": [],
+  "sourceRelations": [],
   "works": [],
   "editions": [],
   "volumes": [],

@@ -11,7 +11,7 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 const context = {
-  contractVersion: "0.7.0",
+  contractVersion: "0.8.0",
   publicationId: "publication-a",
   datasetVersion: "0.0.0",
   contentChecksum: `sha256:${"0".repeat(64)}`,
@@ -29,7 +29,7 @@ const catalog = {
       kind: "raster_map",
       tiles: ["https://example.test/{z}/{x}/{y}.png"],
       sourceId: "source-map",
-      defaultOpacity: 0.7,
+      defaultOpacity: 0.8,
       isDefault: true,
     },
   ],

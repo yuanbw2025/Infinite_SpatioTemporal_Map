@@ -118,6 +118,44 @@ class PublicationTest(unittest.TestCase):
         with self.assertRaisesRegex(PublicationValidationError, "literal value"):
             validate_publication(invalid_value)
 
+    def test_source_relations_reject_self_links_and_duplicate_edges(self) -> None:
+        with PUBLICATION.open("r", encoding="utf-8") as file:
+            base = json.load(file)
+        base["sources"] = [
+            {
+                "id": "source-a",
+                "kind": "facsimile",
+                "title": "底本",
+                "rightsStatement": "test only",
+            },
+            {
+                "id": "source-b",
+                "kind": "transcription",
+                "title": "整理本",
+                "rightsStatement": "test only",
+            },
+        ]
+        relation = {
+            "id": "source-relation-a",
+            "subjectSourceId": "source-b",
+            "relationType": "derived_from",
+            "objectSourceId": "source-a",
+            "sourceRefs": [{"sourceId": "source-b", "locator": "整理说明"}],
+            "evidence": [],
+            "reviewStatus": "verified",
+        }
+        self_link = deepcopy(relation)
+        self_link["objectSourceId"] = "source-b"
+        base["sourceRelations"] = [self_link]
+        with self.assertRaisesRegex(PublicationValidationError, "cannot reference itself"):
+            validate_publication(with_content_checksum(base))
+
+        duplicate = deepcopy(relation)
+        duplicate["id"] = "source-relation-b"
+        base["sourceRelations"] = [relation, duplicate]
+        with self.assertRaisesRegex(PublicationValidationError, "Duplicate source relation"):
+            validate_publication(with_content_checksum(base))
+
 
 if __name__ == "__main__":
     unittest.main()

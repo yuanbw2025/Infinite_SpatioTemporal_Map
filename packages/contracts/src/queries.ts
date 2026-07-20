@@ -5,6 +5,7 @@ import type {
   Passage,
   PassageAlignment,
   SourceRecord,
+  SourceRelation,
   Volume,
   Work,
 } from "./catalog";
@@ -16,6 +17,7 @@ import type {
   EntityId,
   PassageId,
   PlaceIdentityId,
+  SourceId,
   VolumeId,
   WorkId,
 } from "./ids";
@@ -183,6 +185,19 @@ export interface WorkDetails {
   readonly sources: readonly SourceRecord[];
 }
 
+export interface SourceProvenanceQuery {
+  readonly sourceId: SourceId;
+  readonly depth?: number;
+}
+
+export interface SourceProvenance {
+  readonly center: SourceRecord;
+  readonly sources: readonly SourceRecord[];
+  readonly relations: readonly SourceRelation[];
+  readonly works: readonly Work[];
+  readonly editions: readonly Edition[];
+}
+
 export interface AtlasResult {
   readonly observations: readonly MapObservation[];
   readonly nextCursor?: string;
@@ -192,6 +207,8 @@ export interface DatasetOverview {
   readonly manifest: PublicationManifest;
   readonly counts: {
     readonly works: number;
+    readonly sources: number;
+    readonly sourceRelations: number;
     readonly editions: number;
     readonly volumes: number;
     readonly passages: number;
@@ -301,6 +318,7 @@ export interface ResearchQuery {
 
 export interface ResearchFinding {
   readonly id: string;
+  readonly ruleId: string;
   readonly kind: ResearchFindingKind;
   readonly severity: "notice" | "warning" | "critical";
   readonly title: string;

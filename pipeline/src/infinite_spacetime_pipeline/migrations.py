@@ -8,7 +8,11 @@ from typing import Any
 
 from .contract_schema import contract_version, predicate_definitions
 from .migration_errors import MigrationError
-from .minor_migrations import migrate_0_5_to_0_6, migrate_0_6_to_0_7
+from .minor_migrations import (
+    migrate_0_5_to_0_6,
+    migrate_0_6_to_0_7,
+    migrate_0_7_to_0_8,
+)
 from .publication import validate_publication
 from .publication_identity import with_content_checksum
 
@@ -364,6 +368,10 @@ def migrate_to_current(
         current, report = migrate_0_6_to_0_7(current)
         reports.append(report)
         version = "0.7.0"
+    if version == "0.7.0":
+        current, report = migrate_0_7_to_0_8(current)
+        reports.append(report)
+        version = "0.8.0"
     if version != contract_version():
         raise MigrationError(
             f"no migration path from {version!r} to {contract_version()}"

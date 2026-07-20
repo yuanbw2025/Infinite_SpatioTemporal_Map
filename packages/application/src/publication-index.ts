@@ -17,6 +17,7 @@ export class PublicationIndex {
   readonly publication: KnowledgePublication;
   readonly works;
   readonly sources;
+  readonly sourceRelationsBySource;
   readonly passages;
   readonly entities;
   readonly editions;
@@ -39,6 +40,13 @@ export class PublicationIndex {
     this.publication = publication;
     this.works = new Map(publication.works.map((item) => [item.id, item]));
     this.sources = new Map(publication.sources.map((item) => [item.id, item]));
+    this.sourceRelationsBySource = groupBy(
+      publication.sourceRelations.flatMap((relation) => [
+        { sourceId: relation.subjectSourceId, relation },
+        { sourceId: relation.objectSourceId, relation },
+      ]),
+      (item) => item.sourceId,
+    );
     this.passages = new Map(
       publication.passages.map((item) => [item.id, item]),
     );

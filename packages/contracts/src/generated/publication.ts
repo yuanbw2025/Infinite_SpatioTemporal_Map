@@ -32,6 +32,17 @@ export type Checksum = string;
 export type Uri = string;
 /**
  * This interface was referenced by `KnowledgePublication`'s JSON-Schema
+ * via the `definition` "ReviewStatus".
+ */
+export type ReviewStatus =
+  | "raw"
+  | "machine_suggested"
+  | "reviewed"
+  | "verified"
+  | "disputed"
+  | "rejected";
+/**
+ * This interface was referenced by `KnowledgePublication`'s JSON-Schema
  * via the `definition` "EditorialReviewStatus".
  */
 export type EditorialReviewStatus = "reviewed" | "verified" | "disputed";
@@ -52,17 +63,6 @@ export type EntityType =
   | "technique"
   | "motif"
   | "inscription";
-/**
- * This interface was referenced by `KnowledgePublication`'s JSON-Schema
- * via the `definition` "ReviewStatus".
- */
-export type ReviewStatus =
-  | "raw"
-  | "machine_suggested"
-  | "reviewed"
-  | "verified"
-  | "disputed"
-  | "rejected";
 /**
  * This interface was referenced by `KnowledgePublication`'s JSON-Schema
  * via the `definition` "Assertion".
@@ -159,6 +159,7 @@ export type OccurrenceKind =
 export interface KnowledgePublication {
   manifest: PublicationManifest;
   sources: SourceRecord[];
+  sourceRelations: SourceRelation[];
   works: Work[];
   editions: Edition[];
   volumes: Volume[];
@@ -177,7 +178,7 @@ export interface KnowledgePublication {
  * via the `definition` "PublicationManifest".
  */
 export interface PublicationManifest {
-  contractVersion: "0.7.0";
+  contractVersion: "0.8.0";
   publicationId: WireId;
   datasetVersion: string;
   title: NonEmptyString;
@@ -205,6 +206,48 @@ export interface SourceRecord {
   rightsStatement: NonEmptyString;
   checksum?: Checksum;
   accessedAt?: Timestamp;
+}
+/**
+ * This interface was referenced by `KnowledgePublication`'s JSON-Schema
+ * via the `definition` "SourceRelation".
+ */
+export interface SourceRelation {
+  id: WireId;
+  subjectSourceId: WireId;
+  relationType:
+    | "cites"
+    | "derived_from"
+    | "edition_of"
+    | "reproduces"
+    | "catalogues"
+    | "digitizes";
+  objectSourceId: WireId;
+  /**
+   * @minItems 1
+   */
+  sourceRefs: [SourceRef, ...SourceRef[]];
+  evidence: EvidenceSpan[];
+  note?: NonEmptyString;
+  reviewStatus: ReviewStatus;
+}
+/**
+ * This interface was referenced by `KnowledgePublication`'s JSON-Schema
+ * via the `definition` "SourceRef".
+ */
+export interface SourceRef {
+  sourceId: WireId;
+  locator?: NonEmptyString;
+  note?: NonEmptyString;
+}
+/**
+ * This interface was referenced by `KnowledgePublication`'s JSON-Schema
+ * via the `definition` "EvidenceSpan".
+ */
+export interface EvidenceSpan {
+  passageId: WireId;
+  start: number;
+  end: number;
+  note?: NonEmptyString;
 }
 /**
  * This interface was referenced by `KnowledgePublication`'s JSON-Schema
@@ -245,15 +288,6 @@ export interface TemporalValue {
   endDay?: number;
   certainty: "exact" | "approximate" | "range" | "unknown";
   calendar?: NonEmptyString;
-}
-/**
- * This interface was referenced by `KnowledgePublication`'s JSON-Schema
- * via the `definition` "SourceRef".
- */
-export interface SourceRef {
-  sourceId: WireId;
-  locator?: NonEmptyString;
-  note?: NonEmptyString;
 }
 /**
  * This interface was referenced by `KnowledgePublication`'s JSON-Schema
@@ -404,16 +438,6 @@ export interface EntityAssertion {
    */
   evidence: [EvidenceSpan, ...EvidenceSpan[]];
   reviewStatus: ReviewStatus;
-}
-/**
- * This interface was referenced by `KnowledgePublication`'s JSON-Schema
- * via the `definition` "EvidenceSpan".
- */
-export interface EvidenceSpan {
-  passageId: WireId;
-  start: number;
-  end: number;
-  note?: NonEmptyString;
 }
 /**
  * This interface was referenced by `KnowledgePublication`'s JSON-Schema

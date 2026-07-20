@@ -65,6 +65,9 @@ onMounted(load);
           </div>
           <h2>{{ finding.title }}</h2>
           <p>{{ finding.description }}</p>
+          <p>
+            <code>{{ finding.ruleId }}</code>
+          </p>
           <footer>
             <router-link
               v-for="entityId in finding.entityIds"

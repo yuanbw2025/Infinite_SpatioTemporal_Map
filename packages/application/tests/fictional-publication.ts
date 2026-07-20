@@ -5,7 +5,7 @@ import type {
 import type { PublicationReadPort } from "@infinite-spacetime/ports";
 export const publication = {
   manifest: {
-    contractVersion: "0.7.0",
+    contractVersion: "0.8.0",
     publicationId: "application-test" as PublicationId,
     datasetVersion: "1.0.0",
     title: "虚构测试发布包",
@@ -19,6 +19,23 @@ export const publication = {
       kind: "facsimile",
       title: "虚构影印本",
       rightsStatement: "test only",
+    },
+    {
+      id: "source-2",
+      kind: "transcription",
+      title: "虚构整理本",
+      rightsStatement: "test only",
+    },
+  ],
+  sourceRelations: [
+    {
+      id: "source-relation-1",
+      subjectSourceId: "source-2",
+      relationType: "derived_from",
+      objectSourceId: "source-1",
+      sourceRefs: [{ sourceId: "source-2", locator: "编校说明" }],
+      evidence: [],
+      reviewStatus: "verified",
     },
   ],
   works: [

@@ -2,6 +2,7 @@ import type {
   EntityId,
   KnowledgePublication,
   PassageId,
+  SourceId,
   WorkId,
 } from "@infinite-spacetime/contracts";
 import { NotFoundError } from "@infinite-spacetime/domain";
@@ -55,6 +56,17 @@ describe("application services", () => {
     ).toMatchObject({
       relatedEntityIds: expect.arrayContaining(["person-2", "place-entity-1"]),
       occurrencePlaces: [{ id: "place-1" }],
+    });
+    expect(
+      await services.provenance.openSource("source-1" as SourceId),
+    ).toMatchObject({
+      center: { id: "source-1" },
+      sources: expect.arrayContaining([
+        expect.objectContaining({ id: "source-1" }),
+        expect.objectContaining({ id: "source-2" }),
+      ]),
+      relations: [{ relationType: "derived_from" }],
+      works: [{ id: "work-1" }],
     });
 
     const atlas = await services.atlas.explore({
@@ -189,6 +201,24 @@ describe("application services", () => {
       searchIndex: externalSearch,
       spatialQuery: externalSpatial,
       facsimileImages,
+      researchRules: [
+        {
+          id: "test.external-rule",
+          inspect: async () => [
+            {
+              id: "external:test",
+              ruleId: "test.external-rule",
+              kind: "disputed_record",
+              severity: "notice",
+              title: "外部规则测试",
+              description: "只读规则返回的可验证线索",
+              entityIds: ["person-1" as EntityId],
+              assertionIds: [],
+              passageIds: ["passage-1" as PassageId],
+            },
+          ],
+        },
+      ],
     });
     const { imageUrl: _imageUrl, ...iiifOnlyPage } =
       publication.facsimilePages[0]!;
@@ -204,5 +234,36 @@ describe("application services", () => {
         canvasUrl: "https://example.invalid/canvas/1",
       }),
     ).resolves.toMatchObject({ source: "iiif" });
+    await expect(
+      services.research.inspect({ kinds: ["disputed_record"] }),
+    ).resolves.toMatchObject({
+      findings: expect.arrayContaining([
+        expect.objectContaining({ ruleId: "test.external-rule" }),
+      ]),
+    });
+  });
+
+  it("rejects untrusted research output with broken references", async () => {
+    const services = createApplicationServices(port, {
+      researchRules: [
+        {
+          id: "test.invalid-rule",
+          inspect: async () => [
+            {
+              id: "invalid:test",
+              ruleId: "test.invalid-rule",
+              kind: "disputed_record",
+              severity: "notice",
+              title: "坏引用",
+              description: "测试边界校验",
+              entityIds: ["missing" as EntityId],
+              assertionIds: [],
+              passageIds: [],
+            },
+          ],
+        },
+      ],
+    });
+    await expect(services.research.inspect()).rejects.toThrow("missing entity");
   });
 });

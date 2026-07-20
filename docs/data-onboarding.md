@@ -24,6 +24,7 @@ PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline migrate-to-curren
 ```text
 manifest     数据集身份、契约版本、数据版本、生成时间和内容校验和
 sources      原件、转录、目录、GIS 等来源与权利说明
+sourceRelations 来源之间经审核的引用、派生、版本、复制、著录与数字化关系
 works        方志与其他文献及其来源引用
 editions     文献版本与来源引用
 volumes      卷章结构
@@ -123,6 +124,7 @@ PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline apply-passage-ali
 | object assertions               | 知识图谱与实体关系展开                 |
 | temporal assertions/occurrences | 历史时间线与人物生平轨道               |
 | disputed/conflicting records    | 研究工具中的待核验线索                 |
+| sourceRelations                 | 来源详情页中的有向来源链与依据         |
 | family/education/office/social  | 地方社会的家族、师承、任官与交往专题   |
 | society + event assertions      | 户口赋役、物产风俗与事件灾异专题       |
 | heritage assertions/occurrences | 文物属性、关联对象、发现馆藏与流转专题 |

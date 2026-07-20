@@ -143,6 +143,7 @@ class _PublicationSemantics:
             name: _ids(value[name], name, global_ids)
             for name in (
                 "sources",
+                "sourceRelations",
                 "works",
                 "editions",
                 "volumes",
@@ -179,6 +180,32 @@ class _PublicationSemantics:
 
     def _catalog(self) -> None:
         place_ids = self.ids["places"]
+        relation_keys: set[tuple[str, str, str]] = set()
+        for relation in self.value["sourceRelations"]:
+            subject = relation["subjectSourceId"]
+            object_id = relation["objectSourceId"]
+            if subject not in self.sources or object_id not in self.sources:
+                raise SemanticValidationError(
+                    f"SourceRelation {relation['id']} references a missing source"
+                )
+            if subject == object_id:
+                raise SemanticValidationError(
+                    f"SourceRelation {relation['id']} cannot reference itself"
+                )
+            key = (subject, relation["relationType"], object_id)
+            if key in relation_keys:
+                raise SemanticValidationError(f"Duplicate source relation {key}")
+            relation_keys.add(key)
+            _source_refs(
+                relation["sourceRefs"],
+                f"SourceRelation {relation['id']}",
+                self.sources,
+            )
+            _evidence(
+                relation["evidence"],
+                f"SourceRelation {relation['id']}",
+                self.passages,
+            )
         for work in self.value["works"]:
             if work["title"] in work["alternativeTitles"]:
                 raise SemanticValidationError(f"Work {work['id']} repeats its title as an alternative")

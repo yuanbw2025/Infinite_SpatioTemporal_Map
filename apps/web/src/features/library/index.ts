@@ -2,6 +2,7 @@ import { defineFeature } from "@infinite-spacetime/application";
 import LibraryPage from "./LibraryPage.vue";
 import WorkPage from "./WorkPage.vue";
 import CompareEditionsPage from "./CompareEditionsPage.vue";
+import SourcePage from "./SourcePage.vue";
 
 export const libraryFeature = {
   manifest: defineFeature({
@@ -12,6 +13,11 @@ export const libraryFeature = {
   }),
   component: LibraryPage,
   additionalRoutes: [
+    {
+      path: "/sources/:sourceId",
+      name: "source",
+      component: SourcePage,
+    },
     {
       path: "/works/:workId/compare",
       name: "edition-compare",

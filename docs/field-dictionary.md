@@ -1,6 +1,6 @@
-# 目标 0.7 字段字典
+# 目标 0.8 字段字典
 
-本字典是已实施的 0.7 契约基线，逐一规定字段名、类型、必填性、所有者与引用关系。历史数据差异见末尾迁移表；新代码不得重新引入这些字段。
+本字典是已实施的 0.8 契约基线，逐一规定字段名、类型、必填性、所有者与引用关系。历史数据差异见末尾迁移表；新代码不得重新引入这些字段。
 
 记号：`!` 必填，`?` 可选，`[]` 数组。所有 ID 均为品牌字符串；所有字符区间为原文 Unicode 索引的 `[start, end)`。
 
@@ -39,7 +39,20 @@
 | `locator?`  | string   | 页、条目号、图层要素号等原定位 |
 | `note?`     | string   | 只说明引用，不复制来源元数据   |
 
-`KnowledgePublication` 顶层集合固定为：`manifest`、`sources`、`works`、`editions`、`volumes`、`facsimilePages`、`passages`、`passageAlignments`、`entities`、`mentions`、`assertions`、`places`、`geometries`、`occurrences`。这些集合始终存在且为数组。
+### SourceRelation
+
+| 字段               | 类型             | 规则                                                            |
+| ------------------ | ---------------- | --------------------------------------------------------------- |
+| `id!`              | SourceRelationId | 来源关系主键，全发布包唯一                                      |
+| `subjectSourceId!` | SourceId         | 有向关系起点，必须存在且不能与终点相同                          |
+| `relationType!`    | enum             | `cites/derived_from/edition_of/reproduces/catalogues/digitizes` |
+| `objectSourceId!`  | SourceId         | 有向关系终点，必须存在                                          |
+| `sourceRefs!`      | SourceRef[]      | 关系依据，至少一条                                              |
+| `evidence!`        | EvidenceSpan[]   | 可为空；存在时必须落在当前发布包的原文范围                      |
+| `note?`            | string           | 编辑说明                                                        |
+| `reviewStatus!`    | ReviewStatus     | 原始、机器建议、复核、核定、争议或驳回                          |
+
+`KnowledgePublication` 顶层集合固定为：`manifest`、`sources`、`sourceRelations`、`works`、`editions`、`volumes`、`facsimilePages`、`passages`、`passageAlignments`、`entities`、`mentions`、`assertions`、`places`、`geometries`、`occurrences`。这些集合始终存在且为数组。
 
 ## 2. Catalog
 
@@ -323,3 +336,12 @@
 | 物产与贡物无法结构关联         | 增加 `society.local_product/tribute_product` 实体关系 |
 | 灾异等事件类别依赖页面字符串   | 增加 `event.kind` 文字谓词                            |
 | 地方社会、文博页面各自拼数据   | application 统一生成证据可回溯的专题投影              |
+
+## 12. 0.7 → 0.8 必迁移项
+
+| 0.7 字段/行为                 | 0.8 决策                                           |
+| ----------------------------- | -------------------------------------------------- |
+| 无正式来源关系集合            | 新增必备空集合 `sourceRelations`                   |
+| 页面从 URL 或题名推断来源关系 | 禁止推断；只读取受控、有方向且有依据的关系         |
+| 研究检查集中且来源不透明      | 拆成稳定 `ruleId` 的内置规则注册表                 |
+| 外部规则可返回任意引用        | 应用层验证 entity/assertion/passage 引用后才能合并 |
