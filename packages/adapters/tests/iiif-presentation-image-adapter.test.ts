@@ -102,9 +102,7 @@ describe("IIIF Presentation image adapter", () => {
     await expect(
       adapter.resolveCanvas("file:///private/canvas"),
     ).resolves.toBeUndefined();
-    await expect(
-      adapter.resolveCanvas("not a URL"),
-    ).resolves.toBeUndefined();
+    await expect(adapter.resolveCanvas("not a URL")).resolves.toBeUndefined();
     await expect(
       adapter.resolveCanvas("https://example.org/canvas"),
     ).resolves.toMatchObject({

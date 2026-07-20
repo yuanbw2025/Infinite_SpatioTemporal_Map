@@ -2,6 +2,8 @@ import type {
   AtlasQuery,
   DataContext,
   DatasetOverview,
+  EditionComparisonQuery,
+  EditionComparisonResult,
   EditionId,
   EntityId,
   EntityProfile,
@@ -36,6 +38,7 @@ import type {
 } from "@infinite-spacetime/ports";
 import { exploreAtlas } from "./atlas-use-case";
 import { listVolumes, listWorks, openWork } from "./catalog-use-cases";
+import { compareEditions } from "./edition-comparison-use-case";
 import { exploreGraph } from "./graph-use-case";
 import { listEntities, openEntity } from "./knowledge-use-cases";
 import { getDatasetOverview } from "./metrics-use-case";
@@ -55,6 +58,9 @@ export interface ApplicationServices {
   readonly reader: {
     listPassages(query: PassageQuery): Promise<Page<Passage>>;
     readPassage(id: PassageId): Promise<PassageContext>;
+    compareEditions(
+      query: EditionComparisonQuery,
+    ): Promise<EditionComparisonResult>;
     resolveFacsimile(
       page: FacsimilePage,
     ): Promise<FacsimileImageResource | undefined>;
@@ -99,6 +105,7 @@ export function createApplicationServices(
     reader: {
       listPassages: async (query) => listPassages(index, query),
       readPassage: async (id) => readPassage(index, id),
+      compareEditions: async (query) => compareEditions(index, query),
       resolveFacsimile: async (page) => {
         if (page.imageUrl) {
           return {

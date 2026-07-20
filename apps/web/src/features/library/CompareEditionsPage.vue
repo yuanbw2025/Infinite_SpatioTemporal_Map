@@ -1,24 +1,16 @@
 <script setup lang="ts">
 import type {
   Edition,
+  EditionComparisonRow,
   EditionId,
-  Passage,
   Work,
   WorkId,
 } from "@infinite-spacetime/contracts";
-import { computed, onMounted, ref, watch } from "vue";
+import { onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import EmptyState from "../../components/EmptyState.vue";
 import PageHeader from "../../components/PageHeader.vue";
 import { useApplication } from "../../composables/use-application";
-
-interface ComparisonRow {
-  readonly key: string;
-  readonly left?: Passage;
-  readonly right?: Passage;
-  readonly label: string;
-  readonly alignment: "label" | "sequence" | "unpaired";
-}
 
 const route = useRoute();
 const { services } = useApplication();
@@ -27,87 +19,23 @@ const work = ref<Work>();
 const editions = ref<readonly Edition[]>([]);
 const leftEditionId = ref<EditionId>();
 const rightEditionId = ref<EditionId>();
-const leftPassages = ref<readonly Passage[]>([]);
-const rightPassages = ref<readonly Passage[]>([]);
-const volumeLabels = ref<ReadonlyMap<string, string>>(new Map());
+const rows = ref<readonly EditionComparisonRow[]>([]);
 const loading = ref(true);
 const comparing = ref(false);
 const error = ref("");
 let comparisonRequestId = 0;
 
-function passageLabel(passage: Passage): string {
-  return (
-    passage.sectionLabel ??
-    volumeLabels.value.get(passage.volumeId) ??
-    "未命名卷章"
-  );
-}
-
-function alignmentKey(passage: Passage): string {
-  return passageLabel(passage).trim().toLocaleLowerCase();
-}
-
-const rows = computed<readonly ComparisonRow[]>(() => {
-  const rightByLabel = new Map<string, Passage[]>();
-  for (const passage of rightPassages.value) {
-    const key = alignmentKey(passage);
-    rightByLabel.set(key, [...(rightByLabel.get(key) ?? []), passage]);
-  }
-  const consumedRightIds = new Set<string>();
-  const result: ComparisonRow[] = [];
-  for (const left of leftPassages.value) {
-    const key = alignmentKey(left);
-    const sameLabel = rightByLabel
-      .get(key)
-      ?.find((passage) => !consumedRightIds.has(passage.id));
-    const sameSequence = rightPassages.value.find(
-      (passage) =>
-        passage.sequence === left.sequence && !consumedRightIds.has(passage.id),
-    );
-    const right = sameLabel ?? sameSequence;
-    if (right) consumedRightIds.add(right.id);
-    result.push({
-      key: `left-${left.id}`,
-      left,
-      ...(right ? { right } : {}),
-      label: passageLabel(left),
-      alignment: sameLabel ? "label" : right ? "sequence" : "unpaired",
-    });
-  }
-  for (const right of rightPassages.value) {
-    if (consumedRightIds.has(right.id)) continue;
-    result.push({
-      key: `right-${right.id}`,
-      right,
-      label: passageLabel(right),
-      alignment: "unpaired",
-    });
-  }
-  return result;
-});
-
-async function listAllPassages(editionId: EditionId): Promise<Passage[]> {
-  const result: Passage[] = [];
-  let cursor: string | undefined;
-  do {
-    const page = await services.reader.listPassages({
-      workId,
-      editionId,
-      limit: 200,
-      ...(cursor ? { cursor } : {}),
-    });
-    result.push(...page.items);
-    cursor = page.nextCursor;
-  } while (cursor);
-  return result;
+function similarityLabel(row: EditionComparisonRow): string | undefined {
+  return row.difference
+    ? `文本相似 ${Math.round(row.difference.similarity * 100)}%`
+    : undefined;
 }
 
 async function compare() {
   const left = leftEditionId.value;
   const right = rightEditionId.value;
   if (!left || !right || left === right) {
-    leftPassages.value = [];
-    rightPassages.value = [];
+    rows.value = [];
     error.value = left === right ? "请选择两个不同版本。" : "请选择左右版本。";
     return;
   }
@@ -115,13 +43,13 @@ async function compare() {
   comparing.value = true;
   error.value = "";
   try {
-    const [nextLeft, nextRight] = await Promise.all([
-      listAllPassages(left),
-      listAllPassages(right),
-    ]);
+    const result = await services.reader.compareEditions({
+      workId,
+      leftEditionId: left,
+      rightEditionId: right,
+    });
     if (requestId !== comparisonRequestId) return;
-    leftPassages.value = nextLeft;
-    rightPassages.value = nextRight;
+    rows.value = result.rows;
   } catch (reason) {
     if (requestId === comparisonRequestId) {
       error.value =
@@ -139,14 +67,6 @@ onMounted(async () => {
     const result = await services.library.openWork(workId);
     work.value = result.work;
     editions.value = result.editions;
-    const editionVolumes = await Promise.all(
-      result.editions.map((edition) =>
-        services.library.listVolumes(edition.id),
-      ),
-    );
-    volumeLabels.value = new Map(
-      editionVolumes.flat().map((volume) => [volume.id, volume.label]),
-    );
     leftEditionId.value = result.editions[0]?.id;
     rightEditionId.value = result.editions[1]?.id;
     if (result.editions.length < 2) {
@@ -167,7 +87,7 @@ onMounted(async () => {
       <PageHeader
         eyebrow="EDITION COMPARISON"
         :title="`${work.title} · 版本对读`"
-        description="按卷章标签优先、段落次序辅助排列两个版本；不自动消除异文，任何一侧都可回到原文详情。"
+        description="按卷章与段落次序排列版本，逐字标示增删异文；自动配对只用于阅读辅助，不代替人工校定。"
       >
         <template #actions>
           <router-link class="text-link" :to="`/works/${workId}`"
@@ -222,12 +142,30 @@ onMounted(async () => {
                     ? "按次序暂配"
                     : "单侧段落"
               }}
+              <template v-if="similarityLabel(row)">
+                · {{ similarityLabel(row) }}</template
+              >
+              <template v-if="row.difference?.isCoarse">
+                · 长段粗略比较</template
+              >
             </span>
           </header>
           <div class="edition-text-pair">
             <div :class="{ 'missing-edition-text': !row.left }">
               <template v-if="row.left">
-                <p class="serif-snippet">{{ row.left.text.original }}</p>
+                <p class="serif-snippet">
+                  <template v-if="row.difference">
+                    <span
+                      v-for="(segment, index) in row.difference.left"
+                      :key="`left-${index}`"
+                      :class="{
+                        'edition-diff--removed': segment.kind === 'removed',
+                      }"
+                      >{{ segment.text }}</span
+                    >
+                  </template>
+                  <template v-else>{{ row.left.text.original }}</template>
+                </p>
                 <router-link :to="`/reader/${row.left.id}`"
                   >打开左侧原文 →</router-link
                 >
@@ -236,7 +174,19 @@ onMounted(async () => {
             </div>
             <div :class="{ 'missing-edition-text': !row.right }">
               <template v-if="row.right">
-                <p class="serif-snippet">{{ row.right.text.original }}</p>
+                <p class="serif-snippet">
+                  <template v-if="row.difference">
+                    <span
+                      v-for="(segment, index) in row.difference.right"
+                      :key="`right-${index}`"
+                      :class="{
+                        'edition-diff--inserted': segment.kind === 'inserted',
+                      }"
+                      >{{ segment.text }}</span
+                    >
+                  </template>
+                  <template v-else>{{ row.right.text.original }}</template>
+                </p>
                 <router-link :to="`/reader/${row.right.id}`"
                   >打开右侧原文 →</router-link
                 >
@@ -256,3 +206,22 @@ onMounted(async () => {
     <p v-else-if="error" class="error-line">{{ error }}</p>
   </section>
 </template>
+
+<style scoped>
+.edition-diff--removed,
+.edition-diff--inserted {
+  padding: 1px 2px;
+  border-radius: 3px;
+}
+.edition-diff--removed {
+  color: #8a352d;
+  background: #f9ded9;
+  text-decoration: line-through;
+}
+.edition-diff--inserted {
+  color: #245f43;
+  background: #dcefe3;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+</style>

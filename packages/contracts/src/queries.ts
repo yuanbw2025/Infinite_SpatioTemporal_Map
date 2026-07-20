@@ -107,6 +107,39 @@ export interface PassageFacsimile {
   readonly page: FacsimilePage;
 }
 
+export interface EditionComparisonQuery {
+  readonly workId: WorkId;
+  readonly leftEditionId: EditionId;
+  readonly rightEditionId: EditionId;
+}
+
+export interface TextDiffSegment {
+  readonly kind: "equal" | "inserted" | "removed";
+  readonly text: string;
+}
+
+export interface TextComparison {
+  readonly left: readonly TextDiffSegment[];
+  readonly right: readonly TextDiffSegment[];
+  readonly similarity: number;
+  readonly isCoarse: boolean;
+}
+
+export interface EditionComparisonRow {
+  readonly key: string;
+  readonly label: string;
+  readonly alignment: "label" | "sequence" | "unpaired";
+  readonly left?: Passage;
+  readonly right?: Passage;
+  readonly difference?: TextComparison;
+}
+
+export interface EditionComparisonResult {
+  readonly leftEdition: Edition;
+  readonly rightEdition: Edition;
+  readonly rows: readonly EditionComparisonRow[];
+}
+
 /** Resolved display resource. This is a use-case projection, not canonical data. */
 export interface FacsimileImageResource {
   readonly imageUrl: string;

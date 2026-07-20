@@ -1,6 +1,7 @@
 export * from "./application-services";
 export * from "./atlas-use-case";
 export * from "./catalog-use-cases";
+export * from "./edition-comparison-use-case";
 export * from "./feature-module";
 export * from "./graph-use-case";
 export * from "./kernel";
