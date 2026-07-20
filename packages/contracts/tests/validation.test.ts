@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 
 import { describe, expect, it } from "vitest";
 
+import { PREDICATE_IDS } from "../src";
 import {
   ContractValidationError,
   inspectPublicationContract,
@@ -17,7 +18,7 @@ interface GoldenCase {
 
 const fixtures = resolve(
   dirname(fileURLToPath(import.meta.url)),
-  "../../../data/fixtures/contracts/0.4",
+  "../../../data/fixtures/contracts/0.5",
 );
 
 async function readJson(path: string): Promise<unknown> {
@@ -45,7 +46,7 @@ describe("canonical publication contract", () => {
       resolve(fixtures, "valid/minimal-publication.json"),
     );
     expect(parseKnowledgePublication(valid).manifest.contractVersion).toBe(
-      "0.4.0",
+      "0.5.0",
     );
     const invalid = await readJson(
       resolve(fixtures, "invalid/missing-root-collection.json"),
@@ -59,5 +60,17 @@ describe("canonical publication contract", () => {
       expect(error).toBeInstanceOf(ContractValidationError);
       expect((error as ContractValidationError).issues[0]?.path).toBe("$");
     }
+  });
+
+  it("keeps the executable predicate registry aligned with Schema", async () => {
+    const schema = (await readJson(
+      resolve(
+        dirname(fileURLToPath(import.meta.url)),
+        "../schemas/publication.schema.json",
+      ),
+    )) as {
+      definitions?: { PredicateId?: { enum?: readonly string[] } };
+    };
+    expect(schema.definitions?.PredicateId?.enum).toEqual(PREDICATE_IDS);
   });
 });

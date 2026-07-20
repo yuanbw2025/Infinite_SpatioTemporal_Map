@@ -22,7 +22,12 @@ from .publication import (
     validate_publication,
     write_publication,
 )
-from .migrations import MigrationError, migrate_0_3_to_0_4
+from .migrations import (
+    MigrationError,
+    migrate_0_3_to_0_4,
+    migrate_0_4_to_0_5,
+    migrate_to_current,
+)
 from .promotion import merge_reviewed_candidates, promote_candidates_atomically
 from .workflow import Pipeline, PipelineStage
 from .sources import (
@@ -74,6 +79,8 @@ __all__ = [
     "extract_mention_proposals",
     "load_source_metadata",
     "migrate_0_3_to_0_4",
+    "migrate_0_4_to_0_5",
+    "migrate_to_current",
     "merge_reviewed_candidates",
     "promote_candidates_atomically",
     "validate_publication",

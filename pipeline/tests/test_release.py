@@ -12,7 +12,7 @@ def _publication() -> dict:
     return with_content_checksum(
         {
             "manifest": {
-                "contractVersion": "0.4.0",
+                "contractVersion": "0.5.0",
                 "publicationId": "release-test",
                 "datasetVersion": "0.0.0",
                 "title": "发布门禁测试",

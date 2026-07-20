@@ -21,6 +21,11 @@ def contract_schema_path() -> Path:
     return repository_root / "packages/contracts/schemas/publication.schema.json"
 
 
+def predicate_vocabulary_path() -> Path:
+    repository_root = Path(__file__).resolve().parents[3]
+    return repository_root / "packages/contracts/vocabularies/predicates.json"
+
+
 @lru_cache(maxsize=1)
 def publication_schema() -> dict[str, Any]:
     path = contract_schema_path()
@@ -33,6 +38,47 @@ def publication_schema() -> dict[str, Any]:
         raise ContractSchemaError(f"Canonical Schema at {path} is not an object")
     Draft202012Validator.check_schema(schema)
     return schema
+
+
+@lru_cache(maxsize=1)
+def predicate_definitions() -> dict[str, dict[str, Any]]:
+    path = predicate_vocabulary_path()
+    try:
+        with path.open("r", encoding="utf-8") as file:
+            value = json.load(file)
+    except (OSError, json.JSONDecodeError) as error:
+        raise ContractSchemaError(
+            f"Cannot load predicate vocabulary at {path}: {error}"
+        ) from error
+    records = value.get("definitions") if isinstance(value, dict) else None
+    if not isinstance(records, list) or not all(
+        isinstance(record, dict) and isinstance(record.get("id"), str)
+        for record in records
+    ):
+        raise ContractSchemaError("Predicate vocabulary definitions are malformed")
+    definitions = {record["id"]: record for record in records}
+    if len(definitions) != len(records):
+        raise ContractSchemaError("Predicate vocabulary contains duplicate IDs")
+    schema_ids = publication_schema().get("definitions", {}).get(
+        "PredicateId", {}
+    ).get("enum")
+    if list(definitions) != schema_ids:
+        raise ContractSchemaError(
+            "Predicate vocabulary IDs do not match the canonical Schema"
+        )
+    for identifier, definition in definitions.items():
+        inverse = definition.get("inversePredicateId")
+        if inverse is not None:
+            target = definitions.get(inverse)
+            if target is None or target.get("inversePredicateId") != identifier:
+                raise ContractSchemaError(
+                    f"Predicate {identifier} has a non-reciprocal inverse"
+                )
+        if definition.get("valueKind") == "literal" and definition.get("objectTypes"):
+            raise ContractSchemaError(
+                f"Literal predicate {identifier} cannot constrain object types"
+            )
+    return definitions
 
 
 def contract_version() -> str:

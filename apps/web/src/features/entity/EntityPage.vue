@@ -137,6 +137,7 @@ watch(() => route.params.entityId, load, { immediate: true });
             <AssertionList
               :assertions="profile.assertions"
               :entities="profile.relatedEntities"
+              :perspective-entity-id="profile.entity.id"
             />
           </section>
 

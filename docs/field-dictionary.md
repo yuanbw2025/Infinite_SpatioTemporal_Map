@@ -1,6 +1,6 @@
-# 目标 0.4 字段字典
+# 目标 0.5 字段字典
 
-本字典是已实施的 0.4 契约基线，逐一规定字段名、类型、必填性、所有者与引用关系。0.3 历史数据的差异见末尾迁移表；新代码不得重新引入这些字段。
+本字典是已实施的 0.5 契约基线，逐一规定字段名、类型、必填性、所有者与引用关系。历史数据差异见末尾迁移表；新代码不得重新引入这些字段。
 
 记号：`!` 必填，`?` 可选，`[]` 数组。所有 ID 均为品牌字符串；所有字符区间为原文 Unicode 索引的 `[start, end)`。
 
@@ -164,12 +164,14 @@
 | --------------- | -------------- | -------------------------- |
 | `id!`           | AssertionId    | 主张身份                   |
 | `subjectId!`    | EntityId       | 主语                       |
-| `predicate!`    | string         | 稳定受控词表中的谓词       |
+| `predicate!`    | PredicateId    | 0.5 核心受控谓词           |
 | `objectId?`     | EntityId       | 与 literalValue 严格二选一 |
 | `literalValue?` | string         | 与 objectId 严格二选一     |
 | `temporal?`     | TemporalValue  | 主张有效或发生时间         |
 | `evidence!`     | EvidenceSpan[] | 至少一条                   |
 | `reviewStatus!` | ReviewStatus   | 审核状态                   |
+
+谓词 ID、值类型、方向、反向关系和适用实体类型统一定义在 `packages/contracts/vocabularies/predicates.json`，说明见 `docs/predicate-vocabulary.md`。正式发布拒绝未知谓词、实体/文字值类型错误以及不适用的主体或对象类型。
 
 ### EvidenceSpan
 
@@ -276,3 +278,12 @@
 | 批次字段各自命名                                          | 统一批次 envelope                                   |
 | 查询结果使用 `truncated`                                  | 统一为 `isTruncated`                                |
 | 三处手写契约常量/枚举                                     | 从 Schema 生成或直接读取                            |
+
+## 9. 0.4 → 0.5 必迁移项
+
+| 0.4 字段/行为                  | 0.5 决策                               |
+| ------------------------------ | -------------------------------------- |
+| Assertion.predicate 任意字符串 | 改为版本化 PredicateId                 |
+| 页面直接显示机器谓词           | 统一从谓词注册表读取中文标签           |
+| 页面自行理解关系方向           | 使用 directionality/inversePredicateId |
+| 旧谓词按字符串猜测迁移         | 禁止；除明确旧值外必须提供人工映射     |

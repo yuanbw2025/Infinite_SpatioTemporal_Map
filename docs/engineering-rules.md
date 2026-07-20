@@ -20,6 +20,7 @@
 
 - JSON、生成的 TypeScript DTO 和 HTTP 参数统一使用 `camelCase`。
 - 枚举值统一使用小写 `snake_case`，例如 `machine_suggested`。
+- `PredicateId` 是唯一命名例外，使用 `domain.lower_snake_case` 两段命名空间，并由架构检查器单独校验。
 - Python 内部使用 `snake_case`；只允许在契约编解码边界显式转换为 `camelCase`，禁止业务代码同时接受两套键名。
 - 类型、接口、Vue 组件使用 `PascalCase`；函数、变量和 composable 使用 `camelCase`；常量使用 `UPPER_SNAKE_CASE`。
 - TypeScript 文件使用 `kebab-case.ts`，Vue 组件使用 `PascalCase.vue`，Python 文件使用 `snake_case.py`。入口文件 `index.ts`、`main.ts`、`router.ts` 和工具约定文件除外。

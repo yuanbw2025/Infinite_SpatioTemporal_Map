@@ -1,11 +1,17 @@
 <script setup lang="ts">
-import type { Assertion, Entity } from "@infinite-spacetime/contracts";
+import {
+  predicateDefinition,
+  type Assertion,
+  type Entity,
+  type EntityId,
+} from "@infinite-spacetime/contracts";
 import { computed } from "vue";
 import ReviewBadge from "./ReviewBadge.vue";
 
 const props = defineProps<{
   assertions: readonly Assertion[];
   entities?: readonly Entity[];
+  perspectiveEntityId?: EntityId;
 }>();
 
 const names = computed(
@@ -13,13 +19,24 @@ const names = computed(
 );
 
 function objectLabel(assertion: Assertion): string {
+  const relatedId =
+    props.perspectiveEntityId === assertion.objectId
+      ? assertion.subjectId
+      : assertion.objectId;
   if (assertion.literalValue) return assertion.literalValue;
-  if (assertion.objectId) {
-    return (
-      names.value.get(assertion.objectId)?.preferredName ?? assertion.objectId
-    );
+  if (relatedId) {
+    return names.value.get(relatedId)?.preferredName ?? relatedId;
   }
   return "未标明";
+}
+
+function predicateLabel(assertion: Assertion): string {
+  const definition = predicateDefinition(assertion.predicate);
+  if (props.perspectiveEntityId !== assertion.objectId) return definition.label;
+  if (definition.directionality === "symmetric") return definition.label;
+  return definition.inversePredicateId
+    ? predicateDefinition(definition.inversePredicateId).label
+    : `反向：${definition.label}`;
 }
 </script>
 
@@ -27,7 +44,7 @@ function objectLabel(assertion: Assertion): string {
   <ol v-if="assertions.length" class="assertion-list">
     <li v-for="assertion in assertions" :key="assertion.id">
       <div class="assertion-line">
-        <span class="predicate">{{ assertion.predicate }}</span>
+        <span class="predicate">{{ predicateLabel(assertion) }}</span>
         <strong>{{ objectLabel(assertion) }}</strong>
         <ReviewBadge :status="assertion.reviewStatus" />
       </div>

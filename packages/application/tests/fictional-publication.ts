@@ -5,7 +5,7 @@ import type {
 import type { PublicationReadPort } from "@infinite-spacetime/ports";
 export const publication = {
   manifest: {
-    contractVersion: "0.4.0",
+    contractVersion: "0.5.0",
     publicationId: "application-test" as PublicationId,
     datasetVersion: "1.0.0",
     title: "虚构测试发布包",
@@ -123,7 +123,7 @@ export const publication = {
     {
       id: "assertion-1",
       subjectId: "person-1",
-      predicate: "friend_of",
+      predicate: "social.friend_of",
       objectId: "person-2",
       temporal: { startYear: 120 },
       evidence: [{ passageId: "passage-1", start: 0, end: 5 }],
@@ -132,7 +132,7 @@ export const publication = {
     {
       id: "assertion-2",
       subjectId: "person-1",
-      predicate: "office",
+      predicate: "office.held_title",
       literalValue: "县令",
       temporal: { startYear: 130 },
       evidence: [{ passageId: "passage-1", start: 0, end: 2 }],
@@ -141,7 +141,7 @@ export const publication = {
     {
       id: "assertion-3",
       subjectId: "person-1",
-      predicate: "office",
+      predicate: "office.held_title",
       literalValue: "主簿",
       temporal: { startYear: 130 },
       evidence: [{ passageId: "passage-2", start: 0, end: 2 }],

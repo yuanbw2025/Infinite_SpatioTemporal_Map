@@ -10,5 +10,9 @@
   {
     "file": "invalid/assertion-object-xor.json",
     "valid": false
+  },
+  {
+    "file": "invalid/unknown-predicate.json",
+    "valid": false
   }
 ]

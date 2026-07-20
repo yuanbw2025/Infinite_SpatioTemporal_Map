@@ -18,7 +18,11 @@ from .intake import (
     load_source_metadata,
     verify_source_manifest,
 )
-from .migrations import MigrationError, migrate_0_3_to_0_4
+from .migrations import (
+    MigrationError,
+    migrate_0_3_to_0_4,
+    migrate_to_current,
+)
 from .extractors import CandidateExtractionError, extract_mention_proposals
 from .publication import (
     PublicationValidationError,
@@ -60,6 +64,15 @@ def build_parser() -> argparse.ArgumentParser:
     migrate.add_argument("output", type=Path)
     migrate.add_argument("--report", type=Path)
     migrate.add_argument("--default-source-id")
+    migrate_current = commands.add_parser(
+        "migrate-to-current",
+        help="migrate a historical publication through every explicit contract step",
+    )
+    migrate_current.add_argument("publication", type=Path)
+    migrate_current.add_argument("output", type=Path)
+    migrate_current.add_argument("--report", type=Path)
+    migrate_current.add_argument("--default-source-id")
+    migrate_current.add_argument("--predicate-map", type=Path)
 
     assemble = commands.add_parser(
         "assemble", help="assemble manifest and collection JSON files"
@@ -194,6 +207,19 @@ def main() -> int:
             if args.report:
                 _write_json(args.report, report)
             print(json.dumps(report, ensure_ascii=False, indent=2))
+        elif args.command == "migrate-to-current":
+            predicate_mapping = (
+                _load_json(args.predicate_map) if args.predicate_map else None
+            )
+            publication, reports = migrate_to_current(
+                _load_json(args.publication),
+                default_source_id=args.default_source_id,
+                predicate_mapping=predicate_mapping,
+            )
+            _write_json(args.output, publication)
+            if args.report:
+                _write_json(args.report, reports)
+            print(json.dumps(reports, ensure_ascii=False, indent=2))
         elif args.command == "assemble":
             publication = assemble_publication(args.source_dir)
             write_publication(publication, args.output)

@@ -1,12 +1,14 @@
-import type {
-  Assertion,
-  EditionId,
-  EntityId,
-  KnowledgePublication,
-  Passage,
-  PassageId,
-  PlaceIdentity,
-  WorkId,
+import {
+  predicateDefinition,
+  type Assertion,
+  type EditionId,
+  type EntityId,
+  type KnowledgePublication,
+  type Passage,
+  type PassageId,
+  type PlaceIdentity,
+  type PredicateId,
+  type WorkId,
 } from "@infinite-spacetime/contracts";
 import { groupBy } from "./query-utils";
 
@@ -106,6 +108,10 @@ export class PublicationIndex {
       place.historicalNames[0]?.name ??
       place.id
     );
+  }
+
+  predicateLabel(predicate: PredicateId): string {
+    return predicateDefinition(predicate).label;
   }
 
   entityPassages(entityId: EntityId): readonly Passage[] {

@@ -168,7 +168,7 @@ watch([centerEntityId, depth, activeTypes], load, {
                 :x="(position(edge.sourceId).x + position(edge.targetId).x) / 2"
                 :y="(position(edge.sourceId).y + position(edge.targetId).y) / 2"
               >
-                {{ edge.predicate }}
+                {{ edge.predicateLabel }}
               </text>
             </g>
           </g>
@@ -207,7 +207,7 @@ watch([centerEntityId, depth, activeTypes], load, {
             v-for="edge in graph.edges.slice(0, 30)"
             :key="`list-${edge.assertionId}`"
           >
-            <span>{{ edge.predicate }}</span>
+            <span>{{ edge.predicateLabel }}</span>
             <router-link :to="`/reader/${edge.evidence[0]?.passageId}`"
               >查看出处</router-link
             >

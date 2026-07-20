@@ -142,7 +142,7 @@ function percentage(value: number, total: number): number {
         <p class="section-kicker">接入原则</p>
         <h2>数据填入后，功能直接启用</h2>
         <ol class="steps-list">
-          <li>数据管线输出符合 0.4.0 契约的 <code>publication.json</code>。</li>
+          <li>数据管线输出符合 0.5.0 契约的 <code>publication.json</code>。</li>
           <li>将文件放到站点的 <code>public/data</code> 目录。</li>
           <li>书库、阅读、地图、人物、文博和检索自动消费同一发布包。</li>
           <li>任何实体和结论都应通过段落 ID 返回原文证据。</li>

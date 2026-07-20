@@ -1,0 +1,261 @@
+{
+  "version": "1.0.0",
+  "definitions": [
+    {
+      "id": "family.parent_of",
+      "label": "子女",
+      "category": "family",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "inversePredicateId": "family.child_of",
+      "subjectTypes": ["person"],
+      "objectTypes": ["person"]
+    },
+    {
+      "id": "family.child_of",
+      "label": "父母",
+      "category": "family",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "inversePredicateId": "family.parent_of",
+      "subjectTypes": ["person"],
+      "objectTypes": ["person"]
+    },
+    {
+      "id": "family.spouse_of",
+      "label": "配偶",
+      "category": "family",
+      "valueKind": "entity",
+      "directionality": "symmetric",
+      "subjectTypes": ["person"],
+      "objectTypes": ["person"]
+    },
+    {
+      "id": "family.sibling_of",
+      "label": "兄弟姊妹",
+      "category": "family",
+      "valueKind": "entity",
+      "directionality": "symmetric",
+      "subjectTypes": ["person"],
+      "objectTypes": ["person"]
+    },
+    {
+      "id": "family.clan_member_of",
+      "label": "所属宗族",
+      "category": "family",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "subjectTypes": ["person"],
+      "objectTypes": ["institution"]
+    },
+    {
+      "id": "education.teacher_of",
+      "label": "弟子",
+      "category": "education",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "inversePredicateId": "education.student_of",
+      "subjectTypes": ["person"],
+      "objectTypes": ["person"]
+    },
+    {
+      "id": "education.student_of",
+      "label": "老师",
+      "category": "education",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "inversePredicateId": "education.teacher_of",
+      "subjectTypes": ["person"],
+      "objectTypes": ["person"]
+    },
+    {
+      "id": "education.affiliated_with",
+      "label": "就学于",
+      "category": "education",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "subjectTypes": ["person"],
+      "objectTypes": ["institution"]
+    },
+    {
+      "id": "office.held_position",
+      "label": "担任官职",
+      "category": "office",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "subjectTypes": ["person"],
+      "objectTypes": ["office"]
+    },
+    {
+      "id": "office.held_title",
+      "label": "官职原称",
+      "category": "office",
+      "valueKind": "literal",
+      "directionality": "directed",
+      "subjectTypes": ["person"],
+      "objectTypes": []
+    },
+    {
+      "id": "office.served_at",
+      "label": "任职机构",
+      "category": "office",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "subjectTypes": ["person"],
+      "objectTypes": ["institution"]
+    },
+    {
+      "id": "office.rank",
+      "label": "品秩",
+      "category": "office",
+      "valueKind": "literal",
+      "directionality": "directed",
+      "subjectTypes": ["person"],
+      "objectTypes": []
+    },
+    {
+      "id": "social.friend_of",
+      "label": "友人",
+      "category": "social",
+      "valueKind": "entity",
+      "directionality": "symmetric",
+      "subjectTypes": ["person"],
+      "objectTypes": ["person"]
+    },
+    {
+      "id": "social.associated_with",
+      "label": "交往",
+      "category": "social",
+      "valueKind": "entity",
+      "directionality": "symmetric",
+      "subjectTypes": ["person"],
+      "objectTypes": ["person"]
+    },
+    {
+      "id": "place.native_place",
+      "label": "籍贯",
+      "category": "place",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "subjectTypes": ["person"],
+      "objectTypes": ["place"]
+    },
+    {
+      "id": "place.resided_at",
+      "label": "居住于",
+      "category": "place",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "subjectTypes": ["person"],
+      "objectTypes": ["place"]
+    },
+    {
+      "id": "event.participated_in",
+      "label": "参与事件",
+      "category": "event",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "subjectTypes": ["person", "institution"],
+      "objectTypes": ["event"]
+    },
+    {
+      "id": "heritage.creator",
+      "label": "制作者",
+      "category": "heritage",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "subjectTypes": ["artifact", "site"],
+      "objectTypes": ["person", "institution"]
+    },
+    {
+      "id": "heritage.material",
+      "label": "材质",
+      "category": "heritage",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "subjectTypes": ["artifact", "site"],
+      "objectTypes": ["material"]
+    },
+    {
+      "id": "heritage.technique",
+      "label": "工艺",
+      "category": "heritage",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "subjectTypes": ["artifact", "site"],
+      "objectTypes": ["technique"]
+    },
+    {
+      "id": "heritage.motif",
+      "label": "纹样",
+      "category": "heritage",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "subjectTypes": ["artifact", "site"],
+      "objectTypes": ["motif"]
+    },
+    {
+      "id": "heritage.inscription",
+      "label": "铭文",
+      "category": "heritage",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "subjectTypes": ["artifact", "site"],
+      "objectTypes": ["inscription"]
+    },
+    {
+      "id": "heritage.collection",
+      "label": "馆藏机构",
+      "category": "heritage",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "subjectTypes": ["artifact", "site"],
+      "objectTypes": ["institution"]
+    },
+    {
+      "id": "heritage.public_name",
+      "label": "公众名称",
+      "category": "heritage",
+      "valueKind": "literal",
+      "directionality": "directed",
+      "subjectTypes": ["artifact", "site"],
+      "objectTypes": []
+    },
+    {
+      "id": "heritage.catalogue_number",
+      "label": "藏品编号",
+      "category": "heritage",
+      "valueKind": "literal",
+      "directionality": "directed",
+      "subjectTypes": ["artifact", "site"],
+      "objectTypes": []
+    },
+    {
+      "id": "classification.member_of",
+      "label": "属于",
+      "category": "classification",
+      "valueKind": "entity",
+      "directionality": "directed",
+      "subjectTypes": [],
+      "objectTypes": []
+    },
+    {
+      "id": "descriptive.note",
+      "label": "来源描述",
+      "category": "descriptive",
+      "valueKind": "literal",
+      "directionality": "directed",
+      "subjectTypes": [],
+      "objectTypes": []
+    },
+    {
+      "id": "other.related_to",
+      "label": "相关",
+      "category": "other",
+      "valueKind": "entity",
+      "directionality": "symmetric",
+      "subjectTypes": [],
+      "objectTypes": []
+    }
+  ]
+}

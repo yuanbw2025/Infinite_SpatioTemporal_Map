@@ -110,15 +110,16 @@ PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline promote \
 
 ## 旧契约迁移
 
-0.3 数据不能由读取端长期兼容，也不能手工删字段。迁移器把版本/来源、影印页、地点名称和作品覆盖范围移入 0.4 的唯一所有者，并输出迁移报告：
+历史数据不能由读取端长期兼容，也不能手工删字段。统一命令依次执行所有显式迁移并输出报告：
 
 ```bash
-PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline migrate-0.3-to-0.4 \
-  workspace/publication-0.3.json workspace/publication-0.4.json \
+PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline migrate-to-current \
+  workspace/publication-old.json workspace/publication-current.json \
+  --predicate-map workspace/predicate-map.json \
   --report workspace/migration-report.json
 ```
 
-当旧历史名称或几何存在多个可能来源时，迁移器不会猜测，必须用 `--default-source-id` 明确策展归属；缺少权利说明、影印 URL 或冗余字段互相矛盾时会直接停止。
+0.3 → 0.4 把版本/来源、影印页、地点名称和作品覆盖范围移入唯一所有者；0.4 → 0.5 把任意关系字符串迁移到版本化核心谓词。当旧历史名称或几何存在多个可能来源时，必须用 `--default-source-id` 明确策展归属；未知谓词必须在 JSON 对象形式的 `--predicate-map` 中逐项裁决。迁移器不会猜测，缺少权利说明、影印 URL、谓词映射或冗余字段冲突时会停止。
 
 ## 实体与历史地点对齐
 

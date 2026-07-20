@@ -8,6 +8,17 @@ apps/web/public/data/publication.json
 
 机器可读结构定义位于 `packages/contracts/schemas/publication.schema.json`；跨记录引用和原文字符范围由数据管线执行更严格的语义校验。
 
+历史发布包统一迁移到当前契约：
+
+```bash
+PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline migrate-to-current \
+  OLD_PUBLICATION publication.current.json \
+  --predicate-map predicate-map.json \
+  --report migration-report.json
+```
+
+只有存在无法自动判定的旧谓词时才需要 `--predicate-map`。映射目标必须来自核心词表，迁移报告会保留每种替换的数量。
+
 ## 发布包组成
 
 ```text
@@ -103,6 +114,7 @@ PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline promote \
 - 简体和白话不能覆盖 `text.original`。
 - `Mention.start/end` 必须以原文 Unicode 字符索引为准。
 - 正式 `Assertion` 至少有一个 `EvidenceSpan`。
+- `Assertion.predicate` 必须来自核心词表，且对象/文字值和实体类型符合定义。
 - 页面功能不得直接修改发布包；数据修订必须回到管线重新发布。
 - 机器候选不得绕过人工审核直接进入正式发布。
 - 原件校验值变化后必须重新提取、分段和审核，不能沿用旧审计结论。

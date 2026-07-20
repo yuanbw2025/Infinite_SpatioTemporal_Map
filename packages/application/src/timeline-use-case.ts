@@ -78,9 +78,12 @@ export function buildTimeline(
       id: assertion.id,
       kind: "assertion",
       entityId: assertion.subjectId,
-      label: [assertion.predicate, objectLabel].filter(Boolean).join("："),
+      label: [index.predicateLabel(assertion.predicate), objectLabel]
+        .filter(Boolean)
+        .join("："),
       temporal: assertion.temporal,
       predicate: assertion.predicate,
+      predicateLabel: index.predicateLabel(assertion.predicate),
       evidence: assertion.evidence,
       reviewStatus: assertion.reviewStatus,
     });

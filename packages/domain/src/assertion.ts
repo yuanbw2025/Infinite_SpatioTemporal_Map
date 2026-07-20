@@ -1,15 +1,28 @@
-import type { Assertion } from "@infinite-spacetime/contracts";
+import {
+  predicateDefinition,
+  type Assertion,
+} from "@infinite-spacetime/contracts";
 
 export function validateAssertion(assertion: Assertion): void {
   if (assertion.evidence.length === 0) {
     throw new Error("Every assertion must include at least one evidence span");
   }
-  if (
-    assertion.objectId === undefined &&
-    assertion.literalValue === undefined
-  ) {
+  const hasObject = assertion.objectId !== undefined;
+  const hasLiteral = assertion.literalValue !== undefined;
+  if (hasObject === hasLiteral) {
     throw new Error(
-      "An assertion must have an entity object or a literal value",
+      "An assertion must have exactly one entity object or literal value",
+    );
+  }
+  const definition = predicateDefinition(assertion.predicate);
+  if (definition.valueKind === "entity" && !hasObject) {
+    throw new Error(
+      `Predicate ${assertion.predicate} requires an entity object`,
+    );
+  }
+  if (definition.valueKind === "literal" && !hasLiteral) {
+    throw new Error(
+      `Predicate ${assertion.predicate} requires a literal value`,
     );
   }
 }

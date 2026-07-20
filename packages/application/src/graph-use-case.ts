@@ -95,6 +95,7 @@ export function exploreGraph(
             sourceId: assertion.subjectId,
             targetId: assertion.objectId,
             predicate: assertion.predicate,
+            predicateLabel: index.predicateLabel(assertion.predicate),
             ...(assertion.temporal ? { temporal: assertion.temporal } : {}),
             evidence: assertion.evidence,
             reviewStatus: assertion.reviewStatus,

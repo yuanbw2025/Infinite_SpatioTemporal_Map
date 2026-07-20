@@ -41,6 +41,6 @@
 
 ## 目标契约迁移说明
 
-0.4 契约已按 ADR 0010 收敛：`Passage` 只保留 `volumeId`，`Volume → Edition → Work` 负责归属；地点规范名由 Entity 唯一拥有；作品地域统一进入 coverage；来源统一进入 Source Registry。0.3 数据必须通过版本化迁移器进入新契约，不能手工删改字段。
+0.5 契约继续遵守 ADR 0010：`Passage` 只保留 `volumeId`，`Volume → Edition → Work` 负责归属；地点规范名由 Entity 唯一拥有；作品地域统一进入 coverage；来源统一进入 Source Registry；`Assertion.predicate` 使用版本化核心词表。历史数据必须通过迁移器逐版本进入当前契约，不能手工猜测或删改字段。
 
 0.4 的逐字段名称、类型、必填性和引用关系以 `field-dictionary.md` 为准。

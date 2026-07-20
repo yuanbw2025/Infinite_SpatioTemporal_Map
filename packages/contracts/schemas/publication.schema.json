@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://infinite-spacetime.org/schemas/0.4.0/publication.schema.json",
+  "$id": "https://infinite-spacetime.org/schemas/0.5.0/publication.schema.json",
   "title": "KnowledgePublication",
   "description": "Canonical portable publication contract for Infinite SpatioTemporal Map.",
   "type": "object",
@@ -104,6 +104,39 @@
         "rejected"
       ]
     },
+    "PredicateId": {
+      "title": "PredicateId",
+      "enum": [
+        "family.parent_of",
+        "family.child_of",
+        "family.spouse_of",
+        "family.sibling_of",
+        "family.clan_member_of",
+        "education.teacher_of",
+        "education.student_of",
+        "education.affiliated_with",
+        "office.held_position",
+        "office.held_title",
+        "office.served_at",
+        "office.rank",
+        "social.friend_of",
+        "social.associated_with",
+        "place.native_place",
+        "place.resided_at",
+        "event.participated_in",
+        "heritage.creator",
+        "heritage.material",
+        "heritage.technique",
+        "heritage.motif",
+        "heritage.inscription",
+        "heritage.collection",
+        "heritage.public_name",
+        "heritage.catalogue_number",
+        "classification.member_of",
+        "descriptive.note",
+        "other.related_to"
+      ]
+    },
     "TemporalValue": {
       "title": "TemporalValue",
       "type": "object",
@@ -165,7 +198,7 @@
         "sourceDescription"
       ],
       "properties": {
-        "contractVersion": { "const": "0.4.0" },
+        "contractVersion": { "const": "0.5.0" },
         "publicationId": { "$ref": "#/definitions/Id" },
         "datasetVersion": {
           "type": "string",
@@ -433,7 +466,7 @@
       "properties": {
         "id": { "$ref": "#/definitions/Id" },
         "subjectId": { "$ref": "#/definitions/Id" },
-        "predicate": { "$ref": "#/definitions/NonEmptyString" },
+        "predicate": { "$ref": "#/definitions/PredicateId" },
         "objectId": { "$ref": "#/definitions/Id" },
         "temporal": { "$ref": "#/definitions/TemporalValue" },
         "evidence": {
@@ -459,7 +492,7 @@
       "properties": {
         "id": { "$ref": "#/definitions/Id" },
         "subjectId": { "$ref": "#/definitions/Id" },
-        "predicate": { "$ref": "#/definitions/NonEmptyString" },
+        "predicate": { "$ref": "#/definitions/PredicateId" },
         "literalValue": { "type": "string" },
         "temporal": { "$ref": "#/definitions/TemporalValue" },
         "evidence": {

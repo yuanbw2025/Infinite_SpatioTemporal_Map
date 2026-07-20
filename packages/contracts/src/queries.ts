@@ -20,6 +20,7 @@ import type {
 } from "./ids";
 import type { EvidenceSpan, ReviewStatus } from "./common";
 import type { PublicationManifest } from "./publication";
+import type { PredicateId } from "./predicate-vocabulary";
 import type {
   MapObservation,
   PlaceIdentity,
@@ -232,7 +233,8 @@ export interface KnowledgeGraphEdge {
   readonly assertionId: AssertionId;
   readonly sourceId: EntityId;
   readonly targetId: EntityId;
-  readonly predicate: string;
+  readonly predicate: PredicateId;
+  readonly predicateLabel: string;
   readonly temporal?: TemporalValue;
   readonly evidence: readonly EvidenceSpan[];
   readonly reviewStatus: ReviewStatus;
@@ -260,7 +262,8 @@ export interface TimelineItem {
   readonly label: string;
   readonly temporal: TemporalValue;
   readonly placeId?: PlaceIdentityId;
-  readonly predicate?: string;
+  readonly predicate?: PredicateId;
+  readonly predicateLabel?: string;
   readonly evidence: readonly EvidenceSpan[];
   readonly reviewStatus: ReviewStatus;
 }

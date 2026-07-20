@@ -58,21 +58,31 @@ describe("domain invariants", () => {
   it("protects evidence-first assertions", () => {
     expect(() =>
       validateAssertion({
+        predicate: "other.related_to",
         objectId: "entity-b",
         evidence: [{ passageId, start: 0, end: 1 }],
       } as unknown as Assertion),
     ).not.toThrow();
     expect(() =>
       validateAssertion({
+        predicate: "other.related_to",
         objectId: "entity-b",
         evidence: [],
       } as unknown as Assertion),
     ).toThrow("evidence span");
     expect(() =>
       validateAssertion({
+        predicate: "other.related_to",
         evidence: [{ passageId, start: 0, end: 1 }],
       } as unknown as Assertion),
     ).toThrow("entity object");
+    expect(() =>
+      validateAssertion({
+        predicate: "office.held_title",
+        objectId: "entity-b",
+        evidence: [{ passageId, start: 0, end: 1 }],
+      } as unknown as Assertion),
+    ).toThrow("literal value");
   });
 
   it("uses named domain errors", () => {

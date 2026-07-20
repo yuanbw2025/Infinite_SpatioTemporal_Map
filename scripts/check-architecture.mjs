@@ -196,12 +196,18 @@ function visitSchema(node, file, pointer = "#") {
     }
   }
   if (Array.isArray(node.enum)) {
+    const isPredicateId = pointer.endsWith("/definitions/PredicateId");
     for (const value of node.enum) {
-      if (typeof value === "string" && !/^[a-z][a-z0-9_]*$/.test(value)) {
+      const valid =
+        typeof value !== "string" ||
+        (isPredicateId
+          ? /^[a-z][a-z0-9]*(?:\.[a-z][a-z0-9_]*)+$/.test(value)
+          : /^[a-z][a-z0-9_]*$/.test(value));
+      if (!valid) {
         fail(
           file,
           "contract-enum",
-          `${pointer} enum value ${JSON.stringify(value)} is not lower_snake_case`,
+          `${pointer} enum value ${JSON.stringify(value)} has invalid canonical casing`,
         );
       }
     }

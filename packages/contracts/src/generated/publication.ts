@@ -64,6 +64,39 @@ export type ReviewStatus =
  */
 export type Assertion = EntityAssertion | LiteralAssertion;
 /**
+ * This interface was referenced by `KnowledgePublication`'s JSON-Schema
+ * via the `definition` "PredicateId".
+ */
+export type PredicateId =
+  | "family.parent_of"
+  | "family.child_of"
+  | "family.spouse_of"
+  | "family.sibling_of"
+  | "family.clan_member_of"
+  | "education.teacher_of"
+  | "education.student_of"
+  | "education.affiliated_with"
+  | "office.held_position"
+  | "office.held_title"
+  | "office.served_at"
+  | "office.rank"
+  | "social.friend_of"
+  | "social.associated_with"
+  | "place.native_place"
+  | "place.resided_at"
+  | "event.participated_in"
+  | "heritage.creator"
+  | "heritage.material"
+  | "heritage.technique"
+  | "heritage.motif"
+  | "heritage.inscription"
+  | "heritage.collection"
+  | "heritage.public_name"
+  | "heritage.catalogue_number"
+  | "classification.member_of"
+  | "descriptive.note"
+  | "other.related_to";
+/**
  * @minItems 2
  * @maxItems 2
  *
@@ -131,7 +164,7 @@ export interface KnowledgePublication {
  * via the `definition` "PublicationManifest".
  */
 export interface PublicationManifest {
-  contractVersion: "0.4.0";
+  contractVersion: "0.5.0";
   publicationId: WireId;
   datasetVersion: string;
   title: NonEmptyString;
@@ -317,7 +350,7 @@ export interface Mention {
 export interface EntityAssertion {
   id: WireId;
   subjectId: WireId;
-  predicate: NonEmptyString;
+  predicate: PredicateId;
   objectId: WireId;
   temporal?: TemporalValue;
   /**
@@ -343,7 +376,7 @@ export interface EvidenceSpan {
 export interface LiteralAssertion {
   id: WireId;
   subjectId: WireId;
-  predicate: NonEmptyString;
+  predicate: PredicateId;
   literalValue: string;
   temporal?: TemporalValue;
   /**

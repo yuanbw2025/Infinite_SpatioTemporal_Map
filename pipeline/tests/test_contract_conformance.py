@@ -13,7 +13,7 @@ from infinite_spacetime_pipeline.contract_schema import (
 
 
 FIXTURES = (
-    Path(__file__).resolve().parents[2] / "data" / "fixtures" / "contracts" / "0.4"
+    Path(__file__).resolve().parents[2] / "data" / "fixtures" / "contracts" / "0.5"
 )
 
 

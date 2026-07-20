@@ -5,6 +5,7 @@ from __future__ import annotations
 from collections.abc import Iterable
 from typing import Any
 
+from .contract_schema import predicate_definitions
 from .publication_identity import calculate_content_checksum
 
 
@@ -157,6 +158,7 @@ class _PublicationSemantics:
         }
         self.sources = self.ids["sources"]
         self.entities = {item["id"]: item for item in value["entities"]}
+        self.predicates = predicate_definitions()
         self.passages = {item["id"]: item for item in value["passages"]}
         self.volumes = {item["id"]: item for item in value["volumes"]}
         self.pages = {item["id"]: item for item in value["facsimilePages"]}
@@ -231,10 +233,36 @@ class _PublicationSemantics:
             if mention["end"] <= mention["start"] or original[mention["start"] : mention["end"]] != mention["surface"]:
                 raise SemanticValidationError(f"Mention {mention['id']} does not match immutable original text")
         for assertion in self.value["assertions"]:
-            if assertion["subjectId"] not in self.entities:
+            subject = self.entities.get(assertion["subjectId"])
+            if subject is None:
                 raise SemanticValidationError(f"Assertion {assertion['id']} has a missing subject")
-            if "objectId" in assertion and assertion["objectId"] not in self.entities:
-                raise SemanticValidationError(f"Assertion {assertion['id']} has a missing object")
+            definition = self.predicates[assertion["predicate"]]
+            subject_types = definition["subjectTypes"]
+            if subject_types and subject["type"] not in subject_types:
+                raise SemanticValidationError(
+                    f"Assertion {assertion['id']} predicate does not accept "
+                    f"subject type {subject['type']}"
+                )
+            if "objectId" in assertion:
+                related = self.entities.get(assertion["objectId"])
+                if related is None:
+                    raise SemanticValidationError(
+                        f"Assertion {assertion['id']} has a missing object"
+                    )
+                if definition["valueKind"] != "entity":
+                    raise SemanticValidationError(
+                        f"Assertion {assertion['id']} predicate requires a literal value"
+                    )
+                object_types = definition["objectTypes"]
+                if object_types and related["type"] not in object_types:
+                    raise SemanticValidationError(
+                        f"Assertion {assertion['id']} predicate does not accept "
+                        f"object type {related['type']}"
+                    )
+            elif definition["valueKind"] != "literal":
+                raise SemanticValidationError(
+                    f"Assertion {assertion['id']} predicate requires an entity object"
+                )
             _temporal(assertion.get("temporal"), f"Assertion {assertion['id']}")
             _evidence(assertion["evidence"], f"Assertion {assertion['id']}", self.passages)
 

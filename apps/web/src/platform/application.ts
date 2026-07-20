@@ -72,7 +72,7 @@ export async function initializeApplicationRuntime(): Promise<ApplicationRuntime
   } catch (error) {
     const message =
       error instanceof ContractValidationError
-        ? `数据发布包不符合 0.4 契约：${error.message}`
+        ? `数据发布包不符合 0.5 契约：${error.message}`
         : error instanceof Error
           ? error.message
           : "未知加载错误";

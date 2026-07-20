@@ -67,8 +67,19 @@ describe("application services", () => {
     expect(
       (await services.graph.explore({ centerEntityId: "person-1" as EntityId }))
         .edges,
-    ).toHaveLength(1);
-    expect((await services.timeline.build()).tracks).toHaveLength(1);
+    ).toEqual([
+      expect.objectContaining({
+        predicate: "social.friend_of",
+        predicateLabel: "友人",
+      }),
+    ]);
+    expect(
+      (await services.timeline.build()).tracks.flatMap((track) => track.items),
+    ).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ predicateLabel: "官职原称" }),
+      ]),
+    );
     expect((await services.metadata.overview()).counts).toMatchObject({
       works: 1,
       passages: 2,

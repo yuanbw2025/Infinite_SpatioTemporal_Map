@@ -7,6 +7,8 @@ import unittest
 from infinite_spacetime_pipeline.migrations import (
     MigrationError,
     migrate_0_3_to_0_4,
+    migrate_0_4_to_0_5,
+    migrate_to_current,
 )
 
 
@@ -152,6 +154,30 @@ class MigrationTest(unittest.TestCase):
         del old["editions"][0]["rightsStatement"]
         with self.assertRaisesRegex(MigrationError, "rightsStatement"):
             migrate_0_3_to_0_4(old)
+
+    def test_0_4_to_0_5_maps_only_governed_predicates(self) -> None:
+        publication_0_4, _ = migrate_0_3_to_0_4(_old_publication())
+        publication, report = migrate_0_4_to_0_5(publication_0_4)
+
+        self.assertEqual(publication["manifest"]["contractVersion"], "0.5.0")
+        self.assertEqual(
+            publication["assertions"][0]["predicate"], "place.resided_at"
+        )
+        self.assertEqual(
+            report["mappedPredicates"], {"residedAt -> place.resided_at": 1}
+        )
+
+        publication_0_4["assertions"][0]["predicate"] = "ambiguousLegacyValue"
+        with self.assertRaisesRegex(MigrationError, "explicit predicate mapping"):
+            migrate_0_4_to_0_5(publication_0_4)
+
+    def test_migrate_to_current_runs_the_complete_chain(self) -> None:
+        publication, reports = migrate_to_current(_old_publication())
+        self.assertEqual(publication["manifest"]["contractVersion"], "0.5.0")
+        self.assertEqual(
+            [report["toContractVersion"] for report in reports],
+            ["0.4.0", "0.5.0"],
+        )
 
 
 if __name__ == "__main__":

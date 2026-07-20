@@ -4,6 +4,7 @@ export * from "./curation";
 export * from "./ids";
 export * from "./knowledge";
 export * from "./publication";
+export * from "./predicate-vocabulary";
 export * from "./queries";
 export * from "./spacetime";
 export * from "./validation";

@@ -6,12 +6,21 @@ import hashlib
 from copy import deepcopy
 from typing import Any
 
+from .contract_schema import contract_version, predicate_definitions
 from .publication import validate_publication
 from .publication_identity import with_content_checksum
 
 
 class MigrationError(ValueError):
     """Raised when an old value cannot be migrated without inventing facts."""
+
+
+LEGACY_PREDICATES = {
+    "friend_of": "social.friend_of",
+    "office": "office.held_title",
+    "residedAt": "place.resided_at",
+    "relatedTo": "other.related_to",
+}
 
 
 def _records(value: dict[str, Any], name: str) -> list[dict[str, Any]]:
@@ -259,7 +268,102 @@ def migrate_0_3_to_0_4(
             "occurrences": occurrences,
         }
     )
-    validate_publication(publication)
     report["createdFacsimilePages"] = len(page_by_key)
     report["contentChecksum"] = publication["manifest"]["contentChecksum"]
     return publication, report
+
+
+def _next_dataset_version(value: str) -> str:
+    core = value.split("-", 1)[0]
+    parts = core.split(".")
+    if len(parts) != 3 or not all(part.isdigit() for part in parts):
+        raise MigrationError(f"Invalid datasetVersion for migration: {value}")
+    major, minor, patch = (int(part) for part in parts)
+    return f"{major}.{minor}.{patch + 1}-contract.0.5"
+
+
+def migrate_0_4_to_0_5(
+    value: dict[str, Any],
+    *,
+    predicate_mapping: dict[str, str] | None = None,
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    """Replace ungoverned predicate strings with the 0.5 core vocabulary."""
+
+    if not isinstance(value, dict):
+        raise MigrationError("0.4 publication must be an object")
+    manifest = value.get("manifest")
+    if not isinstance(manifest, dict) or manifest.get("contractVersion") != "0.4.0":
+        raise MigrationError("input manifest.contractVersion must be 0.4.0")
+    publication = deepcopy(value)
+    assertions = _records(publication, "assertions")
+    mapping = {**LEGACY_PREDICATES, **(predicate_mapping or {})}
+    allowed = predicate_definitions()
+    unknown_targets = sorted(set(mapping.values()) - set(allowed))
+    if unknown_targets:
+        raise MigrationError(
+            "predicate mapping contains unknown 0.5 targets: "
+            + ", ".join(unknown_targets)
+        )
+    mapped: dict[str, int] = {}
+    for assertion in assertions:
+        old = assertion.get("predicate")
+        if not isinstance(old, str):
+            raise MigrationError(
+                f"Assertion {assertion.get('id')} has no string predicate"
+            )
+        target = old if old in allowed else mapping.get(old)
+        if target is None:
+            raise MigrationError(
+                f"Assertion {assertion.get('id')} uses unknown predicate {old}; "
+                "provide an explicit predicate mapping"
+            )
+        assertion["predicate"] = target
+        if target != old:
+            key = f"{old} -> {target}"
+            mapped[key] = mapped.get(key, 0) + 1
+    next_manifest = publication["manifest"]
+    next_manifest["contractVersion"] = "0.5.0"
+    next_manifest["datasetVersion"] = _next_dataset_version(
+        next_manifest["datasetVersion"]
+    )
+    next_manifest["contentChecksum"] = "sha256:" + ("0" * 64)
+    publication = with_content_checksum(publication)
+    validate_publication(publication)
+    report = {
+        "fromContractVersion": "0.4.0",
+        "toContractVersion": "0.5.0",
+        "mappedPredicates": mapped,
+        "contentChecksum": publication["manifest"]["contentChecksum"],
+    }
+    return publication, report
+
+
+def migrate_to_current(
+    value: dict[str, Any],
+    *,
+    default_source_id: str | None = None,
+    predicate_mapping: dict[str, str] | None = None,
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    """Apply every explicit migration required to reach the current contract."""
+
+    version = value.get("manifest", {}).get("contractVersion")
+    current = deepcopy(value)
+    reports: list[dict[str, Any]] = []
+    if version == "0.3.0":
+        current, report = migrate_0_3_to_0_4(
+            current, default_source_id=default_source_id
+        )
+        reports.append(report)
+        version = "0.4.0"
+    if version == "0.4.0":
+        current, report = migrate_0_4_to_0_5(
+            current, predicate_mapping=predicate_mapping
+        )
+        reports.append(report)
+        version = "0.5.0"
+    if version != contract_version():
+        raise MigrationError(
+            f"no migration path from {version!r} to {contract_version()}"
+        )
+    validate_publication(current)
+    return current, reports
