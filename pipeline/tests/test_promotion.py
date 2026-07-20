@@ -15,7 +15,7 @@ from infinite_spacetime_pipeline.promotion import promote_candidates_atomically
 def _empty_publication() -> dict:
     return with_content_checksum({
         "manifest": {
-            "contractVersion": "0.5.0",
+            "contractVersion": "0.6.0",
             "publicationId": "promotion-test",
             "datasetVersion": "0.0.0",
             "title": "发布测试",
@@ -29,6 +29,7 @@ def _empty_publication() -> dict:
         "volumes": [],
         "facsimilePages": [],
         "passages": [],
+        "passageAlignments": [],
         "entities": [],
         "mentions": [],
         "assertions": [],

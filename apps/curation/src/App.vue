@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import AlignmentWorkspace from "./AlignmentWorkspace.vue";
+import PassageAlignmentWorkspace from "./PassageAlignmentWorkspace.vue";
 import { useCandidateReview } from "./use-candidate-review";
 
-const workspaceMode = ref<"candidates" | "alignment">("candidates");
+const workspaceMode = ref<"candidates" | "alignment" | "passage_alignment">(
+  "candidates",
+);
 const {
   batch,
   selectedId,
@@ -81,6 +84,13 @@ const {
         @click="workspaceMode = 'alignment'"
       >
         实体与地点对齐
+      </button>
+      <button
+        type="button"
+        :class="{ active: workspaceMode === 'passage_alignment' }"
+        @click="workspaceMode = 'passage_alignment'"
+      >
+        版本篇章对齐
       </button>
     </nav>
 
@@ -258,6 +268,7 @@ const {
         </p>
       </section>
     </template>
-    <AlignmentWorkspace v-else />
+    <AlignmentWorkspace v-else-if="workspaceMode === 'alignment'" />
+    <PassageAlignmentWorkspace v-else />
   </div>
 </template>

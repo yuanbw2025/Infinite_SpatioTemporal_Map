@@ -86,3 +86,51 @@ export interface AlignmentDecision {
   readonly targetId?: string;
   readonly note?: string;
 }
+
+export type PassageAlignmentRelation =
+  "equivalent" | "partial_overlap" | "reordered" | "uncertain";
+export type PassageAlignmentReviewStatus = "reviewed" | "verified" | "disputed";
+export type PassageAlignmentResolution = "accept" | "modify" | "reject";
+
+export interface PassageAlignmentReviewPassage {
+  readonly id: string;
+  readonly volumeLabel: string;
+  readonly sectionLabel?: string;
+  readonly sequence: number;
+  readonly textOriginal: string;
+}
+
+export interface PassageAlignmentSuggestion {
+  readonly id: string;
+  readonly leftPassageIds: readonly string[];
+  readonly rightPassageIds: readonly string[];
+  readonly suggestedRelation: PassageAlignmentRelation;
+  readonly confidence: number;
+  readonly reasons: readonly string[];
+}
+
+export interface PassageAlignmentBatch {
+  readonly version: 1;
+  readonly publicationId: string;
+  readonly baseContentChecksum: string;
+  readonly workId: string;
+  readonly leftEditionId: string;
+  readonly rightEditionId: string;
+  readonly generatorId: string;
+  readonly generatedAt: string;
+  readonly leftPassages: readonly PassageAlignmentReviewPassage[];
+  readonly rightPassages: readonly PassageAlignmentReviewPassage[];
+  readonly items: readonly PassageAlignmentSuggestion[];
+}
+
+export interface PassageAlignmentDecision {
+  readonly suggestionId: string;
+  readonly resolution: PassageAlignmentResolution;
+  readonly relation?: PassageAlignmentRelation;
+  readonly leftPassageIds?: readonly string[];
+  readonly rightPassageIds?: readonly string[];
+  readonly reviewStatus: PassageAlignmentReviewStatus;
+  readonly reviewer: string;
+  readonly decidedAt: string;
+  readonly note?: string;
+}

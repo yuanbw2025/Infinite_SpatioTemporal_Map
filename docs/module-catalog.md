@@ -22,7 +22,7 @@
 | 模块      | 唯一拥有的事实                                                | 公共能力                                  | 允许调用                            |
 | --------- | ------------------------------------------------------------- | ----------------------------------------- | ----------------------------------- |
 | Catalog   | Work、Edition、Volume、SourceRecord                           | 书目层级、来源解析、版本比较基础          | Text 只通过 ID 关系                 |
-| Text      | Passage、TextLayers、FacsimilePage/Anchor                     | 段落顺序、字符范围、影印定位、文本层选择  | Catalog ID                          |
+| Text      | Passage、PassageAlignment、TextLayers、FacsimilePage/Anchor   | 段落顺序、跨版本对应、字符范围、影印定位  | Catalog ID                          |
 | Knowledge | Entity、Mention、Assertion                                    | 实体身份、提及校验、主张对象/值与证据规则 | Text ID、TemporalValue              |
 | Spacetime | PlaceIdentity、HistoricalName、HistoricalGeometry、Occurrence | 历史名称选择、时空有效性、空间事实        | Knowledge/Text 的 ID 与证据值       |
 | Curation  | Candidate、ReviewDecision、AlignmentDecision、Release         | 状态机、并发修订、对齐决策、发布准入      | 全部事实类型的候选 DTO，不直接改 UI |
@@ -31,18 +31,18 @@
 
 ## 3. 应用用例模块
 
-| 用例模块  | 输入                       | 读取                           | 输出投影/行为                        |
-| --------- | -------------------------- | ------------------------------ | ------------------------------------ |
-| Catalog   | WorkQuery、WorkId          | Catalog/Text ports             | 作品列表、版本与卷目录               |
-| Reader    | PassageId、版本对读参数    | Text/Knowledge ports           | PassageContext、异文投影、提及与证据 |
-| Entity    | EntityId                   | Knowledge/Text/Spacetime ports | EntityProfile                        |
-| Discovery | SearchQuery                | search port + 事实 ports       | SearchHit page                       |
-| Atlas     | AtlasQuery                 | Spacetime/Knowledge ports      | MapObservation page                  |
-| Graph     | KnowledgeGraphQuery        | Knowledge ports                | nodes/edges                          |
-| Timeline  | TimelineQuery              | Knowledge/Spacetime ports      | tracks/items                         |
-| Research  | ResearchQuery              | Knowledge/Spacetime ports      | 可解释的冲突与缺失线索               |
-| Metrics   | 无或 publication ID        | 所有只读 ports                 | DatasetOverview                      |
-| Curation  | candidate/decision command | curation/canonical ports       | 追加式决策与发布请求                 |
+| 用例模块  | 输入                       | 读取                           | 输出投影/行为                                |
+| --------- | -------------------------- | ------------------------------ | -------------------------------------------- |
+| Catalog   | WorkQuery、WorkId          | Catalog/Text ports             | 作品列表、版本与卷目录                       |
+| Reader    | PassageId、版本对读参数    | Text/Knowledge ports           | PassageContext、人工优先异文投影、提及与证据 |
+| Entity    | EntityId                   | Knowledge/Text/Spacetime ports | EntityProfile                                |
+| Discovery | SearchQuery                | search port + 事实 ports       | SearchHit page                               |
+| Atlas     | AtlasQuery                 | Spacetime/Knowledge ports      | MapObservation page                          |
+| Graph     | KnowledgeGraphQuery        | Knowledge ports                | nodes/edges                                  |
+| Timeline  | TimelineQuery              | Knowledge/Spacetime ports      | tracks/items                                 |
+| Research  | ResearchQuery              | Knowledge/Spacetime ports      | 可解释的冲突与缺失线索                       |
+| Metrics   | 无或 publication ID        | 所有只读 ports                 | DatasetOverview                              |
+| Curation  | candidate/decision command | curation/canonical ports       | 追加式决策与发布请求                         |
 
 投影类型属于用例输出，不得被 pipeline 当作规范输入，也不得反向写入事实仓储。
 

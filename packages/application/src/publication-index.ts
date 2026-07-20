@@ -23,6 +23,7 @@ export class PublicationIndex {
   readonly volumes;
   readonly places;
   readonly pages;
+  readonly passageAlignmentsByWork;
   readonly geometriesByPlace;
   readonly occurrencesByEntity;
   readonly editionsByWork;
@@ -51,6 +52,10 @@ export class PublicationIndex {
     this.places = new Map(publication.places.map((item) => [item.id, item]));
     this.pages = new Map(
       publication.facsimilePages.map((item) => [item.id, item]),
+    );
+    this.passageAlignmentsByWork = groupBy(
+      publication.passageAlignments,
+      (item) => item.workId,
     );
     this.geometriesByPlace = groupBy(
       publication.geometries,

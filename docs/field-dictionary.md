@@ -1,6 +1,6 @@
-# 目标 0.5 字段字典
+# 目标 0.6 字段字典
 
-本字典是已实施的 0.5 契约基线，逐一规定字段名、类型、必填性、所有者与引用关系。历史数据差异见末尾迁移表；新代码不得重新引入这些字段。
+本字典是已实施的 0.6 契约基线，逐一规定字段名、类型、必填性、所有者与引用关系。历史数据差异见末尾迁移表；新代码不得重新引入这些字段。
 
 记号：`!` 必填，`?` 可选，`[]` 数组。所有 ID 均为品牌字符串；所有字符区间为原文 Unicode 索引的 `[start, end)`。
 
@@ -39,7 +39,7 @@
 | `locator?`  | string   | 页、条目号、图层要素号等原定位 |
 | `note?`     | string   | 只说明引用，不复制来源元数据   |
 
-`KnowledgePublication` 顶层集合固定为：`manifest`、`sources`、`works`、`editions`、`volumes`、`facsimilePages`、`passages`、`entities`、`mentions`、`assertions`、`places`、`geometries`、`occurrences`。集合存在时始终为数组。
+`KnowledgePublication` 顶层集合固定为：`manifest`、`sources`、`works`、`editions`、`volumes`、`facsimilePages`、`passages`、`passageAlignments`、`entities`、`mentions`、`assertions`、`places`、`geometries`、`occurrences`。这些集合始终存在且为数组。
 
 ## 2. Catalog
 
@@ -131,6 +131,22 @@
 | `region?` | `[x,y,width,height]` | 非负像素或 IIIF 区域；坐标系由页面来源规定 |
 
 同一段落可按阅读顺序引用多个页面。提供 `region` 时应同时提供页面 `width/height`，阅读器会在缩放和拖拽过程中保持高亮区域与影像同步。
+
+### PassageAlignment
+
+| 字段            | 类型                         | 规则                                             |
+| --------------- | ---------------------------- | ------------------------------------------------ |
+| `id!`           | PassageAlignmentId           | 人工对齐记录身份                                 |
+| `workId!`       | WorkId                       | 所有成员版本必须属于该作品                       |
+| `relation!`     | enum                         | `equivalent/partial_overlap/reordered/uncertain` |
+| `members!`      | PassageAlignmentMember[]     | 至少两个不同版本                                 |
+| `reviewStatus!` | `reviewed/verified/disputed` | 未审核机器建议不能进入正式集合                   |
+| `reviewedBy!`   | string                       | 人工裁决责任人                                   |
+| `reviewedAt!`   | RFC 3339 string              | 人工裁决时间                                     |
+| `note?`         | string                       | 编辑说明，不是原文证据                           |
+| `revision!`     | positive integer             | 受控修订号                                       |
+
+`PassageAlignmentMember` 由 `editionId!` 与非空、去重的 `passageIds!` 组成，支持一对一、一对多和多对多。同一成员中的段落必须属于声明版本；同一版本组合内，同一段落不得被两个有效对齐组重复占用。机器建议是校勘批次，不属于发布包；完整人工裁决由管线物化后才成为本集合中的事实。
 
 ## 4. Knowledge
 
@@ -287,3 +303,12 @@
 | 页面直接显示机器谓词           | 统一从谓词注册表读取中文标签           |
 | 页面自行理解关系方向           | 使用 directionality/inversePredicateId |
 | 旧谓词按字符串猜测迁移         | 禁止；除明确旧值外必须提供人工映射     |
+
+## 10. 0.5 → 0.6 必迁移项
+
+| 0.5 字段/行为          | 0.6 决策                                   |
+| ---------------------- | ------------------------------------------ |
+| 无正式人工篇章对齐集合 | 新增必备空集合 `passageAlignments`         |
+| 页面私有或自动版本配对 | 自动结果仅作投影；人工结果进入统一发布契约 |
+| 只支持一段对一段       | `members[].passageIds` 支持一对多和多对多  |
+| 建议与数据版本脱离     | 批次绑定 `publicationId + contentChecksum` |

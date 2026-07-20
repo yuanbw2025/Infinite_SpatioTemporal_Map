@@ -22,6 +22,7 @@ export function createEmptyPublication(): KnowledgePublication {
     volumes: [],
     facsimilePages: [],
     passages: [],
+    passageAlignments: [],
     entities: [],
     mentions: [],
     assertions: [],

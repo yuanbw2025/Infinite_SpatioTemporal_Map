@@ -148,6 +148,7 @@ class _PublicationSemantics:
                 "volumes",
                 "facsimilePages",
                 "passages",
+                "passageAlignments",
                 "entities",
                 "mentions",
                 "assertions",
@@ -161,6 +162,7 @@ class _PublicationSemantics:
         self.predicates = predicate_definitions()
         self.passages = {item["id"]: item for item in value["passages"]}
         self.volumes = {item["id"]: item for item in value["volumes"]}
+        self.editions = {item["id"]: item for item in value["editions"]}
         self.pages = {item["id"]: item for item in value["facsimilePages"]}
 
     def validate(self) -> None:
@@ -220,6 +222,40 @@ class _PublicationSemantics:
                 if page is None or page["volumeId"] != passage["volumeId"]:
                     raise SemanticValidationError(f"Passage {passage['id']} has an invalid facsimile anchor")
         _unique_sequences(self.value["passages"], ("volumeId",), "Passages")
+        occupied: set[tuple[tuple[str, ...], str]] = set()
+        for alignment in self.value["passageAlignments"]:
+            if alignment["workId"] not in self.ids["works"]:
+                raise SemanticValidationError(
+                    f"PassageAlignment {alignment['id']} references a missing work"
+                )
+            edition_ids = [member["editionId"] for member in alignment["members"]]
+            if len(set(edition_ids)) != len(edition_ids):
+                raise SemanticValidationError(
+                    f"PassageAlignment {alignment['id']} repeats an edition"
+                )
+            edition_key = tuple(sorted(edition_ids))
+            for member in alignment["members"]:
+                edition = self.editions.get(member["editionId"])
+                if edition is None or edition["workId"] != alignment["workId"]:
+                    raise SemanticValidationError(
+                        f"PassageAlignment {alignment['id']} has an invalid edition"
+                    )
+                for passage_id in member["passageIds"]:
+                    passage = self.passages.get(passage_id)
+                    if (
+                        passage is None
+                        or self.volumes[passage["volumeId"]]["editionId"]
+                        != member["editionId"]
+                    ):
+                        raise SemanticValidationError(
+                            f"PassageAlignment {alignment['id']} has an invalid passage"
+                        )
+                    occupied_key = (edition_key, passage_id)
+                    if occupied_key in occupied:
+                        raise SemanticValidationError(
+                            f"Passage {passage_id} is duplicated for the same edition set"
+                        )
+                    occupied.add(occupied_key)
 
     def _knowledge(self) -> None:
         for entity in self.value["entities"]:

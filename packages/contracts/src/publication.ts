@@ -3,6 +3,7 @@ import type {
   Edition,
   FacsimilePage,
   Passage,
+  PassageAlignment,
   SourceRecord,
   Volume,
   Work,
@@ -30,6 +31,7 @@ export interface KnowledgePublication {
   readonly volumes: readonly Volume[];
   readonly facsimilePages: readonly FacsimilePage[];
   readonly passages: readonly Passage[];
+  readonly passageAlignments: readonly PassageAlignment[];
   readonly entities: readonly Entity[];
   readonly mentions: readonly Mention[];
   readonly assertions: readonly Assertion[];

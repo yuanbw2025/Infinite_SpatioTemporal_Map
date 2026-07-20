@@ -3,6 +3,7 @@ import type {
   EditionComparisonResult,
   EditionComparisonRow,
   Passage,
+  PassageAlignment,
   TextComparison,
   TextDiffSegment,
 } from "@infinite-spacetime/contracts";
@@ -168,18 +169,28 @@ function sortedPassages(
 
 function comparisonRow(
   index: PublicationIndex,
-  left: Passage | undefined,
-  right: Passage | undefined,
+  left: readonly Passage[],
+  right: readonly Passage[],
   alignment: EditionComparisonRow["alignment"],
+  curatedAlignment?: PassageAlignment,
 ): EditionComparisonRow {
+  const first = left[0] ?? right[0]!;
   return {
-    key: left ? `left-${left.id}` : `right-${right!.id}`,
-    label: labelFor(index, left ?? right!),
+    key:
+      curatedAlignment?.id ??
+      (left[0] ? `left-${left[0].id}` : `right-${right[0]!.id}`),
+    label: labelFor(index, first),
     alignment,
-    ...(left ? { left } : {}),
-    ...(right ? { right } : {}),
-    ...(left && right
-      ? { difference: compareText(left.text.original, right.text.original) }
+    left,
+    right,
+    ...(curatedAlignment ? { curatedAlignment } : {}),
+    ...(left.length === 1 && right.length === 1
+      ? {
+          difference: compareText(
+            left[0]!.text.original,
+            right[0]!.text.original,
+          ),
+        }
       : {}),
   };
 }
@@ -204,37 +215,62 @@ export function compareEditions(
 
   const leftPassages = sortedPassages(index, query.leftEditionId);
   const rightPassages = sortedPassages(index, query.rightEditionId);
-  const consumed = new Set<string>();
+  const consumedLeft = new Set<string>();
+  const consumedRight = new Set<string>();
   const rows: EditionComparisonRow[] = [];
+  for (const alignment of index.passageAlignmentsByWork.get(query.workId) ??
+    []) {
+    const leftMember = alignment.members.find(
+      (member) => member.editionId === query.leftEditionId,
+    );
+    const rightMember = alignment.members.find(
+      (member) => member.editionId === query.rightEditionId,
+    );
+    if (!leftMember || !rightMember) continue;
+    const left = leftMember.passageIds.flatMap((id) => {
+      const passage = index.passages.get(id);
+      return passage ? [passage] : [];
+    });
+    const right = rightMember.passageIds.flatMap((id) => {
+      const passage = index.passages.get(id);
+      return passage ? [passage] : [];
+    });
+    if (!left.length || !right.length) continue;
+    for (const passage of left) consumedLeft.add(passage.id);
+    for (const passage of right) consumedRight.add(passage.id);
+    rows.push(comparisonRow(index, left, right, "curated", alignment));
+  }
   for (const left of leftPassages) {
+    if (consumedLeft.has(left.id)) continue;
     const key = alignmentKey(index, left);
     const sameLabel = rightPassages.find(
-      (right) => !consumed.has(right.id) && alignmentKey(index, right) === key,
+      (right) =>
+        !consumedRight.has(right.id) && alignmentKey(index, right) === key,
     );
     const leftVolumeLabel = normalized(
       index.volumes.get(left.volumeId)?.label ?? "",
     );
     const sameSequence = rightPassages.find(
       (right) =>
-        !consumed.has(right.id) &&
+        !consumedRight.has(right.id) &&
         right.sequence === left.sequence &&
         normalized(index.volumes.get(right.volumeId)?.label ?? "") ===
           leftVolumeLabel,
     );
     const right = sameLabel ?? sameSequence;
-    if (right) consumed.add(right.id);
+    if (right) consumedRight.add(right.id);
     rows.push(
       comparisonRow(
         index,
-        left,
-        right,
+        [left],
+        right ? [right] : [],
         sameLabel ? "label" : right ? "sequence" : "unpaired",
       ),
     );
   }
   for (const right of rightPassages) {
-    if (!consumed.has(right.id))
-      rows.push(comparisonRow(index, undefined, right, "unpaired"));
+    if (!consumedRight.has(right.id))
+      rows.push(comparisonRow(index, [], [right], "unpaired"));
   }
   return { leftEdition, rightEdition, rows };
 }

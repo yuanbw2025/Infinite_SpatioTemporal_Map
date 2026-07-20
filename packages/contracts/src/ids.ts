@@ -6,6 +6,7 @@ export type WorkId = Id<"WorkId">;
 export type EditionId = Id<"EditionId">;
 export type VolumeId = Id<"VolumeId">;
 export type PassageId = Id<"PassageId">;
+export type PassageAlignmentId = Id<"PassageAlignmentId">;
 export type FacsimilePageId = Id<"FacsimilePageId">;
 export type EntityId = Id<"EntityId">;
 export type MentionId = Id<"MentionId">;

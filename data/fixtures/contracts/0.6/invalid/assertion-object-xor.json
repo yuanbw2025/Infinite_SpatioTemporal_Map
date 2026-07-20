@@ -1,9 +1,9 @@
 {
   "manifest": {
-    "contractVersion": "0.5.0",
-    "publicationId": "invalid-unknown-predicate",
+    "contractVersion": "0.6.0",
+    "publicationId": "invalid-assertion-xor",
     "datasetVersion": "0.0.0",
-    "title": "未知谓词反例",
+    "title": "断言对象互斥反例",
     "generatedAt": "1970-01-01T00:00:00.000Z",
     "contentChecksum": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
     "sourceDescription": "反例"
@@ -14,14 +14,16 @@
   "volumes": [],
   "facsimilePages": [],
   "passages": [],
+  "passageAlignments": [],
   "entities": [],
   "mentions": [],
   "assertions": [
     {
       "id": "assertion-invalid",
       "subjectId": "entity-a",
-      "predicate": "page.private_relation",
+      "predicate": "other.related_to",
       "objectId": "entity-b",
+      "literalValue": "同时出现是不允许的",
       "evidence": [
         {
           "passageId": "passage-a",

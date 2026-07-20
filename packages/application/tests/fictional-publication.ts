@@ -5,7 +5,7 @@ import type {
 import type { PublicationReadPort } from "@infinite-spacetime/ports";
 export const publication = {
   manifest: {
-    contractVersion: "0.5.0",
+    contractVersion: "0.6.0",
     publicationId: "application-test" as PublicationId,
     datasetVersion: "1.0.0",
     title: "虚构测试发布包",
@@ -76,6 +76,7 @@ export const publication = {
       revision: 1,
     },
   ],
+  passageAlignments: [],
   entities: [
     {
       id: "person-1",

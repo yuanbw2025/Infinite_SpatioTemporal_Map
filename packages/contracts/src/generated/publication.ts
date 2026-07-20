@@ -32,6 +32,11 @@ export type Checksum = string;
 export type Uri = string;
 /**
  * This interface was referenced by `KnowledgePublication`'s JSON-Schema
+ * via the `definition` "EditorialReviewStatus".
+ */
+export type EditorialReviewStatus = "reviewed" | "verified" | "disputed";
+/**
+ * This interface was referenced by `KnowledgePublication`'s JSON-Schema
  * via the `definition` "EntityType".
  */
 export type EntityType =
@@ -152,6 +157,7 @@ export interface KnowledgePublication {
   volumes: Volume[];
   facsimilePages: FacsimilePage[];
   passages: Passage[];
+  passageAlignments: PassageAlignment[];
   entities: Entity[];
   mentions: Mention[];
   assertions: Assertion[];
@@ -164,7 +170,7 @@ export interface KnowledgePublication {
  * via the `definition` "PublicationManifest".
  */
 export interface PublicationManifest {
-  contractVersion: "0.5.0";
+  contractVersion: "0.6.0";
   publicationId: WireId;
   datasetVersion: string;
   title: NonEmptyString;
@@ -316,6 +322,39 @@ export interface FacsimileAnchor {
    * @maxItems 4
    */
   region?: [number, number, number, number];
+}
+/**
+ * This interface was referenced by `KnowledgePublication`'s JSON-Schema
+ * via the `definition` "PassageAlignment".
+ */
+export interface PassageAlignment {
+  id: WireId;
+  workId: WireId;
+  relation: "equivalent" | "partial_overlap" | "reordered" | "uncertain";
+  /**
+   * @minItems 2
+   */
+  members: [
+    PassageAlignmentMember,
+    PassageAlignmentMember,
+    ...PassageAlignmentMember[],
+  ];
+  reviewStatus: EditorialReviewStatus;
+  reviewedBy: NonEmptyString;
+  reviewedAt: Timestamp;
+  note?: NonEmptyString;
+  revision: number;
+}
+/**
+ * This interface was referenced by `KnowledgePublication`'s JSON-Schema
+ * via the `definition` "PassageAlignmentMember".
+ */
+export interface PassageAlignmentMember {
+  editionId: WireId;
+  /**
+   * @minItems 1
+   */
+  passageIds: [WireId, ...WireId[]];
 }
 /**
  * This interface was referenced by `KnowledgePublication`'s JSON-Schema

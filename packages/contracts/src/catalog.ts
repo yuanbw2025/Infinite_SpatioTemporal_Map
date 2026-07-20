@@ -2,6 +2,7 @@ import type * as Wire from "./generated/publication";
 import type {
   EditionId,
   FacsimilePageId,
+  PassageAlignmentId,
   PassageId,
   PlaceIdentityId,
   SourceId,
@@ -74,5 +75,24 @@ export type Passage = Readonly<
     readonly volumeId: VolumeId;
     readonly text: TextLayers;
     readonly facsimileAnchors: readonly FacsimileAnchor[];
+  }
+>;
+
+export type PassageAlignmentMember = Readonly<
+  Omit<Wire.PassageAlignmentMember, "editionId" | "passageIds"> & {
+    readonly editionId: EditionId;
+    readonly passageIds: readonly [PassageId, ...PassageId[]];
+  }
+>;
+
+export type PassageAlignment = Readonly<
+  Omit<Wire.PassageAlignment, "id" | "workId" | "members"> & {
+    readonly id: PassageAlignmentId;
+    readonly workId: WorkId;
+    readonly members: readonly [
+      PassageAlignmentMember,
+      PassageAlignmentMember,
+      ...PassageAlignmentMember[],
+    ];
   }
 >;

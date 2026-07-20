@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://infinite-spacetime.org/schemas/0.5.0/publication.schema.json",
+  "$id": "https://infinite-spacetime.org/schemas/0.6.0/publication.schema.json",
   "title": "KnowledgePublication",
   "description": "Canonical portable publication contract for Infinite SpatioTemporal Map.",
   "type": "object",
@@ -12,6 +12,7 @@
     "volumes",
     "facsimilePages",
     "passages",
+    "passageAlignments",
     "entities",
     "mentions",
     "assertions",
@@ -44,6 +45,10 @@
     "passages": {
       "type": "array",
       "items": { "$ref": "#/definitions/Passage" }
+    },
+    "passageAlignments": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/PassageAlignment" }
     },
     "entities": {
       "type": "array",
@@ -103,6 +108,10 @@
         "disputed",
         "rejected"
       ]
+    },
+    "EditorialReviewStatus": {
+      "title": "EditorialReviewStatus",
+      "enum": ["reviewed", "verified", "disputed"]
     },
     "PredicateId": {
       "title": "PredicateId",
@@ -198,7 +207,7 @@
         "sourceDescription"
       ],
       "properties": {
-        "contractVersion": { "const": "0.5.0" },
+        "contractVersion": { "const": "0.6.0" },
         "publicationId": { "$ref": "#/definitions/Id" },
         "datasetVersion": {
           "type": "string",
@@ -382,6 +391,55 @@
           "type": "array",
           "items": { "$ref": "#/definitions/FacsimileAnchor" }
         },
+        "revision": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "PassageAlignmentMember": {
+      "title": "PassageAlignmentMember",
+      "type": "object",
+      "required": ["editionId", "passageIds"],
+      "properties": {
+        "editionId": { "$ref": "#/definitions/Id" },
+        "passageIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/definitions/Id" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "PassageAlignment": {
+      "title": "PassageAlignment",
+      "type": "object",
+      "required": [
+        "id",
+        "workId",
+        "relation",
+        "members",
+        "reviewStatus",
+        "reviewedBy",
+        "reviewedAt",
+        "revision"
+      ],
+      "properties": {
+        "id": { "$ref": "#/definitions/Id" },
+        "workId": { "$ref": "#/definitions/Id" },
+        "relation": {
+          "enum": ["equivalent", "partial_overlap", "reordered", "uncertain"]
+        },
+        "members": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "$ref": "#/definitions/PassageAlignmentMember" }
+        },
+        "reviewStatus": {
+          "$ref": "#/definitions/EditorialReviewStatus"
+        },
+        "reviewedBy": { "$ref": "#/definitions/NonEmptyString" },
+        "reviewedAt": { "$ref": "#/definitions/Timestamp" },
+        "note": { "$ref": "#/definitions/NonEmptyString" },
         "revision": { "type": "integer", "minimum": 1 }
       },
       "additionalProperties": false

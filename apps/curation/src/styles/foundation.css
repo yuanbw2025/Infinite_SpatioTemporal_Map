@@ -247,6 +247,42 @@ button:disabled {
   grid-template-columns: 200px 180px minmax(220px, 1fr);
 }
 
+.passage-review-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.passage-review-columns section {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.passage-review-columns label,
+.passage-review-columns input {
+  display: block;
+  width: 100%;
+}
+
+.passage-review-columns article {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+}
+
+.passage-review-columns article p {
+  white-space: pre-wrap;
+}
+
+@media (max-width: 900px) {
+  .passage-review-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
 .batch-summary {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

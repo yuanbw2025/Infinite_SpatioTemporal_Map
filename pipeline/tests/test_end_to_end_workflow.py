@@ -36,7 +36,7 @@ class EndToEndWorkflowTest(unittest.TestCase):
         base = with_content_checksum(
             {
                 "manifest": {
-                    "contractVersion": "0.5.0",
+                    "contractVersion": "0.6.0",
                     "publicationId": "fictional-e2e",
                     "datasetVersion": "0.0.0-test",
                     "title": "虚构端到端测试",
@@ -88,6 +88,7 @@ class EndToEndWorkflowTest(unittest.TestCase):
                         "revision": 1,
                     }
                 ],
+                "passageAlignments": [],
                 "entities": [
                     {
                         "id": "person-1",

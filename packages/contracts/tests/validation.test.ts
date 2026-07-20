@@ -18,7 +18,7 @@ interface GoldenCase {
 
 const fixtures = resolve(
   dirname(fileURLToPath(import.meta.url)),
-  "../../../data/fixtures/contracts/0.5",
+  "../../../data/fixtures/contracts/0.6",
 );
 
 async function readJson(path: string): Promise<unknown> {
@@ -46,7 +46,7 @@ describe("canonical publication contract", () => {
       resolve(fixtures, "valid/minimal-publication.json"),
     );
     expect(parseKnowledgePublication(valid).manifest.contractVersion).toBe(
-      "0.5.0",
+      "0.6.0",
     );
     const invalid = await readJson(
       resolve(fixtures, "invalid/missing-root-collection.json"),

@@ -19,6 +19,7 @@ export function getDatasetOverview(index: PublicationIndex): DatasetOverview {
     ...index.publication.assertions.map((item) => item.reviewStatus),
     ...index.publication.geometries.map((item) => item.reviewStatus),
     ...index.publication.occurrences.map((item) => item.reviewStatus),
+    ...index.publication.passageAlignments.map((item) => item.reviewStatus),
   ])
     reviewCounts[status] += 1;
   const publication = index.publication;
@@ -29,6 +30,7 @@ export function getDatasetOverview(index: PublicationIndex): DatasetOverview {
       editions: publication.editions.length,
       volumes: publication.volumes.length,
       passages: publication.passages.length,
+      passageAlignments: publication.passageAlignments.length,
       entities: publication.entities.length,
       mentions: publication.mentions.length,
       assertions: publication.assertions.length,

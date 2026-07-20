@@ -2,6 +2,11 @@
 
 from .models import PipelineContext, PipelineReport, StageReport
 from .alignment import AlignmentError, resolve_alignments, suggest_alignments
+from .passage_alignment import (
+    PassageAlignmentError,
+    apply_passage_alignment_decisions,
+    suggest_passage_alignments,
+)
 from .curation import (
     CurationError,
     apply_review_decisions,
@@ -26,6 +31,7 @@ from .migrations import (
     MigrationError,
     migrate_0_3_to_0_4,
     migrate_0_4_to_0_5,
+    migrate_0_5_to_0_6,
     migrate_to_current,
 )
 from .promotion import merge_reviewed_candidates, promote_candidates_atomically
@@ -51,6 +57,7 @@ from .transcription import TranscriptionError, attach_transcription
 __all__ = [
     "Pipeline",
     "AlignmentError",
+    "PassageAlignmentError",
     "PipelineContext",
     "PipelineReport",
     "PipelineStage",
@@ -69,6 +76,7 @@ __all__ = [
     "TextSegment",
     "add_text_layer",
     "apply_review_decisions",
+    "apply_passage_alignment_decisions",
     "assemble_publication",
     "attach_transcription",
     "build_source_manifest",
@@ -80,6 +88,7 @@ __all__ = [
     "load_source_metadata",
     "migrate_0_3_to_0_4",
     "migrate_0_4_to_0_5",
+    "migrate_0_5_to_0_6",
     "migrate_to_current",
     "merge_reviewed_candidates",
     "promote_candidates_atomically",
@@ -90,6 +99,7 @@ __all__ = [
     "segment_text",
     "resolve_alignments",
     "suggest_alignments",
+    "suggest_passage_alignments",
     "TranscriptionError",
     "verify_source_manifest",
 ]

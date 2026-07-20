@@ -3,6 +3,7 @@ import type {
   FacsimileAnchor,
   FacsimilePage,
   Passage,
+  PassageAlignment,
   SourceRecord,
   Volume,
   Work,
@@ -129,9 +130,10 @@ export interface TextComparison {
 export interface EditionComparisonRow {
   readonly key: string;
   readonly label: string;
-  readonly alignment: "label" | "sequence" | "unpaired";
-  readonly left?: Passage;
-  readonly right?: Passage;
+  readonly alignment: "curated" | "label" | "sequence" | "unpaired";
+  readonly left: readonly Passage[];
+  readonly right: readonly Passage[];
+  readonly curatedAlignment?: PassageAlignment;
   readonly difference?: TextComparison;
 }
 
@@ -193,6 +195,7 @@ export interface DatasetOverview {
     readonly editions: number;
     readonly volumes: number;
     readonly passages: number;
+    readonly passageAlignments: number;
     readonly entities: number;
     readonly mentions: number;
     readonly assertions: number;

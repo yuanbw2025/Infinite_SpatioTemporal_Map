@@ -25,6 +25,13 @@ const comparing = ref(false);
 const error = ref("");
 let comparisonRequestId = 0;
 
+const curatedRelationLabels = {
+  equivalent: "整体对应",
+  partial_overlap: "部分重合",
+  reordered: "结构重排",
+  uncertain: "对应待考",
+} as const;
+
 function similarityLabel(row: EditionComparisonRow): string | undefined {
   return row.difference
     ? `文本相似 ${Math.round(row.difference.similarity * 100)}%`
@@ -136,11 +143,13 @@ onMounted(async () => {
             <strong>{{ row.label }}</strong>
             <span>
               {{
-                row.alignment === "label"
-                  ? "同名卷章"
-                  : row.alignment === "sequence"
-                    ? "按次序暂配"
-                    : "单侧段落"
+                row.alignment === "curated"
+                  ? `人工校定 · ${curatedRelationLabels[row.curatedAlignment!.relation]}`
+                  : row.alignment === "label"
+                    ? "同名卷章"
+                    : row.alignment === "sequence"
+                      ? "按次序暂配"
+                      : "单侧段落"
               }}
               <template v-if="similarityLabel(row)">
                 · {{ similarityLabel(row) }}</template
@@ -148,48 +157,63 @@ onMounted(async () => {
               <template v-if="row.difference?.isCoarse">
                 · 长段粗略比较</template
               >
+              <template v-if="row.curatedAlignment">
+                · {{ row.curatedAlignment.reviewStatus }}</template
+              >
             </span>
           </header>
           <div class="edition-text-pair">
-            <div :class="{ 'missing-edition-text': !row.left }">
-              <template v-if="row.left">
-                <p class="serif-snippet">
-                  <template v-if="row.difference">
-                    <span
-                      v-for="(segment, index) in row.difference.left"
-                      :key="`left-${index}`"
-                      :class="{
-                        'edition-diff--removed': segment.kind === 'removed',
-                      }"
-                      >{{ segment.text }}</span
-                    >
-                  </template>
-                  <template v-else>{{ row.left.text.original }}</template>
-                </p>
-                <router-link :to="`/reader/${row.left.id}`"
-                  >打开左侧原文 →</router-link
+            <div :class="{ 'missing-edition-text': !row.left.length }">
+              <template v-if="row.left.length">
+                <article
+                  v-for="passage in row.left"
+                  :key="passage.id"
+                  class="aligned-passage"
                 >
+                  <p class="serif-snippet">
+                    <template v-if="row.difference">
+                      <span
+                        v-for="(segment, index) in row.difference.left"
+                        :key="`left-${index}`"
+                        :class="{
+                          'edition-diff--removed': segment.kind === 'removed',
+                        }"
+                        >{{ segment.text }}</span
+                      >
+                    </template>
+                    <template v-else>{{ passage.text.original }}</template>
+                  </p>
+                  <router-link :to="`/reader/${passage.id}`"
+                    >打开左侧原文 →</router-link
+                  >
+                </article>
               </template>
               <span v-else>此侧暂无对应段落</span>
             </div>
-            <div :class="{ 'missing-edition-text': !row.right }">
-              <template v-if="row.right">
-                <p class="serif-snippet">
-                  <template v-if="row.difference">
-                    <span
-                      v-for="(segment, index) in row.difference.right"
-                      :key="`right-${index}`"
-                      :class="{
-                        'edition-diff--inserted': segment.kind === 'inserted',
-                      }"
-                      >{{ segment.text }}</span
-                    >
-                  </template>
-                  <template v-else>{{ row.right.text.original }}</template>
-                </p>
-                <router-link :to="`/reader/${row.right.id}`"
-                  >打开右侧原文 →</router-link
+            <div :class="{ 'missing-edition-text': !row.right.length }">
+              <template v-if="row.right.length">
+                <article
+                  v-for="passage in row.right"
+                  :key="passage.id"
+                  class="aligned-passage"
                 >
+                  <p class="serif-snippet">
+                    <template v-if="row.difference">
+                      <span
+                        v-for="(segment, index) in row.difference.right"
+                        :key="`right-${index}`"
+                        :class="{
+                          'edition-diff--inserted': segment.kind === 'inserted',
+                        }"
+                        >{{ segment.text }}</span
+                      >
+                    </template>
+                    <template v-else>{{ passage.text.original }}</template>
+                  </p>
+                  <router-link :to="`/reader/${passage.id}`"
+                    >打开右侧原文 →</router-link
+                  >
+                </article>
               </template>
               <span v-else>此侧暂无对应段落</span>
             </div>
@@ -223,5 +247,10 @@ onMounted(async () => {
   background: #dcefe3;
   text-decoration: underline;
   text-decoration-thickness: 2px;
+}
+.aligned-passage + .aligned-passage {
+  padding-top: 14px;
+  margin-top: 14px;
+  border-top: 1px dashed var(--line);
 }
 </style>

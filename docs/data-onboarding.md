@@ -29,6 +29,7 @@ editions     文献版本与来源引用
 volumes      卷章结构
 facsimilePages 独立影印页、图像地址与所属来源
 passages     原文、简体、白话与影印锚点
+passageAlignments 经人工核定的跨版本篇章对应组
 entities     人物、地点、事件、官职、机构与文博对象
 mentions     实体在原文中的字符位置
 assertions   带证据的关系和属性主张
@@ -94,12 +95,26 @@ PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline promote \
 
 实体和历史地点候选在普通内容审核前先运行 `align`。系统只给出带评分与理由的匹配建议，人工必须逐项选择合并、新建或保持分立；`resolve-alignments` 在合并异名和重写候选引用后再次执行发布包校验，未完整裁决、目标越权或引用冲突都会停止处理。
 
+跨版本篇章先运行 `suggest-passage-alignments`。建议批次包含两版原文、匹配理由和置信度，并绑定当前发布包校验和；在校勘工作台接受、改为一对多/多对多或驳回后，用 `apply-passage-alignments` 生成新发布包：
+
+```bash
+PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline suggest-passage-alignments \
+  publication.json passage-alignments.json \
+  --work-id WORK_ID --left-edition-id EDITION_A --right-edition-id EDITION_B \
+  --generator-id matcher-name-and-version
+PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline apply-passage-alignments \
+  publication.json passage-alignments.json passage-decisions.json publication.next.json
+```
+
+决策必须覆盖整批。页面自动配对仍只用于尚未校定的段落，不能写回或覆盖原文。
+
 ## 接入后的功能映射
 
 | 数据                            | 自动启用的功能                         |
 | ------------------------------- | -------------------------------------- |
 | works + editions + volumes      | 书库、版本与卷章导航                   |
 | passages                        | 原文目录、分层阅读、全文与组合检索     |
+| passageAlignments               | 优先采用人工核定关系的版本对读         |
 | entities + mentions             | 实体高亮、人物/文博列表、原文出现      |
 | assertions + evidence           | 实体档案、关系、时代与出处回溯         |
 | places + geometries             | 随时代切换的历史名称、单区与不连续辖区 |
@@ -117,6 +132,7 @@ PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline promote \
 - `Assertion.predicate` 必须来自核心词表，且对象/文字值和实体类型符合定义。
 - 页面功能不得直接修改发布包；数据修订必须回到管线重新发布。
 - 机器候选不得绕过人工审核直接进入正式发布。
+- 篇章对齐建议不得直接进入 `passageAlignments`；正式记录必须包含裁决人、时间和审核状态。
 - 原件校验值变化后必须重新提取、分段和审核，不能沿用旧审计结论。
 - `Polygon` 和 `MultiPolygon` 的每个环至少四点且首尾闭合，坐标使用 WGS 84 经度、纬度顺序。
 

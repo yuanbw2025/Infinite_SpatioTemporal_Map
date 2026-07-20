@@ -7,6 +7,7 @@
 - `Edition`：通过 SourceRef 可追溯到来源、馆藏与权利说明的具体版本。
 - `Volume`：卷、章等有序结构。
 - `Passage`：最小稳定引用单元；实体出现、知识证据和搜索结果都回到这里。
+- `PassageAlignment`：人工核定的跨版本段落对应组，可表达一对一、一对多和多对多；自动匹配不进入正式事实。
 - `FacsimilePage/FacsimileAnchor`：影印页面及段落版面区域锚点，文本阶段可以为空。
 
 ## 知识轴
@@ -41,6 +42,6 @@
 
 ## 目标契约迁移说明
 
-0.5 契约继续遵守 ADR 0010：`Passage` 只保留 `volumeId`，`Volume → Edition → Work` 负责归属；地点规范名由 Entity 唯一拥有；作品地域统一进入 coverage；来源统一进入 Source Registry；`Assertion.predicate` 使用版本化核心词表。历史数据必须通过迁移器逐版本进入当前契约，不能手工猜测或删改字段。
+0.6 契约继续遵守 ADR 0010：`Passage` 只保留 `volumeId`，`Volume → Edition → Work` 负责归属；`PassageAlignment` 只引用已有 Work、Edition 与 Passage；地点规范名由 Entity 唯一拥有；作品地域统一进入 coverage；来源统一进入 Source Registry；`Assertion.predicate` 使用版本化核心词表。历史数据必须通过迁移器逐版本进入当前契约，不能手工猜测或删改字段。
 
-0.4 的逐字段名称、类型、必填性和引用关系以 `field-dictionary.md` 为准。
+0.6 的逐字段名称、类型、必填性和引用关系以 `field-dictionary.md` 为准。

@@ -7,6 +7,11 @@ import json
 from pathlib import Path
 
 from .alignment import AlignmentError, resolve_alignments, suggest_alignments
+from .passage_alignment import PassageAlignmentError
+from .passage_alignment_cli import (
+    configure_passage_alignment_commands,
+    run_passage_alignment_command,
+)
 from .curation import (
     CurationError,
     apply_review_decisions,
@@ -164,6 +169,8 @@ def build_parser() -> argparse.ArgumentParser:
     resolve.add_argument("alignment_batch", type=Path)
     resolve.add_argument("decisions", type=Path)
     resolve.add_argument("output_dir", type=Path)
+
+    configure_passage_alignment_commands(commands)
 
     review = commands.add_parser(
         "review", help="apply append-only human decisions to a candidate batch"
@@ -324,6 +331,11 @@ def main() -> int:
             _write_json(args.output_dir / "candidates.aligned.json", next_candidates)
             _write_json(args.output_dir / "publication.aligned.json", next_publication)
             print(f"Resolved {len(decisions)} alignments: {args.output_dir}")
+        elif args.command in {
+            "suggest-passage-alignments",
+            "apply-passage-alignments",
+        }:
+            print(run_passage_alignment_command(args))
         elif args.command == "review":
             decisions = _load_json(args.decisions)
             if not isinstance(decisions, list):
@@ -378,6 +390,7 @@ def main() -> int:
         CurationError,
         CandidateExtractionError,
         AlignmentError,
+        PassageAlignmentError,
         MigrationError,
     ) as error:
         print(f"Publication failed: {error}")

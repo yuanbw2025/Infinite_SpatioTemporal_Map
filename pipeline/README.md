@@ -119,7 +119,7 @@ PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline migrate-to-curren
   --report workspace/migration-report.json
 ```
 
-0.3 → 0.4 把版本/来源、影印页、地点名称和作品覆盖范围移入唯一所有者；0.4 → 0.5 把任意关系字符串迁移到版本化核心谓词。当旧历史名称或几何存在多个可能来源时，必须用 `--default-source-id` 明确策展归属；未知谓词必须在 JSON 对象形式的 `--predicate-map` 中逐项裁决。迁移器不会猜测，缺少权利说明、影印 URL、谓词映射或冗余字段冲突时会停止。
+0.3 → 0.4 把版本/来源、影印页、地点名称和作品覆盖范围移入唯一所有者；0.4 → 0.5 把任意关系字符串迁移到版本化核心谓词；0.5 → 0.6 增加正式人工篇章对齐集合。当旧历史名称或几何存在多个可能来源时，必须用 `--default-source-id` 明确策展归属；未知谓词必须在 JSON 对象形式的 `--predicate-map` 中逐项裁决。迁移器不会猜测，缺少权利说明、影印 URL、谓词映射或冗余字段冲突时会停止。
 
 ## 实体与历史地点对齐
 
@@ -139,6 +139,23 @@ PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline resolve-alignment
 ```
 
 决策必须覆盖整批，合并目标必须来自建议列表。合并会保留异名/带来源的历史名称、重写后续候选引用、标记重复候选不再物化，重算发布包校验和并把剩余候选显式重绑定到新版本；“同名不同人/地”可明确选择保持分立。
+
+## 跨版本篇章人工对齐
+
+机器只按卷标、章节标与顺序生成保守建议，人工可以把两侧段落集合修订为一对多或多对多：
+
+```bash
+PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline suggest-passage-alignments \
+  publication.json workspace/passage-alignments.json \
+  --work-id WORK_ID --left-edition-id EDITION_A --right-edition-id EDITION_B \
+  --generator-id matcher-name-and-version
+
+PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline apply-passage-alignments \
+  publication.json workspace/passage-alignments.json \
+  workspace/passage-decisions.json publication.next.json
+```
+
+在 `pnpm dev:curation` 的“版本篇章对齐”工作区完成整批裁决。批次绑定发布包 ID 与内容校验和；旧批次、遗漏裁决、跨版本段落、重复占用和缺少人工责任信息都会阻止发布。
 
 开发期 `validate` 允许机器建议存在，便于预览；正式发布必须通过更严格的 `gate`。门禁会同时检查发布契约、版本权利说明、来源清单、原件校验值、候选积压和所有知识记录的人工审核状态，并可输出机器可读报告：
 
