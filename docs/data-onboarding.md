@@ -93,7 +93,7 @@ PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline promote \
 | assertions + evidence           | 实体档案、关系、时代与出处回溯         |
 | places + geometries             | 随时代切换的历史名称、单区与不连续辖区 |
 | occurrences                     | 人物游历、事件现场与文物流转           |
-| facsimile anchors               | 阅读器影印联动                         |
+| facsimile pages + anchors       | 多页影印、IIIF 解析与版面区域联动      |
 | object assertions               | 知识图谱与实体关系展开                 |
 | temporal assertions/occurrences | 历史时间线与人物生平轨道               |
 | disputed/conflicting records    | 研究工具中的待核验线索                 |
@@ -107,6 +107,12 @@ PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline promote \
 - 机器候选不得绕过人工审核直接进入正式发布。
 - 原件校验值变化后必须重新提取、分段和审核，不能沿用旧审计结论。
 - `Polygon` 和 `MultiPolygon` 的每个环至少四点且首尾闭合，坐标使用 WGS 84 经度、纬度顺序。
+
+## 影印页接入
+
+每个影印页必须登记 `sourceId`，并提供直接 `imageUrl` 或 IIIF Presentation 2/3 `canvasUrl`。直接图像无需额外处理；IIIF Canvas 由读取适配器按需解析并缓存。段落可用多个 `facsimileAnchors` 跨页关联，`pageId` 指向页面，`region: [x, y, width, height]` 表示段落在该页的像素区域。
+
+若需要区域高亮，应同时登记页面 `width` 和 `height`，且区域不得超出页面边界。数据管线负责引用与尺寸的语义校验；阅读器负责翻页、缩放、拖拽和区域叠加，不产生新的影印定位数据。
 
 ## 地图底图
 

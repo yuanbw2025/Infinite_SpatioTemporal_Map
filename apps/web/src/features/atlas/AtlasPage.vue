@@ -11,6 +11,8 @@ import PageHeader from "../../components/PageHeader.vue";
 import { useApplication } from "../../composables/use-application";
 import {
   buildTemporalQuery,
+  civilFromDay,
+  rangeTick,
   temporalSortValue,
   yearMonthFromTick,
   type TimeResolution,
@@ -77,21 +79,21 @@ const journeyEntityId = computed(
 
 const sliderMin = computed(() => {
   if (startYear.value === undefined) return undefined;
-  return timeResolution.value === "month"
-    ? startYear.value * 12
-    : startYear.value;
+  return rangeTick(startYear.value, timeResolution.value, "start");
 });
 
 const sliderMax = computed(() => {
   if (endYear.value === undefined) return undefined;
-  return timeResolution.value === "month"
-    ? endYear.value * 12 + 11
-    : endYear.value;
+  return rangeTick(endYear.value, timeResolution.value, "end");
 });
 
 const currentTimeLabel = computed(() => {
   if (currentTick.value === undefined) return "范围模式";
   if (timeResolution.value === "year") return `${currentTick.value}年`;
+  if (timeResolution.value === "day") {
+    const { year, month, day } = civilFromDay(currentTick.value);
+    return `${year}年${String(month).padStart(2, "0")}月${String(day).padStart(2, "0")}日`;
+  }
   const { year, month } = yearMonthFromTick(currentTick.value);
   return `${year}年${String(month).padStart(2, "0")}月`;
 });
@@ -281,6 +283,7 @@ watch(journeyEntityId, (entityId) => void loadJourney(entityId), {
         <select v-model="timeResolution" @change="changeResolution">
           <option value="year">按年</option>
           <option value="month">按月</option>
+          <option value="day">按日</option>
         </select>
       </label>
       <input
@@ -294,7 +297,15 @@ watch(journeyEntityId, (entityId) => void loadJourney(entityId), {
         @change="load()"
       />
       <label class="timeline-step">
-        <span>步长（{{ timeResolution === "month" ? "月" : "年" }}）</span>
+        <span
+          >步长（{{
+            timeResolution === "day"
+              ? "日"
+              : timeResolution === "month"
+                ? "月"
+                : "年"
+          }}）</span
+        >
         <input v-model.number="playbackStep" type="number" min="1" />
       </label>
       <button class="timeline-play" type="button" @click="togglePlayback">

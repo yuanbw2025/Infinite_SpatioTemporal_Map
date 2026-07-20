@@ -5,6 +5,9 @@ const props = defineProps<{
   imageUrl: string | undefined;
   canvasUrl: string | undefined;
   pageLabel: string;
+  region: readonly [number, number, number, number] | undefined;
+  width: number | undefined;
+  height: number | undefined;
 }>();
 
 const zoom = ref(1);
@@ -17,6 +20,16 @@ const transform = computed(
   () =>
     `translate(${offset.value.x}px, ${offset.value.y}px) scale(${zoom.value})`,
 );
+const regionStyle = computed(() => {
+  if (!props.region || !props.width || !props.height) return undefined;
+  const [x, y, width, height] = props.region;
+  return {
+    left: `${(x / props.width) * 100}%`,
+    top: `${(y / props.height) * 100}%`,
+    width: `${(width / props.width) * 100}%`,
+    height: `${(height / props.height) * 100}%`,
+  };
+});
 
 function setZoom(value: number) {
   zoom.value = Math.min(Math.max(value, 0.5), 5);
@@ -87,12 +100,15 @@ function wheelZoom(event: WheelEvent) {
       @pointercancel="endDrag"
       @wheel="wheelZoom"
     >
-      <img
-        :src="imageUrl"
-        alt="方志影印页"
-        draggable="false"
-        :style="{ transform }"
-      />
+      <div class="facsimile-content" :style="{ transform }">
+        <img :src="imageUrl" alt="方志影印页" draggable="false" />
+        <i
+          v-if="regionStyle"
+          class="facsimile-region"
+          :style="regionStyle"
+          aria-label="本段原文在影印页中的位置"
+        ></i>
+      </div>
     </div>
     <a
       v-else-if="canvasUrl"
@@ -150,12 +166,24 @@ function wheelZoom(event: WheelEvent) {
 .facsimile-stage--dragging {
   cursor: grabbing;
 }
-.facsimile-stage img {
-  display: block;
+.facsimile-content {
+  position: relative;
+  width: max-content;
   max-width: 100%;
   margin: 0 auto;
   transform-origin: 50% 50%;
   transition: transform 80ms ease-out;
+}
+.facsimile-content img {
+  display: block;
+  max-width: 100%;
+  pointer-events: none;
+}
+.facsimile-region {
+  position: absolute;
+  border: 2px solid #f4b642;
+  background: rgba(244, 182, 66, 0.2);
+  box-shadow: 0 0 0 2px rgba(36, 34, 29, 0.35);
   pointer-events: none;
 }
 </style>

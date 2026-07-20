@@ -100,6 +100,7 @@
 | `height?`    | positive integer     | 像素高        |
 
 `canvasUrl` 与 `imageUrl` 至少一个存在；宽高必须同时存在或同时省略。
+`imageUrl` 直接用于展示；仅有 `canvasUrl` 时，由 `FacsimileImagePort` 解析 IIIF Presentation 2/3 Canvas。协议解析结果是运行时资源，不写回发布包。
 
 ### Passage
 
@@ -128,6 +129,8 @@
 | --------- | -------------------- | ------------------------------------------ |
 | `pageId!` | FacsimilePageId      | 指向页面                                   |
 | `region?` | `[x,y,width,height]` | 非负像素或 IIIF 区域；坐标系由页面来源规定 |
+
+同一段落可按阅读顺序引用多个页面。提供 `region` 时应同时提供页面 `width/height`，阅读器会在缩放和拖拽过程中保持高亮区域与影像同步。
 
 ## 4. Knowledge
 

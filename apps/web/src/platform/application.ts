@@ -1,5 +1,6 @@
 import {
   createEmptyPublication,
+  createIiifPresentationImageAdapter,
   createStaticPublicationSource,
 } from "@infinite-spacetime/adapters";
 import {
@@ -39,6 +40,11 @@ async function buildRuntime(
 ): Promise<ApplicationRuntime> {
   const services = createApplicationServices(
     createStaticPublicationSource(publication),
+    {
+      facsimileImages: createIiifPresentationImageAdapter(async (input, init) =>
+        fetch(input, init),
+      ),
+    },
   );
   const overview = await services.metadata.overview();
   return {

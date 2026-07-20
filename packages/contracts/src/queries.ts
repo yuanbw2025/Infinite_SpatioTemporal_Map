@@ -107,6 +107,15 @@ export interface PassageFacsimile {
   readonly page: FacsimilePage;
 }
 
+/** Resolved display resource. This is a use-case projection, not canonical data. */
+export interface FacsimileImageResource {
+  readonly imageUrl: string;
+  readonly canvasUrl?: string;
+  readonly width?: number;
+  readonly height?: number;
+  readonly source: "direct" | "iiif";
+}
+
 export interface EntityQuery extends PageRequest {
   readonly text?: string;
   readonly types?: readonly EntityType[];

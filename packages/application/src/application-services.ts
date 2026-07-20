@@ -9,6 +9,8 @@ import type {
   EntitySummary,
   KnowledgeGraphQuery,
   KnowledgeGraphResult,
+  FacsimileImageResource,
+  FacsimilePage,
   Page,
   Passage,
   PassageContext,
@@ -26,7 +28,12 @@ import type {
   WorkId,
   WorkQuery,
 } from "@infinite-spacetime/contracts";
-import type { PublicationReadPort } from "@infinite-spacetime/ports";
+import type {
+  FacsimileImagePort,
+  PublicationReadPort,
+  SearchIndexPort,
+  SpatialQueryPort,
+} from "@infinite-spacetime/ports";
 import { exploreAtlas } from "./atlas-use-case";
 import { listVolumes, listWorks, openWork } from "./catalog-use-cases";
 import { exploreGraph } from "./graph-use-case";
@@ -48,6 +55,9 @@ export interface ApplicationServices {
   readonly reader: {
     listPassages(query: PassageQuery): Promise<Page<Passage>>;
     readPassage(id: PassageId): Promise<PassageContext>;
+    resolveFacsimile(
+      page: FacsimilePage,
+    ): Promise<FacsimileImageResource | undefined>;
   };
   readonly knowledge: {
     listEntities(query?: EntityQuery): Promise<Page<EntitySummary>>;
@@ -67,9 +77,16 @@ export interface ApplicationServices {
   };
 }
 
+export interface ApplicationDependencies {
+  readonly facsimileImages?: FacsimileImagePort;
+  readonly searchIndex?: SearchIndexPort;
+  readonly spatialQuery?: SpatialQueryPort;
+}
+
 /** Composition of use cases around one immutable publication and one shared index. */
 export function createApplicationServices(
   port: PublicationReadPort,
+  dependencies: ApplicationDependencies = {},
 ): ApplicationServices {
   const index = new PublicationIndex(port.readPublication());
   return {
@@ -82,13 +99,37 @@ export function createApplicationServices(
     reader: {
       listPassages: async (query) => listPassages(index, query),
       readPassage: async (id) => readPassage(index, id),
+      resolveFacsimile: async (page) => {
+        if (page.imageUrl) {
+          return {
+            imageUrl: page.imageUrl,
+            ...(page.canvasUrl ? { canvasUrl: page.canvasUrl } : {}),
+            ...(page.width ? { width: page.width } : {}),
+            ...(page.height ? { height: page.height } : {}),
+            source: "direct",
+          };
+        }
+        return page.canvasUrl && dependencies.facsimileImages
+          ? dependencies.facsimileImages.resolveCanvas(page.canvasUrl)
+          : undefined;
+      },
     },
     knowledge: {
       listEntities: async (query) => listEntities(index, query),
       openEntity: async (id) => openEntity(index, id),
     },
-    atlas: { explore: async (query) => exploreAtlas(index, query) },
-    search: { run: async (query) => search(index, query) },
+    atlas: {
+      explore: async (query) =>
+        dependencies.spatialQuery
+          ? dependencies.spatialQuery.explore(query)
+          : exploreAtlas(index, query),
+    },
+    search: {
+      run: async (query) =>
+        dependencies.searchIndex
+          ? dependencies.searchIndex.search(query)
+          : search(index, query),
+    },
     metadata: { overview: async () => getDatasetOverview(index) },
     graph: { explore: async (query) => exploreGraph(index, query) },
     timeline: { build: async (query) => buildTimeline(index, query) },

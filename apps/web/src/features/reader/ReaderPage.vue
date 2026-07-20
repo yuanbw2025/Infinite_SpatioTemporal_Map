@@ -15,7 +15,7 @@ import EntityTypeBadge from "../../components/EntityTypeBadge.vue";
 import PageHeader from "../../components/PageHeader.vue";
 import ReviewBadge from "../../components/ReviewBadge.vue";
 import { useApplication } from "../../composables/use-application";
-import FacsimileViewer from "./components/FacsimileViewer.vue";
+import PassageFacsimile from "./components/PassageFacsimile.vue";
 
 type TextLayer = "original" | "simplified" | "punctuated" | "modernTranslation";
 type ReaderViewMode = "single" | "parallel";
@@ -42,8 +42,6 @@ const passageId = computed(() => {
 const displayedText = computed(
   () => context.value?.passage.text[activeLayer.value] ?? "",
 );
-const primaryFacsimile = computed(() => context.value?.facsimiles[0]);
-
 const originalSegments = computed<readonly TextSegment[]>(() => {
   const current = context.value;
   if (!current) return [];
@@ -96,7 +94,8 @@ async function load() {
   context.value = undefined;
   try {
     if (passageId.value) {
-      context.value = await services.reader.readPassage(passageId.value);
+      const nextContext = await services.reader.readPassage(passageId.value);
+      context.value = nextContext;
       activeLayer.value = "original";
     } else {
       works.value = (await services.library.listWorks({ limit: 200 })).items;
@@ -208,15 +207,10 @@ watch(passageId, load, { immediate: true });
             description="原文保持不变；简体转换和白话译文可以随后独立加入。"
           />
 
-          <FacsimileViewer
-            v-if="primaryFacsimile"
+          <PassageFacsimile
+            v-if="context.facsimiles.length"
             class="facsimile-panel"
-            :image-url="primaryFacsimile.page.imageUrl"
-            :canvas-url="primaryFacsimile.page.canvasUrl"
-            :page-label="
-              primaryFacsimile.page.label ??
-              `影印页 ${primaryFacsimile.page.id}`
-            "
+            :facsimiles="context.facsimiles"
           />
 
           <nav class="passage-nav" aria-label="段落导航">
@@ -267,18 +261,11 @@ watch(passageId, load, { immediate: true });
       <div v-else class="parallel-reader-shell">
         <div class="parallel-reader">
           <article
-            v-if="primaryFacsimile"
+            v-if="context.facsimiles.length"
             class="parallel-column parallel-column--facsimile"
           >
             <p class="section-kicker">影印本</p>
-            <FacsimileViewer
-              :image-url="primaryFacsimile.page.imageUrl"
-              :canvas-url="primaryFacsimile.page.canvasUrl"
-              :page-label="
-                primaryFacsimile.page.label ??
-                `影印页 ${primaryFacsimile.page.id}`
-              "
-            />
+            <PassageFacsimile :facsimiles="context.facsimiles" />
           </article>
           <article class="parallel-column">
             <p class="section-kicker">原文存真</p>
