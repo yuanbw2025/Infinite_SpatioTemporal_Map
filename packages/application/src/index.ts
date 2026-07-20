@@ -4,6 +4,7 @@ export * from "./catalog-use-cases";
 export * from "./edition-comparison-use-case";
 export * from "./feature-module";
 export * from "./graph-use-case";
+export * from "./historical-map-resource-use-case";
 export * from "./kernel";
 export * from "./knowledge-use-cases";
 export * from "./metrics-use-case";

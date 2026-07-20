@@ -13,6 +13,8 @@ import type {
   KnowledgeGraphResult,
   FacsimileImageResource,
   FacsimilePage,
+  HistoricalMapResource,
+  HistoricalMapResourceQuery,
   Page,
   Passage,
   PassageContext,
@@ -32,6 +34,7 @@ import type {
 } from "@infinite-spacetime/contracts";
 import type {
   FacsimileImagePort,
+  HistoricalMapResourcePort,
   PublicationReadPort,
   SearchIndexPort,
   SpatialQueryPort,
@@ -40,6 +43,7 @@ import { exploreAtlas } from "./atlas-use-case";
 import { listVolumes, listWorks, openWork } from "./catalog-use-cases";
 import { compareEditions } from "./edition-comparison-use-case";
 import { exploreGraph } from "./graph-use-case";
+import { listHistoricalMapResources } from "./historical-map-resource-use-case";
 import { listEntities, openEntity } from "./knowledge-use-cases";
 import { getDatasetOverview } from "./metrics-use-case";
 import { PublicationIndex } from "./publication-index";
@@ -71,6 +75,9 @@ export interface ApplicationServices {
   };
   readonly atlas: {
     explore(query: AtlasQuery): Promise<ReturnType<typeof exploreAtlas>>;
+    listMapResources(
+      query?: HistoricalMapResourceQuery,
+    ): Promise<readonly HistoricalMapResource[]>;
   };
   readonly search: { run(query: SearchQuery): Promise<Page<SearchHit>> };
   readonly metadata: { overview(): Promise<DatasetOverview> };
@@ -85,6 +92,7 @@ export interface ApplicationServices {
 
 export interface ApplicationDependencies {
   readonly facsimileImages?: FacsimileImagePort;
+  readonly historicalMapResources?: HistoricalMapResourcePort;
   readonly searchIndex?: SearchIndexPort;
   readonly spatialQuery?: SpatialQueryPort;
 }
@@ -130,6 +138,13 @@ export function createApplicationServices(
         dependencies.spatialQuery
           ? dependencies.spatialQuery.explore(query)
           : exploreAtlas(index, query),
+      listMapResources: async (query) =>
+        listHistoricalMapResources(
+          dependencies.historicalMapResources
+            ? await dependencies.historicalMapResources.list()
+            : [],
+          query,
+        ),
     },
     search: {
       run: async (query) =>

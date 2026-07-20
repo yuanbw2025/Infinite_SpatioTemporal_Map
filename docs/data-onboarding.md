@@ -145,3 +145,5 @@ PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline apply-passage-ali
 ## 地图底图
 
 时空数据层由 MapLibre 在浏览器中渲染，点、面、多面、聚合和行迹均来自发布包。默认使用公开矢量底图；如需部署自有瓦片或适配特定网络环境，在 `apps/web/.env` 设置 `VITE_MAP_STYLE_URL` 即可，更换底图不会改变历史数据契约。外部底图不可用时页面会切换到本地空白样式，历史数据层仍能工作。
+
+历代扫描地图与疆域投影登记在 `apps/web/public/data/map-resources.json`。目录必须填写当前发布包的 `publicationId/contentChecksum`；扫描地图必须引用 `SourceRecord`，疆域 GeoJSON 必须引用发布包中已有的 `geometryIds`。时间轴会按 `validDuring` 自动筛选适用资源，用户可以逐层开关和调整透明度。目录的完整字段和接入步骤见[历史底图与疆域投影资源规范](historical-map-resources.md)。

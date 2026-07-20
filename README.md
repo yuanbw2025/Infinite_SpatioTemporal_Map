@@ -49,6 +49,7 @@ pnpm verify
 ```
 
 地图使用 MapLibre GL JS。默认底图无需密钥，也可通过 `VITE_MAP_STYLE_URL` 切换为自建或其他兼容样式。
+历代扫描地图和疆域投影通过与发布包校验和绑定的独立资源目录接入，仍只引用统一来源与历史几何。
 
 ## 从哪里继续
 
@@ -59,6 +60,7 @@ pnpm verify
 - [数据进入、字段所有权与功能组合蓝图](docs/data-feature-blueprint.md)
 - [0.6 字段字典](docs/field-dictionary.md)
 - [人工版本段落对齐规范](docs/passage-alignment.md)
+- [历史底图与疆域投影资源规范](docs/historical-map-resources.md)
 - [核心关系谓词规范](docs/predicate-vocabulary.md)
 - [统一工程规则](docs/engineering-rules.md)
 - [模块目录与依赖契约](docs/module-catalog.md)

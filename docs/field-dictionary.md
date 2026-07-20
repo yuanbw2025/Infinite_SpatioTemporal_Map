@@ -274,6 +274,7 @@
 - 分页统一 `PageRequest(cursor?, limit?) → Page(items, nextCursor?)`。
 - 布尔投影字段遵守 `is/has/can` 前缀，例如 `isTruncated`，不使用裸 `truncated`。
 - `MapObservation`、`TimelineItem`、`KnowledgeGraphEdge`、`SearchHit`、`ResearchFinding` 是临时只读投影，不进入 KnowledgePublication。
+- `HistoricalMapResourceCatalog` 是绑定 `publicationId/contentChecksum` 的可重建投影目录；`raster_map` 必须引用 SourceRecord，`boundary_geojson` 必须引用规范 GeometryId。
 - 投影记录允许包含显示 label，但必须从同一 Publication 的事实生成。
 - 持久化投影使用 `ProjectionManifest(publicationId, contentChecksum, projectionKind, generatedAt, toolVersion)`，版本不匹配拒绝加载。
 - UI store 只保存投影、ID 和查询状态，不把规范记录修改后当作新事实。

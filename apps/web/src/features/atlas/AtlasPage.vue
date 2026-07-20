@@ -2,6 +2,7 @@
 import type {
   EntityType,
   EntityId,
+  HistoricalMapResource,
   MapObservation,
 } from "@infinite-spacetime/contracts";
 import { computed, onBeforeUnmount, onMounted, ref, watch } from "vue";
@@ -18,8 +19,10 @@ import {
   type TimeResolution,
 } from "./atlas-time";
 import HistoricalMap from "./components/HistoricalMap.vue";
+import AtlasMapControls from "./components/AtlasMapControls.vue";
 
-const { services } = useApplication();
+const runtime = useApplication();
+const { services } = runtime;
 const route = useRoute();
 const observations = ref<readonly MapObservation[]>([]);
 const journeyObservations = ref<readonly MapObservation[]>([]);
@@ -44,6 +47,9 @@ const showPoints = ref(true);
 const showRegions = ref(true);
 const showRoutes = ref(true);
 const showLabels = ref(true);
+const mapResources = ref<readonly HistoricalMapResource[]>([]);
+const mapResourceVisibility = ref<Record<string, boolean>>({});
+const mapResourceOpacity = ref<Record<string, number>>({});
 const viewport = ref({ west: 73, south: 18, east: 135, north: 54 });
 let playbackTimer: ReturnType<typeof setInterval> | undefined;
 let journeyRequestId = 0;
@@ -97,6 +103,12 @@ const currentTimeLabel = computed(() => {
   const { year, month } = yearMonthFromTick(currentTick.value);
   return `${year}年${String(month).padStart(2, "0")}月`;
 });
+
+const activeMapResourceIds = computed(() =>
+  mapResources.value
+    .filter((resource) => mapResourceVisibility.value[resource.id])
+    .map((resource) => resource.id),
+);
 
 function stopPlayback() {
   if (playbackTimer) clearInterval(playbackTimer);
@@ -200,15 +212,27 @@ async function load(append = false) {
       startYear: startYear.value,
       endYear: endYear.value,
     });
-    const page = await services.atlas.explore({
-      ...viewport.value,
-      entityTypes: activeTypes.value,
-      ...(focusedEntityId.value ? { entityIds: [focusedEntityId.value] } : {}),
-      limit: 100,
-      ...(append && nextCursor.value ? { cursor: nextCursor.value } : {}),
-      ...(temporal ? { temporal } : {}),
-    });
+    const [page, availableResources] = await Promise.all([
+      services.atlas.explore({
+        ...viewport.value,
+        entityTypes: activeTypes.value,
+        ...(focusedEntityId.value
+          ? { entityIds: [focusedEntityId.value] }
+          : {}),
+        limit: 100,
+        ...(append && nextCursor.value ? { cursor: nextCursor.value } : {}),
+        ...(temporal ? { temporal } : {}),
+      }),
+      services.atlas.listMapResources(temporal ? { temporal } : {}),
+    ]);
     if (requestId !== mapRequestId) return;
+    mapResources.value = availableResources;
+    for (const resource of availableResources) {
+      if (!(resource.id in mapResourceVisibility.value))
+        mapResourceVisibility.value[resource.id] = resource.isDefault;
+      if (!(resource.id in mapResourceOpacity.value))
+        mapResourceOpacity.value[resource.id] = resource.defaultOpacity;
+    }
     observations.value = append
       ? [...observations.value, ...page.observations]
       : page.observations;
@@ -273,54 +297,30 @@ watch(journeyEntityId, (entityId) => void loadJourney(entityId), {
       </button>
     </div>
 
-    <div class="timeline-control">
-      <div class="timeline-readout">
-        <span>时间轴</span>
-        <strong>{{ currentTimeLabel }}</strong>
-      </div>
-      <label class="timeline-resolution">
-        <span>播放粒度</span>
-        <select v-model="timeResolution" @change="changeResolution">
-          <option value="year">按年</option>
-          <option value="month">按月</option>
-          <option value="day">按日</option>
-        </select>
-      </label>
-      <input
-        v-if="sliderMin !== undefined && sliderMax !== undefined"
-        v-model.number="currentTick"
-        class="timeline-slider"
-        type="range"
-        :min="sliderMin"
-        :max="sliderMax"
-        :step="Math.max(1, playbackStep)"
-        @change="load()"
-      />
-      <label class="timeline-step">
-        <span
-          >步长（{{
-            timeResolution === "day"
-              ? "日"
-              : timeResolution === "month"
-                ? "月"
-                : "年"
-          }}）</span
-        >
-        <input v-model.number="playbackStep" type="number" min="1" />
-      </label>
-      <button class="timeline-play" type="button" @click="togglePlayback">
-        {{ playing ? "暂停" : "播放时代变化" }}
-      </button>
-    </div>
-
-    <div class="map-layer-controls" role="group" aria-label="地图图层">
-      <label><input v-model="showPoints" type="checkbox" /> 点位与聚合</label>
-      <label><input v-model="showRegions" type="checkbox" /> 历史区域</label>
-      <label><input v-model="showRoutes" type="checkbox" /> 人物行迹</label>
-      <label><input v-model="showLabels" type="checkbox" /> 地名标注</label>
-    </div>
+    <AtlasMapControls
+      v-model:current-tick="currentTick"
+      v-model:time-resolution="timeResolution"
+      v-model:playback-step="playbackStep"
+      v-model:show-points="showPoints"
+      v-model:show-regions="showRegions"
+      v-model:show-routes="showRoutes"
+      v-model:show-labels="showLabels"
+      v-model:resource-visibility="mapResourceVisibility"
+      v-model:resource-opacity="mapResourceOpacity"
+      :current-time-label="currentTimeLabel"
+      :slider-min="sliderMin"
+      :slider-max="sliderMax"
+      :playing="playing"
+      :map-resources="mapResources"
+      @resolution-change="changeResolution"
+      @tick-change="load()"
+      @toggle-playback="togglePlayback"
+    />
 
     <p v-if="error" class="error-line">{{ error }}</p>
+    <p v-if="runtime.mapResourceWarning" class="error-line">
+      历史地图资源未载入：{{ runtime.mapResourceWarning }}
+    </p>
     <div class="atlas-layout">
       <div class="atlas-map-stage">
         <HistoricalMap
@@ -331,6 +331,9 @@ watch(journeyEntityId, (entityId) => void loadJourney(entityId), {
           :show-regions="showRegions"
           :show-routes="showRoutes"
           :show-labels="showLabels"
+          :map-resources="mapResources"
+          :active-map-resource-ids="activeMapResourceIds"
+          :map-resource-opacity="mapResourceOpacity"
           @select="selected = $event"
           @viewport="handleViewport"
         />

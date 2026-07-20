@@ -15,6 +15,33 @@
   font-size: 11px;
   font-weight: 700;
 }
+.reference-layer-controls {
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 253, 247, 0.52);
+}
+.reference-layer-controls header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 9px;
+}
+.reference-layer-controls header span,
+.reference-layer-controls small {
+  color: var(--muted);
+  font-size: 10px;
+}
+.reference-layer-controls label {
+  display: grid;
+  grid-template-columns: auto minmax(120px, 1fr) auto minmax(100px, 180px);
+  align-items: center;
+  gap: 9px;
+  padding: 7px 0;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+}
 .atlas-controls legend {
   margin-bottom: 7px;
   color: var(--muted);

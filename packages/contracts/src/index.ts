@@ -3,6 +3,7 @@ export * from "./common";
 export * from "./curation";
 export * from "./ids";
 export * from "./knowledge";
+export * from "./map-resources";
 export * from "./publication";
 export * from "./predicate-vocabulary";
 export * from "./queries";

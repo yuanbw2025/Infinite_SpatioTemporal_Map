@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import type { MapObservation } from "@infinite-spacetime/contracts";
+import type {
+  HistoricalMapResource,
+  MapObservation,
+} from "@infinite-spacetime/contracts";
 import type { FeatureCollection } from "geojson";
 import {
   GeoJSONSource,
@@ -20,6 +23,11 @@ import {
   selectionCollection,
 } from "./historical-map-data";
 import { addHistoricalLayers } from "./historical-map-layers";
+import {
+  addHistoricalReferenceResource,
+  removeHistoricalReferenceResource,
+  updateHistoricalReferencePresentation,
+} from "./historical-reference-layers";
 
 const props = withDefaults(
   defineProps<{
@@ -30,6 +38,9 @@ const props = withDefaults(
     showRegions?: boolean;
     showRoutes?: boolean;
     showLabels?: boolean;
+    mapResources?: readonly HistoricalMapResource[];
+    activeMapResourceIds?: readonly string[];
+    mapResourceOpacity?: Readonly<Record<string, number>>;
   }>(),
   {
     journey: () => [],
@@ -37,6 +48,9 @@ const props = withDefaults(
     showRegions: true,
     showRoutes: true,
     showLabels: true,
+    mapResources: () => [],
+    activeMapResourceIds: () => [],
+    mapResourceOpacity: () => ({}),
   },
 );
 
@@ -53,6 +67,7 @@ let map: MapLibreMap | undefined;
 let ready = false;
 let fallbackApplied = false;
 let observationIndex = new Map<string, MapObservation>();
+let installedMapResources: HistoricalMapResource[] = [];
 
 const pointSourceId = "historical-observation-points";
 const regionSourceId = "historical-observation-regions";
@@ -122,6 +137,27 @@ function updateVisibility() {
     ["historical-point-labels", "historical-region-labels"],
     props.showLabels,
   );
+  const active = new Set(props.activeMapResourceIds);
+  for (const resource of installedMapResources)
+    updateHistoricalReferencePresentation(
+      map!,
+      resource,
+      active.has(resource.id),
+      props.mapResourceOpacity[resource.id] ?? resource.defaultOpacity,
+    );
+}
+
+function syncMapResources() {
+  if (!map || !ready) return;
+  for (const resource of installedMapResources)
+    removeHistoricalReferenceResource(map, resource);
+  installedMapResources = [...props.mapResources];
+  const beforeId = map.getLayer("historical-regions")
+    ? "historical-regions"
+    : undefined;
+  for (const resource of installedMapResources)
+    addHistoricalReferenceResource(map, resource, beforeId);
+  updateVisibility();
 }
 
 function focusSelection() {
@@ -217,6 +253,7 @@ function addKnowledgeLayers() {
     });
   }
   ready = true;
+  syncMapResources();
   updateVisibility();
   focusSelection();
 }
@@ -287,12 +324,23 @@ watch(
   ],
   updateVisibility,
 );
+watch(
+  () => props.mapResources,
+  () => syncMapResources(),
+  { deep: true },
+);
+watch(
+  () => [props.activeMapResourceIds, props.mapResourceOpacity],
+  updateVisibility,
+  { deep: true },
+);
 
 onBeforeUnmount(() => {
   map?.remove();
   map = undefined;
   ready = false;
   fallbackApplied = false;
+  installedMapResources = [];
 });
 </script>
 

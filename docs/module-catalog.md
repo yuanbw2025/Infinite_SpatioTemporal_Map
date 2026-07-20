@@ -53,6 +53,7 @@
 - `PublicationReadPort`：一次提供活动发布包及其唯一 `DataContext`；
 - `SearchIndexPort`：在数据规模扩大后替换内存检索，输入输出仍使用统一查询契约；
 - `SpatialQueryPort`：在数据规模扩大后替换内存地图投影，不改变地图观察项语义；
+- `HistoricalMapResourcePort`：读取与发布包校验和绑定的栅格历史地图和疆域投影目录，不拥有历史事实；
 - `FacsimileImagePort`：隔离 IIIF/远程影像协议，阅读用例只接收统一影像资源；
 - 新数据库、全文索引、空间数据库或远程 API 必须实现技术适配器，而不是复制用例；
 - 写入仍由 Python 发布管线承担，公众读取端保持只读；未来协作写入能力需要独立 ADR 后再新增小端口。
