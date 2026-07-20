@@ -5,36 +5,5 @@
     "code": 400,
     "stylesheet": 600
   },
-  "files": {
-    "apps/web/src/style.css": {
-      "maxLines": 1939,
-      "targetPhase": "P2",
-      "reason": "Split into tokens, base, layout, components, and feature styles."
-    },
-    "packages/adapters/src/static-publication-repository.ts": {
-      "maxLines": 1121,
-      "targetPhase": "P1",
-      "reason": "Split shared indexes from per-port adapters and move use-case rules inward."
-    },
-    "apps/curation/src/style.css": {
-      "maxLines": 613,
-      "targetPhase": "P2",
-      "reason": "Split curation layout and component styles."
-    },
-    "apps/web/src/features/atlas/components/HistoricalMap.vue": {
-      "maxLines": 549,
-      "targetPhase": "P2",
-      "reason": "Extract renderer, layers, controls, and viewport coordination."
-    },
-    "apps/curation/src/App.vue": {
-      "maxLines": 520,
-      "targetPhase": "P2",
-      "reason": "Extract import controller, persistence, decision state, and views."
-    },
-    "apps/web/src/features/atlas/AtlasPage.vue": {
-      "maxLines": 415,
-      "targetPhase": "P2",
-      "reason": "Extract query state, observation details, and filters."
-    }
-  }
+  "files": {}
 }

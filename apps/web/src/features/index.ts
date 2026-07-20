@@ -1,7 +1,7 @@
 import {
   createApplicationKernel,
   type FeatureModule,
-} from "@infinite-spacetime/core";
+} from "@infinite-spacetime/application";
 import type { Component } from "vue";
 import type { RouteRecordRaw } from "vue-router";
 import { atlasFeature } from "./atlas";

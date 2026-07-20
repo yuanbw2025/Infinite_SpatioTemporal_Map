@@ -1,0 +1,26 @@
+name: Bug 报告
+description: 报告可重复的软件、数据或文档问题
+title: "[Bug] "
+body:
+  - type: textarea
+    attributes:
+      label: 问题与影响
+      description: 说明实际结果、预期结果和受影响用户。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 复现步骤
+      description: 提供最小复现、数据版本和运行环境；不要粘贴密钥或私人数据。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 证据
+      description: 日志、截图、来源段落或校验和。
+  - type: checkboxes
+    attributes:
+      label: 提交确认
+      options:
+        - label: 这不是需要私密报告的安全漏洞。
+          required: true

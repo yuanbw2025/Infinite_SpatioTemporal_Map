@@ -1,2 +1,2 @@
 export * from "./empty-publication";
-export * from "./static-publication-repository";
+export * from "./static-publication-source";

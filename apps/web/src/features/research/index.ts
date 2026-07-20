@@ -1,4 +1,4 @@
-import { defineFeature } from "@infinite-spacetime/core";
+import { defineFeature } from "@infinite-spacetime/application";
 import { defineAsyncComponent } from "vue";
 
 const ResearchPage = defineAsyncComponent(() => import("./ResearchPage.vue"));

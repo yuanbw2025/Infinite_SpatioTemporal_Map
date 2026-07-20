@@ -47,12 +47,12 @@ importers:
       "@infinite-spacetime/adapters":
         specifier: workspace:*
         version: link:../../packages/adapters
+      "@infinite-spacetime/application":
+        specifier: workspace:*
+        version: link:../../packages/application
       "@infinite-spacetime/contracts":
         specifier: workspace:*
         version: link:../../packages/contracts
-      "@infinite-spacetime/core":
-        specifier: workspace:*
-        version: link:../../packages/core
       maplibre-gl:
         specifier: ^5.24.0
         version: 5.24.0
@@ -81,9 +81,24 @@ importers:
       "@infinite-spacetime/contracts":
         specifier: workspace:*
         version: link:../contracts
-      "@infinite-spacetime/core":
+      "@infinite-spacetime/domain":
         specifier: workspace:*
-        version: link:../core
+        version: link:../domain
+      "@infinite-spacetime/ports":
+        specifier: workspace:*
+        version: link:../ports
+
+  packages/application:
+    dependencies:
+      "@infinite-spacetime/contracts":
+        specifier: workspace:*
+        version: link:../contracts
+      "@infinite-spacetime/domain":
+        specifier: workspace:*
+        version: link:../domain
+      "@infinite-spacetime/ports":
+        specifier: workspace:*
+        version: link:../ports
 
   packages/contracts:
     dependencies:
@@ -94,7 +109,13 @@ importers:
         specifier: 3.0.1
         version: 3.0.1(ajv@8.20.0)
 
-  packages/core:
+  packages/domain:
+    dependencies:
+      "@infinite-spacetime/contracts":
+        specifier: workspace:*
+        version: link:../contracts
+
+  packages/ports:
     dependencies:
       "@infinite-spacetime/contracts":
         specifier: workspace:*

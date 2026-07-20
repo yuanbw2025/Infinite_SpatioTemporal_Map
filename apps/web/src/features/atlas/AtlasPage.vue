@@ -3,13 +3,18 @@ import type {
   EntityType,
   EntityId,
   MapObservation,
-  TemporalValue,
 } from "@infinite-spacetime/contracts";
 import { computed, onBeforeUnmount, onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import EmptyState from "../../components/EmptyState.vue";
 import PageHeader from "../../components/PageHeader.vue";
 import { useApplication } from "../../composables/use-application";
+import {
+  buildTemporalQuery,
+  temporalSortValue,
+  yearMonthFromTick,
+  type TimeResolution,
+} from "./atlas-time";
 import HistoricalMap from "./components/HistoricalMap.vue";
 
 const { services } = useApplication();
@@ -30,7 +35,7 @@ const loading = ref(false);
 const error = ref("");
 const nextCursor = ref<string>();
 const currentTick = ref<number>();
-const timeResolution = ref<"year" | "month">("year");
+const timeResolution = ref<TimeResolution>("year");
 const playbackStep = ref(1);
 const playing = ref(false);
 const showPoints = ref(true);
@@ -90,51 +95,6 @@ const currentTimeLabel = computed(() => {
   const { year, month } = yearMonthFromTick(currentTick.value);
   return `${year}年${String(month).padStart(2, "0")}月`;
 });
-
-function yearMonthFromTick(tick: number): { year: number; month: number } {
-  const year = Math.floor(tick / 12);
-  return { year, month: tick - year * 12 + 1 };
-}
-
-function temporalSortValue(observation: MapObservation): number {
-  const temporal = observation.temporal;
-  const year = temporal?.startYear ?? temporal?.endYear ?? 0;
-  const month = temporal?.startMonth ?? temporal?.endMonth ?? 1;
-  const day = temporal?.startDay ?? temporal?.endDay ?? 1;
-  return year * 372 + (month - 1) * 31 + day - 1;
-}
-
-function temporalQuery(): TemporalValue | undefined {
-  if (currentTick.value !== undefined) {
-    if (timeResolution.value === "month") {
-      const { year, month } = yearMonthFromTick(currentTick.value);
-      return {
-        original: `${year}年${month}月`,
-        startYear: year,
-        startMonth: month,
-        endYear: year,
-        endMonth: month,
-        certainty: "exact",
-      };
-    }
-    return {
-      original: String(currentTick.value),
-      startYear: currentTick.value,
-      endYear: currentTick.value,
-      certainty: "exact",
-    };
-  }
-  if (startYear.value === undefined && endYear.value === undefined)
-    return undefined;
-  return {
-    original: [startYear.value, endYear.value]
-      .filter((year) => year !== undefined)
-      .join("—"),
-    certainty: startYear.value === endYear.value ? "exact" : "range",
-    ...(startYear.value !== undefined ? { startYear: startYear.value } : {}),
-    ...(endYear.value !== undefined ? { endYear: endYear.value } : {}),
-  };
-}
 
 function stopPlayback() {
   if (playbackTimer) clearInterval(playbackTimer);
@@ -232,7 +192,12 @@ async function load(append = false) {
     nextCursor.value = undefined;
   }
   try {
-    const temporal = temporalQuery();
+    const temporal = buildTemporalQuery({
+      currentTick: currentTick.value,
+      resolution: timeResolution.value,
+      startYear: startYear.value,
+      endYear: endYear.value,
+    });
     const page = await services.atlas.explore({
       ...viewport.value,
       entityTypes: activeTypes.value,

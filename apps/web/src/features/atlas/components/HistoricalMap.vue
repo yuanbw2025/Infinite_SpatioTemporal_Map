@@ -1,14 +1,6 @@
 <script setup lang="ts">
 import type { MapObservation } from "@infinite-spacetime/contracts";
-import type {
-  Feature,
-  FeatureCollection,
-  Geometry,
-  LineString,
-  MultiPolygon,
-  Point,
-  Polygon,
-} from "geojson";
+import type { FeatureCollection } from "geojson";
 import {
   GeoJSONSource,
   LngLatBounds,
@@ -20,13 +12,14 @@ import {
 } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { onBeforeUnmount, onMounted, ref, watch } from "vue";
-
-interface MapProperties {
-  observationKey: string;
-  label: string;
-  category: string;
-  temporal: string;
-}
+import {
+  mutableGeometry,
+  observationCollections,
+  observationKey,
+  routeCollection,
+  selectionCollection,
+} from "./historical-map-data";
+import { addHistoricalLayers } from "./historical-map-layers";
 
 const props = withDefaults(
   defineProps<{
@@ -78,121 +71,14 @@ const fallbackStyle: StyleSpecification = {
   ],
 };
 
-function observationKey(observation: MapObservation): string {
-  return `${observation.geometryId}:${observation.occurrenceId ?? observation.entityId}`;
-}
-
-function mutableGeometry(
-  observation: MapObservation,
-): Point | Polygon | MultiPolygon {
-  if (observation.geometry.type === "Point") {
-    const [longitude, latitude] = observation.geometry.coordinates;
-    return { type: "Point", coordinates: [longitude, latitude] };
-  }
-  if (observation.geometry.type === "MultiPolygon") {
-    return {
-      type: "MultiPolygon",
-      coordinates: observation.geometry.coordinates.map((polygon) =>
-        polygon.map((ring) =>
-          ring.map(([longitude, latitude]) => [longitude, latitude]),
-        ),
-      ),
-    };
-  }
-  return {
-    type: "Polygon",
-    coordinates: observation.geometry.coordinates.map((ring) =>
-      ring.map(([longitude, latitude]) => [longitude, latitude]),
-    ),
-  };
-}
-
-function featureFor(
-  observation: MapObservation,
-): Feature<Point | Polygon | MultiPolygon, MapProperties> {
-  const key = observationKey(observation);
-  return {
-    type: "Feature",
-    id: key,
-    properties: {
-      observationKey: key,
-      label: observation.label,
-      category: observation.category,
-      temporal: observation.temporal?.original ?? "",
-    },
-    geometry: mutableGeometry(observation),
-  };
-}
-
-function observationCollections(): {
-  points: FeatureCollection<Point, MapProperties>;
-  regions: FeatureCollection<Polygon | MultiPolygon, MapProperties>;
-} {
+function indexedCollections() {
   observationIndex = new Map(
     props.observations.map((observation) => [
       observationKey(observation),
       observation,
     ]),
   );
-  const features = props.observations.map(featureFor);
-  return {
-    points: {
-      type: "FeatureCollection",
-      features: features.filter(
-        (feature): feature is Feature<Point, MapProperties> =>
-          feature.geometry.type === "Point",
-      ),
-    },
-    regions: {
-      type: "FeatureCollection",
-      features: features.filter(
-        (feature): feature is Feature<Polygon | MultiPolygon, MapProperties> =>
-          feature.geometry.type === "Polygon" ||
-          feature.geometry.type === "MultiPolygon",
-      ),
-    },
-  };
-}
-
-function routeCollection(): FeatureCollection<LineString> {
-  const coordinates = props.journey.flatMap((observation) =>
-    observation.geometry.type === "Point"
-      ? [
-          [
-            observation.geometry.coordinates[0],
-            observation.geometry.coordinates[1],
-          ] as [number, number],
-        ]
-      : [],
-  );
-  return {
-    type: "FeatureCollection",
-    features:
-      coordinates.length > 1
-        ? [
-            {
-              type: "Feature",
-              properties: {},
-              geometry: { type: "LineString", coordinates },
-            },
-          ]
-        : [],
-  };
-}
-
-function selectionCollection(): FeatureCollection<Geometry> {
-  return {
-    type: "FeatureCollection",
-    features: props.selected
-      ? [
-          {
-            type: "Feature",
-            properties: {},
-            geometry: mutableGeometry(props.selected),
-          },
-        ]
-      : [],
-  };
+  return observationCollections(props.observations);
 }
 
 function setSourceData(sourceId: string, data: FeatureCollection) {
@@ -202,11 +88,11 @@ function setSourceData(sourceId: string, data: FeatureCollection) {
 }
 
 function updateData() {
-  const collections = observationCollections();
+  const collections = indexedCollections();
   setSourceData(pointSourceId, collections.points);
   setSourceData(regionSourceId, collections.regions);
-  setSourceData(routeSourceId, routeCollection());
-  setSourceData(selectedSourceId, selectionCollection());
+  setSourceData(routeSourceId, routeCollection(props.journey));
+  setSourceData(selectedSourceId, selectionCollection(props.selected));
 }
 
 function setLayerVisibility(layerIds: readonly string[], visible: boolean) {
@@ -265,7 +151,7 @@ function focusSelection() {
 
 function addKnowledgeLayers() {
   if (!map || ready) return;
-  const collections = observationCollections();
+  const collections = indexedCollections();
   map.addSource(pointSourceId, {
     type: "geojson",
     data: collections.points,
@@ -279,148 +165,17 @@ function addKnowledgeLayers() {
   });
   map.addSource(routeSourceId, {
     type: "geojson",
-    data: routeCollection(),
+    data: routeCollection(props.journey),
   });
   map.addSource(selectedSourceId, {
     type: "geojson",
-    data: selectionCollection(),
+    data: selectionCollection(props.selected),
   });
-
-  map.addLayer({
-    id: "historical-regions",
-    type: "fill",
-    source: regionSourceId,
-    paint: {
-      "fill-color": "#8c3025",
-      "fill-opacity": 0.16,
-    },
-  });
-  map.addLayer({
-    id: "historical-region-lines",
-    type: "line",
-    source: regionSourceId,
-    paint: {
-      "line-color": "#8c3025",
-      "line-width": 1.6,
-      "line-opacity": 0.72,
-    },
-  });
-  map.addLayer({
-    id: "historical-routes",
-    type: "line",
-    source: routeSourceId,
-    paint: {
-      "line-color": "#8c3025",
-      "line-width": 3,
-      "line-opacity": 0.86,
-      "line-dasharray": [2, 1.4],
-    },
-  });
-  map.addLayer({
-    id: "historical-clusters",
-    type: "circle",
-    source: pointSourceId,
-    filter: ["has", "point_count"],
-    paint: {
-      "circle-color": "#31584d",
-      "circle-radius": ["step", ["get", "point_count"], 17, 25, 22, 100, 28],
-      "circle-stroke-color": "#fff8ec",
-      "circle-stroke-width": 2,
-    },
-  });
-  map.addLayer({
-    id: "historical-cluster-count",
-    type: "symbol",
-    source: pointSourceId,
-    filter: ["has", "point_count"],
-    layout: {
-      "text-field": ["get", "point_count_abbreviated"],
-      "text-size": 11,
-    },
-    paint: { "text-color": "#fff8ec" },
-  });
-  map.addLayer({
-    id: "historical-points",
-    type: "circle",
-    source: pointSourceId,
-    filter: ["!", ["has", "point_count"]],
-    paint: {
-      "circle-color": [
-        "match",
-        ["get", "category"],
-        "place",
-        "#31584d",
-        "person",
-        "#a1742d",
-        "event",
-        "#8c3025",
-        "site",
-        "#714d35",
-        "artifact",
-        "#6b426e",
-        "#5d655f",
-      ],
-      "circle-radius": 7,
-      "circle-stroke-color": "#fff8ec",
-      "circle-stroke-width": 2,
-    },
-  });
-  map.addLayer({
-    id: "historical-point-labels",
-    type: "symbol",
-    source: pointSourceId,
-    filter: ["!", ["has", "point_count"]],
-    minzoom: 5,
-    layout: {
-      "text-field": ["get", "label"],
-      "text-size": 12,
-      "text-offset": [0, 1.25],
-      "text-anchor": "top",
-      "text-allow-overlap": false,
-    },
-    paint: {
-      "text-color": "#24221d",
-      "text-halo-color": "#fffdf7",
-      "text-halo-width": 1.3,
-    },
-  });
-  map.addLayer({
-    id: "historical-region-labels",
-    type: "symbol",
-    source: regionSourceId,
-    minzoom: 4,
-    layout: {
-      "text-field": ["get", "label"],
-      "text-size": 12,
-    },
-    paint: {
-      "text-color": "#6d2b22",
-      "text-halo-color": "#fffdf7",
-      "text-halo-width": 1.2,
-    },
-  });
-  map.addLayer({
-    id: "historical-selected-region",
-    type: "line",
-    source: selectedSourceId,
-    filter: [
-      "any",
-      ["==", ["geometry-type"], "Polygon"],
-      ["==", ["geometry-type"], "MultiPolygon"],
-    ],
-    paint: { "line-color": "#f4b642", "line-width": 4 },
-  });
-  map.addLayer({
-    id: "historical-selected-point",
-    type: "circle",
-    source: selectedSourceId,
-    filter: ["==", ["geometry-type"], "Point"],
-    paint: {
-      "circle-color": "#f4b642",
-      "circle-radius": 12,
-      "circle-stroke-color": "#fff",
-      "circle-stroke-width": 3,
-    },
+  addHistoricalLayers(map, {
+    points: pointSourceId,
+    regions: regionSourceId,
+    route: routeSourceId,
+    selected: selectedSourceId,
   });
 
   map.on("click", "historical-clusters", async (event) => {
@@ -512,13 +267,13 @@ watch(
 );
 watch(
   () => props.journey,
-  () => setSourceData(routeSourceId, routeCollection()),
+  () => setSourceData(routeSourceId, routeCollection(props.journey)),
   { deep: true },
 );
 watch(
   () => props.selected,
   () => {
-    setSourceData(selectedSourceId, selectionCollection());
+    setSourceData(selectedSourceId, selectionCollection(props.selected));
     focusSelection();
   },
   { deep: true },

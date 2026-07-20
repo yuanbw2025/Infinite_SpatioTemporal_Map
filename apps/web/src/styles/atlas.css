@@ -1,0 +1,415 @@
+.map-layer-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.map-layer-controls label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 253, 247, 0.52);
+  font-size: 11px;
+  font-weight: 700;
+}
+.atlas-controls legend {
+  margin-bottom: 7px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+.atlas-controls fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--paper-strong);
+  font-size: 12px;
+}
+.atlas-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 310px;
+  min-height: 660px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #d8d5c6;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.atlas-map-stage,
+.historical-map-shell,
+.historical-map {
+  position: relative;
+  min-height: 660px;
+  height: 100%;
+}
+.historical-map-shell {
+  overflow: hidden;
+  background: #d8dccd;
+}
+.historical-map {
+  width: 100%;
+}
+.map-engine-notice {
+  position: absolute;
+  z-index: 8;
+  right: 12px;
+  bottom: 28px;
+  max-width: 360px;
+  margin: 0;
+  padding: 8px 11px;
+  border-radius: 8px;
+  color: #6b3a2f;
+  background: rgba(255, 248, 236, 0.9);
+  font-size: 11px;
+}
+.atlas-map-stage > .empty-state {
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  width: min(580px, 82%);
+  transform: translate(-50%, -50%);
+  background: rgba(248, 245, 236, 0.9);
+  pointer-events: none;
+}
+.map-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 9;
+  display: grid;
+  place-items: center;
+  background: rgba(235, 231, 220, 0.7);
+}
+.map-sidebar {
+  position: relative;
+  z-index: 7;
+  padding: 25px;
+  border-left: 1px solid var(--line);
+  background: rgba(248, 245, 236, 0.94);
+}
+.map-sidebar h2 {
+  margin: 6px 0;
+  font-family: "Songti SC", serif;
+  font-size: 34px;
+}
+.map-count {
+  display: block;
+  font-family: "Songti SC", serif;
+  font-size: 72px;
+  font-weight: 500;
+}
+.map-result-list {
+  display: grid;
+  gap: 5px;
+  max-height: 430px;
+  margin-top: 25px;
+  overflow: auto;
+}
+.map-result-list button {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+.map-result-list .map-load-more {
+  justify-content: center;
+  color: var(--green);
+  font-weight: 800;
+}
+.map-result-list span {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.search-console {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px auto;
+  align-items: end;
+  gap: 12px;
+  margin-bottom: 38px;
+  padding: 22px;
+  border-radius: 17px;
+  background: var(--green);
+  box-shadow: var(--shadow);
+}
+.search-console label {
+  display: grid;
+  gap: 7px;
+}
+.search-console label > span {
+  color: #e9e8dc;
+}
+.search-console .primary-button {
+  background: var(--red);
+}
+.search-advanced {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns:
+    minmax(180px, 1.4fr) minmax(150px, 1fr)
+    110px 110px 140px;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(233, 232, 220, 0.24);
+}
+.search-results {
+  display: grid;
+  gap: 10px;
+}
+.result-count {
+  color: var(--muted);
+  font-size: 13px;
+}
+.search-result {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: rgba(255, 253, 247, 0.62);
+}
+.search-result h2 {
+  margin: 8px 0;
+  font-family: "Songti SC", serif;
+  font-size: 28px;
+}
+.search-result h2 a {
+  text-decoration: none;
+}
+.search-result p {
+  max-width: 880px;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.serif-snippet {
+  font-family: "Songti SC", serif;
+  font-size: 18px;
+}
+.search-guide {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.search-guide article {
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+}
+.search-guide strong,
+.search-guide span {
+  display: block;
+}
+.search-guide span {
+  margin-top: 10px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.metrics-grid article {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 253, 247, 0.54);
+}
+.metrics-grid strong,
+.metrics-grid span {
+  display: block;
+}
+.metrics-grid strong {
+  font-family: "Songti SC", serif;
+  font-size: 36px;
+  font-weight: 500;
+}
+.metrics-grid span {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.data-quality-section {
+  margin-bottom: 30px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: rgba(255, 253, 247, 0.54);
+}
+.data-quality-section .section-heading {
+  margin-bottom: 20px;
+}
+.data-quality-section .section-heading h2,
+.data-quality-section .section-heading p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.data-quality-section .section-heading > p {
+  max-width: 520px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.quality-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+  gap: 22px;
+}
+.coverage-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 18px;
+}
+.coverage-grid article {
+  display: grid;
+  gap: 8px;
+}
+.coverage-grid article > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 11px;
+}
+.coverage-grid article span {
+  color: var(--muted);
+}
+.quality-track {
+  height: 6px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #ded8cb;
+}
+.quality-track i {
+  display: block;
+  height: 100%;
+  min-width: 0;
+  border-radius: inherit;
+  background: var(--green);
+}
+.review-distribution {
+  padding-left: 22px;
+  border-left: 1px solid var(--line);
+}
+.review-distribution h3 {
+  margin: 0 0 13px;
+  font-size: 14px;
+}
+.review-distribution-row {
+  display: grid;
+  grid-template-columns: 64px minmax(80px, 1fr) 36px;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+  font-size: 11px;
+}
+.review-distribution-row > span {
+  color: var(--muted);
+}
+.review-distribution-row > strong {
+  text-align: right;
+}
+.quality-track .review-machine_suggested {
+  background: #c68b35;
+}
+.quality-track .review-reviewed {
+  background: #527c91;
+}
+.quality-track .review-verified {
+  background: #2e7660;
+}
+.quality-track .review-disputed {
+  background: var(--red);
+}
+.quality-track .review-rejected {
+  background: #80776d;
+}
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.metadata-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+}
+.metadata-list > div {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line);
+}
+.metadata-list dt {
+  color: var(--muted);
+}
+.metadata-list dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.steps-list {
+  display: grid;
+  gap: 12px;
+  padding-left: 22px;
+}
+code {
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: rgba(49, 45, 38, 0.08);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.88em;
+}
+
+.site-footer {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 38px clamp(22px, 7vw, 112px);
+  border-top: 1px solid var(--line);
+  background: rgba(248, 245, 236, 0.54);
+}
+.site-footer strong {
+  font-family: "Songti SC", serif;
+  font-size: 22px;
+}
+.site-footer p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+.footer-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 14px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.footer-meta a {
+  color: var(--green);
+  font-weight: 800;
+}
+.page-fade-enter-active,
+.page-fade-leave-active {
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease;
+}
+.page-fade-enter-from,
+.page-fade-leave-to {
+  opacity: 0;
+  transform: translateY(5px);
+}

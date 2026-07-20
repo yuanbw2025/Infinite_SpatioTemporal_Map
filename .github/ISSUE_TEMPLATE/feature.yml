@@ -1,0 +1,21 @@
+name: 功能建议
+description: 提议符合统一架构的新能力
+title: "[Feature] "
+body:
+  - type: textarea
+    attributes:
+      label: 用户任务
+      description: 谁在什么情境下需要完成什么？
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 验收标准与非目标
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 架构、数据与权利影响
+      description: 说明字段所有者、来源、证据、迁移和潜在风险。
+    validations:
+      required: true

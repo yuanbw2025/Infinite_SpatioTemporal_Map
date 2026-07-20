@@ -1,7 +1,11 @@
 import {
   createEmptyPublication,
-  createStaticPublicationRepository,
+  createStaticPublicationSource,
 } from "@infinite-spacetime/adapters";
+import {
+  createApplicationServices,
+  type ApplicationServices,
+} from "@infinite-spacetime/application";
 import type {
   DatasetOverview,
   DataContext,
@@ -11,10 +15,6 @@ import {
   ContractValidationError,
   parseKnowledgePublication,
 } from "@infinite-spacetime/contracts";
-import {
-  createApplicationServices,
-  type ApplicationServices,
-} from "@infinite-spacetime/core";
 import type { InjectionKey } from "vue";
 
 export type DataLoadStatus = "ready" | "empty" | "error";
@@ -38,7 +38,7 @@ async function buildRuntime(
   errorMessage?: string,
 ): Promise<ApplicationRuntime> {
   const services = createApplicationServices(
-    createStaticPublicationRepository(publication),
+    createStaticPublicationSource(publication),
   );
   const overview = await services.metadata.overview();
   return {

@@ -52,12 +52,11 @@ function ownerFor(file) {
 const allowedWorkspaceDependencies = {
   contracts: new Set(),
   domain: new Set(["contracts"]),
-  ports: new Set(["contracts", "domain"]),
+  ports: new Set(["contracts"]),
   application: new Set(["contracts", "domain", "ports"]),
-  core: new Set(["contracts"]),
-  adapters: new Set(["contracts", "core", "domain", "ports"]),
-  web: new Set(["adapters", "application", "contracts", "core"]),
-  curation: new Set(["application", "contracts", "core"]),
+  adapters: new Set(["contracts", "domain", "ports"]),
+  web: new Set(["adapters", "application", "contracts"]),
+  curation: new Set(["application", "contracts"]),
 };
 
 function extractImports(source) {

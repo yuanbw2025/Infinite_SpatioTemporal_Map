@@ -4,18 +4,18 @@
 
 ## 1. 目标工作区
 
-| 工作区                 | 所有权                                              | 允许依赖                                                   | 禁止事项                                                  |
-| ---------------------- | --------------------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------- |
-| `packages/contracts`   | JSON Schema、生成 DTO、品牌 ID、跨边界查询/结果类型 | 无其他 workspace 包                                        | 业务行为、Vue、存储、手改生成 DTO                         |
-| `packages/domain`      | 领域实体和值对象的不变量与纯规则                    | contracts                                                  | IO、框架、查询编排、页面投影                              |
-| `packages/ports`       | 仓储、搜索、空间、时钟、ID、事务、发布端口          | contracts/domain                                           | 具体数据库或文件实现                                      |
-| `packages/application` | 用例、权限/事务边界、查询投影编排                   | contracts/domain/ports                                     | Vue、MapLibre、文件、数据库客户端                         |
-| `packages/adapters`    | 静态包、数据库、索引、GIS、HTTP、文件系统实现       | contracts/domain/ports；迁移期可依赖 core                  | application 用例、领域裁决、UI 状态                       |
-| `apps/web`             | 公众路由、交互、可访问性、视图状态                  | contracts/application；迁移期可依赖 core；adapter 仅组合根 | domain/ports 直连、直接数据读取、事实副本、跨功能内部导入 |
-| `apps/curation`        | 候选审核与对齐交互、决策导出                        | contracts/application；迁移期可依赖 core；adapter 仅组合根 | domain/ports 直连、直接修改 Canonical/Publication         |
-| `pipeline`             | 来源接入、转录、分段、候选、决策应用、发布          | 同一 Schema 和领域规则的语言边界                           | 页面专用输出、原地覆盖发布物                              |
+| 工作区                 | 所有权                                              | 允许依赖                                | 禁止事项                                                  |
+| ---------------------- | --------------------------------------------------- | --------------------------------------- | --------------------------------------------------------- |
+| `packages/contracts`   | JSON Schema、生成 DTO、品牌 ID、跨边界查询/结果类型 | 无其他 workspace 包                     | 业务行为、Vue、存储、手改生成 DTO                         |
+| `packages/domain`      | 领域实体和值对象的不变量与纯规则                    | contracts                               | IO、框架、查询编排、页面投影                              |
+| `packages/ports`       | 稳定读取端口                                        | contracts                               | 具体数据库、文件实现或业务投影                            |
+| `packages/application` | 用例、权限/事务边界、查询投影编排                   | contracts/domain/ports                  | Vue、MapLibre、文件、数据库客户端                         |
+| `packages/adapters`    | 静态包、未来数据库/GIS/HTTP/文件系统实现            | contracts/domain/ports                  | application 用例、领域裁决、UI 状态                       |
+| `apps/web`             | 公众路由、交互、可访问性、视图状态                  | contracts/application；adapter 仅组合根 | domain/ports 直连、直接数据读取、事实副本、跨功能内部导入 |
+| `apps/curation`        | 候选审核与对齐交互、决策导出                        | contracts                               | domain/ports 直连、直接修改 Canonical/Publication         |
+| `pipeline`             | 来源接入、转录、分段、候选、决策应用、发布          | 同一 Schema 和领域规则的语言边界        | 页面专用输出、原地覆盖发布物                              |
 
-当前 `packages/core` 是迁移源，不是第二套永久架构。它将一次性拆入 `domain`、`ports` 与 `application`，完成后删除；迁移期间禁止在 core 中新增无法明确归属的“公共工具”。
+旧 `packages/core` 已完成一次性迁移并删除。仓库只保留 `domain → ports/application → adapters/composition root` 这一条架构方向，禁止重新建立第二套内核。
 
 ## 2. 领域模块
 
@@ -50,16 +50,9 @@
 
 端口按稳定能力拆分：
 
-- `PublicationContextPort`：报告唯一活动 `publicationId/contentChecksum`；
-- `CatalogRepository`：Work、Edition、Volume、SourceRecord；
-- `TextRepository`：Passage、FacsimilePage；
-- `KnowledgeRepository`：Entity、Mention、Assertion；
-- `SpacetimeRepository`：Place、Geometry、Occurrence；
-- `SearchPort`：全文候选检索，不决定业务排序含义；
-- `SpatialQueryPort`：包围盒和几何技术查询；
-- `CurationRepository`：候选与追加式决策日志；
-- `PublicationWriter`：事务式不可变发布；
-- `Clock/IdGenerator/Transaction`：可替换基础能力。
+- `PublicationReadPort`：一次提供活动发布包及其唯一 `DataContext`；
+- 新数据库、全文索引、空间数据库或远程 API 必须实现技术适配器，而不是复制用例；
+- 写入仍由 Python 发布管线承担，公众读取端保持只读；未来协作写入能力需要独立 ADR 后再新增小端口。
 
 仓储返回规范记录或 ID，不返回页面组件需要的拼装对象。拼装由 use case 完成。
 

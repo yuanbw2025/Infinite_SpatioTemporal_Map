@@ -1,4 +1,4 @@
-import { defineFeature } from "@infinite-spacetime/core";
+import { defineFeature } from "@infinite-spacetime/application";
 import { defineAsyncComponent } from "vue";
 
 const AtlasPage = defineAsyncComponent(() => import("./AtlasPage.vue"));

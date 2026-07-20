@@ -1,4 +1,4 @@
-import { defineFeature } from "@infinite-spacetime/core";
+import { defineFeature } from "@infinite-spacetime/application";
 import LibraryPage from "./LibraryPage.vue";
 import WorkPage from "./WorkPage.vue";
 import CompareEditionsPage from "./CompareEditionsPage.vue";

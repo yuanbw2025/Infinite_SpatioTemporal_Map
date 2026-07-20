@@ -1,4 +1,4 @@
-import { defineFeature } from "@infinite-spacetime/core";
+import { defineFeature } from "@infinite-spacetime/application";
 import ReaderPage from "./ReaderPage.vue";
 
 export const readerFeature = {

@@ -1,4 +1,4 @@
-import { defineFeature } from "@infinite-spacetime/core";
+import { defineFeature } from "@infinite-spacetime/application";
 import SearchPage from "./SearchPage.vue";
 
 export const searchFeature = {

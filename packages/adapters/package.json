@@ -7,10 +7,12 @@
     ".": "./src/index.ts"
   },
   "scripts": {
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
   },
   "dependencies": {
     "@infinite-spacetime/contracts": "workspace:*",
-    "@infinite-spacetime/core": "workspace:*"
+    "@infinite-spacetime/domain": "workspace:*",
+    "@infinite-spacetime/ports": "workspace:*"
   }
 }
