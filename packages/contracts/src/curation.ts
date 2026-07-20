@@ -134,3 +134,53 @@ export interface PassageAlignmentDecision {
   readonly decidedAt: string;
   readonly note?: string;
 }
+
+interface DecisionBundleBase {
+  readonly version: 1;
+  readonly bundleId: string;
+  readonly publicationId: string;
+  readonly baseContentChecksum: string;
+  readonly batchKey: string;
+  readonly createdAt: string;
+  readonly createdBy: string;
+  readonly sourceBundleIds?: readonly string[];
+}
+
+export interface CandidateReviewDecisionBundle extends DecisionBundleBase {
+  readonly workspace: "candidate_review";
+  readonly decisions: readonly CandidateReviewDecision[];
+}
+
+export interface AlignmentDecisionBundle extends DecisionBundleBase {
+  readonly workspace: "entity_alignment";
+  readonly decisions: readonly AlignmentDecision[];
+}
+
+export interface PassageAlignmentDecisionBundle extends DecisionBundleBase {
+  readonly workspace: "passage_alignment";
+  readonly decisions: readonly PassageAlignmentDecision[];
+}
+
+export type DecisionBundle =
+  | CandidateReviewDecisionBundle
+  | AlignmentDecisionBundle
+  | PassageAlignmentDecisionBundle;
+
+export interface DecisionConflictVariant {
+  readonly sourceBundleId: string;
+  readonly reviewer: string;
+  readonly decidedAt: string;
+  readonly decision: Readonly<Record<string, unknown>>;
+}
+
+export interface DecisionConflict {
+  readonly decisionId: string;
+  readonly variants: readonly DecisionConflictVariant[];
+}
+
+export interface DecisionMergeReport {
+  readonly sourceBundleIds: readonly string[];
+  readonly mergedDecisionCount: number;
+  readonly equivalentDecisionCount: number;
+  readonly conflicts: readonly DecisionConflict[];
+}

@@ -2,6 +2,7 @@
 import type {
   PassageAlignmentBatch,
   PassageAlignmentDecision,
+  PassageAlignmentDecisionBundle,
   PassageAlignmentRelation,
   PassageAlignmentResolution,
   PassageAlignmentReviewStatus,
@@ -12,6 +13,12 @@ import {
   isPassageAlignmentBatch,
   passageAlignmentStorageKey,
 } from "./passage-alignment-batch";
+import {
+  decisionBundleMatchesScope,
+  isDecisionBundle,
+  mergeDecisionBundles,
+} from "./decision-bundle";
+import { downloadJson } from "./download-json";
 
 const batch = ref<PassageAlignmentBatch>();
 const selectedId = ref("");
@@ -37,6 +44,39 @@ const rightPassages = computed(() => {
   const ids = new Set(parseIds(rightIdsText.value));
   return batch.value?.rightPassages.filter((item) => ids.has(item.id)) ?? [];
 });
+
+function batchKey(value: PassageAlignmentBatch) {
+  return `${value.generatorId}:${value.generatedAt}`;
+}
+function persist(value: PassageAlignmentBatch) {
+  localStorage.setItem(
+    passageAlignmentStorageKey(value),
+    JSON.stringify(Object.values(decisions.value)),
+  );
+}
+function bundle(
+  value: PassageAlignmentBatch,
+  items: readonly PassageAlignmentDecision[],
+  bundleId: string,
+): PassageAlignmentDecisionBundle {
+  return {
+    version: 1,
+    bundleId,
+    workspace: "passage_alignment",
+    publicationId: value.publicationId,
+    baseContentChecksum: value.baseContentChecksum,
+    batchKey: batchKey(value),
+    createdAt:
+      items
+        .map((item) => item.decidedAt)
+        .toSorted()
+        .at(-1) ?? new Date().toISOString(),
+    createdBy:
+      [...new Set(items.map((item) => item.reviewer))].join("、") ||
+      "unassigned",
+    decisions: items,
+  };
+}
 
 function parseIds(value: string): string[] {
   return [
@@ -121,10 +161,7 @@ function saveDecision() {
     ...(note.value.trim() ? { note: note.value.trim() } : {}),
   };
   decisions.value = { ...decisions.value, [item.id]: decision };
-  localStorage.setItem(
-    passageAlignmentStorageKey(value),
-    JSON.stringify(Object.values(decisions.value)),
-  );
+  persist(value);
   notice.value = `已保存 ${item.id} 的人工裁决。`;
   error.value = "";
   selectedId.value =
@@ -140,16 +177,70 @@ function exportDecisions() {
     return;
   }
   const ordered = value.items.map((item) => decisions.value[item.id]!);
-  const url = URL.createObjectURL(
-    new Blob([`${JSON.stringify(ordered, null, 2)}\n`], {
-      type: "application/json",
-    }),
+  const exported = bundle(
+    value,
+    ordered,
+    `passage:${value.publicationId}:${new Date().toISOString()}`,
   );
-  const anchor = document.createElement("a");
-  anchor.href = url;
-  anchor.download = `${value.publicationId}.passage-alignment-decisions.json`;
-  anchor.click();
-  URL.revokeObjectURL(url);
+  downloadJson(
+    exported,
+    `${value.publicationId}.passage-alignment-bundle.json`,
+  );
+}
+async function importDecisionBundle(event: Event) {
+  const input = event.target as HTMLInputElement;
+  const file = input.files?.[0];
+  const value = batch.value;
+  if (!file || !value) return;
+  try {
+    const imported: unknown = JSON.parse(await file.text());
+    if (
+      !isDecisionBundle(imported) ||
+      imported.workspace !== "passage_alignment"
+    )
+      throw new Error("文件不是版本篇章对齐协作包。");
+    if (
+      !decisionBundleMatchesScope(imported, {
+        workspace: "passage_alignment",
+        publicationId: value.publicationId,
+        baseContentChecksum: value.baseContentChecksum,
+        batchKey: batchKey(value),
+      })
+    )
+      throw new Error("协作包不属于当前发布版本或篇章对齐批次。");
+    const current = Object.values(decisions.value);
+    const result = mergeDecisionBundles(
+      current.length
+        ? [
+            imported,
+            bundle(
+              value,
+              current,
+              `local:${value.publicationId}:${Date.now()}`,
+            ),
+          ]
+        : [imported],
+    );
+    if (!result.bundle) {
+      downloadJson(
+        result.report,
+        `${value.publicationId}.passage-alignment-conflicts.json`,
+      );
+      throw new Error(
+        `发现 ${result.report.conflicts.length} 个实质冲突；当前进度未被覆盖，冲突报告已导出。`,
+      );
+    }
+    decisions.value = Object.fromEntries(
+      result.bundle.decisions.map((item) => [item.suggestionId, item]),
+    );
+    persist(value);
+    notice.value = `已合并 ${result.report.mergedDecisionCount} 条篇章裁决。`;
+    error.value = "";
+  } catch (reason) {
+    error.value = reason instanceof Error ? reason.message : "协作包读取失败";
+  } finally {
+    input.value = "";
+  }
 }
 
 watch(selected, (item) => {
@@ -195,6 +286,12 @@ watch(selected, (item) => {
         </div>
         <label class="file-button standalone"
           >更换批次<input type="file" accept=".json" @change="importBatch"
+        /></label>
+        <label class="file-button standalone"
+          >合并协作包<input
+            type="file"
+            accept=".json"
+            @change="importDecisionBundle"
         /></label>
         <button type="button" @click="exportDecisions">导出完整裁决</button>
       </div>

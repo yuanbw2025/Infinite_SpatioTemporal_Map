@@ -97,6 +97,10 @@ def evaluate_release_gate(
         errors.append("candidate review batch was not supplied")
 
     return {
+        "publicationId": publication_id,
+        "contentChecksum": (
+            manifest.get("contentChecksum") if isinstance(manifest, dict) else None
+        ),
         "passed": not errors,
         "errors": errors,
         "warnings": warnings,

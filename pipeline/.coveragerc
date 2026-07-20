@@ -4,6 +4,7 @@ source = pipeline/src/infinite_spacetime_pipeline
 omit =
     */__main__.py
     */cli.py
+    */*_cli.py
     */extractors.py
     */intake.py
     */models.py

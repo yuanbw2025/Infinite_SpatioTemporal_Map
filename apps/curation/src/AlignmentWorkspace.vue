@@ -2,10 +2,17 @@
 import type {
   AlignmentBatch,
   AlignmentDecision,
+  AlignmentDecisionBundle,
   AlignmentItem,
   AlignmentResolution,
 } from "@infinite-spacetime/contracts";
 import { computed, ref, watch } from "vue";
+import {
+  decisionBundleMatchesScope,
+  isDecisionBundle,
+  mergeDecisionBundles,
+} from "./decision-bundle";
+import { downloadJson } from "./download-json";
 
 const batch = ref<AlignmentBatch>();
 const selectedId = ref("");
@@ -27,7 +34,13 @@ function valid(value: unknown): value is AlignmentBatch {
   return (
     record.version === 1 &&
     typeof record.publicationId === "string" &&
+    Boolean(record.publicationId) &&
+    typeof record.baseContentChecksum === "string" &&
+    Boolean(record.baseContentChecksum) &&
     typeof record.alignerId === "string" &&
+    Boolean(record.alignerId) &&
+    typeof record.generatedAt === "string" &&
+    Boolean(record.generatedAt) &&
     Array.isArray(record.items) &&
     record.items.every(
       (item) =>
@@ -37,6 +50,39 @@ function valid(value: unknown): value is AlignmentBatch {
 }
 function key(value: AlignmentBatch) {
   return `infinite-spacetime-alignment:${value.publicationId}:${value.generatedAt}`;
+}
+function batchKey(value: AlignmentBatch) {
+  return `${value.alignerId}:${value.generatedAt}`;
+}
+function persist() {
+  if (batch.value)
+    localStorage.setItem(
+      key(batch.value),
+      JSON.stringify(Object.values(decisions.value)),
+    );
+}
+function bundle(
+  value: AlignmentBatch,
+  items: readonly AlignmentDecision[],
+  bundleId: string,
+): AlignmentDecisionBundle {
+  return {
+    version: 1,
+    bundleId,
+    workspace: "entity_alignment",
+    publicationId: value.publicationId,
+    baseContentChecksum: value.baseContentChecksum,
+    batchKey: batchKey(value),
+    createdAt:
+      items
+        .map((item) => item.decidedAt)
+        .toSorted()
+        .at(-1) ?? new Date().toISOString(),
+    createdBy:
+      [...new Set(items.map((item) => item.reviewer))].join("、") ||
+      "unassigned",
+    decisions: items,
+  };
 }
 async function importBatch(event: Event) {
   const input = event.target as HTMLInputElement;
@@ -94,11 +140,7 @@ function saveDecision() {
     ...(note.value.trim() ? { note: note.value.trim() } : {}),
   };
   decisions.value = { ...decisions.value, [item.id]: decision };
-  if (batch.value)
-    localStorage.setItem(
-      key(batch.value),
-      JSON.stringify(Object.values(decisions.value)),
-    );
+  persist();
   notice.value = `已保存“${item.sourceLabel}”的裁决。`;
   error.value = "";
   selectedId.value =
@@ -111,17 +153,67 @@ function exportDecisions() {
     error.value = `还有 ${batch.value.items.length - decidedCount.value} 条未裁决。`;
     return;
   }
-  const value = batch.value.items.map((item) => decisions.value[item.id]!);
-  const url = URL.createObjectURL(
-    new Blob([`${JSON.stringify(value, null, 2)}\n`], {
-      type: "application/json",
-    }),
+  const value = bundle(
+    batch.value,
+    batch.value.items.map((item) => decisions.value[item.id]!),
+    `alignment:${batch.value.publicationId}:${new Date().toISOString()}`,
   );
-  const anchor = document.createElement("a");
-  anchor.href = url;
-  anchor.download = `${batch.value.publicationId}.alignment-decisions.json`;
-  anchor.click();
-  URL.revokeObjectURL(url);
+  downloadJson(value, `${batch.value.publicationId}.alignment-bundle.json`);
+}
+async function importDecisionBundle(event: Event) {
+  const input = event.target as HTMLInputElement;
+  const file = input.files?.[0];
+  const value = batch.value;
+  if (!file || !value) return;
+  try {
+    const imported: unknown = JSON.parse(await file.text());
+    if (
+      !isDecisionBundle(imported) ||
+      imported.workspace !== "entity_alignment"
+    )
+      throw new Error("文件不是实体与地点对齐协作包。");
+    if (
+      !decisionBundleMatchesScope(imported, {
+        workspace: "entity_alignment",
+        publicationId: value.publicationId,
+        baseContentChecksum: value.baseContentChecksum,
+        batchKey: batchKey(value),
+      })
+    )
+      throw new Error("协作包不属于当前发布版本或对齐批次。");
+    const current = Object.values(decisions.value);
+    const result = mergeDecisionBundles(
+      current.length
+        ? [
+            imported,
+            bundle(
+              value,
+              current,
+              `local:${value.publicationId}:${Date.now()}`,
+            ),
+          ]
+        : [imported],
+    );
+    if (!result.bundle) {
+      downloadJson(
+        result.report,
+        `${value.publicationId}.alignment-conflicts.json`,
+      );
+      throw new Error(
+        `发现 ${result.report.conflicts.length} 个实质冲突；当前进度未被覆盖，冲突报告已导出。`,
+      );
+    }
+    decisions.value = Object.fromEntries(
+      result.bundle.decisions.map((item) => [item.alignmentId, item]),
+    );
+    persist();
+    notice.value = `已合并 ${result.report.mergedDecisionCount} 条对齐裁决。`;
+    error.value = "";
+  } catch (reason) {
+    error.value = reason instanceof Error ? reason.message : "协作包读取失败";
+  } finally {
+    input.value = "";
+  }
 }
 watch(selected, (item) => {
   if (!item) return;
@@ -155,6 +247,12 @@ watch(selected, (item) => {
         </div>
         <label class="file-button standalone"
           >更换批次<input type="file" accept=".json" @change="importBatch"
+        /></label>
+        <label class="file-button standalone"
+          >合并协作包<input
+            type="file"
+            accept=".json"
+            @change="importDecisionBundle"
         /></label>
         <button type="button" @click="exportDecisions">导出完整裁决</button>
       </div>

@@ -1,11 +1,18 @@
 import type {
   CandidateBatch,
   CandidateReviewDecision,
+  CandidateReviewDecisionBundle,
   CurationCandidate,
 } from "@infinite-spacetime/contracts";
 import { parseKnowledgePublication } from "@infinite-spacetime/contracts";
 import { computed, ref, watch } from "vue";
 import { candidateStorageKey, isCandidateBatch } from "./candidate-batch";
+import {
+  decisionBundleMatchesScope,
+  isDecisionBundle,
+  mergeDecisionBundles,
+} from "./decision-bundle";
+import { downloadJson } from "./download-json";
 
 type DecisionStatus = CandidateReviewDecision["status"];
 
@@ -200,6 +207,93 @@ export function useCandidateReview() {
     notice.value = "已撤销本次工作台中的决策；原候选未被改动。";
   }
 
+  function batchKey(value: CandidateBatch): string {
+    return `${value.generatorId}:${value.generatedAt}`;
+  }
+
+  function decisionBundle(
+    value: CandidateBatch,
+    items: readonly CandidateReviewDecision[],
+    id: string,
+  ): CandidateReviewDecisionBundle {
+    const createdAt =
+      items
+        .map((item) => item.decidedAt)
+        .toSorted()
+        .at(-1) ?? new Date().toISOString();
+    return {
+      version: 1,
+      bundleId: id,
+      workspace: "candidate_review",
+      publicationId: value.publicationId,
+      baseContentChecksum: value.baseContentChecksum,
+      batchKey: batchKey(value),
+      createdAt,
+      createdBy:
+        [...new Set(items.map((item) => item.reviewer))].join("、") ||
+        "unassigned",
+      decisions: items,
+    };
+  }
+
+  async function importDecisionBundle(event: Event) {
+    const input = event.target as HTMLInputElement;
+    const file = input.files?.[0];
+    if (!file || !batch.value) return;
+    error.value = "";
+    notice.value = "";
+    try {
+      const imported: unknown = JSON.parse(await file.text());
+      if (
+        !isDecisionBundle(imported) ||
+        imported.workspace !== "candidate_review"
+      )
+        throw new Error("文件不是知识候选审核协作包。");
+      if (
+        !decisionBundleMatchesScope(imported, {
+          workspace: "candidate_review",
+          publicationId: batch.value.publicationId,
+          baseContentChecksum: batch.value.baseContentChecksum,
+          batchKey: batchKey(batch.value),
+        })
+      )
+        throw new Error("协作包不属于当前发布版本或候选批次。");
+      const current = Object.values(decisions.value);
+      const bundles = current.length
+        ? [
+            imported,
+            decisionBundle(
+              batch.value,
+              current,
+              `local:${batch.value.publicationId}:${Date.now()}`,
+            ),
+          ]
+        : [imported];
+      const result = mergeDecisionBundles(bundles);
+      if (!result.bundle) {
+        downloadJson(
+          result.report,
+          `${batch.value.publicationId}.review-conflicts.json`,
+        );
+        throw new Error(
+          `发现 ${result.report.conflicts.length} 个实质决策冲突；未覆盖当前进度，冲突报告已导出。`,
+        );
+      }
+      decisions.value = Object.fromEntries(
+        result.bundle.decisions.map((decision) => [
+          decision.candidateId,
+          decision,
+        ]),
+      );
+      persist(decisions.value);
+      notice.value = `已合并 ${result.report.mergedDecisionCount} 条决策，其中 ${result.report.equivalentDecisionCount} 条为等价复核。`;
+    } catch (reason) {
+      error.value = reason instanceof Error ? reason.message : "协作包读取失败";
+    } finally {
+      input.value = "";
+    }
+  }
+
   function exportDecisions() {
     if (!batch.value) return;
     const ordered = batch.value.candidates
@@ -207,16 +301,12 @@ export function useCandidateReview() {
       .filter((decision): decision is CandidateReviewDecision =>
         Boolean(decision),
       );
-    const url = URL.createObjectURL(
-      new Blob([`${JSON.stringify(ordered, null, 2)}\n`], {
-        type: "application/json;charset=utf-8",
-      }),
+    const bundle = decisionBundle(
+      batch.value,
+      ordered,
+      `review:${batch.value.publicationId}:${new Date().toISOString()}`,
     );
-    const anchor = document.createElement("a");
-    anchor.href = url;
-    anchor.download = `${batch.value.publicationId}.review-decisions.json`;
-    anchor.click();
-    URL.revokeObjectURL(url);
+    downloadJson(bundle, `${batch.value.publicationId}.review-bundle.json`);
     notice.value = `已导出 ${ordered.length} 条决策。`;
   }
 
@@ -259,6 +349,7 @@ export function useCandidateReview() {
     progress,
     importBatch,
     importPublication,
+    importDecisionBundle,
     selectCandidate,
     saveDecision,
     revokeDecision,

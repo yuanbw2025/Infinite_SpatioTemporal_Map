@@ -17,6 +17,7 @@ from .curation import (
     apply_review_decisions,
     create_candidate_batch,
 )
+from .collaboration import CollaborationError, decisions_from
 from .intake import (
     SourceManifestError,
     build_source_manifest,
@@ -36,7 +37,8 @@ from .publication import (
     write_publication,
 )
 from .promotion import promote_candidates_atomically
-from .release import evaluate_release_gate
+from .release_cli import configure_release_commands, run_release_command
+from .release_registry import ReleaseRegistryError
 from .sources import SourceExtractionError, extract_source
 from .segmentation import SegmentationError, add_text_layer, segment_text
 from .transcription import TranscriptionError, attach_transcription
@@ -187,14 +189,7 @@ def build_parser() -> argparse.ArgumentParser:
     promote.add_argument("publication", type=Path)
     promote.add_argument("output", type=Path)
 
-    gate = commands.add_parser(
-        "gate", help="evaluate whether a publication is safe for formal release"
-    )
-    gate.add_argument("publication", type=Path)
-    gate.add_argument("--source-manifest", type=Path)
-    gate.add_argument("--source-dir", type=Path)
-    gate.add_argument("--candidate-batch", type=Path)
-    gate.add_argument("--output", type=Path)
+    configure_release_commands(commands)
     return parser
 
 
@@ -318,9 +313,9 @@ def main() -> int:
             _write_json(args.output, result)
             print(f"Prepared {len(result['items'])} alignment items: {args.output}")
         elif args.command == "resolve-alignments":
-            decisions = _load_json(args.decisions)
-            if not isinstance(decisions, list):
-                raise AlignmentError("alignment decisions must be a JSON array")
+            decisions = decisions_from(
+                _load_json(args.decisions), "entity_alignment"
+            )
             next_candidates, next_publication = resolve_alignments(
                 _load_json(args.candidate_batch),
                 _load_json(args.publication),
@@ -337,9 +332,9 @@ def main() -> int:
         }:
             print(run_passage_alignment_command(args))
         elif args.command == "review":
-            decisions = _load_json(args.decisions)
-            if not isinstance(decisions, list):
-                raise CurationError("decisions must be a JSON array")
+            decisions = decisions_from(
+                _load_json(args.decisions), "candidate_review"
+            )
             reviewed = apply_review_decisions(
                 _load_json(args.candidate_batch), decisions
             )
@@ -352,33 +347,15 @@ def main() -> int:
                 args.output,
             )
             print(json.dumps(report, ensure_ascii=False, indent=2))
-        elif args.command == "gate":
-            if bool(args.source_manifest) != bool(args.source_dir):
-                raise SourceManifestError(
-                    "--source-manifest and --source-dir must be supplied together"
-                )
-            source_report = (
-                verify_source_manifest(
-                    _load_json(args.source_manifest),
-                    source_dir=args.source_dir,
-                    require_publishable_rights=True,
-                )
-                if args.source_manifest and args.source_dir
-                else None
-            )
-            candidate_batch = (
-                _load_json(args.candidate_batch) if args.candidate_batch else None
-            )
-            report = evaluate_release_gate(
-                _load_json(args.publication),
-                source_report=source_report,
-                candidate_batch=candidate_batch,
-            )
-            if args.output:
-                _write_json(args.output, report)
-            print(json.dumps(report, ensure_ascii=False, indent=2))
-            if not report["passed"]:
-                return 1
+        elif args.command in {
+            "merge-decision-bundles",
+            "gate",
+            "register-release",
+            "activate-release",
+        }:
+            message, exit_code = run_release_command(args)
+            print(message)
+            return exit_code
     except (
         OSError,
         json.JSONDecodeError,
@@ -392,6 +369,8 @@ def main() -> int:
         AlignmentError,
         PassageAlignmentError,
         MigrationError,
+        CollaborationError,
+        ReleaseRegistryError,
     ) as error:
         print(f"Publication failed: {error}")
         return 1

@@ -27,6 +27,7 @@ const {
   progress,
   importBatch,
   importPublication,
+  importDecisionBundle,
   selectCandidate,
   saveDecision,
   revokeDecision,
@@ -58,6 +59,14 @@ const {
             type="file"
             accept="application/json,.json"
             @change="importPublication"
+          />
+        </label>
+        <label v-if="batch" class="file-button secondary">
+          合并协作包
+          <input
+            type="file"
+            accept="application/json,.json"
+            @change="importDecisionBundle"
           />
         </label>
         <button

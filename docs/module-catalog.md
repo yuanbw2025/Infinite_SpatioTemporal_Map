@@ -12,8 +12,8 @@
 | `packages/application` | 用例、权限/事务边界、查询投影编排                   | contracts/domain/ports                  | Vue、MapLibre、文件、数据库客户端                         |
 | `packages/adapters`    | 静态包、未来数据库/GIS/HTTP/文件系统实现            | contracts/domain/ports                  | application 用例、领域裁决、UI 状态                       |
 | `apps/web`             | 公众路由、交互、可访问性、视图状态                  | contracts/application；adapter 仅组合根 | domain/ports 直连、直接数据读取、事实副本、跨功能内部导入 |
-| `apps/curation`        | 候选审核与对齐交互、决策导出                        | contracts                               | domain/ports 直连、直接修改 Canonical/Publication         |
-| `pipeline`             | 来源接入、转录、分段、候选、决策应用、发布          | 同一 Schema 和领域规则的语言边界        | 页面专用输出、原地覆盖发布物                              |
+| `apps/curation`        | 候选审核与对齐交互、版本绑定决策包与冲突安全合并    | contracts                               | domain/ports 直连、直接修改 Canonical/Publication         |
+| `pipeline`             | 来源接入、分段、决策合并/应用、发布门禁与不可变登记 | 同一 Schema 和领域规则的语言边界        | 页面专用输出、原地覆盖发布物                              |
 
 旧 `packages/core` 已完成一次性迁移并删除。仓库只保留 `domain → ports/application → adapters/composition root` 这一条架构方向，禁止重新建立第二套内核。
 
@@ -62,7 +62,7 @@
 - `FacsimileImagePort`：隔离 IIIF/远程影像协议，阅读用例只接收统一影像资源与可选 Image API `infoUrl`；
 - `ResearchRulePort`：可信只读规则读取当前发布包并返回统一研究线索；应用层校验所有返回引用；
 - 新数据库、全文索引、空间数据库或远程 API 必须实现技术适配器，而不是复制用例；
-- 写入仍由 Python 发布管线承担，公众读取端保持只读；未来协作写入能力需要独立 ADR 后再新增小端口。
+- 写入仍由 Python 发布管线承担，公众读取端保持只读；协作以同一 `DecisionBundle` 文件协议交换。未来集中式账号、权限与存储可增加小型服务端口，但不得改变事实契约或冲突语义。
 
 仓储返回规范记录或 ID，不返回页面组件需要的拼装对象。拼装由 use case 完成。
 

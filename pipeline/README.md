@@ -155,7 +155,19 @@ PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline apply-passage-ali
   workspace/passage-decisions.json publication.next.json
 ```
 
-在 `pnpm dev:curation` 的“版本篇章对齐”工作区完成整批裁决。批次绑定发布包 ID 与内容校验和；旧批次、遗漏裁决、跨版本段落、重复占用和缺少人工责任信息都会阻止发布。
+在 `pnpm dev:curation` 的“版本篇章对齐”工作区完成整批裁决。批次绑定发布包 ID 与内容校验和；旧批次、遗漏裁决、跨版本段落、重复占用和缺少人工责任信息都会阻止发布。三个审核工作区现在都导出 `DecisionBundle`；上述 `review`、`resolve-alignments` 和 `apply-passage-alignments` 命令既接受协作包，也继续接受旧式决策数组。
+
+## 多人决策合并
+
+不同审核者必须从同一发布校验和与同一批次分别导出协作包。合并器只自动折叠实质结果相同的复核，忽略审核人和时间差异但在报告中保留贡献者；任何实质冲突都会返回非零状态，且不会写出可应用的合并包：
+
+```bash
+PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline \
+  merge-decision-bundles reviewer-a.json reviewer-b.json merged.json \
+  --report merge-report.json
+```
+
+工作台也可直接导入另一协作包。版本、工作区或批次不一致会拒绝导入；出现冲突时不会覆盖本机进度，并自动下载冲突报告。
 
 开发期 `validate` 允许机器建议存在，便于预览；正式发布必须通过更严格的 `gate`。门禁会同时检查发布契约、版本权利说明、来源清单、原件校验值、候选积压和所有知识记录的人工审核状态，并可输出机器可读报告：
 
@@ -167,3 +179,27 @@ PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline gate \
   --candidate-batch workspace/candidates.reviewed.json \
   --output workspace/release-gate.json
 ```
+
+通过门禁的不可变发布物随后进入追加式登记簿。首次登记可不传 `--registry`；后续登记读取旧登记簿并写出新文件：
+
+```bash
+PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline \
+  register-release publication.json workspace/release-gate.json \
+  workspace/release-registry.next.json \
+  --artifact-path releases/0.8/publication.json \
+  --actor editor-name --registered-at 2026-07-20T00:00:00Z
+```
+
+首次激活不传预期当前值；后续上线或回滚必须把调用者看到的当前校验和传给 `--expected-current-checksum`。并发状态已经变化时操作失败，历史记录不被覆盖：
+
+```bash
+PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline \
+  activate-release workspace/release-registry.json \
+  workspace/release-registry.next.json \
+  --content-checksum sha256:... \
+  --expected-current-checksum sha256:... \
+  --actor editor-name --activated-at 2026-07-20T00:01:00Z \
+  --reason "publish reviewed gazetteer"
+```
+
+完整协议见 [`docs/collaboration-and-release-management.md`](../docs/collaboration-and-release-management.md)。

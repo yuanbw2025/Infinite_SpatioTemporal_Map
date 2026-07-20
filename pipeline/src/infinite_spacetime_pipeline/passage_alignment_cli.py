@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 from typing import Any
 
+from .collaboration import decisions_from
 from .passage_alignment import (
     PassageAlignmentError,
     apply_passage_alignment_decisions,
@@ -62,9 +63,7 @@ def run_passage_alignment_command(args: argparse.Namespace) -> str:
         )
         _write_json(args.output, result)
         return f"Prepared {len(result['items'])} passage alignment items: {args.output}"
-    decisions = _load_json(args.decisions)
-    if not isinstance(decisions, list):
-        raise PassageAlignmentError("decisions must be a JSON array")
+    decisions = decisions_from(_load_json(args.decisions), "passage_alignment")
     result = apply_passage_alignment_decisions(
         _load_json(args.publication),
         _load_json(args.batch),

@@ -54,6 +54,17 @@ from .segmentation import (
     segment_text,
 )
 from .release import evaluate_release_gate
+from .collaboration import (
+    CollaborationError,
+    decisions_from,
+    merge_decision_bundles,
+)
+from .release_registry import (
+    ReleaseRegistryError,
+    activate_release,
+    current_release_checksum,
+    register_release,
+)
 from .transcription import TranscriptionError, attach_transcription
 
 __all__ = [
@@ -106,4 +117,11 @@ __all__ = [
     "suggest_passage_alignments",
     "TranscriptionError",
     "verify_source_manifest",
+    "CollaborationError",
+    "decisions_from",
+    "merge_decision_bundles",
+    "ReleaseRegistryError",
+    "activate_release",
+    "current_release_checksum",
+    "register_release",
 ]
