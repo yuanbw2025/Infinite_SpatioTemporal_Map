@@ -13,6 +13,7 @@ import { peopleFeature } from "./people";
 import { readerFeature } from "./reader";
 import { researchFeature } from "./research";
 import { searchFeature } from "./search";
+import { societyFeature } from "./society";
 import { timelineFeature } from "./timeline";
 
 interface RegisteredFeature {
@@ -26,6 +27,7 @@ const features: readonly RegisteredFeature[] = [
   readerFeature,
   atlasFeature,
   peopleFeature,
+  societyFeature,
   heritageFeature,
   graphFeature,
   timelineFeature,

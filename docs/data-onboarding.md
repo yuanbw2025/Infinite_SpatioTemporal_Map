@@ -123,6 +123,9 @@ PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline apply-passage-ali
 | object assertions               | 知识图谱与实体关系展开                 |
 | temporal assertions/occurrences | 历史时间线与人物生平轨道               |
 | disputed/conflicting records    | 研究工具中的待核验线索                 |
+| family/education/office/social  | 地方社会的家族、师承、任官与交往专题   |
+| society + event assertions      | 户口赋役、物产风俗与事件灾异专题       |
+| heritage assertions/occurrences | 文物属性、关联对象、发现馆藏与流转专题 |
 
 ## 永久约束
 

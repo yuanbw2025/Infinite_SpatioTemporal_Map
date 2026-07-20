@@ -1,4 +1,4 @@
-# 0.5 核心关系谓词规范
+# 核心关系谓词规范
 
 ## 1. 目标
 
@@ -25,9 +25,9 @@
 | `family.child_of`           | 父母     | entity  | 有向 | 子女主体指向父母                  |
 | `family.spouse_of`          | 配偶     | entity  | 对称 | 婚姻关系                          |
 | `family.sibling_of`         | 兄弟姊妹 | entity  | 对称 | 同辈关系                          |
-| `family.clan_member_of`     | 宗族成员 | entity  | 有向 | 人物到家族/机构实体               |
-| `education.teacher_of`      | 老师     | entity  | 有向 | 师承关系                          |
-| `education.student_of`      | 弟子     | entity  | 有向 | `teacher_of` 的查询反向           |
+| `family.clan_member_of`     | 所属宗族 | entity  | 有向 | 人物到家族/机构实体               |
+| `education.teacher_of`      | 弟子     | entity  | 有向 | 教师主体指向学生                  |
+| `education.student_of`      | 老师     | entity  | 有向 | 学生主体指向教师                  |
 | `education.affiliated_with` | 就学于   | entity  | 有向 | 人物与书院、机构                  |
 | `office.held_position`      | 担任官职 | entity  | 有向 | 人物到 office 实体                |
 | `office.held_title`         | 官职原称 | literal | 有向 | 尚未实体对齐的原文官职            |
@@ -46,8 +46,13 @@
 | `heritage.collection`       | 馆藏机构 | entity  | 有向 | 文博对象到 institution            |
 | `heritage.public_name`      | 公众名称 | literal | 有向 | 与规范专家名并存的展示名称        |
 | `heritage.catalogue_number` | 藏品编号 | literal | 有向 | 来源中的馆藏编号                  |
-| `source.cites`              | 引用     | entity  | 有向 | 文献/史源实体之间的引用           |
-| `source.derived_from`       | 源自     | entity  | 有向 | 记载或对象的来源关系              |
+| `society.population`        | 人口     | literal | 有向 | 地点/机构的人口史料原值           |
+| `society.households`        | 户口     | literal | 有向 | 地点/机构的户口史料原值           |
+| `society.taxation`          | 赋役税粮 | literal | 有向 | 不擅自统一单位的赋役原值          |
+| `society.local_product`     | 地方物产 | entity  | 有向 | 地点/机构到材料或器物             |
+| `society.tribute_product`   | 贡物     | entity  | 有向 | 地点/机构到材料或器物             |
+| `society.custom`            | 风俗     | literal | 有向 | 有证据的地方风俗概述              |
+| `event.kind`                | 事件类型 | literal | 有向 | 灾异、庆典等来源分类              |
 | `classification.member_of`  | 属于     | entity  | 有向 | 无独立专门字段的稳定分类          |
 | `descriptive.note`          | 来源描述 | literal | 有向 | 有证据但暂不能结构化的文字属性    |
 | `other.related_to`          | 相关     | entity  | 对称 | 最低限度关系；不得替代可明确谓词  |
@@ -64,6 +69,8 @@
 | `relatedTo` | `other.related_to`  |
 
 其他旧值必须由数据维护者提供显式映射。迁移器不得根据字符串相似度猜测学术语义。
+
+0.6 → 0.7 只扩展 `society.*` 与 `event.kind`，不改写任何已有主张；迁移报告明确列出新增谓词。当前机器词表版本为 1.1.0。
 
 ## 5. 验收条件
 

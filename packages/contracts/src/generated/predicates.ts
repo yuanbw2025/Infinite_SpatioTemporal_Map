@@ -1,5 +1,5 @@
 /** Generated from vocabularies/predicates.json. Do not edit. */
-export const PREDICATE_VOCABULARY_VERSION = "1.0.0" as const;
+export const PREDICATE_VOCABULARY_VERSION = "1.1.0" as const;
 export const PREDICATE_DEFINITIONS = [
   {
     id: "family.parent_of",
@@ -228,6 +228,69 @@ export const PREDICATE_DEFINITIONS = [
     valueKind: "literal",
     directionality: "directed",
     subjectTypes: ["artifact", "site"],
+    objectTypes: [],
+  },
+  {
+    id: "society.population",
+    label: "人口",
+    category: "society",
+    valueKind: "literal",
+    directionality: "directed",
+    subjectTypes: ["place", "institution"],
+    objectTypes: [],
+  },
+  {
+    id: "society.households",
+    label: "户口",
+    category: "society",
+    valueKind: "literal",
+    directionality: "directed",
+    subjectTypes: ["place", "institution"],
+    objectTypes: [],
+  },
+  {
+    id: "society.taxation",
+    label: "赋役税粮",
+    category: "society",
+    valueKind: "literal",
+    directionality: "directed",
+    subjectTypes: ["place", "institution"],
+    objectTypes: [],
+  },
+  {
+    id: "society.local_product",
+    label: "地方物产",
+    category: "society",
+    valueKind: "entity",
+    directionality: "directed",
+    subjectTypes: ["place", "institution"],
+    objectTypes: ["material", "artifact"],
+  },
+  {
+    id: "society.tribute_product",
+    label: "贡物",
+    category: "society",
+    valueKind: "entity",
+    directionality: "directed",
+    subjectTypes: ["place", "institution"],
+    objectTypes: ["material", "artifact"],
+  },
+  {
+    id: "society.custom",
+    label: "风俗",
+    category: "society",
+    valueKind: "literal",
+    directionality: "directed",
+    subjectTypes: ["place", "institution"],
+    objectTypes: [],
+  },
+  {
+    id: "event.kind",
+    label: "事件类型",
+    category: "event",
+    valueKind: "literal",
+    directionality: "directed",
+    subjectTypes: ["event"],
     objectTypes: [],
   },
   {

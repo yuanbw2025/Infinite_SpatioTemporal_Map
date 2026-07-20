@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://infinite-spacetime.org/schemas/0.6.0/publication.schema.json",
+  "$id": "https://infinite-spacetime.org/schemas/0.7.0/publication.schema.json",
   "title": "KnowledgePublication",
   "description": "Canonical portable publication contract for Infinite SpatioTemporal Map.",
   "type": "object",
@@ -141,6 +141,13 @@
         "heritage.collection",
         "heritage.public_name",
         "heritage.catalogue_number",
+        "society.population",
+        "society.households",
+        "society.taxation",
+        "society.local_product",
+        "society.tribute_product",
+        "society.custom",
+        "event.kind",
         "classification.member_of",
         "descriptive.note",
         "other.related_to"
@@ -207,7 +214,7 @@
         "sourceDescription"
       ],
       "properties": {
-        "contractVersion": { "const": "0.6.0" },
+        "contractVersion": { "const": "0.7.0" },
         "publicationId": { "$ref": "#/definitions/Id" },
         "datasetVersion": {
           "type": "string",

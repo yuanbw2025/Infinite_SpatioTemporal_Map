@@ -11,7 +11,7 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 const context = {
-  contractVersion: "0.6.0",
+  contractVersion: "0.7.0",
   publicationId: "publication-a",
   datasetVersion: "0.0.0",
   contentChecksum: `sha256:${"0".repeat(64)}`,

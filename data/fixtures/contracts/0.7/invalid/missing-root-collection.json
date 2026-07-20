@@ -1,6 +1,6 @@
 {
   "manifest": {
-    "contractVersion": "0.6.0",
+    "contractVersion": "0.7.0",
     "publicationId": "invalid-missing-sources",
     "datasetVersion": "0.0.0",
     "title": "缺少根集合",

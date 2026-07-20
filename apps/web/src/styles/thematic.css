@@ -1,0 +1,105 @@
+.thematic-console {
+  display: grid;
+  grid-template-columns:
+    minmax(220px, 1.5fr) repeat(3, minmax(110px, 0.7fr))
+    auto;
+  align-items: end;
+  gap: 10px;
+  margin-bottom: 18px;
+  padding: 16px;
+  border-radius: 14px;
+  color: #f8f0df;
+  background: var(--green);
+}
+.thematic-console label {
+  display: grid;
+  gap: 6px;
+  font-size: 11px;
+}
+.thematic-console input,
+.thematic-console select {
+  min-width: 0;
+  padding: 9px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: inherit;
+}
+.society-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 9px;
+  margin-bottom: 22px;
+}
+.society-topic-grid button {
+  display: grid;
+  gap: 4px;
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: rgba(255, 253, 247, 0.55);
+  text-align: left;
+}
+.society-topic-grid button.active {
+  color: #fff8ec;
+  background: var(--red);
+}
+.society-topic-grid strong {
+  font-family: "Songti SC", serif;
+  font-size: 25px;
+}
+.society-topic-grid small {
+  opacity: 0.72;
+}
+.thematic-record-list {
+  display: grid;
+  gap: 14px;
+}
+.thematic-record-list > article > header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.thematic-record-list h2 {
+  margin: 7px 0;
+}
+.thematic-record-list h2 a {
+  color: inherit;
+}
+.thematic-record-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.thematic-record-columns h3 {
+  margin-top: 0;
+  font-size: 13px;
+}
+.compact-fact-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.compact-fact-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+}
+.compact-fact-list li span {
+  color: var(--muted);
+}
+@media (max-width: 900px) {
+  .thematic-console,
+  .society-topic-grid,
+  .thematic-record-columns {
+    grid-template-columns: 1fr;
+  }
+}

@@ -43,6 +43,8 @@
 | Research  | ResearchQuery              | Knowledge/Spacetime ports      | 可解释的冲突与缺失线索                       |
 | Metrics   | 无或 publication ID        | 所有只读 ports                 | DatasetOverview                              |
 | Curation  | candidate/decision command | curation/canonical ports       | 追加式决策与发布请求                         |
+| Society   | SocietyQuery               | Knowledge/Spacetime ports      | 专题计数与 ThematicRecord                    |
+| Heritage  | HeritageQuery              | Knowledge/Spacetime ports      | 文博档案、属性、关联与流转投影               |
 
 投影类型属于用例输出，不得被 pipeline 当作规范输入，也不得反向写入事实仓储。
 

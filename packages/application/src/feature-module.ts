@@ -8,6 +8,7 @@ export type FeatureCapability =
   | "knowledge:explore"
   | "atlas:explore"
   | "people:explore"
+  | "society:explore"
   | "heritage:explore"
   | "search:global"
   | "metadata:inspect"

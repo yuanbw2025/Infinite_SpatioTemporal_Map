@@ -13,3 +13,4 @@ export * from "./reader-use-cases";
 export * from "./research-use-case";
 export * from "./search-use-case";
 export * from "./timeline-use-case";
+export * from "./thematic-use-cases";

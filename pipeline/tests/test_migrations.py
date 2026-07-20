@@ -9,6 +9,7 @@ from infinite_spacetime_pipeline.migrations import (
     migrate_0_3_to_0_4,
     migrate_0_4_to_0_5,
     migrate_0_5_to_0_6,
+    migrate_0_6_to_0_7,
     migrate_to_current,
 )
 
@@ -174,11 +175,11 @@ class MigrationTest(unittest.TestCase):
 
     def test_migrate_to_current_runs_the_complete_chain(self) -> None:
         publication, reports = migrate_to_current(_old_publication())
-        self.assertEqual(publication["manifest"]["contractVersion"], "0.6.0")
+        self.assertEqual(publication["manifest"]["contractVersion"], "0.7.0")
         self.assertEqual(publication["passageAlignments"], [])
         self.assertEqual(
             [report["toContractVersion"] for report in reports],
-            ["0.4.0", "0.5.0", "0.6.0"],
+            ["0.4.0", "0.5.0", "0.6.0", "0.7.0"],
         )
 
     def test_0_5_to_0_6_adds_only_the_alignment_collection(self) -> None:
@@ -187,6 +188,17 @@ class MigrationTest(unittest.TestCase):
         publication, report = migrate_0_5_to_0_6(publication_0_5)
         self.assertEqual(publication["passageAlignments"], [])
         self.assertEqual(report["createdPassageAlignments"], 0)
+
+    def test_0_6_to_0_7_expands_vocabulary_without_rewriting_facts(self) -> None:
+        publication_0_4, _ = migrate_0_3_to_0_4(_old_publication())
+        publication_0_5, _ = migrate_0_4_to_0_5(publication_0_4)
+        publication_0_6, _ = migrate_0_5_to_0_6(publication_0_5)
+        publication, report = migrate_0_6_to_0_7(publication_0_6)
+        self.assertEqual(publication["manifest"]["contractVersion"], "0.7.0")
+        self.assertEqual(
+            publication["assertions"], publication_0_6["assertions"]
+        )
+        self.assertIn("society.population", report["addedPredicates"])
 
 
 if __name__ == "__main__":

@@ -15,6 +15,8 @@ import type {
   FacsimilePage,
   HistoricalMapResource,
   HistoricalMapResourceQuery,
+  HeritageQuery,
+  HeritageRecord,
   Page,
   Passage,
   PassageContext,
@@ -22,6 +24,8 @@ import type {
   PassageQuery,
   ResearchQuery,
   ResearchReport,
+  SocietyQuery,
+  SocietyResult,
   SearchHit,
   SearchQuery,
   TimelineQuery,
@@ -51,6 +55,7 @@ import { readPassage, listPassages } from "./reader-use-cases";
 import { inspectResearch } from "./research-use-case";
 import { search } from "./search-use-case";
 import { buildTimeline } from "./timeline-use-case";
+import { exploreHeritage, exploreSociety } from "./thematic-use-cases";
 
 export interface ApplicationServices {
   readonly dataContext: DataContext;
@@ -72,6 +77,12 @@ export interface ApplicationServices {
   readonly knowledge: {
     listEntities(query?: EntityQuery): Promise<Page<EntitySummary>>;
     openEntity(id: EntityId): Promise<EntityProfile>;
+  };
+  readonly society: {
+    explore(query?: SocietyQuery): Promise<SocietyResult>;
+  };
+  readonly heritage: {
+    explore(query?: HeritageQuery): Promise<Page<HeritageRecord>>;
   };
   readonly atlas: {
     explore(query: AtlasQuery): Promise<ReturnType<typeof exploreAtlas>>;
@@ -133,6 +144,8 @@ export function createApplicationServices(
       listEntities: async (query) => listEntities(index, query),
       openEntity: async (id) => openEntity(index, id),
     },
+    society: { explore: async (query) => exploreSociety(index, query) },
+    heritage: { explore: async (query) => exploreHeritage(index, query) },
     atlas: {
       explore: async (query) =>
         dependencies.spatialQuery

@@ -1,6 +1,6 @@
-# 目标 0.6 字段字典
+# 目标 0.7 字段字典
 
-本字典是已实施的 0.6 契约基线，逐一规定字段名、类型、必填性、所有者与引用关系。历史数据差异见末尾迁移表；新代码不得重新引入这些字段。
+本字典是已实施的 0.7 契约基线，逐一规定字段名、类型、必填性、所有者与引用关系。历史数据差异见末尾迁移表；新代码不得重新引入这些字段。
 
 记号：`!` 必填，`?` 可选，`[]` 数组。所有 ID 均为品牌字符串；所有字符区间为原文 Unicode 索引的 `[start, end)`。
 
@@ -275,6 +275,7 @@
 - 布尔投影字段遵守 `is/has/can` 前缀，例如 `isTruncated`，不使用裸 `truncated`。
 - `MapObservation`、`TimelineItem`、`KnowledgeGraphEdge`、`SearchHit`、`ResearchFinding` 是临时只读投影，不进入 KnowledgePublication。
 - `HistoricalMapResourceCatalog` 是绑定 `publicationId/contentChecksum` 的可重建投影目录；`raster_map` 必须引用 SourceRecord，`boundary_geojson` 必须引用规范 GeometryId。
+- `ThematicRecord` 是地方社会和文博共用的只读专题投影，只组合 Entity、Assertion、Occurrence、相关实体和证据 PassageId。
 - 投影记录允许包含显示 label，但必须从同一 Publication 的事实生成。
 - 持久化投影使用 `ProjectionManifest(publicationId, contentChecksum, projectionKind, generatedAt, toolVersion)`，版本不匹配拒绝加载。
 - UI store 只保存投影、ID 和查询状态，不把规范记录修改后当作新事实。
@@ -313,3 +314,12 @@
 | 页面私有或自动版本配对 | 自动结果仅作投影；人工结果进入统一发布契约 |
 | 只支持一段对一段       | `members[].passageIds` 支持一对多和多对多  |
 | 建议与数据版本脱离     | 批次绑定 `publicationId + contentChecksum` |
+
+## 11. 0.6 → 0.7 必迁移项
+
+| 0.6 字段/行为                  | 0.7 决策                                              |
+| ------------------------------ | ----------------------------------------------------- |
+| 人口、户口、赋役和风俗塞入备注 | 增加 `society.population/households/taxation/custom`  |
+| 物产与贡物无法结构关联         | 增加 `society.local_product/tribute_product` 实体关系 |
+| 灾异等事件类别依赖页面字符串   | 增加 `event.kind` 文字谓词                            |
+| 地方社会、文博页面各自拼数据   | application 统一生成证据可回溯的专题投影              |

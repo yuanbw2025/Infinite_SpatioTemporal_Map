@@ -4,7 +4,7 @@
 
 ## 当前阶段
 
-这是全新原创架构的首个可运行产品版本。方志书库、单层与并列阅读、IIIF 多页影印与版面联动、实体档案、证据回溯、知识图谱、日级历史时间线、人物行迹、时空地图、文博浏览、研究线索、全库检索和数据状态页面均已接入统一应用服务。
+这是全新原创架构的首个可运行产品版本。方志书库、单层与并列阅读、IIIF 多页影印与版面联动、实体档案、证据回溯、知识图谱、日级历史时间线、人物行迹、地方社会专题、时空地图、文博专题、研究线索、全库检索和数据状态页面均已接入统一应用服务。
 
 代码架构、数据生产线、审核工作台、发布安全和自动质量门禁已经完成；仓库内的虚构样本可重复跑通“分段—文本分层—提取—审核—发布—原文回溯”。当前产品层面的主要缺口是接入来源与权利清晰的真实方志数据，并据真实资料逐项校定内容与交互细节。详见[完成度与剩余工作](docs/completion-status.md)。
 
@@ -58,9 +58,10 @@ pnpm verify
 - [参赛级质量标准](docs/quality-standard.md)
 - [项目治理与交付机制](docs/project-governance.md)
 - [数据进入、字段所有权与功能组合蓝图](docs/data-feature-blueprint.md)
-- [0.6 字段字典](docs/field-dictionary.md)
+- [0.7 字段字典](docs/field-dictionary.md)
 - [人工版本段落对齐规范](docs/passage-alignment.md)
 - [历史底图与疆域投影资源规范](docs/historical-map-resources.md)
+- [地方社会与文博专题投影规范](docs/thematic-projections.md)
 - [核心关系谓词规范](docs/predicate-vocabulary.md)
 - [统一工程规则](docs/engineering-rules.md)
 - [模块目录与依赖契约](docs/module-catalog.md)

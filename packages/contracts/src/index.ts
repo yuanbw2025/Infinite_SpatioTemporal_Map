@@ -8,5 +8,6 @@ export * from "./publication";
 export * from "./predicate-vocabulary";
 export * from "./queries";
 export * from "./spacetime";
+export * from "./thematic";
 export * from "./validation";
 export { CONTRACT_VERSION } from "./generated/version";

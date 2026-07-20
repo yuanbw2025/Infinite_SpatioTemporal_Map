@@ -1,16 +1,24 @@
 <script setup lang="ts">
-import type { EntitySummary, EntityType } from "@infinite-spacetime/contracts";
+import type {
+  EntityType,
+  HeritageRecord,
+  ReviewStatus,
+} from "@infinite-spacetime/contracts";
 import { onMounted, ref } from "vue";
 import EmptyState from "../../components/EmptyState.vue";
+import AssertionList from "../../components/AssertionList.vue";
 import EntityTypeBadge from "../../components/EntityTypeBadge.vue";
 import PageHeader from "../../components/PageHeader.vue";
 import ReviewBadge from "../../components/ReviewBadge.vue";
 import { useApplication } from "../../composables/use-application";
 
 const { services } = useApplication();
-const records = ref<readonly EntitySummary[]>([]);
+const records = ref<readonly HeritageRecord[]>([]);
 const query = ref("");
 const activeType = ref<EntityType>();
+const startYear = ref<number>();
+const endYear = ref<number>();
+const reviewStatus = ref<ReviewStatus | "">("");
 const loading = ref(false);
 const error = ref("");
 const nextCursor = ref<string>();
@@ -33,13 +41,28 @@ async function load(reset = true) {
     nextCursor.value = undefined;
   }
   try {
-    const page = await services.knowledge.listEntities({
+    const page = await services.heritage.explore({
       types: activeType.value
         ? [activeType.value]
         : types.map((item) => item.value),
       limit: 100,
       ...(!reset && nextCursor.value ? { cursor: nextCursor.value } : {}),
       ...(query.value.trim() ? { text: query.value.trim() } : {}),
+      ...(startYear.value !== undefined || endYear.value !== undefined
+        ? {
+            temporal: {
+              original: `${startYear.value ?? "未知"}—${endYear.value ?? "未知"}`,
+              ...(startYear.value === undefined
+                ? {}
+                : { startYear: startYear.value }),
+              ...(endYear.value === undefined
+                ? {}
+                : { endYear: endYear.value }),
+              certainty: "range",
+            },
+          }
+        : {}),
+      ...(reviewStatus.value ? { reviewStatuses: [reviewStatus.value] } : {}),
     });
     records.value = reset ? page.items : [...records.value, ...page.items];
     nextCursor.value = page.nextCursor;
@@ -99,15 +122,35 @@ onMounted(() => load());
       </button>
     </div>
 
+    <form class="thematic-console" @submit.prevent="load()">
+      <label>
+        <span>起始年</span>
+        <input v-model.number="startYear" type="number" />
+      </label>
+      <label>
+        <span>终止年</span>
+        <input v-model.number="endYear" type="number" />
+      </label>
+      <label>
+        <span>审核状态</span>
+        <select v-model="reviewStatus">
+          <option value="">全部</option>
+          <option value="reviewed">已复核</option>
+          <option value="verified">已核定</option>
+          <option value="disputed">有争议</option>
+        </select>
+      </label>
+      <button class="primary-button" type="submit">筛选时代与状态</button>
+    </form>
+
     <p v-if="loading" class="loading-line">正在整理文博线索……</p>
     <p v-else-if="error" class="error-line">{{ error }}</p>
     <template v-else-if="records.length">
       <div class="entity-grid">
-        <router-link
+        <article
           v-for="item in records"
           :key="item.entity.id"
           class="entity-card heritage-card"
-          :to="`/entities/${item.entity.id}`"
         >
           <div class="entity-card__meta">
             <EntityTypeBadge :type="item.entity.type" />
@@ -116,16 +159,33 @@ onMounted(() => load());
               :status="item.entity.reviewStatus"
             />
           </div>
-          <h2>{{ item.entity.preferredName }}</h2>
+          <h2>
+            <router-link :to="`/entities/${item.entity.id}`">{{
+              item.entity.preferredName
+            }}</router-link>
+          </h2>
           <p>
             {{ item.entity.summary ?? "查看方志出处、历史地点与关联对象。" }}
           </p>
+          <AssertionList
+            :assertions="item.assertions.slice(0, 4)"
+            :entities="item.relatedEntities"
+            :perspective-entity-id="item.entity.id"
+          />
+          <div v-if="item.relatedEntities.length" class="tag-list">
+            <router-link
+              v-for="entity in item.relatedEntities.slice(0, 6)"
+              :key="entity.id"
+              :to="`/entities/${entity.id}`"
+              >{{ entity.preferredName }}</router-link
+            >
+          </div>
           <footer>
-            <span>{{ item.mentionCount }} 处原文</span
-            ><span>{{ item.assertionCount }} 条主张</span>
-            <span>{{ item.occurrenceCount }} 条流转</span>
+            <span>{{ item.evidencePassageIds.length }} 处证据</span
+            ><span>{{ item.assertions.length }} 条主张</span>
+            <span>{{ item.occurrences.length }} 条流转</span>
           </footer>
-        </router-link>
+        </article>
       </div>
       <button
         v-if="nextCursor"

@@ -1,6 +1,6 @@
 {
   "manifest": {
-    "contractVersion": "0.6.0",
+    "contractVersion": "0.7.0",
     "publicationId": "invalid-unknown-predicate",
     "datasetVersion": "0.0.0",
     "title": "未知谓词反例",

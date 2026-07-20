@@ -98,6 +98,13 @@ export type PredicateId =
   | "heritage.collection"
   | "heritage.public_name"
   | "heritage.catalogue_number"
+  | "society.population"
+  | "society.households"
+  | "society.taxation"
+  | "society.local_product"
+  | "society.tribute_product"
+  | "society.custom"
+  | "event.kind"
   | "classification.member_of"
   | "descriptive.note"
   | "other.related_to";
@@ -170,7 +177,7 @@ export interface KnowledgePublication {
  * via the `definition` "PublicationManifest".
  */
 export interface PublicationManifest {
-  contractVersion: "0.6.0";
+  contractVersion: "0.7.0";
   publicationId: WireId;
   datasetVersion: string;
   title: NonEmptyString;
