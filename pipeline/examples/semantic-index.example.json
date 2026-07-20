@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "publicationId": "example-publication",
+  "contentChecksum": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "modelId": "example-embedding-model",
+  "dimensions": 3,
+  "records": [
+    {
+      "kind": "passage",
+      "id": "passage-example",
+      "vector": [0.8, 0.1, 0.2]
+    },
+    {
+      "kind": "entity",
+      "id": "entity-example",
+      "vector": [0.2, 0.9, 0.1]
+    }
+  ]
+}

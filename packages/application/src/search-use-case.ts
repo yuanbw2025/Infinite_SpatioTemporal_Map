@@ -13,17 +13,22 @@ import { overlaps } from "@infinite-spacetime/domain";
 import type { PublicationIndex } from "./publication-index";
 import { paginate } from "./query-utils";
 
-export function search(
+export interface SearchScope {
+  workAllowed(work: Work): boolean;
+  passageAllowed(passage: Passage): boolean;
+  entityAllowed(entity: Entity): boolean;
+}
+
+/** Shared canonical filters used by lexical, semantic, and hybrid execution. */
+export function createSearchScope(
   index: PublicationIndex,
   query: SearchQuery,
-): Page<SearchHit> {
-  const term = query.text.trim().toLocaleLowerCase();
-  if (!term) return { items: [] };
+): SearchScope {
   const region = query.region?.trim().toLocaleLowerCase();
   const statuses = query.reviewStatuses
     ? new Set(query.reviewStatuses)
     : undefined;
-  const workIsAllowed = (workId: WorkId | undefined) =>
+  const workIdAllowed = (workId: WorkId | undefined) =>
     workId !== undefined && (!query.workIds || query.workIds.includes(workId));
   const workMatchesRegion = (work: Work | undefined) =>
     !region ||
@@ -80,7 +85,7 @@ export function search(
         assertion.evidence.some((evidence) => {
           const passage = index.passages.get(evidence.passageId);
           return Boolean(
-            passage && workIsAllowed(index.workIdForPassage(passage)),
+            passage && workIdAllowed(index.workIdForPassage(passage)),
           );
         }),
     );
@@ -88,7 +93,7 @@ export function search(
       directEvidence ||
       index
         .entityPassages(entityId)
-        .some((passage) => workIsAllowed(index.workIdForPassage(passage)))
+        .some((passage) => workIdAllowed(index.workIdForPassage(passage)))
     );
   };
   const entityMatchesStatus = (entity: Entity) =>
@@ -154,10 +159,34 @@ export function search(
         workMatchesRegion(index.works.get(index.workIdForPassage(passage)!)),
       );
   };
+  return {
+    workAllowed: (work) =>
+      workIdAllowed(work.id) &&
+      workMatchesRegion(work) &&
+      workMatchesTemporal(work),
+    passageAllowed: (passage) =>
+      workIdAllowed(index.workIdForPassage(passage)) &&
+      workMatchesRegion(index.works.get(index.workIdForPassage(passage)!)) &&
+      passageMatchesTemporal(passage) &&
+      passageMatchesStatus(passage),
+    entityAllowed: (entity) =>
+      (!query.entityTypes || query.entityTypes.includes(entity.type)) &&
+      entityMatchesWork(entity.id) &&
+      entityMatchesRegion(entity) &&
+      entityMatchesTemporal(entity.id) &&
+      entityMatchesStatus(entity),
+  };
+}
+
+export function search(
+  index: PublicationIndex,
+  query: SearchQuery,
+): Page<SearchHit> {
+  const term = query.text.trim().toLocaleLowerCase();
+  if (!term) return { items: [] };
+  const scope = createSearchScope(index, query);
   const workHits: SearchHit[] = index.publication.works
-    .filter((item) => workIsAllowed(item.id))
-    .filter(workMatchesRegion)
-    .filter(workMatchesTemporal)
+    .filter(scope.workAllowed)
     .filter((item) =>
       `${item.title} ${item.alternativeTitles.join(" ")}`
         .toLocaleLowerCase()
@@ -165,12 +194,7 @@ export function search(
     )
     .map((work) => ({ kind: "work", score: 1, work }));
   const passageHits: SearchHit[] = index.publication.passages
-    .filter((item) => workIsAllowed(index.workIdForPassage(item)))
-    .filter((item) =>
-      workMatchesRegion(index.works.get(index.workIdForPassage(item)!)),
-    )
-    .filter(passageMatchesTemporal)
-    .filter(passageMatchesStatus)
+    .filter(scope.passageAllowed)
     .filter((item) =>
       Object.values(item.text).some((text) =>
         text?.toLocaleLowerCase().includes(term),
@@ -178,13 +202,7 @@ export function search(
     )
     .map((passage) => ({ kind: "passage", score: 1, passage }));
   const entityHits: SearchHit[] = index.publication.entities
-    .filter(
-      (item) => !query.entityTypes || query.entityTypes.includes(item.type),
-    )
-    .filter((item) => entityMatchesWork(item.id))
-    .filter(entityMatchesRegion)
-    .filter((item) => entityMatchesTemporal(item.id))
-    .filter(entityMatchesStatus)
+    .filter(scope.entityAllowed)
     .filter((item) =>
       `${item.preferredName} ${item.aliases.join(" ")}`
         .toLocaleLowerCase()

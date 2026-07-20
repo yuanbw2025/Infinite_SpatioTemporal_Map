@@ -57,12 +57,15 @@ export interface WorkQuery extends PageRequest {
 
 export interface SearchQuery extends PageRequest {
   readonly text: string;
+  readonly mode?: SearchMode;
   readonly entityTypes?: readonly EntityType[];
   readonly workIds?: readonly WorkId[];
   readonly temporal?: TemporalValue;
   readonly region?: string;
   readonly reviewStatuses?: readonly ReviewStatus[];
 }
+
+export type SearchMode = "lexical" | "semantic" | "hybrid";
 
 export type SearchHit =
   | { readonly kind: "work"; readonly score: number; readonly work: Work }
@@ -76,6 +79,12 @@ export type SearchHit =
       readonly score: number;
       readonly entity: Entity;
     };
+
+export interface SearchResult extends Page<SearchHit> {
+  readonly requestedMode: SearchMode;
+  readonly executedMode: SearchMode;
+  readonly notice?: string;
+}
 
 export interface AtlasQuery extends PageRequest {
   readonly west?: number;
@@ -152,6 +161,12 @@ export interface FacsimileImageResource {
   readonly width?: number;
   readonly height?: number;
   readonly source: "direct" | "iiif";
+  readonly imageService?: IiifImageService;
+}
+
+export interface IiifImageService {
+  readonly id: string;
+  readonly infoUrl: string;
 }
 
 export interface EntityQuery extends PageRequest {

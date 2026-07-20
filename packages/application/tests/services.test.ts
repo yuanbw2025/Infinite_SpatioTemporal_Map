@@ -119,8 +119,10 @@ describe("application services", () => {
         volumeId: "missing" as never,
       }),
     ).resolves.toEqual({ items: [] });
-    await expect(services.search.run({ text: "   " })).resolves.toEqual({
+    await expect(services.search.run({ text: "   " })).resolves.toMatchObject({
       items: [],
+      requestedMode: "lexical",
+      executedMode: "lexical",
     });
     expect(
       (
@@ -222,8 +224,11 @@ describe("application services", () => {
     });
     const { imageUrl: _imageUrl, ...iiifOnlyPage } =
       publication.facsimilePages[0]!;
-    await expect(services.search.run({ text: "anything" })).resolves.toEqual({
+    await expect(
+      services.search.run({ text: "anything" }),
+    ).resolves.toMatchObject({
       items: [],
+      executedMode: "lexical",
     });
     await expect(services.atlas.explore({})).resolves.toEqual({
       observations: [],
@@ -240,6 +245,48 @@ describe("application services", () => {
       findings: expect.arrayContaining([
         expect.objectContaining({ ruleId: "test.external-rule" }),
       ]),
+    });
+  });
+
+  it("executes semantic, hybrid, and explicit lexical fallback modes", async () => {
+    const semanticSearch = {
+      search: async () => [
+        { kind: "entity" as const, id: "person-1" as EntityId, score: 0.9 },
+        {
+          kind: "passage" as const,
+          id: "passage-2" as PassageId,
+          score: 0.8,
+        },
+      ],
+    };
+    const services = createApplicationServices(port, { semanticSearch });
+    await expect(
+      services.search.run({ text: "行旅者", mode: "semantic" }),
+    ).resolves.toMatchObject({
+      requestedMode: "semantic",
+      executedMode: "semantic",
+      items: [
+        expect.objectContaining({ kind: "entity", score: 0.9 }),
+        expect.objectContaining({ kind: "passage", score: 0.8 }),
+      ],
+    });
+    const hybrid = await services.search.run({
+      text: "云川",
+      mode: "hybrid",
+    });
+    expect(hybrid.executedMode).toBe("hybrid");
+    expect(new Set(hybrid.items.map((item) => item.kind))).toEqual(
+      new Set(["work", "entity", "passage"]),
+    );
+
+    const fallback = await createApplicationServices(port).search.run({
+      text: "云川",
+      mode: "semantic",
+    });
+    expect(fallback).toMatchObject({
+      requestedMode: "semantic",
+      executedMode: "lexical",
+      notice: expect.stringContaining("回退"),
     });
   });
 

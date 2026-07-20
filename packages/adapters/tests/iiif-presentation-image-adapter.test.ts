@@ -66,8 +66,14 @@ describe("IIIF Presentation image adapter", () => {
           ],
         },
         "https://example.org/canvas/3",
-      )?.imageUrl,
-    ).toBe("https://example.org/iiif/image-1/full/max/0/default.jpg");
+      ),
+    ).toMatchObject({
+      imageUrl: "https://example.org/iiif/image-1/full/max/0/default.jpg",
+      imageService: {
+        id: "https://example.org/iiif/image-1",
+        infoUrl: "https://example.org/iiif/image-1/info.json",
+      },
+    });
   });
 
   it("rejects unsafe resources, caches canvases, and reports HTTP failures", async () => {

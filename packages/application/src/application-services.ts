@@ -30,6 +30,7 @@ import type {
   SocietyResult,
   SearchHit,
   SearchQuery,
+  SearchResult,
   TimelineQuery,
   TimelineResult,
   Volume,
@@ -44,6 +45,7 @@ import type {
   PublicationReadPort,
   ResearchRulePort,
   SearchIndexPort,
+  SemanticSearchPort,
   SpatialQueryPort,
 } from "@infinite-spacetime/ports";
 import { exploreAtlas } from "./atlas-use-case";
@@ -56,7 +58,7 @@ import { getDatasetOverview } from "./metrics-use-case";
 import { PublicationIndex } from "./publication-index";
 import { readPassage, listPassages } from "./reader-use-cases";
 import { inspectResearch } from "./research-use-case";
-import { search } from "./search-use-case";
+import { executeSearch } from "./semantic-search-use-case";
 import { openSourceProvenance } from "./source-provenance-use-case";
 import { buildTimeline } from "./timeline-use-case";
 import { exploreHeritage, exploreSociety } from "./thematic-use-cases";
@@ -97,7 +99,7 @@ export interface ApplicationServices {
       query?: HistoricalMapResourceQuery,
     ): Promise<readonly HistoricalMapResource[]>;
   };
-  readonly search: { run(query: SearchQuery): Promise<Page<SearchHit>> };
+  readonly search: { run(query: SearchQuery): Promise<SearchResult> };
   readonly metadata: { overview(): Promise<DatasetOverview> };
   readonly graph: {
     explore(query?: KnowledgeGraphQuery): Promise<KnowledgeGraphResult>;
@@ -112,6 +114,7 @@ export interface ApplicationDependencies {
   readonly facsimileImages?: FacsimileImagePort;
   readonly historicalMapResources?: HistoricalMapResourcePort;
   readonly searchIndex?: SearchIndexPort;
+  readonly semanticSearch?: SemanticSearchPort;
   readonly spatialQuery?: SpatialQueryPort;
   readonly researchRules?: readonly ResearchRulePort[];
 }
@@ -176,9 +179,13 @@ export function createApplicationServices(
     },
     search: {
       run: async (query) =>
-        dependencies.searchIndex
-          ? dependencies.searchIndex.search(query)
-          : search(index, query),
+        executeSearch(
+          index,
+          port.dataContext,
+          query,
+          dependencies.searchIndex,
+          dependencies.semanticSearch,
+        ),
     },
     metadata: { overview: async () => getDatasetOverview(index) },
     graph: { explore: async (query) => exploreGraph(index, query) },

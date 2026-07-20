@@ -3,4 +3,6 @@ export * from "./historical-map-resource-port";
 export * from "./publication-read-port";
 export * from "./research-rule-port";
 export * from "./search-index-port";
+export * from "./semantic-search-port";
 export * from "./spatial-query-port";
+export * from "./embedding-port";

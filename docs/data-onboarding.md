@@ -147,6 +147,22 @@ PYTHONPATH=pipeline/src python3 -m infinite_spacetime_pipeline apply-passage-ali
 
 若需要区域高亮，应同时登记页面 `width` 和 `height`，且区域不得超出页面边界。数据管线负责引用与尺寸的语义校验；阅读器负责翻页、缩放、拖拽和区域叠加，不产生新的影印定位数据。
 
+若 Canvas 的图像 body 暴露 IIIF Image API service，适配器会自动生成 `info.json` 地址并启用瓦片深度查看；
+无需在发布包增加瓦片字段。没有 Image API 时安全回退到直接图像。
+
+## 语义索引接入
+
+1. 按 `pipeline/examples/semantic-index.example.json` 生成 `semantic-index.json`，每条记录只保留
+   `work/passage/entity` 的规范 ID 和向量。
+2. 将索引的 `publicationId`、`contentChecksum`、`modelId` 和 `dimensions` 绑定到当前发布包与嵌入模型。
+3. 放入 `apps/web/public/data/semantic-index.json`。
+4. 配置同源服务端代理地址 `VITE_SEMANTIC_EMBEDDING_ENDPOINT`、模型
+   `VITE_SEMANTIC_MODEL_ID` 和维度 `VITE_SEMANTIC_DIMENSIONS`。浏览器不保存模型服务密钥。
+5. 运行 `pnpm verify`，并以真实查询做筛选一致性、相关性和性能验收。
+
+索引版本、模型、维度、对象引用或向量不合法时适配器拒绝加载。未放索引或未配置向量服务时，
+页面会明确回退到词面检索，不会伪称语义检索已经执行。
+
 ## 地图底图
 
 时空数据层由 MapLibre 在浏览器中渲染，点、面、多面、聚合和行迹均来自发布包。默认使用公开矢量底图；如需部署自有瓦片或适配特定网络环境，在 `apps/web/.env` 设置 `VITE_MAP_STYLE_URL` 即可，更换底图不会改变历史数据契约。外部底图不可用时页面会切换到本地空白样式，历史数据层仍能工作。

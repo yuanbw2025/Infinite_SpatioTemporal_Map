@@ -46,11 +46,23 @@ function webUrl(value: string): string | undefined {
   }
 }
 
-function imageServiceUrl(service: JsonRecord | undefined): string | undefined {
+function imageService(service: JsonRecord | undefined):
+  | {
+      readonly id: string;
+      readonly infoUrl: string;
+      readonly imageUrl: string;
+    }
+  | undefined {
   const id = identifier(service);
   if (!id) return undefined;
   const base = webUrl(id)?.replace(/\/$/, "");
-  return base ? `${base}/full/max/0/default.jpg` : undefined;
+  return base
+    ? {
+        id: base,
+        infoUrl: `${base}/info.json`,
+        imageUrl: `${base}/full/max/0/default.jpg`,
+      }
+    : undefined;
 }
 
 export function resolveIiifCanvas(
@@ -68,8 +80,9 @@ export function resolveIiifCanvas(
   const body = v3Body ?? v2Body;
   const direct = identifier(body);
   const service = firstRecord(body?.service);
+  const resolvedService = imageService(service);
   const imageUrl =
-    (direct ? webUrl(direct) : undefined) ?? imageServiceUrl(service);
+    (direct ? webUrl(direct) : undefined) ?? resolvedService?.imageUrl;
   if (!imageUrl) return undefined;
 
   const width = positiveNumber(body?.width) ?? positiveNumber(canvas.width);
@@ -79,6 +92,14 @@ export function resolveIiifCanvas(
     canvasUrl,
     ...(width ? { width } : {}),
     ...(height ? { height } : {}),
+    ...(resolvedService
+      ? {
+          imageService: {
+            id: resolvedService.id,
+            infoUrl: resolvedService.infoUrl,
+          },
+        }
+      : {}),
     source: "iiif",
   };
 }

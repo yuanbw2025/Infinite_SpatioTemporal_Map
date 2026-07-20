@@ -71,6 +71,7 @@ watch(
     </nav>
     <FacsimileViewer
       :image-url="resource?.imageUrl"
+      :image-service-info-url="resource?.imageService?.infoUrl"
       :canvas-url="active.page.canvasUrl"
       :page-label="active.page.label ?? `影印页 ${active.page.id}`"
       :region="active.anchor.region"

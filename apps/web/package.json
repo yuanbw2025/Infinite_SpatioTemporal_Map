@@ -14,6 +14,7 @@
     "@infinite-spacetime/application": "workspace:*",
     "@infinite-spacetime/contracts": "workspace:*",
     "maplibre-gl": "^5.24.0",
+    "openseadragon": "^6.0.2",
     "vue": "^3.5.32",
     "vue-router": "^4.6.4"
   },

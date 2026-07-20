@@ -9,6 +9,7 @@
 - Vue
 - Vue Router
 - MapLibre GL JS
+- OpenSeadragon
 - Vite
 - TypeScript
 - GeoJSON TypeScript definitions
